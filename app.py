@@ -35,20 +35,20 @@ def login():
 
 @route('heatDemo/login', method=["POST","GET"])
 def do_login():
-  global key
-  user = request.get_cookie("account", secret=key)
-  if not user:
-    username = request.forms.get('username')
-    if username:
-      password = request.forms.get('password')
-      if username == info[0] and password == info[1]:
-        response.set_cookie("account", username, secret=key)
-        return redirect('heatDemo/control') # template("<p>Welcome {{name}}! You are now logged in.</p>", name=username)
-      else:
-        file = open('fail.txt', 'a')
-        file.writelines('[%s]: %s - %s\n' %(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), username,password))
-        file.close()
-        return template('login', error='Incorrect username or password')
+  # global key
+  # user = request.get_cookie("account", secret=key)
+  # if not user:
+  #   username = request.forms.get('username')
+  #   if username:
+  #     password = request.forms.get('password')
+  #     if username == info[0] and password == info[1]:
+  #       response.set_cookie("account", username, secret=key)
+  #       return redirect('heatDemo/control') # template("<p>Welcome {{name}}! You are now logged in.</p>", name=username)
+  #     else:
+  #       file = open('fail.txt', 'a')
+  #       file.writelines('[%s]: %s - %s\n' %(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), username,password))
+  #       file.close()
+  #       return template('login', error='Incorrect username or password')
   return template('login', error=None)
 
 
@@ -57,7 +57,7 @@ def control():
   global key
   username = request.get_cookie("account", secret=key)
   global curPercent
-  heat = 'OFF' if subprocess.check_output(['gpio -g read 17'], shell=True) == b'0\n' else 'ON'
+  heat = 'OFF'
   lights_T, lights_B, fans, pc = 'OFF', 'OFF', 'OFF', 'OFF'  # 'N/A' shows yellow
   if username:
     return template('control', heat=heat, curPercent=curPercent, lights_T=lights_T, lights_B=lights_B, fans=fans, pc=pc)
