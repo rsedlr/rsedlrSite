@@ -33,7 +33,7 @@ def login():
     return redirect('heatDemo/login')
 
 
-@route('heatDemo/login', method=["POST","GET"])
+@route('/heatDemo/login', method=["POST","GET"])
 def do_login():
   # global key
   # user = request.get_cookie("account", secret=key)
