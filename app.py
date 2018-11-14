@@ -20,4 +20,4 @@ def main():
 
 if __name__ == '__main__':
   port = int(os.environ.get('PORT', 4000))
-  run(host='0.0.0.0', port=port, reloader=True, threaded=False, debug=True)
+  run(host='127.0.0.1', port=port, reloader=True, threaded=False, debug=True)
