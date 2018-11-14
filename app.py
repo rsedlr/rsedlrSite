@@ -15,7 +15,7 @@ def server_static(filepath):
 
 @route('/')
 def main():
-  return redirect('main')
+  return template('main')
 
 
 if __name__ == '__main__':
