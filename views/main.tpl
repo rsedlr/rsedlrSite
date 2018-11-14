@@ -20,9 +20,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/heatingDemo">heating Demo</a>
+          </li>
         </ul>
       </div>
     </div>
