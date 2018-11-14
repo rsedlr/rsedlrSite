@@ -15,6 +15,11 @@ def server_static(filepath):
 
 @route('/')
 def main():
+  return template('main')
+
+
+@route('/index')
+def index():
   return template('index')
 
 
