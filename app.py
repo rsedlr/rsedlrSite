@@ -49,7 +49,7 @@ def do_login():
   return template('login', error=None)
 
 
-@route('heatDemo/control')
+@route('/heatDemo/control')
 def control():
   global key
   username = request.get_cookie("account", secret=key)
