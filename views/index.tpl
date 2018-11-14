@@ -50,7 +50,7 @@
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h2 class="display-4">For those about to rock...</h2>
+            <h2 class="display-4">stuff</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
           </div>
         </div>
@@ -67,7 +67,7 @@
         </div>
         <div class="col-lg-6">
           <div class="p-5">
-            <h2 class="display-4">We salute you!</h2>
+            <h2 class="display-4">stuff stuff</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
           </div>
         </div>
@@ -84,7 +84,7 @@
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h2 class="display-4">Let there be rock!</h2>
+            <h2 class="display-4">stuff stuff stuff</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
           </div>
         </div>
@@ -92,9 +92,9 @@
     </div>
   </section>
   <footer class="py-5 bg-black">
-    <div class="container">
+    <!-- <div class="container">
       <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>
-    </div>
+    </div> -->
   </footer>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
