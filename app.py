@@ -18,7 +18,7 @@ def main():
   return template('main')
 
 
-''' --------- heat control demo stuff --------- '''
+# ''' --------- heat control demo stuff --------- '''
 curPercent = 50
 key = 'OD{gxX:Q3lmR:Y1}1[(cQ{yE"0[7v`'  # wouldnt be saved as plainText in real deployment
 info = ['userName', 'password']
@@ -65,7 +65,7 @@ def control():
   else:
     return redirect('heatDemo')  
 
-''' --------- heat control demo stuff end --------- '''
+# ''' --------- heat control demo stuff end --------- '''
 
 
 if __name__ == '__main__':
