@@ -18,7 +18,7 @@ def main():
   return template('main')
 
 
-# ''' --------- heat control demo stuff --------- '''
+''' --------- heat control demo stuff --------- '''
 curPercent = 50
 key = 'OD{gxX:Q3lmR:Y1}1[(cQ{yE"0[7v`'  # wouldnt be saved as plainText in real deployment
 info = ['userName', 'password']
@@ -35,21 +35,17 @@ def login():
 
 @route('/heatDemo/login', method=["POST","GET"])
 def do_login():
-  # global key
-  # user = request.get_cookie("account", secret=key)
-  # if not user:
-  #   username = request.forms.get('username')
-  #   if username:
-  #     password = request.forms.get('password')
-  #     if username == info[0] and password == info[1]:
-  #       response.set_cookie("account", username, secret=key)
-  #       return redirect('heatDemo/control') # template("<p>Welcome {{name}}! You are now logged in.</p>", name=username)
-  #     else:
-  #       file = open('fail.txt', 'a')
-  #       file.writelines('[%s]: %s - %s\n' %(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), username,password))
-  #       file.close()
-  #       return template('login', error='Incorrect username or password')
-  print('yoooo')
+  global key
+  user = request.get_cookie("account", secret=key)
+  if not user:
+    username = request.forms.get('username')
+    if username:
+      password = request.forms.get('password')
+      if username == info[0] and password == info[1]:
+        response.set_cookie("account", username, secret=key)
+        return redirect('/heatDemo/control') # template("<p>Welcome {{name}}! You are now logged in.</p>", name=username)
+      else:
+        return template('login', error='Incorrect username or password')
   return template('login', error=None)
 
 
@@ -63,9 +59,9 @@ def control():
   if username:
     return template('control', heat=heat, curPercent=curPercent, lights_T=lights_T, lights_B=lights_B, fans=fans, pc=pc)
   else:
-    return redirect('heatDemo')  
+    return redirect('/heatDemo')  
 
-# ''' --------- heat control demo stuff end --------- '''
+''' --------- heat control demo stuff end --------- '''
 
 
 if __name__ == '__main__':
