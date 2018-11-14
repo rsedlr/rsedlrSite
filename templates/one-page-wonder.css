@@ -1,19 +1,8 @@
-/*!
- * Start Bootstrap - One Page Wonder v5.0.0 (https://startbootstrap.com/template-overviews/one-page-wonder)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
- */
-
 body {
   font-family: 'Lato';
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Catamaran';
   font-weight: 800 !important;
 }
@@ -37,7 +26,7 @@ h6 {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-custom .navbar-brand {
