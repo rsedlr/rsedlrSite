@@ -64,6 +64,8 @@ def control():
   else:
     return redirect('/')  
 
+''' --------- heat control demo stuff end --------- '''
+
 
 if __name__ == '__main__':
   port = int(os.environ.get('PORT', 4000))
