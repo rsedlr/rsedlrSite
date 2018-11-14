@@ -49,6 +49,7 @@ def do_login():
   #       file.writelines('[%s]: %s - %s\n' %(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), username,password))
   #       file.close()
   #       return template('login', error='Incorrect username or password')
+  print('yoooo')
   return template('login', error=None)
 
 
