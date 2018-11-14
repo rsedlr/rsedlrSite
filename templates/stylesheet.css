@@ -1,0 +1,217 @@
+.col-md-1-5 { width: 12,5%; } /* = 8,3333 + 4,16667 */
+.col-md-2-5 { width: 20,83333%; } /* = 16,6666 + 4,16667 */
+.col-md-3-5 { width: 29,16667%; } /* = 25 + 4,16667 */
+.col-md-4-5 { width: 37,5%; } /* = 33,3333 + 4,16667 */
+.col-md-5-5 { width: 45,83333%; } /* = 41,6667 + 4,16667 */
+.col-md-6-5 { width: 54,16667%; } /* = 50 + 4,16667 */
+.col-md-7-5 { width: 62,5%; } /* = 58,3333 + 4,16667 */
+.col-md-8-5 { width: 70,83333%; } /* = 66,6666 + 4,16667 */
+.col-md-9-5 { width: 79,16667%; } /* = 75 + 4,16667 */
+.col-md-10-5 { width: 87,5%; } /* = 83,3333 + 4,16667 */
+.col-md-11-5 { width: 95,8333%; } /* = 91,6666 + 4,16667 */
+
+body {
+  background-color: #26282a;
+  align-items: center;
+}
+.navbar {
+  background-color: #1e1e1e !important;
+}
+.navbar-brand {
+  position: relative;
+  text-align: left;
+  color: red;
+}
+/* .navbtn {
+  background: white !important;
+  margin: 0px 0px 0px 20px;
+} */
+/* .navActive {
+  margin: 0px 0px 0px 20px;
+  background-color: red !important;
+} */
+.nav-link {
+  font-weight: bold !important;
+}
+.navActive {
+  color: red !important;
+}
+.navWhite {
+  color: rgb(255,255,255) !important;
+}
+.mainbtn {
+  padding: 10px 0px !important; 
+  font-size: 30px !important;
+  width: 200px;
+  margin: 10px 0px;
+}
+.otherbtn {
+  background: white !important;
+  color: black;
+  padding: .5rem 1.7rem !important;
+}
+#Main{
+  margin: 30px calc(15% - 40px);
+}
+#MoreOptionsContainer {
+  padding: 20px 30px;
+}
+.centreBtnDiv {
+  margin: 2px auto;
+  width: 200px;
+}
+.btn-default {
+  margin-bottom: 5px;
+}
+.circleBase {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.circle {
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+}
+.bigCircle {
+  width: 200px;
+  height: 200px;
+  font-size: 80px;
+  line-height: 200px;
+}
+.medCircle {
+  width: 150px;
+  height: 150px;
+  font-size: 60px;
+  line-height: 150px;
+}
+.smallCircle {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 5px;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #9d9d9d;
+  outline: none;
+  /* background-opacy: 0.7; */
+  -webkit-transition: .4s;
+  transition: opacity .4s;
+}
+.slider:hover, .slider:active {
+  opacity: 1;
+  background: #d4d4d4;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 1;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.red {
+  color: red !important; 
+}
+.blue {
+  color: blue !important;
+}
+.disNone {
+  display: none;
+}
+.mAuto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-primary-r, .my-primary-r:focus{
+  color: white;
+  background-color: red;
+}
+.my-primary-r:hover {
+  color: black;
+  background-color: red;
+}
+.my-primary-w, .my-primary-w:focus {
+  color: black;
+  background-color: white;
+}
+ .my-primary-w:hover {
+  color: red;
+  background-color: white;
+}
+.my-primary-wl, .my-primary-wl:focus{
+  color: black;
+}
+.my-primary-wl:hover {
+  color: white;
+}
+.textInput-r, .textInput-r:focus {
+  border-color: red; 
+  color: white;
+}
+.form-control {
+  background-image: linear-gradient(0deg,#FF0000 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0) !important;
+}
+
+.mainWidthMax {
+  max-width: 575px;
+}
+.jumbotron {
+  background-color: #1c1c1c;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 50px;
+  background-color: #212121;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: auto;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #FF0000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.table-header {
+  color: red;
+  
+}
+.boxRow {
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 100px;
+  /* margin: 0 auto; */
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.boxColumn {
+  position: flex;
+}

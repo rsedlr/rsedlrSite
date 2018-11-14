@@ -1,0 +1,90 @@
+<!-- <nav class="navbar  navbar-expand-sm">
+  <div class="navbar-header">
+  <a class="navbar-brand" href="/about">
+    <b class="btn btn-raised btn-lg" style="background: red; margin: 0px; padding: 4px 20px 4px 20px">Heat pi</b>
+  </a>
+  </div>
+  <ul class="nav navbar-nav" style="vertical-align: right;">
+    <li id="Control">
+    <a href="/" class="btn btn-raised navbtn">Control</a>
+  </li>
+  <li id="whatsmyip">
+    <a href="whatsmyip" class="btn btn-raised navbtn">WhatsMyIP</a>
+  </li>
+  <li id="textrepeater">
+    <a href="TextRepeater" class="btn btn-raised navbtn">Text Repeater</a>
+  </li>
+  <li id="ytdl">
+    <a href="ytdl" class="btn btn-raised navbtn">YT download</a>
+  </li>
+  </ul>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="/" style="font-size: 30px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Fireicon07.svg/2000px-Fireicon07.svg.png" width="30" height="30" alt="" style="padding-bottom: 5px">
+    <b>Heat pi</b>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto flex-md-column flex-lg-row">
+      <li class="nav-item">
+        <a class="nav-link" href="control" style="font-size: 20px;">Control</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navWhite" href="shopping" style="font-size: 20px;">Shopping List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navWhite" href="whatsmyip" style="font-size: 20px;">Whats my IP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navWhite" href="textrepeater" style="font-size: 20px;">Text Repeater</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navWhite" href="ytdl" style="font-size: 20px;"> YT download</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+
+
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+    var _urlpath = $(location).attr('pathname').split('/').pop(); // Gets url path, splits it by the slashes
+    $('nav li').each(function(){ 
+      var _this = $(this);
+      var _str = _this.find('a').attr('href'); // then compares that with the href of the nav buttons
+      if (_str == "/") _str = "";
+      // _str !== _urlpath ? _this.removeClass('navActive') : _this.addClass('navActive');
+      if (_str !== _urlpath) { // if they dont match it makes it look normal
+        _this.children().removeClass('navActive')
+        _this.children().addClass('navWhite')
+      } else { // if they do match it makes the button appear active
+        _this.children().removeClass('navWhite')
+        _this.children().addClass('navActive')
+      }
+    });
+</script>
+
