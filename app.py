@@ -18,9 +18,9 @@ def main():
   return template('main')
 
 
-@route('/index')
+@route('/about')
 def index():
-  return template('index')
+  return template('about')
 
 
 ''' --------- heat control demo stuff --------- '''
