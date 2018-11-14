@@ -15,7 +15,7 @@ def server_static(filepath):
 
 @route('/')
 def main():
-  return template('main')
+  return template('index')
 
 
 ''' --------- heat control demo stuff --------- '''
@@ -59,7 +59,7 @@ def control():
   if username:
     return template('control', heat=heat, curPercent=curPercent, lights_T=lights_T, lights_B=lights_B, fans=fans, pc=pc)
   else:
-    return redirect('/heatDemo')  
+    return redirect('/heatDemo')
 
 ''' --------- heat control demo stuff end --------- '''
 
