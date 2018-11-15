@@ -73,6 +73,16 @@ def control():
   else:
     return redirect('/heatDemo')
 
+
+@route('/heatDemo/shopping')
+def ShoppingList():
+  global key
+  username = request.get_cookie("account", secret=key)
+  if username:
+    return template('ShoppingList')
+  else:
+    return redirect('/heatDemo')
+
 ''' --------- heat control demo stuff end --------- '''
 
 
