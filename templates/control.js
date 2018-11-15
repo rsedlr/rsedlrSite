@@ -1,5 +1,5 @@
 <script>
-$(document).ready(function () {  
+$(document).ready(function () {
   var curOutput = document.getElementById("curOutput");
   var curOut = $("#curOutput").text().slice(0,-1);
   var output = document.getElementById("value");
@@ -15,24 +15,36 @@ $(document).ready(function () {
   postVal('lights_B');
   postVal('fans');
   curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
-  
+
+  // function postVal(value) {
+  //   var xhttp = new XMLHttpRequest();
+  //   xhttp.onreadystatechange = function() {
+  //     if (this.readyState == 4 && this.status == 200) {
+  //       if (value == 'heat') {
+  //         responseVal = this.responseText.split('-');
+  //         valueDict['heat'].text(responseVal[0]);
+  //         valueDict['curPercent'].text(responseVal[1] + "%");
+  //       } else {
+  //         valueDict[value].text(this.responseText);
+  //       }
+  //       updateAllCircles();
+  //     }
+  //   };
+  //   xhttp.open("POST", `/values/${value}`, true);
+  //   xhttp.send();
+  // }
   function postVal(value) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        if (value == 'heat') {
-          responseVal = this.responseText.split('-');
-          valueDict['heat'].text(responseVal[0]);
-          valueDict['curPercent'].text(responseVal[1] + "%");
-        } else {
-          valueDict[value].text(this.responseText);
-        }
-        updateAllCircles();
-      }
-    };
-    xhttp.open("POST", `/values/${value}`, true);
-    xhttp.send();
+    if (value == 'heat') {
+      valueDict['heat'].text();
+      valueDict['curPercent'].text();
+    } else {
+      if (valueDict[value].text() == 'ON') {
+        valueDict[value].text('OFF');
+    } else {
+      valueDict[value].text('ON');
+    }
   }
+
   function updateAllCircles() {
     var heat = $("#StatusVal").text();
     var pc = $("#PC_status").text();
@@ -52,7 +64,11 @@ $(document).ready(function () {
     postVal("heat");
   }
   function submitURL(url) {
-    fetch(new Request(url), {method: 'PUT'});
+    if (valueDict[value].text() == 'ON') {
+      valueDict[value].text('OFF');
+    } else {
+      valueDict[value].text('ON');
+    }
   }
   // function changeVal(val) {
   //   s.value = val;
@@ -116,19 +132,19 @@ $(document).ready(function () {
     submitHeat($("#value").text().slice(0,-1));
   });
   $('#PC_button').click(function () {
-    submitURL('/relayControl/pc');
+    submitURL('pc');
     postVal("pc");
   });
   $('#T-lightsButton').click(function () {
-    submitURL('/relayControl/lights_T');
+    submitURL('lights_T');
     postVal("lights_T");
   });
   $('#B-lightsButton').click(function () {
-    submitURL('/relayControl/lights_B');
+    submitURL('lights_B');
     postVal("lights_B");
   });
   $('#fansButton').click(function () {
-    submitURL('/relayControl/fans');
+    submitURL('fans');
     postVal("fans");
   });
   s.addEventListener("input", function () {
