@@ -54,6 +54,13 @@ def do_login():
   return template('login', error=None)
 
 
+@route('/heatDemo/backToLogin')
+def backToLogin():
+  if request.get_cookie("account", secret=key):
+    response.set_cookie("account", '', expires=0)
+  redirect('/heatDemo/login')
+
+
 @route('/heatDemo/control')
 def control():
   global key
