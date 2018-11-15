@@ -1,4 +1,4 @@
-import os, subprocess, sys #, cherrypy # , serial
+import os, subprocess, sys  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
 from datetime import datetime
 
