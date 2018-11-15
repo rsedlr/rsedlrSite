@@ -79,7 +79,17 @@ def ShoppingList():
   global key
   username = request.get_cookie("account", secret=key)
   if username:
-    return template('ShoppingList')
+    return template('/heatDemo/ShoppingList')
+  else:
+    return redirect('/heatDemo')
+
+
+@route('/heatDemo/textrepeater')
+def TextRepeater():
+  global key
+  username = request.get_cookie("account", secret=key)
+  if username:
+    return template('/heatDemo/TextRepeater')
   else:
     return redirect('/heatDemo')
 
