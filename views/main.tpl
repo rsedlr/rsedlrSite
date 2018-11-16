@@ -62,7 +62,7 @@
       </div>
     </div>
   </section>
-  <section class="download bg-primary text-center" id="experience">
+  <section class="download bg-secondary text-center" id="experience">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
@@ -71,7 +71,7 @@
       </div>
     </div>
   </section>
-  <section class="download bg-primary text-center" id="other">
+  <section class="download bg-third text-center" id="other">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
