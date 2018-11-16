@@ -29,7 +29,7 @@
             <a class="nav-link js-scroll-trigger" href="#features">experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">anotherTab</a>
+            <a class="nav-link js-scroll-trigger" href="#other">anotherTab</a>
           </li>
           <!-- temporary until main page is sorted -->
           <li class="nav-item">
@@ -62,6 +62,24 @@
       </div>
     </div>
   </section>
+  <section class="download bg-primary text-center" id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h1>experience</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="download bg-primary text-center" id="other">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h1>other</h1>
+        </div>
+      </div>
+    </div>
+</section>
   <!-- <section class="features" id="features">
     <div class="container">
       <div class="section-heading text-center">
