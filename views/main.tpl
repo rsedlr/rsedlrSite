@@ -22,18 +22,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-          </li> -->
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-          </li> -->
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">about</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">anotherTab</a>
+          </li>
+          <!-- temporary until main page is sorted -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/heatDemo">HeatingDemo</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -45,7 +47,7 @@
           <div class="header-content mx-auto">
             <h1 style="font-size: 6rem; font-weight: 800;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400;">personal portfolio</h2>
-            <!-- <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a> -->
+            <!-- <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger">about</a> -->
           </div>
         </div>
         <div class="col-lg-5 my-auto">
@@ -54,9 +56,10 @@
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <!-- <img src="img/demo-screen-1.jpg" class="img-fluid" alt=""> -->
+                  <img src="static/mainPage/demo-screen-1.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="button">
+                  home?
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                 </div>
               </div>
