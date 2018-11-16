@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
   <link href="static/main.css" rel="stylesheet">
 </head>
 <body id="page-top">
@@ -44,8 +43,8 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">Reiss Edler</h1>
-            <h2 class="mb-5">personal portfolio</h2>
+            <h1 style="font-size: 4rem">Reiss Edler</h1>
+            <h2 style="font-size: 4rem">personal portfolio</h2>
             <!-- <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a> -->
           </div>
         </div>
