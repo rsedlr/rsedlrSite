@@ -54,7 +54,7 @@
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                  <!-- <img src="img/demo-screen-1.jpg" class="img-fluid" alt=""> -->
                 </div>
                 <div class="button">
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -73,8 +73,8 @@
           <h2 class="section-heading">Discover what all the buzz is about!</h2>
           <p>Our app is available on any mobile device! Download now to get started!</p>
           <div class="badges">
-            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-            <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+            <!-- <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a> -->
+            <!-- <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a> -->
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@
       </ul>
     </div>
   </footer>
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="static/mainPage/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/new-age.min.js"></script>
