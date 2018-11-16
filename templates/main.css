@@ -108,7 +108,7 @@ section h2 {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: fade(rgba(34, 34, 34, 0.5), 70%);
+    color: fade(white, 70%);
   }
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
     color: white;
@@ -122,8 +122,8 @@ section h2 {
     color: white;
   }
   #mainNav.navbar-shrink {
-    border-color: rgba(34, 34, 34, 0.1);
-    background-color: white;
+    border-color: rgba(34, 34, 34, 0.5);
+    background-color: rgba(34, 34, 34, 0.5);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #222222;
