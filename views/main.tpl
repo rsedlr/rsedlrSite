@@ -43,8 +43,8 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 style="font-size: 6rem; font-weight: 300;">Reiss Edler</h1>
-            <h2 style="font-size: 4rem; font-weight: 300;">personal portfolio</h2>
+            <h1 style="font-size: 6rem; font-weight: 800;">Reiss Edler</h1>
+            <h2 style="font-size: 4rem; font-weight: 400;">personal portfolio</h2>
             <!-- <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a> -->
           </div>
         </div>
