@@ -177,8 +177,8 @@
   </section>
   <footer>
     <div class="container">
-      <p>&copy; Your Website 2018. All Rights Reserved.</p>
-      <ul class="list-inline">
+      <p>&copy; Reiss Edler 2018</p>
+      <!-- <ul class="list-inline">
         <li class="list-inline-item">
           <a href="#">Privacy</a>
         </li>
@@ -187,13 +187,13 @@
         </li>
         <li class="list-inline-item">
           <a href="#">FAQ</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </footer>
-  <script src="static/mainPage/jquery.min.js"></script>
+  <!-- <script src="static/mainPage/jquery.min.js"></script>
   <script src="static/mainPage/bootstrap.bundle.min.js"></script>
   <script src="static/mainPage/jquery.easing.min.js"></script>
-  <script src="static/mainPage/new-age.min.js"></script>
+  <script src="static/mainPage/main.min.js"></script> -->
 </body>
 </html>
