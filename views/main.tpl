@@ -191,9 +191,9 @@
       </ul>
     </div>
   </footer>
-  <!-- <script src="static/mainPage/jquery.min.js"></script>
+  <script src="static/mainPage/jquery.min.js"></script>
   <script src="static/mainPage/bootstrap.bundle.min.js"></script>
   <script src="static/mainPage/jquery.easing.min.js"></script>
-  <script src="static/mainPage/main.min.js"></script> -->
+  <script src="static/mainPage/main.min.js"></script>
 </body>
 </html>
