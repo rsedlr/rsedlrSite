@@ -67,7 +67,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #000000;
+  color: #000000 !important;
 }
 
 #mainNav .navbar-toggler {
