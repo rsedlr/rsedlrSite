@@ -67,7 +67,7 @@
     </div>
   </header>
   <section class="download bg-primary text-center" id="download">
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h2 class="section-heading">Discover what all the buzz is about!</h2>
@@ -78,9 +78,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
-  <section class="features" id="features">
+  <!-- <section class="features" id="features">
     <div class="container">
       <div class="section-heading text-center">
         <h2>Unlimited Features, Unlimited Fun</h2>
@@ -93,11 +93,11 @@
             <div class="device-mockup iphone6_plus portrait white">
               <div class="device">
                 <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <!-- <img src="img/demo-screen-1.jpg" class="img-fluid" alt=""> -->
+                  Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
+                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  You can hook the "home button" to some JavaScript events or just remove it
                 </div>
               </div>
             </div>
@@ -141,8 +141,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="cta">
+  </section> -->
+  <!-- <section class="cta">
     <div class="cta-content">
       <div class="container">
         <h2>Stop waiting.<br>Start building.</h2>
@@ -174,7 +174,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
   <footer>
     <div class="container">
       <p>&copy; Reiss Edler 2018</p>
