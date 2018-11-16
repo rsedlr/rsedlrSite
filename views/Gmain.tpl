@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <!-- <meta name="description" content="">
+  <meta name="author" content=""> -->
   <title>RsEdlr</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -43,7 +43,8 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+            <h1 class="mb-5">Reiss Edler</h1>
+            <h2 class="mb-5">personal portfolio</h2>
             <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
           </div>
         </div>
