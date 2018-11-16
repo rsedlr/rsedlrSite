@@ -171,9 +171,9 @@
       Copyright &copy; Reiss Edler 2018
     </div>
   </footer>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/grayscale.min.js"></script>
+  <script src="static/gs/jquery.min.js"></script>
+  <script src="static/gs/bootstrap.bundle.min.js"></script>
+  <script src="static/gs/jquery.easing.min.js"></script>
+  <script src="static/gs/grayscale.min.js"></script>
 </body>
 </html>
