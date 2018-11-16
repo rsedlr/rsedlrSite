@@ -50,36 +50,22 @@
             <!-- <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger">about</a> -->
           </div>
         </div>
-        <!-- <div class="col-lg-5 my-auto">
-          <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
-                <div class="screen">
-                  <img src="static/mainPage/demo-screen-1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  home?
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </header>
-  <section class="download bg-primary text-center" id="download">
-    <!-- <div class="container">
+  <section class="download bg-primary text-center" id="about">
+     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h2 class="section-heading">Discover what all the buzz is about!</h2>
           <p>Our app is available on any mobile device! Download now to get started!</p>
           <div class="badges">
-            <!-- <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a> -->
-            <!-- <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a> -->
+             <a class="badge-link" href="#"><img src="static/mainPage/google-play-badge.svg" alt=""></a>
+             <a class="badge-link" href="#"><img src="static/mainPage/app-store-badge.svg" alt=""></a>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
   <!-- <section class="features" id="features">
     <div class="container">
