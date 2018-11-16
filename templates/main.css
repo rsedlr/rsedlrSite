@@ -10,12 +10,12 @@ body {
 
 a {
   color: #000000;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 a:hover, a:focus {
-  color: #fcbd20;
+  color: #ffffff;
 }
 
 hr {
@@ -108,7 +108,7 @@ section h2 {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: fade(white, 70%);
+    color: fade(rgba(34, 34, 34, 0.5), 70%);
   }
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
     color: white;
@@ -191,81 +191,81 @@ header.masthead .device-container .screen img {
   }
 }
 
-section.download {
+section.about {
   position: relative;
   padding: 150px 0;
 }
 
-section.download h2 {
+section.about h2 {
   font-size: 50px;
   margin-top: 0;
 }
 
-section.download .badges .badge-link {
+section.about .badges .badge-link {
   display: block;
   margin-bottom: 25px;
 }
 
-section.download .badges .badge-link:last-child {
+section.about .badges .badge-link:last-child {
   margin-bottom: 0;
 }
 
-section.download .badges .badge-link img {
+section.about .badges .badge-link img {
   height: 60px;
 }
 
 @media (min-width: 768px) {
-  section.download .badges .badge-link {
+  section.about .badges .badge-link {
     display: inline-block;
     margin-bottom: 0;
   }
 }
 
 @media (min-width: 768px) {
-  section.download h2 {
+  section.about h2 {
     font-size: 70px;
   }
 }
 
-section.features .section-heading {
+section.experience .section-heading {
   margin-bottom: 100px;
 }
 
-section.features .section-heading h2 {
+section.experience .section-heading h2 {
   margin-top: 0;
 }
 
-section.features .section-heading p {
+section.experience .section-heading p {
   margin-bottom: 0;
 }
 
-section.features .device-container,
-section.features .feature-item {
+section.experience .device-container,
+section.experience .feature-item {
   max-width: 325px;
   margin: 0 auto;
 }
 
-section.features .device-container {
+section.experience .device-container {
   margin-bottom: 100px;
 }
 
 @media (min-width: 992px) {
-  section.features .device-container {
+  section.experience .device-container {
     margin-bottom: 0;
   }
 }
 
-section.features .feature-item {
+section.experience .feature-item {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
 
-section.features .feature-item h3 {
+section.experience .feature-item h3 {
   font-size: 30px;
 }
 
-section.features .feature-item i {
+section.experience .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
