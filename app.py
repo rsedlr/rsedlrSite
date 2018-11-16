@@ -19,7 +19,7 @@ def main():
 
 @route('/index')
 def index():
-  return template('index')
+  return template('Gmain')
 
 @route('/about')
 def index():
