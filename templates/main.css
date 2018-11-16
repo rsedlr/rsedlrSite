@@ -126,7 +126,7 @@ section h2 {
     background-color: rgba(34, 34, 34, 0.7);
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #222222;
+    color: #cccccc;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
     color: #000000;
