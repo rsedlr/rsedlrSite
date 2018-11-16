@@ -51,7 +51,6 @@ section h2 {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  color: white;
   background-color: black;
   -webkit-transition: all .35s;
   transition: all .35s;
@@ -61,7 +60,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #000000;
+  color: #ffffff;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
