@@ -57,12 +57,7 @@
      <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">Discover what all the buzz is about!</h2>
-          <p>Our app is available on any mobile device! Download now to get started!</p>
-          <div class="badges">
-             <a class="badge-link" href="#"><img src="static/mainPage/google-play-badge.svg" alt=""></a>
-             <a class="badge-link" href="#"><img src="static/mainPage/app-store-badge.svg" alt=""></a>
-          </div>
+          <h1>about</h1>
         </div>
       </div>
     </div>
