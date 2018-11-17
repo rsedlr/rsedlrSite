@@ -3,9 +3,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <title>Evil-Corp</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     % include('templates/links.html')
-    % include('templates/control.js')
+  <script src="'templates/control.js'"></script>
 </head>
 <body>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
@@ -154,7 +155,6 @@
       </div>
     </div>
   </div>
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     % include('templates/bottom.html')
 </body>
 </html>

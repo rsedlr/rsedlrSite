@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function () {
   var curOutput = document.getElementById("curOutput");
   var curOut = $("#curOutput").text().slice(0,-1);
@@ -152,4 +151,3 @@ $(document).ready(function () {
   });
   $('body').bootstrapMaterialDesign();
 });
-</script>
