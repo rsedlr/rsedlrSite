@@ -25,8 +25,8 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">about</a>
           </li>
-           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">experience</a>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#other">anotherTab</a>
