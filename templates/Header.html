@@ -40,6 +40,8 @@
     var _urlpath = $(location).attr('pathname').split('/').pop(); // Gets url path, splits it by the slashes
     $('nav li').each(function(){
       var _this = $(this);
+      console.log(_this);
+      console.log(_urlpath);
       var _str = _this.find('a').attr('href'); // then compares that with the href of the nav buttons
       if (_str == "/") _str = "";
       // _str !== _urlpath ? _this.removeClass('navActive') : _this.addClass('navActive');
