@@ -39,8 +39,9 @@ $(document).ready(function () {
     } else {
       if (valueDict[value].text() == 'ON') {
         valueDict[value].text('OFF');
-    } else {
-      valueDict[value].text('ON');
+      } else {
+        valueDict[value].text('ON');
+      }
     }
   }
 
