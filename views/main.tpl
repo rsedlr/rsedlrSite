@@ -18,7 +18,6 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
-        <i class="fas fa-bars">djshsakj</i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -44,7 +43,7 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 style="font-size: 6rem; font-weight: 800;">Reiss Edler</h1>
+            <h1 style="font-size: 6rem; font-weight: 850;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400;">personal portfolio</h2>
             <!-- <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger">about</a> -->
           </div>
