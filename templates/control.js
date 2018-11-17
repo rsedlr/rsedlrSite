@@ -1,4 +1,4 @@
-< script src = "jquery-3.3.1.min.js" >
+<script>
 $(document).ready(function () {
   var curOutput = document.getElementById("curOutput");
   var curOut = $("#curOutput").text().slice(0,-1);
