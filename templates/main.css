@@ -51,7 +51,7 @@ section h2 {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: rgba(34, 34, 34, 0.7);
+  background-color: rgba(34, 34, 34, 0.75);
   -webkit-transition: all .35s;
   transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
@@ -115,7 +115,7 @@ section h2 {
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
@@ -123,7 +123,7 @@ section h2 {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.5);
-    background-color: rgba(34, 34, 34, 0.7);
+    background-color: rgba(34, 34, 34, 0.75);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #bbbbbb;
@@ -278,7 +278,6 @@ section.experience .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  /* background-image: url("../img/bg-cta.jpg"); */
   background-position: center;
   background-size: cover;
 }
@@ -393,12 +392,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background: linear-gradient(#000000, #000000); */
 }
 .bg-secondary {
-  background: #0000ff !important;
+  background: #7b4397 !important;
   /* background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
   background: linear-gradient(#000000, #000000); */
 }
 .bg-third {
-  background: #00ff00 !important;
+  background: #dc2430 !important;
   /* background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
   background: linear-gradient(#000000, #000000); */
 }
