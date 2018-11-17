@@ -387,21 +387,20 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #000000 !important;
+  background: #000000;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
   background: linear-gradient(#000000, #000000);
 }
 .bg-secondary {
-  background: #7b4397 !important;
+  background: #7b4397;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#0000ff));
   background: linear-gradient(#ff0000, #0000ff);
 }
 .bg-third {
-  background: #dc2430 !important;
+  background: #dc2430;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
   background: linear-gradient(#ffffff, #00ff00);
 }
-
 
 .testPadding {
   padding: 700px 0px;
