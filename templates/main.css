@@ -115,7 +115,7 @@ section h2 {
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
@@ -123,7 +123,7 @@ section h2 {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.5);
-    background-color: rgba(34, 34, 34, 0.7);
+    background-color: rgba(34, 34, 34, 0.8);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #bbbbbb;
