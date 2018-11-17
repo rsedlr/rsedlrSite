@@ -35,7 +35,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/heatDemo">HeatingDemo</a>
           </li>
-
         </ul>
       </div>
     </div>
