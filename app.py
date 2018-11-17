@@ -76,12 +76,12 @@ def control():
 
 @route('/heatDemo/shopping')
 def ShoppingList():
-  return template('/heatDemo/ShoppingList')
+  return template('ShoppingList')
 
 
 @route('/heatDemo/textrepeater')
 def TextRepeater():
-  return template('/heatDemo/TextRepeater')
+  return template('TextRepeater')
 
 ''' ------------- heat control demo stuff end ------------- '''
 
