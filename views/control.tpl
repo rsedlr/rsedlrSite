@@ -76,7 +76,7 @@
             </div>
             <div class="row">
               <div id="sliderDiv" style="width: 100%">
-                <span class="bmd-form-group is-filled"> 
+                <span class="bmd-form-group is-filled">
                   <input type="range" min="0" max="100" value="50" class="slider" id="myRange"></div>
                 </span>
               <div class="row" style="width: 110%;">
@@ -112,13 +112,13 @@
                 </svg>
               </div>
             </div>
-          </div>  
+          </div>
           <div style="padding: 30px 30px 0px">
             <button type="button" class="btn btn-lg otherbtn my-primary-w" id="SubmitBtn">Submit</button>  <!-- onclick="window.location.href='/function/submit'" -->
           </div>
           <!-- <div class="col-md-4 col-12">
             <button type="button" class="btn btn-lg otherbtn" onclick="window.location.href='/function/onOff'" id="OnOffBtn">ON/OFF</button>
-          </div> -->   
+          </div> -->
         </div>
       </div>
     </div>
