@@ -26,77 +26,64 @@ def index():
   return template('about')
 
 
-''' --------- heat control demo stuff --------- '''
+''' ------------- heat control demo stuff ------------- '''
 curPercent = 50
 key = 'OD{gxX:Q3lmR:Y1}1[(cQ{yE"0[7v`'  # wouldnt be saved as plainText in real deployment
 info = ['user', 'password']
 
 @route('/heatDemo')
 def login():
-  global key
-  username = request.get_cookie("account", secret=key)
-  if username:
-    return redirect('heatDemo/control')
-  else:
-    return redirect('heatDemo/login')
+  # global key
+  # username = request.get_cookie("account", secret=key)
+  # if username:
+  #   return redirect('heatDemo/control')
+  # else:
+  #   return redirect('heatDemo/login')
+  return redirect('heatDemo/control')
 
 
-@route('/heatDemo/login', method=["POST","GET"])
-def do_login():
-  global key
-  user = request.get_cookie("account", secret=key)
-  if not user:
-    username = request.forms.get('username')
-    if username:
-      password = request.forms.get('password')
-      if username == info[0] and password == info[1]:
-        response.set_cookie("account", username, secret=key)
-        return redirect('/heatDemo/control') # template("<p>Welcome {{name}}! You are now logged in.</p>", name=username)
-      else:
-        return template('login', error='Incorrect username or password')
-  return template('login', error=None)
+# @route('/heatDemo/login', method=["POST","GET"])
+# def do_login():
+#   global key
+#   user = request.get_cookie("account", secret=key)
+#   if not user:
+#     username = request.forms.get('username')
+#     if username:
+#       password = request.forms.get('password')
+#       if username == info[0] and password == info[1]:
+#         response.set_cookie("account", username, secret=key)
+#         return redirect('/heatDemo/control') # template("<p>Welcome {{name}}! You are now logged in.</p>", name=username)
+#       else:
+#         return template('login', error='Incorrect username or password')
+#   return template('login', error=None)
 
 
-@route('/heatDemo/backToLogin')
-def backToLogin():
-  if request.get_cookie("account", secret=key):
-    response.set_cookie("account", '', expires=0)
-  redirect('/heatDemo/login')
+# @route('/heatDemo/backToLogin')
+# def backToLogin():
+#   if request.get_cookie("account", secret=key):
+#     response.set_cookie("account", '', expires=0)
+#   redirect('/heatDemo/login')
 
 
 @route('/heatDemo/control')
 def control():
   global key
-  username = request.get_cookie("account", secret=key)
   global curPercent
   heat = 'OFF'
   lights_T, lights_B, fans, pc = 'OFF', 'OFF', 'OFF', 'OFF'  # 'N/A' shows yellow
-  if username:
-    return template('control', heat=heat, curPercent=curPercent, lights_T=lights_T, lights_B=lights_B, fans=fans, pc=pc)
-  else:
-    return redirect('/heatDemo')
+  return template('control', heat=heat, curPercent=curPercent, lights_T=lights_T, lights_B=lights_B, fans=fans, pc=pc)
 
 
 @route('/heatDemo/shopping')
 def ShoppingList():
-  global key
-  username = request.get_cookie("account", secret=key)
-  if username:
-    return template('/heatDemo/ShoppingList')
-  else:
-    return redirect('/heatDemo')
+  return template('/heatDemo/ShoppingList')
 
 
 @route('/heatDemo/textrepeater')
 def TextRepeater():
-  global key
-  username = request.get_cookie("account", secret=key)
-  if username:
-    return template('/heatDemo/TextRepeater')
-  else:
-    return redirect('/heatDemo')
+  return template('/heatDemo/TextRepeater')
 
-''' --------- heat control demo stuff end --------- '''
+''' ------------- heat control demo stuff end ------------- '''
 
 
 if __name__ == '__main__':
