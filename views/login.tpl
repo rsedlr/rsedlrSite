@@ -18,8 +18,8 @@
       </span>
       <button class="btn my-primary-w btn-lg" type="submit" style="margin: 15px auto; display: block;">Sign in</button>
     </form>
-    <h2 style="color: red; text-align: center; margin-top: 30px">Username: user</h2>
-    <h2 style="color: red; text-align: center; margin-top: 10px">Password: password</h2>
+    <h2 style="color: white; text-align: center; margin-top: 30px">Username: user</h2>
+    <h2 style="color: white; text-align: center; margin-top: 10px">Password: password</h2>
     %if error:
       <h1 style="color: red; text-align: center">{{error}}</h1>
     %end
