@@ -42,8 +42,6 @@
       var _str = _this.find('a').attr('href').split('/').pop(); // then compares that with the href of the nav buttons
       if (_str == "/") _str = "";
       // _str !== _urlpath ? _this.removeClass('navActive') : _this.addClass('navActive');
-      console.log('str: ' + _str);
-      console.log('url path: ' + _urlpath);
       if (_str !== _urlpath) { // if they dont match it makes it look normal
         _this.children().removeClass('navActive')
         _this.children().addClass('navWhite')
