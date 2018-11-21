@@ -84,7 +84,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #ff0000 !important;
+  color: #7b4397 !important;
   background-color: transparent;
 }
 
@@ -111,11 +111,11 @@ section h2 {
     color: fade(white, 70%);
   }
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-    color: white;
+    color: #ff0000;
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: white;
+    color: #ff0000;
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
