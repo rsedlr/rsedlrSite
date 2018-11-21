@@ -149,7 +149,7 @@ header.masthead {
   color: white;
   background:  #7b4397;
   background:  -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background:  linear-gradient(to left, #7126d4, #dc2430); /* 6f00ff, 7b4397 */
+  background:  linear-gradient(to left, #7126d4, #da1b28); /* 6f00ff, 7b4397 */
 }
 
 header.masthead .header-content {
