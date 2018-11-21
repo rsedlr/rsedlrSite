@@ -54,7 +54,7 @@
   <section class="download bg-primary text-center testPadding" id="about">
      <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-8 mx-auto" style="margin-top: 50px;">
           <h1>about</h1>
         </div>
       </div>
