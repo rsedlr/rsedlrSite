@@ -126,18 +126,18 @@ section h2 {
     background-color: rgba(34, 34, 34, 0.75);
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #bbbbbb;
+    color: #ffffff;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #ffffff !important;
+    color: #ff0000 !important;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-    color: #bbbbbb;
+    color: #ffffff;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #ffffff !important;
+    color: #ff0000 !important;
   }
 }
 
