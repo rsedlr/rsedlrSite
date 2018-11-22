@@ -50,9 +50,10 @@ $(document).ready(function () {
     // console.log('/submit/' + heat + '/' + per);
     postVal("heat");
   }
-  function submitURL(url) {
-    // fetch(new Request(url), {method: 'PUT'});
-  }
+  // function submitURL(url) {
+  //   fetch(new Request(url), {method: 'PUT'});
+  // }
+  
   // function changeVal(val) {
   //   s.value = val;
   //   output.innerHTML = val + '%';
@@ -115,19 +116,19 @@ $(document).ready(function () {
     submitHeat($("#value").text().slice(0,-1));
   });
   $('#PC_button').click(function () {
-    submitURL('/relayControl/pc');
+    // submitURL('/relayControl/pc');
     postVal("pc");
   });
   $('#T-lightsButton').click(function () {
-    submitURL('/relayControl/lights_T');
+    // submitURL('/relayControl/lights_T');
     postVal("lights_T");
   });
   $('#B-lightsButton').click(function () {
-    submitURL('/relayControl/lights_B');
+    // submitURL('/relayControl/lights_B');
     postVal("lights_B");
   });
   $('#fansButton').click(function () {
-    submitURL('/relayControl/fans');
+    // submitURL('/relayControl/fans');
     postVal("fans");
   });
   s.addEventListener("input", function () {
