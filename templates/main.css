@@ -147,8 +147,8 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background:  #7126d4;
-  background:  -webkit-gradient(linear, right top, left top, from(#7126d4), to(#e40d1b));
+  background:  #7e3ad8;
+  background:  -webkit-gradient(linear, right top, left top, from(#7e3ad8), to(#e40d1b));
   background:  linear-gradient(to left, #7e3ad8, #df1e2b); /* df1e2b ; 6f00ff, 7b4397 */
 }
 
