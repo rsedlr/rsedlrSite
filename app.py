@@ -28,12 +28,11 @@ def index():
 
 ''' ------------- heat control demo stuff ------------- '''
 curPercent = 50
-key = 'OD{gxX:Q3lmR:Y1}1[(cQ{yE"0[7v`'  # wouldnt be saved as plainText in real deployment
-info = ['user', 'password']
 
 @route('/heatDemo')
 def login():
   return redirect('heatDemo/control')
+
 
 @route('/values/<value>', method='POST')
 def postData(value):
@@ -50,6 +49,7 @@ def postData(value):
     return 'ON'  # gotta do somin bout that lol
   else:
     print('nothing posted')
+
 
 @route('/relayControl/<relay>', method='PUT')
 def relayControl(relay):
@@ -88,7 +88,6 @@ def submit(status, temp):
 
 @route('/heatDemo/control')
 def control():
-  global key
   global curPercent
   heat = 'OFF'
   lights_T, lights_B, fans, pc = 'OFF', 'OFF', 'OFF', 'OFF'  # 'N/A' shows yellow
