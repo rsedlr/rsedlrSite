@@ -58,11 +58,11 @@ $(document).ready(function () {
     document.getElementById('fans_circle').style.backgroundColor = (fans == 'ON') ? 'rgb(0, 255, 0)' : (fans == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
     curCircle(parseInt($("#curOutput").text().slice(0,-1)));
   }
-  // function submitHeat(per) {
-  //   // fetch(new Request('/submit/' + heat + '/' + per), {method: 'PUT'});
-  //   // console.log('/submit/' + heat + '/' + per);
-  //   postVal("heat");
-  // }
+  function submitHeat(per) {
+    // fetch(new Request('/submit/' + heat + '/' + per), {method: 'PUT'});
+    // console.log('/submit/' + heat + '/' + per);
+    postVal("heat");
+  }
   function submitURL(url) {
     if (valueDict[value].text() == 'ON') {
       valueDict[value].text('OFF');
