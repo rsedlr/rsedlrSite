@@ -31,6 +31,8 @@ $(document).ready(function () {
     // };
     // xhttp.open("POST", `/values/${value}`, true);
     // xhttp.send();
+    
+    updateAllCircles();
   }
   function updateAllCircles() {
     var heat = $("#StatusVal").text();
@@ -48,12 +50,12 @@ $(document).ready(function () {
   function submitHeat(per) {
     // fetch(new Request('/submit/' + heat + '/' + per), {method: 'PUT'});
     // console.log('/submit/' + heat + '/' + per);
-    postVal("heat");
+    postVal(per);
   }
   // function submitURL(url) {
   //   fetch(new Request(url), {method: 'PUT'});
   // }
-  
+
   // function changeVal(val) {
   //   s.value = val;
   //   output.innerHTML = val + '%';
