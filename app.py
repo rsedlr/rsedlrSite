@@ -33,30 +33,51 @@ info = ['user', 'password']
 
 @route('/heatDemo')
 def login():
-  # global key
-  # username = request.get_cookie("account", secret=key)
-  # if username:
-  #   return redirect('heatDemo/control')
-  # else:
-  #   return redirect('heatDemo/login')
   return redirect('heatDemo/control')
 
+@route('/values/<value>', method='POST')
+def postData(value):
+  if value == 'heat':
+    global curPercent
+    return 'OFF'
+  elif value == 'lights_B':
+    return 'OFF' 
+  elif value == 'lights_T':
+    return 'OFF' 
+  elif value == 'fans':
+    return 'OFF' 
+  elif value == 'pc':
+    return 'ON'  # gotta do somin bout that lol
+  else:
+    print('nothing posted')
 
-# @route('/heatDemo/login', method=["POST","GET"])
-# def do_login():
-#   global key
-#   user = request.get_cookie("account", secret=key)
-#   if not user:
-#     username = request.forms.get('username')
-#     if username:
-#       password = request.forms.get('password')
-#       if username == info[0] and password == info[1]:
-#         response.set_cookie("account", username, secret=key)
-#         return redirect('/heatDemo/control') # template("<p>Welcome {{name}}! You are now logged in.</p>", name=username)
-#       else:
-#         return template('login', error='Incorrect username or password')
-#   return template('login', error=None)
+@route('/relayControl/<relay>', method='PUT')
+def relayControl(relay):
+  try:
+    if relay == 'pc':
+      pass
+    elif relay == 'lights_B':
+      pass
+    elif relay == 'lights_T':
+      pass
+    elif relay == 'fans':
+      pass
+    else:
+      print('no gpio actions')
+  except:
+    print(sys.exc_info()[0])
 
+
+@route('/submit/<status>/<temp>', method='PUT')
+def submit(status, temp):
+  if status == 'ON':
+    print('------- heating turned on --------')
+  else:
+    print('------- heating turned off --------') 
+  global curPercent
+  curPercent = temp
+  # os.system('sudo printf "%s, %s" >> ../val.txt' %(status,temp))
+  # serial.Serial('/dev/ttyACM0', 9600).write('%s' %(temp))
 
 # @route('/heatDemo/backToLogin')
 # def backToLogin():
@@ -82,6 +103,7 @@ def ShoppingList():
 @route('/heatDemo/textrepeater')
 def TextRepeater():
   return template('TextRepeater')
+  
 
 ''' ------------- heat control demo stuff end ------------- '''
 

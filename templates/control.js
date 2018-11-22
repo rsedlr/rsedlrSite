@@ -16,23 +16,21 @@ $(document).ready(function () {
   curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
 
   function postVal(value) {
-    // var xhttp = new XMLHttpRequest();
-    // xhttp.onreadystatechange = function() {
-    //   if (this.readyState == 4 && this.status == 200) {
-    //     if (value == 'heat') {
-    //       responseVal = this.responseText.split('-');
-    //       valueDict['heat'].text(responseVal[0]);
-    //       valueDict['curPercent'].text(responseVal[1] + "%");
-    //     } else {
-    //       valueDict[value].text(this.responseText);
-    //     }
-    //     updateAllCircles();
-    //   }
-    // };
-    // xhttp.open("POST", `/values/${value}`, true);
-    // xhttp.send();
-    
-    updateAllCircles();
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        if (value == 'heat') {
+          responseVal = this.responseText.split('-');
+          valueDict['heat'].text(responseVal[0]);
+          valueDict['curPercent'].text(responseVal[1] + "%");
+        } else {
+          valueDict[value].text(this.responseText);
+        }
+        updateAllCircles();
+      }
+    };
+    xhttp.open("POST", `/values/${value}`, true);
+    xhttp.send();
   }
   function updateAllCircles() {
     var heat = $("#StatusVal").text();
@@ -48,14 +46,13 @@ $(document).ready(function () {
     curCircle(parseInt($("#curOutput").text().slice(0,-1)));
   }
   function submitHeat(per) {
-    // fetch(new Request('/submit/' + heat + '/' + per), {method: 'PUT'});
-    // console.log('/submit/' + heat + '/' + per);
-    postVal(per);
+    fetch(new Request('/submit/' + heat + '/' + per), {method: 'PUT'});
+    console.log('/submit/' + heat + '/' + per);
+    postVal("heat");
   }
-  // function submitURL(url) {
-  //   fetch(new Request(url), {method: 'PUT'});
-  // }
-
+  function submitURL(url) {
+    fetch(new Request(url), {method: 'PUT'});
+  }
   // function changeVal(val) {
   //   s.value = val;
   //   output.innerHTML = val + '%';
@@ -118,19 +115,19 @@ $(document).ready(function () {
     submitHeat($("#value").text().slice(0,-1));
   });
   $('#PC_button').click(function () {
-    // submitURL('/relayControl/pc');
+    submitURL('/relayControl/pc');
     postVal("pc");
   });
   $('#T-lightsButton').click(function () {
-    // submitURL('/relayControl/lights_T');
+    submitURL('/relayControl/lights_T');
     postVal("lights_T");
   });
   $('#B-lightsButton').click(function () {
-    // submitURL('/relayControl/lights_B');
+    submitURL('/relayControl/lights_B');
     postVal("lights_B");
   });
   $('#fansButton').click(function () {
-    // submitURL('/relayControl/fans');
+    submitURL('/relayControl/fans');
     postVal("fans");
   });
   s.addEventListener("input", function () {
