@@ -26,6 +26,7 @@ $(document).ready(function () {
           console.log(responseVal[0] + '-' + responseVal[1])
         } else {
           valueDict[value].text(this.responseText);
+          console.log(this.responseText)
         }
         updateAllCircles();
       }
