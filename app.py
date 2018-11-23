@@ -28,8 +28,8 @@ def index():
 
 ''' ------------- heat control demo stuff ------------- '''
 curPercent = 50
-key = 'OD{gxX:Q3lmR:Y1}1[(cQ{yE"0[7v`'  # wouldnt be saved as plainText in real deployment
-info = ['user', 'password']
+# key = 'OD{gxX:Q3lmR:Y1}1[(cQ{yE"0[7v`'  # wouldnt be saved as plainText in real deployment
+# info = ['user', 'password']
 
 @route('/heatDemo')
 def login():
