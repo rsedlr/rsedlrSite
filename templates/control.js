@@ -23,6 +23,7 @@ $(document).ready(function () {
           responseVal = this.responseText.split('-');
           valueDict['heat'].text(responseVal[0]);
           valueDict['curPercent'].text(responseVal[1] + "%");
+          console.log(responseVal[0] + '-' + responseVal[1])
         } else {
           valueDict[value].text(this.responseText);
         }
