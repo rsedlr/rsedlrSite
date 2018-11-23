@@ -27,6 +27,7 @@ def index():
 
 
 ''' ------------- heat control demo stuff ------------- '''
+
 curPercent = 50
 
 @route('/heatDemo')
@@ -38,7 +39,7 @@ def login():
 def postData(value):
   if value == 'heat':
     global curPercent
-    return 'OFF'
+    return 'OFF', '-', curPercent
   elif value == 'lights_B':
     return 'OFF' 
   elif value == 'lights_T':
