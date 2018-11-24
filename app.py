@@ -28,8 +28,8 @@ def index():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent':50, 'heat':0, 'lights_B':0, 'lights_T':0, 'fans':0, 'pc': bool 0}
-onOff = ['OFF','ON']
+valuesDict = {'curPercent':50, 'heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False}
+onOff = {False: 'OFF', True: 'ON'}
 
 
 @route('/heatDemo')
@@ -59,7 +59,7 @@ def relayControl(relay):
   global valuesDict
   try:
     if relay == 'pc':
-      valuesDict['pc'] = !valuesDict['pc']
+      valuesDict['pc'] = not valuesDict['pc']
     elif relay == 'lights_B':
       pass
     elif relay == 'lights_T':
