@@ -90,7 +90,7 @@ def submit(status, temp):
 @route('/heatDemo/control')
 def control():
   global valuesDict
-  return template('control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'], lights_T=valuesDict['lights_T'], lights_B=valuesDict['lights_B'], fans=valuesDict['fans'], pc=valuesDict['pc'])
+  return template('control', heat=onOff[valuesDict['heat']], curPercent=onOff[valuesDict['curPercent']], lights_T=onOff[valuesDict['lights_T']], lights_B=onOff[valuesDict['lights_B']], fans=onOff[valuesDict['fans']], pc=onOff[valuesDict['pc']])
 
 
 @route('/heatDemo/shopping')
