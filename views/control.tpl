@@ -129,7 +129,7 @@
         <button type="button" class="btn btn-lg mainbtn my-primary-w" style="margin: 0px; width: 200px;" id="PC_button">PC power</button>
         <!-- <h1 style="padding: 5px 20px; color: white;"></h1> -->
         <div id="PC_circle" class="circle smallCircle" style="background: rgb(255, 0, 0); float: right; margin: -5px 2px auto auto;">
-          <span id="PC_status" class="disNone">{{pc}}</span>
+          <span id="PC_status" class="disNone">{{pc}}%</span>
         </div>
       </div>
       <div class="row boxRow">
