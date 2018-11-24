@@ -28,7 +28,7 @@ def index():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-curPercent = 50
+valuesDict = {'curPercent':50, 'heat':'OFF', 'lights_B':'OFF', 'lights_T':'OFF', 'fans':'OFF', 'pc':'OFF'}
 
 @route('/heatDemo')
 def login():
@@ -37,17 +37,17 @@ def login():
 
 @route('/values/<value>', method='POST')
 def postData(value):
+  global valuesDict
   if value == 'heat':
-    global curPercent
-    return 'OFF', '-', curPercent
+    return valuesDict['heat'], '-', valuesDict['curPercent']
   elif value == 'lights_B':
-    return 'OFF' 
+    return valuesDict['lights_B']
   elif value == 'lights_T':
-    return 'OFF' 
+    return valuesDict['lights_T']
   elif value == 'fans':
-    return 'OFF' 
+    return valuesDict['fans']
   elif value == 'pc':
-    return 'ON'  # gotta do somin bout that lol
+    return valuesDict['PC']
   else:
     print('nothing posted')
 
@@ -71,12 +71,9 @@ def relayControl(relay):
 
 @route('/submit/<status>/<temp>', method='PUT')
 def submit(status, temp):
-  if status == 'ON':
-    print('------- heating turned on --------')
-  else:
-    print('------- heating turned off --------') 
-  global curPercent
-  curPercent = temp
+  global valuesDict
+  valuesDict['heat'] = status
+  valuesDict['curPercent'] = temp
   # os.system('sudo printf "%s, %s" >> ../val.txt' %(status,temp))
   # serial.Serial('/dev/ttyACM0', 9600).write('%s' %(temp))
 
@@ -89,10 +86,8 @@ def submit(status, temp):
 
 @route('/heatDemo/control')
 def control():
-  global curPercent
-  heat = 'OFF'
-  lights_T, lights_B, fans, pc = 'OFF', 'OFF', 'OFF', 'OFF'  # 'N/A' shows yellow
-  return template('control', heat=heat, curPercent=curPercent, lights_T=lights_T, lights_B=lights_B, fans=fans, pc=pc)
+  global valuesDict
+  return template('control', heat=valuesDict['heat'], curPercent=valuesDict['curPercent'], lights_T=valuesDict['lights_T'], lights_B=valuesDict['lights_B'], fans=valuesDict['fans'], pc=valuesDict['pc'])
 
 
 @route('/heatDemo/shopping')
