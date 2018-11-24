@@ -28,7 +28,9 @@ def index():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent':50, 'heat':'OFF', 'lights_B':'OFF', 'lights_T':'OFF', 'fans':'OFF', 'pc':'OFF'}
+valuesDict = {'curPercent':50, 'heat':0, 'lights_B':0, 'lights_T':0, 'fans':0, 'pc':0}
+onOff = ['OFF','ON']
+
 
 @route('/heatDemo')
 def login():
@@ -54,9 +56,10 @@ def postData(value):
 
 @route('/relayControl/<relay>', method='PUT')
 def relayControl(relay):
+  global valuesDict
   try:
     if relay == 'pc':
-      pass
+      valuesDict['pc'] = !valuesDict['pc']
     elif relay == 'lights_B':
       pass
     elif relay == 'lights_T':
