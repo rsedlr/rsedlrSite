@@ -41,6 +41,7 @@ def login():
 def postData(value):
   global valuesDict
   if value == 'heat':
+    print(onOff[valuesDict['heat']])
     return onOff[valuesDict['heat']], '-', valuesDict['curPercent']
   elif value == 'lights_B':
     return valuesDict['lights_B']
