@@ -41,7 +41,7 @@
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-lg-7 my-auto">
+        <div class="col-lg-6 my-auto">
           <div class="header-content mx-auto">
             <h1 style="font-size: 6.1rem; font-weight: 800;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 3px">personal portfolio</h2>
