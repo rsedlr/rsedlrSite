@@ -41,7 +41,6 @@ def login():
 def postData(value):
   global valuesDict
   if value == 'heat':
-    print(onOff[valuesDict['heat']])
     return onOff[valuesDict['heat']], '-', valuesDict['curPercent']
   elif value == 'lights_B':
     return valuesDict['lights_B']
@@ -91,7 +90,7 @@ def submit(status, temp):
 @route('/heatDemo/control')
 def control():
   global valuesDict
-  return template('control', heat=valuesDict['heat'], curPercent=valuesDict['curPercent'], lights_T=valuesDict['lights_T'], lights_B=valuesDict['lights_B'], fans=valuesDict['fans'], pc=valuesDict['pc'])
+  return template('control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'], lights_T=valuesDict['lights_T'], lights_B=valuesDict['lights_B'], fans=valuesDict['fans'], pc=valuesDict['pc'])
 
 
 @route('/heatDemo/shopping')
