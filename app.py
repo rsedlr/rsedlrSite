@@ -41,7 +41,6 @@ def login():
 def postData(value):
   global valuesDict
   if value == 'heat':
-    print(valuesDict['heat'])
     return onOff[valuesDict['heat']], '-', valuesDict['curPercent']
   elif value == 'lights_B':
     return valuesDict['lights_B']
@@ -62,11 +61,11 @@ def relayControl(relay):
     if relay == 'pc':
       valuesDict['pc'] = not valuesDict['pc']
     elif relay == 'lights_B':
-      pass
+      valuesDict['lights_B'] = not valuesDict['lights_B']
     elif relay == 'lights_T':
-      pass
+      valuesDict['lights_T'] = not valuesDict['lights_T']
     elif relay == 'fans':
-      pass
+      valuesDict['fans'] = not valuesDict['fans']
     else:
       print('no gpio actions')
   except:
