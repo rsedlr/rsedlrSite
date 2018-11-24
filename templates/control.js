@@ -38,7 +38,7 @@ $(document).ready(function () {
     var lights_T = $("#T-lights_status").text();
     var lights_B = $("#B-lights_status").text();
     var fans = $("#fans_status").text();
-    console.log(pc);
+    console.log($("#PC_status").text());
     document.getElementById('StatCircle').style.backgroundColor = (heat == 'ON') ? 'rgb(0, 255, 0)' : (heat == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
     document.getElementById('PC_circle').style.backgroundColor = (pc == 'ON') ? 'rgb(0, 255, 0)' : (pc == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
     document.getElementById('T-lights_circle').style.backgroundColor = (lights_T == 'ON') ? 'rgb(0, 255, 0)' : (lights_T == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
