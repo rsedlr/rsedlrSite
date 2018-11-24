@@ -43,13 +43,13 @@ def postData(value):
   if value == 'heat':
     return onOff[valuesDict['heat']], '-', valuesDict['curPercent']
   elif value == 'lights_B':
-    return valuesDict['lights_B']
+    return onOff[valuesDict['lights_B']]
   elif value == 'lights_T':
-    return valuesDict['lights_T']
+    return onOff[valuesDict['lights_T']]
   elif value == 'fans':
-    return valuesDict['fans']
+    return onOff[valuesDict['fans']]
   elif value == 'pc':
-    return valuesDict['pc']
+    return onOff[valuesDict['pc']]
   else:
     print('nothing posted')
 
