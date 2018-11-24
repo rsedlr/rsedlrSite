@@ -28,7 +28,7 @@ def index():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent':50, 'heat':0, 'lights_B':0, 'lights_T':0, 'fans':0, 'pc':0}
+valuesDict = {'curPercent':50, 'heat':0, 'lights_B':0, 'lights_T':0, 'fans':0, 'pc': bool 0}
 onOff = ['OFF','ON']
 
 
