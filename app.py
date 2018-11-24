@@ -76,7 +76,7 @@ def relayControl(relay):
 @route('/submit/<status>/<temp>', method='PUT')
 def submit(status, temp):
   global valuesDict
-  valuesDict['heat'] = status
+  valuesDict['heat'] = True if status == 'ON' else False
   valuesDict['curPercent'] = temp
   # os.system('sudo printf "%s, %s" >> ../val.txt' %(status,temp))
   # serial.Serial('/dev/ttyACM0', 9600).write('%s' %(temp))
