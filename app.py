@@ -47,7 +47,7 @@ def postData(value):
   elif value == 'fans':
     return valuesDict['fans']
   elif value == 'pc':
-    return valuesDict['PC']
+    return valuesDict['pc']
   else:
     print('nothing posted')
 
