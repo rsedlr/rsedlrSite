@@ -79,21 +79,21 @@
   shoppingFill = document.getElementById('shoppingFill');
   repeatFill = document.getElementById('repeatFill');
   if (_urlpath == 'control') {
-    controlFill.style.display = inline;
-    shoppingFill.style.display = none;
-    repeatFill.style.display = none;
+    controlFill.style.display = 'inline';
+    shoppingFill.style.display = 'none';
+    repeatFill.style.display = 'none';
   } else if (_urlpath == 'shopping') {
-    controlFill.style.display = none;
-    shoppingFill.style.display = inline;
-    repeatFill.style.display = none;
+    controlFill.style.display = 'none';
+    shoppingFill.style.display = 'inline';
+    repeatFill.style.display = 'none';
   } else if (_urlpath == 'textrepeater') {
-    controlFill.style.display = none;
-    shoppingFill.style.display = none;
-    repeatFill.style.display = inline;
+    controlFill.style.display = 'none';
+    shoppingFill.style.display = 'none';
+    repeatFill.style.display = 'inline';
   } else {
-    controlFill.style.display = none;
-    shoppingFill.style.display = none;
-    repeatFill.style.display = none;
+    controlFill.style.display = 'none';
+    shoppingFill.style.display = 'none';
+    repeatFill.style.display = 'none';
   }
   $('nav li').each(function(){
     var _this = $(this);
