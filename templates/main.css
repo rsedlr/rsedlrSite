@@ -411,7 +411,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .mainNav {
-  font-size: 30px
+  font-size: 30px !important;
 }
 
 .text-primary {
