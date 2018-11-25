@@ -20,17 +20,17 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger bolder" href="#about">about</a>
+            <a class="nav-link js-scroll-trigger bolder mainNav" href="#about">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger bolder" href="#experience">experience</a>
+            <a class="nav-link js-scroll-trigger bolder mainNav" href="#experience">experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger bolder" href="#other">anotherTab</a>
+            <a class="nav-link js-scroll-trigger bolder mainNav" href="#other">anotherTab</a>
           </li>
           <!-- temporary until main page is sorted -->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger bolder" href="/heatDemo">HeatingDemo</a>
+            <a class="nav-link js-scroll-trigger bolder mainNav" href="/heatDemo">HeatingDemo</a>
           </li>
         </ul>
       </div>
