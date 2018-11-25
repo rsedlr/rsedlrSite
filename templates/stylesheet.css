@@ -130,9 +130,13 @@ body {
 .blue {
   color: blue !important;
 }
+.greyText {
+  color: #aaaaaa;
+}
 .disNone {
   display: none;
 }
+
 .mAuto {
   margin-right: auto;
   margin-left: auto;
