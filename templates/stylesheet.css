@@ -139,6 +139,9 @@ body {
 .white {
   color: white;
 }
+.bold {
+  font-weight: bold;
+}
 .disNone {
   display: none;
 }
