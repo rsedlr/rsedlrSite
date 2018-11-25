@@ -165,7 +165,7 @@ body {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .remMarginSm {
     margin: auto 5px !important;
   }
