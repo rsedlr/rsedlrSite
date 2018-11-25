@@ -136,6 +136,9 @@ body {
 .black {
   color: black;
 }
+.white {
+  color: white;
+}
 .disNone {
   display: none;
 }
