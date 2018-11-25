@@ -142,6 +142,9 @@ body {
 .bold {
   font-weight: bold;
 }
+.bolder {
+  font-weight: bolder;
+}
 .disNone {
   display: none;
 }
