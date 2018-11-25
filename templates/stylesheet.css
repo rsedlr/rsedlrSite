@@ -164,9 +164,10 @@ body {
   border-color: red; 
   color: white;
 }
+
 @media (min-width: 768px) {
   .remMarginSm {
-    margin: auto 5px;
+    margin: auto 5px !important;
   }
 }
 .form-control {
