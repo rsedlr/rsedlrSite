@@ -130,8 +130,11 @@ body {
 .blue {
   color: blue !important;
 }
-.greyText {
+.grey {
   color: #aaaaaa;
+}
+.black {
+  color: black;
 }
 .disNone {
   display: none;
