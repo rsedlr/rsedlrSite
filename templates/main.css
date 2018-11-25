@@ -406,6 +406,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 600px 0px;
 }
 
+.bolder {
+  font-weight: 600 !important;
+}
 
 .text-primary {
   color: #000000;
