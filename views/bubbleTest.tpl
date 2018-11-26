@@ -15,7 +15,7 @@
 
   mouseResponseThreshold = 50;
   friction = 0.8;
-  rotationForce = 0.03;
+  rotationForce = 0.3;
 
   var myName = "Testing";
   letterColors = [red,blue];
