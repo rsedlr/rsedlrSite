@@ -18,7 +18,7 @@
   rotationForce = 0.03;
 
   var myName = "Testing";
-  letterColors = [white];
+  letterColors = [red,blue];
   bubbleShape = "circle";
 
   drawName(myName, letterColors);
