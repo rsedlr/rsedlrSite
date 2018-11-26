@@ -12,7 +12,7 @@
   var blue = [196, 77, 55];
   var purple = [280, 50, 60];
 
-  var myName = "Test";
+  var myName = "Testing, testing";
   letterColors = [red, purple, green];
   bubbleShape = "circle";
 
