@@ -1,64 +1,4 @@
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<style>
-  #text {
-    font-size: 6em;
-    line-height: 1em;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  #text:hover {
-    cursor: default;
-  }
-    
-  .wrapper {
-    display: inline-block;
-    top: -900px;
-    position: relative;
-    height: 150px; /* default */
-    width: 90px; /* default */
-    transition: ease 0.3s all;
-  }
-    
-  span {
-    position: absolute;
-    top:0;
-    right:0;
-    transition: ease 0.3s all;
-  }
-  span.letter-2 {
-    color: rgba(0, 0, 255, 0.5);
-  }
-
-  span.letter-1 {
-    color: rgba(255, 0, 0, 0.5);
-    z-index: 1;
-  }
-      
-  span:hover {
-    top: -3px;
-    right: -3px;
-  }
-  span.letter-2:hover {
-    top: 3px;
-    right: 3px;
-  }
-      
-  span.space {
-    padding: 0;
-    min-width: 30px;
-    display: inline-block;
-  } 
-</style>
-<body>
-  <div id="text">
-  <!-- content generated with JS -->  
-  </div>
-</body>
-<script>
-const text = 'hover me';
+const text = 'Reiss Edler';
 const createLetterArray = (string) => {
   return string.split('');
 }
@@ -109,4 +49,3 @@ outputLayers.then(() => {
       }, time);
     });
 });
-</script>
