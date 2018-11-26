@@ -449,7 +449,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 
 /* hover main text */
-.mainText {
+#mainText {
   font-size: 6em;
   line-height: 1em;
   text-align: center;
@@ -457,7 +457,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   top: 50%;
   transform: translateY(-50%);
 }
-.mainText:hover {
+#mainText:hover {
   cursor: default;
 }
   
