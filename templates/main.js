@@ -1,9 +1,11 @@
+
 $(document).ready(function () {
   const text = 'Reiss Edler';
   const createLetterArray = (string) => {
     return string.split('');
   }
 
+  // split the array into characters and generate the html
   const createLetterLayers = (array) => {
     return array.map((letter) => {
       let layer = '';
