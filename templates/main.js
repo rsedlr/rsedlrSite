@@ -28,7 +28,7 @@ const createLetterContainers = (array) => {
 }
 
 const outputLayers = new Promise(function(resolve, reject) {
-      document.getElementById('text').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
+      document.getElementById('mainText').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
       resolve();
 });
 
