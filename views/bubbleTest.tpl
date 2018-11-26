@@ -2,7 +2,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
 <body>
-  <canvas id="myCanvas" height="600" width="1800"></canvas>
+  <canvas id="myCanvas" height="600" width="2500"></canvas>
   <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
 </body>
 <script>
