@@ -480,21 +480,21 @@ span {
   transition: ease 0.3s all;
 }
 span.letter-2 {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 1);
 }
 
 span.letter-1 {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   z-index: 1;
 }
     
 span:hover {
-  top: -3px;
-  right: -3px;
+  top: -6px;
+  right: -6px;
 }
 span.letter-2:hover {
-  top: 3px;
-  right: 3px;
+  top: 6px;
+  right: 6px;
 }
     
 span.space {
