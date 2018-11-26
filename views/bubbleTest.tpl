@@ -1,11 +1,10 @@
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
 <body>
   <canvas id="myCanvas"></canvas>
   <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
-  <script type="text/javascript" src="main.js"></script>
-  <h3> move cursor over the name </h3>
+</body>
 <script>
   var red = [0, 100, 63];
   var orange = [40, 100, 60];
