@@ -21,6 +21,10 @@ def main():
 def index():
   return template('oldMain')
 
+@route('/blah')
+def adsgds():
+  return template('bubbleTest')
+
 @route('/about')
 def index():
   return template('about')
