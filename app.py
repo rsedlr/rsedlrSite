@@ -21,9 +21,9 @@ def main():
 def index():
   return template('oldMain')
 
-@route('/blah')
-def adsgds():
-  return template('bubbleTest')
+@route('/test')
+def test():
+  return template('test')
 
 @route('/about')
 def index():
