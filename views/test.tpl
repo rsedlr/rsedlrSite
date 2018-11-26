@@ -2,7 +2,6 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
 #text {
-  font-family: $primary_font;
   font-size: 6em;
   line-height: 1em;
   text-align: center;
@@ -29,11 +28,11 @@
       transition: ease 0.3s all;
       
       &.letter-2 {
-        color: $first_color;
+        color: rgba(0, 0, 255, 0.5);
       }
 
       &.letter-1 {
-        color: $second_color;
+        color: rgba(255, 0, 0, 0.5);
         z-index: 1;
         
         &:hover {
