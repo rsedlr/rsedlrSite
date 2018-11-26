@@ -11,9 +11,14 @@
   var green = [75, 100, 40];
   var blue = [196, 77, 55];
   var purple = [280, 50, 60];
+  var white = [255, 255, 255]
+
+  mouseResponseThreshold = 50;
+  friction = 0.8;
+  rotationForce = 0.03;
 
   var myName = "Testing";
-  letterColors = [red, purple, green];
+  letterColors = [white];
   bubbleShape = "circle";
 
   drawName(myName, letterColors);
