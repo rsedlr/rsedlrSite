@@ -2,6 +2,7 @@
 $(document).ready(function () {
   const TEXT1 = 'Reiss Edler';
   const TEXT12 = 'personal portfolio';
+  
   const createLetterArray = (string) => {
     return string.split('');
   }

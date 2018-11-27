@@ -478,6 +478,7 @@ span {
   top:0;
   right:0;
   transition: ease 0.3s all;
+  background-clip: padding-box;
 }
 span.letter-2 {
   color: rgba(0, 0, 0, 1);
