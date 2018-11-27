@@ -472,6 +472,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   width: 90px; /* default */
   transition: ease 0.3s all;
 }
+.wrapper:after {
+  content:'';
+  position:absolute;
+  top:-10px; bottom:-10px; 
+  left:-10px; right:-10px; 
+}
   
 span {
   position: absolute;
@@ -483,12 +489,10 @@ span {
 span.letter-2 {
   color: rgba(0, 0, 0, 1);
 }
-
 span.letter-1 {
   color: rgba(255, 255, 255, 1);
   z-index: 1;
-}
-    
+} 
 span:hover {
   top: -8px;
   right: -8px;
@@ -497,7 +501,6 @@ span.letter-2:hover {
   top: 8px;
   right: 8px;
 }
-    
 span.space {
   padding: 0;
   min-width: 30px;
