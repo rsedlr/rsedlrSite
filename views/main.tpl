@@ -44,7 +44,7 @@
         <div class="col-lg-12 my-auto mlBig">
           <div class="header-content mr-auto hideSmall" id="mainText"><!-- text added through js --></div>
           <div class="header-content mr-auto hideSmall" id="secText"><!-- text added through js --></div>
-          <div class="showSmall">
+          <div class="showSmall my-auto">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
           </div>
