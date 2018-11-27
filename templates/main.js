@@ -1,9 +1,12 @@
 
 $(document).ready(function () {
   const phrases = ['Reiss Edler', 'personal portfolio'];
-
-  for (text in phrases) {
-    console.log(text);
+  var phrasesLen = phrases.length;
+  
+  for (var i = 0; i < phrasesLen; i++) {
+    alert(phrases[i]);
+  
+    console.log(phrases[i]);
     const createLetterArray = (string) => {
       return string.split('');
     }
@@ -32,7 +35,7 @@ $(document).ready(function () {
     }
 
     const outputLayers = new Promise(function(resolve, reject) {
-      document.getElementById('mainText').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
+      document.getElementById('mainText').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(phrases[i]))).join('');
       resolve();
     });
 
