@@ -474,7 +474,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 .wrapper:after {
   content:'';
-  position:absolute;
   top:-10px; bottom:-10px; 
   left:-10px; right:-10px; 
 }
@@ -506,5 +505,10 @@ span.space {
   min-width: 30px;
   display: inline-block;
 } 
+span:after {
+  content:'';
+  top:-10px; bottom:-10px; 
+  left:-10px; right:-10px; 
+}
 /* hover text end */
 
