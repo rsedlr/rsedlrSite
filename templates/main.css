@@ -489,12 +489,12 @@ span.letter-1 {
 }
     
 span:hover {
-  top: -6px;
-  right: -6px;
+  top: -8px;
+  right: -8px;
 }
 span.letter-2:hover {
-  top: 6px;
-  right: 6px;
+  top: 8px;
+  right: 8px;
 }
     
 span.space {

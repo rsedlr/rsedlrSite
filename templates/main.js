@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
-  const text = 'Reiss Edler';
+  const TEXT1 = 'Reiss Edler';
+  const TEXT12 = 'personal portfolio';
   const createLetterArray = (string) => {
     return string.split('');
   }
@@ -29,7 +30,7 @@ $(document).ready(function () {
   }
 
   const outputLayers = new Promise(function(resolve, reject) {
-    document.getElementById('mainText').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
+    document.getElementById('mainText').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(TEXT1))).join('');
     resolve();
   });
 
