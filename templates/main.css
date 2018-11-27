@@ -102,45 +102,6 @@ section h2 {
   color: #000000;
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    border-color: transparent;
-    background-color: transparent;
-  }
-  #mainNav .navbar-brand {
-    color: fade(white, 70%);
-  }
-  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-    color: #ff0000;
-  }
-  #mainNav .navbar-nav > li > a,
-  #mainNav .navbar-nav > li > a:focus {
-    color: #ffffff;
-  }
-  #mainNav .navbar-nav > li > a:hover,
-  #mainNav .navbar-nav > li > a:focus:hover {
-    color: black;
-  }
-  #mainNav.navbar-shrink {
-    border-color: rgba(34, 34, 34, 0.5);
-    background-color: rgba(34, 34, 34, 0.75);
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #ffffff;
-  }
-  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #ff0000 !important;
-  }
-  #mainNav.navbar-shrink .navbar-nav > li > a,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-    color: #ffffff;
-  }
-  #mainNav.navbar-shrink .navbar-nav > li > a:hover,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #ff0000 !important;
-  }
-}
-
 header.masthead {
   position: relative;
   width: 100%;
@@ -172,25 +133,6 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
-@media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 775px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  header.masthead .header-content {
-    margin-bottom: 0;
-    text-align: left;
-  }
-  header.masthead .header-content h1 {
-    font-size: 50px;
-  }
-  header.masthead .device-container {
-    max-width: 325px;
-  }
-}
-
 section.about {
   position: relative;
   padding: 150px 0;
@@ -214,19 +156,6 @@ section.about .badges .badge-link img {
   height: 60px;
 }
 
-@media (min-width: 768px) {
-  section.about .badges .badge-link {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  section.about h2 {
-    font-size: 70px;
-  }
-}
-
 section.experience .section-heading {
   margin-bottom: 100px;
 }
@@ -247,12 +176,6 @@ section.experience .feature-item {
 
 section.experience .device-container {
   margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-  section.experience .device-container {
-    margin-bottom: 0;
-  }
 }
 
 section.experience .feature-item {
@@ -447,6 +370,83 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 15px 45px;
 }
 
+@media (min-width: 998px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead .header-content h1 {
+    font-size: 50px;
+  }
+  header.masthead .device-container {
+    max-width: 325px;
+  }
+  .hideSmall {
+    display: inline;
+  }
+  .showSmall {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: fade(white, 70%);
+  }
+  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+    color: #ff0000;
+  }
+  #mainNav .navbar-nav > li > a,
+  #mainNav .navbar-nav > li > a:focus {
+    color: #ffffff;
+  }
+  #mainNav .navbar-nav > li > a:hover,
+  #mainNav .navbar-nav > li > a:focus:hover {
+    color: black;
+  }
+  #mainNav.navbar-shrink {
+    border-color: rgba(34, 34, 34, 0.5);
+    background-color: rgba(34, 34, 34, 0.75);
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #ffffff;
+  }
+  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+    color: #ff0000 !important;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li > a,
+  #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+    color: #ffffff;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li > a:hover,
+  #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+    color: #ff0000 !important;
+  }
+  section.experience .device-container {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  section.about .badges .badge-link {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  section.about h2 {
+    font-size: 70px;
+  }
+}
+
 
 /* hover main text */
 #mainText {
@@ -465,7 +465,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 #secText {
   margin-top: -50px;
-  padding-left: 5px;
+  padding-left: 8px;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 400;
   letter-spacing: 1px;
