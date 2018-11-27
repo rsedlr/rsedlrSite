@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-  const phrase = ['Reiss Edler', 'personal portfolio'];
+  const phrases = ['Reiss Edler', 'personal portfolio'];
   const divs = ['mainText', 'secText']; 
   
   for (var x = 0; x < phrase.length; x++) {
