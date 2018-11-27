@@ -3,7 +3,7 @@ $(document).ready(function () {
   const phrases = ['Reiss Edler', 'personal portfolio'];
   const divs = ['mainText', 'secText']; 
   
-  for (var x = 0; x < phrase.length; x++) {
+  for (var x = 0; x < phrases.length; x++) {
     const createLetterArray = (string) => {
       return string.split('');
     }
