@@ -471,7 +471,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   height: 150px; /* default */
   width: 90px; /* default */
   transition: ease 0.3s all;
-  padding: 20px;
+  padding: 0px 20px;
 }
   
 span {
