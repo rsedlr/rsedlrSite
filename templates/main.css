@@ -453,7 +453,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 800;
   letter-spacing: 1px;
-  font-size: 6em;
+  font-size: 6.1rem;
   line-height: 1em;
   text-align: center;
   position: relative;
@@ -461,6 +461,22 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   transform: translateY(-50%);
 }
 #mainText:hover {
+  cursor: default;
+}
+
+#secText {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  line-height: 1em;
+  text-align: center;
+  position: relative;
+  /* top: 50%; */
+  padding-left: 8px;
+  transform: translateY(-50%);
+}
+#secText:hover {
   cursor: default;
 }
   
