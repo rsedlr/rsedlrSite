@@ -29,7 +29,7 @@ $(document).ready(function () {
       });
     }
     const outputLayers = new Promise(function(resolve, reject) {
-      document.getElementById(divs[x]).innerHTML = createLetterContainers(createLetterLayers(createLetterArray(phrases[i]))).join('');
+      document.getElementById(divs[x]).innerHTML = createLetterContainers(createLetterLayers(createLetterArray(phrases[x]))).join('');
       resolve();
     });
     const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));
