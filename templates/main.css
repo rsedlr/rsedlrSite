@@ -153,7 +153,7 @@ header.masthead {
 }
 
 header.masthead .header-content {
-  max-width: 500px;
+  /* max-width: 500px; */
   margin-bottom: 100px;
   text-align: center;
 }
@@ -465,7 +465,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 #secText {
   margin-top: -50px;
-  padding-left: 0.5px;
+  padding-left: 5px;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 400;
   letter-spacing: 1px;
