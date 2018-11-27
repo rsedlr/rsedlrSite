@@ -392,7 +392,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     display: none;
   }
   .mlBig {
-    margin-left: 100px;
+    padding-left: 100px;
   }
 }
 @media (max-width: 998px) {
