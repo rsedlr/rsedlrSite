@@ -3,6 +3,7 @@ $(document).ready(function () {
   const phrases = ['Reiss Edler', 'personal portfolio'];
 
   for (text in phrases) {
+    console.log(text);
     const createLetterArray = (string) => {
       return string.split('');
     }
