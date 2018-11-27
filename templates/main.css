@@ -457,7 +457,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   line-height: 1em;
   text-align: center;
   position: relative;
-  top: 50%;
+  /* top: 50%; */
   transform: translateY(-50%);
 }
 #mainText:hover {
