@@ -473,7 +473,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   text-align: center;
   position: relative;
   /* top: 50%; */
-  padding-left: 8px;
+  padding-left: 0px;
   transform: translateY(-50%);
 }
 #secText:hover {
