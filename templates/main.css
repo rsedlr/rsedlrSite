@@ -391,9 +391,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   .showSmall {
     display: none;
   }
-  .mlBig {
-    padding-left: 100px;
-  }
 }
 @media (max-width: 998px) {
   .hideSmall {

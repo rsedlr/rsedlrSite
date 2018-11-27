@@ -41,9 +41,9 @@
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-lg-12 my-auto mlBig">
-          <div class="header-content mr-auto hideSmall" id="mainText"><!-- text added through js --></div>
-          <div class="header-content mr-auto hideSmall" id="secText"><!-- text added through js --></div>
+        <div class="col-lg-12 my-auto">
+          <div class="header-content mr-auto hideSmall" id="mainText" style="margin-left: 100px"><!-- text added through js --></div>
+          <div class="header-content mr-auto hideSmall" id="secText" style="margin-left: 100px"><!-- text added through js --></div>
           <div class="showSmall my-auto" style="text-align: center;">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
