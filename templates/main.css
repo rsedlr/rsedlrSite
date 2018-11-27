@@ -457,7 +457,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   line-height: 1em;
   text-align: center;
   position: relative;
-  /* top: 50%; */
   transform: translateY(-50%);
 }
 #mainText:hover {
@@ -465,7 +464,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 #secText {
-  margin-top: 0px;
+  margin-top: -100px;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 400;
   letter-spacing: 1px;
@@ -473,7 +472,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   line-height: 1em;
   text-align: center;
   position: relative;
-  /* top: 50%; */
   padding-left: 0px;
   transform: translateY(-50%);
 }
