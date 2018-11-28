@@ -40,7 +40,7 @@
   </nav>
   <header class="masthead">
     <div class="container h-100">
-      <div class="col-md-6 col-sm-12">
+      <div class="row h-100">
         <div class="col-lg-12 my-auto">
           <div class="header-content mr-auto hideSmall" id="mainText" style="margin-left: -400px"><!-- text added through js --></div>
           <div class="header-content mr-auto hideSmall" id="secText" style="margin-left: -400px"><!-- text added through js --></div>
