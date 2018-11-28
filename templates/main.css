@@ -388,15 +388,15 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   header.masthead .device-container {
     max-width: 325px;
   }
-  .showSmall {
+  /* .showSmall {
     display: none;
-  }
+  } */
 }
-@media (max-width: 998px) {
+/* @media (max-width: 998px) {
   .hideSmall {
     display: none;
   }
-}
+} */
 
 
 @media (min-width: 992px) {
