@@ -577,25 +577,25 @@ span.space {
   animation-timing-function:linear;
 }
 
-.arrow.primera.bounceAlpha {
+/* .arrow.primera.bounceAlpha {
   animation-name: bounceAlpha;
   animation-duration:1.4s;
   animation-delay:0.2s;
   animation-iteration-count:infinite;
   animation-timing-function:linear;
-}
+} */
 
-.round .arrow{
+/* .round .arrow{
   animation-name: bounceAlpha;
   animation-duration:1.4s;
   animation-iteration-count:infinite;
   animation-timing-function:linear;
-}
-.round .arrow.primera{
+} */
+/* .round .arrow.primera{
   animation-name: bounceAlpha;
   animation-duration:1.4s;
   animation-delay:0.2s;
   animation-iteration-count:infinite;
   animation-timing-function:linear;
-}
+} */
 /* arrow bottom end */
