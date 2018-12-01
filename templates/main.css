@@ -543,7 +543,7 @@ span.space {
 
 #cta{
   width:100%; 
-  cursor: progress; 
+  cursor: pointer; 
   position: absolute;
 }
 
