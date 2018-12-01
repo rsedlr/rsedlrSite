@@ -49,7 +49,7 @@
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
           </div>
         </div>
-        <div class="col-lg-12 center-con">
+        <div class="col-lg-12 center-con" style="margin-top: auto;">
           <div class="round">
             <div id="cta">
               <span class="arrow primera next "></span>
