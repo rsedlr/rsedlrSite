@@ -41,7 +41,7 @@
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-lg-12 my-auto">
+        <div class="col-lg-12" style="margin-top: auto;">
           <div class="header-content mr-auto hideSmall" id="mainText" style="margin-left: -400px"><!-- text added through js --></div>
           <div class="header-content mr-auto hideSmall" id="secText" style="margin-left: -400px"><!-- text added through js --></div>
           <div class="showSmall my-auto" style="text-align: center;">
@@ -52,8 +52,8 @@
         <div class="col-lg-12 center-con" style="margin-top: auto;">
           <div class="round">
             <div id="cta">
-              <span class="arrow primera next "></span>
-              <span class="arrow segunda next "></span>
+              <span class="arrow primera next"></span>
+              <span class="arrow segunda next"></span>
             </div>
           </div>
         </div>
