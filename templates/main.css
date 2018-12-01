@@ -585,7 +585,7 @@ span.space {
   animation-timing-function:linear;
 } */
 
-.round .arrow{
+.arrow{
   animation-name: bounceAlpha;
   animation-duration:1.4s;
   animation-iteration-count:infinite;
