@@ -50,6 +50,14 @@
           </div>
         </div>
       </div>
+      <div class="center-con">
+        <div class="round">
+          <div id="cta">
+            <span class="arrow primera next "></span>
+            <span class="arrow segunda next "></span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <section class="download bg-primary text-center testPadding" id="about">
