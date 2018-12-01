@@ -549,8 +549,7 @@ span.space {
   position: absolute; 
   bottom: 0;  
   margin-left: 0px; 
-  width: 12px; 
-  height: 12px; 
+
   background-size: contain; 
   top: 15px;
 }
