@@ -535,7 +535,7 @@ span.space {
 }
 
 .round {
-  position: absolute;
+  /* position: absolute; */
   width: 40px;
   height: 40px;
 }
@@ -585,13 +585,13 @@ span.space {
   animation-timing-function:linear;
 }
 
-.round .arrow{
+.round:hover .arrow{
   animation-name: bounceAlpha;
   animation-duration:1.4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
 }
-.round .arrow.primera{
+.round:hover .arrow.primera{
   animation-name: bounceAlpha;
   animation-duration:1.4s;
   animation-delay:0.2s;
