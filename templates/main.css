@@ -106,7 +106,7 @@ header.masthead {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 150px;
+  /* padding-top: 150px; */
   /* padding-bottom: 100px; */
   color: white;
   background:  #7e3ad8;
