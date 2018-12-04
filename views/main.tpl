@@ -51,7 +51,7 @@
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 10px;">
           <div class="round noHover" style="margin: auto">
-            <div id="cta">
+            <div id="cta rot90">
               <span class="arrow primera next"></span>
               <span class="arrow segunda next"></span>
             </div>

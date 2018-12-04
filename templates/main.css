@@ -530,10 +530,7 @@ span.space {
 /* hover text end */
 
 /* arrow bottom start */
-.center-con {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.rot90 {
   -webkit-transform: rotate(90deg) 
 }
 
@@ -567,10 +564,10 @@ span.space {
 }
 
 @keyframes bounceAlpha {
-0% {opacity: 1; transform: translateX(0px) scale(1);}
-25%{opacity: 0; transform:translateX(10px) scale(0.9);}
-26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
-55% {opacity: 1; transform: translateX(0px) scale(1);}
+  0% {opacity: 1; transform: translateX(0px) scale(1);}
+  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateX(0px) scale(1);}
 }
 
 /* .bounceAlpha {
@@ -590,15 +587,15 @@ span.space {
 
 .round .arrow{
   animation-name: bounceAlpha;
-  animation-duration:1.4s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .round .arrow.primera{
   animation-name: bounceAlpha;
-  animation-duration:1.4s;
-  animation-delay:0.2s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 /* arrow bottom end */
