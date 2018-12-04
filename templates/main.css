@@ -396,10 +396,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   .hideSmall {
     display: none;
   }
-  #nameContainer {
-    /* margin-top: 50px;
-    margin-bottom: auto; */
-  }
 }
 
 
@@ -551,12 +547,12 @@ span.space {
 
 .arrow {
   position: absolute; 
-  bottom: 0;  
-  margin-left: 0px; 
-  width: 12px; 
-  height: 12px; 
+  /* bottom: 0;   */
+  /* margin-left: 0px;  */
+  width: 20px; 
+  height: 20px; 
   background-size: contain; 
-  top: 15px;
+  /* top: 15px; */
 }
 
 .segunda{
