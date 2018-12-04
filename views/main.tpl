@@ -49,8 +49,8 @@
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
           </div>
         </div>
-        <div class="col-lg-12 center-con" style="margin-top: auto;">
-          <div class="round noHover">
+        <div class="col-lg-12 center-con">
+          <div class="round noHover" style="margin-top: auto;">
             <div id="cta">
               <span class="arrow primera next"></span>
               <span class="arrow segunda next"></span>
