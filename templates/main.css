@@ -543,6 +543,7 @@ span.space {
 #cta{
   cursor: pointer; 
   position: absolute;
+  margin: auto;
 }
 
 .arrow {
