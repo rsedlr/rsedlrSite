@@ -397,7 +397,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     display: none;
   }
   #nameContainer {
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: auto;
   }
 }
 
