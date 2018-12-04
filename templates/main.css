@@ -544,6 +544,7 @@ span.space {
   cursor: pointer; 
   position: absolute;
   margin: auto;
+  padding: 10px;
 }
 
 .arrow {
