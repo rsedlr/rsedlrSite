@@ -534,10 +534,10 @@ span.space {
   -webkit-transform: rotate(90deg) 
 }
 
-.round {
+.arr {
   /* position: absolute; */
-  /* width: 40px;
-  height: 40px; */
+  width: 10px;
+  height: 10px;
 }
 
 #cta{
