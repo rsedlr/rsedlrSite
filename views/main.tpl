@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="col-lg-12 center-con">
-          <div class="round noHover" style="margin-top: auto;">
+          <div class="round noHover" style="margin-top: auto; margin-bottom: 10px;">
             <div id="cta">
               <span class="arrow primera next"></span>
               <span class="arrow segunda next"></span>
