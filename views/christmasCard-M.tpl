@@ -127,7 +127,7 @@
 
 <div class="wrap" id="wrap">
   <div class="card card--inner">
-    <h2>And A Happy <br>New Year!</h2>
+    <h2><br>And A Happy <br>New Year!</h2>
   </div>
   <div class="card card--front back" onclick="openCard();"></div>
   <div class="card card--front" onclick="openCard();">
