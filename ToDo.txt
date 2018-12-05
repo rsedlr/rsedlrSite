@@ -1,0 +1,5 @@
+
+-improve card appearance
+
+-make cascading projects section with a table
+-add other sections such as 'about me'
