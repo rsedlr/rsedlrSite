@@ -2,8 +2,8 @@
 <!doctype html>
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
 <title>Merry Christmas</title>
-
 <style>
   @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
   body {
