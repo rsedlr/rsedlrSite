@@ -131,7 +131,7 @@
   </div>
   <div class="card card--front back" onclick="openCard();"></div>
   <div class="card card--front" onclick="openCard();">
-    <h2>Merry Christmas<br>{{name}}</h2>
+    <h2>Merry <br>Christmas<br>{{name}}</h2>
   </div>
 </div>
 
