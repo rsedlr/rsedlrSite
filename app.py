@@ -112,7 +112,13 @@ def TextRepeater():
 
 @route('/christmas/<name>')
 def christmas(name):
-  message = 'u bitch'
+  message = ''
+  if name.upper() == 'MUM':
+    message = 'thought i would save the planet and make u a virtual card :)'
+  elif name.upper() == 'EMILY':
+    message = 'told u i was lazy :)'
+  elif name.upper() == 'WILL':
+    messae = 'alright vilhelm?'
   return template('christmasCard-M', name=name, message=message)
 
 
