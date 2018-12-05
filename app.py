@@ -110,8 +110,9 @@ def TextRepeater():
 ''' ------------- heat control demo stuff end ------------- '''
 ''' --------------- mum christmas card start --------------- '''
 
+@route('/christmas')
 @route('/christmas/<name>')
-def christmas(name):
+def christmas(name=''):
   message = ''
   if name.upper() == 'MUM':
     message = 'thought i would save the planet and make u a virtual card :)'
