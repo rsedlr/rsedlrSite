@@ -28,7 +28,7 @@
   }
 
   h2 {
-    font-family: "Dancing Script", serif;
+    /* font-family: "Dancing Script", serif; */
     font-weight: normal;
     font-size: 45px;
     color: #009500;
