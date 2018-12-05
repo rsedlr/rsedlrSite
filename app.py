@@ -26,7 +26,7 @@ def test():
   return template('test')
 
 @route('/about')
-def index():
+def about():
   return template('about')
 
 
@@ -108,6 +108,12 @@ def TextRepeater():
   
 
 ''' ------------- heat control demo stuff end ------------- '''
+''' --------------- mum christmas card start --------------- '''
+
+@route('/christmas/<person>')
+def christmas(person):
+  if person == 'mum':
+    return template('christmasCard-M')
 
 
 if __name__ == '__main__':
