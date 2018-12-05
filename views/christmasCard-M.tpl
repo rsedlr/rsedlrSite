@@ -9,7 +9,7 @@
   body {
     margin: 0;
     background-color: #4CAF50;
-    /*background: radial-gradient(circle at center, rgba(50,50,50,1) 0%,rgba(14,14,14,1) 35%) */
+    background: radial-gradient(circle at center, rgba(50,50,50,1) 0%,rgba(14,14,14,1) 35%)
     display: flex;
     flex-direction: column;
     align-items: center;
