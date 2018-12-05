@@ -127,8 +127,7 @@
 
 <div class="wrap" id="wrap">
   <div class="card card--inner">
-    <h2>And A Happy New Year!</h2>
-    <img src="https://static.pexels.com/photos/17795/christmas-xmas-christmas-tree-decoration.jpg">
+    <h2>And A Happy <br>New Year!</h2>
   </div>
   <div class="card card--front back" onclick="openCard();"></div>
   <div class="card card--front" onclick="openCard();">
