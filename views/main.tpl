@@ -60,7 +60,7 @@
       </div>
     </div>
   </header>
-  <section class="download bg-primary text-center mainSection testPadding" id="about">
+  <section class="download bg-primary text-center mainSection" id="about">
      <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto" style="margin-top: 50px;">
@@ -69,7 +69,7 @@
       </div>
     </div>
   </section>
-  <section class="download bg-secondary text-center testPadding" id="experience">
+  <section class="download bg-secondary text-center" id="experience">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
@@ -78,7 +78,7 @@
       </div>
     </div>
   </section>
-  <section class="download bg-third text-center testPadding" id="contact">
+  <section class="download bg-third text-center" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
