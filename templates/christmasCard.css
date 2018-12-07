@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+body {
+  margin: 0;
+  background-color: #4CAF50;
+  /*background: radial-gradient(circle at center, rgba(50,50,50,1) 0%,rgba(14,14,14,1) 35%) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+h2 {
+  /* font-family: "Dancing Script", serif; */
+  font-weight: bold;
+  font-size: 4rem;
+  color: #009500;
+  text-align: center;
+}
+
+.wrap {
+  width: 30rem;
+  height: 25rem;
+  position: relative;
+  transform: rotateX(30deg);
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+  border: 8px solid #B60003;
+  text-align: center;
+}
+.card--front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card--front.open {
+  transform: rotateY(-180deg);
+}
+.card--front.back {
+  z-index: 0;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+.card--inner {
+  overflow: hidden;
+  padding: 15px;
+}
+.card--inner h2 {
+  font-size: 32px;
+}
+.card--inner img {
+  max-width: 60%;
+  margin-top: 1.5em;
+}
+.card--inner.open:before {
+  transform: translateX(-155%);
+  opacity: 0.1;
+}
+.card--inner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+button {
+  -webkit-appearance: none;
+  background: #E53935;
+  border: 5px solid #9f1815;
+  border-width: 0 0 5px;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  display: block;
+  transform: rotateX(30deg);
+  margin-top: 20px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+}
+button:active {
+  border-bottom-width: 2px;
+  margin-top: 23px;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+
+
+
+
+.lightrope {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  margin: -15px 0 0 0;
+  padding: 0;
+  pointer-events: none;
+  width: 100%;
+}
+.lightrope li {
+  position: relative;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 12px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 20px;
+  display: inline-block;
+  background: #00f7a5;
+  box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+  -webkit-animation-name: flash-1;
+          animation-name: flash-1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.lightrope li:nth-child(2n+1) {
+  background: cyan;
+  box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.5);
+  -webkit-animation-name: flash-2;
+          animation-name: flash-2;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+.lightrope li:nth-child(4n+2) {
+  background: #f70094;
+  box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+  -webkit-animation-name: flash-3;
+          animation-name: flash-3;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+}
+.lightrope li:nth-child(odd) {
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+}
+.lightrope li:nth-child(3n+1) {
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+.lightrope li:before {
+  content: "";
+  position: absolute;
+  background: #222;
+  width: 10px;
+  height: 9.3333333333px;
+  border-radius: 3px;
+  top: -4.6666666667px;
+  left: 1px;
+}
+.lightrope li:after {
+  content: "";
+  top: -14px;
+  left: 9px;
+  position: absolute;
+  width: 52px;
+  height: 18.6666666667px;
+  border-bottom: solid #222 2px;
+  border-radius: 50%;
+}
+.lightrope li:last-child:after {
+  content: none;
+}
+.lightrope li:first-child {
+  margin-left: -40px;
+}
+
+@-webkit-keyframes flash-1 {
+  0%, 100% {
+    background: #00f7a5;
+    box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+  }
+  50% {
+    background: rgba(0, 247, 165, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+  }
+}
+
+@keyframes flash-1 {
+  0%, 100% {
+    background: #00f7a5;
+    box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+  }
+  50% {
+    background: rgba(0, 247, 165, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+  }
+}
+@-webkit-keyframes flash-2 {
+  0%, 100% {
+    background: cyan;
+    box-shadow: 0px 4.6666666667px 24px 3px cyan;
+  }
+  50% {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+  }
+}
+@keyframes flash-2 {
+  0%, 100% {
+    background: cyan;
+    box-shadow: 0px 4.6666666667px 24px 3px cyan;
+  }
+  50% {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+  }
+}
+@-webkit-keyframes flash-3 {
+  0%, 100% {
+    background: #f70094;
+    box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+  }
+  50% {
+    background: rgba(247, 0, 148, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+  }
+}
+@keyframes flash-3 {
+  0%, 100% {
+    background: #f70094;
+    box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+  }
+  50% {
+    background: rgba(247, 0, 148, 0.4);
+    box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+  }
+}
