@@ -60,7 +60,7 @@
       </div>
     </div>
   </header>
-  <section class="bg-primary text-center testPadding" id="about">
+  <section class="bg-primary text-center mainSection" id="about">
      <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
@@ -71,7 +71,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-secondary text-center testPadding" id="experience">
+  <section class="bg-secondary text-center mainSection" id="experience">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
@@ -80,7 +80,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-third text-center testPadding" id="contact">
+  <section class="bg-third text-center mainSection" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
