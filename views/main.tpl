@@ -63,7 +63,7 @@
   <section class="bg-primary text-center" id="about">
      <div class="container">
       <div class="row">
-        <div class="col-6 ml-auto" style="display: inline-block;">
+        <div class="col-6 mx-auto">
           <h1>Hi, im a ______</h1>
           <h5>(blanks yet to be filled)</h5>
         </div>
