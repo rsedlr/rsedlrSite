@@ -142,7 +142,7 @@ function openCard() {
     button.innerHTML = 'Open Card';
   }
   
-  var cards = document.querySelectorAll('.card--front');
+  var cards = document.querySelectorAll('.card');
   for (var i = 0; i < cards.length; i++) {
     cards[i].classList.toggle('open');
   }
