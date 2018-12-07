@@ -26,7 +26,7 @@
   h2 {
     /* font-family: "Dancing Script", serif; */
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #009500;
     text-align: center;
   }
@@ -64,6 +64,7 @@
   }
   .card--front.open {
     transform: rotateY(-180deg);
+    width: 5px;
   }
   .card--front.back {
     z-index: 0;
