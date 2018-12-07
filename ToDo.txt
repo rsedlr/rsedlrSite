@@ -3,3 +3,4 @@
 
 -make cascading projects section with a table
 -add other sections such as 'about me'
+-add popovers to heat demo

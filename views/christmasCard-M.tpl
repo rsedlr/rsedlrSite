@@ -19,10 +19,6 @@
     transform-style: preserve-3d;
   }
 
-  img {
-    max-width: 100%;
-  }
-
   *, *:after, *:before {
     box-sizing: border-box;
   }
@@ -36,8 +32,8 @@
   }
 
   .wrap {
-    width: 350px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
     position: relative;
     transform: rotateX(30deg);
     transform-style: preserve-3d;
@@ -140,14 +136,14 @@
 function openCard() {
   var button = document.getElementById('button');
   
-  if(button.innerHTML == 'Open Card') {
+  if (button.innerHTML == 'Open Card') {
     button.innerHTML = 'Close Card';
   } else {
     button.innerHTML = 'Open Card';
   }
   
   var cards = document.querySelectorAll('.card');
-  for(var i = 0; i < cards.length; i++) {
+  for (var i = 0; i < cards.length; i++) {
     cards[i].classList.toggle('open');
   }
 }
