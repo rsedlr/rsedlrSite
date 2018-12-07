@@ -330,6 +330,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 600px 0px;
 }
 
+.mainSection {
+  width: 100%;
+  height: 100%;
+}
+
 .bolder {
   font-weight: 700 !important;
 }
