@@ -41,7 +41,7 @@
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col" style="margin-top: auto;">
+        <div class="col-lg-12" style="margin-top: auto;">
           <div class="header-content mr-auto hideSmall" id="mainText" style="margin-left: -400px"><!-- text added through js --></div>
           <div class="header-content mr-auto hideSmall" id="secText" style="margin-left: -400px"><!-- text added through js --></div>
           <div class="showSmall my-auto" style="text-align: center;">
@@ -49,7 +49,7 @@
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
           </div>
         </div>
-        <div class="col" style="margin-top: auto; margin-bottom: 20px;">
+        <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
           <div class="round noHover rot90" style="margin: auto">
             <div id="cta">
               <span class="arrow primera next"></span>
