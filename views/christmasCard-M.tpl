@@ -135,8 +135,8 @@
       <h2>Merry <br>Christmas<br>{{name}}</h2>
     </div>
   </div>
+  <button type="button" onclick="openCard();" id="button">Open Card</button>
 </div>
-<button type="button" onclick="openCard();" id="button">Open Card</button>
 <script>
 function openCard() {
   var button = document.getElementById('button');
