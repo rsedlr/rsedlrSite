@@ -65,17 +65,6 @@
   .card--front.open {
     transform: rotateY(-180deg);
   }
-  .card--front::after {
-    bottom: 0;
-    content: '';
-    left: 45px;
-    position: absolute;
-    top: 0;
-    transform: rotateY(-90deg);
-    transform-origin: 100% 50%;
-    width: 20px;
-    z-index: -10;
-  }
   .card--front.back {
     z-index: 0;
     backface-visibility: visible;
@@ -153,7 +142,7 @@ function openCard() {
     button.innerHTML = 'Open Card';
   }
   
-  var cards = document.querySelectorAll('.card');
+  var cards = document.querySelectorAll('.card--front');
   for (var i = 0; i < cards.length; i++) {
     cards[i].classList.toggle('open');
   }
