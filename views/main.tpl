@@ -63,9 +63,9 @@
   <section class="bg-primary text-center" id="about">
      <div class="container">
       <div class="row">
-        <div class="col-md-10 mx-auto">
+        <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <h1 class="mainHead">Hi, im a ______</h1>
-          <h5 style="text-align: left !important;">(blanks yet to be filled)</h5>
+          <h5 style="">(blanks yet to be filled)</h5>
         </div>
       </div>
     </div>
