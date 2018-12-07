@@ -64,7 +64,8 @@
      <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
-          <h1 class="mainHead">Hi, im a <u>     </u></h1>
+          <h1 class="mainHead">Hi, im a </h1>
+          <span style="display: table-cell; border-bottom: 1px solid black;"></span>
           <h5 style="margin-left: 6px;">(blanks yet to be filled)</h5>
         </div>
       </div>
