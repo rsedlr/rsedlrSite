@@ -130,7 +130,7 @@
       <h2>Merry <br>Christmas<br>{{name}}</h2>
     </div>
   </div>
-  <button type="button" onclick="openCard();" id="button" style="margin: 5px auto">Open Card</button>
+  <button type="button" onclick="openCard();" id="button" style="margin: 10px auto">Open Card</button>
 </div>
 <script>
 function openCard() {
