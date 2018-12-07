@@ -66,7 +66,15 @@
     transform: rotateY(-180deg);
   }
   .card--front::after {
-    width: -20px;
+    bottom: 0;
+    content: '';
+    left: 45px;
+    position: absolute;
+    top: 0;
+    transform: rotateY(-90deg);
+    transform-origin: 100% 50%;
+    width: 20px;
+    z-index: -10;
   }
   .card--front.back {
     z-index: 0;
