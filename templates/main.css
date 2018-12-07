@@ -139,105 +139,11 @@ header.masthead .device-container {
 header.masthead .device-container .screen img {
   border-radius: 3px;
 }
-/* 
-section.about {
-  position: relative;
-  padding: 150px 0;
-}
-
-section.about h2 {
-  font-size: 50px;
-  margin-top: 0;
-}
-
-section.about .badges .badge-link {
-  display: block;
-  margin-bottom: 25px;
-}
-
-section.about .badges .badge-link:last-child {
-  margin-bottom: 0;
-}
-
-section.about .badges .badge-link img {
-  height: 60px;
-}
-
-section.experience .section-heading {
-  margin-bottom: 100px;
-}
-
-section.experience .section-heading h2 {
-  margin-top: 0;
-}
-
-section.experience .section-heading p {
-  margin-bottom: 0;
-}
-
-section.experience .device-container,
-section.experience .feature-item {
-  max-width: 325px;
-  margin: 0 auto;
-}
-
-section.experience .device-container {
-  margin-bottom: 100px;
-}
-
-section.experience .feature-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-section.experience .feature-item h3 {
-  font-size: 30px;
-}
-
-section.experience .feature-item i {
-  font-size: 80px;
-  display: block;
-  margin-bottom: 15px;
-  background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-section.cta {
-  position: relative;
-  padding: 250px 0;
-  background-position: center;
-  background-size: cover;
-}
-
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
-}
-
-section.cta .cta-content h2 {
-  font-size: 50px;
-  max-width: 450px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: white;
-} */
 
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
     font-size: 80px;
   }
-}
-
-section.cta .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -250,19 +156,6 @@ footer {
 footer p {
   font-size: 12px;
   margin: 0;
-}
-
-footer ul {
-  margin-bottom: 0;
-}
-
-footer ul li a {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
-  text-decoration: none;
 }
 
 .bg-primary {
@@ -357,7 +250,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     display: none;
   }
 }
-
 
 @media (min-width: 992px) {
   #mainNav {
