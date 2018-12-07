@@ -63,10 +63,10 @@
   <section class="bg-primary text-center" id="about">
      <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto" style="">
+        <div class="col-6 ml-auto" style="">
           <h1>Hi, im a ______</h1>
         </div>
-        <div class="col-md-4 mx-auto">
+        <div class="col-6 mr-auto">
           <h5>(blanks yet to be filled)</h5>
         </div>
       </div>
