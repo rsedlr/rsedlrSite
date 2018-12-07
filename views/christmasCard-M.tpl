@@ -31,11 +31,6 @@
     text-align: center;
   }
 
-  .container {
-    width: 50%;
-    height: 60%;
-  }
-
   .wrap {
     width: 70%;
     height: 50%;
@@ -125,7 +120,7 @@
     outline: none;
   }
 </style>
-<div class="container">
+<div class="col-6">
   <div class="wrap" id="wrap">
     <div class="card card--inner">
       <h2><br>And A Happy <br>New Year! <br>{{message}}</h2>
