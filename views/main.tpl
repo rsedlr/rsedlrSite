@@ -63,7 +63,7 @@
   <section class="bg-primary text-center" id="about">
      <div class="container">
       <div class="row">
-        <div class="col-md-7 mx-auto" style="float: left;">
+        <div class="col-md-10 mx-auto" style="float: left;">
           <h1 class="mainHead">Hi, im a ______</h1>
           <h5>(blanks yet to be filled)</h5>
         </div>
