@@ -67,7 +67,7 @@
           <h1 class="mainHead" style="margin-bottom: 0;">Hi, im a </h1>
           <div style="margin-left: 35px; width: 300px; display: inline-block; border-bottom: 4px solid black;"></div>
           <h5 style="display: block; margin-left: 6px;">(blanks yet to be filled)</h5>
-          <br>
+          <br><br><br>
           <h2>some more witty comments and stuff i suppose</h2>
         </div>
       </div>
