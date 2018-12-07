@@ -139,7 +139,7 @@ header.masthead .device-container {
 header.masthead .device-container .screen img {
   border-radius: 3px;
 }
-
+/* 
 section.about {
   position: relative;
   padding: 150px 0;
@@ -223,7 +223,7 @@ section.cta .cta-content h2 {
   margin-top: 0;
   margin-bottom: 25px;
   color: white;
-}
+} */
 
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
