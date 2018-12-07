@@ -31,9 +31,14 @@
     text-align: center;
   }
 
-  .wrap {
+  .container {
     width: 50%;
-    height: 45%;
+    height: 60%;
+  }
+
+  .wrap {
+    width: 70%;
+    height: 50%;
     position: relative;
     transform: rotateX(30deg);
     transform-style: preserve-3d;
@@ -120,17 +125,17 @@
     outline: none;
   }
 </style>
-
-<div class="wrap" id="wrap">
-  <div class="card card--inner">
-    <h2><br>And A Happy <br>New Year! <br>{{message}}</h2>
-  </div>
-  <div class="card card--front back" onclick="openCard();"></div>
-  <div class="card card--front" onclick="openCard();">
-    <h2>Merry <br>Christmas<br>{{name}}</h2>
+<div class="container">
+  <div class="wrap" id="wrap">
+    <div class="card card--inner">
+      <h2><br>And A Happy <br>New Year! <br>{{message}}</h2>
+    </div>
+    <div class="card card--front back" onclick="openCard();"></div>
+    <div class="card card--front" onclick="openCard();">
+      <h2>Merry <br>Christmas<br>{{name}}</h2>
+    </div>
   </div>
 </div>
-
 <button type="button" onclick="openCard();" id="button">Open Card</button>
 <script>
 function openCard() {
