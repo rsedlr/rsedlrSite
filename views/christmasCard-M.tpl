@@ -25,8 +25,8 @@
 
   h2 {
     /* font-family: "Dancing Script", serif; */
-    font-weight: normal;
-    font-size: 45px;
+    font-weight: bold;
+    font-size: 3rem;
     color: #009500;
     text-align: center;
   }
