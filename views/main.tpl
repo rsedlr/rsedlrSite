@@ -60,7 +60,7 @@
       </div>
     </div>
   </header>
-  <section class="download bg-primary text-center" id="about">
+  <section class="bg-primary text-center" id="about">
      <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto" style="">
@@ -72,7 +72,7 @@
       </div>
     </div>
   </section>
-  <section class="download bg-secondary text-center" id="experience">
+  <section class="bg-secondary text-center" id="experience">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
@@ -81,7 +81,7 @@
       </div>
     </div>
   </section>
-  <section class="download bg-third text-center" id="contact">
+  <section class="bg-third text-center" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
