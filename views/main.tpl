@@ -65,7 +65,7 @@
       <div class="row">
         <div class="col-md-10 mx-auto" style="float: left;">
           <h1 class="mainHead">Hi, im a ______</h1>
-          <h5>(blanks yet to be filled)</h5>
+          <h5 class="ml-auto">(blanks yet to be filled)</h5>
         </div>
       </div>
     </div>
