@@ -5,7 +5,7 @@
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
 <title>Merry Christmas</title>
 <link rel="stylesheet" type="text/css" href="/static/christmasCard.css">
-<ul class="lightrope">
+<ul class="lightrope" style="margin: 0px auto auto">
   <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 </ul>
 <div class="col-6">
