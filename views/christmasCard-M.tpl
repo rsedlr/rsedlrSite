@@ -32,8 +32,8 @@
   }
 
   .wrap {
-    width: 70%;
-    height: 50%;
+    width: 6rem;
+    height: 5rem;
     position: relative;
     transform: rotateX(30deg);
     transform-style: preserve-3d;
