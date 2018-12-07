@@ -66,7 +66,7 @@
     transform: rotateY(-180deg);
   }
   .card--front::after {
-    width: 5px;
+    width: -20px;
   }
   .card--front.back {
     z-index: 0;
