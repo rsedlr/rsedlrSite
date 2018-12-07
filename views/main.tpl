@@ -60,11 +60,14 @@
       </div>
     </div>
   </header>
-  <section class="download bg-primary text-center mainSection" id="about">
+  <section class="download bg-primary text-center" id="about">
      <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto" style="margin-top: 50px;">
-          <h1>about</h1>
+        <div class="col-md-8 mx-auto" style="">
+          <h1>Hi, im a ______</h1>
+        </div>
+        <div class="col-md-4 mx-auto">
+          <h5>(blanks yet to be filled)</h5>
         </div>
       </div>
     </div>
