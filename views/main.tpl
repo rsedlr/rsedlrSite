@@ -28,7 +28,7 @@
             <a class="nav-link js-scroll-trigger bolder mainNav" href="#experience">experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger bolder mainNav" href="#other">anotherTab</a>
+            <a class="nav-link js-scroll-trigger bolder mainNav" href="#contact">contact</a>
           </li>
           <!-- temporary until main page is sorted -->
           <li class="nav-item">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
-          <div class="round noHover rot90" style="margin: auto">
+          <div class="round noHover rot90" style="margin: auto" onclick="location.href='#about';">
             <div id="cta">
               <span class="arrow primera next"></span>
               <span class="arrow segunda next"></span>
@@ -78,7 +78,7 @@
       </div>
     </div>
   </section>
-  <section class="download bg-third text-center testPadding" id="other">
+  <section class="download bg-third text-center testPadding" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
