@@ -60,7 +60,7 @@
       </div>
     </div>
   </header>
-  <section class="bg-primary text-center" id="about">
+  <section class="bg-primary text-center testPadding" id="about">
      <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
@@ -71,20 +71,20 @@
       </div>
     </div>
   </section>
-  <section class="bg-secondary text-center" id="experience">
+  <section class="bg-secondary text-center testPadding" id="experience">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h1>experience</h1>
+          <h1>** insert table full of projects to amaze client **</h1>
         </div>
       </div>
     </div>
   </section>
-  <section class="bg-third text-center" id="contact">
+  <section class="bg-third text-center testPadding" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h1>other</h1>
+          <h1>call me :P</h1>
         </div>
       </div>
     </div>
