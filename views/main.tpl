@@ -65,7 +65,7 @@
       <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <h1 class="mainHead">Hi, im a </h1>
-          <div style="width: 100px; display: inline-block; border-bottom: 1px solid black;"></div>
+          <div style="width: 300px; display: inline-block; border-bottom: 4px solid black;"></div>
           <h5 style="display: block; margin-left: 6px;">(blanks yet to be filled)</h5>
         </div>
       </div>
