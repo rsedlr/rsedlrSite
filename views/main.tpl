@@ -50,12 +50,10 @@
           </div>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
-          <div class="js-scroll-trigger" onclick="location.href='#about';">
-            <div class="round noHover rot90" style="margin: auto">
-              <div id="cta">
-                <span class="arrow primera next"></span>
-                <span class="arrow segunda next"></span>
-              </div>
+          <div class="round noHover rot90" style="margin: auto">
+            <div id="cta">
+              <span class="arrow primera next"></span>
+              <span class="arrow segunda next"></span>
             </div>
           </div>
         </div>

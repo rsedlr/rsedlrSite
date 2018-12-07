@@ -451,9 +451,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   }
 }
 
-/* .noHover{
+.noHover{
   pointer-events: none;
-} */
+}
 
 /* hover main text */
 #mainText {
