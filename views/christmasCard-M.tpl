@@ -64,6 +64,8 @@
   }
   .card--front.open {
     transform: rotateY(-180deg);
+  }
+  .card--front::after {
     width: 5px;
   }
   .card--front.back {
