@@ -74,7 +74,7 @@
   <section class="bg-secondary text-center mainSection" id="experience">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-10 mx-auto">
           <h1>** insert table full of projects to amaze client **</h1>
         </div>
       </div>
@@ -83,7 +83,7 @@
   <section class="bg-third text-center mainSection" id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-10 mx-auto">
           <h1>call me :P</h1>
         </div>
       </div>
