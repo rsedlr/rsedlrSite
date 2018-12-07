@@ -119,7 +119,7 @@ def christmas(name=''):
   elif name.upper() == 'EMILY':
     message = 'told u i was lazy :)'
   elif name.upper() == 'WILL':
-    messae = 'alright vilhelm?'
+    message = 'alright vilhelm?'
   return template('christmasCard-M', name=name, message=message)
 
 
