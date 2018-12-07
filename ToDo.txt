@@ -1,4 +1,5 @@
 
+-add about section, something like 'im a __' and have fancy shit happen
 -improve card appearance
 
 -make cascading projects section with a table

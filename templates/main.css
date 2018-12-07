@@ -493,7 +493,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   
 .wrapper {
   display: inline-block;
-  /* top: -900px; */
+  top: -900px;
   position: relative;
   height: 150px; /* default */
   width: 90px; /* default */
