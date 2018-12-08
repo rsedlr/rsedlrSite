@@ -66,7 +66,7 @@
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <h1 class="mainHead" style="margin-bottom: 0;">Hi, im a </h1>
           <div style="margin-left: 35px; width: 300px; display: inline-block; border-bottom: 4px solid black;"></div>
-          <h5 style="display: block; margin-left: 6px;">(blanks yet to be filled)</h5>
+          <h5 style="display: block; margin-left: 6px;">(blanks yet to be decided)</h5>
           <br><br><br>
           <h3>and some more witty comments i suppose</h3>
         </div>
