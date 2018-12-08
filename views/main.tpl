@@ -68,7 +68,7 @@
           <div style="margin-left: 35px; width: 300px; display: inline-block; border-bottom: 4px solid black;"></div>
           <h5 style="display: block; margin-left: 6px;">(blanks yet to be filled)</h5>
           <br><br><br>
-          <h3>and some more witty comments and stuff i suppose</h3>
+          <h3>and some more witty comments i suppose</h3>
         </div>
       </div>
     </div>
