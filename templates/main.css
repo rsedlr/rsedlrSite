@@ -366,6 +366,10 @@ span.letter-1 {
   color: rgba(255, 255, 255, 1);
   z-index: 1;
 } 
+span.letter-1:hover {
+  top: -8px;
+  right: -8px;
+}
 span.letter-2:hover {
   top: 8px;
   right: 8px;
@@ -375,10 +379,6 @@ span.space {
   min-width: 30px;
   display: inline-block;
 } 
-.moveHover:hover {
-  top: -8px;
-  right: -8px;
-}
 /* hover text end */
 
 /* arrow bottom start */

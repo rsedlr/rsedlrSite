@@ -15,7 +15,7 @@ $(document).ready(function () {
           if(letter == ' '){
             layer += '<span class="space"></span>';
           }else{
-            layer += '<span class="letter-'+i+' moveHover">'+letter+'</span>';
+            layer += '<span class="letter-'+i+'">'+letter+'</span>';
           }
         }
         return layer;
