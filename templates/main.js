@@ -24,7 +24,7 @@ $(document).ready(function () {
     const createLetterContainers = (array) => {
       return array.map((item) => {
         let container = '';
-        container += '<div class="wrapper moveHover">'+item+'</div>';
+        container += '<div class="wrapper">'+item+'</div>';
         return container;
       });
     }
