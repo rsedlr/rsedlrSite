@@ -164,12 +164,12 @@ footer p {
   background: linear-gradient(#000000, #000000); */
 }
 .bg-secondary {
-  background: #7e3ad8 !important;
+  background: #df1e2b !important;
   /* background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#0000ff));
   background: linear-gradient(#ff0000, #0000ff); */
 }
 .bg-third {
-  background: #df1e2b !important;
+  background: #7e3ad8 !important;
   /* background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
   background: linear-gradient(#ffffff, #00ff00); */
 }
