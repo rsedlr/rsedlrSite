@@ -15,7 +15,7 @@ $(document).ready(function () {
           if(letter == ' '){
             layer += '<span class="space"></span>';
           }else{
-            layer += '<span class="letter-'+i+'">'+letter+'</span>';
+            layer += '<span class="letter-'+i+' moveHover">'+letter+'</span>';
           }
         }
         return layer;
@@ -24,7 +24,7 @@ $(document).ready(function () {
     const createLetterContainers = (array) => {
       return array.map((item) => {
         let container = '';
-        container += '<div class="wrapper">'+item+'</div>';
+        container += '<div class="wrapper moveHover">'+item+'</div>';
         return container;
       });
     }
