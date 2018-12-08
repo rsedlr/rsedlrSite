@@ -5,7 +5,7 @@ html,body {
 }
 
 body {
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -30,7 +30,7 @@ hr.light {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
   display: inline-block;
@@ -60,14 +60,14 @@ section h2 {
   background-color: rgba(34, 34, 34, 0.75);
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
   color: #ffffff;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -84,7 +84,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -214,7 +214,7 @@ footer p {
 
 .btn {
   border-radius: 300px;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -309,7 +309,7 @@ footer p {
 
 /* hover main text */
 #mainText {
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 6.1rem;
@@ -325,7 +325,7 @@ footer p {
 #secText {
   margin-top: -35px;
   padding-left: 5px;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 4.2rem;
