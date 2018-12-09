@@ -8,7 +8,7 @@
 <ul class="lightrope" style="top: 0; left: 0;">
   <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 </ul>
-<div class="col-6">
+<div class="col-6" style="margin-bottom: 5%;">
   <div class="wrap" id="wrap">
     <div class="card card--inner">
       <h2><br>And A Happy <br>New Year! <br>{{message}}</h2>
