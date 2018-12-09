@@ -41,16 +41,16 @@
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-lg-12" style="margin-top: auto;">
-          <div class="header-content mr-auto hideSmall" id="mainText" style="margin-left: -400px"><!-- text added through js --></div>
-          <div class="header-content mr-auto hideSmall" id="secText" style="margin-left: -400px"><!-- text added through js --></div>
+        <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
+          <div class="header-content hideSmall adapt-font" id="mainText" ><!-- text added through js --></div>
+          <div class="header-content hideSmall adapt-font" id="secText" ><!-- text added through js --></div>
           <div class="showSmall my-auto" style="text-align: center;">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
           </div>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
-          <div class="round rot90" style="margin: auto">
+          <div class="round rot90" style="margin: auto auto 0px">
             <div id="cta">
               <span class="arrow primera next"></span>
               <span class="arrow segunda next"></span>
@@ -64,9 +64,10 @@
      <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
-          <h1 class="mainHead" style="margin: auto 35px 0px 0">Hi, im a </h1>
-          <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid black; margin-bottom: 10px"></div>
-          <h5 style="display: block; margin-left: 6px;">(blanks yet to be decided)</h5>
+          <h1 class="mainHead" style="margin: auto 35px 0 -5px">Hi, im a </h1>
+          <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid black;"></div>
+          <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5>
+          <p>im a student based in London, England</p>
           <br><br><br>
           <h3>and some more witty comments i suppose</h3>
         </div>

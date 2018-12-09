@@ -41,7 +41,7 @@ $(document).ready(function () {
         }, 250);
       });  
     }).then(() => {
-      let time = 250;
+      let time = 1000;  //250
       return spans.map((span) => {
         time += 75;
         setTimeout(() => {
