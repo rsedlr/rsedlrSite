@@ -39,8 +39,8 @@
     </div>
   </nav>
   <header class="masthead">
-    <div class="container ">
-      <div class="row ">
+    <div class="container h-100">
+      <div class="row h-100">
         <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
           <div class="header-content hideSmall adapt-font" id="mainText" ><!-- text added through js --></div>
           <div class="header-content hideSmall adapt-font" id="secText" ><!-- text added through js --></div>
