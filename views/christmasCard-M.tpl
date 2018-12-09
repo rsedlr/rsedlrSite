@@ -18,8 +18,9 @@
       <h2>Merry <br>Christmas<br>{{name}}</h2>
     </div>
   </div>
-  <button type="button" onclick="openCard();" id="button" style="margin: 10px auto">Open Card</button>
 </div>
+<button type="button" onclick="openCard();" id="button" style="margin: 10px auto">Open Card</button>
+
 <script>
 function openCard() {
   var button = document.getElementById('button');
