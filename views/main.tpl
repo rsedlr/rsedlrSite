@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
-          <div class="round rot90" style="margin: auto">
+          <div class="round rot90" style="margin: auto auto 0px">
             <div id="cta">
               <span class="arrow primera next"></span>
               <span class="arrow segunda next"></span>
