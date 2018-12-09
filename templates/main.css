@@ -2,11 +2,10 @@
 html,body {
   width: 100%;
   height: 100%;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 a {
@@ -31,7 +30,7 @@ hr.light {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200;
   /* letter-spacing: 1px; */
   display: inline-block;
@@ -61,14 +60,14 @@ section h2 {
   background-color: rgba(34, 34, 34, 0.75);
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
   color: #ffffff;
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -85,7 +84,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -215,7 +214,7 @@ footer p {
 
 .btn {
   border-radius: 300px;
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -310,7 +309,7 @@ footer p {
 
 /* hover main text */
 #mainText {
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 100px;
@@ -326,7 +325,7 @@ footer p {
 #secText {
   margin-top: -25px;
   padding-left: 5px;
-  font-family: 'Rubik', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 78px;
