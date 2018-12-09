@@ -64,9 +64,10 @@
      <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
-          <h1 class="mainHead" style="margin: auto 35px 0px 0">Hi, im a </h1>
-          <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid black; margin-bottom: 10px"></div>
+          <h1 class="mainHead" style="margin: auto 35px 0 -5px">Hi, im a </h1>
+          <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid black;"></div>
           <h5 style="display: block; margin-left: 6px;">(blanks yet to be decided)</h5>
+          <p>im a student based in London, England</p>
           <br><br><br>
           <h3>and some more witty comments i suppose</h3>
         </div>
