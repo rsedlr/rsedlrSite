@@ -346,10 +346,10 @@ footer p {
   
 .wrapper {
   display: inline-block;
-  /* top: -900px; */
+  top: -900px;
   position: relative;
-  height: 150px; /* default */
-  width: 90px; /* default */
+  height: 150px;
+  width: 90px;
   transition: ease 0.3s all;
 }
 .wrapper:after {
