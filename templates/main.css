@@ -346,7 +346,7 @@ footer p {
   
 .wrapper {
   display: inline-block;
-  top: -900px;
+  /* top: -900px; */
   position: relative;
   height: 150px; /* default */
   width: 90px; /* default */
