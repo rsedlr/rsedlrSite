@@ -41,7 +41,7 @@
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-lg-12" style="margin-top: auto;">
+        <div class="col-md-7 col-sm-12" style="margin: auto;">
           <div class="header-content mr-auto hideSmall adapt-font" id="mainText" style="margin-left: -400px"><!-- text added through js --></div>
           <div class="header-content mr-auto hideSmall adapt-font" id="secText" style="margin-left: -400px"><!-- text added through js --></div>
           <div class="showSmall my-auto" style="text-align: center;">
