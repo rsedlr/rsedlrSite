@@ -138,7 +138,7 @@ def christmas(name=''):
     timer = c.readlines()
     c.close()
     print(timer)
-    if timer != '1':
+    if timer[0] != '1':
       return template('notChristmas', name=name)
     else:
       return template('christmasCard-M', name=name, message=message)
