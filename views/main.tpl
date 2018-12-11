@@ -70,6 +70,8 @@
           <p>im a student based in London, England</p>
           <br><br><br>
           <h3>and some more witty comments i suppose</h3>
+          <br><br><br>
+          <p>  </p>
         </div>
       </div>
     </div>
@@ -79,6 +81,8 @@
       <div class="row">
         <div class="col-md-10 mx-auto">
           <h1>** insert table full of projects to amaze client **</h1>
+          <br><br><br>
+          <p>  </p>
         </div>
       </div>
     </div>
@@ -88,6 +92,8 @@
       <div class="row">
         <div class="col-md-10 mx-auto">
           <h1>call me :P</h1>
+          <br><br><br>
+          <p>  </p>
         </div>
       </div>
     </div>

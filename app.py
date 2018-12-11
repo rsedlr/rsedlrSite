@@ -2,6 +2,8 @@ import os, subprocess, sys  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
 from datetime import datetime
 
+try:
+  import timer from isItChristmasYet
 
 # @error(404)
 # def error404(error):
@@ -133,7 +135,38 @@ def christmas(name=''):
       And a happy new year :)<br>
       <br>
       ''' % ((name + ',') if name != '' else ''))
-  return template('christmasCard-M', name=name, message=message)
+
+  while timer = False:
+    return template('notChristmas', name=name)
+  else:
+    return template('christmasCard-M', name=name, message=message)
+
+
+@route('/shhnoonecanknowiusethis')
+@route('/shhnoonecanknowiusethis/<name>')
+def christmas(name=''):
+  name = name.upper()
+  if name == 'MUM':
+    message = '''
+      To Mum,<br> 
+      <br>     
+      Wishing you a brilliant christmas,<br>
+      while saving the world by not using paper :)<br>
+      <br>
+      Lots of love Reiss xxx
+      '''  # 'thought i would save the planet and make u a virtual card :)'
+  elif name == 'WILL':
+    message = 'alright bill?'
+  else:
+    message = ('''
+      %s<br>
+      <br>
+      Have a merry christmas,<br>
+      And a happy new year :)<br>
+      <br>
+      ''' % ((name + ',') if name != '' else ''))
+
+    return template('christmasCard-M', name=name, message=message)
 
 
 if __name__ == '__main__':
