@@ -138,7 +138,7 @@ def christmas(name=''):
       <br>
       ''' % ((name + ',') if name != '' else ''))
 
-  while timer === False:
+  while timer == False:
     return template('notChristmas', name=name)
   else:
     return template('christmasCard-M', name=name, message=message)
