@@ -7,6 +7,11 @@ body {
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 }
 
+#canvas{
+  position:absolute;
+  background:  linear-gradient(to bottom, rgb(23,82,145), rgb(105,173,212)); /* df1e2b ; 6f00ff, 7b4397 */
+}
+
 .container {
   align-content: center;
   padding: 10%

@@ -7,19 +7,21 @@
   <meta name="author" content=""> -->
   <title>¯\_(ツ)_/¯</title>
   <link href="static/notChristmas.css" rel="stylesheet">
+  <script src="static/snow.js"></script>
 </head>
 <body>
-<div class="container">
-  <div id="big-box">
-    <div id="little-box">
-      <h1>
-        Hey there,<br>
-        Its not christmas yet!<br>
-        just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br>
-        Thanks for yer patience
-      </h1>
+  <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
+  <div class="container">
+    <div id="big-box">
+      <div id="little-box">
+        <h1>
+          Hey there,<br>
+          Its not christmas yet!<br>
+          just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br>
+          Thanks ¯\_(ツ)_/¯
+        </h1>
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>
