@@ -134,13 +134,13 @@ def christmas(name=''):
       ''' % ((name + ',') if name != '' else ''))
 
   try:
-    from isItChristmasYet import timer 
-  except:
-    print('Problem with christmas timer\n\n*** the world ends ***')
-  if timer:
+    from isItChristmasYet import timer
     while timer == False:
       return template('notChristmas', name=name)
-  return template('christmasCard-M', name=name, message=message)
+    return template('christmasCard-M', name=name, message=message)
+  except:
+    print('Problem with christmas timer\n\n*** the world ends ***')
+    return template('notChristmas', name=name)
 
 
 @route('/shhnoonecanknowiusethis')
