@@ -7,3 +7,5 @@ if __name__ == "__main__":
       timer = True
     else:
       print('\ninvalid command...\n')
+  while 1:
+    time.sleep(0.1)
