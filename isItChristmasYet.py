@@ -1,5 +1,5 @@
 timer = False
-while timer = False:
+while timer == False:
   inpt = input("Enter \'deploy\' to go live\n> ")
   if inpt.upper() == 'DEPLOY':
     timer = True
