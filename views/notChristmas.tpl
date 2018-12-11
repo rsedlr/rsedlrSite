@@ -6,11 +6,13 @@
   <!-- <meta name="description" content="">
   <meta name="author" content=""> -->
   <title>¯\_(ツ)_/¯</title>
+  % include('templates/links.html')
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <link href="static/notChristmas.css" rel="stylesheet">
   <script src="static/snow.js"></script>
 </head>
 <body>
+  % include('templates/Header.html')
   <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
   <div class="container">
     <div id="big-box">
@@ -24,5 +26,6 @@
       </div>
     </div>
   </div>
+  % include('templates/bottom.html')
 </body>
 </html>
