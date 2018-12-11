@@ -12,7 +12,7 @@ $(document).ready(function () {
   var flakes = [],
     canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
-    flakeCount = 1000,
+    flakeCount = 500, // 1000
     mX = -100,
     mY = -100
     canvas.style.removeProperty('height');
