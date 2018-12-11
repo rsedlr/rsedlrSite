@@ -1,5 +1,7 @@
+
 timer = False
 if __name__ == "__main__":  
+  import time
   while timer == False:
     inpt = str(input("Enter \'deploy\' to go live\n> "))
     if inpt.upper() == 'DEPLOY':
