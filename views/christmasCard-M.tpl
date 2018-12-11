@@ -9,7 +9,7 @@
   <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 </ul>
 <div class="col-6" style="margin-top: 10%;">
-  <div class="wrap" id="wrap">
+  <div class="wrap" id="wrap" onclick="openCard();">
     <div class="card card--inner">
       <h2><br>And A Happy <br>New Year! <br>{{message}}</h2>
     </div>
