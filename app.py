@@ -3,7 +3,9 @@ from bottle import route, run, template, static_file, redirect, request, respons
 from datetime import datetime
 
 try:
-  import timer from isItChristmasYet
+  from isItChristmasYet import timer 
+except:
+  print('Problem with christmas timer\n\n*** the world ends ***')
 
 # @error(404)
 # def error404(error):
