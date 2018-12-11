@@ -17,7 +17,7 @@
         <h1>
           Hey there,<br>
           Its not christmas yet!<br>
-          just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br>
+          just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br><br>
           Thanks ¯\_(ツ)_/¯
         </h1>
       </div>
