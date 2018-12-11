@@ -1,6 +1,6 @@
 
 christmas = open('christmas.txt', 'w')
-christmas.writelines('0')
+christmas.write('0')
 
 timer = False
 while timer == False:
