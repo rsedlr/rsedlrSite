@@ -4,4 +4,4 @@ while timer == False:
   if inpt.upper() == 'DEPLOY':
     timer = True
   else:
-    print('\ninvalid command...\n\n')
+    print('\ninvalid command...\n')
