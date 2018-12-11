@@ -1,4 +1,5 @@
 
+global timer
 timer = False
 if __name__ == "__main__":  
   import time
