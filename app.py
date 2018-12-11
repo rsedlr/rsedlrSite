@@ -2,11 +2,6 @@ import os, subprocess, sys  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
 from datetime import datetime
 
-try:
-  from isItChristmasYet import timer 
-except:
-  print('Problem with christmas timer\n\n*** the world ends ***')
-
 # @error(404)
 # def error404(error):
 #   return template('error404')
@@ -138,10 +133,14 @@ def christmas(name=''):
       <br>
       ''' % ((name + ',') if name != '' else ''))
 
-  while timer == False:
-    return template('notChristmas', name=name)
-  else:
-    return template('christmasCard-M', name=name, message=message)
+  try:
+    from isItChristmasYet import timer 
+  except:
+    print('Problem with christmas timer\n\n*** the world ends ***')
+  if timer:
+    while timer == False:
+      return template('notChristmas', name=name)
+  return template('christmasCard-M', name=name, message=message)
 
 
 @route('/shhnoonecanknowiusethis')
