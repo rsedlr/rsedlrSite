@@ -135,6 +135,7 @@ def christmas(name=''):
 
   try:
     from isItChristmasYet import timer
+    print(timer)
     while timer == False:
       return template('notChristmas', name=name)
     return template('christmasCard-M', name=name, message=message)
