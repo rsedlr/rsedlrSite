@@ -1,4 +1,8 @@
 
+html {
+  background-color: rgb(18, 100, 18)
+}
+
 body {
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 }
@@ -9,13 +13,15 @@ body {
 }
 
 #big-box {
-  /* width: 500px;
-  height: 200px; */
-  padding: 30px;
+  padding: 15px 30px;
   background-color: red;
   border: 5px;
   border-color: black;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+}
+
+#little-box {
+  font-size: 2rem;
 }
