@@ -116,22 +116,22 @@ def christmas(name=''):
   name = name.upper()
   if name == 'MUM':
     message = '''
-      To Mum,<br> 
-      <br>     
-      Wishing you a brilliant christmas,<br>
-      while saving the world by not using paper :)<br>
-      <br>
+      To Mum,\n
+      \n     
+      Wishing you a brilliant christmas,\n
+      while saving the world by not using paper :)\n
+      \n
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif name == 'WILL':
     message = 'alright bill?'
   else:
     message = ('''
-      %s<br>
-      <br>
-      Have a merry christmas,<br>
-      And a happy new year :)<br>
-      <br>
+      %s\n
+      \n
+      Have a merry christmas,\n
+      And a happy new year :)\n
+      \n
       ''' % ((name + ',') if name != '' else ''))
   return template('christmasCard-M', name=name, message=message)
 
