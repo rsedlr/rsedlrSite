@@ -137,7 +137,6 @@ def christmas(name=''):
     c = open('christmas.txt','r')
     timer = c.readlines()
     c.close()
-    print(timer)
     if timer != ['1']:
       return template('notChristmas', name=name)
     else:
