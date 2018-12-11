@@ -12,7 +12,6 @@
   <script src="static/snow.js"></script>
 </head>
 <body>
-  % include('templates/Header.html')
   <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
   <div class="container">
     <div id="big-box">
