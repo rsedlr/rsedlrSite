@@ -13,7 +13,7 @@
 </head>
 <body>
   <canvas id="canvas" style="width: 100%; height: 100%; z-index: -1;"></canvas>
-  <div class="container" style="display: flex;">
+  <div class="row">
     <div id="big-box">
       <div id="little-box">
         <h1>
