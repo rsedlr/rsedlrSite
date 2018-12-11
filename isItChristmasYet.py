@@ -1,14 +1,15 @@
 
-global timer
+christmas = open('christmas.txt', 'w')
+christmas.write('0')
+
 timer = False
-if __name__ == "__main__":  
-  import time
-  while timer == False:
-    inpt = str(input("Enter \'deploy\' to go live\n> "))
-    if inpt.upper() == 'DEPLOY':
-      print('whoop whoop we are go for lift off!!!!!!!!!!!!\n')
-      timer = True
-    else:
-      print('\ninvalid command...\n')
-  while 1:
-    time.sleep(0.1)
+while timer == False:
+  inpt = str(input("Enter \'deploy\' to go live\n> "))
+  if inpt.upper() == 'DEPLOY':
+    print('whoop whoop we are go for lift off!!!!!!!!!!!!\n')
+    christmas.write('1')
+    timer = True
+  else:
+    print('\ninvalid command...\n')
+
+christmas.close()

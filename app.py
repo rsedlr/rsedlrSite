@@ -112,8 +112,8 @@ def TextRepeater():
 @route('/christmas')
 @route('/christmas/<name>')
 def christmas(name=''):
-  name = name.upper()
-  if name == 'MUM':
+  nameUp = name.upper()
+  if nameUp == 'MUM':
     message = '''
       To Mum,<br> 
       <br>     
@@ -122,7 +122,7 @@ def christmas(name=''):
       <br>
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
-  elif name == 'WILL':
+  elif nameUp == 'WILL':
     message = 'alright bill?'
   else:
     message = ('''
@@ -134,18 +134,21 @@ def christmas(name=''):
       ''' % ((name + ',') if name != '' else ''))
 
   try:
-    from isItChristmasYet import timer
+    c = open('christmas.txt','r')
+    timer = c.readlines()
+    c.close()
     print(timer)
-    while timer == False:
+    if timer == '0':
       return template('notChristmas', name=name)
-    return template('christmasCard-M', name=name, message=message)
+    else:
+      return template('christmasCard-M', name=name, message=message)
   except:
-    print('Problem with christmas timer\n\n*** the world ends ***')
+    print('Problem with christmas timer\n\n*** the world ends ***\n')
     return template('notChristmas', name=name)
 
 
-@route('/shhnoonecanknowiusethis')
-@route('/shhnoonecanknowiusethis/<name>')
+@route('/shhhnoonecanknowiusethis')
+@route('/shhhnoonecanknowiusethis/<name>')
 def christmas(name=''):
   name = name.upper()
   if name == 'MUM':
