@@ -142,8 +142,8 @@ def christmas(name=''):
       return template('notChristmas', name=name)
     else:
       return template('christmasCard-M', name=name, message=message)
-  except:
-    print('Problem with christmas timer\n\n*** the world ends ***\n')
+  except Exception as e:
+    print('Problem with christmas timer\n\n*** the world ends ***\n' + str(e))
     return template('notChristmas', name=name)
 
 
