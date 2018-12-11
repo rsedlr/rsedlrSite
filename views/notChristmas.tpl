@@ -13,17 +13,15 @@
 </head>
 <body>
   <canvas id="canvas" style="width: 100%; height: 100%; z-index: -1;"></canvas>
-  <div class="row">
-    <div class="container">
-      <div id="big-box">
-        <div id="little-box">
-          <h1>
-            Hey there,<br>
-            Its not christmas yet!<br>
-            just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br>
-            Thanks ¯\_(ツ)_/¯
-          </h1>
-        </div>
+  <div class="container">
+    <div id="big-box">
+      <div id="little-box">
+        <h1>
+          Hey there,<br>
+          Its not christmas yet!<br>
+          just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br>
+          Thanks ¯\_(ツ)_/¯
+        </h1>
       </div>
     </div>
   </div>
