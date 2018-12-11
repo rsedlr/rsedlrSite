@@ -106,7 +106,7 @@ $(document).ready(function () {
     //   canvas.height = window.innerHeight-71
     // }
     canvas.width = ($(document).height() > $(window).height()) ? window.innerWidth - 10 : window.innerWidth; // -10 to cancel out scrollbar
-    canvas.height = (document.body.clientHeight > window.innerHeight) ? document.body.clientHeight : window.innerHeight-71;
+    canvas.height = (document.body.clientHeight > window.innerHeight) ? document.body.clientHeight : window.innerHeight;
   }
 
   canvas.addEventListener("mousemove", function(e) {
