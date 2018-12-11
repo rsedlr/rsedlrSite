@@ -19,8 +19,7 @@
     </div>
   </div>
 </div>
-<button type="button" onclick="openCard();" id="button" style="margin: 20px auto">Open Card</button>
-
+<!-- <button type="button" onclick="openCard();" id="button" style="margin: 20px auto">Open Card</button> -->
 <script>
 function openCard() {
   var button = document.getElementById('button');
