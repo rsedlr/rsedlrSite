@@ -127,12 +127,12 @@ def christmas(name=''):
     message = 'alright bill?'
   else:
     message = ('''
-      %s,
+      %s
 
       Have a merry christmas,
       And a happy new year :)
 
-      ''' % name)
+      ''' % (name + ',') if name != '' else '')
   return template('christmasCard-M', name=name, message=message)
 
 
