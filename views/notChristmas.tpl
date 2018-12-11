@@ -6,6 +6,7 @@
   <!-- <meta name="description" content="">
   <meta name="author" content=""> -->
   <title>¯\_(ツ)_/¯</title>
+  <link href="static/notChristmas.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -14,7 +15,7 @@
       <h1>
         Hey there,<br>
         Its not christmas yet!<br>
-        just hold on tight, this site will be enabled sometime at christmas (not sure when yet :P)<br>
+        just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br>
         Thanks for yer patience
       </h1>
     </div>

@@ -10,7 +10,7 @@
 </head>
 <body>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-     % include('templates/Header.html')
+    % include('templates/Header.html')
   <div id="Main" class="row">
     <div class="col-xl-6 col-lg-12 mainWidthMax" style="margin: 15px auto 35px;">
       <h1 style="color:red;"><b>Heating control</b></h1>

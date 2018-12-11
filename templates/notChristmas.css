@@ -1,8 +1,19 @@
 
+body {
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+}
+
+.container {
+  align-content: center;
+}
+
 #big-box {
   width: 500px;
   height: 200px;
   background-color: red;
   border: 5px;
   border-color: black;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
