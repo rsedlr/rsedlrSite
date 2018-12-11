@@ -12,7 +12,7 @@
   <script src="static/snow.js"></script>
 </head>
 <body>
-  <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
+  <canvas id="canvas" style="width: 100%; height: 100%; z-index: -1;"></canvas>
   <div class="container">
     <div id="big-box">
       <div id="little-box">
