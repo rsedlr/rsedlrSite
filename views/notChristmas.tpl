@@ -13,14 +13,17 @@
   <div class="container">
     <div id="big-box">
       <div id="little-box">
-        <h1>
-          Hey there,<br>
-          Its not christmas yet!<br>
-          just hold on tight, this site will be enabled sometime at christmas (not sure when yet :p)<br><br>
-          Thanks ¯\_(ツ)_/¯
-        </h1>
+        <h2>If you're reading this then you have recieved a christmas card, but you cant open it till christmas:</h2>
+        <span id="christmasCountdown"></span>
+        <h1>seconds till christmas</h1>
       </div>
     </div>
   </div>
 </body>
+<script>
+  const nowTime = new Date();
+  const christmasTime = new Date(2018, 12, 25);
+  var christmasCountdown = document.getElementById('christmasCountdown');
+  christmasCountdown.innerHTML = christmasTime - nowTime;
+</script>
 </html>
