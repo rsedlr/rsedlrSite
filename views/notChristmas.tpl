@@ -15,17 +15,38 @@
     <div id="big-box">
       <div id="little-box">
         <h2>If you're reading this then you have recieved a christmas card, but you cant open it till christmas:</h2>
-        <span id="christmasCountdown"></span>
-        <h1>seconds till christmas</h1>
+        <h1>
+          <span id="day"></span>Days
+          <span id="hur"></span>Hours
+          <span id="min"></span>Minutes
+          <span id="sec"></span>Seconds
+        </h1>
       </div>
     </div>
   </div>
 </body>
-<script>
-  const nowTime = new Date();
-  const christmasTime = new Date(2018, 12, 25);
-  const timeTillChristmas = new Date(nowTime - christmasTime);
-  var christmasCountdown = document.getElementById('christmasCountdown');
-  christmasCountdown.innerHTML = `${timeTillChristmas.getDay()}days, ${timeTillChristmas.getHours()}hours, ${timeTillChristmas.getMinutes()}minutes, ${timeTillChristmas.getSeconds()}seconds`;
+<script>  
+  function countdown() {
+    const nowTime = new Date();
+    const christmasTime = new Date(2018, 12, 25);
+    var remTime = christmasTime.getTime() - nowTime.getTime();
+
+    var sec = Math.floor(remTime / 1000);
+    var min = Math.floor(sec / 60);
+    var hur = Math.floor(min / 60) % 24;
+    var day = Math.floor(hur / 24);
+
+    hur %= 24;
+    min %= 60;
+    sec %= 60;
+
+    $('.sec').text(sec);
+    $('.min').text(min);
+    $('.hur').text(hur);
+    $('.day').text(day);
+
+    setTimeout(countdown, 1000);
+  }
+  countdown();
 </script>
 </html>
