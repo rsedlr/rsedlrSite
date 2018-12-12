@@ -11,7 +11,7 @@
   <link href="static/notChristmas.css" rel="stylesheet">
 </head>
 <body>
-  <div style="z-index: -2; display: inherit; position:absolute">
+  <div style="z-index: -1; position:absolute">
     <!--  christmas tree  -->
     <div class='christmastree'>
       <div class='top'></div>
@@ -805,7 +805,7 @@
         </div>
       </div>
   </div>
-  <div class="container" style="z-index: 2; position:absolute">
+  <div class="container" style="position:absolute">
     <div id="big-box">
       <div id="little-box">
         <h2>If you're reading this then you have recieved a christmas card,<br>but you cant open it till christmas:</h2>
