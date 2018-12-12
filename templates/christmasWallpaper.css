@@ -1,0 +1,230 @@
+
+html {
+  background-color: #B1DEF4;
+  overflow: hidden;
+}
+
+/* christmas tree */
+
+.christmastree,
+.snowman,
+.christmastreeornament,
+.snowflake {
+  height: 150px;
+  width: 150px;
+  display: block;
+  float: left;
+}
+
+.snowflake {
+  position: relative;
+}
+
+.top {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 19.2975px 33.424px 19.2975px;
+  border-color: transparent transparent #ffffff transparent;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25.576px;
+}
+
+.middle {
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 24.1215px 41.779px 24.1215px;
+border-color: transparent transparent #ffffff transparent;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 41.221px;
+  margin-top: -33.424px;
+}
+
+.bottom {
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 28.946px 50.138px 28.946px;
+border-color: transparent transparent #ffffff transparent;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 55.862px;
+  margin-top: -41.779px;
+}
+
+.trunk {
+  background-color: #ffffff;
+  width: 8px;
+  height: 31px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 94px;
+  margin-top: -50.138px;
+}
+
+/* snowman */
+
+.head {
+  width: 28.035px;
+  height: 25.816px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25px;
+}
+
+.eye1,
+.eye2 {
+  background-color: #000000;
+  height: 4.673px;
+  width: 4.673px;
+  border-radius: 50%;
+  position: relative;
+  top: 7.768px;
+  left: 6.075px;
+}
+
+.eye2 {
+  left: 17.289px;
+  margin-top: -4.673px;
+}
+
+.nose {
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 2.3365px 0 2.3365px 14.018px;
+border-color: transparent transparent transparent #f4973a;
+  position: absolute;
+  top: 14.076px;
+  left: 13px;
+}
+
+.body {
+  width: 46.726px;
+  height: 37.641px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 46.188px; 
+  margin-top: -25.816px;
+}
+
+.legs {
+  width: 65.416px;
+  height: 52.696px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 72.304px;
+  margin-top: -37.641px;
+}
+
+/* christmastree ornament */
+
+.ring {
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border: solid #ffffff 1.3px;
+  position: relative;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  top: 25px;
+}
+
+.goldenthingy {
+  background-color: #ffffff;
+  height: 15px;
+  width: 20px;
+  position: relative;
+  left: 50%;
+  border-radius: 60px;
+  transform: translateX(-50%);
+  top: 35px;
+  margin-top: -12px;
+}
+
+.ball {
+  width: 83.34px;
+  height: 83.34px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 41.67px;
+  margin-top: -15px;
+}
+
+.a,
+.b,
+.c {
+  width: 112px;
+  height: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  margin-left: -56px;
+}
+
+.b {
+  transform: rotate(60deg);
+}
+
+.c {
+  transform: rotate(-60deg);
+}
+
+.lu,
+.ru,
+.lo,
+.ro {
+  height: 6px;
+  width: 22px;
+  background-color: #ffffff;
+}
+
+.lu {
+  margin-top: 9px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  transform: rotate(-60deg);
+}
+
+.ru {
+  margin-top: -24px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  transform: rotate(60deg);
+}
+
+.lo {
+  margin-top: -6px;
+  margin-left: 85px;
+  background-color: #ffffff;
+  transform: rotate(-60deg);
+}
+
+.ro {
+  margin-top: 12px;
+  margin-left: 85px;
+  background-color: #ffffff;
+  transform: rotate(60deg);
+}
