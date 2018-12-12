@@ -11,48 +11,50 @@
   <link href="static/notChristmas.css" rel="stylesheet">
 </head>
 <body>
-  <!--  christmas tree  -->
-<div class='christmastree'>
-    <div class='top'></div>
-    <div class='middle'></div>
-    <div class='bottom'></div>
-    <div class='trunk'></div>
-  </div>
-  <!-- snowman  -->
-  <div class='snowman'>
-    <div class='head'>
-      <div class='eye1'></div>
-      <div class='eye2'></div>
-      <div class='nose'></div>
+  <div class="container" style="z-index: -2">
+    <!--  christmas tree  -->
+    <div class='christmastree'>
+      <div class='top'></div>
+      <div class='middle'></div>
+      <div class='bottom'></div>
+      <div class='trunk'></div>
     </div>
-    <div class='body'></div>
-    <div class='legs'></div>
-  </div>
-  <!--  ball ball  -->
-  <div class='christmastreeornament'>
-    <div class='ring'></div>
-    <div class='goldenthingy'></div>
-    <div class='ball'></div>
-  </div>
-  <!-- snow flake -->
-  <div class='snowflake'>
-    <div class='a'>
-      <div class='lu'></div>
-      <div class='ru'></div>
-      <div class='lo'></div>
-      <div class='ro'></div>
+    <!-- snowman  -->
+    <div class='snowman'>
+      <div class='head'>
+        <div class='eye1'></div>
+        <div class='eye2'></div>
+        <div class='nose'></div>
+      </div>
+      <div class='body'></div>
+      <div class='legs'></div>
     </div>
-    <div class='b'>
-      <div class='lu'></div>
-      <div class='ru'></div>
-      <div class='lo'></div>
-      <div class='ro'></div>
+    <!--  ball ball  -->
+    <div class='christmastreeornament'>
+      <div class='ring'></div>
+      <div class='goldenthingy'></div>
+      <div class='ball'></div>
     </div>
-    <div class='c'>
-      <div class='lu'></div>
-      <div class='ru'></div>
-      <div class='lo'></div>
-      <div class='ro'></div>
+    <!-- snow flake -->
+    <div class='snowflake'>
+      <div class='a'>
+        <div class='lu'></div>
+        <div class='ru'></div>
+        <div class='lo'></div>
+        <div class='ro'></div>
+      </div>
+      <div class='b'>
+        <div class='lu'></div>
+        <div class='ru'></div>
+        <div class='lo'></div>
+        <div class='ro'></div>
+      </div>
+      <div class='c'>
+        <div class='lu'></div>
+        <div class='ru'></div>
+        <div class='lo'></div>
+        <div class='ro'></div>
+      </div>
     </div>
   </div>
   <div class="container">
