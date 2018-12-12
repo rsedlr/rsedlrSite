@@ -34,10 +34,10 @@ html {
 
 .middle {
   width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 0 24.1215px 41.779px 24.1215px;
-border-color: transparent transparent #ffffff transparent;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 24.1215px 41.779px 24.1215px;
+  border-color: transparent transparent #ffffff transparent;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -47,10 +47,10 @@ border-color: transparent transparent #ffffff transparent;
 
 .bottom {
   width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 0 28.946px 50.138px 28.946px;
-border-color: transparent transparent #ffffff transparent;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 28.946px 50.138px 28.946px;
+  border-color: transparent transparent #ffffff transparent;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -100,10 +100,10 @@ border-color: transparent transparent #ffffff transparent;
 
 .nose {
   width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 2.3365px 0 2.3365px 14.018px;
-border-color: transparent transparent transparent #f4973a;
+  height: 0px;
+  border-style: solid;
+  border-width: 2.3365px 0 2.3365px 14.018px;
+  border-color: transparent transparent transparent #f4973a;
   position: absolute;
   top: 14.076px;
   left: 13px;
@@ -171,9 +171,7 @@ border-color: transparent transparent transparent #f4973a;
   margin-top: -15px;
 }
 
-.a,
-.b,
-.c {
+.a, .b, .c {
   width: 112px;
   height: 6px;
   background-color: #ffffff;
@@ -192,10 +190,7 @@ border-color: transparent transparent transparent #f4973a;
   transform: rotate(-60deg);
 }
 
-.lu,
-.ru,
-.lo,
-.ro {
+.lu, .ru, .lo, .ro {
   height: 6px;
   width: 22px;
   background-color: #ffffff;
