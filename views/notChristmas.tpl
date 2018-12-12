@@ -28,8 +28,8 @@
 <script>  
   function countdown() {
     const nowTime = new Date();
-    console.log(nowTime);
     const christmasTime = new Date("2018-12-25");
+    console.log(christmasTime);
     var remTime = christmasTime.getTime() - nowTime.getTime();
 
     var sec = Math.floor(remTime / 1000);
