@@ -16,10 +16,10 @@
       <div id="little-box">
         <h2>If you're reading this then you have recieved a christmas card, but you cant open it till christmas:</h2>
         <h1>
-          <span id="day"></span>Days
-          <span id="hur"></span>Hours
-          <span id="min"></span>Minutes
-          <span id="sec"></span>Seconds
+          <span id="day"></span> Days,
+          <span id="hur"></span> Hours,
+          <span id="min"></span> Minutes,
+          <span id="sec"></span> Seconds
         </h1>
       </div>
     </div>
