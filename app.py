@@ -137,18 +137,6 @@ def christmas(name=''):
       <br>
       ''' % ((name + ',') if name != '' else ''))
 
-  # try:
-  #   c = open('christmas.txt','r')
-  #   timer = c.readlines()
-  #   c.close()
-  #   if timer != ['1']:
-  #     return template('notChristmas', name=name)
-  #   else:
-  #     return template('christmasCard-M', name=name, message=message)
-  # except Exception as e:
-  #   print('Problem with christmas timer\n\n*** the world ends ***\n' + str(e))
-  #   return template('notChristmas', name=name)
-
   nowTime = datetime.now()
   christmasTime = datetime(2018, 12, 25, 12)
   timeDiff = nowTime - christmasTime
