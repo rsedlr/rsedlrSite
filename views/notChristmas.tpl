@@ -6,15 +6,59 @@
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
   <!-- <meta name="description" content="">
   <meta name="author" content=""> -->
-  <title>¯\_(ツ)_/¯</title>
+  <title>You've got mail</title>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <link href="static/notChristmas.css" rel="stylesheet">
 </head>
 <body>
+  <!--  christmas tree  -->
+<div class='christmastree'>
+    <div class='top'></div>
+    <div class='middle'></div>
+    <div class='bottom'></div>
+    <div class='trunk'></div>
+  </div>
+  <!-- snowman  -->
+  <div class='snowman'>
+    <div class='head'>
+      <div class='eye1'></div>
+      <div class='eye2'></div>
+      <div class='nose'></div>
+    </div>
+    <div class='body'></div>
+    <div class='legs'></div>
+  </div>
+  <!--  ball ball  -->
+  <div class='christmastreeornament'>
+    <div class='ring'></div>
+    <div class='goldenthingy'></div>
+    <div class='ball'></div>
+  </div>
+  <!-- snow flake -->
+  <div class='snowflake'>
+    <div class='a'>
+      <div class='lu'></div>
+      <div class='ru'></div>
+      <div class='lo'></div>
+      <div class='ro'></div>
+    </div>
+    <div class='b'>
+      <div class='lu'></div>
+      <div class='ru'></div>
+      <div class='lo'></div>
+      <div class='ro'></div>
+    </div>
+    <div class='c'>
+      <div class='lu'></div>
+      <div class='ru'></div>
+      <div class='lo'></div>
+      <div class='ro'></div>
+    </div>
+  </div>
   <div class="container">
     <div id="big-box">
       <div id="little-box">
-        <h2>If you're reading this then you have recieved a christmas card, but you cant open it till christmas:</h2>
+        <h2>If you're reading this then you have recieved a christmas card,<br>but you cant open it till christmas:</h2>
         <h1>
           <span id="day"></span> Days,
           <span id="hur"></span> Hours,
@@ -26,10 +70,9 @@
   </div>
 </body>
 <script>  
-  function countdown() {
+  function christmasCountdown() {
     const nowTime = new Date();
     const christmasTime = new Date("2018-12-25");
-    console.log(christmasTime);
     var remTime = christmasTime.getTime() - nowTime.getTime();
 
     var sec = Math.floor(remTime / 1000);
@@ -46,8 +89,8 @@
     $('#hur').text(hur);
     $('#day').text(day);
 
-    setTimeout(countdown, 1000);
+    setTimeout(christmasCountdown, 1000);
   }
-  countdown();
+  christmasCountdown();
 </script>
 </html>
