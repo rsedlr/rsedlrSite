@@ -34,7 +34,7 @@
 
     var sec = Math.floor(remTime / 1000);
     var min = Math.floor(sec / 60);
-    var hur = Math.floor(min / 60) % 24;
+    var hur = Math.floor(min / 60);
     var day = Math.floor(hur / 24);
 
     hur %= 24;
