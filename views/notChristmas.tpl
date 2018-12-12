@@ -27,8 +27,8 @@
 </body>
 <script>  
   function countdown() {
-    const nowTime = new Date(2018, 12, 12);
-    const christmasTime = new Date(2018, 12, 25);
+    const nowTime = new Date();
+    const christmasTime = new Date("2018-12-25");
     var remTime = christmasTime.getTime() - nowTime.getTime();
 
     var sec = Math.floor(remTime / 1000);
