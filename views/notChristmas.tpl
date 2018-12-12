@@ -40,10 +40,10 @@
     min %= 60;
     sec %= 60;
 
-    $('.sec').text(sec);
-    $('.min').text(min);
-    $('.hur').text(hur);
-    $('.day').text(day);
+    $('#sec').text(sec);
+    $('#min').text(min);
+    $('#hur').text(hur);
+    $('#day').text(day);
 
     setTimeout(countdown, 1000);
   }
