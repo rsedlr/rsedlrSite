@@ -1,25 +1,31 @@
 
 <!doctype html>
 <html lang="en">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
-<title>Merry Christmas</title>
-<link rel="stylesheet" type="text/css" href="/static/christmasCard.css">
-<ul class="lightrope" style="top: 0; left: 0;">
-  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-</ul>
-<div class="col-6">
-  <div class ="wrap" id="wrap">
-    <div class="card card--inner" style="align-content: center" onclick="openCard();">
-      <h2>{{!message}}</h2>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
+  <title>Merry Christmas</title>
+  <link href="static/christmasWallpaper.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/static/christmasCard.css">
+</head>
+<body>
+  % include('templates/christmasWallpaper.html')
+  <ul class="lightrope" style="top: 0; left: 0;">
+    <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+  </ul>
+  <div class="col-6">
+    <div class ="wrap" id="wrap">
+      <div class="card card--inner" style="align-content: center" onclick="openCard();">
+        <h2>{{!message}}</h2>
+      </div>
+      <div class="card card--front back" onclick="openCard();"></div>
+      <div class="card card--front" onclick="openCard();">
+        <h2>Merry <br>Christmas<br>{{name}}</h2>
+      </div>
     </div>
-    <div class="card card--front back" onclick="openCard();"></div>
-    <div class="card card--front" onclick="openCard();">
-      <h2>Merry <br>Christmas<br>{{name}}</h2>
-    </div>
+    <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
   </div>
-  <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
-</div>
+</body>
 <script>
 function openCard() {
   var button = document.getElementById('button');
@@ -36,3 +42,4 @@ function openCard() {
   }
 }
 </script>
+</html>
