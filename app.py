@@ -152,7 +152,7 @@ def christmas(name=''):
   nowTime = datetime.now()
   christmasTime = datetime(2018, 12, 25, 12)
   timeDiff = nowTime - christmasTime
-  if timeDiff.total_seconds() <= 0:
+  if timeDiff.total_seconds() >= 0:
     return template('christmasCard-M', name=name, message=message)
   return template('notChristmas', name=name)
 
