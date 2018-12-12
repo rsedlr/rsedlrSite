@@ -29,6 +29,7 @@ h2 {
   height: 25rem;
   position: relative;
   transform: rotateX(15deg);
+  transform: translateZ(42px);
   transform-style: preserve-3d;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
 }
