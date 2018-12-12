@@ -13,7 +13,7 @@
 </head>
 <body>
   % include('templates/christmasWallpaper.html')
-  <div class="container" style="position: absolute; align-content: center">
+  <div class="container" style="position: absolute; align-content: center; margin: 0px auto auto">
     <div id="big-box">
       <div id="little-box">
         <h2>If you're reading this then you have recieved a christmas card,<br>but you cant open it till christmas:</h2>
