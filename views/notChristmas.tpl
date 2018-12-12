@@ -25,6 +25,6 @@
   const christmasTime = new Date(2018, 12, 25);
   const timeTillChristmas = christmasTime - nowTime;
   var christmasCountdown = document.getElementById('christmasCountdown');
-  christmasCountdown.innerHTML = `%{timeTillChristmas.getDay()}days, %{timeTillChristmas.getHours()}hours, %{timeTillChristmas.getMinutes()}minutes, %{timeTillChristmas.getSeconds()}seconds`;
+  christmasCountdown.innerHTML = `${timeTillChristmas.getDay()}days, ${timeTillChristmas.getHours()}hours, ${timeTillChristmas.getMinutes()}minutes, ${timeTillChristmas.getSeconds()}seconds`;
 </script>
 </html>
