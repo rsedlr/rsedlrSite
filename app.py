@@ -149,7 +149,9 @@ def christmas(name=''):
   #   print('Problem with christmas timer\n\n*** the world ends ***\n' + str(e))
   #   return template('notChristmas', name=name)
 
-  print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+  print(datetime.now())
+  print(datetime(2018, 12, 25, 12))
+  # if datetime.now().strftime("%Y-%m-%d %H:%M:%S") == '2018-12-25 12:00:0'
   return template('notChristmas', name=name)
 
 
