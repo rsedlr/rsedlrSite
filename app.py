@@ -1,5 +1,6 @@
-import os, subprocess, sys, datetime  # , serial
+import os, subprocess, sys  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
+from datetime import datetime
 
 # @error(404)
 # def error404(error):
@@ -154,7 +155,7 @@ def christmas(name=''):
 
 @route('/shhhnoonecanknowiusethis')
 @route('/shhhnoonecanknowiusethis/<name>')
-def christmas(name=''):
+def fakeChristmas(name=''):
   name = name.upper()
   if name == 'MUM':
     message = '''
