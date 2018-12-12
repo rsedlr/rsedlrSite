@@ -138,7 +138,7 @@ def christmas(name=''):
       ''' % ((name + ',') if name != '' else ''))
 
   nowTime = datetime.now()
-  christmasTime = datetime(2018, 12, 25, 12)
+  christmasTime = datetime(2018, 12, 25, 0)
   timeDiff = nowTime - christmasTime
   if timeDiff.total_seconds() >= 0:
     return template('christmasCard-M', name=name, message=message)

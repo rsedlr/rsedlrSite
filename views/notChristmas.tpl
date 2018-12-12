@@ -6,7 +6,6 @@
   <!-- <meta name="description" content="">
   <meta name="author" content=""> -->
   <title>¯\_(ツ)_/¯</title>
-  % include('templates/links.html')
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <link href="static/notChristmas.css" rel="stylesheet">
 </head>
@@ -23,6 +22,5 @@
       </div>
     </div>
   </div>
-  % include('templates/bottom.html')
 </body>
 </html>
