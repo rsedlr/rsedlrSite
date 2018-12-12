@@ -11,7 +11,7 @@
   <link href="static/notChristmas.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container" style="z-index: -2">
+  <div style="z-index: -2">
     <!--  christmas tree  -->
     <div class='christmastree'>
       <div class='top'></div>
