@@ -28,7 +28,7 @@
 <script>  
   function countdown() {
     const nowTime = new Date();
-    const christmasTime = new Date(2018, 12, 25);
+    const christmasTime = new Date("2018-12-25");
     console.log(christmasTime);
     var remTime = christmasTime.getTime() - nowTime.getTime();
 
