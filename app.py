@@ -1,6 +1,5 @@
-import os, subprocess, sys  # , serial
+import os, subprocess, sys, datetime  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
-from datetime import datetime
 
 # @error(404)
 # def error404(error):
@@ -124,6 +123,10 @@ def christmas(name=''):
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'WILL':
     message = 'alright bill?'
+  elif nameUp == 'REICE':
+    message = 'get better soon bro'
+  elif nameUp == 'ISOBEL':
+    message == 'and a happy new year ya slag'
   else:
     message = ('''
       %s<br>
@@ -133,17 +136,20 @@ def christmas(name=''):
       <br>
       ''' % ((name + ',') if name != '' else ''))
 
-  try:
-    c = open('christmas.txt','r')
-    timer = c.readlines()
-    c.close()
-    if timer != ['1']:
-      return template('notChristmas', name=name)
-    else:
-      return template('christmasCard-M', name=name, message=message)
-  except Exception as e:
-    print('Problem with christmas timer\n\n*** the world ends ***\n' + str(e))
-    return template('notChristmas', name=name)
+  # try:
+  #   c = open('christmas.txt','r')
+  #   timer = c.readlines()
+  #   c.close()
+  #   if timer != ['1']:
+  #     return template('notChristmas', name=name)
+  #   else:
+  #     return template('christmasCard-M', name=name, message=message)
+  # except Exception as e:
+  #   print('Problem with christmas timer\n\n*** the world ends ***\n' + str(e))
+  #   return template('notChristmas', name=name)
+
+  print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+  return template('notChristmas', name=name)
 
 
 @route('/shhhnoonecanknowiusethis')
