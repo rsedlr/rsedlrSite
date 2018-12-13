@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  padding: 6% calc(25% - 80px);
+  /* padding: 6% calc(25% - 80px); */
 }
 
 #big-box {
