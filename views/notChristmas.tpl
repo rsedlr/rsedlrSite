@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
     <!-- <meta name="description" content="">
     <meta name="author" content=""> -->
@@ -55,14 +55,6 @@
             <div class="smalltext">Seconds</div>
           </div>
         </div>
-        <!-- <div class="big-box">
-          <h1>
-            <span class="day"></span> Days,
-            <span class="hur"></span> Hours,
-            <span class="min"></span> Minutes,
-            <span class="sec"></span> Seconds
-          </h1>
-        </div> -->
       </div>
     </div>
   </body>

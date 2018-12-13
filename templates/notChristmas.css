@@ -56,16 +56,6 @@ body {
   font-size: 20px;
   text-shadow: 4px 2px 3px rgba(0,0,0, 0.6);
 }
-
-.days {
-  text-shadow: 4px 2px 3px rgba(0,0,0, 0.6);
-}
-.hours {
-  text-shadow: 4px 2px 3px rgba(0,0,0, 0.6);
-}
-.minutes {
-  text-shadow: 4px 2px 3px rgba(0,0,0, 0.6);
-}
-.seconds {
+.days, .hours, .minutes, .seconds {
   text-shadow: 4px 2px 3px rgba(0,0,0, 0.6);
 }
