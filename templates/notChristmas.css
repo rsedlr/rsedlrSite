@@ -32,8 +32,8 @@ body {
 
 
 .countContainer {
-  width: 800px;
-  height: 500px;
+  /* width: 800px;
+  height: 500px; */
   margin:  auto;
   text-align: center
 }
