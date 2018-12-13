@@ -22,12 +22,26 @@
           <h2>but you cant open it till christmas:</h2>
         </div>
         <div class="big-box">
-          <h1>
+          <div class="container">
+            <div class="content">
+              <div class="day">85</div>
+              <div class="hur">22</div>
+              <div class="min">33</div>
+              <div class="sec">54</div>
+            </div>
+            <div class="title">
+              <span>Days</span>
+              <span>Hours</span>
+              <span>Minutes</span>
+              <span>Seconds</span>
+            </div>
+          </div>
+          <!-- <h1>
             <span id="day"></span> Days,
             <span id="hur"></span> Hours,
             <span id="min"></span> Minutes,
             <span id="sec"></span> Seconds
-          </h1>
+          </h1> -->
         </div>
       </div>
     </div>
@@ -47,10 +61,10 @@
       min %= 60;
       sec %= 60;
 
-      $('#sec').text(sec);
-      $('#min').text(min);
-      $('#hur').text(hur);
-      $('#day').text(day);
+      $('.sec').text(sec);
+      $('.min').text(min);
+      $('.hur').text(hur);
+      $('.day').text(day);
 
       setTimeout(christmasCountdown, 1000);
     }
