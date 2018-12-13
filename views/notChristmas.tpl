@@ -22,7 +22,7 @@
           <h2>but you cant open it till christmas:</h2>
         </div>
         <div class="big-box">
-          <div class="countContainer">
+          <!-- <div class="countContainer">
             <div class="content">
               <div class="day">85</div>
               <div class="hur">22</div>
@@ -35,6 +35,24 @@
               <span>Minutes</span>
               <span>Seconds</span>
             </div>
+          </div>
+        </div> -->
+        <div id="clockdiv">
+          <div class="inner">
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+          </div>
+          <div class="inner">
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div class="inner">
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div class="inner">
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
           </div>
         </div>
         <!-- <div class="big-box">
