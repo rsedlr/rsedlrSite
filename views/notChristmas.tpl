@@ -16,7 +16,9 @@
     <div style="width: 100%; position: absolute; top: 0; left: 0;">
       <div class="container" style="position: relative; margin: 0px auto auto">
         <div class="big-box">
-          <h1>You've got mail</h1>
+          <h1 style="font-size: 200px;">You've got mail</h1>
+        </div>
+        <div class="big-box">
           <h2>but you cant open it till christmas:</h2>
         </div>
         <div class="big-box">
