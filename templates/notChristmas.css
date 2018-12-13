@@ -1,16 +1,16 @@
-/* 
+
 html { 
   height: 100%;
- } */
+ }
 
 body {
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   align-items: center;
-  /* height: 100%; */
+  height: 100%;
 }
 
 .container {
-  padding: 6% calc(30% - 100px);
+  padding: calc(10% - 50px) calc(30% - 100px);
   /* padding: 20%; */
 }
 
@@ -75,5 +75,4 @@ body {
   font-size: 20px;
   color: #fff;
   line-height: 50px;
-
 }
