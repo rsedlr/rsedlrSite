@@ -14,7 +14,7 @@ body {
   /* padding: 20%; */
 }
 
-#big-box {
+.big-box {
   padding: 15px 30px;
   background-color: red;
   border: 5px;
@@ -24,7 +24,7 @@ body {
   -webkit-border-radius: 10px;
 }
 
-#little-box {
+.little-box {
   font-size: 1rem;
   text-align: center;
 }
