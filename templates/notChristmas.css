@@ -1,8 +1,8 @@
 
 html { 
   height: 100%;
-  background-color: red;
-  background-image: url('/static/wallpaperT.PNG');
+  background-color: rgb(12, 78, 14);
+  background-image: url('/static/wallpaperB.PNG');
   background-repeat: repeat;
  }
 
