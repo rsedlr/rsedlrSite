@@ -1,7 +1,7 @@
-
+/* 
 html { 
-  /* height: 100%; */
- }
+  height: 100%;
+ } */
 
 body {
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
@@ -27,7 +27,9 @@ body {
   text-align: center;
 }
 
-
+.wallpaper {
+  overflow: hidden;
+}
 
 
 
