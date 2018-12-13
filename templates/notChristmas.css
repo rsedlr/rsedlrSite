@@ -1,7 +1,6 @@
 
-html, body {
-  overflow: auto;
-}
+html { overflow-y:scroll; }
+
 
 body {
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
