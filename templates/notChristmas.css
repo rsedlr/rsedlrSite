@@ -52,6 +52,7 @@ body {
 .countContainer .content > div {
   display: inline-block;
   margin: 10px;
+  margin-top: 15px;
   width: 120px;
   height: 150px;
   background: #000;
