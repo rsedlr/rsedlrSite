@@ -54,8 +54,8 @@ body {
   margin: 10px;
   width: 80px;
   height: 80px;
-  color: white;
-  background: rgba(26, 26, 26, 0.85);
+  color: black;
+  background: rgba(255, 255, 255, 0.85);
 }
 .inner .smalltext {
   font-size: 20px;
