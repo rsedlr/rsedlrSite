@@ -42,7 +42,6 @@ body {
 }
 .inner {
   display:inline-block;
-  border: 5px solid white;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
