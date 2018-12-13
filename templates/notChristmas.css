@@ -6,7 +6,7 @@ html {
 body {
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .container {
