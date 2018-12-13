@@ -1,9 +1,11 @@
 
+html, body {
+  overflow: auto;
+}
 
 body {
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   align-items: center;
-  background-color: transparent;
 }
 
 .container {
