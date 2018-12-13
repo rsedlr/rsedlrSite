@@ -21,7 +21,7 @@
         <div class="big-box">
           <h1 style="margin: 5px">but you cant open it till christmas:</h2>
         </div>
-        <div class="clock-box">
+        <div class="big-box">
           <div id="clockdiv">
             <div class="inner">
               <span class="day"></span>
