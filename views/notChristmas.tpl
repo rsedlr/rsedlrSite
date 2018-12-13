@@ -39,19 +39,19 @@
         </div> -->
         <div id="clockdiv">
           <div class="inner">
-            <span class="days"></span>
+            <span class="day"></span>
             <div class="smalltext">Days</div>
           </div>
           <div class="inner">
-            <span class="hours"></span>
+            <span class="hur"></span>
             <div class="smalltext">Hours</div>
           </div>
           <div class="inner">
-            <span class="minutes"></span>
+            <span class="min"></span>
             <div class="smalltext">Minutes</div>
           </div>
           <div class="inner">
-            <span class="seconds"></span>
+            <span class="sec"></span>
             <div class="smalltext">Seconds</div>
           </div>
         </div>
