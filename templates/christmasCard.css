@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 
 html {
+  background-color: rgb(12, 78, 14);
   background-image: url('/static/wallpaperG.PNG');
   background-repeat: repeat;
 }
