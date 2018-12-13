@@ -35,23 +35,18 @@ body {
   width: 800px;
   height: 500px;
   margin:  auto;
-  background: #01b388;
-  border-radius: 3px;
-  border: 1px solid #01b388;
   text-align: center
 }
 
 .countContainer h2 {
   color: #fff;
   font-size: 30px;
-  font-family: tahoma;
   padding: 50px 0 20px;
   font-weight: normal
 }
 
 .countContainer .content {
   width: 100%;
-  background: #01b388;
 }
 
 .countContainer .content > div {
@@ -63,14 +58,11 @@ body {
   border-radius: 5px;
   color: #fff;
   line-height: 150px;
-  font-family: tahoma;
   font-size: 55px;
 }
 
 .countContainer .title {
-  width: ;
   height: 50px;
-  background: #01b388;
   position: relative
 }
 
@@ -78,7 +70,6 @@ body {
   display: inline-block;
   width: 140px;
   font-size: 20px;
-  font-family: tahoma;
   color: #fff;
   line-height: 50px;
 
