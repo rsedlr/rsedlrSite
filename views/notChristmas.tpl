@@ -22,7 +22,7 @@
           <h2>but you cant open it till christmas:</h2>
         </div>
         <div class="big-box">
-          <div class="container">
+          <div class="countContainer">
             <div class="content">
               <div class="day">85</div>
               <div class="hur">22</div>

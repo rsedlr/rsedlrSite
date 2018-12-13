@@ -31,18 +31,7 @@ body {
 
 
 
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-  body{
-  background: #01b388
-}
-
-  .container {
+.countContainer {
   width: 800px;
   height: 500px;
   margin:  auto;
@@ -52,7 +41,7 @@ body {
   text-align: center
 }
 
-  .container h2 {
+.countContainer h2 {
   color: #fff;
   font-size: 30px;
   font-family: tahoma;
@@ -60,12 +49,12 @@ body {
   font-weight: normal
 }
 
-  .container .content {
+.countContainer .content {
   width: 100%;
   background: #01b388;
 }
 
-  .container .content > div {
+.countContainer .content > div {
   display: inline-block;
   margin: 100px 10px 0;
   width: 120px;
@@ -78,14 +67,14 @@ body {
   font-size: 55px;
 }
 
-  .container .title {
+.countContainer .title {
   width: ;
   height: 50px;
   background: #01b388;
   position: relative
 }
 
-  .container .title span {
+.countContainer .title span {
   display: inline-block;
   width: 140px;
   font-size: 20px;
