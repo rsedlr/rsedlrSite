@@ -49,6 +49,7 @@ body {
   padding: 20px;
   width: 80px;
   height: 80px;
+  color: white;
   background: rgba(26, 26, 26, 0.5);
 }
 .inner .smalltext {
