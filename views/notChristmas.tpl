@@ -37,10 +37,10 @@
         </div>
         <!-- <div class="big-box">
           <h1>
-            <span id="day"></span> Days,
-            <span id="hur"></span> Hours,
-            <span id="min"></span> Minutes,
-            <span id="sec"></span> Seconds
+            <span class="day"></span> Days,
+            <span class="hur"></span> Hours,
+            <span class="min"></span> Minutes,
+            <span class="sec"></span> Seconds
           </h1>
         </div> -->
       </div>
