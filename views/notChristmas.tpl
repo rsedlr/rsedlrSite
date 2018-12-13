@@ -12,7 +12,7 @@
     <link href="static/notChristmas.css" rel="stylesheet">
   </head>
   <body>
-    <!-- % include('templates/christmasWallpaper.html') -->
+    % include('templates/christmasWallpaper.html')
     <div style="width: 100%; position: absolute; top: 0; left: 0;">
       <div class="container" style="position: relative; margin: 0px auto auto">
         <div class="big-box">
