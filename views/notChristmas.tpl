@@ -19,7 +19,7 @@
           <h1 style="font-size: 5rem; margin: 5px">You've got mail</h1>
         </div>
         <div class="big-box">
-          <h2>but you cant open it till christmas:</h2>
+          <h1>but you cant open it till christmas:</h2>
         </div>
         <div class="clock-box">
           <div id="clockdiv">
