@@ -5,11 +5,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
   <title>Merry Christmas</title>
-  <link href="static/christmasWallpaper.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/static/christmasCard.css">
 </head>
 <body>
-  % include('templates/christmasWallpaper.html')
   <ul class="lightrope" style="top: 0; left: 0;">
     <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
   </ul>

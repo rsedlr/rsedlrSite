@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+html {
+  background-image: url('/static/wallpaperG.PNG');
+  background-repeat: repeat;
+}
+
 body {
   margin: 0;
-  background-color: rgb(12, 78, 14);
-  /*background: radial-gradient(circle at center, rgba(50,50,50,1) 0%,rgba(14,14,14,1) 35%) */
   display: flex;
   flex-direction: column;
   align-items: center;
