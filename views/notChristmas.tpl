@@ -13,7 +13,7 @@
 </head>
 <body>
   % include('templates/christmasWallpaper.html')
-  <div style="width: 100%; position: absolute;">
+  <div style="width: 100%; position: absolute; top: 0; left: 0;">
     <div class="container" style="position: relative; margin: 0px auto auto">
       <div id="big-box">
         <div id="little-box">
