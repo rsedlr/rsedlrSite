@@ -21,22 +21,25 @@
         <div class="big-box">
           <h2>but you cant open it till christmas:</h2>
         </div>
-      <div id="clockdiv">
-        <div class="inner">
-          <span class="day"></span>
-          <div class="smalltext">Days</div>
-        </div>
-        <div class="inner">
-          <span class="hur"></span>
-          <div class="smalltext">Hours</div>
-        </div>
-        <div class="inner">
-          <span class="min"></span>
-          <div class="smalltext">Minutes</div>
-        </div>
-        <div class="inner">
-          <span class="sec"></span>
-          <div class="smalltext">Seconds</div>
+        <div class="clock-box">
+          <div id="clockdiv">
+            <div class="inner">
+              <span class="day"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div class="inner">
+              <span class="hur"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div class="inner">
+              <span class="min"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div class="inner">
+              <span class="sec"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
