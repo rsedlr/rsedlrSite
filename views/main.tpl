@@ -31,9 +31,9 @@
             <a class="nav-link js-scroll-trigger bolder mainNav" href="#contact">contact</a>
           </li>
           <!-- temporary until main page is sorted -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger bolder mainNav" href="/heatDemo">HeatingDemo</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -82,7 +82,7 @@
         <div class="col-md-10 mx-auto">
           <h1>** insert table full of projects to amaze client **</h1>
           <br><br><br>
-          <p>  </p>
+          <a href="/heatDemo">Heat demo</a>
         </div>
       </div>
     </div>
