@@ -124,6 +124,10 @@ def christmas(name=''):
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'WILL':
     message = 'alright bill?'
+  elif nameUp == 'REICE':
+    message = 'get better soon bro'
+  elif nameUp == 'ISOBEL':
+    message == 'and a happy new year ya slag'
   else:
     message = ('''
       %s<br>
@@ -133,22 +137,17 @@ def christmas(name=''):
       <br>
       ''' % ((name + ',') if name != '' else ''))
 
-  try:
-    c = open('christmas.txt','r')
-    timer = c.readlines()
-    c.close()
-    if timer != ['1']:
-      return template('notChristmas', name=name)
-    else:
-      return template('christmasCard-M', name=name, message=message)
-  except Exception as e:
-    print('Problem with christmas timer\n\n*** the world ends ***\n' + str(e))
-    return template('notChristmas', name=name)
+  nowTime = datetime.now()
+  christmasTime = datetime(2018, 12, 25, 0)
+  timeDiff = nowTime - christmasTime
+  if timeDiff.total_seconds() >= 0:
+    return template('christmasCard-M', name=name, message=message)
+  return template('notChristmas', name=name)
 
 
 @route('/shhhnoonecanknowiusethis')
 @route('/shhhnoonecanknowiusethis/<name>')
-def christmas(name=''):
+def fakeChristmas(name=''):
   name = name.upper()
   if name == 'MUM':
     message = '''

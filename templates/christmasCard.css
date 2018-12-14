@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+html {
+  background-color: rgb(12, 78, 14);
+  background-image: url('/static/wallpaperG.PNG');
+  background-repeat: repeat;
+  background-position: 0 33px;
+}
+
 body {
   margin: 0;
-  background-color: rgb(12, 78, 14);
-  /*background: radial-gradient(circle at center, rgba(50,50,50,1) 0%,rgba(14,14,14,1) 35%) */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +35,7 @@ h2 {
   height: 25rem;
   position: relative;
   transform: rotateX(15deg);
+  transform: translateZ(50px);
   transform-style: preserve-3d;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
 }

@@ -1,29 +1,66 @@
 
-html {
-  background-color: rgb(18, 100, 18)
-}
+html { 
+  height: 100%;
+  background-color: #B1DEF4;
+  background-image: url('/static/wallpaperB.PNG');
+  background-repeat: repeat;
+ }
 
 body {
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   align-items: center;
-  background-color: transparent;
+  height: 100%;
 }
 
 .container {
-  padding-top: 10%;
+  padding: calc(10% - 50px) calc(30% - 80px);
+  /* padding: 20%; */
 }
 
-#big-box {
-  padding: 15px 30px;
-  background-color: red;
+.big-box {
+  padding: 15px 20px;
+  margin: 20px auto;
+  background-color: rgba(26, 26, 26, 0.85);
+  color: white;
   border: 5px;
   border-color: black;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-}
-
-#little-box {
   font-size: 1rem;
   text-align: center;
 }
+.clock-box {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.wallpaper {
+  overflow: hidden;
+}
+
+
+
+#clockdiv {
+  width: 1000px;
+  width: 100%;
+  top:50%;
+  left:50%;
+  font-size: 50px;
+}
+.inner {
+  display:inline-block;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  color: black;
+  background: rgba(255, 255, 255, 1);
+}
+.inner .smalltext {
+  font-size: 20px;
+}
+
