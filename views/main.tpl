@@ -82,7 +82,7 @@
         <div class="col-md-10 mx-auto">
           <h1>** insert table full of projects to amaze client **</h1>
           <br><br><br>
-          <a href="/heatDemo">Heat demo</a>
+          <a href="/heatDemo" style="font-size: 2rem">Heat demo</a>
         </div>
       </div>
     </div>
