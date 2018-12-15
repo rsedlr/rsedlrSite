@@ -338,7 +338,7 @@ footer p {
   line-height: 1em;
   text-align: center;
   position: relative;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 #secText:hover {
   cursor: default;
