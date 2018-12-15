@@ -42,8 +42,10 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
-          <div class="header-content hideSmall adapt-font" id="mainText" ><!-- text added through js --></div>
-          <div class="header-content hideSmall adapt-font" id="secText" ><!-- text added through js --></div>
+          <div class="hideSmall fitText">
+            <div class="header-content adapt-font" id="mainText" ><!-- text added through js --></div>
+            <div class="header-content adapt-font" id="secText" ><!-- text added through js --></div>
+          </div>
           <div class="showSmall my-auto" style="text-align: center;">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>

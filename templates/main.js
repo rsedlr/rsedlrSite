@@ -50,6 +50,5 @@ $(document).ready(function () {
       });
     });
   }
-
-
+  jQuery(".fitText").fitText(0.5);
 });
