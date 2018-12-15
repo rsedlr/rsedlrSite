@@ -45,8 +45,8 @@
           <div class="header-content hideSmall adapt-font" id="mainText" ><!-- text added through js --></div>
           <div class="header-content hideSmall adapt-font" id="secText" ><!-- text added through js --></div>
           <div class="showSmall my-auto" style="text-align: center;">
-            <h1 style="font-size: 25.5vw; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
-            <h2 style="font-size: 15.5vw; font-weight: 400; padding-left: 8px">personal portfolio</h2>
+            <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
+            <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
           </div>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
