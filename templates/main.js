@@ -50,6 +50,6 @@ $(document).ready(function () {
       });
     });
   }
-  fitText(document.querySelector(".fitText"), 0.38);
+  fitText(document.querySelector(".fitText"), 2);
   // window.fitText( document.getElementById(".fitText"), 1.2 ); 
 });
