@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="/static/mainPage/jquery.fittext.js"></script>
   <link href="/static/main.css" rel="stylesheet">
   <script src="/static/main.js"></script>
