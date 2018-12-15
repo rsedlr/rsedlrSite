@@ -50,6 +50,5 @@ $(document).ready(function () {
       });
     });
   }
-  fitText(document.querySelector(".fitText"), 2);
-  // window.fitText( document.getElementById(".fitText"), 1.2 ); 
+  window.fitText( document.getElementById(".fitText"), 1.2 ); 
 });

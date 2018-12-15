@@ -43,9 +43,9 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
-          <div class="hideSmall fitText">
-            <div class="header-content adapt-font" id="mainText" ><!-- text added through js --></div>
-            <div class="header-content adapt-font" id="secText" ><!-- text added through js --></div>
+          <div class="hideSmall">
+            <div class="header-content fitText adapt-font" id="mainText" ><!-- text added through js --></div>
+            <div class="header-content fitText adapt-font" id="secText" ><!-- text added through js --></div>
           </div>
           <div class="showSmall my-auto" style="text-align: center;">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
