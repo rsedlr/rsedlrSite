@@ -51,5 +51,5 @@ $(document).ready(function () {
     });
   }
   window.fitText( document.getElementById("mainText"), 0.7 ); 
-  window.fitText( document.getElementById("secText"), 1.0 ); 
+  window.fitText( document.getElementById("secText"), 1.1 ); 
 });
