@@ -319,7 +319,8 @@ footer p {
   font-weight: 900;
   width: 600px;
   letter-spacing: 1px;
-  font-size: 100px;
+  /* font-size: 100px; */
+  font-size: 7vw;
   line-height: 1em;
   text-align: center;
   position: relative;
@@ -336,7 +337,8 @@ footer p {
   font-weight: 400;
   width: 600px;
   letter-spacing: 1px;
-  font-size: 78px;
+  /* font-size: 78px; */
+  font-size: 5vw;
   line-height: 1em;
   text-align: center;
   position: relative;
