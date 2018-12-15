@@ -327,14 +327,14 @@ footer p {
 #mainText {
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   font-weight: 900;
-  width: 600px;
+  width: 700px;
   letter-spacing: 1px;
   font-size: 100px;
   line-height: 1em;
   text-align: justify;
   /* text-align: center; */
   position: relative;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 #mainText:hover {
   cursor: default;
@@ -345,14 +345,14 @@ footer p {
   /* padding-left: 2px; */
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   font-weight: 400;
-  width: 600px;
+  width: 700px;
   letter-spacing: 1px;
   font-size: 78px;
   line-height: 1em;
   /* text-align: center; */
   text-align: justify;
   position: relative;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 #secText:hover {
   cursor: default;
