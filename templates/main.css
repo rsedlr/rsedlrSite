@@ -330,7 +330,7 @@ footer p {
 
 #secText {
   margin-top: -25px;
-  padding-left: 2px;
+  /* padding-left: 2px; */
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   font-weight: 400;
   letter-spacing: 1px;
@@ -338,7 +338,7 @@ footer p {
   line-height: 1em;
   text-align: center;
   position: relative;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 #secText:hover {
   cursor: default;
