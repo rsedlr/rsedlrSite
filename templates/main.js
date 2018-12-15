@@ -1,5 +1,7 @@
 
 $(document).ready(function () {
+  document.documentElement.setAttribute('data-useragent', navigator.userAgent); //allows os specific css
+
   const phrases = ['Reiss Edler', 'personal portfolio'];
   const divs = ['mainText', 'secText']; 
   
