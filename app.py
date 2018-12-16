@@ -110,6 +110,7 @@ def TextRepeater():
 ''' --------------- christmas card start --------------- '''
 
 @route('/christmas')
+@route('/christmas/')
 @route('/christmas/<name>')
 def christmas(name=''):
   nameUp = name.upper()
@@ -147,7 +148,7 @@ def christmas(name=''):
 
 
 @route('/shhhnoonecanknowiusethis')
-# @route('/shhhnoonecanknowiusethis/')
+@route('/shhhnoonecanknowiusethis/')
 @route('/shhhnoonecanknowiusethis/<name>')
 def fakeChristmas(name=''):
   nameUp = name.upper()
