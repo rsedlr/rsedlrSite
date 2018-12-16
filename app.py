@@ -173,8 +173,8 @@ def fakeChristmas(name=''):
     return template('christmasCard-M', name=name, message=message)
 
 
-@route('/testing-testing')
-def test():
+@route('/wallpaper')
+def wallpaper():
   return template('wrappingPaper')
 
 
