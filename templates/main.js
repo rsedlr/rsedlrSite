@@ -1,5 +1,7 @@
 
 $(document).ready(function () {
+  document.documentElement.setAttribute('data-useragent', navigator.userAgent); //allows os specific css
+
   const phrases = ['Reiss Edler', 'personal portfolio'];
   const divs = ['mainText', 'secText']; 
   
@@ -50,6 +52,6 @@ $(document).ready(function () {
       });
     });
   }
-
-
+  window.fitText( document.getElementById("mainText"), 0.7 ); 
+  window.fitText( document.getElementById("secText"), 1.1 ); 
 });

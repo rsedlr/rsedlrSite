@@ -4,6 +4,16 @@ html,body {
   height: 100%;
 }
 
+
+.os-specifictml[data-useragent*='Mac OS X'] {
+  font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+}
+
+.os-specific[data-useragent*='Mac OS X 10_10'] {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
 body {
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 }
@@ -28,7 +38,7 @@ hr {
   max-width: 100px;
   margin: 25px auto 0;
   border-width: 1px;
-  border-color: rgba(34, 34, 34, 0.1);
+  border-color: 6rgba(34, 34, 34, 0.1);
 }
 
 hr.light {
@@ -317,12 +327,14 @@ footer p {
 #mainText {
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   font-weight: 900;
+  width: 700px;
   letter-spacing: 1px;
   font-size: 100px;
   line-height: 1em;
-  text-align: center;
+  text-align: justify;
+  /* text-align: center; */
   position: relative;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 #mainText:hover {
   cursor: default;
@@ -330,15 +342,17 @@ footer p {
 
 #secText {
   margin-top: -25px;
-  padding-left: 5px;
+  /* padding-left: 2px; */
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   font-weight: 400;
+  width: 700px;
   letter-spacing: 1px;
   font-size: 78px;
   line-height: 1em;
-  text-align: center;
+  /* text-align: center; */
+  text-align: justify;
   position: relative;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
 }
 #secText:hover {
   cursor: default;

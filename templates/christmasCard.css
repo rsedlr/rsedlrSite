@@ -6,6 +6,9 @@ html {
   background-repeat: repeat;
   background-position: 0 33px;
 }
+.EVIE-theme html {
+  background-image: url('/static/wallpaperEvie.PNG');
+}
 
 body {
   margin: 0;

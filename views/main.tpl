@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-  <link href="static/main.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="/static/mainPage/fittext.js"></script>
   <script src="/static/main.js"></script>
+  <link href="/static/main.css" rel="stylesheet">
 </head>
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -31,9 +32,9 @@
             <a class="nav-link js-scroll-trigger bolder mainNav" href="#contact">contact</a>
           </li>
           <!-- temporary until main page is sorted -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger bolder mainNav" href="/heatDemo">HeatingDemo</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -42,8 +43,10 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
-          <div class="header-content hideSmall adapt-font" id="mainText" ><!-- text added through js --></div>
-          <div class="header-content hideSmall adapt-font" id="secText" ><!-- text added through js --></div>
+          <div class="hideSmall">
+            <div class="header-content os-specific" id="mainText" ><!-- text added through js --></div>
+            <div class="header-content os-specific" id="secText" ><!-- text added through js --></div>
+          </div>
           <div class="showSmall my-auto" style="text-align: center;">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px">personal portfolio</h2>
@@ -82,7 +85,7 @@
         <div class="col-md-10 mx-auto">
           <h1>** insert table full of projects to amaze client **</h1>
           <br><br><br>
-          <p>  </p>
+          <a href="/heatDemo" style="font-size: 2rem">Heat demo</a>
         </div>
       </div>
     </div>
@@ -91,7 +94,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto">
-          <h1>call me :P</h1>
+          <h1>call me :p</h1>
           <br><br><br>
           <p>  </p>
         </div>
@@ -103,9 +106,9 @@
       <p>&copy; Reiss Edler 2018</p>
     </div>
   </footer>
-  <script src="static/mainPage/jquery.min.js"></script>
-  <script src="static/mainPage/bootstrap.bundle.min.js"></script>
-  <script src="static/mainPage/jquery.easing.min.js"></script>
-  <script src="static/mainPage/main.min.js"></script>
+  <script src="/static/mainPage/jquery.min.js"></script>
+  <script src="/static/mainPage/bootstrap.bundle.min.js"></script>
+  <script src="/static/mainPage/jquery.easing.min.js"></script>
+  <script src="/static/mainPage/main.min.js"></script>
 </body>
 </html>
