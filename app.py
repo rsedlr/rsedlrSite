@@ -146,10 +146,11 @@ def christmas(name=''):
 
 
 @route('/shhhnoonecanknowiusethis')
+@route('/shhhnoonecanknowiusethis/')
 @route('/shhhnoonecanknowiusethis/<name>')
 def fakeChristmas(name=''):
-  name = name.upper()
-  if name == 'MUM':
+  nameUp = name.upper()
+  if nameUp == 'MUM':
     message = '''
       To Mum,<br> 
       <br>     
@@ -158,7 +159,7 @@ def fakeChristmas(name=''):
       <br>
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
-  elif name == 'WILL':
+  elif nameUp == 'WILL':
     message = 'alright bill?'
   else:
     message = ('''
