@@ -3,7 +3,9 @@ html {
   height: 100%;
   background-color: #B1DEF4;
   background-image: url('/static/wallpaper-clear.PNG');
+  background-size: 610px 155px;
   background-repeat: repeat;
+  background-position: 0 26px;
  }
 
 body {
