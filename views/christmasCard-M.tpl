@@ -28,8 +28,25 @@
 <script>
   $(document).ready(function () {
     var nameSpan = document.getElementById('name');
-    var name = nameSpan.innerText.toUpperCase();
-    document.documentElement.className += `${name}-theme`;
+    var name = nameSpan.innerText.toUpperCase();  
+    if (name == 'GRANDAD') {
+      document.documentElement.style.backgroundImage = `url('/static/norton.png')`;
+    } else {
+      switch (name) {
+        case 'EVIE':
+          var colour = 'rgb(255, 0, 255)';
+          break;
+        case 'DAD':
+          var colour = 'rgb(0, 0, 0)';
+          break;
+        case 'EVEY':
+          var colour = 'rgb(0, 0, 255)'
+          break;
+        default:
+          var colour = 'rgb(12, 78, 14)'
+      }
+      document.documentElement.style.backgroundColor = colour;
+    }
     console.log('done mate');
   });
 
