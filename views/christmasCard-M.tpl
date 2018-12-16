@@ -35,13 +35,13 @@
       document.documentElement.style.backgroundPosition = '0 10px';
     } else {
       switch (name) {
-        case 'EVIE':
+        case 'EVEY':
           var colour = 'rgb(255, 0, 255)';
           break;
         case 'DAD':
           var colour = 'rgb(0, 0, 0)';
           break;
-        case 'EVEY':
+        case 'EVIE':
           var colour = 'rgb(0, 0, 255)'
           break;
         default:
