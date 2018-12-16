@@ -28,7 +28,7 @@
 function openCard() {
   var button = document.getElementById('button');
   var nameSpan = document.getElementById('name');
-  var name = nameSpan.text();
+  var name = nameSpan.innerText;
   console.log(name);
   
   if (button.innerHTML == 'Open Card') {
