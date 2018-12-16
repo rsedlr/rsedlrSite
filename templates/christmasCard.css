@@ -9,6 +9,15 @@ html {
 .EVIE-theme html {
   background-image: url('/static/wallpaperEvie.PNG');
 }
+.DAD-theme html {
+  background-image: url('/static/wallpaperDad.PNG');
+}
+.EVEY-theme html {
+  background-image: url('/static/wallpaperEvey.PNG');
+}
+.DAD-theme html {
+  background-image: url('/static/wallpaperDad.PNG');
+}
 
 body {
   margin: 0;
