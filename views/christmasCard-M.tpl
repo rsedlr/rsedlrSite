@@ -25,11 +25,14 @@
   </div>
 </body>
 <script>
+  $(document).ready(function () {
+    var nameSpan = document.getElementById('name');
+    var name = nameSpan.innerText;
+    console.log(name);$(document).ready(function () {
+  });
+
 function openCard() {
   var button = document.getElementById('button');
-  var nameSpan = document.getElementById('name');
-  var name = nameSpan.innerText;
-  console.log(name);
   
   if (button.innerHTML == 'Open Card') {
     button.innerHTML = 'Close Card';
