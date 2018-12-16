@@ -114,7 +114,8 @@ def TextRepeater():
 def christmas(name=''):
   for let in name:
     if let == '_':
-      let = ' ' 
+      let = ' '
+      print('let let let let')
   nameUp = name.upper()
   if nameUp == 'MUM':
     message = '''
