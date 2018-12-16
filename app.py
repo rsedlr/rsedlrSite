@@ -146,6 +146,7 @@ def christmas(name=''):
 
 
 @route('/shhhnoonecanknowiusethis')
+@route('/shhhnoonecanknowiusethis/')
 @route('/shhhnoonecanknowiusethis/<name>')
 def fakeChristmas(name=''):
   nameUp = name.upper()
