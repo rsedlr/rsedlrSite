@@ -29,7 +29,6 @@
   $(document).ready(function () {
     var nameSpan = document.getElementById('name');
     var name = nameSpan.innerText.toUpperCase();
-    console.log(`${name}-theme`);
     document.documentElement.className += `${name}-theme`;
   });
 

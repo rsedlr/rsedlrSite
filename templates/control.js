@@ -9,12 +9,16 @@ $(document).ready(function () {
   output.innerHTML = s.value + '%';
   var heat = $("#StatusVal").text();
   var valueDict = {'heat': $("#StatusVal"), 'pc': $("#PC_status"), 'lights_T': $("#T-lights_status"), 'lights_B': $("#B-lights_status"), 'fans': $("#fans_status"), 'curPercent': $("#curOutput")}
-  postVal('pc');
-  postVal('lights_T');
-  postVal('lights_B');
-  postVal('fans');
-  curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
 
+  while (True) {
+    setTimeout(function() {
+      postVal('pc');
+      postVal('lights_T');
+      postVal('lights_B');
+      postVal('fans');
+      curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
+    }, 60000);  //milliseconds
+  }
   function postVal(value) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
