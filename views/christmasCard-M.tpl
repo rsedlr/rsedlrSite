@@ -31,7 +31,7 @@
     var name = nameSpan.innerText.toUpperCase();  
     if (name == 'GRANDAD') {
       document.documentElement.style.backgroundImage = `url('/static/norton.png')`;
-      document.documentElement.style.backgroundSize = 'auto';
+      document.documentElement.style.backgroundSize = '348px 207px';
     } else {
       switch (name) {
         case 'EVIE':
@@ -48,7 +48,6 @@
       }
       document.documentElement.style.backgroundColor = colour;
     }
-    console.log('done mate');
   });
 
 function openCard() {
