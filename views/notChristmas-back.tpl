@@ -11,30 +11,32 @@
     <link href="/static/notChristmas.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container" style="position: relative; margin: 0px auto auto">
-      <div class="big-box">
-        <h1 style="font-size: 5rem; margin: 5px">You've got mail</h1>
-      </div>
-      <div class="big-box">
-        <h1 style="margin: 5px">but you cant open it till christmas:</h2>
-      </div>
-      <div class="big-box">
-        <div id="clockdiv">
-          <div class="inner">
-            <span class="day"></span>
-            <div class="smalltext">Days</div>
-          </div>
-          <div class="inner">
-            <span class="hur"></span>
-            <div class="smalltext">Hours</div>
-          </div>
-          <div class="inner">
-            <span class="min"></span>
-            <div class="smalltext">Minutes</div>
-          </div>
-          <div class="inner">
-            <span class="sec"></span>
-            <div class="smalltext">Seconds</div>
+    <div style="width: 100%; position: absolute; top: 0; left: 0;">
+      <div class="container" style="position: relative; margin: 0px auto auto">
+        <div class="big-box">
+          <h1 style="font-size: 5rem; margin: 5px">You've got mail</h1>
+        </div>
+        <div class="big-box">
+          <h1 style="margin: 5px">but you cant open it till christmas:</h2>
+        </div>
+        <div class="big-box">
+          <div id="clockdiv">
+            <div class="inner">
+              <span class="day"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div class="inner">
+              <span class="hur"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div class="inner">
+              <span class="min"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div class="inner">
+              <span class="sec"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
           </div>
         </div>
       </div>
