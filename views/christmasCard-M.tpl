@@ -18,7 +18,7 @@
       </div>
       <div class="card card--front back" onclick="openCard();"></div>
       <div class="card card--front" onclick="openCard();">
-        <h2>Merry <br>Christmas<br>{{name}}</h2>
+        <h2>Merry <br>Christmas<br><span id="name">{{name}}</span></h2>
       </div>
     </div>
     <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
@@ -27,6 +27,9 @@
 <script>
 function openCard() {
   var button = document.getElementById('button');
+  var nameSpan = document.getElementById('name');
+  var name = nameSpan.text();
+  console.log(name);
   
   if (button.innerHTML == 'Open Card') {
     button.innerHTML = 'Close Card';
