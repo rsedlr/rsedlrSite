@@ -32,6 +32,7 @@
     if (name == 'GRANDAD') {
       document.documentElement.style.backgroundImage = `url('/static/norton.png')`;
       document.documentElement.style.backgroundSize = '348px 207px';
+      document.documentElement.style.backgroundPosition = '0 10px';
     } else {
       switch (name) {
         case 'EVIE':
