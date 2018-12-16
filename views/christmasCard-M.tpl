@@ -36,7 +36,7 @@
     } else if (name == 'PIXIE') {
       document.documentElement.style.backgroundImage = `url('/static/pic/bone.png')`;
       document.documentElement.style.backgroundSize = '348px 207px';
-      document.documentElement.style.backgroundPosition = '0 10px';
+      document.documentElement.style.backgroundPosition = '0 3px';
     } else {
       switch (name) {
         case 'EVEY':
