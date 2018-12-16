@@ -149,7 +149,8 @@ def christmas(name=''):
 @route('/shhhnoonecanknowiusethis/')
 @route('/shhhnoonecanknowiusethis/<name>')
 def fakeChristmas(name=''):
-  nameUp = name.upper().replace('_', ' ')
+  name = name.replace('_', ' ')
+  nameUp = name.upper()
   if nameUp == 'MUM':
     message = '''
       To Mum,<br> 
