@@ -28,7 +28,7 @@
   $(document).ready(function () {
     var nameSpan = document.getElementById('name');
     var name = nameSpan.innerText;
-    console.log(name);$(document).ready(function () {
+    console.log(name);
   });
 
 function openCard() {
