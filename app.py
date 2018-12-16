@@ -112,7 +112,8 @@ def TextRepeater():
 @route('/christmas')
 @route('/christmas/<name>')
 def christmas(name=''):
-  nameUp = name.upper().replace('_', ' ')
+  nameUp = name.upper()
+  name = name.replace('_', ' ')
   if nameUp == 'MUM':
     message = '''
       To Mum,<br> 

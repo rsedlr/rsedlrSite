@@ -30,7 +30,11 @@
     var nameSpan = document.getElementById('name');
     var name = nameSpan.innerText.toUpperCase();  
     if (name == 'GRANDAD') {
-      document.documentElement.style.backgroundImage = `url('/static/norton.png')`;
+      document.documentElement.style.backgroundImage = `url('/static/pic/norton.png')`;
+      document.documentElement.style.backgroundSize = '320px 160px';
+      document.documentElement.style.backgroundPosition = '0 10px';
+    } else if (name == 'PIXIE') {
+      document.documentElement.style.backgroundImage = `url('/static/pic/bone.png')`;
       document.documentElement.style.backgroundSize = '348px 207px';
       document.documentElement.style.backgroundPosition = '0 10px';
     } else {
