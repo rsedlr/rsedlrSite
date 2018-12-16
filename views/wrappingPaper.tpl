@@ -8,7 +8,7 @@
     <meta name="author" content=""> -->
     <title>test</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <link href="/static/notChristmas.css" rel="stylesheet">
+    <!-- <link href="/static/notChristmas.css" rel="stylesheet"> -->
     <link href="/static/christmasWallpaper.css" rel="stylesheet">
   </head>
   <body>
