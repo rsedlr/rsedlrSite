@@ -30,6 +30,7 @@
     var nameSpan = document.getElementById('name');
     var name = nameSpan.innerText.toUpperCase();
     document.documentElement.className += `${name}-theme`;
+    console.log('done mate');
   });
 
 function openCard() {
