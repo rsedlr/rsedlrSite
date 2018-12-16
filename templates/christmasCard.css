@@ -5,19 +5,19 @@ html {
   background-image: url('/static/wallpaper-clear.png');
   background-size: 610px 155px;
   background-repeat: repeat;
-  background-position: 0 33px;
+  background-position: 0 26px;
 }
 .EVIE-theme html {
-  background-image: url('/static/wallpaperEvie.PNG');
+  background-color: rgb(255, 0, 255);
 }
 .DAD-theme html {
-  background-image: url('/static/wallpaperDad.PNG');
+  background-color: rgb(0, 0, 0);
 }
 .EVEY-theme html {
-  background-image: url('/static/wallpaperEvey.PNG');
+  background-color: rgb(0, 0, 255);
 }
-.DAD-theme html {
-  background-image: url('/static/wallpaperDad.PNG');
+.GRANDAD-theme html {
+  background-image: url('/static/norton.png');
 }
 
 body {
