@@ -199,7 +199,7 @@ def fakeChristmas(name=''):
     message = messageTpl %('To Dizzy Fizzy Izzy,', '<br>Tell pandi I miss her<br>', 'From Kawala **Reiss (sorry)')      
   elif nameUp == 'WILL':
     name = 'Bill'
-    message = messageTpl %('sorry *Will,', '<br>sorry u had to have me around most of this year, hopefully a card makes up for it (i aint paying u)', 'From Reiss')
+    message = messageTpl %('sorry *Will,', '<br>sorry u had to have me around most of this year, hopefully a card makes up for it', 'From Reiss')
   elif nameUp == 'JOE':
     message = messageTpl %('Joe,', '<br>Ya soppy git <br>', 'From Reiss')
 
