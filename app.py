@@ -178,7 +178,7 @@ def fakeChristmas(name=''):
   elif nameUp == 'JOE':
     message = messageTpl %('Joe,', 'Ya soppy git <br>')
   else:
-    message = messageTpl % ((name + ',') if name != '' else '')
+    message = messageTpl % ((name + ',') if name != '' else '', '')
 
   return template('christmasCard-M', name=name, message=message)
 
