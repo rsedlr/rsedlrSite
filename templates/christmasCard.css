@@ -49,7 +49,7 @@ h2 {
 }
 @media (max-width: 400px) {
   .card--front {
-    font-size: 70%;
+    font-size: 70% !important;
   }
 }
 
