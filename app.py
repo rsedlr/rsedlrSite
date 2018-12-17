@@ -145,7 +145,9 @@ def fakeChristmas(name=''):
       <br>     
       Wishing you a brilliant christmas,<br>
       while saving the world by not using paper :)<br>
-      <br><br><br>
+      <br>
+      Hang in there, you can eat again soon!<br>
+      <br>
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'MUM':
