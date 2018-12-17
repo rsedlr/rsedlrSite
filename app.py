@@ -201,7 +201,7 @@ def fakeChristmas(name=''):
     name = 'Bill'
     message = messageTpl %('sorry *Will,', '<br>we need to make a project one day soon :)<br>', 'From Reiss')
   elif nameUp == 'JOE':
-    message = messageTpl %('Joe,', '<br>Ya soppy git <br>', 'From Reiss')
+    message = messageTpl %('Joe,', '<br>Ya soppy git<br>', 'From Reiss')
 
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '', 'From Reiss')
