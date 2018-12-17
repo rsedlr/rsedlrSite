@@ -148,17 +148,47 @@ def fakeChristmas(name=''):
       <br>
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
+  elif nameUp == 'MUM':
+    message = '''
+      To Dad,<br> 
+      <br>     
+      Not like this was much of a surprise for you :) <br>
+      Have a great christmas,<br>
+      And a brilliant new year!<br>
+      <br>
+      lots of love from Reiss
+      ''' 
   elif nameUp == 'EVEY':
-    message = messageTpl %('To stinkie-wee-wee,', 'Pink is ur fav colour right? <br>', 'Love from Reiss')
+    message = messageTpl %('To stinkie-wee-wee,', '<br>Pink is your fav colour right? <br>', 'Love from Reiss')
   elif nameUp == 'JOEY':
-    message = messageTpl %('To Jobby,', '<br>', 'Love from Jobby Junior')
+    message = messageTpl %('To Jobby,', '<br> <br>', 'Love from Jobby Junior')
+  elif nameUp == 'NAN_A':
+    message = messageTpl %('To Nanny Anne,', '<br>Hope you got all the indoor slippers you wanted :)<br>', 'Lots of love from Reiss')
+  elif nameUp == 'GRANDAD_B':
+    message = messageTpl %('To the best grandad that ever lived,', '<br>Miss you more and more each day :(<br>hope you have a great christmas wherever you are<br>', 'Lots of love from Reiss')
+  elif nameUp == 'GRANDAD':
+    message = messageTpl %('To grandad,', '<br>Cant wait to see you tomorrow :)<br>', 'Lots of love from Reiss')
+  elif nameUp == 'TASH':
+    message = messageTpl %('To Tash,', '<br>Good luck with your final year at uni, i\'m sure you\'ll smash it!<br>', 'Lots of love from Reiss')
+
   elif nameUp == 'EVIE':
-    message = messageTpl %('To Evie,', 'I heard your new favorite colour was blue ;)<br>', 'Love from Reiss')
+    message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br>', 'Love from Reiss')
+  elif nameUp == 'NAN_M':
+    message = messageTpl %('To Nanny M,', '<br>At least you get a chance to sit down this christmas :)<br>', 'Lots of love from Reiss')
+
+  elif nameUp == 'FREDDO':
+    message = messageTpl %('To Freddo,', '<br>you shagged a bird yet by any chance?<br>', 'From Reiss')
+  elif nameUp == 'BRETT':
+    message = messageTpl %('To Tiddles,', '<br>have a goodun up that mountain<br>', 'From Reiss')      
+  elif nameUp == 'NICOLE':
+    message = messageTpl %('To Nicole,', '<br>i really dont hate you at all :)<br>', 'From Reiss') 
+  elif nameUp == 'REICE':
+    message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
   elif nameUp == 'WILL':
     name = 'Bill'
-    message = messageTpl %('sorry *Will,', 'Ya bastard <br>', 'From Reiss')
+    message = messageTpl %('sorry *Will,', '<br>Ya bastard <br>', 'From Reiss')
   elif nameUp == 'JOE':
-    message = messageTpl %('Joe,', 'Ya soppy git <br>', 'From Reiss')
+    message = messageTpl %('Joe,', '<br>Ya soppy git <br>', 'From Reiss')
 
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '', 'From Reiss')
