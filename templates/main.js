@@ -3,6 +3,7 @@ $(document).ready(function () {
   const phrases = ['Reiss Edler', 'personal portfolio'];
   const divs = ['mainText', 'secText']; 
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+  console.log(isMac);
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
   mainText.className += (isMac) ? 'Mac-Text-main' : 'Win-Text-main'
