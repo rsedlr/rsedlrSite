@@ -18,7 +18,7 @@
         <h2 style="margin: 15px 0">{{!message}}</h2>
       </div>
       <div class="card card--front back" onclick="openCard();"></div>
-      <div class="card card--front" onclick="openCard();">
+      <div class="card card--front" onclick="openCard();" id="cardFront">
         <h2>Merry <br>Christmas<br><span id="name">{{name}}</span></h2>
       </div>
     </div>
