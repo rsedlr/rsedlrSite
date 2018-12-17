@@ -185,7 +185,7 @@ def fakeChristmas(name=''):
   elif nameUp == 'MR_MULLA':
     message = messageTpl %('To Mr Mulla,', '<br>(Thought it would be easier to code a card than write a laod out by hand)', 'From Reiss')      
   elif nameUp == 'MS_AZIZ':
-    message = messageTpl %('To Ms. Aziz,', '<br><br>', 'From Reiss (y12 computing class)')      
+    message = messageTpl %('To Ms. Aziz,', '<br><br>', 'From Reiss<br>(y12 computing class)')      
 
   elif nameUp == 'FRED':
     message = messageTpl %('To Freddo,', '<br>you shagged a bird yet by any chance?<br>', 'From Reiss')
