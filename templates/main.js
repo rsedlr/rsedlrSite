@@ -1,16 +1,18 @@
 
 $(document).ready(function () {
-  document.documentElement.setAttribute('data-useragent', navigator.userAgent); //allows os specific css
-
   const phrases = ['Reiss Edler', 'personal portfolio'];
   const divs = ['mainText', 'secText']; 
+  var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+  var mainText = document.getElementById('mainText');
+  var secText = document.getElementById('secText');
+  mainText.className += (isMac) ? 'Mac-Text-main' : 'Win-Text-main'
+  secText.className += (isMac) ? 'Mac-Text-sec' : 'Win-Text-sec'
   
-  for (var x = 0; x < phrases.length; x++) {
+  for (var x = 0; x < phrases.length; x++) {  // split the array into characters and generate the html
     const createLetterArray = (string) => {
       return string.split('');
     }
-    // split the array into characters and generate the html
-    const createLetterLayers = (array) => {
+    const createLetterLayers = (array) => {  
       return array.map((letter) => {
         let layer = '';
         for (let i = 1; i <= 2; i++) {
@@ -52,6 +54,4 @@ $(document).ready(function () {
       });
     });
   }
-  window.fitText( document.getElementById("mainText"), 0.7 ); 
-  window.fitText( document.getElementById("secText"), 1.1 ); 
 });

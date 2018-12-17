@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="/static/mainPage/fittext.js"></script>
   <script src="/static/main.js"></script>
   <link href="/static/main.css" rel="stylesheet">
 </head>
@@ -44,8 +43,8 @@
       <div class="row h-100">
         <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
           <div class="hideSmall">
-            <div class="header-content os-specific" id="mainText" ><!-- text added through js --></div>
-            <div class="header-content os-specific" id="secText" ><!-- text added through js --></div>
+            <div class="header-content" id="mainText" ><!-- text added through js --></div>
+            <div class="header-content" id="secText" ><!-- text added through js --></div>
           </div>
           <div class="showSmall my-auto" style="text-align: center;">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px;">Reiss Edler</h1>
