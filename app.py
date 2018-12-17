@@ -131,12 +131,12 @@ def fakeChristmas(name=''):
   nameUp = name.upper()
   name = name.replace('_', ' ')
   messageTpl = '''
-      %s<br> 
+      %s<br><br>
       <br>     
       Have a merry christmas,<br>
       And a happy new year!<br>
       %s
-      <br>
+      <br><br><br>
       %s
       '''
   if nameUp == 'MUM':
@@ -173,7 +173,7 @@ def fakeChristmas(name=''):
   elif nameUp == 'PIXIE':
     message = 'Woof ' * 100 
   elif nameUp == 'EVIE':
-    message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br><br><br><br><br>', 'Love from Reiss')
+    message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br>', 'Love from Reiss')
   elif nameUp == 'NAN_M':
     message = messageTpl %('To Nanny M,', '<br>At least you get a chance to sit down this christmas :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'DAD':
