@@ -6,8 +6,8 @@ $(document).ready(function () {
   console.log(isMac);
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
-  mainText.className += (isMac) ? 'Mac-Text-main' : 'Win-Text-main'
-  secText.className += (isMac) ? 'Mac-Text-sec' : 'Win-Text-sec'
+  mainText.className += (isMac) ? ' Mac-Text-main' : ' Win-Text-main'
+  secText.className += (isMac) ? ' Mac-Text-sec' : ' Win-Text-sec'
   
   for (var x = 0; x < phrases.length; x++) {  // split the array into characters and generate the html
     const createLetterArray = (string) => {
