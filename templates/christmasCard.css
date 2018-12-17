@@ -7,18 +7,6 @@ html {
   background-repeat: repeat;
   background-position: 0 26px;
 }
-.EVIE-theme html {
-  background-color: rgb(255, 0, 255);
-}
-.DAD-theme html {
-  background-color: rgb(0, 0, 0);
-}
-.EVEY-theme html {
-  background-color: rgb(0, 0, 255);
-}
-.GRANDAD-theme html {
-  background-image: url('/static/norton.png');
-}
 
 body {
   margin: 0;

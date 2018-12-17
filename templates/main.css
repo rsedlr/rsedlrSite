@@ -69,6 +69,7 @@ section h2 {
 .mainHead {
   font-weight: 700;
   font-size: 6rem;
+  margin: auto 35px 0 -5px
 }
 
 #mainNav {
