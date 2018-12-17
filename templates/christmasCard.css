@@ -45,6 +45,10 @@ h2 {
   .wrap {
     width: 85%;
     height: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .card--front {
     font-size: 70%;
   }
 }
