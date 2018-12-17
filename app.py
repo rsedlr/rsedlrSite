@@ -141,21 +141,21 @@ def fakeChristmas(name=''):
       '''
   if nameUp == 'MUM':
     message = '''
-      To Mum,<br> 
+      To Mum,<br><br>
       <br>     
       Wishing you a brilliant christmas,<br>
       while saving the world by not using paper :)<br>
-      <br>
+      <br><br><br>
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'MUM':
     message = '''
-      To Dad,<br> 
+      To Dad,<br><br> 
       <br>     
       Not like this was much of a surprise for you :) <br>
       Have a great christmas,<br>
       And a brilliant new year!<br>
-      <br>
+      <br><br><br>
       lots of love from Reiss
       ''' 
   elif nameUp == 'EVEY':
@@ -169,7 +169,7 @@ def fakeChristmas(name=''):
   elif nameUp == 'GRANDAD':
     message = messageTpl %('To grandad,', '<br>Cant wait to see you tomorrow :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'TASH':
-    message = messageTpl %('To Tash,', '<br>Good luck with your final year at uni, i\'m sure you\'ll smash it!<br>', 'Lots of love from Reiss')
+    message = messageTpl %('To Tash,', '<br>Good luck with your final year at uni, i\'m sure you\'ll smash it!', 'Lots of love from Reiss')
   elif nameUp == 'PIXIE':
     message = 'Woof ' * 100 
   elif nameUp == 'EVIE':
