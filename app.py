@@ -137,7 +137,7 @@ def fakeChristmas(name=''):
       And a happy new year!<br>
       %s
       <br>
-      From Reiss
+      %s
       '''
   if nameUp == 'MUM':
     message = '''
@@ -149,19 +149,19 @@ def fakeChristmas(name=''):
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'EVEY':
-    message = messageTpl %('To stinkie-wee-wee,', 'Pink is ur fav colour right? <br>')
+    message = messageTpl %('To stinkie-wee-wee,', 'Pink is ur fav colour right? <br>', 'Love from Reiss')
   elif nameUp == 'JOEY':
-    message = messageTpl %('To Jobby,', '<br>')
+    message = messageTpl %('To Jobby,', '<br>', 'Love from Jobby Junior')
   elif nameUp == 'EVIE':
-    message = messageTpl %('To Evie,', 'I heard your new favorite colour was blue ;)<br>')
+    message = messageTpl %('To Evie,', 'I heard your new favorite colour was blue ;)<br>', 'Love from Reiss')
   elif nameUp == 'WILL':
     name = 'Bill'
-    message = messageTpl %('sorry *Will,', 'Ya bastard <br>')
+    message = messageTpl %('sorry *Will,', 'Ya bastard <br>', 'From Reiss')
   elif nameUp == 'JOE':
-    message = messageTpl %('Joe,', 'Ya soppy git <br>')
+    message = messageTpl %('Joe,', 'Ya soppy git <br>', 'From Reiss')
 
   else:
-    message = messageTpl % ((name + ',') if name != '' else '', '')
+    message = messageTpl % ((name + ',') if name != '' else '', '', 'From Reiss')
 
   return template('christmasCard-M', name=name, message=message)
 
