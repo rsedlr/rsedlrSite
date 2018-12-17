@@ -173,7 +173,7 @@ def fakeChristmas(name=''):
   elif nameUp == 'PIXIE':
     message = 'Woof ' * 100 
   elif nameUp == 'EVIE':
-    message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br>', 'Love from Reiss')
+    message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br><br><br>', 'Love from Reiss')
   elif nameUp == 'NAN_M':
     message = messageTpl %('To Nanny M,', '<br>At least you get a chance to sit down this christmas :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'DAD':
