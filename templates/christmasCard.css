@@ -48,7 +48,7 @@ h2 {
   }
 }
 @media (max-width: 400px) {
-  #cardFront {
+  #cardFrontMessage {
     font-size: 70% !important;
   }
 }
