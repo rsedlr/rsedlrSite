@@ -189,7 +189,7 @@ def fakeChristmas(name=''):
       From Reiss
       ''' % ((name + ',') if name != '' else ''))
 
-    return template('christmasCard-M', name=name, message=message)
+  return template('christmasCard-M', name=name, message=message)
 
 
 @route('/wallpaper')
