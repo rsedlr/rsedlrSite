@@ -34,6 +34,7 @@ h2 {
 .wrap {
   width: 28rem;
   height: 33rem;
+  margin: auto;
   position: relative;
   transform: rotateX(15deg);
   transform: translateZ(50px);
