@@ -349,10 +349,10 @@ footer p {
 }
 
 .Mac-sec {
-  font-size: 38px;
+  font-size: 38px !important;
 }
 .Mac-main {
-  font-family: Arial Black, Helvetica,sans-serif; 
+  font-family: Arial Black, Helvetica,sans-serif !important; 
 }
   
 .wrapper {
