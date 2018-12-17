@@ -149,7 +149,7 @@ def fakeChristmas(name=''):
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'EVEY':
-    message = messageTpl %('To stinkie-wee-wee,', 'Pink is ur fav colour right?<br>¯\_(ツ)_/¯ <br>')
+    message = messageTpl %('To stinkie-wee-wee,', 'Pink is ur fav colour right? <br>')
   elif nameUp == 'JOEY':
     message = messageTpl %('To Jobby,', '<br>')
   elif nameUp == 'EVIE':
