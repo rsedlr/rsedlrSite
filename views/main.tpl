@@ -72,7 +72,7 @@
           <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
           <h2>im a computer science student,<br>based in London, England</p>
           <br><br><br>
-          <h3>and some more witty comments i suppose</h3>
+          <p>and some more witty comments i suppose</p>
           <br><br><br>
           <p>  </p>
         </div>
