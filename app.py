@@ -137,6 +137,7 @@ def christmas(name=''):
       Have a merry christmas,<br>
       And a happy new year :)<br>
       <br>
+      From Reiss
       ''' % ((name + ',') if name != '' else ''))
 
   nowTime = datetime.now()
@@ -171,6 +172,7 @@ def fakeChristmas(name=''):
       Have a merry christmas,<br>
       And a happy new year :)<br>
       <br>
+      From Reiss
       ''' % ((name + ',') if name != '' else ''))
 
     return template('christmasCard-M', name=name, message=message)

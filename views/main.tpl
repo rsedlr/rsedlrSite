@@ -42,7 +42,7 @@
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
-          <div class="hideSmall">
+          <div class="hideSmall" style="margin-bottom: 200px">
             <div class="header-content" id="mainText" ><!-- text added through js --></div>
             <div class="header-content" id="secText" ><!-- text added through js --></div>
           </div>
