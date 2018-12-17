@@ -154,6 +154,15 @@ def christmas(name=''):
 def fakeChristmas(name=''):
   nameUp = name.upper()
   name = name.replace('_', ' ')
+  messageTpl = '''
+      %s,<br> 
+      <br>     
+      Wishing you a brilliant christmas,<br>
+      while saving the world by not using paper :)<br>
+      %s
+      <br>
+      From Reiss
+      '''
   if nameUp == 'MUM':
     message = '''
       To Mum,<br> 
@@ -164,7 +173,28 @@ def fakeChristmas(name=''):
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'WILL':
-    message = 'alright bill?'
+    name = 'Bill'
+    message = messageTpl %('sorry *Will', 'Ya bastard <br>')
+    print(message)
+    '''sorry *Will,<br>
+      <br>
+      Have a merry christmas, <br>
+      And a happy new year :) <br>
+      Ya bastard <br>
+      <br>
+      From Reiss'''
+  elif nameUp == 'JOE':
+    message = messageTpl %('sorry *Will', 'Ya bastard <br>')
+    '''
+      Joe,<br>
+      <br>
+      Have a merry christmas,<br>
+      And a happy new year :)<br>
+      ya soppy git<br>
+      <br>
+      From Reiss
+      '''
+
   else:
     message = ('''
       %s<br>
@@ -185,4 +215,4 @@ def wallpaper():
 
 if __name__ == '__main__':
   port = int(os.environ.get('PORT', 4000))
-  run(host='127.0.0.1', port=port, reloader=True, threaded=False, debug=False)
+  run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)
