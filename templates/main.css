@@ -4,16 +4,6 @@ html,body {
   height: 100%;
 }
 
-
-.os-specifictml[data-useragent*='Mac OS X'] {
-  font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
-}
-
-.os-specific[data-useragent*='Mac OS X 10_10'] {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
-}
-
 body {
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 }
