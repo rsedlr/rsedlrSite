@@ -183,7 +183,7 @@ def fakeChristmas(name=''):
   elif nameUp == 'JEL':
     message = messageTpl %('To Jel,', '<br>This one should fit in yer bag nice and easy :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'MR_MULLA':
-    message = messageTpl %('To Mr Mulla,', '<br>(Thought it would be easier to code a card than write a laod out by hand hehe)<br>', 'From Reiss')      
+    message = messageTpl %('To Mr Mulla,', '<br>(Thought it would be easier to code a card than write a laod out by hand)', 'From Reiss')      
   elif nameUp == 'MS_AZIZ':
     message = messageTpl %('To Ms. Aziz,', '<br><br>', 'From Reiss (y12 computing class)')      
 
@@ -192,7 +192,7 @@ def fakeChristmas(name=''):
   elif nameUp == 'BRETT':
     message = messageTpl %('To Tiddles,', '<br>hope its good up that mountain<br>', 'From Reiss')      
   elif nameUp == 'NICOLE':
-    message = messageTpl %('To Nicole,', '<br>i really dont hate you at all :)<br>', 'From Reiss') 
+    message = messageTpl %('To Nicole,', '<br>i really dont hate you at all btw:)<br>', 'From Reiss') 
   elif nameUp == 'REICE':
     message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
   elif nameUp == 'IZZY':
