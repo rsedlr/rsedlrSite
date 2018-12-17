@@ -69,7 +69,7 @@
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <h1 class="mainHead">Hi,<br></h1>
           <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
-          <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5>
+          <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
           <h2>I'm a computer science student,<br>based in London</p>
           <!-- <br><br><br>
           <p>and some more witty comments i suppose</p>
