@@ -155,10 +155,10 @@ def fakeChristmas(name=''):
   nameUp = name.upper()
   name = name.replace('_', ' ')
   messageTpl = '''
-      %s,<br> 
+      %s<br> 
       <br>     
-      Wishing you a brilliant christmas,<br>
-      while saving the world by not using paper :)<br>
+      Have a merry christmas,<br>
+      And a happy new year :)<br>
       %s
       <br>
       From Reiss
@@ -174,20 +174,11 @@ def fakeChristmas(name=''):
       '''  # 'thought i would save the planet and make u a virtual card :)'
   elif nameUp == 'WILL':
     name = 'Bill'
-    message = messageTpl %('sorry *Will', 'Ya bastard <br>')
-
+    message = messageTpl %('sorry *Will,', 'Ya bastard <br>')
   elif nameUp == 'JOE':
-    message = messageTpl %(name, 'Ya soppy git <br>')
-
+    message = messageTpl %('Joe,', 'Ya soppy git <br>')
   else:
-    message = ('''
-      %s<br>
-      <br>
-      Have a merry christmas,<br>
-      And a happy new year :)<br>
-      <br>
-      From Reiss
-      ''' % ((name + ',') if name != '' else ''))
+    message = messageTpl % ((name + ',') if name != '' else ''))
 
   return template('christmasCard-M', name=name, message=message)
 
