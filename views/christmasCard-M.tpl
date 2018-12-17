@@ -15,11 +15,11 @@
   <div class="col-6">
     <div class ="wrap" id="wrap">
       <div class="card card--inner" style="align-content: center" onclick="openCard();">
-        <h2 class="cardMessage" style="margin: 15px 0; padding: 0 10px">{{!message}}</h2>
+        <h2 id="cardMainMessage" style="margin: 15px 0; padding: 0 10px">{{!message}}</h2>
       </div>
       <div class="card card--front back" onclick="openCard();"></div>
       <div class="card card--front" onclick="openCard();">
-        <h2 class="cardMessage">Merry<br>Christmas<br><span id="name">{{name}}</span></h2>
+        <h2 id="cardFrontMessage">Merry<br>Christmas<br><span id="name">{{name}}</span></h2>
       </div>
     </div>
     <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
