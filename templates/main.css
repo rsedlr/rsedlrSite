@@ -329,7 +329,6 @@ footer p {
 #mainText {
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   font-weight: 900;
-  width: 700px;
   letter-spacing: 1px;
   font-size: 100px;
   line-height: 1em;
@@ -347,7 +346,6 @@ footer p {
   /* padding-left: 2px; */
 	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   font-weight: 400;
-  width: 700px;
   letter-spacing: 1px;
   font-size: 78px;
   line-height: 1em;
@@ -358,6 +356,9 @@ footer p {
 }
 #secText:hover {
   cursor: default;
+}
+.Mac-sec {
+  font-size: 68px;
 }
   
 .wrapper {
