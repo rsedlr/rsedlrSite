@@ -170,11 +170,20 @@ def fakeChristmas(name=''):
     message = messageTpl %('To grandad,', '<br>Cant wait to see you tomorrow :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'TASH':
     message = messageTpl %('To Tash,', '<br>Good luck with your final year at uni, i\'m sure you\'ll smash it!<br>', 'Lots of love from Reiss')
-
+  elif nameUp == 'PIXIE':
+    message = 'Woof ' * 100 
   elif nameUp == 'EVIE':
     message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br>', 'Love from Reiss')
   elif nameUp == 'NAN_M':
     message = messageTpl %('To Nanny M,', '<br>At least you get a chance to sit down this christmas :)<br>', 'Lots of love from Reiss')
+  elif nameUp == 'DAD':
+    message = messageTpl %('To Dad,', '<br>Can\'t wait to get back out on the bikes with you :)<br>', 'Lots of love from Reiss')
+  elif nameUp == 'JEL':
+    message = messageTpl %('To Jel,', '<br>This one should fit in yer bag nice and easy :)<br>', 'Lots of love from Reiss')
+  elif nameUp == 'MR_MULLA':
+    message = messageTpl %('To Mr Mulla,', '<br>(Thought it would be easier to code a card than write a laod out by hand hehe)<br>', 'From Reiss')      
+  elif nameUp == 'MS_AZIZ':
+    message = messageTpl %('To Ms. Aziz,', '<br><br>', 'From Reiss (y12 computing class)')      
 
   elif nameUp == 'FREDDO':
     message = messageTpl %('To Freddo,', '<br>you shagged a bird yet by any chance?<br>', 'From Reiss')
@@ -184,6 +193,8 @@ def fakeChristmas(name=''):
     message = messageTpl %('To Nicole,', '<br>i really dont hate you at all :)<br>', 'From Reiss') 
   elif nameUp == 'REICE':
     message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
+  elif nameUp == 'IZZY':
+    message = messageTpl %('To Dizzy Fizzy Izzy,', '<br>Tell pandi i miss her<br>', 'From Kawala **Reiss (sorry)')      
   elif nameUp == 'WILL':
     name = 'Bill'
     message = messageTpl %('sorry *Will,', '<br>Ya bastard <br>', 'From Reiss')
