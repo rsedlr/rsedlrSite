@@ -187,19 +187,19 @@ def fakeChristmas(name=''):
   elif nameUp == 'MS_AZIZ':
     message = messageTpl %('To Ms. Aziz,', '<br><br>', 'From Reiss (y12 computing class)')      
 
-  elif nameUp == 'FREDDO':
+  elif nameUp == 'FRED':
     message = messageTpl %('To Freddo,', '<br>you shagged a bird yet by any chance?<br>', 'From Reiss')
   elif nameUp == 'BRETT':
-    message = messageTpl %('To Tiddles,', '<br>have a goodun up that mountain<br>', 'From Reiss')      
+    message = messageTpl %('To Tiddles,', '<br>hope its good up that mountain<br>', 'From Reiss')      
   elif nameUp == 'NICOLE':
     message = messageTpl %('To Nicole,', '<br>i really dont hate you at all :)<br>', 'From Reiss') 
   elif nameUp == 'REICE':
     message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
   elif nameUp == 'IZZY':
-    message = messageTpl %('To Dizzy Fizzy Izzy,', '<br>Tell pandi i miss her<br>', 'From Kawala **Reiss (sorry)')      
+    message = messageTpl %('To Dizzy Fizzy Izzy,', '<br>Tell pandi I miss her<br>', 'From Kawala **Reiss (sorry)')      
   elif nameUp == 'WILL':
     name = 'Bill'
-    message = messageTpl %('sorry *Will,', '<br>Ya bastard <br>', 'From Reiss')
+    message = messageTpl %('sorry *Will,', '<br>sorry u had to have me around most of this year, hopefully a card makes up for it (i aint paying u)', 'From Reiss')
   elif nameUp == 'JOE':
     message = messageTpl %('Joe,', '<br>Ya soppy git <br>', 'From Reiss')
 
