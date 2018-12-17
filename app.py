@@ -113,32 +113,8 @@ def TextRepeater():
 @route('/christmas/')
 @route('/christmas/<name>')
 def christmas(name=''):
-  nameUp = name.upper()
-  name = name.replace('_', ' ')
-  if nameUp == 'MUM':
-    message = '''
-      To Mum,<br> 
-      <br>     
-      Wishing you a brilliant christmas,<br>
-      while saving the world by not using paper :)<br>
-      <br>
-      Lots of love Reiss xxx
-      '''  # 'thought i would save the planet and make u a virtual card :)'
-  elif nameUp == 'WILL':
-    message = 'alright bill?'
-  elif nameUp == 'REICE':
-    message = 'get better soon bro'
-  elif nameUp == 'ISOBEL':
-    message == 'and a happy new year ya slag'
-  else:
-    message = ('''
-      %s<br>
-      <br>
-      Have a merry christmas,<br>
-      And a happy new year :)<br>
-      <br>
-      From Reiss
-      ''' % ((name + ',') if name != '' else ''))
+
+  # add from temp
 
   nowTime = datetime.now()
   christmasTime = datetime(2018, 12, 25, 0)
@@ -158,7 +134,7 @@ def fakeChristmas(name=''):
       %s<br> 
       <br>     
       Have a merry christmas,<br>
-      And a happy new year :)<br>
+      And a happy new year!<br>
       %s
       <br>
       From Reiss
@@ -172,11 +148,18 @@ def fakeChristmas(name=''):
       <br>
       Lots of love Reiss xxx
       '''  # 'thought i would save the planet and make u a virtual card :)'
+  elif nameUp == 'EVEY':
+    message = messageTpl %('To stinkie-wee-wee,', 'Pink is ur fav colour right?<br>¯\_(ツ)_/¯ <br>')
+  elif nameUp == 'JOEY':
+    message = messageTpl %('To Jobby,', '<br>')
+  elif nameUp == 'EVIE':
+    message = messageTpl %('To Evie,', 'I heard your new favorite colour was blue ;)<br>')
   elif nameUp == 'WILL':
     name = 'Bill'
     message = messageTpl %('sorry *Will,', 'Ya bastard <br>')
   elif nameUp == 'JOE':
     message = messageTpl %('Joe,', 'Ya soppy git <br>')
+
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '')
 

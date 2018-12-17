@@ -48,6 +48,9 @@
           case 'EVIE':
             var colour = 'rgb(0, 0, 255)'
             break;
+          case 'JOEY':
+            var colour = 'rgb(85, 0, 182)'
+            break;
           default:
             var colour = 'rgb(12, 78, 14)'
         }
