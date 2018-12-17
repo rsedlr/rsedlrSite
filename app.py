@@ -150,14 +150,16 @@ def fakeChristmas(name=''):
       <br>
       Lots of love Reiss xxx
       ''' 
-  elif nameUp == 'MUM':
+  elif nameUp == 'DAD':
     message = '''
       To Dad,<br><br> 
       <br>     
       Not like this was much of a surprise for you :) <br>
       Have a great christmas,<br>
       And a brilliant new year!<br>
-      <br><br><br>
+      <br>
+      Can't wait to get back out on the bikes with you :)<br>
+      <br>
       lots of love from Reiss
       ''' 
   elif nameUp == 'EVEY':
@@ -178,15 +180,12 @@ def fakeChristmas(name=''):
     message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br>', 'Love from Reiss')
   elif nameUp == 'NAN_M':
     message = messageTpl %('To Nanny M,', '<br>At least you get a chance to sit down this christmas :)<br>', 'Lots of love from Reiss')
-  elif nameUp == 'DAD':
-    message = messageTpl %('To Dad,', '<br>Can\'t wait to get back out on the bikes with you :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'JEL':
     message = messageTpl %('To Jel,', '<br>This one should fit in yer bag nice and easy :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'MR_MULLA':
     message = messageTpl %('To Mr Mulla,', '<br>(Thought it would be easier to code a card than write a laod out by hand)', 'From Reiss')      
   elif nameUp == 'MS_AZIZ':
     message = messageTpl %('To Ms. Aziz,', '<br><br>', 'From Reiss<br>(y12 computing class)')      
-
   elif nameUp == 'FRED':
     message = messageTpl %('To Freddo,', '<br>you shagged a bird yet by any chance?<br>', 'From Reiss')
   elif nameUp == 'BRETT':
@@ -202,7 +201,6 @@ def fakeChristmas(name=''):
     message = messageTpl %('sorry *Will,', '<br>we need to make a project one day soon :)<br>', 'From Reiss')
   elif nameUp == 'JOE':
     message = messageTpl %('Joe,', '<br>Ya soppy git<br>', 'From Reiss')
-
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '', 'From Reiss')
 
