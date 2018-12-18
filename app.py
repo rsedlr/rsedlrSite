@@ -227,7 +227,7 @@ def christmas(name=''):
 @route('/shhhnoonecanknowiusethis')
 def shhh(name=''):
   nowTime = datetime.now()
-  christmasTime = datetime(2018, 12, 18, 0)
+  christmasTime = datetime(2018, 12, 18, 11)
   timeDiff = nowTime - christmasTime
   if timeDiff.total_seconds() >= 0:
     return '<p>Its christmas<p>'
