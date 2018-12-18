@@ -226,6 +226,13 @@ def christmas(name=''):
 
 @route('/shhhnoonecanknowiusethis')
 def shhh(name=''):
+  nowTime = datetime.now()
+  christmasTime = datetime(2018, 12, 18, 0)
+  timeDiff = nowTime - christmasTime
+  if timeDiff.total_seconds() >= 0:
+    return '<p>Its christmas<p>'
+  return '<p>its not christmas<p>'
+
   return template('wrappingPaper')
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
