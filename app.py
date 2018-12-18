@@ -183,7 +183,10 @@ def christmas(name=''):
     message = messageTpl %('To Martina,', '<br>Hope u get a new guitar or something musicy :)<br>', 'From Reiss') 
   elif nameUp == 'Laura':
     message = messageTpl %('To Queenie,', '<br>Hope u get a new shank or something :p<br>', 'From Reiss') 
-
+  elif nameUp == 'ZOE':
+    message = messageTpl %('To Zoe,', '<br>(i dont know ur address to post a card)<br>', 'From Reiss') 
+  elif nameUp == 'AMELIA':
+    message = messageTpl %('To Zoe,', '<br>Hope your horse gave u a good shag :)<br>', 'From Reiss') 
   elif nameUp == 'REICE':
     message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
   elif nameUp == 'IZZY':
@@ -191,7 +194,7 @@ def christmas(name=''):
   elif nameUp == 'WILL':
     name = 'Bill'
     message = messageTpl %('sorry *Will,', '<br>we need to make a project one day soon :)<br>', 'From Reiss')
-  elif nameUp == 'JOE':
+  elif nameUp == 'JOE_ASH':
     message = messageTpl %('Joe,', '<br>Ya soppy git<br>', 'From Reiss')
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
