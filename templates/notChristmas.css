@@ -42,7 +42,7 @@ body {
 
 @media (max-width: 550px) {
   #mainText {
-    font-size: 4rem;
+    font-size: 4rem !important;
   }
 }
 
