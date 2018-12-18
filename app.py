@@ -177,6 +177,13 @@ def christmas(name=''):
     message = messageTpl %('To Tiddles,', '<br>hope its good up that mountain<br>', 'From Reiss')      
   elif nameUp == 'NICOLE':
     message = messageTpl %('To Nicole,', '<br>hope ur christmas is Lush ;)<br>', 'From Reiss') 
+  elif nameUp == 'EMILY':
+    message = messageTpl %('To Emily,', '<br>not like I showed you this before or anythin<br>', 'From Reiss') 
+  elif nameUp == 'MARTINA':
+    message = messageTpl %('To Martina,', '<br>Hope u get a new guitar or something musicy :)<br>', 'From Reiss') 
+  elif nameUp == 'Laura':
+    message = messageTpl %('To Queenie,', '<br>Hope u get a new shank or something :p<br>', 'From Reiss') 
+
   elif nameUp == 'REICE':
     message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
   elif nameUp == 'IZZY':
