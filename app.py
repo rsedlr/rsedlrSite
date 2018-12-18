@@ -229,7 +229,8 @@ def shhh(name=''):
   nowTime = datetime.now()
   christmasTime = datetime(2018, 12, 18, 23)
   timeDiff = nowTime - christmasTime
-  print(timeDiff)
+  print(nowTime)
+  print(christmasTime)
   if timeDiff.total_seconds() >= 0:
     return '<p>Its christmas<p>'
   return '<p>its not christmas<p>'
