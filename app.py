@@ -210,6 +210,7 @@ def shhh(name=''):
 
 @route('/h162bs5dkjwels9f74nc7r64/git-pull')
 def gitPull():
+  print('start')
   subprocess.call("sudo git pull", shell=True)
   print('done')
 
