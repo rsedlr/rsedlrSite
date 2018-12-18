@@ -239,7 +239,6 @@ def shhh(name=''):
 def gitPull():
   subprocess.call("sudo git pull", shell=True)
   print('')
-  subprocess.call("python app.py", shell=True)
 
 # @route('/wallpaper')
 # def wallpaper():
