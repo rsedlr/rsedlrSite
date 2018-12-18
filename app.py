@@ -208,7 +208,7 @@ def christmas(name=''):
 def shhh(name=''):
   return template('wrappingPaper')
 
-@route('/h162bs5dkjwels9f74nc7r64/git-pull', method='POST')
+@route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
   subprocess.call("sudo git pull", shell=True)
   print('')
