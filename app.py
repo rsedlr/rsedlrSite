@@ -217,7 +217,6 @@ def christmas(name=''):
   namePref = name.split(' ')[0]
   if namePref.upper() not in prefix:      #only splits if no prefix is present at start of name
     name = name.split(' ')[0]
-    print(nameUp[:3])
   
   if name != '':
     name += ', '
