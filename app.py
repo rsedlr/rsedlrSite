@@ -218,8 +218,7 @@ def christmas(name=''):
   if namePref.upper() not in prefix:      #only splits if no prefix is present at start of name
     name = name.split(' ')[0]
   
-  if name != '':
-    name += ', '
+  name += ', ' if name != '' else ''
   return template('notChristmas', name=name)
 
 
