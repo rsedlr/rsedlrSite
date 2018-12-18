@@ -233,7 +233,7 @@ def shhh(name=''):
     return '<p>Its christmas<p>'
   return '<p>its not christmas<p>'
 
-  return template('wrappingPaper')
+  # return template('wrappingPaper')
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
