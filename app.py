@@ -212,9 +212,12 @@ def christmas(name=''):
   timeDiff = nowTime - christmasTime
   if timeDiff.total_seconds() >= 0:
     return template('christmasCard-M', name=name, message=message)
+
+  prefix = ['MR ', 'MS ', 'MRS']
+  if nameUp[:3] not in prefix:
+    name = name.split(' ')[0]
+    print(nameUp[:3])
   
-  if nameUp == 'JOE_ASH':
-    name = 'Joe'
   if name != '':
     name += ', '
   return template('notChristmas', name=name)
