@@ -189,6 +189,8 @@ def christmas(name=''):
     message = messageTpl %('To Mudders,', '<br>keep being muddy u muddy person :)<br>', 'From Reiss') 
   elif nameUp == 'AMELIA':
     message = messageTpl %('To Zoe,', '<br>Hope your horse gave u a good shag :)<br>', 'From Reiss') 
+  elif nameUp == 'LAWA':
+    message = messageTpl %('To Lawa,', '<br>Miss u Lawa :(<br>', 'From Reiss') 
   elif nameUp == 'REICE':
     message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
   elif nameUp == 'IZZY':
