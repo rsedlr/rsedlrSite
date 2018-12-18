@@ -187,7 +187,7 @@ def christmas(name=''):
   elif nameUp == 'JOE':
     message = messageTpl %('Joe,', '<br>Ya soppy git<br>', 'From Reiss')
   else:
-    message = messageTpl % ((name + ',') if name != '' else '', '', 'From Reiss')
+    message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
 
   # nowTime = datetime.now()
   # christmasTime = datetime(2018, 12, 25, 0)
