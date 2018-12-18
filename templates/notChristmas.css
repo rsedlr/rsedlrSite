@@ -21,6 +21,7 @@ body {
 .big-box {
   padding: 15px 20px;
   margin: 20px auto;
+  max-width: 800px;
   background-color: rgba(26, 26, 26, 0.85);
   color: white;
   border: 5px;
