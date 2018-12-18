@@ -212,6 +212,8 @@ def christmas(name=''):
   timeDiff = nowTime - christmasTime
   if timeDiff.total_seconds() >= 0:
     return template('christmasCard-M', name=name, message=message)
+  if name != '':
+    name += ', '
   return template('notChristmas', name=name)
 
 
