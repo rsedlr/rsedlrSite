@@ -193,6 +193,8 @@ def christmas(name=''):
     message = messageTpl %('To Lawa,', '<br>Miss u Lawa :(<br>', 'From Reiss') 
   elif nameUp == 'NAT':
     message = messageTpl %('To Na-Fanny-Well,', '<br>good luck with ur IB bud :)<br>', 'From Reiss') 
+  elif nameUp == 'KIWA':
+    message = messageTpl %('To Makeup,', '<br>hope u get all the makeup u wanted :)<br>', 'From Reiss') 
   elif nameUp == 'BODO':
     message = messageTpl %('To Bodo,', '<br>( dw its python backend :p )<br>', 'From Reiss') 
   elif nameUp == 'REICE':
