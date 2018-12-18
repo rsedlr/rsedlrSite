@@ -213,8 +213,8 @@ def christmas(name=''):
   if timeDiff.total_seconds() >= 0:
     return template('christmasCard-M', name=name, message=message)
 
-  prefix = ['MR_', 'MS_', 'MRS']
-  if nameUp[:3] not in prefix:
+  prefix = ['MR_', 'DR_' 'MS_', 'MRS']   
+  if nameUp[:3] not in prefix:      #only splits if no prefix is present at start of name
     name = name.split(' ')[0]
     print(nameUp[:3])
   
