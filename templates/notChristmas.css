@@ -40,7 +40,11 @@ body {
   overflow: hidden;
 }
 
-
+@media (max-width: 550px) {
+  #mainText {
+    font-size: 4rem;
+  }
+}
 
 #clockdiv {
   width: 1000px;
