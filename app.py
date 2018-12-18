@@ -211,8 +211,8 @@ def christmas(name=''):
 
   nowTime = datetime.now()
   christmasTime = datetime(2018, 12, 25, 0)
-  timeDiff = nowTime - christmasTime
-  if timeDiff.total_seconds() >= 0:
+  timeDiff = christmasTime - nowTime
+  if timeDiff.total_seconds() <= 0:
     return template('christmasCard-M', name=name, message=message)
 
   prefix = ['MR', 'DR' 'MS', 'MRS', 'MISS']   
@@ -227,7 +227,7 @@ def christmas(name=''):
 @route('/shhhnoonecanknowiusethis')
 def shhh(name=''):
   nowTime = datetime.now()
-  christmasTime = datetime(2018, 12, 18, 23)
+  christmasTime = datetime(2018, 12, 18, 22, 10)
   timeDiff = christmasTime - nowTime
   print(timeDiff)
   if timeDiff.total_seconds() <= 0:
