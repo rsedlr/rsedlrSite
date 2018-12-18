@@ -208,6 +208,9 @@ def christmas(name=''):
 def shhh(name=''):
   return template('wrappingPaper')
 
+@route('/h162bs5dkjwels9f74nc7r64/git-pull')
+def gitPull():
+  subprocess.call("cd /var/www/rsedlr.xyz ; git pull", shell=True)
 
 # @route('/wallpaper')
 # def wallpaper():
