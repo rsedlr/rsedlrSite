@@ -233,7 +233,7 @@ def shhh():
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
-  git.cmd.Git(git_dir).pull()
+  git.cmd.Git('/var/www/rsedlr.xyz').pull()
   # subprocess.call("sudo git pull", shell=True)
   print('doneeee pull')
 
