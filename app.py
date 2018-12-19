@@ -233,7 +233,7 @@ def shhh():
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
-  subprocess.call("cd /var/www/rsedlr.xyz ; sudo git pull", shell=False)
+  subprocess.call(['cd /var/www/rsedlr.xyz','sudo git pull'], shell=False)
   print('doneeeeee')
 
 # @route('/wallpaper')
