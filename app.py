@@ -159,8 +159,6 @@ def christmas(name=''):
     message = messageTpl %('To grandad,', '<br>Cant wait to see you tomorrow :)<br>', 'Lots of love from Reiss')
   elif nameUp == 'TASH':
     message = messageTpl %('To Tash,', '<br>Good luck with your final year at uni, i\'m sure you\'ll smash it!', 'Lots of love from Reiss')
-  elif nameUp == 'PIXIE':
-    message = 'Woof ' * 100 
   elif nameUp == 'EVIE':
     message = messageTpl %('To Evie,', '<br>I heard blue was your new favorite colour :)<br>', 'Love from Reiss')
   elif nameUp == 'NAN_M':
@@ -201,11 +199,15 @@ def christmas(name=''):
     message = messageTpl %('To Reice,', '<br>Get well soon mate<br>', 'From Reiss')      
   elif nameUp == 'IZZY':
     message = messageTpl %('To Dizzy Fizzy Izzy,', '<br>Tell pandi I miss her<br>', 'From Kawala **Reiss (sorry)')      
+  elif nameUp == 'MR_BOYCE':
+    message = messageTpl %('To Boycie,', '<br>Hope it\'s not too hot out there :)<br>', 'From Reiss')      
   elif nameUp == 'WILL':
     name = 'Bill'
     message = messageTpl %('sorry *Will,', '<br>we need to make a project one day soon :)<br>', 'From Reiss')
   elif nameUp == 'JOE_ASH':
     message = messageTpl %('Joe,', '<br>Ya soppy git<br>', 'From Reiss')
+  elif nameUp == 'PIXIE':
+    message = 'Woof ' * 100 
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
 
