@@ -235,7 +235,7 @@ def shhh():
 def gitPull():
   git.cmd.Git(git_dir).pull()
   # subprocess.call("sudo git pull", shell=True)
-  print('doneeee')
+  print('doneeee pull')
 
 # @route('/wallpaper')
 # def wallpaper():
