@@ -1,4 +1,4 @@
-import os, subprocess, sys  # , serial
+import os, subprocess, sys, git  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
 from datetime import datetime
 
@@ -233,8 +233,9 @@ def shhh():
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
-  subprocess.call(['cd /var/www/rsedlr.xyz','sudo git pull'], shell=False)
-  print('doneeeeeee')
+  git.cmd.Git(git_dir).pull()
+  # subprocess.call("sudo git pull", shell=True)
+  print('doneeee')
 
 # @route('/wallpaper')
 # def wallpaper():
