@@ -227,7 +227,7 @@ def christmas(name=''):
   return template('notChristmas', name=name)
 
 
-@route('/shhhnoonecanknowiusethis')
+@route('/shhhnoonecanknowiusethis/<name>')
 def shhh(name=''):
   nameUp = name.upper()
   name = name.replace('_', ' ')
