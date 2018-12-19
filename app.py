@@ -227,8 +227,8 @@ def christmas(name=''):
   return template('notChristmas', name=name)
 
 
-@route('/shhhnoonecanknowiusethis/<name>')
-def shhh(name=''):
+@route('/shhhnoonecanknowiusethis')
+def shhh():
   return template('wrappingPaper')
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
