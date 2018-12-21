@@ -255,7 +255,7 @@ footer p {
 
 .hidden {
   height: 0px;
-  visibility: hidden;
+  /* visibility: hidden; */
   -webkit-transition: height, 0.5s linear;
   -moz-transition: height, 0.5s linear;
   -ms-transition: height, 0.5s linear;
