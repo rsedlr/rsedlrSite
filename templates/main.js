@@ -10,7 +10,7 @@ $(document).ready(function () {
     secText.className += ' Mac-sec';  
   }
 
-  $( "#showMoreTable" ).click(function() {
+  $( "#moreBtn" ).click(function() {
     hide("hiddenTable");
   });
   
