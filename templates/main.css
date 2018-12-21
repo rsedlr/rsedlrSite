@@ -245,6 +245,10 @@ footer p {
   padding: 15px 45px;
 }
 
+.header-title {
+  font-size: 40px;
+}
+
 @media (min-width: 998px) {
   header.masthead {
     height: 100vh;

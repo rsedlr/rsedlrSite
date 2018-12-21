@@ -82,7 +82,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto">
-          <h1><u>Table of projects</u></h1>
+          <h1 style="font-size: 50px;"><u>Table of projects</u></h1>
         </div>
       </div>
       <div class="container">
@@ -94,9 +94,9 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">Remote Heating Control</h2>
+              <h2 class="display-4 header-title">Remote Heating Control</h2>
               <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
-              <button class="btn btn-more" id="moreBtn" type="button" href="/heatDemo">Example</button>
+              <button class="btn btn-more" id="HeatDemoBtn" type="button">Example</button>
             </div>
           </div>
         </div>
