@@ -50,10 +50,6 @@
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
           <div class="round rot90" style="margin: auto auto 0px">
@@ -153,7 +149,10 @@
           </div>
         </div>
       </div>
-      
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </section>
   <section class="bg-third text-center mainSection" id="contact">
