@@ -87,6 +87,61 @@
           <a href="/heatDemo" style="font-size: 2rem">Heat demo</a>
         </div>
       </div>
+
+
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="p-5">
+                <h2 class="display-4">stuff</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p-5">
+                <h2 class="display-4">stuff stuff</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="p-5">
+                <h2 class="display-4">stuff stuff stuff</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </div>
   </section>
   <section class="bg-third text-center mainSection" id="contact">
