@@ -14,7 +14,7 @@ $(document).ready(function () {
     hide("hiddenTable");
   });
   $( "#HeatDemoBtn" ).click(function() {
-    window.location.href = '/HeatDemo';
+    window.location.href = '/heatDemo';
   });
   
   function hide(id) {
