@@ -263,7 +263,7 @@ footer p {
   transition: height, 0.5s linear;
 }
 .hidden.open {
-  height: 300px;
+  height: inherit;
   visibility: visible;
   -webkit-transition: height, 0.5s linear;
   -moz-transition: height, 0.5s linear;
