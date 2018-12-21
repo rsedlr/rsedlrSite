@@ -11,7 +11,7 @@ $(document).ready(function () {
   }
 
   $( "#showMoreTable" ).click(function() {
-    hide("moreBtn");
+    hide("hiddenTable");
   });
   
   function hide(id) {
