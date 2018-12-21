@@ -50,6 +50,10 @@
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
           <div class="round rot90" style="margin: auto auto 0px">
@@ -135,12 +139,12 @@
       <div id="hiddenTable" style="display: none">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
+            <div class="col-lg-6">
               <div class="p-5">
-                <img class="img-fluid rounded-circle" src="static/pic/bone.png" alt="">
+                <img class="img-fluid rounded-circle" src="static/pic/norton.png" alt="">
               </div>
             </div>
-            <div class="col-lg-6 order-lg-1">
+            <div class="col-lg-6">
               <div class="p-5">
                 <h2 class="display-4">hidden Stuff</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
@@ -149,6 +153,7 @@
           </div>
         </div>
       </div>
+      
     </div>
   </section>
   <section class="bg-third text-center mainSection" id="contact">
