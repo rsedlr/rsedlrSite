@@ -223,6 +223,7 @@ footer p {
 
 .btn {
   border-radius: 300px;
+  padding: .5rem 1rem;
 	font-family: Arial,Helvetica,sans-serif; 
   letter-spacing: 2px;
   text-transform: uppercase;
