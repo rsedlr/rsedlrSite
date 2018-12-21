@@ -256,20 +256,20 @@ footer p {
 .hidden {
   height:0px;
   visibility: hidden;
-  -webkit-transition:height, 0.5s linear;
-  -moz-transition: height, 0.5s linear;
-  -ms-transition: height, 0.5s linear;
-  -o-transition: height, 0.5s linear;
-  transition: height, 0.5s linear;
+  -webkit-transition: visibility, 0.5s linear;
+  -moz-transition: visibility, 0.5s linear;
+  -ms-transition: visibility, 0.5s linear;
+  -o-transition: visibility, 0.5s linear;
+  transition: visibility, 0.5s linear;
 }
 .hidden.open {
-height: auto;
-visibility: visible;
--webkit-transition:height, 0.5s linear;
--moz-transition: height, 0.5s linear;
--ms-transition: height, 0.5s linear;
--o-transition: height, 0.5s linear;
-transition: height, 0.5s linear;
+  height: auto;
+  visibility: visible;
+  -webkit-transition: visibility, 0.5s linear;
+  -moz-transition: visibility, 0.5s linear;
+  -ms-transition: visibility, 0.5s linear;
+  -o-transition: visibility, 0.5s linear;
+  transition: visibility, 0.5s linear;
 }
 
 @media (min-width: 998px) {
