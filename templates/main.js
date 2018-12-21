@@ -5,9 +5,23 @@ $(document).ready(function () {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
-  mainText.className += (isMac) ? ' Mac-main' : '';
-  secText.className += (isMac) ? ' Mac-sec' : '';
+  if (isMac) {
+    mainText.className += ' Mac-main';
+    secText.className += ' Mac-sec';  
+  }
+
+  $( "#showMoreTable" ).click(function() {
+    hide("moreBtn");
+  });
   
+  function hide(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block') {
+      e.style.display = 'none';  // or visibility: 'hidden'
+    } else {
+      e.style.display = 'block';  // or visibility: 'visible'
+    }
+  }
   for (var x = 0; x < phrases.length; x++) {  // split the array into characters and generate the html
     const createLetterArray = (string) => {
       return string.split('');
@@ -45,7 +59,7 @@ $(document).ready(function () {
         }, 250);
       });  
     }).then(() => {
-      let time = 1000;  //250
+      let time = 1200;  //250
       return spans.map((span) => {
         time += 75;
         setTimeout(() => {

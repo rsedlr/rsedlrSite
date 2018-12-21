@@ -229,6 +229,17 @@ footer p {
   text-transform: uppercase;
 }
 
+.btn-more {
+  background-color: black; 
+  color: white; 
+  font-size: 20px; 
+  font-weight: bold;
+}
+.btn-more:hover {
+  background-color: white; 
+  color: black; 
+}
+
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
