@@ -204,7 +204,7 @@ def christmas(name=''):
   elif nameUp == 'IZZY':
     message = messageTpl %('To Dizzy Fizzy Izzy,', '<br>Tell pandi I miss her<br>', 'From Kawala **Reiss (sorry)')      
   elif nameUp == 'MR_BOYCE':
-    message = messageTpl %('To Boycie,', '<br>Hope it\'s not too hot out there :)<br>', 'From Reiss')      
+    message = messageTpl %('To Boicie,', '<br>Hope it\'s not too hot out there :)<br>', 'From Reiss')      
   elif nameUp == 'WILL':
     name = 'Bill'
     message = messageTpl %('sorry *Will,', '<br>we need to make a project one day soon :)<br>', 'From Reiss')
@@ -230,6 +230,9 @@ def christmas(name=''):
 @route('/shhhnoonecanknowiusethis')
 def shhh():
   return template('wrappingPaper')
+
+''' --------------- christmas card end --------------- '''
+
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():

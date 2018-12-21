@@ -149,7 +149,7 @@
           </div>
         </div>
       </div>
-      <button class="" type="button">Menu</button>
+      <button class="btn btn-primary" id="showMoreTable" type="button">Show More</button>
     </div>
   </section>
   <section class="bg-third text-center mainSection" id="contact">
