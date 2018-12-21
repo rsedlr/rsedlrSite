@@ -11,8 +11,7 @@ $(document).ready(function () {
   }
 
   $( "#moreBtn" ).click(function() {
-    $("#hiddenTable").animate({height: 'toggle'});
-    // $("#hiddenTable").toggleClass('open');
+    $("#hiddenTable").toggleClass('vis');
   });
   $( "#HeatDemoBtn" ).click(function() {
     window.location.href = '/heatDemo';

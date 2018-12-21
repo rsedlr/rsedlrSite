@@ -131,7 +131,7 @@
           </div>
         </div>
       </div>
-      <div id="hiddenTable" class="hidden">
+      <div id="hiddenTable" class="dis-none">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
