@@ -253,6 +253,23 @@ footer p {
   font-size: 35px;
 }
 
+.hidden {
+  height:0px;
+  -webkit-transition:height, 0.5s linear;
+  -moz-transition: height, 0.5s linear;
+  -ms-transition: height, 0.5s linear;
+  -o-transition: height, 0.5s linear;
+  transition: height, 0.5s linear;
+}
+.hidden.open {
+height: auto;
+-webkit-transition:height, 0.5s linear;
+-moz-transition: height, 0.5s linear;
+-ms-transition: height, 0.5s linear;
+-o-transition: height, 0.5s linear;
+transition: height, 0.5s linear;
+}
+
 @media (min-width: 998px) {
   header.masthead {
     height: 100vh;
