@@ -245,6 +245,10 @@ footer p {
   padding: 15px 45px;
 }
 
+.round-corners {
+  border-radius: 30px !important;
+}
+
 .header-title {
   font-size: 35px;
 }
