@@ -82,7 +82,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto">
-          <h1>** insert table full of projects to amaze client **</h1>
+          <h1><u>Table of projects</u></h1>
           <br><br><br>
           <a href="/heatDemo" style="font-size: 2rem">Heat demo</a>
         </div>
