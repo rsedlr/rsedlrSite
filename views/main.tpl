@@ -89,7 +89,6 @@
       </div>
 
 
-      <section>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
@@ -105,8 +104,6 @@
             </div>
           </div>
         </div>
-      </section>
-      <section>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
@@ -122,8 +119,6 @@
             </div>
           </div>
         </div>
-      </section>
-      <section>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
@@ -139,7 +134,6 @@
             </div>
           </div>
         </div>
-      </section>
 
 
     </div>
