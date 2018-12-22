@@ -194,18 +194,18 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="p-5">
-              <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="p-5">
+                <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-5">
-              <h2 class="display-4 header-title">another things</h2>
-              <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+            <div class="col-lg-6">
+              <div class="p-5">
+                <h2 class="display-4 header-title">another things</h2>
+                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+              </div>
             </div>
           </div>
         </div>
