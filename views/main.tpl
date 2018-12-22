@@ -51,14 +51,16 @@
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
           <p style="color: white">(currently in development)</p>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">move</a>
+          <!-- <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">move</a> -->
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
           <div class="round rot90" style="margin: auto auto 0px">
-            <div id="cta">
-              <span class="arrow primera next"></span>
-              <span class="arrow segunda next"></span>
-            </div>
+            <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger">
+              <div id="cta">
+                <span class="arrow primera next"></span>
+                <span class="arrow segunda next"></span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
