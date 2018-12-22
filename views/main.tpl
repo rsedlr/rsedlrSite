@@ -50,6 +50,7 @@
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
+          <p style="color: white">(currently in development)</p>
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
           <div class="round rot90" style="margin: auto auto 0px">
@@ -82,7 +83,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto">
-          <h1 style="font-size: 50px;"><u>Table of projects</u></h1>
+          <h1 style="font-size: 55px;"><u>Table of projects</u></h1>
         </div>
       </div>
       <div class="container">
@@ -110,8 +111,9 @@
           </div>
           <div class="col-lg-6">
             <div class="p-5">
-              <h2 class="display-4 header-title">stuff stuff</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
+              <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the url and click send, if you particularly like said person a personal message can be added.</p>
+              <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
             </div>
           </div>
         </div>
@@ -125,7 +127,7 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4 header-title">stuff stuff stuff</h2>
+              <h2 class="display-4 header-title"></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
             </div>
           </div>
@@ -156,8 +158,8 @@
             </div>
             <div class="col-lg-6 order-lg-1">
               <div class="p-5">
-                <h2 class="display-4 header-title">hidden Stuff</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <h2 class="display-4 header-title">Autonomous RC car</h2>
+                <p>I heard google was making one so i thought i should have a go too.</p>
               </div>
             </div>
           </div>
@@ -171,8 +173,8 @@
             </div>
             <div class="col-lg-6">
               <div class="p-5">
-                <h2 class="display-4 header-title">hidden Stuff</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <h2 class="display-4 header-title">RFID door lock</h2>
+                <p>i always thought contactless cards were cool, so i made one secure my room from... urm... invasion?</p>
               </div>
             </div>
           </div>
@@ -186,8 +188,8 @@
             </div>
             <div class="col-lg-6 order-lg-1">
               <div class="p-5">
-                <h2 class="display-4 header-title">hidden Stuff</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <h2 class="display-4 header-title">Automated Plant Waterer</h2>
+                <p>I wasnt always around to water my plant, so i decided to make an arduino do it for me.</p>
               </div>
             </div>
           </div>
