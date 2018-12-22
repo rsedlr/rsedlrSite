@@ -127,8 +127,8 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4 header-title"></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4 header-title">Text based python game</h2>
+              <p>A short Lord Of The Rings themed OOP python game made by me and a friend</p>
             </div>
           </div>
         </div>
@@ -143,8 +143,8 @@
             </div>
             <div class="col-lg-6">
               <div class="p-5">
-                <h2 class="display-4 header-title">hidden Stuff</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <h2 class="display-4 header-title">Autonomous RC car</h2>
+                <p>I heard google was making one so i thought i should have a go too.</p>
               </div>
             </div>
           </div>
@@ -158,8 +158,8 @@
             </div>
             <div class="col-lg-6 order-lg-1">
               <div class="p-5">
-                <h2 class="display-4 header-title">Autonomous RC car</h2>
-                <p>I heard google was making one so i thought i should have a go too.</p>
+                <h2 class="display-4 header-title">Instagram Bot</h2>
+                <p>Adapted version of Tim Grossmann's InstaPy to like my friends posts without me having to spend too long on social media</p>
               </div>
             </div>
           </div>
@@ -189,7 +189,7 @@
             <div class="col-lg-6 order-lg-1">
               <div class="p-5">
                 <h2 class="display-4 header-title">Automated Plant Waterer</h2>
-                <p>I wasnt always around to water my plant, so i decided to make an arduino do it for me.</p>
+                <p>I wasnt always around to water my plant, why not have an arduino do it for me.</p>
               </div>
             </div>
           </div>
