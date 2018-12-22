@@ -305,8 +305,8 @@ footer p {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.5);
-    background-color: rgba(34, 34, 34, 0.75);
-  }
+    background-color: rgba(34, 34, 34, 0.93);
+    }
   #mainNav.navbar-shrink .navbar-brand {
     color: #ffffff;
   }
