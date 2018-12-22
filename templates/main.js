@@ -12,9 +12,9 @@ $(document).ready(function () {
 
   $( "#moreBtn" ).click(function() {
     if ($( "#hiddenTable:first").is(":hidden") ) {
-      $("#hiddenTable").slideDown(4000);
+      $("#hiddenTable").slideDown(3000);
     } else {
-      $("#hiddenTable").slideUp(10000);
+      $("#hiddenTable").slideUp(3000);
     }
     // $( "#hiddenTable" ).slideDown("slow");
     // $("#hiddenTable").toggleClass('vis');
