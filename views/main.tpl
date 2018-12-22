@@ -210,7 +210,7 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-more" id="moreBtn" type="button">Show More</button>
+      <button class="btn btn-more" id="moreBtn" type="button" style="margin-top: 10px">Show More</button>
     </div>
   </section>
   <section class="bg-third text-center mainSection" id="contact">
