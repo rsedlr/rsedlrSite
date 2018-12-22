@@ -55,7 +55,7 @@
         </div>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
           <div class="round rot90" style="margin: auto auto 0px">
-            <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger">
+            <a href="#about" class="js-scroll-trigger">
               <div id="cta">
                 <span class="arrow primera next"></span>
                 <span class="arrow segunda next"></span>
