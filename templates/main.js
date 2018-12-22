@@ -24,6 +24,9 @@ $(document).ready(function () {
   $( "#HeatDemoBtn" ).click(function() {
     window.location.href = '/heatDemo';
   });
+  $( "#christmasCardBtn" ).click(function() {
+    window.location.href = '/christmas';
+  });  
   
   function hide(id) {
     var e = document.getElementById(id);
