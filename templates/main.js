@@ -11,7 +11,12 @@ $(document).ready(function () {
   }
 
   $( "#moreBtn" ).click(function() {
-    $( "#hiddenTable" ).slideDown("slow");
+    if ($( "#hiddenTable:first").is(":hidden") ) {
+      $("#hiddenTable").slideDown("slow");
+    } else {
+      $("#hiddenTable").hide();
+    }
+    // $( "#hiddenTable" ).slideDown("slow");
     // $("#hiddenTable").toggleClass('vis');
   });
   $( "#HeatDemoBtn" ).click(function() {
