@@ -14,7 +14,7 @@ $(document).ready(function () {
     if ($( "#hiddenTable:first").is(":hidden") ) {
       $("#hiddenTable").slideDown("slow");
     } else {
-      $("#hiddenTable").hide();
+      $("#hiddenTable").slideUp("slow");
     }
     // $( "#hiddenTable" ).slideDown("slow");
     // $("#hiddenTable").toggleClass('vis');
