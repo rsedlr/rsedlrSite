@@ -13,8 +13,10 @@ $(document).ready(function () {
   $( "#moreBtn" ).click(function() {
     if ($( "#hiddenTable:first").is(":hidden") ) {
       $("#hiddenTable").slideDown(2000);
+      $(this).text('Show Less');
     } else {
       $("#hiddenTable").slideUp(2000);
+      $(this).text('Show More');
     }
     // $( "#hiddenTable" ).slideDown("slow");
     // $("#hiddenTable").toggleClass('vis');
