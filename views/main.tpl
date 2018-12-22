@@ -52,6 +52,7 @@
           </div>
           <p style="color: white">(currently in development)</p>
         </div>
+        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">move</a>
         <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
           <div class="round rot90" style="margin: auto auto 0px">
             <div id="cta">
@@ -210,7 +211,7 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-more" id="moreBtn" type="button" style="margin-top: 10px">Show More</button>
+      <button class="btn btn-more" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
     </div>
   </section>
   <section class="bg-third text-center mainSection" id="contact">
