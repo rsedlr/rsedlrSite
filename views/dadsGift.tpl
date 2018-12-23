@@ -87,7 +87,7 @@
           }
           .wrapper {
             width: 100%;
-            margin-top: calc(150px - 18%);
+            margin-top: calc(200px - 21%);
             align-items: left;
             z-index: 1;
             position: relative;
