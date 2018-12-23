@@ -55,6 +55,11 @@
       <h1 style="font-size: 4rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open your gift :)</h1>   
       <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
+    <div id="hiddenGift" style="display: none">
+      <div class="big-box">
+        <h1>We got u frootie loops pro!</h1>
+      </div>
+    </div>
     <div class="wrapper">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="xmas" x="0" y="0" viewBox="0 0 270.1 140.1" xml:space="preserve" enable-background="new 0 0 270.1 140.1">
         <style>
@@ -137,8 +142,7 @@
       var $Presents = $('#Presents'),
           $box = $('.box'),
           $PresentB = $('#PresentB'),
-          $sIcons = $('.sIcon'),
-          $socialLinkP = $('.socialLinkP');
+          $sIcons = $('.sIcon');
       tlJumpPresent = new TimelineMax({paused: true});
       $box.mouseenter(function(){
         $PresentBox = $(this).find('.PresentBox'),
@@ -157,7 +161,6 @@
           $PresentBoxTop = $(this).find('.boxTop'),
           $PresentBoxTopShadow = $(this).find('.boxTopShadow'),
           $PresentRibbonSide = $(this).find('.ribbonSide'),
-          $socialLinkP = $(this).find('.socialLinkP');
         tlOpenPresent = new TimelineMax({paused: true});
         tlOpenPresent
         .to($PresentBoxRibbon, 0.4, {yPercent: 252, ease:Power4.easeInOut})
@@ -173,6 +176,7 @@
           $(element).unbind('mouseenter click');
           $(element).css('cursor: default');
         }
+        
       });
     </script>
   </body>
