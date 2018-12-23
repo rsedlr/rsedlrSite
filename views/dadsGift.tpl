@@ -66,8 +66,8 @@
             seeing as technology has advanced a bit since last you tried
           </h1>
         </div>
-        <div style="width: 20%; display: inline-block; margin: 50px 0 0 60px">
-          <img src="static/pic/FL-box.png" style="width: 250px">
+        <div style="width: 20%; display: inline-block; margin: 50px 0 0 90px">
+          <img src="static/pic/FL-box.png" style="width: 350px">
         </div>
       </div>
     </div>
