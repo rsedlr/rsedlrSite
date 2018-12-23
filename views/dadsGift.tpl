@@ -61,7 +61,7 @@
       <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
     <div class="wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="xmas" x="0" y="0" viewBox="0 0 270.1 140.1" xml:space="preserve" enable-background="new 0 0 270.1 140.1" width="1917" height="1185">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="xmas" x="0" y="0" viewBox="0 0 270.1 140.1" xml:space="preserve" enable-background="new 0 0 270.1 140.1">
         <style>
           .s0{
             overflow:visible;
