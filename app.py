@@ -349,8 +349,8 @@ def shhh():
   return template('wrappingPaper')
 
 
-@route('/DadsLogin', method=["POST","GET"])
-def dadsGift():
+@route('/dadsLogin', method=["POST","GET"])
+def dadsLogin():
   key = '3GDVD52H2S7EY3HB4YE3G'
   user = request.get_cookie("user", secret=key)
   print(user)
@@ -365,8 +365,8 @@ def dadsGift():
   return template('dadLogin', error=None)
 
 
-  @route('/dadsGift')
-def login():
+@route('/dadsGift')
+def dadsGift():
   global key
   username = request.get_cookie("user", secret=key)
   if username:
