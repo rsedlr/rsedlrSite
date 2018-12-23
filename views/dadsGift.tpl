@@ -60,7 +60,7 @@
       <h1 style="font-size: 5rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>   
       <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
-  <div class="wrapper">
+    <div class="wrapper">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="xmas" x="0" y="0" viewBox="0 0 270.1 140.1" xml:space="preserve" enable-background="new 0 0 270.1 140.1">
         <style>
           .s0{
@@ -95,7 +95,7 @@
         </style>  
         <g id="Presents">
           <g id="PresentB" class="box">
-            <ellipse id="ShadowPresent" class="PresentBoxShadow" cx="188.2" cy="117.3" rx="81.8" ry="22.8" fill="#81572A"/>
+            <ellipse id="ShadowPresent" class="PresentBoxShadow" cx="188.2" cy="117.3" rx="81.8" ry="22.8" fill="#4C4C4E"/>
             <g class="PresentBox">
               <g id="Logo" class="socialLinkP">
                 <a xlink:href="https://ihatetomatoes.net/svg-christmas/" target="_blank">
