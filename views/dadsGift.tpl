@@ -57,7 +57,7 @@
     </div>
     <div id="hiddenGift" style="display: none">
       <div class="big-box" style="margin-top: 0">
-        <div style="width: 50%; display: inline-block; vertical-align: top; margin: 10px 70px 50px 0">
+        <div style="width: 50%; display: inline-block; vertical-align: top; margin: 50px 70px 50px 0">
           <h1 style="font-size: 4rem;">Fruity loops studio pro</h1>
           <h1>
             You need something to do while waiting for work
