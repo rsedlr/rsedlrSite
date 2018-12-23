@@ -29,7 +29,7 @@
 
       .big-box {
         padding: 20px 30px;
-        margin: calc(10% - 50px) 5%;
+        margin: calc(10% - 20px) 5%;
         background-color: rgba(26, 26, 26, 0.85);
         color: white;
         border: 5px;
@@ -39,15 +39,10 @@
         -webkit-border-radius: 10px;
         font-size: 1rem;
         text-align: center;
+        align-content: center;
       }
 
-      @media (max-width: 550px) {
-        #mainText {
-          font-size: 4rem !important;
-        }
-      }
-
-      .inner {
+      /* .inner {
         display:inline-block;
         border-radius: 10px;
         -moz-border-radius: 10px;
@@ -61,7 +56,7 @@
       }
       .inner .smalltext {
         font-size: 20px;
-      }
+      } */
     </style>
     <!-- <div class="container" style="position: relative; margin: 0px auto auto"> -->
       <div class="big-box">
