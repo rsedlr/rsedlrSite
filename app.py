@@ -354,10 +354,10 @@ def shhh():
 def dadsLogin():
   global key
   user = request.get_cookie("user", secret=key)
-  print("user: " + user)
+  print("user: ", user)
   if user:
     password = request.forms.get('password')
-    print("pswd: " + password)
+    print("pswd: ", password)
     if password == 'BestDadEver46':
       response.set_cookie("user", True, secret=key)  # , username
       return redirect('/dadsGift')
