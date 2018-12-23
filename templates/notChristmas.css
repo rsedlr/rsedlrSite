@@ -37,9 +37,6 @@ body {
   text-align: center;
 }
 
-.wallpaper {
-  overflow: hidden;
-}
 
 @media (max-width: 550px) {
   #mainText {
