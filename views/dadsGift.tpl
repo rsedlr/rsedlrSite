@@ -81,13 +81,14 @@
             fill:#B61F2B;
           }
           .wrapper {
+            width: 700px;
             margin: 80px auto 0;
             z-index: 1;
             position: relative;
           }
           #xmas {
-            width: 500px;
-            height: 300px;
+            width: 700px;
+            height: 400px;
           }
           .box {
             cursor: pointer;
