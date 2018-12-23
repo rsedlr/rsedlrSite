@@ -56,10 +56,10 @@
       <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
     <div id="hiddenGift" style="display: none">
-      <div class="big-box">
+      <div class="big-box" style="margin-top: 0">
         <div style="width: 50%; display: inline-block; margin: -50px 70px 50px 0">
           <h1 style="font-size: 4rem;">Fruity loops studio pro</h1>
-          <h1 style="">
+          <h1>
             You need something to do while waiting for work
             and those web games are just painful to watch.
             So you can make some music instead,
@@ -190,7 +190,7 @@
         setTimeout(function() {
           $("#hiddenGift").slideDown(1000);
           setTimeout(function() {
-            // $("#wrapper").hide();
+            $("#wrapper").hide();
           }, 1000);
         }, 1300);
       });
