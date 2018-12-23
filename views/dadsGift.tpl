@@ -63,12 +63,12 @@
         font-size: 20px;
       }
     </style>
-    <div class="container" style="position: relative; margin: 0px auto auto">
+    <!-- <div class="container" style="position: relative; margin: 0px auto auto"> -->
       <div class="big-box">
         <h1 style="font-size: 10rem; margin: 5px" id="mainText">Hi Dad,</h1>
         <h1 style="font-size: 5rem; margin: 5px">Sorry i'm not there in person, but at least you can still open ur gift :) <br><a href="https://support.image-line.com/action/profile/licenses">link</a></h1>   
       </div>
-    </div>
+    <!-- </div> -->
   </body>
   <script>  
 
