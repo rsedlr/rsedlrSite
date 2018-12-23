@@ -57,13 +57,17 @@
     </div>
     <div id="hiddenGift" style="display: none">
       <div class="big-box">
-        <h1 style="width: 50%; display: inline-block; margin: 0 50px 50px 0">
-          You need something to do while waiting for work<br>
-          and those web games are just painful to watch <br>
-          so you can make some music instead, <br>
-          seeing as technology has advanced a bit since last you tried
-        </h1>
-        <img src="static/pic/FL-box.png" style="width: 20%; display: inline-block; margin: 50px 50px 0">
+        <div style="width: 50%; display: inline-block; margin: 0 50px 50px 0">
+          <h1 style="">
+            You need something to do while waiting for work<br>
+            and those web games are just painful to watch <br>
+            so you can make some music instead, <br>
+            seeing as technology has advanced a bit since last you tried
+          </h1>
+        </div>
+        <div style="width: 20%; display: inline-block; margin: 50px 50px 0">
+          <img src="static/pic/FL-box.png" style="width: 100%">
+        </div>
       </div>
     </div>
     <div class="wrapper" id="wrapper">
