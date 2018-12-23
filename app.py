@@ -353,11 +353,13 @@ def shhh():
 def dadsGift():
   key = '3GDVD52H2S7EY3HB4YE3G'
   user = request.get_cookie("user", secret=key)
+  print(user)
   if not user:
     password = request.forms.get('password')
+    print(password)
     if password == 'BestDadEver46':
       response.set_cookie("user", True, secret=key)  # , username
-      return redirect('/dadsGift') 
+      return template('dadsGift')
     else:
       return template('dadLogin', error='Incorrect password')
   return template('dadLogin', error=None)
