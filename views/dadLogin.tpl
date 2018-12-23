@@ -1,17 +1,22 @@
 <!doctype html>
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<head>
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-  % include('templates/links.html')
-  <style>
-    html, body {
-      background-color: rgb(228, 228, 228);
-    }
-  </style>
-  <title>login</title>
-	<body>
-		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <head>
+    <title>login</title>
+  </head>   
+  <body> 
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    % include('templates/links.html')
+    <style>
+      html, body {
+        background-color: rgb(12, 78, 14);
+      }
+      .textInput-r, .textInput-r:focus {
+        border-color: black; 
+        color: white;
+      }
+    </style>
     <form class="form-signin" style="width: 20em; margin: 10% auto; align-items: center;" action="/dadsLogin" method="post">
       <h1 class="h3 mb-3 font-weight-normal red" style="text-align: center;">Enter Password</h1>
       <span class="bmd-form-group">
@@ -19,9 +24,9 @@
       </span>
       <button class="btn my-primary-w btn-lg" type="submit" style="margin: 15px auto; display: block;">Submit</button>
     </form>
-    %if error:
+    % if error:
       <h1 style="color: red; text-align: center">{{error}}</h1>
-    %end
+    % end
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     % include('templates/bottom.html')
 	</body>
