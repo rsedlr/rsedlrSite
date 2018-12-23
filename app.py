@@ -356,7 +356,7 @@ def dadsGift():
   if not user:
     password = request.forms.get('password')
     if password == 'BestDadEver46':
-      response.set_cookie("user", secret=key)  # , username
+      response.set_cookie("user", True, secret=key)  # , username
       return redirect('/dadsGift') 
     else:
       return template('dadLogin', error='Incorrect password')
