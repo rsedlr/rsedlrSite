@@ -8,7 +8,6 @@
     <meta name="author" content=""> -->
     <title>Merry Christmas</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <link href="/static/notChristmas.css" rel="stylesheet">
   </head>
   <body>
     <div class="container" style="position: relative; margin: 0px auto auto">
