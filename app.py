@@ -357,7 +357,7 @@ def dadsLogin():
   password = request.forms.get('password')
   print("pswd: ", password)
   if password == 'BestDadEver46':
-    response.set_cookie("user", True, secret=key)  # , username
+    response.set_cookie("user", 'yes', secret=key)  # , username
     return redirect('/dadsGift')
   elif password != None:
     return template('dadLogin', error='Incorrect password')
@@ -372,7 +372,7 @@ def dadsGift():
     return template('dadsGift')
   else:
     print('redirecting back to login.....')
-    return redirect('DadsLogin')
+    return redirect('dadsLogin')
 
 ''' --------------- christmas card end --------------- '''
 
