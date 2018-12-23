@@ -190,8 +190,8 @@
         setTimeout(function() {
           $("#hiddenGift").slideDown(1000);
           setTimeout(function() {
-            $("#wrapper").hide();
-          }, 1000);
+            $("#wrapper").slideUp(500);
+          }, 500);
         }, 1300);
       });
     </script>
