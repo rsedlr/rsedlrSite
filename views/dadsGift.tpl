@@ -79,12 +79,12 @@
             width: 100%;
             margin-top: -70px;
             padding: 0 30% 0 0;
-            z-index: 1;
+            z-index: -1;
             position: relative;
           }
           #xmas {
             width: 70%;
-            height: 400px;
+            height: 50%;
           }
           .box {
             cursor: pointer;
