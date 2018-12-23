@@ -12,10 +12,6 @@
       html, body {
         background-color: rgb(12, 78, 14);
       }
-      .textInput-r, .textInput-r:focus {
-        border-color: black; 
-        color: white;
-      }
     </style>
     <form class="form-signin" style="width: 20em; margin: 10% auto; align-items: center;" action="/dadsLogin" method="post">
       <h1 class="h3 mb-3 font-weight-normal red" style="text-align: center;">Enter Password</h1>
