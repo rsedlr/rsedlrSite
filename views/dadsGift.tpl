@@ -13,7 +13,7 @@
     <style>
       html { 
         height: 100%;
-        background-color: rgb(255, 94, 0);
+        background-color: #ff4000;
       }
 
       body {
@@ -31,16 +31,15 @@
         width: 200px;
         height: 50px;
         border-radius: 30px;
-
+        font-size: 50px;
+        margin: 20px auto;
       }
 
       .big-box {
         padding: 20px 30px;
         margin: calc(5% - 10px) 5%;
-        background-color: rgba(26, 26, 26, 0.85);
+        background-color: rgba(37, 37, 37, 0.95);
         color: white;
-        border: 5px;
-        border-color: rgba(26, 26, 26, 0.85);
         border-radius: 10px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
