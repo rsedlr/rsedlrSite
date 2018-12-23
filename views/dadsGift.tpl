@@ -88,7 +88,7 @@
           }
           #xmas {
             width: 500px;
-            height: 500px;
+            height: 300px;
           }
           .box {
             cursor: pointer;
