@@ -27,6 +27,13 @@
         /* padding: 20%; */
       }
 
+      .btn {
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+
+      }
+
       .big-box {
         padding: 20px 30px;
         margin: calc(5% - 10px) 5%;
@@ -41,6 +48,7 @@
         text-align: center;
         align-content: center;
       }
+
       @media (max-width: 550px) {
         .mainText {
           font-size: 4rem !important;
@@ -52,6 +60,7 @@
       <h1 style="font-size: 5rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>   
       <a href="https://support.image-line.com/action/profile/licenses">link</a>
     </div>
+    <button class="btn" type="button" style="margin: 15px auto;">Recieve Gift</button>
   </body>
   <script>  
 
