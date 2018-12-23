@@ -183,7 +183,7 @@
         }
         setTimeout(function() {
           $("#hiddenGift").slideDown(1000);
-          $("#wrapper").slideUp(1000);
+          $("#wrapper").hide();
         }, 1300);
       });
     </script>
