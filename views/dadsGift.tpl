@@ -95,7 +95,7 @@
         </style>  
         <g id="Presents">
           <g id="PresentB" class="box">
-            <ellipse id="ShadowPresent" class="PresentBoxShadow" cx="188.2" cy="117.3" rx="81.8" ry="22.8" fill="#4C4C4E"/>
+            <ellipse id="ShadowPresent" class="PresentBoxShadow" cx="188.2" cy="117.3" rx="81.8" ry="22.8" fill="rgb(37, 37, 37)"/>
             <g class="PresentBox">
               <g id="Logo" class="socialLinkP">
                 <a xlink:href="https://ihatetomatoes.net/svg-christmas/" target="_blank">
