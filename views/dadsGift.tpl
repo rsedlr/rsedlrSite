@@ -78,7 +78,7 @@
           .wrapper {
             width: 100%;
             margin-top: 3%;
-            padding: 0 30% 0 0;
+            align-items: left;
             z-index: 1;
             position: relative;
           }
