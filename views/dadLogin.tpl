@@ -5,8 +5,8 @@
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   % include('templates/links.html')
   <style>
-    html {
-      background-color: rgb(29, 29, 29);
+    html, body {
+      background-color: rgb(228, 228, 228);
     }
   </style>
   <title>login</title>
