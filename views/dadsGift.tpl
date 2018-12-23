@@ -87,7 +87,7 @@
           }
           .wrapper {
             width: 100%;
-            margin-top: 3%;
+            margin-top: calc(-80px + 2%);
             align-items: left;
             z-index: 1;
             position: relative;
@@ -183,7 +183,7 @@
         }
         setTimeout(function() {
           $("#hiddenGift").slideDown(1000);
-        }, 2000);
+        }, 1300);
       });
     </script>
   </body>
