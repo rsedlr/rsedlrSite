@@ -7,3 +7,5 @@
 -add popovers to heat demo
 
 -on project pic click, open a big full screen window with a longer description
+
+-dads gift page, big button; when pressed a thing slides out with a fat pic of fl studio and a brief explination along with the link button at the bottom
