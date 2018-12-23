@@ -353,7 +353,7 @@ def shhh():
 @route('/dadsLogin', method=["POST","GET"])
 def dadsLogin():
   global key
-  response.set_cookie("user", '', expires=0)
+  # response.set_cookie("user", '', expires=0)
   password = request.forms.get('password')
   print("pswd: ", password)
   if password == 'BestDadEver46':
