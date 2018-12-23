@@ -33,7 +33,7 @@
 
       .big-box {
         padding: 20px 30px;
-        margin: calc(4% - 10px) 5%;
+        margin: 50px 5%;
         background-color: rgb(63, 63, 63); /* 37 */
         color: white;
         border-radius: 10px;
