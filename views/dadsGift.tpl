@@ -10,7 +10,6 @@
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   </head>
   <body>
-    <link rel="stylesheet" type="text/css" href="/static/svg-christmas/css/style.css">
     <style>
       html { 
         height: 100%;
