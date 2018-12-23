@@ -57,7 +57,8 @@
     </div>
     <div id="hiddenGift" style="display: none">
       <div class="big-box">
-        <div style="width: 50%; display: inline-block; margin: 0 50px 50px 0">
+        <div style="width: 50%; display: inline-block; margin: 0 70px 50px 0">
+          <h1 style="font-size: 4rem;">Fruity loops studio pro</h1>
           <h1 style="">
             You need something to do while waiting for work<br>
             and those web games are just painful to watch <br>
