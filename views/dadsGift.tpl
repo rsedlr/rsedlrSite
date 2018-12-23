@@ -28,7 +28,7 @@
       }
 
       .big-box {
-        padding: 15px 20px;
+        padding: 20px 30px;
         margin: 20px auto;
         max-width: 700px;
         background-color: rgba(26, 26, 26, 0.85);
