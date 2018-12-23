@@ -77,9 +77,9 @@
           }
           .wrapper {
             width: 100%;
-            margin-top: -70px;
+            margin-top: -50px;
             padding: 0 30% 0 0;
-            z-index: -1;
+            z-index: 1;
             position: relative;
           }
           #xmas {
