@@ -86,7 +86,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto">
-          <h1 style="font-size: 55px;"><u>Table of projects</u></h1>
+          <h1 style="font-size: 60px;"><u>Projects</u></h1>
         </div>
       </div>
       <div class="container">
