@@ -22,11 +22,6 @@
         height: 100%;
       }
 
-      .container {
-        padding: calc(10% - 50px) calc(30% - 80px);
-        /* padding: 20%; */
-      }
-
       .btn {
         width: 200px;
         height: 50px;
@@ -38,7 +33,7 @@
 
       .big-box {
         padding: 20px 30px;
-        margin: calc(5% - 10px) 5%;
+        margin: calc(4% - 10px) 5%;
         background-color: rgba(37, 37, 37, 1);
         color: white;
         border-radius: 10px;
@@ -56,8 +51,8 @@
       }
     </style>
     <div class="big-box">
-      <h1 style="font-size: 10rem; margin: 5px" class="mainText">Hi Dad,</h1>
-      <h1 style="font-size: 5rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>   
+      <h1 style="font-size: 9rem; margin: 5px" class="mainText">Hi Dad</h1>
+      <h1 style="font-size: 4rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open your gift :)</h1>   
       <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
     <div class="wrapper">
