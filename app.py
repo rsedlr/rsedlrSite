@@ -353,16 +353,14 @@ def shhh():
 @route('/dadsLogin', method=["POST","GET"])
 def dadsLogin():
   global key
-  user = request.get_cookie("user", secret=key)
-  print("user: ", user)
-  if not user:
-    password = request.forms.get('password')
-    print("pswd: ", password)
-    if password == 'BestDadEver46':
-      response.set_cookie("user", True, secret=key)  # , username
-      return redirect('/dadsGift')
-    else:
-      return template('dadLogin', error='Incorrect password')
+  response.set_cookie("user", '', expires=0)
+  password = request.forms.get('password')
+  print("pswd: ", password)
+  if password == 'BestDadEver46':
+    response.set_cookie("user", True, secret=key)  # , username
+    return redirect('/dadsGift')
+  elif password != None:
+    return template('dadLogin', error='Incorrect password')
   return template('dadLogin', error=None)
 
 
