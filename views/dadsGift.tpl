@@ -51,8 +51,8 @@
       }
     </style>
     <div class="big-box">
-      <h1 style="font-size: 9rem; margin: 5px" class="mainText">Hi Dad</h1>
-      <h1 style="font-size: 4rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open your gift :)</h1>   
+      <h1 style="font-size: 8rem; margin: 5px" class="mainText">Hi Dad</h1>
+      <h1 style="font-size: 3.75rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open your gift :)</h1>   
       <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
     <div id="hiddenGift" style="display: none">
@@ -183,7 +183,9 @@
         }
         setTimeout(function() {
           $("#hiddenGift").slideDown(1000);
-          $("#wrapper").hide();
+          setTimeout(function() {
+            $("#wrapper").hide();
+          }, 1000);
         }, 1300);
       });
     </script>
