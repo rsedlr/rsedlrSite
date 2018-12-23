@@ -13,7 +13,7 @@
     <style>
       html { 
         height: 100%;
-        background-color: #B1DEF4;
+        background-color: rgb(255, 94, 0);
       }
 
       body {
@@ -41,29 +41,17 @@
         text-align: center;
         align-content: center;
       }
-
-      /* .inner {
-        display:inline-block;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        padding: 20px;
-        margin: 10px;
-        width: 80px;
-        height: 80px;
-        color: black;
-        background: rgba(255, 255, 255, 1);
+      @media (max-width: 550px) {
+        .mainText {
+          font-size: 4rem !important;
+        }
       }
-      .inner .smalltext {
-        font-size: 20px;
-      } */
     </style>
-    <!-- <div class="container" style="position: relative; margin: 0px auto auto"> -->
-      <div class="big-box">
-        <h1 style="font-size: 10rem; margin: 5px" id="mainText">Hi Dad,</h1>
-        <h1 style="font-size: 5rem; margin: 5px">Sorry i'm not there in person, but at least you can still open ur gift :) <br><a href="https://support.image-line.com/action/profile/licenses">link</a></h1>   
-      </div>
-    <!-- </div> -->
+    <div class="big-box">
+      <h1 style="font-size: 10rem; margin: 5px" class="mainText">Hi Dad,</h1>
+      <h1 style="font-size: 5rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>   
+      <a href="https://support.image-line.com/action/profile/licenses">link</a>
+    </div>
   </body>
   <script>  
 
