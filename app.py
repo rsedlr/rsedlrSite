@@ -5,6 +5,7 @@ from datetime import datetime
 # @error(404)
 # def error404(error):
 #   return template('error404')
+key = '3GDVD52H2S7EY3HB4YE3G'
 
 
 @route('/static/<filepath:path>')
@@ -351,10 +352,10 @@ def shhh():
 
 @route('/dadsLogin', method=["POST","GET"])
 def dadsLogin():
-  key = '3GDVD52H2S7EY3HB4YE3G'
+  global key
   user = request.get_cookie("user", secret=key)
   print(user)
-  if not user:
+  if user:
     password = request.forms.get('password')
     print(password)
     if password == 'BestDadEver46':
@@ -372,6 +373,7 @@ def dadsGift():
   if username:
     return template('dadsGift')
   else:
+    print('redirecting back to login.....')
     return redirect('DadsLogin')
 
 ''' --------------- christmas card end --------------- '''
