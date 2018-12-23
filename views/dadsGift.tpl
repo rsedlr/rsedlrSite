@@ -10,7 +10,7 @@
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   </head>
   <body>
-    % include('templates/svg-christmas/css/style.css')
+    <link rel="stylesheet" type="text/css" href="/static/svg-christmas/css/style.">
     <style>
       html { 
         height: 100%;
@@ -62,6 +62,6 @@
     </div>
     <button class="btn" type="button" style="margin: 15px auto;">Recieve Gift</button>
     % include('templates/svg-christmas/index.html')
+    <script src="/static/svg-christmas/js/index.js"></script>
   </body>
-  % include('templates/svg-christmas/js/index.js')
 </html>
