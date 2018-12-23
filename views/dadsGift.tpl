@@ -53,7 +53,6 @@
     <div class="big-box">
       <h1 style="font-size: 8rem; margin: 5px" class="mainText">Hi Dad</h1>
       <h1 style="font-size: 3.75rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open your gift :)</h1>   
-      <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
     <div id="hiddenGift" style="display: none">
       <div class="big-box" style="margin-top: 0">
@@ -63,10 +62,11 @@
             You need something to do while waiting for work
             and those web games are just painful to watch.
             So you can make some music instead,
-            seeing as technology has advanced a bit since last you tried
+            seeing as technology has advanced a bit since last you tried<br>
+            <a href="https://support.image-line.com/action/profile/licenses" style="color: #ff4000">Click me</a>          
           </h1>
         </div>
-        <div style="width: 20%; display: inline-block; margin: 50px 0 0 90px">
+        <div style="width: 20%; display: inline-block; margin: 80px 0 0 90px">
           <img src="static/pic/FL-box.png" style="width: 350px">
         </div>
       </div>
