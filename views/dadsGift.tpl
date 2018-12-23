@@ -81,8 +81,7 @@
             fill:#B61F2B;
           }
           .wrapper {
-            width: 300px;
-            margin: 80px auto 0 auto;
+            margin: 80px auto 0;
             z-index: 1;
             position: relative;
           }
