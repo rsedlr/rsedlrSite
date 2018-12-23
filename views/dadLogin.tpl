@@ -3,7 +3,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+  % include('templates/links.html')
+  <style>
+    html {
+      background-color: rgb(29, 29, 29);
+    }
+  </style>
   <title>login</title>
 	<body>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
