@@ -77,14 +77,14 @@
           }
           .wrapper {
             width: 100%;
-            margin-top: 50px;
-            padding: 0 10% 0 20%;
+            margin-top: -20px;
+            padding: 0 5% 0 20%;
             z-index: 1;
             position: relative;
           }
           #xmas {
-            width: 700px;
-            height: 400px;
+            width: 75%;
+            height: 600px;
           }
           .box {
             cursor: pointer;
