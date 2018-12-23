@@ -76,8 +76,9 @@
             fill:#B61F2B;
           }
           .wrapper {
-            width: 700px;
-            margin: 80px auto 0;
+            width: 100%;
+            margin-top: 50px;
+            padding: 0 10% 0 20%;
             z-index: 1;
             position: relative;
           }
