@@ -67,7 +67,7 @@
           </h1>
         </div>
         <div style="width: 20%; display: inline-block; margin: 50px 50px 0">
-          <img src="static/pic/FL-box.png" style="width: 100%">
+          <img src="static/pic/FL-box.png" style="width: 250px">
         </div>
       </div>
     </div>
