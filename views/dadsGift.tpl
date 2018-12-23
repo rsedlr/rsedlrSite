@@ -10,7 +10,7 @@
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   </head>
   <body>
-    % import('/templates/svg-christmas/css/style.css')
+    % include('templates/svg-christmas/css/style.css')
     <style>
       html { 
         height: 100%;
@@ -61,7 +61,7 @@
       <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
     <button class="btn" type="button" style="margin: 15px auto;">Recieve Gift</button>
-    % import('/templates/svg-christmas/index.html')
+    % include('templates/svg-christmas/index.html')
   </body>
-  % import('/templates/svg-christmas/js/index.js')
+  % include('templates/svg-christmas/js/index.js')
 </html>
