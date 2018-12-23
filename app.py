@@ -355,7 +355,7 @@ def dadsGift():
   user = request.get_cookie("user", secret=key)
   if not user:
     password = request.forms.get('password')
-    if password == 'BestDadEver46:
+    if password == 'BestDadEver46':
       response.set_cookie("user", secret=key)  # , username
       return redirect('/dadsGift') 
     else:
