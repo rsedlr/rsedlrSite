@@ -57,7 +57,10 @@
     </div>
     <div id="hiddenGift" style="display: none">
       <div class="big-box">
-        <h1>We got u frootie loops pro!</h1>
+        <h1>
+          You need something to do while waiting for work and those web games are just painful to watch <br>
+          so instead, you can make some music instead, seeing as technology has advanced a bit since last you tried
+        </h1>
       </div>
     </div>
     <div class="wrapper">
@@ -176,7 +179,9 @@
           $(element).unbind('mouseenter click');
           $(element).css('cursor: default');
         }
-        $("#hiddenGift").slideDown(1000);
+        setTimeout(function() {
+          $("#hiddenGift").slideDown(1000);
+        }, 500);
       });
     </script>
   </body>
