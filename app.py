@@ -368,6 +368,7 @@ def dadsLogin():
 def dadsGift():
   global key
   username = request.get_cookie("user", secret=key)
+  print('username: ', username)
   if username:
     return template('dadsGift')
   else:
