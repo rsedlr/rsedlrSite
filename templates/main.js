@@ -10,7 +10,7 @@ $(document).ready(function () {
     secText.className += ' Mac-sec';  
   }
 
-  $( "#moreBtn" ).click(function() {
+  $("#moreBtn").click(function() {
     if ($( "#hiddenTable:first").is(":hidden") ) {
       $("#hiddenTable").slideDown(2000);
       $(this).text('Show Less');
@@ -21,10 +21,10 @@ $(document).ready(function () {
     // $( "#hiddenTable" ).slideDown("slow");
     // $("#hiddenTable").toggleClass('vis');
   });
-  $( "#HeatDemoBtn" ).click(function() {
+  $("#HeatDemoBtn").click(function() {
     window.location.href = '/heatDemo';
   });
-  $( "#christmasCardBtn" ).click(function() {
+  $("#christmasCardBtn").click(function() {
     window.location.href = '/christmas';
   });  
   

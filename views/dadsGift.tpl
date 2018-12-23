@@ -176,7 +176,7 @@
           $(element).unbind('mouseenter click');
           $(element).css('cursor: default');
         }
-        
+        $("#hiddenGift").slideDown(1000);
       });
     </script>
   </body>
