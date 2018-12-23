@@ -344,10 +344,25 @@ def TestingTestingEhemTESTING(name=''):
 
 
 
-
 @route('/shhhnoonecanknowiusethis')
 def shhh():
   return template('wrappingPaper')
+
+
+@route('/dadsGift', method=["POST","GET"])
+def dadsGift():
+  key = '3GDVD52H2S7EY3HB4YE3G'
+  user = request.get_cookie("user", secret=key)
+  if not user:
+    username = request.forms.get('username')
+    if username:
+      password = request.forms.get('password')
+      if username == info[0] and password == info[1]:
+        response.set_cookie("user", secret=key)  # , username
+        return redirect('/dadsGift') 
+      else:
+        return template('dadLogin', error='Incorrect password')
+  return template('dadLogin', error=None)
 
 ''' --------------- christmas card end --------------- '''
 
