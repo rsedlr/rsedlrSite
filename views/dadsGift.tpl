@@ -66,9 +66,11 @@
       }
     </style>
     <div class="container" style="position: relative; margin: 0px auto auto">
-      <h1 style="font-size: 8rem; margin: 5px" id="mainText">Hi Dad,</h1>
-      <h1 style="margin: 5px">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>
-      <a href="https://support.image-line.com/action/profile/licenses">link</a>      
+      <div class="big-box">
+        <h1 style="font-size: 8rem; margin: 5px" id="mainText">Hi Dad,</h1>
+        <h1 style="margin: 5px">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>
+        <a href="https://support.image-line.com/action/profile/licenses">link</a>      
+      </div>
     </div>
   </body>
   <script>  
