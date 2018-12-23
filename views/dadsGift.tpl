@@ -30,11 +30,10 @@
       .big-box {
         padding: 20px 30px;
         margin: 20px auto;
-        max-width: 700px;
         background-color: rgba(26, 26, 26, 0.85);
         color: white;
         border: 5px;
-        border-color: black;
+        border-color: rgba(26, 26, 26, 0.85);
         border-radius: 10px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -47,7 +46,6 @@
           font-size: 4rem !important;
         }
       }
-
 
       .inner {
         display:inline-block;
@@ -67,9 +65,8 @@
     </style>
     <div class="container" style="position: relative; margin: 0px auto auto">
       <div class="big-box">
-        <h1 style="font-size: 8rem; margin: 5px" id="mainText">Hi Dad,</h1>
-        <h1 style="margin: 5px">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>
-        <a href="https://support.image-line.com/action/profile/licenses">link</a>      
+        <h1 style="font-size: 10rem; margin: 5px" id="mainText">Hi Dad,</h1>
+        <h1 style="font-size: 5rem; margin: 5px">Sorry i'm not there in person, but at least you can still open ur gift :) <br><a href="https://support.image-line.com/action/profile/licenses">link</a></h1>   
       </div>
     </div>
   </body>

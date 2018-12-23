@@ -25,7 +25,7 @@ body {
   background-color: rgba(26, 26, 26, 0.85);
   color: white;
   border: 5px;
-  border-color: black;
+  border-color: rgba(26, 26, 26, 0.85);
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
