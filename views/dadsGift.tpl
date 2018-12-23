@@ -60,9 +60,9 @@
         <div style="width: 50%; display: inline-block; margin: -50px 70px 50px 0">
           <h1 style="font-size: 4rem;">Fruity loops studio pro</h1>
           <h1 style="">
-            You need something to do while waiting for work<br>
-            and those web games are just painful to watch <br>
-            so you can make some music instead, <br>
+            You need something to do while waiting for work
+            and those web games are just painful to watch.
+            So you can make some music instead,
             seeing as technology has advanced a bit since last you tried
           </h1>
         </div>
@@ -108,7 +108,7 @@
         </style>  
         <g id="Presents">
           <g id="PresentB" class="box">
-            <ellipse id="ShadowPresent" class="PresentBoxShadow" cx="188.2" cy="117.3" rx="81.8" ry="22.8" fill="rgb(37, 37, 37)"/>
+            <ellipse id="ShadowPresent" class="PresentBoxShadow" cx="188.2" cy="117.3" rx="81.8" ry="22.8" fill="rgb(63, 63, 63)"/>
             <g class="PresentBox">
               <g id="Logo" class="socialLinkP">
                 <a xlink:href="https://ihatetomatoes.net/svg-christmas/" target="_blank">
