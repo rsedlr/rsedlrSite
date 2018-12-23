@@ -65,7 +65,7 @@
         </h1>
       </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="xmas" x="0" y="0" viewBox="0 0 270.1 140.1" xml:space="preserve" enable-background="new 0 0 270.1 140.1">
         <style>
           .s0{
@@ -87,7 +87,7 @@
           }
           .wrapper {
             width: 100%;
-            margin-top: calc(-80px + 2%);
+            margin-top: calc(100px - 20%);
             align-items: left;
             z-index: 1;
             position: relative;
@@ -183,6 +183,7 @@
         }
         setTimeout(function() {
           $("#hiddenGift").slideDown(1000);
+          $("#wrapper").slideUp(1000);
         }, 1300);
       });
     </script>
