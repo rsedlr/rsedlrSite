@@ -58,8 +58,10 @@
     <div id="hiddenGift" style="display: none">
       <div class="big-box">
         <h1>
-          You need something to do while waiting for work and those web games are just painful to watch <br>
-          so instead, you can make some music instead, seeing as technology has advanced a bit since last you tried
+          You need something to do while waiting for work<br>
+          and those web games are just painful to watch <br>
+          so you can make some music instead, <br>
+          seeing as technology has advanced a bit since last you tried
         </h1>
       </div>
     </div>
@@ -181,7 +183,7 @@
         }
         setTimeout(function() {
           $("#hiddenGift").slideDown(1000);
-        }, 500);
+        }, 1000);
       });
     </script>
   </body>
