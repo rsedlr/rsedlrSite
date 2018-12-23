@@ -13,7 +13,7 @@
   <body>
     <div class="container" style="position: relative; margin: 0px auto auto">
       <div class="big-box">
-        <h1 style="font-size: 5rem; margin: 5px" id="mainText">{{name}} you've got mail</h1>
+        <h1 style="font-size: 5rem; margin: 5px" id="mainText">Hi Dad,</h1>
       </div>
       <div class="big-box">
         <h1 style="margin: 5px">Have a merry christmas dad</h2>
