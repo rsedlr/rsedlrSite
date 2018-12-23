@@ -10,6 +10,7 @@
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   </head>
   <body>
+    % import('/templates/svg-christmas/css/style.css')
     <style>
       html { 
         height: 100%;
@@ -57,11 +58,10 @@
     <div class="big-box">
       <h1 style="font-size: 10rem; margin: 5px" class="mainText">Hi Dad,</h1>
       <h1 style="font-size: 5rem; margin: 5px" class="mainText">Sorry i'm not there in person, but at least you can still open ur gift :)</h1>   
-      <a href="https://support.image-line.com/action/profile/licenses">link</a>
+      <!-- <a href="https://support.image-line.com/action/profile/licenses">link</a> -->
     </div>
     <button class="btn" type="button" style="margin: 15px auto;">Recieve Gift</button>
+    % import('/templates/svg-christmas/index.html')
   </body>
-  <script>  
-
-  </script>
+  % import('/templates/svg-christmas/js/index.js')
 </html>
