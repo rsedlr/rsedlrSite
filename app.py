@@ -354,14 +354,12 @@ def dadsGift():
   key = '3GDVD52H2S7EY3HB4YE3G'
   user = request.get_cookie("user", secret=key)
   if not user:
-    username = request.forms.get('username')
-    if username:
-      password = request.forms.get('password')
-      if username == info[0] and password == info[1]:
-        response.set_cookie("user", secret=key)  # , username
-        return redirect('/dadsGift') 
-      else:
-        return template('dadLogin', error='Incorrect password')
+    password = request.forms.get('password')
+    if password == 'BestDadEver46:
+      response.set_cookie("user", secret=key)  # , username
+      return redirect('/dadsGift') 
+    else:
+      return template('dadLogin', error='Incorrect password')
   return template('dadLogin', error=None)
 
 ''' --------------- christmas card end --------------- '''
