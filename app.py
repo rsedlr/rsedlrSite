@@ -214,7 +214,7 @@ def christmas(name=''):
   elif nameUp == 'STEVE&PAM':
     message = messageTpl %('Steve & Pam,', '<br>Hopefully see you in April<br>', 'From Reiss & Gal')
   elif nameUp == 'DAN':
-    message = messageTpl %('Dan,', '<br>Hope your new job is going well :)<br>', 'From Reiss (work exp kid)')
+    message = messageTpl %('Dan,', '<br>Hope your new job is going well :)<br>', 'From Reiss')
   elif nameUp == 'PIXIE':
     message = 'Woof ' * 100 
   else:
@@ -337,7 +337,7 @@ def TestingTestingEhemTESTING(name=''):
   elif nameUp == 'STEVE&PAM':
     message = messageTpl %('Steve & Pam,', '<br>Hopefully see you in April<br>', 'From Reiss & Gal')
   elif nameUp == 'DAN':
-    message = messageTpl %('Dan,', '<br>Hope your new job is going well :)<br>', 'From Reiss (work exp kid)')
+    message = messageTpl %('Dan,', '<br>Hope your new job is going well :)<br>', 'From Reiss')
   elif nameUp == 'PIXIE':
     message = 'Woof ' * 100 
   else:
