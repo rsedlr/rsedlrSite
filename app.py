@@ -17,13 +17,16 @@ def server_static(filepath):
 def main():
   return template('main')
 
+
 @route('/index')
 def index():
   return template('oldMain')
 
+
 @route('/test')
 def test():
   return template('test')
+
 
 @route('/about')
 def about():
@@ -399,4 +402,4 @@ if __name__ == '__main__':
   run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)
 
 
-# wordss
+# words
