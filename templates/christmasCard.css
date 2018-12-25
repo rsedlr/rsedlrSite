@@ -121,7 +121,7 @@ button {
   display: block;
   transform: rotateX(30deg);
   margin-top: 20px;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3); */
 }
 button:active {
   border-bottom-width: 2px;

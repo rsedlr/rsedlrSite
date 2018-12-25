@@ -19,7 +19,7 @@
       </div>
       <div class="card card--front back" onclick="openCard();">
         % if name.upper() == 'DAD':
-          <button type="button" id="dadGiftBtn" style="margin: 10px auto; transform: rotateY(180deg);">Click me :)</button>
+          <button type="button" id="dadGiftBtn" style="margin: 10px auto; transform: rotateY(180deg); height: 60px; width: 200px; font-size: 30px; font-weight: bold">Click me :)</button>
         % end
       </div>
       <div class="card card--front" onclick="openCard();">

@@ -28,7 +28,7 @@ hr {
   max-width: 100px;
   margin: 25px auto 0;
   border-width: 1px;
-  border-color: 6rgba(34, 34, 34, 0.1);
+  border-color: rgba(34, 34, 34, 0.1);
 }
 
 hr.light {

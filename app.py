@@ -35,7 +35,7 @@ def about():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent':50, 'heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False}
+valuesDict = {'curPercent': 50, 'heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False}
 onOff = {False: 'OFF', True: 'ON'}
 
 
