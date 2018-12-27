@@ -23,8 +23,8 @@
         % end
       </div>
       <div class="card card--front" onclick="openCard();">
-        <h2 id="cardFrontMessage">Merry<br>Christmas<br><span id="name">{{name}}</span></h2>
-        <p style="display: block; color: red">(click me)</p>
+        <h2 id="cardFrontMessage" style="width: 100%">Merry<br>Christmas<br><span id="name">{{name}}</span></h2>
+        <p style="width: 100%;">(click me)</p>
       </div>
     </div>
     <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
