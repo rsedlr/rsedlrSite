@@ -1,11 +1,18 @@
 
 body {
-  background-color: #26282a;
+  background-color: rgb(23,82,145); /* #26282a */
+  /* background-image: url('/static/snowHouse.jpg')  no-repeat left top #082f3d; */
   align-items: center;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 .navbar {
   background-color: #1e1e1e !important;
 }
+
 .navbar-brand {
   position: relative;
   text-align: left;
@@ -21,42 +28,53 @@ body {
 } */
 .nav-link {
   font-weight: bold !important;
+  font-size: 20px !important;
 }
+
 .navActive {
   color: red !important;
 }
+
 .navWhite {
   color: rgb(255,255,255) !important;
 }
+
 .mainbtn {
   padding: 10px 0px !important; 
   font-size: 30px !important;
   width: 200px;
   margin: 10px 0px;
 }
+
 .otherbtn {
   background: white !important;
   color: black;
   padding: .5rem 1.7rem !important;
 }
+
 #Main{
   margin: 30px calc(15% - 40px);
 }
+
 #MoreOptionsContainer {
   padding: 20px 30px;
 }
+
 .centreBtnDiv {
   margin: 2px auto;
   width: 200px;
 }
+
 .btn-default {
   margin-bottom: 5px;
 }
+
 .circleBase {
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
+
 .circle {
   border-radius: 50%;
   color: #000;
@@ -81,6 +99,7 @@ body {
   line-height: 30px;
   margin: 5px;
 }
+
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -113,29 +132,20 @@ body {
   background: #4CAF50;
   cursor: pointer;
 }
+
 .red {
   color: red !important; 
 }
 .blue {
   color: blue !important;
 }
-.grey {
-  color: #bbbbbb;
-}
-.black {
-  color: black;
-}
-.white {
-  color: white;
-}
-.bold {
-  font-weight: bold;
-}
-.bolder {
-  font-weight: 600 !important;
-}
 .disNone {
   display: none;
+}
+
+.dropdown-menudark {
+  background-color: #1e1e1e;
+  color: red;
 }
 
 .mAuto {
@@ -165,15 +175,10 @@ body {
 .my-primary-wl:hover {
   color: white;
 }
+
 .textInput-r, .textInput-r:focus {
   border-color: red; 
   color: white;
-}
-
-@media (max-width: 998px) {
-  .remMarginSm {
-    margin: auto 5px !important;
-  }
 }
 
 .form-control {
@@ -183,9 +188,11 @@ body {
 .mainWidthMax {
   max-width: 575px;
 }
+
 .jumbotron {
   background-color: #1c1c1c;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -199,6 +206,7 @@ body {
   padding-left: 15px;
   margin-top: auto;
 }
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -211,19 +219,107 @@ input[type=text], select {
 
 .table-header {
   color: red;
-  
 }
+
+.aboutBox {
+  background-color: #1e1e1e;
+  padding: 15px 20px 20px;
+  margin: 30px 0px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
 .boxRow {
   background-color: #1e1e1e;
   width: 100%;
   height: 100px;
   /* margin: 0 auto; */
   padding: 20px;
-  margin: 20px 0px;
+  margin: 20px 0px 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
+
+.boxCol {
+  background-color: #3d4146;
+  padding: 20px 30px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#relayBox {
+  height: 603px; /* temporary, gotta sort out */
+}
+
 .boxColumn {
   position: flex;
 }
+
+
+/* toggle button start */
+.label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.label-text {
+  margin-left: 8px;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 24px;
+  width: 48px;
+  border-radius: 15px;
+  background: #d6d6d6;
+  overflow: hidden;
+}
+
+.toggle-inner {
+  z-index: 2;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 22px;
+  width: 46px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.active-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  background: #FF0000;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.05s linear 0.17s;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: white;
+  border-radius: 13px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.35s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+.toggle-state:checked ~ .active-bg {
+   transform: translate3d(-50%, 0, 0);
+}
+
+.toggle-state:checked ~ .toggle-inner .indicator {
+   transform: translate3d(25%, 0, 0);
+}
+/* toggle button end */
