@@ -6,8 +6,8 @@
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     % include('templates/links.html')
   <link rel="stylesheet" type="text/css" href="/static/control.css">
-  <script src="static/snow.js"></script>
-  <script src="static/control.js"></script>  <!-- must be after snow.js -->
+  <script src="/static/snow.js"></script>
+  <script src="/static/control.js"></script>  <!-- must be after snow.js -->
 </head>
 <body>
   % include('templates/Header.html')
