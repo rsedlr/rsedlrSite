@@ -21,6 +21,7 @@ $(document).ready(function () {
 
   for ( ; ; ) {
     hello();
+    setTimeout(1);
   }
 
   function postVal(value) {
