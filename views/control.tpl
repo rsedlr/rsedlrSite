@@ -1,18 +1,19 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <title>Evil-Corp</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     % include('templates/links.html')
-  <script src="/static/control.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/control.css">
+  <script src="static/snow.js"></script>
+  <script src="static/control.js"></script>  <!-- must be after snow.js -->
 </head>
 <body>
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   % include('templates/Header.html')
+  <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
   <div id="Main" class="row">
-    <div class="col-xl-6 col-lg-12 mainWidthMax" style="margin: 15px auto 35px;">
+    <div class="col-xl-6 col-lg-12 mainWidthMax boxCol" style="margin: 15px auto 35px;">
       <h1 style="color:red;"><b>Heating control</b></h1>
       <div class="row">
         <div class="col-sm-6 col-xs-12">
@@ -123,13 +124,13 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-6 col-lg-12 mainWidthMax" style="margin: 20px auto;">
+    <div class="col-xl-6 col-lg-12 mainWidthMax boxCol" style="margin: 15px auto;" id="relayBox">
       <h1 style="color:red; margin-bottom: 25px;"><b>Relay Control</b></h1>
       <div class="row boxRow">
         <button type="button" class="btn btn-lg mainbtn my-primary-w" style="margin: 0px; width: 200px;" id="PC_button">PC power</button>
         <!-- <h1 style="padding: 5px 20px; color: white;"></h1> -->
         <div id="PC_circle" class="circle smallCircle" style="background: rgb(255, 0, 0); float: right; margin: -5px 2px auto auto;">
-          <span id="PC_status" class="disNone">{{pc}}%</span>
+          <span id="PC_status" class="disNone">{{pc}}</span>
         </div>
       </div>
       <div class="row boxRow">
@@ -155,54 +156,6 @@
       </div>
     </div>
   </div>
-    % include('templates/bottom.html')
+  % include('templates/bottom.html')
 </body>
 </html>
-<!--
-Slide in text {
-  .slide-in {
-    z-index: 10; /* to position it in front of the other content */
-    position: absolute;
-    overflow: hidden; /* to prevent scrollbar appearing */
-  }
-  .slide-in.from-right {
-    right: 0;
-    top: 230;
-  }
-  .slide-in-content {
-    padding: 5px 20px;
-    background: #eee;
-    transition: all .5s ease;
-  }
-  .slide-in.from-right .slide-in-content {
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-  }
-  .slide-in.show .slide-in-content {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-  }
-  <div class="slide-in from-right">
-    <div class="slide-in-content">
-      <h2 style="padding-bottom: 10px;"><span id="StatusVal"></span></h2>
-    </div>
-  </div>
-
-  $('#OnOffBtn').click(function() {
-    $('.slide-in').toggleClass('show');
-    setTimeout(function () {
-      $('.slide-in').toggleClass('show');
-    }, 1600);
-  });
-}
-
- for (let {cssRules} of document.styleSheets) {
-  for (let {selectorText, style} of cssRules) {
-     if (selectorText === ".slider::-webkit-slider-thumb") {
-       style.backgroundColor = color;
-     }
-   }
- }
-
-
--->

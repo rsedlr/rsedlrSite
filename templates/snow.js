@@ -12,7 +12,7 @@ $(document).ready(function () {
   var flakes = [],
     canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
-    flakeCount = 500, // 1000
+    flakeCount = 800,
     mX = -100,
     mY = -100
     canvas.style.removeProperty('height');
@@ -106,7 +106,7 @@ $(document).ready(function () {
     //   canvas.height = window.innerHeight-71
     // }
     canvas.width = ($(document).height() > $(window).height()) ? window.innerWidth - 10 : window.innerWidth; // -10 to cancel out scrollbar
-    canvas.height = (document.body.clientHeight > window.innerHeight) ? document.body.clientHeight : window.innerHeight;  //modified from original to remove navbar diff
+    canvas.height = (document.body.clientHeight > window.innerHeight) ? document.body.clientHeight : window.innerHeight-71;
   }
 
   canvas.addEventListener("mousemove", function(e) {
