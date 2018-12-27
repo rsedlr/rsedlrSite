@@ -19,10 +19,7 @@ $(document).ready(function () {
     console.log('Hello World!');
   }
 
-  for ( ; ; ) {
-    hello();
-    setTimeout(1);
-  }
+ hello();
 
   function postVal(value) {
     var xhttp = new XMLHttpRequest();
