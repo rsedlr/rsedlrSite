@@ -9,3 +9,5 @@
 -on project pic click, open a big full screen window with a longer description
 
 -make morse code effect for portfolio 'employ me'
+
+-python frameworks
