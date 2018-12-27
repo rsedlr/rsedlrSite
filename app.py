@@ -218,6 +218,8 @@ def christmas(name=''):
     message = messageTpl %('Steve & Pam,', '<br>Hopefully see you in April<br>', 'From Reiss & Gal')
   elif nameUp == 'DAN':
     message = messageTpl %('Dan,', '<br>Hope your new job is going well :)<br>', 'From Reiss')
+  elif nameUp == 'JOHN':
+    message = messageTpl %('John,', '<br>And thanks for everything<br>', 'From Reiss')
   elif nameUp == 'PIXIE':
     message = 'Woof ' * 100 
   else:
