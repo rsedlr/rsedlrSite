@@ -24,7 +24,7 @@
       </div>
       <div class="card card--front" onclick="openCard();">
         <h2 id="cardFrontMessage">Merry<br>Christmas<br><span id="name">{{name}}</span></h2>
-        <p>(click me)</p>
+        <p style="display: block; color: red">(click me)</p>
       </div>
     </div>
     <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
