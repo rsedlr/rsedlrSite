@@ -15,6 +15,14 @@ $(document).ready(function () {
   postVal('fans');
   curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
   
+  function hello() {
+    console.log('Hello World!');
+  }
+
+  for ( ; ; ) {
+    hello();
+  }
+
   function postVal(value) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
