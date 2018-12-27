@@ -11,7 +11,7 @@ $(document).ready(function () {
   }
 
   $("#moreBtn").click(function() {
-    if ($( "#hiddenTable:first").is(":hidden")) {
+    if ($("#hiddenTable:first").is(":hidden")) {
       $("#hiddenTable").slideDown(2000);
       $(this).text('Show Less');
     } else {
@@ -27,15 +27,15 @@ $(document).ready(function () {
   $("#christmasCardBtn").click(function() {
     window.location.href = '/christmas';
   });  
-  
-  function hide(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == 'block') {
-      e.style.display = 'none';  // or visibility: 'hidden'
+
+  function slide(id) {
+    if ($(id).is(":hidden")) {
+      $(id).slideDown(2000);
     } else {
-      e.style.display = 'block';  // or visibility: 'visible'
+      $(id).slideUp(2000);
     }
   }
+
   for (var x = 0; x < phrases.length; x++) {  // split the array into characters and generate the html
     const createLetterArray = (string) => {
       return string.split('');
