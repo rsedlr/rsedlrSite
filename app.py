@@ -118,7 +118,7 @@ def TextRepeater():
 @route('/christmas/')
 @route('/christmas/<name>')
 def christmas(name=''):
-  cardMessage(name)
+  message = cardMessage(name)
   nowTime = datetime.now()
   christmasTime = datetime(2018, 12, 25, 0)
   timeDiff = christmasTime - nowTime

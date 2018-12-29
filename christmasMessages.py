@@ -106,3 +106,4 @@ def cardMessage(name):
     message = 'Woof ' * 100 
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
+  return message
