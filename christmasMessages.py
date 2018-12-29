@@ -1,4 +1,4 @@
-def cardMessage():
+def cardMessage(name):
   nameUp = name.upper()
   name = name.replace('_', ' ')
   prefix = ['MR', 'DR' 'MS', 'MRS', 'MISS']   
