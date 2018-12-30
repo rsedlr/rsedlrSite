@@ -6,7 +6,7 @@ from christmasMessages import cardMessage
 # @error(404)
 # def error404(error):
 #   return template('error404')
-key = '3GDVD52H2S7EY3HB4YE3G'
+key = '3GDVD52H2S7EY3HB4YE3G'  #not normally kept in cleartext but fine for demo
 
 
 @route('/static/<filepath:path>')

@@ -114,8 +114,8 @@
           </div>
           <div class="col-lg-6">
             <div class="p-5">
-              <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
-              <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the url and click send, if you particularly like said person a personal message can be added.</p>
+              <h2 class="display-4 header-title">Android and IOS Games</h2>
+              <p>Initially, i developed a few phone games on the Unity engine. They havent yet been released but a demo video will be availabled soon</p>
               <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
             </div>
           </div>
@@ -137,6 +137,22 @@
         </div>
       </div>
       <div id="hiddenTable" class="dis-none">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="p-5">
+                <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p-5">
+                <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
+                <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the url and click send, if you particularly like said person a personal message can be added.</p>
+                <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
