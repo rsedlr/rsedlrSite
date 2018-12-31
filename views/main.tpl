@@ -79,7 +79,8 @@
           <h1 class="mainHead">Hi,<br></h1>
           <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
           <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
-          <h2>I'm a computer science student,<br>based in London</p>
+          <h2>I'm a computer science student,<br>based in London</h2>
+          <img href="/static/icon/2.png">
           <!-- <br><br><br>
           <p>and some more witty comments i suppose</p>
           <br><br><br>
