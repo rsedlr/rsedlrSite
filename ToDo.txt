@@ -11,3 +11,7 @@
 -make morse code effect for portfolio 'employ me'
 
 -python frameworks
+-linux use
+-bl monitoring
+-basic networking, websites run on raspberry pi's
+-
