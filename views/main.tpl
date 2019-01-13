@@ -7,7 +7,7 @@
   <meta name="author" content=""> -->
   <title>RsEdlr</title>
   <!-- <link rel="icon" href="/static/favicon.ico" type="image/x-icon"> -->
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png">
 
@@ -91,7 +91,7 @@
   <section class="bg-secondary text-center mainSection" id="experience">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 mx-auto">
+        <div data-aos="fade-in" class="col-md-10 mx-auto">
           <h1 style="font-size: 60px;"><u>Projects</u></h1>
         </div>
       </div>
@@ -258,5 +258,7 @@
   <script src="/static/mainPage/bootstrap.bundle.min.js"></script>
   <script src="/static/mainPage/jquery.easing.min.js"></script>
   <script src="/static/mainPage/main.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
