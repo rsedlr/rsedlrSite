@@ -7,15 +7,13 @@
   <meta name="author" content=""> -->
   <title>RsEdlr</title>
   <!-- <link rel="icon" href="/static/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png">
-
-
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="/static/main.js"></script>
   <link href="/static/main.css" rel="stylesheet">
@@ -73,7 +71,7 @@
     </div>
   </header>
   <section class="bg-primary text-center mainSection" id="about">
-     <div class="container">
+    <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <h1 class="mainHead">Hi,<br></h1>
@@ -91,7 +89,7 @@
   <section class="bg-secondary text-center mainSection" id="experience">
     <div class="container">
       <div class="row">
-        <div data-aos="fade-in" class="col-md-10 mx-auto">
+        <div data-aos="fade-in" class="col-md-10 mx-auto"> <!--  stuff added here boi-->
           <h1 style="font-size: 60px;"><u>Projects</u></h1>
         </div>
       </div>
