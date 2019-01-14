@@ -15,8 +15,10 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="/static/main.js"></script>
-  <link href="/static/main.css" rel="stylesheet">
+  <!-- <script src="/static/main.js"></script> -->
+  % import os ; mainJS = os.path.getsize("templates/main.js") ; mainCSS = os.path.getsize("templates/main.css")
+  <script type='text/javascript' src='/static/main.js?filever={{mainJS}}'></script>  
+  <link rel="stylesheet" type="text/css" href="/static/main.css?filever={{mainCSS}}">
 </head>
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
