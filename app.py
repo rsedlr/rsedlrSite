@@ -1,7 +1,12 @@
-import os, subprocess, sys, git  # , serial
+import os, subprocess, sys  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
 from datetime import datetime
 from christmasMessages import cardMessage
+
+try:
+  import git
+except:
+  print('No pyGit found')
 
 # @error(404)
 # def error404(error):
