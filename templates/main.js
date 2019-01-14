@@ -27,6 +27,8 @@ $(document).ready(function () {
     window.location.href = '/christmas';
   });  
 
+  // if screen < 905px wide then change fade in
+
   function slide(id) {
     if ($(id).is(":hidden")) {
       $(id).slideDown(2000);
