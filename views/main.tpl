@@ -91,19 +91,19 @@
   <section class="bg-secondary text-center mainSection" id="experience">
     <div class="container">
       <div class="row">
-        <div data-aos="fade-in" class="col-md-10 mx-auto">
+        <div data-aos="fade-up" class="col-md-10 mx-auto">
           <h1 style="font-size: 60px;"><u>Projects</u></h1>
         </div>
       </div>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
+            <div data-aos="fade-up-right" class="p-5">
               <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
+            <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Remote Heating Control</h2>
               <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
               <!-- <button class="btn btn-more" id="HeatDemoBtn" type="button">Example</button> -->
@@ -114,12 +114,12 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="p-5">
+            <div data-aos="fade-up-left" class="p-5">
               <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="p-5">
+            <div data-aos="fade-up-right" class="p-5">
               <h2 class="display-4 header-title">Android and IOS Games</h2>
               <p>Initially, i developed a few phone games on the Unity engine. They havent yet been released but a demo video will be availabled soon</p>
               <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
@@ -130,28 +130,28 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
+            <div data-aos="fade-up-right" class="p-5">
               <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
+            <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Text based python game</h2>
               <p>A short Lord Of The Rings themed OOP python game made by me and a friend</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="hiddenTable" class="dis-none">
+      <div id="hiddenTable" class="dis-none">  <!-- heloooooo -->
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div data-aos="fade-up-left" class="col-lg-6">
               <div class="p-5">
                 <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="p-5">
+              <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
                 <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the url and click send, if you particularly like said person a personal message can be added.</p>
                 <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
@@ -161,28 +161,13 @@
         </div>
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="p-5">
-                <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="p-5">
-                <h2 class="display-4 header-title">Autonomous RC car</h2>
-                <p>I heard google was making one so i thought i should have a go too.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
-              <div class="p-5">
+              <div data-aos="fade-up-right" class="p-5">
                 <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
-              <div class="p-5">
+              <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Instagram Bot</h2>
                 <p>Adapted version of Tim Grossmann's InstaPy to like my friends posts without me having to spend too long on social media</p>
               </div>
@@ -192,12 +177,12 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
-              <div class="p-5">
+              <div data-aos="fade-up-left" class="p-5">
                 <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="p-5">
+              <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">RFID door lock</h2>
                 <p>i always thought contactless cards were cool, so i made one secure my room from... urm... invasion?</p>
               </div>
@@ -207,12 +192,12 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
-              <div class="p-5">
+              <div data-aos="fade-up-right" class="p-5">
                 <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
-              <div class="p-5">
+              <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Automated Plant Waterer</h2>
                 <p>I wasnt always around to water my plant, why not have an arduino do it for me.</p>
               </div>
@@ -222,14 +207,14 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
-              <div class="p-5">
+              <div data-aos="fade-up-left" class="p-5">
                 <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="p-5">
-                <h2 class="display-4 header-title">another things</h2>
-                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+              <div data-aos="fade-up-right" class="p-5">
+                <h2 class="display-4 header-title">Autonomous RC car</h2>
+                <p>I heard google was making one so i thought i should have a go too.</p>
               </div>
             </div>
           </div>
@@ -259,6 +244,24 @@
   <script src="/static/mainPage/jquery.easing.min.js"></script>
   <script src="/static/mainPage/main.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init({
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      offset: 220, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+  </script>
 </body>
 </html>
