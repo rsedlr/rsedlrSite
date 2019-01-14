@@ -15,11 +15,10 @@ $(document).ready(function () {
       $("#hiddenTable").slideDown(2000);
       $(this).text('Show Less');
     } else {
-      $("#hiddenTable").slideUp(2000);
+      $("#hiddenTable").slideUp(1500);
+      document.getElementById("scrollMarker").scrollIntoView({behavior: 'smooth'})
       $(this).text('Show More');
     }
-    // $( "#hiddenTable" ).slideDown("slow");
-    // $("#hiddenTable").toggleClass('vis');
   });
   $("#HeatDemoBtn").click(function() {
     window.location.href = '/heatDemo';

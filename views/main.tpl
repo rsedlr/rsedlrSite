@@ -72,7 +72,7 @@
   </header>
   <section class="bg-primary text-center mainSection" id="about">
     <div class="container">
-      <div class="row">
+      <div data-aos="fade-up" class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <h1 class="mainHead">Hi,<br></h1>
           <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
@@ -93,7 +93,7 @@
           <h1 style="font-size: 60px;"><u>Projects</u></h1>
         </div>
       </div>
-      <div class="container">
+      <div class="container"> <!-- start -->
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div data-aos="fade-up-right" class="p-5">
@@ -109,7 +109,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container">  <!-- start -->
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div data-aos="fade-up-left" class="p-5">
@@ -125,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container">  <!-- start -->
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div data-aos="fade-up-right" class="p-5">
@@ -140,8 +140,9 @@
           </div>
         </div>
       </div>
+      <div id="scrollMarker" style="visibility: hidden;"></div>
       <div id="hiddenTable" class="dis-none">  <!-- heloooooo -->
-        <div class="container">
+        <div class="container">  <!-- start -->
           <div class="row align-items-center">
             <div data-aos="fade-up-left" class="col-lg-6">
               <div class="p-5">
@@ -157,7 +158,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container">  <!-- start -->
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5">
@@ -172,7 +173,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container">  <!-- start -->
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div data-aos="fade-up-left" class="p-5">
@@ -187,7 +188,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container">  <!-- start -->
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5">
@@ -202,7 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container">  <!-- start -->
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div data-aos="fade-up-left" class="p-5">
@@ -252,7 +253,7 @@
       disableMutationObserver: false, // disables automatic mutations' detections (advanced)
       debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
       throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-      offset: 220, // offset (in px) from the original trigger point
+      offset: 350, // offset (in px) from the original trigger point
       delay: 0, // values from 0 to 3000, with step 50ms
       duration: 400, // values from 0 to 3000, with step 50ms
       easing: 'ease', // default easing for AOS animations
