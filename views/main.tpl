@@ -71,13 +71,17 @@
     </div>
   </header>
   <section class="bg-primary text-center mainSection" id="about">
-    <div class="container">
-      <div data-aos="fade-up" class="row">
+    <div class="container" style="margin-top: 50px">
+      <div class="row">
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
-          <h1 class="mainHead">Hi,<br></h1>
-          <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
+          <div data-aos="fade-up">
+            <h1 class="mainHead">Hi,<br></h1>
+            <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
+          </div>
           <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
-          <h2>I'm a computer science student,<br>based in London</h2>
+          <div data-aos="fade-up" data-aos-offset="500">
+            <h2>I'm a computer science student,<br>based in London</h2>
+          </div>
           <!-- <br><br><br>
           <p>and some more witty comments i suppose</p>
           <br><br><br>
