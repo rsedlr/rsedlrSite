@@ -81,13 +81,12 @@
             <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
           </div>
           <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
-          <div data-aos="fade-up" data-aos-offset="500">
+          <div data-aos="fade-up" data-aos-offset="400">
             <h2>I'm a computer science student,<br>based in London</h2>
           </div>
           <!-- <br><br><br>
           <p>and some more witty comments i suppose</p>
-          <br><br><br>
-          <p>  </p> -->
+          <br><br><br> -->
         </div>
       </div>
     </div>
