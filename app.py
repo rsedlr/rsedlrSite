@@ -161,9 +161,9 @@ def dadsGift():
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
-  git.cmd.Git('/var/www/rsedlr.xyz').pull()
-  # subprocess.call("sudo git pull", shell=True)
-  print('\n**** Git pull done ****\n')
+  # git.cmd.Git('/var/www/rsedlr.xyz').pull()
+  # print('\n**** Git pull done ****\n')
+  print('\n************ git update available ************\n')
 
 # @route('/wallpaper')
 # def wallpaper():
@@ -171,7 +171,8 @@ def gitPull():
 
 
 if __name__ == '__main__':
-  port = int(os.environ.get('PORT', 4000))
+  # port = int(os.environ.get('PORT', 4000))
+  port = 4000
   run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)
 
 # words
