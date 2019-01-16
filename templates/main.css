@@ -526,7 +526,10 @@ span.space {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  padding: 2rem !important;
+  padding: 30px !important;
+  padding-right: 35px !important;
+  text-shadow: none;
+  opacity: 1;
 }
 
 .close:hover, .close:focus {

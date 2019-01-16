@@ -5,6 +5,18 @@ $(document).ready(function () {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
+  var heatModal = document.getElementById('heatModal');
+  var unityModal = document.getElementById('unityModal');
+  var pyGameModal = document.getElementById('pyGameModal');
+  var christmasCardModal = document.getElementById('christmasCardModal');
+  var instaBotModal = document.getElementById('instaBotModal');
+  var rfidDoorModal = document.getElementById('rfidDoorModal');
+  var plantWatererModal = document.getElementById('plantWatererModal');
+  var rcCarModal = document.getElementById('rcCarModal');
+
+  modalBtnListeners(document.getElementsByClassName("close"), 'close');
+  modalBtnListeners(document.getElementsByClassName("modal"), 'modal');
+  modalBtnListeners(document.getElementsByClassName("modal-content"), 'modal-content');
   if (isMac) {
     mainText.className += ' Mac-main';
     secText.className += ' Mac-sec';  
@@ -27,27 +39,50 @@ $(document).ready(function () {
     window.location.href = '/christmas';
   });  
 
-  // if screen < 905px wide then change fade in
+  $("#heatMoreBtn").click(function() {
+    heatModal.style.display = "block";
+  });
+  $("#unityMoreBtn").click(function() {
+    unityModal.style.display = "block";
+  });
+  $("#pyGameMoreBtn").click(function() {
+    pyGameModal.style.display = "block";
+  });
+  $("#christmasCardMoreBtn").click(function() {
+    christmasCardModal.style.display = "block";
+  });
+  $("#instaBotMoreBtn").click(function() {
+    instaBotModal.style.display = "block";
+  });
+  $("#rfidDoorMoreBtn").click(function() {
+    rfidDoorModal.style.display = "block";
+  });
+  $("#plantWatererMoreBtn").click(function() {
+    plantWatererModal.style.display = "block";
+  });
+  $("#rcCarMoreBtn").click(function() {
+    rcCarModal.style.display = "block";
+  });
 
-  // modal start -----------------------------------------------------------------
-
-  var modal = document.getElementById('heatModal');
-  var btn = document.getElementById("heatMoreBtn");
-  var span = document.getElementsByClassName("close")[0];
-
-  btn.onclick = function() {
-    modal.style.display = "block";
+  function modalBtnListeners(bns, option) {
+    for (i = 0; i < bns.length; i++) {
+      bns[i].addEventListener("click", function(event) {
+        if (option == 'modal') {
+          this.style.display = "none";
+        } else if (option == 'modal-content') {
+          event.stopPropagation();
+        } else if (option == 'close') {
+          this.parentElement.parentElement.parentElement.style.display = "none";
+        }
+      });
+     }
   }
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
 
-  // modal end -----------------------------------------------------------------
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // }
 
   function slide(id) {
     if ($(id).is(":hidden")) {

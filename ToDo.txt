@@ -13,4 +13,5 @@
 -linux use
 -bl monitoring
 -basic networking, websites run on raspberry pi's
--
+-if screen < 905px wide then change fade in
+

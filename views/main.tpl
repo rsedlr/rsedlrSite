@@ -62,18 +62,115 @@
       </div>
     </div>
   </div>
-  <div id="Modal" class="modal"> 
+  <div id="unityModal" class="modal"> 
     <div class="modal-content">
       <div class="modal-header" style="">
         <span class="close">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>Android and IOS Games</h2>
       </div>
       <div class="modal-body">
-        <p>Some text in the Modal Body</p>
-        <p>Some other text...</p>
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
       </div>
       <div class="modal-footer">
-        <h3 style="margin-right: auto;">Modal Footer</h3>
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
+      </div>
+    </div>
+  </div>
+  <div id="pyGameModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>Text based python game</h2>
+      </div>
+      <div class="modal-body">
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
+      </div>
+    </div>
+  </div>
+  <div id="christmasCardModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>Virtual Christmas Cards</h2>
+      </div>
+      <div class="modal-body">
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
+      </div>
+    </div>
+  </div>
+  <div id="instaBotModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>Instagram Bot</h2>
+      </div>
+      <div class="modal-body">
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
+      </div>
+    </div>
+  </div>
+  <div id="rfidDoorModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>RFID door lock</h2>
+      </div>
+      <div class="modal-body">
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
+      </div>
+    </div>
+  </div>
+  <div id="plantWatererModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>Automated Plant Waterer</h2>
+      </div>
+      <div class="modal-body">
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
+      </div>
+    </div>
+  </div>
+  <div id="rcCarModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>Autonomous RC car</h2>
+      </div>
+      <div class="modal-body">
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
       </div>
     </div>
   </div>
