@@ -18,7 +18,7 @@
   <!-- <script src="/static/main.js"></script> -->
   % import os ; mainJS = os.path.getsize("templates/main.js") ; mainCSS = os.path.getsize("templates/main.css")
   <script type='text/javascript' src='/static/main.js?filever={{mainJS}}'></script>  
-  <!-- <link rel="stylesheet" type="text/css" href="/static/main.css?filever={{mainCSS}}"> -->
+  <link rel="stylesheet" type="text/css" href="/static/main.css?filever={{mainCSS}}">
 </head>
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -46,7 +46,23 @@
   </nav>
 
 
-  <div id="myModal" class="modal"> 
+  <div id="heatModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>Remote Heating Control</h2>
+      </div>
+      <div class="modal-body">
+        <br><br><br>
+        <p>content</p>
+        <br><br><br>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right: auto;">Time taken: lots</h3>
+      </div>
+    </div>
+  </div>
+  <div id="Modal" class="modal"> 
     <div class="modal-content">
       <div class="modal-header" style="">
         <span class="close">&times;</span>
@@ -57,7 +73,7 @@
         <p>Some other text...</p>
       </div>
       <div class="modal-footer">
-        <h3>Modal Footer</h3>
+        <h3 style="margin-right: auto;">Modal Footer</h3>
       </div>
     </div>
   </div>
@@ -128,7 +144,7 @@
             <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Remote Heating Control</h2>
               <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
-              <button class="btn btn-more" id="heatingMoreBtn" type="button">More</button>
+              <button class="btn btn-more" id="heatMoreBtn" type="button">More</button>
             </div>
           </div>
         </div>
@@ -144,8 +160,8 @@
             <div data-aos="fade-up-right" class="p-5">
               <h2 class="display-4 header-title">Android and IOS Games</h2>
               <p>Initially, i developed a few phone games on the Unity engine. They havent yet been released but a demo video will be availabled soon</p>
-              <button class="btn btn-more" id="unityMoreBtn" type="button" style="display: inline-block">More</button>
-              <button class="btn btn-more" id="christmasCardBtn" type="button" style="display: inline-block">Example</button>
+              <button class="btn btn-more" id="unityMoreBtn" type="button" style="margin-right: 10px">More</button>
+              <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
             </div>
           </div>
         </div>
@@ -161,6 +177,7 @@
             <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Text based python game</h2>
               <p>A short Lord Of The Rings themed OOP python game made by me and a friend</p>
+              <button class="btn btn-more" id="pyGameMoreBtn" type="button">More</button>
             </div>
           </div>
         </div>
@@ -178,6 +195,7 @@
               <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
                 <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the url and click send, if you particularly like said person a personal message can be added.</p>
+                <button class="btn btn-more" id="christmasCardMoreBtn" type="button" style="margin-right: 10px">More</button>                
                 <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
               </div>
             </div>
@@ -194,6 +212,7 @@
               <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Instagram Bot</h2>
                 <p>Adapted version of Tim Grossmann's InstaPy to like my friends posts without me having to spend too long on social media</p>
+                <button class="btn btn-more" id="instaBotMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>
@@ -209,6 +228,7 @@
               <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">RFID door lock</h2>
                 <p>i always thought contactless cards were cool, so i made one secure my room from... urm... invasion?</p>
+                <button class="btn btn-more" id="rfidDoorMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>
@@ -224,6 +244,7 @@
               <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Automated Plant Waterer</h2>
                 <p>I wasnt always around to water my plant, why not have an arduino do it for me.</p>
+                <button class="btn btn-more" id="plantWatererMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>
@@ -239,6 +260,7 @@
               <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">Autonomous RC car</h2>
                 <p>I heard google was making one so i thought i should have a go too.</p>
+                <button class="btn btn-more" id="rcCarMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>

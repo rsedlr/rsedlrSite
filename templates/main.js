@@ -31,8 +31,8 @@ $(document).ready(function () {
 
   // modal start -----------------------------------------------------------------
 
-  var modal = document.getElementById('myModal');
-  var btn = document.getElementById("heatingMoreBtn");
+  var modal = document.getElementById('heatModal');
+  var btn = document.getElementById("heatMoreBtn");
   var span = document.getElementsByClassName("close")[0];
 
   btn.onclick = function() {
@@ -66,9 +66,9 @@ $(document).ready(function () {
         let layer = '';
         for (let i = 1; i <= 2; i++) {
           if(letter == ' '){
-            layer += '<span class="space"></span>';
+            layer += '<span class="titleSpans space"></span>';
           }else{
-            layer += '<span class="letter-'+i+'">'+letter+'</span>';
+            layer += '<span class="titleSpans letter-'+i+'">'+letter+'</span>';
           }
         }
         return layer;
@@ -85,7 +85,7 @@ $(document).ready(function () {
       document.getElementById(divs[x]).innerHTML = createLetterContainers(createLetterLayers(createLetterArray(phrases[x]))).join('');
       resolve();
     });
-    const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));
+    const spans = Array.prototype.slice.call(document.getElementsByClassName('titleSpans'));
     outputLayers.then(() => {
       return spans.map((span) => {
         setTimeout(() => {
