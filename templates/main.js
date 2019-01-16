@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
-      $("#hiddenTable").slideDown(2000);
+      $("#hiddenTable").slideDown(3000);
       $(this).text('Show Less');
     } else {
       $("#hiddenTable").slideUp(1500);
@@ -28,6 +28,26 @@ $(document).ready(function () {
   });  
 
   // if screen < 905px wide then change fade in
+
+  // modal start -----------------------------------------------------------------
+
+  var modal = document.getElementById('myModal');
+  var btn = document.getElementById("heatingMoreBtn");
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  // modal end -----------------------------------------------------------------
 
   function slide(id) {
     if ($(id).is(":hidden")) {

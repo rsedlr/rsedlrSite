@@ -18,7 +18,7 @@
   <!-- <script src="/static/main.js"></script> -->
   % import os ; mainJS = os.path.getsize("templates/main.js") ; mainCSS = os.path.getsize("templates/main.css")
   <script type='text/javascript' src='/static/main.js?filever={{mainJS}}'></script>  
-  <link rel="stylesheet" type="text/css" href="/static/main.css?filever={{mainCSS}}">
+  <!-- <link rel="stylesheet" type="text/css" href="/static/main.css?filever={{mainCSS}}"> -->
 </head>
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -44,6 +44,25 @@
       </div>
     </div>
   </nav>
+
+
+  <div id="myModal" class="modal"> 
+    <div class="modal-content">
+      <div class="modal-header" style="">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+  </div>
+
+
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
@@ -81,7 +100,7 @@
             <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
           </div>
           <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
-          <div data-aos="fade-up" data-aos-offset="400">
+          <div data-aos="fade-up" data-aos-offset="250" data-aos-delay="400"> 
             <h2>I'm a computer science student,<br>based in London</h2>
           </div>
           <!-- <br><br><br>
@@ -109,7 +128,7 @@
             <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Remote Heating Control</h2>
               <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
-              <!-- <button class="btn btn-more" id="HeatDemoBtn" type="button">Example</button> -->
+              <button class="btn btn-more" id="heatingMoreBtn" type="button">More</button>
             </div>
           </div>
         </div>
@@ -125,7 +144,8 @@
             <div data-aos="fade-up-right" class="p-5">
               <h2 class="display-4 header-title">Android and IOS Games</h2>
               <p>Initially, i developed a few phone games on the Unity engine. They havent yet been released but a demo video will be availabled soon</p>
-              <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
+              <button class="btn btn-more" id="unityMoreBtn" type="button" style="display: inline-block">More</button>
+              <button class="btn btn-more" id="christmasCardBtn" type="button" style="display: inline-block">Example</button>
             </div>
           </div>
         </div>
@@ -259,7 +279,7 @@
       debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
       throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
       offset: 200, // offset (in px) from the original trigger point
-      delay: 0.5, // values from 0 to 3000, with step 50ms
+      delay: 0, // values from 0 to 3000, with step 50ms
       duration: 400, // values from 0 to 3000, with step 50ms
       easing: 'ease', // default easing for AOS animations
       once: false, // whether animation should happen only once - while scrolling down
