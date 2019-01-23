@@ -231,7 +231,7 @@
       <div class="container"> <!-- start -->
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
-            <div data-aos="fade-up-right" class="p-5">
+            <div data-aos="fade-up-right" class="p-5" id="test">
               <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
             </div>
           </div>
@@ -387,7 +387,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
       startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
       initClassName: 'aos-init', // class applied after initialization
       animatedClassName: 'aos-animate', // class applied on animation

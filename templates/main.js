@@ -13,14 +13,27 @@ $(document).ready(function () {
   var rfidDoorModal = document.getElementById('rfidDoorModal');
   var plantWatererModal = document.getElementById('plantWatererModal');
   var rcCarModal = document.getElementById('rcCarModal');
-
   modalBtnListeners(document.getElementsByClassName("close"), 'close');
   modalBtnListeners(document.getElementsByClassName("modal"), 'modal');
   modalBtnListeners(document.getElementsByClassName("modal-content"), 'modal-content');
+
   if (isMac) {
     mainText.className += ' Mac-main';
     secText.className += ' Mac-sec';  
   }
+
+  // phoneAnims();
+  // function phoneAnims() {
+  //   $('#test').data('aos', "fade-up"); 
+  //   console.log('done test');
+  //   if ($(document).width() < 900) {
+  //     $('[data-aos]').data('aos', "fade-up"); 
+  //     console.log('changing aos shit');
+  //   }
+  // }
+  // window.addEventListener("resize",function(){
+  //   phoneAnims();
+  // })
 
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
