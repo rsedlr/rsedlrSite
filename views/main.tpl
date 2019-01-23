@@ -208,7 +208,7 @@
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <div data-aos="fade-up">
             <h1 class="mainHead">Hi,<br></h1>
-            <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
+            <!-- <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div> -->
           </div>
           <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
           <div data-aos="fade-up" data-aos-offset="250" data-aos-delay="400"> 
