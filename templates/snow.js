@@ -1,6 +1,7 @@
 
 // not all my code, some is from: https://codepen.io/loktar00/pen/CHpGo
 $(document).ready(function () {
+  var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
   (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
     function(callback) {
@@ -19,8 +20,23 @@ $(document).ready(function () {
     canvas.style.removeProperty('width');
     setSize();
 
+  function getScrollbarWidth() {
+    var outer = document.createElement("div");
+    outer.style.visibility = "hidden";
+    outer.style.width = "100px";
+    outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
+    document.body.appendChild(outer);
+    var widthNoScroll = outer.offsetWidth;
+    outer.style.overflow = "scroll";
+    var inner = document.createElement("div");
+    inner.style.width = "100%";
+    outer.appendChild(inner);        
+    var widthWithScroll = inner.offsetWidth;
+    outer.parentNode.removeChild(outer);
+    return widthNoScroll - widthWithScroll;
+  }
+
   function snow() {
-    // console.log(document.getElementById('canvas').style.display);
     if (document.getElementById('canvas').style.display != 'none') {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (var i = 0; i < flakeCount; i++) {
@@ -60,8 +76,8 @@ $(document).ready(function () {
         ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
         ctx.fill();
       }
-      requestAnimationFrame(snow);
     }
+    requestAnimationFrame(snow);
   };
 
   function reset(flake) {
@@ -98,15 +114,12 @@ $(document).ready(function () {
   };
 
   function setSize() {
-    // if ($(document).height() > $(window).height()) {
-    //   canvas.width = window.innerWidth - 10;
-    //   canvas.height = document.body.clientHeight;
-    // } else {
-    //   canvas.width = window.innerWidth;
-    //   canvas.height = window.innerHeight-71
-    // }
-    canvas.width = ($(document).height() > $(window).height()) ? window.innerWidth - 10 : window.innerWidth; // -10 to cancel out scrollbar
-    canvas.height = (document.body.clientHeight > window.innerHeight) ? document.body.clientHeight : window.innerHeight-71;
+    if (isMac) {
+      canvas.width = window.innerWidth;
+    } else {
+      canvas.width = ($(document).height() > $(window).height()) ? window.innerWidth - getScrollbarWidth() : window.innerWidth; // -10 to cancel out scrollbar
+    }
+    canvas.height = (document.body.clientHeight > window.innerHeight) ? document.body.clientHeight : window.innerHeight-71; // 71 cos of navbar
   }
 
   canvas.addEventListener("mousemove", function(e) {

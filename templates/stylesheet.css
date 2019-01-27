@@ -1,13 +1,13 @@
 
 body {
-  background-color: rgb(23,82,145); /* #26282a */
+  background:  #292929;
   /* background-image: url('/static/snowHouse.jpg')  no-repeat left top #082f3d; */
   align-items: center;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
-}
+} */
 
 .navbar {
   background-color: #1e1e1e !important;
@@ -153,6 +153,18 @@ body {
   margin-left: auto;
 }
 
+.drop-dark {
+  background-color: #3d4146;
+}
+
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover {
+  background-color: #3d4146;
+  color: red;
+}
+
 .my-primary-r, .my-primary-r:focus{
   color: white;
   background-color: red;
@@ -243,7 +255,7 @@ input[type=text], select {
 }
 
 .boxCol {
-  background-color: #3d4146;
+  background-color: #383f47;
   padding: 20px 30px;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -316,10 +328,10 @@ input[type=text], select {
 }
 
 .toggle-state:checked ~ .active-bg {
-   transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
 }
 
 .toggle-state:checked ~ .toggle-inner .indicator {
-   transform: translate3d(25%, 0, 0);
+  transform: translate3d(25%, 0, 0);
 }
 /* toggle button end */
