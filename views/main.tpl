@@ -239,6 +239,7 @@
             <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Remote Heating Control</h2>
               <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
+              <button class="btn btn-more" id="HeatDemoBtn" type="button">Example</button>
               <button class="btn btn-more" id="heatMoreBtn" type="button">More</button>
             </div>
           </div>
