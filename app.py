@@ -106,7 +106,7 @@ def control():
   return template('control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'], lights_T=onOff[valuesDict['lights_T']], lights_B=onOff[valuesDict['lights_B']], fans=onOff[valuesDict['fans']], pc=onOff[valuesDict['pc']])
 
 
-@route('/heatDemo/h/control'):
+@route('/heatDemo/h/control')
 def h_heatdemo():
   return template('hControl', heat=onOff[valuesDict['h_heat']])
 
