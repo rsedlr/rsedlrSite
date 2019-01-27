@@ -11,7 +11,7 @@ except:
 # @error(404)
 # def error404(error):
 #   return template('error404')
-key = '3GDVD52H2S7EY3HB4YE3G'  #not normally kept in cleartext but fine for demo
+key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
 
 
 @route('/static/<filepath:path>')
@@ -41,7 +41,7 @@ def about():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent': 50, 'heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False}
+valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False}
 onOff = {False: 'OFF', True: 'ON'}
 
 
@@ -106,6 +106,11 @@ def control():
   return template('control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'], lights_T=onOff[valuesDict['lights_T']], lights_B=onOff[valuesDict['lights_B']], fans=onOff[valuesDict['fans']], pc=onOff[valuesDict['pc']])
 
 
+@route('/heatDemo/h/control'):
+def h_heatdemo():
+  return template('hControl', heat=onOff[valuesDict['h_heat']])
+
+
 @route('/heatDemo/shopping')
 def ShoppingList():
   return template('ShoppingList')
@@ -114,7 +119,6 @@ def ShoppingList():
 @route('/heatDemo/textrepeater')
 def TextRepeater():
   return template('TextRepeater')
-  
 
 ''' ------------- heat control demo stuff end ------------- '''
 ''' --------------- christmas card start --------------- '''
