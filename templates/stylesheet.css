@@ -44,12 +44,19 @@ body {
   font-size: 30px !important;
   width: 200px;
   margin: 10px 0px;
+  border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  -webkit-border-radius: 15px !important;
+
 }
 
 .otherbtn {
   background: white !important;
   color: black;
   padding: .5rem 1.7rem !important;
+  border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
 }
 
 #Main{
@@ -249,17 +256,17 @@ input[type=text], select {
   /* margin: 0 auto; */
   padding: 20px;
   margin: 20px 0px 10px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
 }
 
 .boxCol {
   background-color: #383f47;
   padding: 20px 30px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
 }
 
 #relayBox {
