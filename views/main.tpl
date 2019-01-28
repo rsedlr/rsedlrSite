@@ -208,7 +208,7 @@
         <div class="col-md-10 mx-auto" style="text-align: left !important;">
           <div data-aos="fade-up">
             <h1 class="mainHead">Hi,<br></h1>
-            <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div>
+            <!-- <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div> -->
           </div>
           <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
           <div data-aos="fade-up" data-aos-offset="250" data-aos-delay="400"> 
@@ -231,7 +231,7 @@
       <div class="container"> <!-- start -->
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
-            <div data-aos="fade-up-right" class="p-5">
+            <div data-aos="fade-up-right" class="p-5" id="test">
               <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
             </div>
           </div>
@@ -239,6 +239,7 @@
             <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Remote Heating Control</h2>
               <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
+              <button class="btn btn-more" id="HeatDemoBtn" type="button">Example</button>
               <button class="btn btn-more" id="heatMoreBtn" type="button">More</button>
             </div>
           </div>
@@ -387,7 +388,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
       startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
       initClassName: 'aos-init', // class applied after initialization
       animatedClassName: 'aos-animate', // class applied on animation

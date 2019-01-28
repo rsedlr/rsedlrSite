@@ -1,22 +1,23 @@
 $(document).ready(function () {
-  var curOutput = document.getElementById("curOutput");
-  var curOut = $("#curOutput").text().slice(0,-1);
+  // var curOutput = document.getElementById("curOutput");
+  // var curOut = $("#curOutput").text().slice(0,-1);
   var output = document.getElementById("value");
   var s = document.getElementById("myRange");
-  var OnOff = document.getElementById("OnOffBtn");
-  var StatOutput = document.getElementById('StatusVal');
+  // var OnOff = document.getElementById("OnOffBtn");
+  // var StatOutput = document.getElementById('StatusVal');
+  var canvas = document.getElementById('canvas');
+  var LED_circle = document.getElementById('LED_circle');
   var r = 255, b = 255;
   output.innerHTML = s.value + '%';
   var heat = $("#StatusVal").text();
   var valueDict = {'heat': $("#StatusVal"), 'pc': $("#PC_status"), 'lights_T': $("#T-lights_status"), 'lights_B': $("#B-lights_status"), 'fans': $("#fans_status"), 'curPercent': $("#curOutput")}
-  postVal('pc');
-  postVal('lights_T');
-  postVal('lights_B');
-  postVal('fans');
-  curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
-  
-  function hello() {
-    console.log('Hello World!');
+  getVals();
+  window.setInterval(getVals, 30000);
+  if (getCookie('christmas') == 'True') {
+    canvas.style.display = 'inherit'; 
+  } else {
+    canvas.style.display = 'none';       
+    $('#btn-christmas').text('Christmas on')
   }
 
   function getVals() {
