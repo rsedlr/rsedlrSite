@@ -19,8 +19,40 @@ $(document).ready(function () {
     console.log('Hello World!');
   }
 
- hello();
-
+  function getVals() {
+    postVal('pc');
+    postVal('lights_T');
+    postVal('lights_B');
+    postVal('fans');
+    curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
+  }
+  function testPostVal() {
+    console.log(arguments);
+    var value = arguments.join('-');
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(value);
+        value.split('-');
+        console.log(value);
+        if ('heat' in value) {
+          console.log('heat is in value');
+          responseVal = this.responseText.split('-');
+          valueDict['heat'].text(responseVal[0]);
+          valueDict['curPercent'].text(responseVal[1] + "%");
+        } else {
+          console.log('heat is NOT in value');
+          for (var val; val < value.length; val++) {
+            valueDict[value].text(this.responseText);
+          }
+        }
+        updateAllCircles();
+      }
+    };
+    console.log(`/values/${value}`);
+    xhttp.open("POST", `/values/${value}`, true);
+    xhttp.send();
+  }
   function postVal(value) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -53,6 +85,7 @@ $(document).ready(function () {
   }
   function submitHeat(per) {
     fetch(new Request('/submit/' + heat + '/' + per), {method: 'PUT'});
+    console.log('/submit/' + heat + '/' + per);
     postVal("heat");
   }
   function submitURL(url) {
@@ -93,8 +126,35 @@ $(document).ready(function () {
     }
     document.getElementById('moreCircle').style.backgroundColor = 'rgb(' + r + ',0,' + b + ')';
   }
+  function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  }
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  }
+  function eraseCookie(name) {   
+    document.cookie = name+'=; Max-Age=-99999999;';  
+  }
   $('#MoreOptions').click(function () {
     hide('MoreOptionsContainer');
+    if ($('#MoreOptions').text() == 'More') {
+      $('#MoreOptions').text('Less');
+    } else {
+      $('#MoreOptions').text('More');
+    }
   });
   $('#offBtn').click(function () {
     heat = 'OFF';
@@ -116,6 +176,20 @@ $(document).ready(function () {
     heat = 'ON';
     submitHeat(75);
   });
+  $('#btn-christmas').click(function () {
+    if (canvas.style.display != 'none') {
+      canvas.style.display = 'none';       
+      $(this).text('Christmas on');
+      setCookie('christmas', 'False');
+    } else {
+      canvas.style.display = 'inherit'; 
+      $(this).text('Christmas off');
+      setCookie('christmas', 'True');
+    } 
+  });  
+  $('#btn-sound').click(function () {
+    alert('sound has not been added yet :/');
+  }); 
   $('#SubmitBtn').click(function () {
     submitHeat($("#value").text().slice(0,-1));
   });
@@ -134,6 +208,22 @@ $(document).ready(function () {
   $('#fansButton').click(function () {
     submitURL('/relayControl/fans');
     postVal("fans");
+  });
+  $('#LED_btn_red').click(function () {
+    submitURL('/relayControl/led_rd');
+    LED_circle.style.backgroundColor = '#f00'
+  });
+  $('#LED_btn_green').click(function () {
+    submitURL('/relayControl/led_gr');
+    LED_circle.style.backgroundColor = '#0f0'
+  });
+  $('#LED_btn_blue').click(function () {
+    submitURL('/relayControl/led_bl');
+    LED_circle.style.backgroundColor = '#00f'
+  });
+  $('#LED_btn_rainbow').click(function () {
+    submitURL('/relayControl/led_rb');
+    LED_circle.style.backgroundColor = '#f0f'
   });
   s.addEventListener("input", function () {
     UpdateCircle();

@@ -3,7 +3,7 @@
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="p-4" style="background-color: #1e1e1e">
       <h3 style="color: #ffffff"><b>Home automation demo</b></h3>
-      <span class="grey">
+      <span style="color: #bbbbbb" >
         -This is a main page example of the website i developed to control devices in the home <br>
         -<i>Hover over items to see what they do.</i> <br>
         -This page is made with HTML (obviously), css, JavaScript (inc jquery and AJAX) and also <a href="https://fezvrasta.github.io/bootstrap-material-design/" target="_blank" style="color: red">bootstrap material design</a> hosted on a bottle python backend webserver which is run on a raspberry Pi<br>
@@ -12,7 +12,7 @@
         -That 'PRESS ME' bubble that you just saw was triggered by it being your first time visiting the site in a while (based on cookies), you can thank me later :) <br>
         -Use the navbar to navigate between pages:
       </span>
-      <span id="controlFill" class="grey disNone bold">
+      <span id="controlFill" style="color: #bbbbbb" class="disNone bold">
         <br><br>
         This is the control page, here you can contorl the virtual home.<br>
         The left column is for controlling heating status and percentage.<br>
@@ -21,13 +21,13 @@
         pressing a button causes a request to be sent in the background to the host computer, telling it to do something <br>
         then it sends the new status of the device in return and the site updates the status of the cirles to represent the change
       </span>
-      <span id="shoppingFill" class="grey disNone bold">
+      <span id="shoppingFill" style="color: #bbbbbb" class="disNone bold">
         <br><br>
         This page contains a shopping list which can be easily edited, allowing the list to be accessed anywhere with internet access <br>
         The list is stored on a mySQL server on the webserver machine. <br>
         To edit, just click the pencil symbol over the box you wish to chane or hit the plus symbol for a new entry.
       </span>
-      <span id="repeatFill" class="grey disNone bold">
+      <span id="repeatFill" style="color: #bbbbbb" class="disNone bold">
         <br><br>
         This is the text manipulation page, enter some text and click 'GO' to watch in amazement as pointless effects are generated with the phrase given <br>
         There isnt really a purpose to this page, but it shows understanding of string manipulation i suppsoe? 
@@ -61,16 +61,52 @@
       <!-- <li class="nav-item">
         <a class="nav-link navWhite" href="heatDemo/whatsmyip" style="font-size: 20px;">Whats my IP</a>
       </li> -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link navWhite" href="/heatDemo/textrepeater" style="font-size: 20px;">Text Repeater</a>
-      </li>
+      </li> -->
       <!-- <li class="nav-item">
         <a class="nav-link navWhite" href="heatDemo/ytdl" style="font-size: 20px;">YT download</a>
       </li> -->
+      <li class="nav-item dropdown">
+        <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">other</a>
+        <div class="dropdown-menu drop-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="../h/control">h-control</a>
+          <a class="dropdown-item" href="whatsmyip">Whats my IP</a>
+          <a class="dropdown-item" href="textrepeater">Text Repeater</a>
+          <a class="dropdown-item" href="ytdl">YT download</a>
+          <a class="dropdown-item" href="snow">SNOW</a>
+          <!-- <div class="dropdown-divider"></div> -->
+        </div>
+      </li>
+      <button class="btn btn-lg otherbtn my-primary-w remMarginSm" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2" aria-expanded="true" aria-label="Toggle navigation" style="margin: auto 5px auto 20px; max-width: 200px;">options</button>
       <button class="btn btn-lg otherbtn my-primary-w remMarginSm" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation" style="margin: auto 5px auto 20px; max-width: 200px;">about</button>
     </ul>
   </div>
 </nav>
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent2">
+    <div class="p-4" style="background-color: #1e1e1e">
+      <div class="row">  
+        <!-- <div class="col-3">
+          <h3 style="color: #ffffff; display: inline-block; margin-right: 10px;"><b>Christmas mode</b></h3>
+          <label class="label" style="display: inline-block">
+            <div class="toggle">
+              <input class="toggle-state" type="checkbox" name="xmasCheck" value="check" checked />
+              <div class="toggle-inner">
+                  <div class="indicator"></div>
+              </div>
+              <div class="active-bg"></div>
+            </div>
+            <div class="label-text">leave me alone</div>
+          </label>
+        </div> -->
+        <button class="btn btn-lg otherbtn my-primary-w" type="button" style="margin: auto 5px auto 20px; max-width: 200px;" id="btn-christmas">Christmas off</button>
+        <button class="btn btn-lg otherbtn my-primary-w" type="button" style="margin: auto 5px auto 20px; max-width: 200px;" id="btn-sound">Sound on</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
 <script>
