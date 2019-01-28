@@ -184,7 +184,7 @@
           </div>
           <div class="showSmall my-auto" style="text-align: center;">
             <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
-            <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
+            <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; padding-right: 20px; color: white">personal portfolio</h2>
           </div>
           <p style="color: white; margin-top: -50px;">(currently in development)</p>
           <!-- <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">move</a> -->
@@ -239,8 +239,8 @@
             <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Remote Heating Control</h2>
               <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
-              <button class="btn btn-more" id="HeatDemoBtn" type="button">Example</button>
-              <button class="btn btn-more" id="heatMoreBtn" type="button">More</button>
+              <button class="btn btn-more main-btn" id="HeatDemoBtn" type="button">Example</button>
+              <button class="btn btn-more main-btn main-btn" id="heatMoreBtn" type="button">More</button>
             </div>
           </div>
         </div>
@@ -256,8 +256,8 @@
             <div data-aos="fade-up-right" class="p-5">
               <h2 class="display-4 header-title">Android and IOS Games</h2>
               <p>Initially, i developed a few phone games on the Unity engine. They havent yet been released but a demo video will be availabled soon</p>
-              <button class="btn btn-more" id="unityMoreBtn" type="button" style="margin-right: 10px">More</button>
-              <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
+              <button class="btn btn-more main-btn" id="unityMoreBtn" type="button">More</button>
+              <button class="btn btn-more main-btn" id="christmasCardBtn" type="button">Example</button>
             </div>
           </div>
         </div>
@@ -273,7 +273,7 @@
             <div data-aos="fade-up-left" class="p-5">
               <h2 class="display-4 header-title">Text based python game</h2>
               <p>A short Lord Of The Rings themed OOP python game made by me and a friend</p>
-              <button class="btn btn-more" id="pyGameMoreBtn" type="button">More</button>
+              <button class="btn btn-more main-btn" id="pyGameMoreBtn" type="button">More</button>
             </div>
           </div>
         </div>
@@ -291,8 +291,8 @@
               <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
                 <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the url and click send, if you particularly like said person a personal message can be added.</p>
-                <button class="btn btn-more" id="christmasCardMoreBtn" type="button" style="margin-right: 10px">More</button>                
-                <button class="btn btn-more" id="christmasCardBtn" type="button">Example</button>
+                <button class="btn btn-more main-btn" id="christmasCardMoreBtn" type="button">More</button>                
+                <button class="btn btn-more main-btn" id="christmasCardBtn" type="button">Example</button>
               </div>
             </div>
           </div>
@@ -308,7 +308,7 @@
               <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Instagram Bot</h2>
                 <p>Adapted version of Tim Grossmann's InstaPy to like my friends posts without me having to spend too long on social media</p>
-                <button class="btn btn-more" id="instaBotMoreBtn" type="button">More</button>
+                <button class="btn btn-more main-btn" id="instaBotMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>
@@ -324,7 +324,7 @@
               <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">RFID door lock</h2>
                 <p>i always thought contactless cards were cool, so i made one secure my room from... urm... invasion?</p>
-                <button class="btn btn-more" id="rfidDoorMoreBtn" type="button">More</button>
+                <button class="btn btn-more main-btn" id="rfidDoorMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>
@@ -340,7 +340,7 @@
               <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Automated Plant Waterer</h2>
                 <p>I wasnt always around to water my plant, why not have an arduino do it for me.</p>
-                <button class="btn btn-more" id="plantWatererMoreBtn" type="button">More</button>
+                <button class="btn btn-more main-btn" id="plantWatererMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>
@@ -356,13 +356,13 @@
               <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">Autonomous RC car</h2>
                 <p>I heard google was making one so i thought i should have a go too.</p>
-                <button class="btn btn-more" id="rcCarMoreBtn" type="button">More</button>
+                <button class="btn btn-more main-btn" id="rcCarMoreBtn" type="button">More</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="btn btn-more" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
+      <button class="btn btn-more main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
     </div>
   </section>
   <section class="bg-third text-center mainSection" id="contact">

@@ -37,7 +37,7 @@ $(document).ready(function () {
 
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
-      $("#hiddenTable").slideDown(3000);
+      $("#hiddenTable").slideDown(2500);
       $(this).text('Show Less');
     } else {
       $("#hiddenTable").slideUp(1500);

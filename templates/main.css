@@ -200,6 +200,11 @@ footer p {
   font-size: 15px !important;
 }
 
+.main-btn {
+  margin-right: 10px; 
+  margin-bottom: 10px;
+}
+
 .text-primary {
   color: #000000;
 }
