@@ -45,7 +45,6 @@
     </div>
   </nav>
 
-
   <div id="heatModal" class="modal"> 
     <div class="modal-content">
       <div class="modal-header" style="">
@@ -174,7 +173,6 @@
       </div>
     </div>
   </div>
-
 
   <header class="masthead">
     <div class="container h-100">

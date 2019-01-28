@@ -5,14 +5,14 @@ from christmasMessages import cardMessage
 
 try:
   import git
-except:
-  print('No pyGit found')
+except Exception as e:
+  print(e)
+
+key = '3GDVD52H2S7EY3HB4YE3G'  #not normally kept in cleartext but fine for demo
 
 # @error(404)
 # def error404(error):
 #   return template('error404')
-key = '3GDVD52H2S7EY3HB4YE3G'  #not normally kept in cleartext but fine for demo
-
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
