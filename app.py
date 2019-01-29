@@ -10,9 +10,9 @@ except Exception as e:
 
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
 
-# @error(404)
-# def error404(error):
-#   return template('error404')
+@error(404)
+def error404(error):
+  return template('error404')
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
@@ -108,12 +108,18 @@ def control():
 
 @route('/heatDemo/h/control')
 def h_heatdemo():
+  global valuesDict
   return template('hControl', heat=onOff[valuesDict['h_heat']])
 
 
 @route('/heatDemo/shopping')
 def ShoppingList():
   return template('ShoppingList')
+
+
+@route('/heatDemo/snow')
+def snow():
+  return template('snow')
 
 
 @route('/heatDemo/textrepeater')
