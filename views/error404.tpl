@@ -7,7 +7,7 @@
     % include('templates/links.html')
   </head>
   <body>
-    <div id="main" class="boxCol" style="margin: 20px 5%; max-width: 500px;">
+    <div id="main" class="boxCol" style="margin: 20px 5%; max-width: 510px;">
       <h1 style="color: red; padding: 50px">Nothing here, sorry</h1>
     </div>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
