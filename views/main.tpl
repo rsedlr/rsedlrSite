@@ -45,6 +45,12 @@
       </div>
     </nav>
 
+    <div id="picModal" class="img-modal">
+      <span class="img-close">&times;</span>
+      <img class="img-modal-content" id="modalImg">
+      <div id="caption"></div>
+    </div>
+
     <div id="heatModal" class="modal"> 
       <div class="modal-content">
         <div class="modal-header" style="">
@@ -232,7 +238,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5" id="test">
-                <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                <img class="img-fluid round-corners main-pic" src="static/pic/heatDemo.png" alt="heatDemo control page" id="heatDemoImg">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -249,7 +255,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div data-aos="fade-up-left" class="p-5">
-                <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="">
               </div>
             </div>
             <div class="col-lg-6">
@@ -266,7 +272,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5">
-                <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -284,7 +290,7 @@
             <div class="row align-items-center">
               <div data-aos="fade-up-left" class="col-lg-6">
                 <div class="p-5">
-                  <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -301,7 +307,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5">
-                  <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -317,7 +323,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -333,7 +339,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5">
-                  <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -349,7 +355,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners" src="static/pic/norton.png" alt="">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="">
                 </div>
               </div>
               <div class="col-lg-6">
