@@ -82,34 +82,29 @@ span.onclick = function() {
 
   $("#heatMoreBtn").click(function() {
     heatModal.style.display = "block";
-    document.body.classList.add('noScroll');
   });
   $("#unityMoreBtn").click(function() {
     unityModal.style.display = "block";
-    document.body.classList.add('noScroll');
   });
   $("#pyGameMoreBtn").click(function() {
     pyGameModal.style.display = "block";
-    document.body.classList.add('noScroll');
   });
   $("#christmasCardMoreBtn").click(function() {
     christmasCardModal.style.display = "block";
-    document.body.classList.add('noScroll');
   });
   $("#instaBotMoreBtn").click(function() {
     instaBotModal.style.display = "block";
-    document.body.classList.add('noScroll');
   });
   $("#rfidDoorMoreBtn").click(function() {
     rfidDoorModal.style.display = "block";
-    document.body.classList.add('noScroll');
   });
   $("#plantWatererMoreBtn").click(function() {
     plantWatererModal.style.display = "block";
-    document.body.classList.add('noScroll');
   });
   $("#rcCarMoreBtn").click(function() {
     rcCarModal.style.display = "block";
+  });
+  $(".btn-no-scroll").click(function() {
     document.body.classList.add('noScroll');
   });
 
