@@ -625,6 +625,10 @@ span.space {
 
 .main-pic {
   cursor: pointer;
+  transition: 0.2s ease;
+}
+.main-pic:hover {
+  transform: scale(1.3);
 }
 
 .img-close {

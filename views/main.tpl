@@ -243,8 +243,8 @@
             </div>
             <div class="col-lg-6 order-lg-1">
               <div data-aos="fade-up-left" class="p-5">
-                <h2 class="display-4 header-title">Remote Heating Control</h2>
-                <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating from anywhere. </p>
+                <h2 class="display-4 header-title">Remote Home Control</h2>
+                <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating, lights and fans from anywhere. </p>
                 <button class="btn btn-more main-btn" id="HeatDemoBtn" type="button">Example</button>
                 <button class="btn btn-more main-btn main-btn" id="heatMoreBtn" type="button">More</button>
               </div>
