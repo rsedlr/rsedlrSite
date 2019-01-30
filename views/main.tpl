@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="description" content="">
-    <meta name="author" content=""> -->
+    <!-- <meta name="description" content=""> -->
+    <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
     <title>RsEdlr</title>
     <!-- <link rel="icon" href="/static/favicon.ico" type="image/x-icon"> -->
     <!-- <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
