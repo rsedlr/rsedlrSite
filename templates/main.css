@@ -7,6 +7,9 @@ html,body {
 body {
 	font-family: Arial,Helvetica,sans-serif; 
 }
+body.noScroll {
+  overflow: hidden;
+}
 
 a {
   color: #000000;
@@ -30,11 +33,9 @@ hr {
   border-width: 1px;
   border-color: rgba(34, 34, 34, 0.1);
 }
-
 hr.light {
   border-color: white;
 }
-
 h1,h2,h3,h4,h5,h6 {
 	font-family: Arial,Helvetica,sans-serif; 
   font-weight: 200;
@@ -52,7 +53,6 @@ p {
 section {
   padding: 80px 0;
 }
-
 section h2 {
   font-size: 50px;
 }
@@ -72,46 +72,38 @@ section h2 {
   font-weight: 200;
   letter-spacing: 1px;
 }
-
 #mainNav .navbar-brand {
   color: #ffffff;
 	font-family: Arial,Helvetica,sans-serif; 
   font-weight: 200;
   letter-spacing: 1px;
 }
-
 #mainNav, .navbar-brand:hover {
   color: #000000 !important;
 }
-
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
   color: #ffffff;
   border-color: #ffffff;
 }
-
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
 	font-family: Arial,Helvetica,sans-serif; 
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
 #mainNav .navbar-nav > li > a.active {
   color: #6f00ff !important;
   background-color: transparent;
 }
-
 #mainNav .navbar-nav > li > a.active:hover {
   background-color: transparent;
 }
-
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
   color: #ffffff;
 }
-
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
   color: #000000;
@@ -128,23 +120,19 @@ header.masthead {
   background:  -webkit-gradient(linear, right top, left top, from(#7e3ad8), to(#e40d1b));
   background:  linear-gradient(to left, #7e3ad8, #df1e2b); /* df1e2b ; 6f00ff, 7b4397 */
 }
-
 header.masthead .header-content {
   /* max-width: 500px; */
   margin-bottom: 100px;
   text-align: center;
 }
-
 header.masthead .header-content h1 {
   font-size: 30px;
 }
-
 header.masthead .device-container {
   max-width: 325px;
   margin-right: auto;
   margin-left: auto;
 }
-
 header.masthead .device-container .screen img {
   border-radius: 3px;
 }
@@ -161,7 +149,6 @@ footer {
   color: rgba(255, 255, 255, 0.3);
   background-color: #222222;
 }
-
 footer p {
   font-size: 12px;
   margin: 0;
@@ -219,7 +206,6 @@ footer p {
   border: 1px solid;
   border-color: white;
 }
-
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
   border-color: #000000;
@@ -498,7 +484,7 @@ span.space {
 .modal {
   display: none; 
   position: fixed; 
-  z-index: 1; 
+  z-index: 4; 
   padding-top: 130px; 
   left: 0;
   top: 0;
@@ -523,6 +509,27 @@ span.space {
   animation-duration: 0.4s
 }
 
+.modal-header {
+  /* padding: 2px 16px; */
+  background-color: #000000;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.modal-header h2 {
+  color: white;
+}
+
+.modal-body {
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.modal-footer {
+  background-color: #000;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
   to {top:0; opacity:1}
@@ -545,32 +552,10 @@ span.space {
   transition: 0.3s;
 
 }
-
 .close:hover, .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.modal-header {
-  /* padding: 2px 16px; */
-  background-color: #0004ff;
-  color: white;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-.modal-body {
-  /* padding: 2px 16px; */
-}
-
-.modal-footer {
-  /* padding: 2px 16px; */
-  background-color: #0004ff;
-  color: white;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-
 }
 
 #caption {
@@ -605,7 +590,6 @@ span.space {
   width: 60%;
   /* max-width: 1100px; */
 }
-
 .img-modal-content, #caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -640,7 +624,6 @@ span.space {
   font-weight: bold;
   transition: 0.3s;
 }
-
 .img-close:hover, .img-close:focus {
   color: #bbb;
   text-decoration: none;
