@@ -59,7 +59,7 @@
         </div>
         <div class="modal-body">
           <br><br><br>
-          <p>content</p>
+          <p>Around the time i started this project, hive heating systems were first being advertised (for quite a price may i add) so i wondered if the same fucntionality could be achieved for a lot less.<br>The site is hosted on one of my RaspberryPi 3's located above my boiler. when a functional button is pressed a signal is sent asynchronously (meaning in the background, without a page refresh) to the server, which then does what is required to foulfil the task. Sometimes this is as simple as toggling a GPIO pin which is connected to a relay, thus turning whatever the relay is wired to on. Other times it could be more complicated than this, such as sending a command to another raspberryPi located in another room (or even another house) which then in turn carries out its own procedure to complete the task.<br>In its current state, my home control system allows control of:<br>-my heating (along with temperature control throgh an arduino which controls a stepper motor connected to a heating knob)<br>-my mothers heating<br>-the lights in my room<br>-a set of addessable LED's around my monitors in my room (can be turned on, off and have the colour changed also)<br>-My desktop PC can be turned on or off through the header of its motherboard<br>-some spare PC fans i had after building my PC which are now suspended above my monitors to keep me cool in the summer</p>
           <br><br><br>
         </div>
         <div class="modal-footer">
