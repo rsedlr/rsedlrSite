@@ -40,30 +40,26 @@ $(document).ready(function () {
 var modal = document.getElementById('picModal');
 var modalImg = document.getElementById("modalImg");
 var captionText = document.getElementById("caption");
-document.getElementById('heatDemoImg').onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+const mainImg = ['heatDemoImg', 'unityImg', 'pyGameImg', 'christmasCardsImg', 'instaBotImg', 'RFID-img', 'plantWatererImg', 'rcCarImg']
+
+for (i = 0; i < mainImg.length; i++) {
+  document.getElementById(mainImg[i]).onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
 }
+
+// document.getElementById('heatDemoImg').onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
 
 var span = document.getElementsByClassName("img-close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
-
-
-// for (i = 0; i < bns.length; i++) {
-//   bns[i].addEventListener("click", function(event) {
-//     if (option == 'modal') {
-//       this.style.display = "none";
-//     } else if (option == 'modal-content') {
-//       event.stopPropagation();
-//     } else if (option == 'close') {
-//       this.parentElement.parentElement.parentElement.style.display = "none";
-//     }
-//   });
-// }
-
 
 
 
