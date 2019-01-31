@@ -164,36 +164,36 @@
         <div id="LED_buttonRow1" class="row">
           <div class="col-sm-6 col-xs-12">
             <div class="centreBtnDiv">
-              <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="background: rgb(255, 0, 0);" id="LED_btn_red">Red</button>
+              <button type="button" class="btn btn-lg mainbtn my-primary-wl led-btn" style="background: rgb(255, 0, 0);" id="LED_btn_rd">Red</button>
             </div>
           </div>
           <div class="col-sm-6 col-xs-12">
             <div class="centreBtnDiv">
-              <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="background: rgb(0, 255, 0);" id="LED_btn_green">Green</button>
+              <button type="button" class="btn btn-lg mainbtn my-primary-wl led-btn" style="background: rgb(0, 255, 0);" id="LED_btn_gr">Green</button>
             </div>
           </div>
         </div>
         <div id="LED_buttonRow2" class="row">
           <div class="col-sm-6 col-xs-12">
             <div class="centreBtnDiv">
-              <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="background: rgb(0, 0, 255);" id="LED_btn_blue">Blue</button>
+              <button type="button" class="btn btn-lg mainbtn my-primary-wl led-btn" style="background: rgb(0, 0, 255);" id="LED_btn_bl">Blue</button>
             </div>
           </div>
           <div class="col-sm-6 col-xs-12">
             <div class="centreBtnDiv">
-              <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="background: rgb(255, 0, 255);" id="LED_btn_rainbow">Rainbow</button>
+              <button type="button" class="btn btn-lg mainbtn my-primary-wl led-btn" style="background: rgb(255, 0, 255);" id="LED_btn_rb">Rainbow</button>
             </div>
           </div>
         </div>
         <div id="LED_buttonRow3" class="row">
           <div class="col-sm-6 col-xs-12">
             <div class="centreBtnDiv">
-              <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="background: rgb(0, 225, 255);" id="LED_btn_extra">extra</button>
+              <button type="button" class="btn btn-lg mainbtn my-primary-wl led-btn" style="background: rgb(0, 225, 255);" id="LED_btn_ex">extra</button>
             </div>
           </div>
           <div class="col-sm-6 col-xs-12">
             <div class="centreBtnDiv">
-              <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="background: rgb(255, 251, 0);" id="LED_btn_anodaOne">anoda one</button>
+              <button type="button" class="btn btn-lg mainbtn my-primary-wl led-btn" style="background: rgb(255, 251, 0);" id="LED_btn_ao">anoda one</button>
             </div>
           </div>
         </div>

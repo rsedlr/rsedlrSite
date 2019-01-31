@@ -41,7 +41,7 @@ def about():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False}
+valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False, 'led_col': 'rb'}
 onOff = {False: 'OFF', True: 'ON'}
 
 
@@ -63,6 +63,8 @@ def postData(value):
     return onOff[valuesDict['fans']]
   elif value == 'pc':
     return onOff[valuesDict['pc']]
+  elif value == 'led':
+    return valuesDict['led_col']
   else:
     print('nothing posted')
 
@@ -79,6 +81,8 @@ def relayControl(relay):
       valuesDict['lights_T'] = not valuesDict['lights_T']
     elif relay == 'fans':
       valuesDict['fans'] = not valuesDict['fans']
+    elif relay[0:4] == 'led_':
+      valuesDict['led_col'] = relay[4:]
     else:
       print('no gpio actions')
   except:

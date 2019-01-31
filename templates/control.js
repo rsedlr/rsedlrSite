@@ -27,33 +27,33 @@ $(document).ready(function () {
     postVal('fans');
     curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
   }
-  function testPostVal() {
-    console.log(arguments);
-    var value = arguments.join('-');
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        console.log(value);
-        value.split('-');
-        console.log(value);
-        if ('heat' in value) {
-          console.log('heat is in value');
-          responseVal = this.responseText.split('-');
-          valueDict['heat'].text(responseVal[0]);
-          valueDict['curPercent'].text(responseVal[1] + "%");
-        } else {
-          console.log('heat is NOT in value');
-          for (var val; val < value.length; val++) {
-            valueDict[value].text(this.responseText);
-          }
-        }
-        updateAllCircles();
-      }
-    };
-    console.log(`/values/${value}`);
-    xhttp.open("POST", `/values/${value}`, true);
-    xhttp.send();
-  }
+  // function testPostVal() {
+  //   console.log(arguments);
+  //   var value = arguments.join('-');
+  //   var xhttp = new XMLHttpRequest();
+  //   xhttp.onreadystatechange = function() {
+  //     if (this.readyState == 4 && this.status == 200) {
+  //       console.log(value);
+  //       value.split('-');
+  //       console.log(value);
+  //       if ('heat' in value) {
+  //         console.log('heat is in value');
+  //         responseVal = this.responseText.split('-');
+  //         valueDict['heat'].text(responseVal[0]);
+  //         valueDict['curPercent'].text(responseVal[1] + "%");
+  //       } else {
+  //         console.log('heat is NOT in value');
+  //         for (var val; val < value.length; val++) {
+  //           valueDict[value].text(this.responseText);
+  //         }
+  //       }
+  //       updateAllCircles();
+  //     }
+  //   };
+  //   console.log(`/values/${value}`);
+  //   xhttp.open("POST", `/values/${value}`, true);
+  //   xhttp.send();
+  // }
   function postVal(value) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -187,7 +187,7 @@ $(document).ready(function () {
       $(this).text('Christmas off');
       setCookie('christmas', 'True');
     } 
-  });  
+  });
   $('#btn-sound').click(function () {
     alert('sound has not been added yet :/');
   }); 
@@ -210,19 +210,22 @@ $(document).ready(function () {
     submitURL('/relayControl/fans');
     postVal("fans");
   });
-  $('#LED_btn_red').click(function () {
+  $('.led-btn').click(function () {
+    // postVal()
+  }); 
+  $('#LED_btn_rd').click(function () {
     submitURL('/relayControl/led_rd');
     LED_circle.style.backgroundColor = '#f00'
   });
-  $('#LED_btn_green').click(function () {
+  $('#LED_btn_gr').click(function () {
     submitURL('/relayControl/led_gr');
     LED_circle.style.backgroundColor = '#0f0'
   });
-  $('#LED_btn_blue').click(function () {
+  $('#LED_btn_bl').click(function () {
     submitURL('/relayControl/led_bl');
     LED_circle.style.backgroundColor = '#00f'
   });
-  $('#LED_btn_rainbow').click(function () {
+  $('#LED_btn_rb').click(function () {
     submitURL('/relayControl/led_rb');
     LED_circle.style.backgroundColor = '#f0f'
   });

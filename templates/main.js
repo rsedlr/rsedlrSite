@@ -35,33 +35,29 @@ $(document).ready(function () {
   //   phoneAnims();
   // })
 
+  var modal = document.getElementById('picModal');
+  var modalImg = document.getElementById("modalImg");
+  var captionText = document.getElementById("caption");
+  const mainImg = ['heatDemoImg', 'unityImg', 'pyGameImg', 'christmasCardsImg', 'instaBotImg', 'RFID-img', 'plantWatererImg', 'rcCarImg']
 
-
-var modal = document.getElementById('picModal');
-var modalImg = document.getElementById("modalImg");
-var captionText = document.getElementById("caption");
-const mainImg = ['heatDemoImg', 'unityImg', 'pyGameImg', 'christmasCardsImg', 'instaBotImg', 'RFID-img', 'plantWatererImg', 'rcCarImg']
-
-for (i = 0; i < mainImg.length; i++) {
-  document.getElementById(mainImg[i]).onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+  for (i = 0; i < mainImg.length; i++) {
+    document.getElementById(mainImg[i]).onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
   }
-}
 
-// document.getElementById('heatDemoImg').onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// }
+  // document.getElementById('heatDemoImg').onclick = function(){
+  //   modal.style.display = "block";
+  //   modalImg.src = this.src;
+  //   captionText.innerHTML = this.alt;
+  // }
 
-var span = document.getElementsByClassName("img-close")[0];
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
-
+  var span = document.getElementsByClassName("img-close")[0];
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
 
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
