@@ -58,15 +58,15 @@
         </div>
         <div class="modal-body">
           <p>
-            <br>Around the time i started this project, hive heating systems were first being advertised (for quite a price may i add) so i wondered if the same functionality could be achieved for a lot less.
-            <br>The site is hosted on one of my Raspberry Pi 3's located above my boiler. When a functional button is pressed a signal is sent asynchronously (meaning in the background, without a page refresh) to the server, which then does what is required to fulfil the task. Sometimes this is as simple as toggling a GPIO pin which is connected to a relay, thus turning whatever the relay is wired to on (like the main heating button). Other times it could be more complicated than this, such as sending a command to another raspberry Pi located in another room (or even another house) which then in turn carries out its own procedure to complete the task.
-            <br>In its current state, my home control system allows control of:
-            <br>-My heating (along with temperature control through an arduino which controls a stepper motor connected to a heating knob)
-            <br>-My mothers heating (located elsewhere so my Pi has to send commands over an SSH connection)
-            <br>-The lights in my room (also connected to another Pi so commands have to be sent through SSH again)
-            <br>-A set of addressable LEDs around my monitors in my room (can be turned on, off and have the colour changed also. The colour is changed through sending commands across a USB serial connection)
-            <br>-My desktop PC can be turned on or off (through a relay connected the header of its motherboard which toggles for 1 second, recreating a button press)
-            <br>-Some spare PC fans i had after building my PC which are now suspended above my monitors to keep me cool in the summer
+            Around the time i started this project, hive heating systems were first being advertised (for quite a price may i add) so i wondered if the same functionality could be achieved for a lot less. <br>
+            The site is hosted on one of my Raspberry Pi 3's located above my boiler. When a functional button is pressed a signal is sent asynchronously (meaning in the background, without a page refresh) to the server, which then does what is required to fulfil the task. Sometimes this is as simple as toggling a GPIO pin which is connected to a relay, thus turning whatever the relay is wired to on (like the main heating button). Other times it could be more complicated than this, such as sending a command to another raspberry Pi located in another room (or even another house) which then in turn carries out its own procedure to complete the task.<br>
+            In its current state, my home control system allows control of:<br>
+            -My heating (along with temperature control through an arduino which controls a stepper motor connected to a heating knob)<br>
+            -My mothers heating (located elsewhere so my Pi has to send commands over an SSH connection)<br>
+            -The lights in my room (also connected to another Pi so commands have to be sent through SSH again)<br>
+            -A set of addressable LEDs around my monitors in my room (can be turned on, off and have the colour changed also. The colour is changed through sending commands across a USB serial connection)<br>
+            -My desktop PC can be turned on or off (through a relay connected the header of its motherboard which toggles for 1 second, recreating a button press)<br>
+            -Some spare PC fans i had after building my PC which are now suspended above my monitors to keep me cool in the summer
           </p>
         </div>
       </div>
@@ -104,9 +104,11 @@
           <h2>Text based python game</h2>
         </div>
         <div class="modal-body">
-          <br><br><br>
-          <p>content</p>
-          <br><br><br>
+            To grasp Object Oriented Programming concepts more thoroughly, we decided to make a short text based game in python; after all the best way to learn in programming is by doing.<br>
+            In all honesty, the hardest part about making the game was coming up with names for characters and what they should say, particularly when doing it on something with such a massive fanbase of devoted enthusiasts such as the lord of the rings.<br>
+            As it was a text based game, we had to come up with a less conventional movement and interaction system compared to modern 3D visual games that we see commonly today. <br>
+            Another problem we faced was difficulty, the player is not required to skillfully maneuver a car around a racetrack or shoot a baddie in the face from afar as its a text game; so how do we stop it from becoming boring due to a lack of challenge? <br>
+            Our solution was to not reveal excessive information, to keep the player thinking, and to make it perma-death with one wrong move instantly causing the end for your character and a fresh start required, so that there is still a buzz about getting through a section.<br>     
         </div>
       </div>
     </div>

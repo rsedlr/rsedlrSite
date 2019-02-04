@@ -497,7 +497,7 @@ span.space {
 
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: white;
   margin: auto;
   padding: 0;
   border-radius: 30px;
@@ -515,14 +515,19 @@ span.space {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-.modal-header h2 {
+.modal-header > h2 {
   color: white;
 }
 
 .modal-body {
   overflow-y: auto;
   max-height: 600px;
+  border: 10px solid white;
+  border-radius: 40px;
 }
+/* .modal-body > p {
+  padding-bottom: 10px;
+} */
 
 .modal-footer {
   background-color: #000;
