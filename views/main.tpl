@@ -169,6 +169,59 @@
       </div>
     </div>
 
+    <div id="raspiModal" class="modal"> 
+      <div class="modal-content">
+        <div class="modal-header" style="">
+          <span class="close">&times;</span>
+          <h2>Raspberry Pi obsession</h2>
+        </div>
+        <div class="modal-body">
+          <br><br><br>
+          <p>content</p>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <div id="networkModal" class="modal"> 
+      <div class="modal-content">
+        <div class="modal-header" style="">
+          <span class="close">&times;</span>
+          <h2>Basic Networking</h2>
+        </div>
+        <div class="modal-body">
+          <br><br><br>
+          <p>content</p>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <div id="blModal" class="modal"> 
+      <div class="modal-content">
+        <div class="modal-header" style="">
+          <span class="close">&times;</span>
+          <h2>Building status report system</h2>
+        </div>
+        <div class="modal-body">
+          <br><br><br>
+          <p>content</p>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <div id="linuxModal" class="modal"> 
+      <div class="modal-content">
+        <div class="modal-header" style="">
+          <span class="close">&times;</span>
+          <h2>Linux interest</h2>
+        </div>
+        <div class="modal-body">
+          <br><br><br>
+          <p>content</p>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+
     <header class="masthead">
       <div class="container h-100">
         <div class="row h-100">

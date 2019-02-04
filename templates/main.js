@@ -44,10 +44,10 @@ $(document).ready(function () {
 
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
-      $("#hiddenTable").slideDown(2500);
+      $("#hiddenTable").slideDown(3500);
       $(this).text('Show Less');
     } else {
-      $("#hiddenTable").slideUp(1500);
+      $("#hiddenTable").slideUp(2000);
       document.getElementById("scrollMarker").scrollIntoView({behavior: 'smooth'})
       $(this).text('Show More');
     }
