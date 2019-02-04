@@ -1,8 +1,6 @@
 RsEdler todo:
 -add about section, something like 'im a __' and have fancy shit happen
--improve card appearance
 
--add other sections such as 'about me'
 -add popovers to heat demo
 
 -on project pic click, open a big full screen window with a longer description
@@ -10,8 +8,6 @@ RsEdler todo:
 -make morse code effect for portfolio 'employ me'?
 
 -python frameworks
--linux use
--bl monitoring
--basic networking, websites run on raspberry pi's
--if screen < 905px wide then change fade in
+-basic networking
 
+-working contact page

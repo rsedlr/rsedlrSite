@@ -227,7 +227,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5" id="test">
-                <img class="img-fluid round-corners main-pic" src="static/pic/heatDemo.png" alt="heat-demo control page" id="heatDemoImg">
+                <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/heatDemo.png" alt="heat-demo control page" id="heatDemoImg">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -244,7 +244,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div data-aos="fade-up-left" class="p-5">
-                <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Unity games" id="unityImg">
+                <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Unity games" id="unityImg">
               </div>
             </div>
             <div class="col-lg-6">
@@ -261,7 +261,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5">
-                <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Text based OOP python game" id="pyGameImg">
+                <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Text based OOP python game" id="pyGameImg">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -279,7 +279,7 @@
             <div class="row align-items-center">
               <div data-aos="fade-up-left" class="col-lg-6">
                 <div class="p-5">
-                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Virtual christmas cards" id="christmasCardsImg">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Virtual christmas cards" id="christmasCardsImg">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -296,7 +296,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5">
-                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Instagram bot in action" id="instaBotImg">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Instagram bot in action" id="instaBotImg">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -312,7 +312,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="RFID door lock securing my room" id="RFID-img">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="RFID door lock securing my room" id="RFID-img">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -328,7 +328,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5">
-                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Plant waterer watering plants" id="plantWatererImg">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Plant waterer watering plants" id="plantWatererImg">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -344,7 +344,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Autonomous RC car navigating (or should i say crashing into) the terrain" id="rcCarImg">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Autonomous RC car navigating (or should i say crashing into) the terrain" id="rcCarImg">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -356,6 +356,76 @@
               </div>
             </div>
           </div>
+
+          <div class="container"> <!-- start -->
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <div data-aos="fade-up-right" class="p-5" id="test">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="One of the server PI's delivering this website to you" id="raspiImg">
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                <div data-aos="fade-up-left" class="p-5">
+                  <h2 class="display-4 header-title">Raspberry Pi obsession</h2>
+                  <p>You may have noticed me mention raspberryPi's in other projects, thats because i use them loads and have got a decent understanding from it. Even this website is hosted on one in my house.</p>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="raspiMoreBtn" type="button" value="raspiModal">More</button>
+                  <!-- <button class="btn proj-btn main-btn" id="blDemoBtn" type="button">Example</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">  <!-- start -->
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div data-aos="fade-up-left" class="p-5">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="a network?" id="networkImg">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div data-aos="fade-up-right" class="p-5">
+                  <h2 class="display-4 header-title">Basic Networking</h2>
+                  <p>I've picked up a bit here and there, particulary from my dad who knows quite a bit about networks, but i wouldnt say its my strongest field</p>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="networkMoreBtn" type="button" value="networkModal">More</button>
+                  <!-- <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container"> <!-- start -->
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <div data-aos="fade-up-right" class="p-5" id="test">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Montiroing system display page" id="blImg">
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                <div data-aos="fade-up-left" class="p-5">
+                  <h2 class="display-4 header-title">Building status report system</h2>
+                  <p>Back in 2017 I made a web based system where workers of the Sky office in london could report the status of certain items in the building so that the maintenance workers had an easier time locating and fixing the issues.</p>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="blMoreBtn" type="button" value="blModal">More</button>
+                  <!-- <button class="btn proj-btn main-btn" id="blDemoBtn" type="button">Example</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">  <!-- start -->
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div data-aos="fade-up-left" class="p-5">
+                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="use of Linux OS's" id="linuxImg">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div data-aos="fade-up-right" class="p-5">
+                  <h2 class="display-4 header-title">Linux interest</h2>
+                  <p>Linux is my favorite OS, particularly Fedora and Arch although I grew up on Ubuntu so I definitely have a soft spot for buntie too. Oh and dont for get raspbianOS on all of my PI's.</p>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="linuxMoreBtn" type="button" value="linuxModal">More</button>
+                  <!-- <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
       </div>

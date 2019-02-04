@@ -37,14 +37,8 @@ $(document).ready(function () {
     }
   }
 
-  var span = document.getElementsByClassName("img-close")[0];
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
 
   $('.more-btn').click(function() {
-    console.log(this.value);
     document.getElementById(this.value).style.display = "block";
   });
 
@@ -70,13 +64,20 @@ $(document).ready(function () {
   });
   $(".close").click(function() {
     this.parentElement.parentElement.parentElement.style.display = "none";
+    document.body.classList.remove('noScroll');
   });
   $(".modal").click(function() {
     this.style.display = "none";
+    document.body.classList.remove('noScroll');
   });
   $(".modal-content").click(function() {
     event.stopPropagation();
   });
+  $(".img-close").click(function() {
+    modal.style.display = "none";
+    document.body.classList.remove('noScroll');
+  });
+
 
   // window.onclick = function(event) {
   //   if (event.target == modal) {
@@ -91,6 +92,7 @@ $(document).ready(function () {
       $(id).slideUp(duration);
     }
   }
+
 
   for (var x = 0; x < phrases.length; x++) {  // split the array into characters and generate the html
     const createLetterArray = (string) => {
