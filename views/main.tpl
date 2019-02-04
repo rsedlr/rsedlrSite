@@ -45,11 +45,11 @@
       </div>
     </nav>
 
-    <div id="picModal" class="img-modal">
+    <div id="picModal" class="img-modal" style="height: 100%;">
       <span class="img-close">&times;</span>
       <img class="img-modal-content" id="modalImg">
       <!-- <div id="caption"></div> -->
-      <div class="modal-content" style="width: 60%;">
+      <div class="modal-content" style="width: 60%; margin-top: 50px">
         <div class="modal-header" style="">
           <!-- <span class="close">&times;</span> -->
           <h2>Remote Heating Control</h2>

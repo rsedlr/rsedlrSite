@@ -33,7 +33,7 @@ $(document).ready(function () {
     document.getElementById(mainImg[i]).onclick = function(){
       modal.style.display = "block";
       modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
+      // captionText.innerHTML = this.alt;
     }
   }
 
