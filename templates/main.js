@@ -5,17 +5,6 @@ $(document).ready(function () {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
-  var heatModal = document.getElementById('heatModal');
-  var unityModal = document.getElementById('unityModal');
-  var pyGameModal = document.getElementById('pyGameModal');
-  var christmasCardModal = document.getElementById('christmasCardModal');
-  var instaBotModal = document.getElementById('instaBotModal');
-  var rfidDoorModal = document.getElementById('rfidDoorModal');
-  var plantWatererModal = document.getElementById('plantWatererModal');
-  var rcCarModal = document.getElementById('rcCarModal');
-  modalBtnListeners(document.getElementsByClassName("close"), 'close');
-  modalBtnListeners(document.getElementsByClassName("modal"), 'modal');
-  modalBtnListeners(document.getElementsByClassName("modal-content"), 'modal-content');
 
   if (isMac) {
     mainText.className += ' Mac-main';
@@ -48,16 +37,16 @@ $(document).ready(function () {
     }
   }
 
-  // document.getElementById('heatDemoImg').onclick = function(){
-  //   modal.style.display = "block";
-  //   modalImg.src = this.src;
-  //   captionText.innerHTML = this.alt;
-  // }
-
   var span = document.getElementsByClassName("img-close")[0];
   span.onclick = function() { 
     modal.style.display = "none";
   }
+
+
+  $('.more-btn').click(function() {
+    console.log(this.value);
+    document.getElementById(this.value).style.display = "block";
+  });
 
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
@@ -69,55 +58,25 @@ $(document).ready(function () {
       $(this).text('Show More');
     }
   });
+
   $("#HeatDemoBtn").click(function() {
     window.location.href = '/heatDemo';
   });
   $("#christmasCardBtn").click(function() {
     window.location.href = '/christmas';
   });  
-
-  $("#heatMoreBtn").click(function() {
-    heatModal.style.display = "block";
-  });
-  $("#unityMoreBtn").click(function() {
-    unityModal.style.display = "block";
-  });
-  $("#pyGameMoreBtn").click(function() {
-    pyGameModal.style.display = "block";
-  });
-  $("#christmasCardMoreBtn").click(function() {
-    christmasCardModal.style.display = "block";
-  });
-  $("#instaBotMoreBtn").click(function() {
-    instaBotModal.style.display = "block";
-  });
-  $("#rfidDoorMoreBtn").click(function() {
-    rfidDoorModal.style.display = "block";
-  });
-  $("#plantWatererMoreBtn").click(function() {
-    plantWatererModal.style.display = "block";
-  });
-  $("#rcCarMoreBtn").click(function() {
-    rcCarModal.style.display = "block";
-  });
   $(".btn-no-scroll").click(function() {
     document.body.classList.add('noScroll');
   });
-
-  function modalBtnListeners(bns, option) {
-    for (i = 0; i < bns.length; i++) {
-      bns[i].addEventListener("click", function(event) {
-        if (option == 'modal') {
-          this.style.display = "none";
-        } else if (option == 'modal-content') {
-          event.stopPropagation();
-        } else if (option == 'close') {
-          this.parentElement.parentElement.parentElement.style.display = "none";
-        }
-        document.body.classList.remove('noScroll');
-      });
-    }
-  }
+  $(".close").click(function() {
+    this.parentElement.parentElement.parentElement.style.display = "none";
+  });
+  $(".modal").click(function() {
+    this.style.display = "none";
+  });
+  $(".modal-content").click(function() {
+    event.stopPropagation();
+  });
 
   // window.onclick = function(event) {
   //   if (event.target == modal) {
@@ -125,11 +84,11 @@ $(document).ready(function () {
   //   }
   // }
 
-  function slide(id) {
+  function slide(id, duration=2000) {
     if ($(id).is(":hidden")) {
-      $(id).slideDown(2000);
+      $(id).slideDown(duration);
     } else {
-      $(id).slideUp(2000);
+      $(id).slideUp(duration);
     }
   }
 

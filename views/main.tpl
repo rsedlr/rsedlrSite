@@ -234,8 +234,8 @@
               <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Remote Home Control</h2>
                 <p>Run on a raspberry pi (connected to an ardino for motor control) the site allows for control of my heating, lights and fans from anywhere. </p>
-                <button class="btn btn-more main-btn" id="HeatDemoBtn" type="button">Example</button>
-                <button class="btn btn-more main-btn btn-no-scroll" id="heatMoreBtn" type="button">More</button>
+                <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="heatMoreBtn" type="button" value="heatModal">More</button>
+                <button class="btn proj-btn main-btn" id="HeatDemoBtn" type="button">Example</button>
               </div>
             </div>
           </div>
@@ -251,8 +251,8 @@
               <div data-aos="fade-up-right" class="p-5">
                 <h2 class="display-4 header-title">Android and IOS Games</h2>
                 <p>Initially, i developed a few phone games on the Unity engine. They havent yet been released but a demo video will be availabled soon</p>
-                <button class="btn btn-more main-btn btn-no-scroll" id="unityMoreBtn" type="button">More</button>
-                <button class="btn btn-more main-btn" id="christmasCardBtn" type="button">Example</button>
+                <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="unityMoreBtn" type="button" value="unityModal">More</button>
+                <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button>
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@
               <div data-aos="fade-up-left" class="p-5">
                 <h2 class="display-4 header-title">Text based python game</h2>
                 <p>A short Lord Of The Rings themed OOP python game made by me and a friend</p>
-                <button class="btn btn-more main-btn btn-no-scroll" id="pyGameMoreBtn" type="button">More</button>
+                <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="pyGameMoreBtn" type="button" value="pyGameModal">More</button>
               </div>
             </div>
           </div>
@@ -286,8 +286,8 @@
                 <div data-aos="fade-up-right" class="p-5">
                   <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
                   <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the url and click send, if you particularly like said person a personal message can be added.</p>
-                  <button class="btn btn-more main-btn btn-no-scroll" id="christmasCardMoreBtn" type="button">More</button>                
-                  <button class="btn btn-more main-btn" id="christmasCardBtn" type="button">Example</button>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="christmasCardMoreBtn" type="button" value="christmasCardModal">More</button>                
+                  <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button>
                 </div>
               </div>
             </div>
@@ -303,7 +303,7 @@
                 <div data-aos="fade-up-left" class="p-5">
                   <h2 class="display-4 header-title">Instagram Bot</h2>
                   <p>Adapted version of Tim Grossmann's InstaPy to like my friends posts without me having to spend too long on social media</p>
-                  <button class="btn btn-more main-btn btn-no-scroll" id="instaBotMoreBtn" type="button">More</button>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="instaBotMoreBtn" type="button" value="instaBotModal">More</button>
                 </div>
               </div>
             </div>
@@ -319,7 +319,7 @@
                 <div data-aos="fade-up-right" class="p-5">
                   <h2 class="display-4 header-title">RFID door lock</h2>
                   <p>i always thought contactless cards were cool, so i made one secure my room from... urm... invasion?</p>
-                  <button class="btn btn-more main-btn btn-no-scroll" id="rfidDoorMoreBtn" type="button">More</button>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="rfidDoorMoreBtn" type="button" value="rfidDoorModal">More</button>
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@
                 <div data-aos="fade-up-left" class="p-5">
                   <h2 class="display-4 header-title">Automated Plant Waterer</h2>
                   <p>I wasnt always around to water my plant, why not have an arduino do it for me.</p>
-                  <button class="btn btn-more main-btn btn-no-scroll" id="plantWatererMoreBtn" type="button">More</button>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="plantWatererMoreBtn" type="button" value="plantWatererModal">More</button>
                 </div>
               </div>
             </div>
@@ -351,13 +351,13 @@
                 <div data-aos="fade-up-right" class="p-5">
                   <h2 class="display-4 header-title">Autonomous RC car</h2>
                   <p>I heard google was making one so i thought i should have a go too.</p>
-                  <button class="btn btn-more main-btn btn-no-scroll" id="rcCarMoreBtn" type="button">More</button>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="rcCarMoreBtn" type="button" value="rcCarModal">More</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="btn btn-more main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
+        <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
       </div>
     </section>
     <section class="bg-third text-center mainSection" id="contact">

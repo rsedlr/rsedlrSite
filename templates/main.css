@@ -220,13 +220,13 @@ footer p {
   text-transform: uppercase;
 }
 
-.btn-more {
+.proj-btn {
   background-color: black; 
   color: white; 
   font-size: 20px; 
   font-weight: bold;
 }
-.btn-more:hover {
+.proj-btn:hover {
   background-color: white; 
   color: black; 
 }
@@ -553,7 +553,7 @@ span.space {
 
 }
 .close:hover, .close:focus {
-  color: #000;
+  color: rgb(255, 0, 0) !important;
   text-decoration: none;
   cursor: pointer;
 }
