@@ -57,23 +57,17 @@
           <h2>Remote Heating Control</h2>
         </div>
         <div class="modal-body">
-          <br>
-          <!-- <p>Around the time i started this project, hive heating systems were first being advertised (for quite a price may i add) so i wondered if the same fucntionality could be achieved for a lot less.<br>The site is hosted on one of my RaspberryPi 3's located above my boiler. when a functional button is pressed a signal is sent asynchronously (meaning in the background, without a page refresh) to the server, which then does what is required to foulfil the task. Sometimes this is as simple as toggling a GPIO pin which is connected to a relay, thus turning whatever the relay is wired to on. Other times it could be more complicated than this, such as sending a command to another raspberryPi located in another room (or even another house) which then in turn carries out its own procedure to complete the task.<br>In its current state, my home control system allows control of:<br>-my heating (along with temperature control throgh an arduino which controls a stepper motor connected to a heating knob)<br>-my mothers heating<br>-the lights in my room<br>-a set of addessable LED's around my monitors in my room (can be turned on, off and have the colour changed also)<br>-My desktop PC can be turned on or off through the header of its motherboard<br>-some spare PC fans i had after building my PC which are now suspended above my monitors to keep me cool in the summer</p> -->
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          <br><br><br>
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          <br><br>
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          <br><br>
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          <br><br><br>
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          <br><br><br>
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          <br><br><br>
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-          <br><br><br>
-          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+          <p>
+            <br>Around the time i started this project, hive heating systems were first being advertised (for quite a price may i add) so i wondered if the same functionality could be achieved for a lot less.
+            <br>The site is hosted on one of my Raspberry Pi 3's located above my boiler. When a functional button is pressed a signal is sent asynchronously (meaning in the background, without a page refresh) to the server, which then does what is required to fulfil the task. Sometimes this is as simple as toggling a GPIO pin which is connected to a relay, thus turning whatever the relay is wired to on (like the main heating button). Other times it could be more complicated than this, such as sending a command to another raspberry Pi located in another room (or even another house) which then in turn carries out its own procedure to complete the task.
+            <br>In its current state, my home control system allows control of:
+            <br>-My heating (along with temperature control through an arduino which controls a stepper motor connected to a heating knob)
+            <br>-My mothers heating (located elsewhere so my Pi has to send commands over an SSH connection)
+            <br>-The lights in my room (also connected to another Pi so commands have to be sent through SSH again)
+            <br>-A set of addressable LEDs around my monitors in my room (can be turned on, off and have the colour changed also. The colour is changed through sending commands across a USB serial connection)
+            <br>-My desktop PC can be turned on or off (through a relay connected the header of its motherboard which toggles for 1 second, recreating a button press)
+            <br>-Some spare PC fans i had after building my PC which are now suspended above my monitors to keep me cool in the summer
+          </p>
         </div>
       </div>
     </div>
@@ -84,9 +78,22 @@
           <h2>Android and IOS Games</h2>
         </div>
         <div class="modal-body">
+          <br>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
           <br><br><br>
-          <p>content</p>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+          <br><br>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+          <br><br>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
           <br><br><br>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+          <br><br><br>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+          <br><br><br>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+          <br><br><br>
+          <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
         </div>
       </div>
     </div>
