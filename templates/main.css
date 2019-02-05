@@ -510,7 +510,10 @@ span.space {
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  width: 60%; 
+  margin: 50px auto;
+  display: none;
 }
 
 .modal-header {
@@ -525,7 +528,7 @@ span.space {
 
 .modal-body {
   overflow-y: auto;
-  max-height: 600px;
+  /* max-height: 600px; */
   border: 10px solid white;
   border-radius: 40px;
 }
@@ -616,7 +619,6 @@ span.space {
 }
 
 .main-pic {
-  cursor: pointer;
   transition: 0.2s ease;
 }
 .main-pic:hover {
@@ -633,7 +635,7 @@ span.space {
   transition: 0.3s;
 }
 .img-close:hover, .img-close:focus {
-  color: var(--main-purple);
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }

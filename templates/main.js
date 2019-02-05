@@ -5,6 +5,7 @@ $(document).ready(function () {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
+  var imgModal = document.getElementById('picModal');
 
   if (isMac) {
     mainText.className += ' Mac-main';
@@ -24,22 +25,17 @@ $(document).ready(function () {
   //   phoneAnims();
   // })
 
-  var modal = document.getElementById('picModal');
-  var modalImg = document.getElementById("modalImg");
-  var captionText = document.getElementById("caption");
-  const mainImg = ['heatDemoImg', 'unityImg', 'pyGameImg', 'christmasCardsImg', 'instaBotImg', 'RFID-img', 'plantWatererImg', 'rcCarImg']
-
-  for (i = 0; i < mainImg.length; i++) {
-    document.getElementById(mainImg[i]).onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      // captionText.innerHTML = this.alt;
-    }
-  }
-
+  // $('.main-pic').click(function() {
+  //   imgModal.style.display = "block";
+  //   document.getElementById("modalImg").src = this.src;
+  //   // document.getElementById("caption").innerHTML = this.alt;
+  // });
 
   $('.more-btn').click(function() {
-    document.getElementById(this.value).style.display = "block";
+    document.getElementById(this.value + "Modal").style.display = "block";
+    imgModal.style.display = "block";
+    console.log(this.value+"Img");
+    document.getElementById("modalImg").src = document.getElementById(this.value + "Img").src;
   });
 
   $("#moreBtn").click(function() {
@@ -74,8 +70,9 @@ $(document).ready(function () {
     event.stopPropagation();
   });
   $(".img-close").click(function() {
-    modal.style.display = "none";
+    imgModal.style.display = "none";
     document.body.classList.remove('noScroll');
+    $(".modal-content").hide();
   });
 
 
