@@ -70,7 +70,6 @@
       </div>
       <div class="modal-content" id="unityModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Android and IOS Games</h2>
         </div>
         <div class="modal-body">
@@ -94,7 +93,6 @@
       </div>
       <div class="modal-content" id="pyGameModal">
           <div class="modal-header" style="">
-            <span class="close">&times;</span>
             <h2>Text based python game</h2>
           </div>
           <div class="modal-body">
@@ -107,7 +105,6 @@
         </div>
         <div class="modal-content" id="christmasCardModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Virtual Christmas Cards</h2>
         </div>
         <div class="modal-body">
@@ -118,7 +115,6 @@
       </div>
       <div class="modal-content" id="instaBotModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Instagram Bot</h2>
         </div>
         <div class="modal-body">
@@ -129,7 +125,6 @@
       </div>
       <div class="modal-content" id="rfidDoorModal"> 
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>RFID door lock</h2>
         </div>
         <div class="modal-body">
@@ -140,7 +135,6 @@
       </div>
       <div class="modal-content" id="plantWatererModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Automated Plant Waterer</h2>
         </div>
         <div class="modal-body">
@@ -151,7 +145,6 @@
       </div>
       <div class="modal-content" id="rcCarModal" >
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Autonomous RC car</h2>
         </div>
         <div class="modal-body">
@@ -162,7 +155,6 @@
       </div>
       <div class="modal-content" id="raspiModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Raspberry Pi obsession</h2>
         </div>
         <div class="modal-body">
@@ -173,7 +165,6 @@
       </div>
       <div class="modal-content" id="networkModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Basic Networking</h2>
         </div>
         <div class="modal-body">
@@ -184,7 +175,6 @@
       </div>
       <div class="modal-content" id="blModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Building status report system</h2>
         </div>
         <div class="modal-body">
@@ -195,7 +185,6 @@
       </div>
       <div class="modal-content" id="linuxModal">
         <div class="modal-header" style="">
-          <span class="close">&times;</span>
           <h2>Linux interest</h2>
         </div>
         <div class="modal-body">
