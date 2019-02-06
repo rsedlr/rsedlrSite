@@ -264,7 +264,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5" id="test">
-                <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/heatDemo.png" alt="heat-demo control page" id="heatImg">
+                <img class="img-fluid round-corners main-pic" src="static/pic/heatDemo.png" alt="heat-demo control page" id="heatImg">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -281,7 +281,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div data-aos="fade-up-left" class="p-5">
-                <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Unity games" id="unityImg">
+                <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Unity games" id="unityImg">
               </div>
             </div>
             <div class="col-lg-6">
@@ -298,7 +298,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5">
-                <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Text based OOP python game" id="pyGameImg">
+                <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Text based OOP python game" id="pyGameImg">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -316,7 +316,7 @@
             <div class="row align-items-center">
               <div data-aos="fade-up-left" class="col-lg-6">
                 <div class="p-5">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Virtual christmas cards" id="christmasCardImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Virtual christmas cards" id="christmasCardImg">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -333,7 +333,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Instagram bot in action" id="instaBotImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Instagram bot in action" id="instaBotImg">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -349,7 +349,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="RFID door lock securing my room" id="rfidDoorImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="RFID door lock securing my room" id="rfidDoorImg">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -365,7 +365,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Plant waterer watering plants" id="plantWatererImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Plant waterer watering plants" id="plantWatererImg">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -381,7 +381,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Autonomous RC car navigating (or should i say crashing into) the terrain" id="rcCarImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Autonomous RC car navigating (or should i say crashing into) the terrain" id="rcCarImg">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -398,7 +398,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5" id="test">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="One of the server PI's delivering this website to you" id="raspiImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="One of the server PI's delivering this website to you" id="raspiImg">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -415,7 +415,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="a network?" id="networkImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="a network?" id="networkImg">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -432,7 +432,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5" id="test">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="Montiroing system display page" id="blImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Montiroing system display page" id="blImg">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
@@ -449,7 +449,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div data-aos="fade-up-left" class="p-5">
-                  <img class="img-fluid round-corners main-pic btn-no-scroll" src="static/pic/tempImg.png" alt="use of Linux OS's" id="linuxImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="use of Linux OS's" id="linuxImg">
                 </div>
               </div>
               <div class="col-lg-6">
