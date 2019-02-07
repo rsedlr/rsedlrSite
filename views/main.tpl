@@ -93,7 +93,7 @@
       </div>
       <div class="modal-content" id="pyGameModal">
           <div class="modal-header" style="">
-            <h2>Text based python game</h2>
+            <h2>Text Based Python Game</h2>
           </div>
           <div class="modal-body">
               To grasp Object Oriented Programming concepts more thoroughly, we decided to make a short text based game in python; after all the best way to learn in programming is by doing.<br>
@@ -125,7 +125,7 @@
       </div>
       <div class="modal-content" id="rfidDoorModal"> 
         <div class="modal-header" style="">
-          <h2>RFID door lock</h2>
+          <h2>RFID Door Lock</h2>
         </div>
         <div class="modal-body">
           <br><br><br>
@@ -145,7 +145,7 @@
       </div>
       <div class="modal-content" id="rcCarModal" >
         <div class="modal-header" style="">
-          <h2>Autonomous RC car</h2>
+          <h2>Autonomous RC Car</h2>
         </div>
         <div class="modal-body">
           <br><br><br>
@@ -155,7 +155,7 @@
       </div>
       <div class="modal-content" id="raspiModal">
         <div class="modal-header" style="">
-          <h2>Raspberry Pi obsession</h2>
+          <h2>Raspberry Pi Obsession</h2>
         </div>
         <div class="modal-body">
           <br><br><br>
@@ -175,7 +175,7 @@
       </div>
       <div class="modal-content" id="blModal">
         <div class="modal-header" style="">
-          <h2>Building status report system</h2>
+          <h2>Building Status Report System</h2>
         </div>
         <div class="modal-body">
           <br><br><br>
@@ -185,7 +185,7 @@
       </div>
       <div class="modal-content" id="linuxModal">
         <div class="modal-header" style="">
-          <h2>Linux interest</h2>
+          <h2>Linux Interest</h2>
         </div>
         <div class="modal-body">
           <br><br><br>
@@ -228,12 +228,15 @@
         <div class="row">
           <div class="col-md-10 mx-auto" style="text-align: left !important;">
             <div data-aos="fade-up">
-              <h1 class="mainHead">Hi,<br></h1>
+              <h1 class="mainHead">Hi,</h1>
               <!-- <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div> -->
             </div>
             <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
-            <div data-aos="fade-up" data-aos-offset="250" data-aos-delay="400"> 
-              <h2>I'm a computer science student,<br>based in London</h2>
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="450" style="margin: 5rem auto auto;"> 
+              <h2>I'm a computer science student,<br>based in London.</h2>
+            </div>
+            <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="900" style="margin: 6rem auto auto;"> 
+              <h2 style="font-size: 40px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
             </div>
             <!-- <br><br><br>
             <p>and some more witty comments i suppose</p>
@@ -275,10 +278,10 @@
             </div>
             <div class="col-lg-6">
               <div data-aos="fade-up-right" class="p-5">
-                <h2 class="display-4 header-title">Android and IOS Games</h2>
+                <h2 class="display-4 header-title">Android And IOS Games</h2>
                 <p>Initially, i developed a few phone games on the Unity engine. They havent yet been released but a demo video will be availabled soon</p>
                 <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="unityMoreBtn" type="button" value="unity">More</button>
-                <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button>
+                <!-- <button class="btn proj-btn main-btn" id="unityBtn" type="button">Example</button> -->
               </div>
             </div>
           </div>
@@ -287,14 +290,15 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div data-aos="fade-up-right" class="p-5">
-                <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Text based OOP python game" id="pyGameImg">
+                <img class="img-fluid round-corners main-pic" src="static/pic/OOP_game.png" alt="Text based OOP python game" id="pyGameImg">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
               <div data-aos="fade-up-left" class="p-5">
-                <h2 class="display-4 header-title">Text based python game</h2>
+                <h2 class="display-4 header-title">Text Based Python Game</h2>
                 <p>A short Lord Of The Rings themed OOP python game made by myself and a friend</p>
                 <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="pyGameMoreBtn" type="button" value="pyGame">More</button>
+                <button class="btn proj-btn main-btn" id="pyGameBtn" type="button">Example</button>
               </div>
             </div>
           </div>
@@ -305,7 +309,7 @@
             <div class="row align-items-center">
               <div data-aos="fade-up-left" class="col-lg-6">
                 <div class="p-5">
-                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Virtual christmas cards" id="christmasCardImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/ChristmasCard.png" alt="Virtual christmas cards" id="christmasCardImg">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -343,7 +347,7 @@
               </div>
               <div class="col-lg-6">
                 <div data-aos="fade-up-right" class="p-5">
-                  <h2 class="display-4 header-title">RFID door lock</h2>
+                  <h2 class="display-4 header-title">RFID Door Lock</h2>
                   <p>i always thought contactless cards were cool, so i made one to secure my room from... urm... invasion?</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="rfidDoorMoreBtn" type="button" value="rfidDoor">More</button>
                 </div>
@@ -375,7 +379,7 @@
               </div>
               <div class="col-lg-6">
                 <div data-aos="fade-up-right" class="p-5">
-                  <h2 class="display-4 header-title">Autonomous RC car</h2>
+                  <h2 class="display-4 header-title">Autonomous RC Car</h2>
                   <p>I heard google was making one so i thought i should have a go too.</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="rcCarMoreBtn" type="button" value="rcCar">More</button>
                 </div>
@@ -387,12 +391,12 @@
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
                 <div data-aos="fade-up-right" class="p-5" id="test">
-                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="One of the server PI's delivering this website to you" id="raspiImg">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/raspiDesktop.png" alt="One of the server PI's delivering this website to you" id="raspiImg">
                 </div>
               </div>
               <div class="col-lg-6 order-lg-1">
                 <div data-aos="fade-up-left" class="p-5">
-                  <h2 class="display-4 header-title">Raspberry Pi obsession</h2>
+                  <h2 class="display-4 header-title">Raspberry Pi Obsession</h2>
                   <p>You may have noticed me mention raspberryPi's in other projects, that's because I use them loads and have got a decent understanding from it. Even this website is hosted on one in my house.</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="raspiMoreBtn" type="button" value="raspi">More</button>
                   <!-- <button class="btn proj-btn main-btn" id="blDemoBtn" type="button">Example</button> -->
@@ -410,7 +414,7 @@
               <div class="col-lg-6">
                 <div data-aos="fade-up-right" class="p-5">
                   <h2 class="display-4 header-title">Basic Networking</h2>
-                  <p>I've picked up a bit here and there, particulary from my dad who knows quite a bit about networks, but i wouldnt say its my strongest field</p>
+                  <p>I've picked up a bit here and there, particulary from my dad who knows quite a lot about networks, but i wouldnt say its my strongest field</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="networkMoreBtn" type="button" value="network">More</button>
                   <!-- <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button> -->
                 </div>
@@ -426,7 +430,7 @@
               </div>
               <div class="col-lg-6 order-lg-1">
                 <div data-aos="fade-up-left" class="p-5">
-                  <h2 class="display-4 header-title">Building status report system</h2>
+                  <h2 class="display-4 header-title">Building Status Report System</h2>
                   <p>Back in 2017 I made a web based system where workers of the Sky office in london could report the status of certain items in the building so that the maintenance workers had an easier time locating and fixing the issues.</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="blMoreBtn" type="button" value="bl">More</button>
                   <!-- <button class="btn proj-btn main-btn" id="blDemoBtn" type="button">Example</button> -->
@@ -443,7 +447,7 @@
               </div>
               <div class="col-lg-6">
                 <div data-aos="fade-up-right" class="p-5">
-                  <h2 class="display-4 header-title">Linux interest</h2>
+                  <h2 class="display-4 header-title">Linux Interest</h2>
                   <p>Linux is my favorite OS, particularly Fedora and Arch although I grew up on Ubuntu so I definitely have a soft spot for buntie too. Oh and dont for get raspbianOS on all of my PI's.</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="linuxMoreBtn" type="button" value="linux">More</button>
                   <!-- <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button> -->

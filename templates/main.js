@@ -54,7 +54,10 @@ $(document).ready(function () {
   });
   $("#christmasCardBtn").click(function() {
     window.location.href = '/christmas';
-  });  
+  }); 
+  $("#pyGameBtn").click(function() {
+    window.location.href = 'https://github.com/MegaHertz3/OOP_game';
+  });
   $(".btn-no-scroll").click(function() {
     document.body.classList.add('noScroll');
   });
