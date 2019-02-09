@@ -236,7 +236,7 @@
               <h2>I'm a computer science student,<br>based in London.</h2>
             </div>
             <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="900" style="margin: 6rem auto auto;"> 
-              <h2 style="font-size: 40px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
+              <h2 style="font-size: 42px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
             </div>
             <!-- <br><br><br>
             <p>and some more witty comments i suppose</p>
