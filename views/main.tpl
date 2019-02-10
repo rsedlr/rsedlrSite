@@ -239,7 +239,7 @@
               <h2 style="font-size: 42px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
             </div>
             <!-- <br><br><br>
-            <p>and some more witty comments i suppose</p>
+            <p>and some witty comments i suppose</p>
             <br><br><br> -->
           </div>
         </div>
