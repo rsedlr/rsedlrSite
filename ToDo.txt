@@ -3,11 +3,13 @@ RsEdler todo:
 
 -add popovers to heat demo
 
--on project pic click, open a big full screen window with a longer description
-
 -make morse code effect for portfolio 'employ me'?
 
 -python frameworks
 -basic networking
 
 -working contact page
+
+-raspberry pi club
+-robotics club
+-insta telegram texts
