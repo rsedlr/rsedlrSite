@@ -7,9 +7,10 @@ RsEdler todo:
 
 -python frameworks
 -basic networking
-
--working contact page
-
 -raspberry pi club
 -robotics club
 -insta telegram texts
+-participation in open source (hacktober fest)
+
+-working contact page
+
