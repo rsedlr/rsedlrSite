@@ -2,6 +2,9 @@ import os, subprocess, sys  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
 from datetime import datetime
 from christmasMessages import cardMessage
+import smtplib
+from email.MIMEMultipart import MIMEMultipart
+from email.MIMEText import MIMEText 
 
 try:
   import git
@@ -24,9 +27,9 @@ def main():
   return template('main')
 
 
-@route('/index')
-def index():
-  return template('oldMain')
+# @route('/index')
+# def index():
+#   return template('oldMain')
 
 
 @route('/test')
@@ -34,10 +37,29 @@ def test():
   return template('test')
 
 
-@route('/about')
-def about():
-  return template('about')
+# @route('/about')
+# def about():
+#   return template('about')
 
+@route('/contact', method='POST')
+def contact():
+  name = request.forms.get('name') or 'empty'
+  email = request.forms.get('email') or 'empty'
+  message = request.forms.get('message') or 'empty'
+  msg = MIMEMultipart()
+  fromaddr = "rsedlr98766@gmail.com"
+  toaddr = "rsedlr@protonmail.com"
+  msg['From'] = fromaddr
+  msg['To'] = toaddr
+  msg['Subject'] = "Portfolio contact from %s" % name
+  body = message + ('\nFrom: %s (%s)' %(email, name))
+  msg.attach(MIMEText(body, 'plain'))
+  server = smtplib.SMTP('smtp.gmail.com', 587)
+  server.starttls()
+  server.login(fromaddr, "Blackbeard3")
+  text = msg.as_string()
+  server.sendmail(fromaddr, toaddr, text)
+  server.quit()
 
 ''' ------------- heat control demo stuff ------------- '''
 

@@ -78,6 +78,30 @@ $(document).ready(function () {
     $(".modal-content").hide();
   });
 
+  $("#contactForm").submit(function(event){
+    event.preventDefault();
+    submitForm();
+});
+
+function submitForm(){
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var message = $("#message").val();
+  $.ajax({
+    type: "POST",
+    url: "/contact",
+    data: "name=" + name + "&email=" + email + "&message=" + message,
+    success: function(data) {
+      $("#msgSubmit").text('Thanks, message submitted');
+      $("#msgSubmit").show();
+    },
+    error: function(data) {
+      $("#msgSubmit").text('Error, try again');
+      $("#msgSubmit").show();
+    },
+  });
+}
+
 
   // window.onclick = function(event) {
   //   if (event.target == modal) {

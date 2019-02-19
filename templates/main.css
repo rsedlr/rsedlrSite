@@ -252,6 +252,35 @@ footer p {
   display: none;
 }
 
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.boxCol {
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.fit-content {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
 @media (min-width: 998px) {
   header.masthead {
     height: 100vh;

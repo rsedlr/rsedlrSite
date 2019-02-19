@@ -332,7 +332,7 @@
               <div class="col-lg-6 order-lg-1">
                 <div data-aos="fade-up-left" class="p-5">
                   <h2 class="display-4 header-title">Instagram Bot</h2>
-                  <p>Adapted version of Tim Grossmann's InstaPy to like my friends posts without me having to spend too long on social media</p>
+                  <p>Adapted version of Tim Grossmann's InstaPy to like my friends posts without me having to spend too long on social media. Also sends messages to my Telegram to inform me of it's activities</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="instaBotMoreBtn" type="button" value="instaBot">More</button>
                 </div>
               </div>
@@ -386,7 +386,6 @@
               </div>
             </div>
           </div>
-
           <div class="container"> <!-- start -->
             <div class="row align-items-center">
               <div class="col-lg-6 order-lg-2">
@@ -448,26 +447,78 @@
               <div class="col-lg-6">
                 <div data-aos="fade-up-right" class="p-5">
                   <h2 class="display-4 header-title">Linux Interest</h2>
-                  <p>Linux is my favorite OS, particularly Fedora and Arch although I grew up on Ubuntu so I definitely have a soft spot for buntie too. Oh and dont for get raspbianOS on all of my PI's.</p>
+                  <p>Linux is my favorite OS, particularly Fedora and Arch although I grew up on Ubuntu so I definitely have a soft spot for buntie too. Oh and dont forget raspbianOS on all of my PI's.</p>
                   <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="linuxMoreBtn" type="button" value="linux">More</button>
                   <!-- <button class="btn proj-btn main-btn" id="christmasCardBtn" type="button">Example</button> -->
                 </div>
               </div>
             </div>
           </div>
-
+          <div class="container">  <!-- start -->
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div data-aos="fade-up-left" class="p-5">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="RFID door lock securing my room" id="subMentImg">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div data-aos="fade-up-right" class="p-5">
+                  <h2 class="display-4 header-title">Subject Mentour</h2>
+                  <p>I am a subject mentour for Computer science at my school for the lower years. This mainly involves helping them with their GCSE coursework code or theory.</p>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="rfidDoorMoreBtn" type="button" value="subMent">More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">  <!-- start -->
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <div data-aos="fade-up-right" class="p-5">
+                  <img class="img-fluid round-corners main-pic" src="static/pic/tempImg.png" alt="Plant waterer watering plants" id="enrichmentImg">
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                <div data-aos="fade-up-left" class="p-5">
+                  <h2 class="display-4 header-title">Various Clubs and Enrichments</h2>
+                  <p>Helping run a raspberry pi club and taking part in a robotics club during my free time at Beths Grammar to </p>
+                  <button class="btn proj-btn main-btn btn-no-scroll more-btn" id="plantWatererMoreBtn" type="button" value="enrichment">More</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
       </div>
     </section>
     <section class="bg-third text-center mainSection" id="contact">
-      <div class="container">
-        <div class="row">
+      <div class="container" style="max-width: 700px; margin-top: 50px">
+        <form role="form" id="contactForm">
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="name" class="h2 white bold">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="email" class="h2 white bold">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+          </div>        
+          <div class="form-group">
+              <label for="message" class="h2 white bold">Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="Enter message" required></textarea>
+          </div>
+          <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg pull-right">Submit</button>
+          <div id="msgSubmit" class="h5 text-center boxCol dis-none fit-content"></div>
+        </form>
+        <!-- <div class="row">
           <div class="col-md-10 mx-auto">
             <h1>call me :p</h1>
             <br><br><br>
             <p>  </p>
           </div>
+        </div> -->
+        <div class="boxCol fit-content" style="margin-top: 30px;">
+          <h3>Or send me an email directly at:<br><mark style="color: red; background: none;">rsedlr@protonmail.com</mark></h3> 
         </div>
       </div>
     </section>
