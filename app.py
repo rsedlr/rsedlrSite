@@ -220,7 +220,7 @@ def gitPull():
 if __name__ == '__main__':
   # port = int(os.environ.get('PORT', 4000))
   port = 80 # 4000
-  run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 # wordsss
 
