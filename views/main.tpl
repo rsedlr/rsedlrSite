@@ -517,8 +517,11 @@
             <p>  </p>
           </div>
         </div> -->
-        <div class="boxCol fit-content" style="margin-top: 30px;">
-          <h3>Or send me an email directly at:<br><mark style="color: red; background: none;">rsedlr@protonmail.com</mark></h3> 
+        <div class="boxCol fit-content" style="margin-top: 30px; padding-bottom: 15px">
+          <div class="tooltip" style="text-align: center !important">
+            <h3>Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: red;">rsedlr@protonmail.com</a></h3> 
+            <span class="tooltiptext" id="emailTooltip">Email Copied!</span>
+          </div>
         </div>
       </div>
     </section>

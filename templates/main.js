@@ -77,31 +77,42 @@ $(document).ready(function () {
     document.body.classList.remove('noScroll');
     $(".modal-content").hide();
   });
+  $("#emailCopy").click(function() {
+    // this.text.select();
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(this.text).select();
+    document.execCommand("copy");
+    $temp.remove();
+    $('#emailTooltip').show()
+    // document.getElementById('emailTooltip').style.visibility = "visible";
+    setTimeout(function() { $('#emailTooltip').hide() }, 2000);
+    // this.tooltip(title="copied: " + this.text)
+  });
 
   $("#contactForm").submit(function(event){
     event.preventDefault();
     submitForm();
-});
-
-function submitForm(){
-  var name = $("#name").val();
-  var email = $("#email").val();
-  var message = $("#message").val();
-  $.ajax({
-    type: "POST",
-    url: "/contact",
-    data: "name=" + name + "&email=" + email + "&message=" + message,
-    success: function(data) {
-      $("#msgSubmit").text('Thanks, message submitted');
-      $("#msgSubmit").show();
-    },
-    error: function(data) {
-      $("#msgSubmit").text('Error, try again');
-      $("#msgSubmit").show();
-    },
   });
-}
 
+  function submitForm(){
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+    $.ajax({
+      type: "POST",
+      url: "/contact",
+      data: "name=" + name + "&email=" + email + "&message=" + message,
+      success: function(data) {
+        $("#msgSubmit").text('Thanks, message submitted');
+        $("#msgSubmit").show();
+      },
+      error: function(data) {
+        $("#msgSubmit").text('Error, try again');
+        $("#msgSubmit").show();
+      },
+    });
+  }
 
   // window.onclick = function(event) {
   //   if (event.target == modal) {

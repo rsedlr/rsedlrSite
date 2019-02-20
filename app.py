@@ -1,13 +1,16 @@
-import os, subprocess, sys  # , serial
+import os, subprocess, sys, smtplib  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
 from datetime import datetime
 from christmasMessages import cardMessage
-import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText 
 
 try:
   import git
+except Exception as e:
+  print(e)
+
+try:
+  from email.MIMEMultipart import MIMEMultipart
+  from email.MIMEText import MIMEText 
 except Exception as e:
   print(e)
 
@@ -43,23 +46,26 @@ def test():
 
 @route('/contact', method='POST')
 def contact():
-  name = request.forms.get('name') or 'empty'
-  email = request.forms.get('email') or 'empty'
-  message = request.forms.get('message') or 'empty'
-  msg = MIMEMultipart()
-  fromaddr = "rsedlr98766@gmail.com"
-  toaddr = "rsedlr@protonmail.com"
-  msg['From'] = fromaddr
-  msg['To'] = toaddr
-  msg['Subject'] = "Portfolio contact from %s" % name
-  body = message + ('\nFrom: %s (%s)' %(email, name))
-  msg.attach(MIMEText(body, 'plain'))
-  server = smtplib.SMTP('smtp.gmail.com', 587)
-  server.starttls()
-  server.login(fromaddr, "Blackbeard3")
-  text = msg.as_string()
-  server.sendmail(fromaddr, toaddr, text)
-  server.quit()
+  try:
+    name = request.forms.get('name') or 'empty'
+    email = request.forms.get('email') or 'empty'
+    message = request.forms.get('message') or 'empty'
+    msg = MIMEMultipart()
+    fromaddr = "rsedlr98766@gmail.com"
+    toaddr = "rsedlr@protonmail.com"
+    msg['From'] = fromaddr
+    msg['To'] = toaddr
+    msg['Subject'] = "Portfolio contact from %s" % name
+    body = message + ('\nFrom: %s (%s)' %(email, name))
+    msg.attach(MIMEText(body, 'plain'))
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(fromaddr, "Blackbeard3")
+    text = msg.as_string()
+    server.sendmail(fromaddr, toaddr, text)
+    server.quit()
+  except Exception as e:
+    print(e)
 
 ''' ------------- heat control demo stuff ------------- '''
 
@@ -202,9 +208,9 @@ def dadsGift():
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
-  # git.cmd.Git('/var/www/rsedlr.xyz').pull()
-  # print('\n**** Git pull done ****\n')
-  print('\n************ git update available ************\n')
+  git.cmd.Git('/var/www/rsedlr.xyz').pull()
+  print('\n************ Git pull done ************\n')
+  # print('\n************ git update available ************\n')
 
 # @route('/wallpaper')
 # def wallpaper():
