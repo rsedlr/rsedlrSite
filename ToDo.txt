@@ -14,3 +14,5 @@ RsEdler todo:
 
 -working contact page
 
+-add modals for last 2 projects
+

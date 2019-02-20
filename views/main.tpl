@@ -233,10 +233,10 @@
             </div>
             <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
             <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="450" style="margin: 5rem auto auto;"> 
-              <h2>I'm a computer science student,<br>based in London.</h2>
+              <h2 class="secHead">I'm a computer science student,<br>based in London.</h2>
             </div>
             <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="900" style="margin: 6rem auto auto;"> 
-              <h2 style="font-size: 42px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
+              <h2 class="secHead" style="font-size: 42px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
             </div>
             <!-- <br><br><br>
             <p>and some witty comments i suppose</p>
@@ -249,7 +249,7 @@
       <div class="container">
         <div class="row">
           <div data-aos="fade-up" class="col-md-10 mx-auto">
-            <h1 style="font-size: 60px;"><u>Projects</u></h1>
+            <h1 class="sectionTitle" style="font-size: 60px;"><u>Projects</u></h1>
           </div>
         </div>
         <div class="container"> <!-- start -->
@@ -491,7 +491,10 @@
       </div>
     </section>
     <section class="bg-third text-center mainSection" id="contact">
-      <div class="container" style="max-width: 700px; margin-top: 50px">
+      <div class="container" style="max-width: 700px;">
+        <div data-aos="fade-up" class="col-md-10 mx-auto">
+          <h1 class="sectionTitle" style="margin-bottom: 100px;"><u>Contact</u></h1>
+        </div>
         <form role="form" id="contactForm">
           <div class="row">
             <div class="form-group col-sm-6">
@@ -523,11 +526,16 @@
             <span class="tooltiptext" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
+        <h1 class="sectionHead" style="margin-top: 50px;"><u>Social Media</u></h1>
+        <div style="margin-top: 30px;">
+          <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
+        </div>
       </div>
     </section>
     <footer>
       <div class="container">
-        <p>&copy; Reiss Edler 2018</p>
+        <!-- <p>&copy; Reiss Edler 2018</p> -->
+        footer
       </div>
     </footer>
     <script src="/static/mainPage/jquery.min.js"></script>
