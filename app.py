@@ -1,5 +1,5 @@
 import os, subprocess, sys, smtplib  # , serial
-from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, Bottle
+from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
 from christmasMessages import cardMessage
 import cherrypy
