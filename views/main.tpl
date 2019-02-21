@@ -496,22 +496,24 @@
           <h1 class="sectionTitle" style="margin-bottom: 100px;"><u>Contact</u></h1>
         </div>
         <form role="form" id="contactForm">
-          <div class="row">
+          <div data-aos="fade-up" class="row">
             <div class="form-group col-sm-6">
               <label for="name" class="h2 white bold">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter name" required>
             </div>
-            <div class="form-group col-sm-6">
+            <div data-aos="fade-up" class="form-group col-sm-6">
               <label for="email" class="h2 white bold">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Enter email" required>
             </div>
           </div>        
-          <div class="form-group">
+          <div data-aos="fade-up" class="form-group">
               <label for="message" class="h2 white bold">Message</label>
               <textarea id="message" class="form-control" rows="5" placeholder="Enter message" required></textarea>
           </div>
-          <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg pull-right">Submit</button>
-          <div id="msgSubmit" class="h5 text-center boxCol dis-none fit-content"></div>
+          <div data-aos="fade-up">
+            <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg pull-right">Submit</button>
+            <div id="msgSubmit" class="h5 text-center boxCol dis-none fit-content"></div>
+          </div>
         </form>
         <!-- <div class="row">
           <div class="col-md-10 mx-auto">
