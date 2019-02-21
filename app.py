@@ -27,6 +27,11 @@ key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
+@hook('after_request')
+def enable_cors():
+  logging.debug("Request IP: " + request.get('REMOTE_ADDR') + " - " + request.path + " - " + str(response.status_code))
+
+
 @error(404)
 def error404(error):
   return template('error404')
@@ -39,7 +44,7 @@ def server_static(filepath):
 
 @route('/')
 def main():
-  logging.debug("Request IP: " + request.get('REMOTE_ADDR') + " - " + request.path + " - " + str(response.status_code))
+  # logging.debug("Request IP: " + request.get('REMOTE_ADDR') + " - " + request.path + " - " + str(response.status_code))
   return template('main')
 
 
@@ -50,7 +55,6 @@ def main():
 
 @route('/test')
 def test():
-  logging.debug("Request IP: " + request.get('REMOTE_ADDR') + " - " + request.path + " - " + str(response.status_code))
   return template('test')
 
 
