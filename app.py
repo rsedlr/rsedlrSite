@@ -30,7 +30,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s', dat
 @hook('after_request')
 def enable_cors():
   stat = (" statCode(" + str(response.status_code) + ")") if str(response.status_code) != "200" else ""
-  logging.debug("IP(" + request.get('REMOTE_ADDR') + ") path(" + request.path + ")" + )
+  logging.debug("IP(" + request.get('REMOTE_ADDR') + ") path(" + request.path + ")" + stat)
 
 
 @error(404)
