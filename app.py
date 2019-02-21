@@ -225,7 +225,9 @@ def gitPull():
 def run_decoupled(app, host='0.0.0.0', port=8080, **config):
   server = CherryPyWSGIServer((host, port), app, **config)
   try:
+    print('trying to start bro')
     server.start()
+    print('server started')
   except KeyboardInterrupt:
     server.stop()
 
