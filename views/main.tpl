@@ -487,7 +487,9 @@
             </div>
           </div>
         </div>
-        <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
+        <div data-aos="fade-up">
+          <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
+        </div>
       </div>
     </section>
     <section class="bg-third text-center mainSection" id="contact">
@@ -496,12 +498,12 @@
           <h1 class="sectionTitle" style="margin-bottom: 100px;"><u>Contact</u></h1>
         </div>
         <form role="form" id="contactForm">
-          <div data-aos="fade-up" class="row">
+          <div data-aos="fade-up-left" class="row">
             <div class="form-group col-sm-6">
               <label for="name" class="h2 white bold">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter name" required>
             </div>
-            <div data-aos="fade-up" class="form-group col-sm-6">
+            <div data-aos="fade-up-right" class="form-group col-sm-6">
               <label for="email" class="h2 white bold">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Enter email" required>
             </div>
