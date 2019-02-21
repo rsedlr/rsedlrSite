@@ -223,6 +223,7 @@ def gitPull():
 #   return template('wrappingPaper')
 
 def run_decoupled(app, host='0.0.0.0', port=8080, **config):
+  print(port)
   server = CherryPyWSGIServer((host, port), app, **config)
   try:
     print('trying to start bro')
