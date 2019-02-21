@@ -199,6 +199,11 @@ def shhh():
   return template('wrappingPaper')
 
 
+# @route('/wallpaper')
+# def wallpaper():
+#   return template('wrappingPaper')
+
+
 @route('/dadsLogin', method=["POST","GET"])
 def dadsLogin():
   global key
@@ -230,9 +235,6 @@ def gitPull():
   print('\n************ Git pull done ************\n')
   # print('\n************ git update available ************\n')
 
-# @route('/wallpaper')
-# def wallpaper():
-#   return template('wrappingPaper')
 
 def run_decoupled(app, host='0.0.0.0', port=8080, **config):
   server = CherryPyWSGIServer((host, port), app, **config)
