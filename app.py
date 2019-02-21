@@ -29,7 +29,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 @hook('after_request')
 def enable_cors():
-  logging.debug("Request IP: " + request.get('REMOTE_ADDR') + " - " + request.path + " - " + str(response.status_code))
+  logging.debug("IP: " + request.get('REMOTE_ADDR') + " path: " + request.path + " statCode: " + str(response.status_code))
 
 
 @error(404)
@@ -44,7 +44,6 @@ def server_static(filepath):
 
 @route('/')
 def main():
-  # logging.debug("Request IP: " + request.get('REMOTE_ADDR') + " - " + request.path + " - " + str(response.status_code))
   return template('main')
 
 
