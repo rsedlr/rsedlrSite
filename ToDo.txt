@@ -11,6 +11,7 @@ RsEdler todo:
 -robotics club
 -insta telegram texts
 -participation in open source (hacktober fest)
+-THIS website
 
 -working contact page
 
