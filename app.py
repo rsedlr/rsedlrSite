@@ -235,22 +235,21 @@ def run_decoupled(app, host='0.0.0.0', port=8080, **config):
   except KeyboardInterrupt:
     server.stop()
 
-# if __name__ == '__main__':
-#   # port = int(os.environ.get('PORT', 4000))
-#   # port = 80 # 4000
-#   # run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
-#   # run_decoupled(app, '0.0.0.0', 80)
-#   run(host='0.0.0.0', port=80, server='cherrypy', reloader=True, debug=True)  # 127.0.0.1
+from wsgilog import log
 
-app = application = bottle.Bottle()
+@log(tohtml=True, tofile='wsgi.log', tostream=True, toprint=True)
+def app(environ, start_response):
+    print 'STDOUT is logged.'
+    environ['wsgilog.logger'].info('This information is logged.')
+    # Exception will be logged and sent to the browser formatted as HTML.
+    raise Exception()
 
 if __name__ == '__main__':
-    app.run()
-
-server = wsgiserver.CherryPyWSGIServer(('0.0.0.0', 80),
-	       app, server_name='www.rsedlr.xyz')
-
-server.start()
+  # port = int(os.environ.get('PORT', 4000))
+  # port = 80 # 4000
+  # run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  # run_decoupled(app, '0.0.0.0', 80)
+  run(host='0.0.0.0', port=80, server='cherrypy', reloader=True)  # 127.0.0.1
 
 
 # wordssssss
