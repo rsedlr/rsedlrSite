@@ -236,7 +236,7 @@ if __name__ == '__main__':
   # port = 80 # 4000
   # run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
   # run_decoupled(app, '0.0.0.0', 80)
-  run(host='0.0.0.0', port=80, server='cherrypy', reloader=True, threaded=True, debug=True)  # 127.0.0.1
+  run(host='0.0.0.0', port=80, server='cherrypy', reloader=True, debug=True)  # 127.0.0.1
 
 # wordsss
 
