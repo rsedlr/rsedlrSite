@@ -3,6 +3,7 @@ from bottle import route, run, template, static_file, redirect, request, respons
 from datetime import datetime
 from christmasMessages import cardMessage
 import cherrypy as cp
+import wsgiserver
 from cherrypy.wsgiserver import CherryPyWSGIServer
 from cherrypy.process.servers import ServerAdapter
 
@@ -221,7 +222,7 @@ def gitPull():
 # def wallpaper():
 #   return template('wrappingPaper')
 
-def run_decoupled(app, host='0.0.0.0', port=80, **config):
+def run_decoupled(app, host='0.0.0.0', port=8080, **config):
   server = CherryPyWSGIServer((host, port), app, **config)
   try:
     server.start()
@@ -232,7 +233,7 @@ if __name__ == '__main__':
   # port = int(os.environ.get('PORT', 4000))
   # port = 80 # 4000
   # run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
-  run_decoupled()
+  run_decoupled(app, '0.0.0.0', 80)
 
 # wordsss
 
