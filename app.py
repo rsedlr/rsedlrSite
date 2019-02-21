@@ -8,6 +8,9 @@ import bottle
 from cherrypy.wsgiserver import CherryPyWSGIServer
 from cherrypy.process.servers import ServerAdapter
 
+from cherrypy import wsgiserver
+import bottle
+
 app = Bottle()
 
 try:
