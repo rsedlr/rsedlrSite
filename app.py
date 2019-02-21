@@ -24,7 +24,7 @@ except Exception as e:
   print(e)
 
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)-15s %(clientip)s %(user)-8s %(message)s')  # '%(asctime)s - %(levelname)s - %(message)s'
 
 
 @hook('after_request')
