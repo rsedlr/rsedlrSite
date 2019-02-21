@@ -522,15 +522,17 @@
             <p>  </p>
           </div>
         </div> -->
-        <div class="boxCol fit-content" style="margin-top: 30px; padding-bottom: 15px">
+        <div data-aos="fade-up" class="boxCol fit-content" style="margin-top: 30px; padding-bottom: 15px">
           <div class="tooltip" style="text-align: center !important">
             <h3>Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: red;">rsedlr@protonmail.com</a></h3> 
             <span class="tooltiptext" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
-        <h1 class="sectionHead" style="margin-top: 50px;"><u>Social Media</u></h1>
-        <div style="margin-top: 30px;">
-          <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
+        <div data-aos="fade-up">
+          <h1 class="sectionHead" style="margin-top: 50px;"><u>Social Media</u></h1>
+          <div style="margin-top: 30px;">
+            <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
+          </div>
         </div>
       </div>
     </section>
