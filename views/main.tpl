@@ -498,8 +498,8 @@
           <h1 class="sectionTitle" style="margin-bottom: 100px;"><u>Contact</u></h1>
         </div>
         <form role="form" id="contactForm">
-          <div data-aos="fade-up-left" class="row">
-            <div class="form-group col-sm-6">
+          <div class="row">
+            <div data-aos="fade-up-left" class="form-group col-sm-6">
               <label for="name" class="h2 white bold">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter name" required>
             </div>
@@ -509,8 +509,8 @@
             </div>
           </div>        
           <div data-aos="fade-up" class="form-group">
-              <label for="message" class="h2 white bold">Message</label>
-              <textarea id="message" class="form-control" rows="5" placeholder="Enter message" required></textarea>
+            <label for="message" class="h2 white bold">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter message" required></textarea>
           </div>
           <div data-aos="fade-up">
             <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg pull-right">Submit</button>
