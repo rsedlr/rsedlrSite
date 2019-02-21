@@ -1,7 +1,12 @@
 import os, subprocess, sys, smtplib  # , serial
-from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error
+from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, Bottle
 from datetime import datetime
 from christmasMessages import cardMessage
+import cherrypy as cp
+from cherrypy.wsgiserver import CherryPyWSGIServer
+from cherrypy.process.servers import ServerAdapter
+
+app = Bottle()
 
 try:
   import git
@@ -216,11 +221,18 @@ def gitPull():
 # def wallpaper():
 #   return template('wrappingPaper')
 
+def run_decoupled(app, host='0.0.0.0', port=80, **config):
+  server = CherryPyWSGIServer((host, port), app, **config)
+  try:
+    server.start()
+  except KeyboardInterrupt:
+    server.stop()
 
 if __name__ == '__main__':
   # port = int(os.environ.get('PORT', 4000))
-  port = 80 # 4000
-  run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  # port = 80 # 4000
+  # run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  run_decoupled()
 
 # wordsss
 
