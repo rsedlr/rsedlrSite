@@ -62,10 +62,10 @@
               <!-- <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div> -->
             </div>
             <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
-            <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="450" style="margin: 5rem auto auto;"> 
+            <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="300" style="margin: 5rem auto auto;"> 
               <h2 class="secHead">I'm a computer science student,<br>based in London.</h2>
             </div>
-            <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="900" style="margin: 6rem auto auto;"> 
+            <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="600" style="margin: 6rem auto auto;"> 
               <h2 class="secHead" style="font-size: 42px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
             </div>
             <!-- <br><br><br>
