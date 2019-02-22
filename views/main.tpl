@@ -249,7 +249,7 @@
       <div class="container">
         <div class="row">
           <div data-aos="fade-up" class="col-md-10 mx-auto">
-            <h1 class="sectionTitle">Projects</h1>
+            <h1 class="sectionTitle">Experience</h1>
           </div>
         </div>
         <div class="container"> <!-- start -->
