@@ -482,8 +482,8 @@ span.space {
 }
 
 .round {
-  width: 20px;
-  height: 20px;
+  width: 90px;
+  height: 30px;
 }
 
 #cta {
@@ -496,8 +496,8 @@ span.space {
   /* position: absolute;  */
   /* bottom: 0;   */
   /* margin-left: 0px;  */
-  width: 20px; 
-  height: 20px; 
+  width: 30px; 
+  height: 30px; 
   background-size: contain; 
   /* top: 15px; */
 }
@@ -508,8 +508,8 @@ span.space {
 
 @keyframes bounceAlpha {
   0% {opacity: 1; transform: translateX(0px) scale(1);}
-  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
-  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  25%{opacity: 0; transform:translateX(30px) scale(0.8);}
+  26%{opacity: 0; transform:translateX(-30px) scale(0.8);}
   55% {opacity: 1; transform: translateX(0px) scale(1);}
 }
 

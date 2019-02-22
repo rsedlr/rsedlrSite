@@ -29,7 +29,7 @@
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
-            <div class="hideSmall" style="margin-bottom: 200px">
+            <div class="hideSmall" style="margin-bottom: 100px; margin-top: 70px">
               <div class="header-content" id="mainText" ><!-- text added through js --></div>
               <div class="header-content" id="secText" ><!-- text added through js --></div>
             </div>
@@ -37,13 +37,13 @@
               <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
               <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; padding-right: 20px; color: white">personal portfolio</h2>
             </div>
-            <p style="color: white; margin-top: -50px;">(currently in development)</p>
+            <p style="color: white; margin-top: 100px;">(currently in development)</p>
             <!-- <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">move</a> -->
           </div>
           <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
             <div class="round rot90" style="margin: auto auto 0px">
               <a href="#about" class="js-scroll-trigger">
-                <div id="cta">
+                <div id="cta" style="width: 50px; height: 50px;">
                   <span class="arrow primera next"></span>
                   <span class="arrow segunda next"></span>
                 </div>
@@ -86,7 +86,7 @@
         % include('templates/main/projects.html')
 
         <div data-aos="fade-up" data-aos-offset="150">
-          <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 20px">Show More</button>
+          <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 25px">Show More</button>
         </div>
       </div>
     </section>

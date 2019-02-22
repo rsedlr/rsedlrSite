@@ -62,6 +62,10 @@ $(document).ready(function () {
   $("#pyGameBtn").click(function() {
     window.location.href = 'https://github.com/MegaHertz3/OOP_game';
   });
+  $("#thisSiteBtn").click(function() {
+    $('#thisSiteTooltip').show()
+    setTimeout(function() { $('#thisSiteTooltip').hide() }, 2000);
+  });
   $(".btn-no-scroll").click(function() {
     document.body.classList.add('noScroll');
   });
@@ -89,7 +93,6 @@ $(document).ready(function () {
     document.execCommand("copy");
     $temp.remove();
     $('#emailTooltip').show()
-    // document.getElementById('emailTooltip').style.visibility = "visible";
     setTimeout(function() { $('#emailTooltip').hide() }, 2000);
     // this.tooltip(title="copied: " + this.text)
   });
