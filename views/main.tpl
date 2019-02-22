@@ -495,7 +495,7 @@
     <section class="bg-third text-center mainSection" id="contact">
       <div class="container" style="max-width: 700px;">
         <div data-aos="fade-up" class="col-md-10 mx-auto">
-          <h1 class="sectionTitle" style="margin-bottom: 100px;"><u>Contact</u></h1>
+          <h1 class="sectionTitle" style="margin-bottom: 100px; color: white"><u>Contact</u></h1>
         </div>
         <form role="form" id="contactForm">
           <div class="row">
@@ -531,7 +531,7 @@
           </div>
         </div>
         <div data-aos="fade-up">
-          <h1 class="sectionHead" style="margin-top: 50px;"><u>Social Media</u></h1>
+          <h1 class="sectionHead" style="margin-top: 50px; color: white"><u>Social Media</u></h1>
           <div style="margin-top: 30px;">
             <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
           </div>
