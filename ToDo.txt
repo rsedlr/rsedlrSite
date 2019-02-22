@@ -6,10 +6,8 @@ RsEdler todo:
 -make morse code effect for portfolio 'employ me'?
 
 -python frameworks
--basic networking
 -raspberry pi club
 -robotics club
--insta telegram texts
 -participation in open source (hacktober fest)
 -THIS website
 
@@ -17,3 +15,4 @@ RsEdler todo:
 
 -add modals for last 2 projects
 
+-merge raspi n linux

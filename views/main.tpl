@@ -50,7 +50,7 @@
       <img class="img-modal-content" id="modalImg">
       <!-- <div id="caption"></div> -->
       <div class="modal-content" id="heatModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <!-- <span class="close">&times;</span> -->
           <h2>Remote Heating Control</h2>
         </div>
@@ -69,7 +69,7 @@
         </div>
       </div>
       <div class="modal-content" id="unityModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Android and IOS Games</h2>
         </div>
         <div class="modal-body">
@@ -92,7 +92,7 @@
         </div>
       </div>
       <div class="modal-content" id="pyGameModal">
-          <div class="modal-header" style="">
+          <div class="modal-header">
             <h2>Text Based Python Game</h2>
           </div>
           <div class="modal-body">
@@ -104,7 +104,7 @@
           </div>
         </div>
         <div class="modal-content" id="christmasCardModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Virtual Christmas Cards</h2>
         </div>
         <div class="modal-body">
@@ -114,7 +114,7 @@
         </div>
       </div>
       <div class="modal-content" id="instaBotModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Instagram Bot</h2>
         </div>
         <div class="modal-body">
@@ -124,7 +124,7 @@
         </div>
       </div>
       <div class="modal-content" id="rfidDoorModal"> 
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>RFID Door Lock</h2>
         </div>
         <div class="modal-body">
@@ -134,7 +134,7 @@
         </div>
       </div>
       <div class="modal-content" id="plantWatererModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Automated Plant Waterer</h2>
         </div>
         <div class="modal-body">
@@ -144,7 +144,7 @@
         </div>
       </div>
       <div class="modal-content" id="rcCarModal" >
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Autonomous RC Car</h2>
         </div>
         <div class="modal-body">
@@ -154,7 +154,7 @@
         </div>
       </div>
       <div class="modal-content" id="raspiModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Raspberry Pi Obsession</h2>
         </div>
         <div class="modal-body">
@@ -164,7 +164,7 @@
         </div>
       </div>
       <div class="modal-content" id="networkModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Basic Networking</h2>
         </div>
         <div class="modal-body">
@@ -174,7 +174,7 @@
         </div>
       </div>
       <div class="modal-content" id="blModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Building Status Report System</h2>
         </div>
         <div class="modal-body">
@@ -184,7 +184,7 @@
         </div>
       </div>
       <div class="modal-content" id="linuxModal">
-        <div class="modal-header" style="">
+        <div class="modal-header">
           <h2>Linux Interest</h2>
         </div>
         <div class="modal-body">
@@ -249,7 +249,7 @@
       <div class="container">
         <div class="row">
           <div data-aos="fade-up" class="col-md-10 mx-auto">
-            <h1 class="sectionTitle" style="font-size: 60px;"><u>Projects</u></h1>
+            <h1 class="sectionTitle">Projects</h1>
           </div>
         </div>
         <div class="container"> <!-- start -->
@@ -495,15 +495,15 @@
     <section class="bg-third text-center mainSection" id="contact">
       <div class="container" style="max-width: 700px;">
         <div data-aos="fade-up" class="col-md-10 mx-auto">
-          <h1 class="sectionTitle" style="margin-bottom: 100px; color: white"><u>Contact</u></h1>
+          <h1 class="sectionTitle" style="margin-bottom: 50px; color: white">Contact</h1>
         </div>
         <form role="form" id="contactForm">
           <div class="row">
-            <div data-aos="fade-up-left" class="form-group col-sm-6">
+            <div data-aos="fade-up" class="form-group col-sm-6">
               <label for="name" class="h2 white bold">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter name" required>
             </div>
-            <div data-aos="fade-up-right" class="form-group col-sm-6">
+            <div data-aos="fade-up" class="form-group col-sm-6">
               <label for="email" class="h2 white bold">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Enter email" required>
             </div>
@@ -531,7 +531,7 @@
           </div>
         </div>
         <div data-aos="fade-up">
-          <h1 class="sectionHead" style="margin-top: 50px; color: white"><u>Social Media</u></h1>
+          <h1 class="sectionHead" style="margin-top: 50px; color: white">GitHub</h1>
           <div style="margin-top: 30px;">
             <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
           </div>

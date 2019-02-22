@@ -2,15 +2,19 @@ import os, subprocess, sys, smtplib  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
 from christmasMessages import cardMessage
-import cherrypy
-import wsgiserver
+# import wsgiserver
 import bottle
-from cherrypy import wsgiserver
-from cherrypy.wsgiserver import CherryPyWSGIServer
-from cherrypy.process.servers import ServerAdapter
+# from cherrypy import wsgiserver
+# from cherrypy.wsgiserver import CherryPyWSGIServer
+# from cherrypy.process.servers import ServerAdapter
 import logging
 
 app = Bottle()
+
+try:
+  import cherrypy
+except Exception as e:
+  print(e)
 
 try:
   import git
@@ -248,9 +252,14 @@ def run_decoupled(app, host='0.0.0.0', port=8080, **config):
 
 if __name__ == '__main__':
   # port = int(os.environ.get('PORT', 4000))
-  # run(host='0.0.0.0', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
   # run_decoupled(app, '0.0.0.0', 80)
-  run(host='0.0.0.0', port=80, server='cherrypy', reloader=True)  # 127.0.0.1
+  port = 80
+  host = '0.0.0.0'
+  try:
+    run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
+  except:
+    print('\ncherryPy failed, defaulting to ref server:')
+    run(host=host, port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 
 # wordssssss

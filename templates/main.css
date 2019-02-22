@@ -272,9 +272,11 @@ footer p {
 }
 
 .form-control {
+  border: 1px solid white;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
+  background-clip: border-box;
 }
 
 .boxCol {
@@ -387,8 +389,8 @@ footer p {
 }
 
 .sectionTitle {
-  font-size: 70px; 
-  font-weight: 700;
+  font-size: 80px; 
+  font-weight: 750;
 }
 
 .sectionHead {

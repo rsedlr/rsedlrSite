@@ -42,10 +42,14 @@ $(document).ready(function () {
     if ($("#hiddenTable:first").is(":hidden")) {
       $("#hiddenTable").slideDown(3500);
       $(this).text('Show Less');
+      AOS.refresh();
+      setTimeout(function() { AOS.refresh(); }, 3500);
     } else {
       $("#hiddenTable").slideUp(2000);
       document.getElementById("scrollMarker").scrollIntoView({behavior: 'smooth'})
       $(this).text('Show More');
+      AOS.refresh();
+      setTimeout(function() { AOS.refresh(); }, 2000);
     }
   });
 
