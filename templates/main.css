@@ -1,6 +1,13 @@
 :root {
   --main-red: #df1e2b;
   --main-purple: #7e3ad8;
+  --main-grey: #222222;
+  --main-gradient: -webkit-gradient(linear, right top, left top, from(var(--main-purple)), to(#e40d1b));
+  --backup-gradient: linear-gradient(to left, var(--main-purple), var(--main-red)); /* df1e2b ; 6f00ff, 7b4397 */
+}
+
+html {
+  background-color: var(--main-grey);
 }
 
 html, body {
@@ -127,8 +134,8 @@ header.masthead {
   /* padding-bottom: 100px; */
   color: white;
   background:  var(--main-purple);
-  background:  -webkit-gradient(linear, right top, left top, from(var(--main-purple)), to(#e40d1b));
-  background:  linear-gradient(to left, var(--main-purple), var(--main-red)); /* df1e2b ; 6f00ff, 7b4397 */
+  background:  var(--main-gradient);
+  background:  var(--backup-gradient);
 }
 header.masthead .header-content {
   /* max-width: 500px; */
@@ -157,7 +164,7 @@ footer {
   padding: 25px 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
-  background-color: #222222;
+  background-color: var(--main-grey);
 }
 footer p {
   font-size: 12px;
