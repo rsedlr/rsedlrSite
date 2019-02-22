@@ -523,7 +523,7 @@
             <span class="tooltiptext" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-offset="-50" data-aos-delay="1000">
+        <div data-aos="fade-up" data-aos-offset="-10" data-aos-delay="1000">
           <h1 class="sectionHead" style="margin-top: 50px; color: white">GitHub</h1>
           <div style="margin-top: 30px;">
             <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
