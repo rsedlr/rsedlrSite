@@ -66,7 +66,7 @@
               <h2 class="secHead">I'm a computer science student,<br>based in London.</h2>
             </div>
             <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="600" style="margin: 6rem auto auto;"> 
-              <h2 class="secHead" style="font-size: 42px;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
+              <h2 class="secHead" style="font-size: 2.6rem;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
             </div>
             <!-- <br><br><br>
             <p>and some witty comments i suppose</p>
