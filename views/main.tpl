@@ -16,9 +16,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- <script src="/static/main.js"></script> -->
-    % import os ; mainJS = os.path.getsize("templates/main.js") ; mainCSS = os.path.getsize("templates/main.css")
-    <script type='text/javascript' src='/static/main.js?filever={{mainJS}}'></script>  
-    <link rel="stylesheet" type="text/css" href="/static/main.css?filever={{mainCSS}}">
+    % import os ; mainJS = os.path.getsize("templates/main/main.js") ; mainCSS = os.path.getsize("templates/main/main.css") ; titleJS = os.path.getsize("templates/main/title.js")
+    <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>  
+    <script type='text/javascript' src='/static/main/title.js?filever={{titleJS}}'></script>  
+    <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
   </head>
   <body id="page-top">
 
@@ -29,9 +30,9 @@
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-md-9 col-sm-12" style="margin: auto auto 0 0;">
-            <div class="hideSmall" style="margin-bottom: 100px; margin-top: 50px">
-              <div class="header-content" id="mainText" ><!-- text added through js --></div>
-              <div class="header-content" id="secText" ><!-- text added through js --></div>
+            <div style="margin-bottom: 100px; margin-top: 50px;" id="titleDiv">
+              <div class="header-content" id="mainText"><!-- text added through js --></div>
+              <div class="header-content" id="secText"><!-- text added through js --></div>
             </div>
             <div class="showSmall my-auto" style="text-align: center;">
               <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
