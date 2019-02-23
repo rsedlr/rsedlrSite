@@ -679,6 +679,7 @@ span.space {
 
 .main-pic {
   transition: 0.2s ease;
+  box-shadow: 0 0 40px;
 }
 .main-pic:hover {
   transform: scale(1.3);
