@@ -55,13 +55,13 @@ $(document).ready(function () {
     if ($(document).width() > 998) {
       if ($('#titleDiv').css('display') == 'none') {
         $('#titleDiv').css("display", "block");
-        createText(1200);
+        createText(1000);
       }
     } else {
       $('#titleDiv').css("display", "none");
     }}
 
   window.addEventListener('resize', hideTitle);
-
+  hideTitle();
   createText(1200);
 });
