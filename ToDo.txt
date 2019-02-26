@@ -16,3 +16,5 @@ RsEdler todo:
 -add modals for last 2 projects
 
 -merge raspi n linux
+
+-sort out how navbar appears soon but title text takes longer
