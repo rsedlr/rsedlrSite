@@ -1,6 +1,5 @@
 def cardMessage(name):
   nameUp = name.upper()
-  name = name.replace('_', ' ')
   prefix = ['MR', 'DR' 'MS', 'MRS', 'MISS']   
   namePref = name.split(' ')[0]
   if namePref.upper() not in prefix:      #only splits if no prefix is present at start of name
