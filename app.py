@@ -236,7 +236,7 @@ def dadsGift():
 def gitPull():
   # git.cmd.Git('/var/www/rsedlrSite').pull()
   git.cmd.Git('/var/www/rsedlrSite').fetch()
-  os.write('sudo git reset --hard origin/master')
+  os.system('sudo git reset --hard origin/master')
   print('\n************ Git pull done ************\n')
   # print('\n************ git update available ************\n')
 
