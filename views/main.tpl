@@ -6,7 +6,7 @@
     <!-- <meta name="description" content=""> -->
     <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
     <title>RsEdlr</title>
-    <!-- <link rel="icon" href="/static/favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" href="/static/pic/favicon.png" type="image/x-icon">
     <!-- <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
