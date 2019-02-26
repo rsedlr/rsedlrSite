@@ -234,7 +234,8 @@ def dadsGift():
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
-  git.cmd.Git('/var/www/rsedlrSite').pull()
+  # git.cmd.Git('/var/www/rsedlrSite').pull()
+  git.cmd.Git('/var/www/rsedlrSite').fetch()
   print('\n************ Git pull done ************\n')
   # print('\n************ git update available ************\n')
 
