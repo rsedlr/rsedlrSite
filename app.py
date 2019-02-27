@@ -258,7 +258,7 @@ if __name__ == '__main__':
     run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
   except:
     print('\ncherryPy failed, defaulting to ref server:')
-    run(host=host, port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+    run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 
 # wordssssss

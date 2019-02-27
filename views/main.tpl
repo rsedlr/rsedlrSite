@@ -34,9 +34,9 @@
               <div class="header-content" id="mainText"><!-- text added through js --></div>
               <div class="header-content" id="secText"><!-- text added through js --></div>
             </div>
-            <div class="showSmall my-auto" style="text-align: center; max-width: 450px;">
+            <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
               <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
-              <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; padding-right: 20px; color: white">personal portfolio</h2>
+              <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
             </div>
             <!-- <p style="color: white; margin-top: 100px;">(currently in development)</p> -->
           </div>
@@ -93,7 +93,7 @@
     <section class="bg-third text-center mainSection" id="contact">
       <div class="container" style="max-width: 700px;">
         <div data-aos="fade-up" class="col-md-10 mx-auto">
-          <h1 class="sectionTitle" style="margin-bottom: 50px; color: white">Contact</h1>
+          <h1 class="sectionTitle" id="contactTitle">Contact</h1>
         </div>
         <form role="form" id="contactForm">
           <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="150" class="row">

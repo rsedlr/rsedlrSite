@@ -55,11 +55,26 @@ $(document).ready(function () {
     if ($(document).width() > 998) {
       if ($('#titleDiv').css('display') == 'none') {
         $('#titleDiv').css("display", "block");
-        createText(1000);
+        createText(100);
       }
     } else {
       $('#titleDiv').css("display", "none");
-    }}
+    }
+    if ($(document).width() < 768) {
+      $('#backupTitleContainer').css("max-width", "450px");
+      $('.p-5').attr("style", "padding: 2rem 1rem !important");
+    } else {
+      $('#backupTitleContainer').css("max-width", "none");
+      $('.sectionTitle').attr("style", "font-size: 5rem");
+    }
+    if ($(document).width() < 768 && $(document).width() > 500) {
+      $('.sectionTitle').attr("style", "font-size: 4.2rem");
+    } else if ($(document).width() < 500) {
+      $('.sectionTitle').attr("style", "font-size: 3.3rem");
+    } else {
+      $('.p-5').attr("style", "padding: 3rem !important");
+    }
+  }
 
   window.addEventListener('resize', hideTitle);
   hideTitle();

@@ -196,6 +196,11 @@ footer p {
   width: 100%;
 }
 
+#contactTitle {
+  margin-bottom: 50px; 
+  color: white
+}
+
 .bolder {
   font-weight: 700 !important;
 }
