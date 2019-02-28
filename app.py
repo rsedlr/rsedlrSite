@@ -254,11 +254,12 @@ if __name__ == '__main__':
   # run_decoupled(app, '0.0.0.0', 80)
   port = 80
   host = '0.0.0.0'
-  try:
-    run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
-  except:
-    print('\ncherryPy failed, defaulting to ref server:')
-    run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  # try:
+  #   run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
+  # except:
+  #   print('\ncherryPy failed, defaulting to ref server:')
+  #   run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 
 # wordssssss
