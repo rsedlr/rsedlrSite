@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 import os, subprocess, sys, smtplib  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
-from christmasMessages import cardMessage
+from christmasMessages import cardMessage, cardMessageDemo
 # import wsgiserver
 import bottle
 # from cherrypy import wsgiserver
@@ -25,19 +26,28 @@ try:
 except Exception as e:
   print(e)
 
+dev = True if sys.argv[1] == '-dev' else False
+demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s', datefmt='%I:%M:%S%p %d/%m/%Y')  # level=logging.DEBUG, '%(asctime)s - %(levelname)s - %(message)s' filename='site.log'
+if not dev:
+  logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s', datefmt='%I:%M:%S%p %d/%m/%Y')  # level=logging.DEBUG, '%(asctime)s - %(levelname)s - %(message)s' filename='site.log'
 
-
-@hook('after_request')
-def enable_cors():
-  stat = (" statCode(" + str(response.status_code) + ")") if str(response.status_code) != "200" else ""
-  logging.debug("IP(" + request.get('REMOTE_ADDR') + ") path(" + request.path + ")" + stat)
+  @hook('after_request')
+  def enable_cors():
+    stat = (" statCode(" + str(response.status_code) + ")") if str(response.status_code) != "200" else ""
+    logging.debug("IP(" + request.get('REMOTE_ADDR') + ") path(" + request.path + ")" + stat)
 
 
 @error(404)
 def error404(error):
   return template('error404')
+#   response.status = 303
+#   response.set_header('Location', '/404')
+
+
+# @route('/404')
+# def show404():
+#   return template('error404')
 
 
 @route('/static/<filepath:path>')
@@ -197,6 +207,20 @@ def christmas(name=''):
   return template('notChristmas', name=name)
 
 
+@route('/christmasDemo')
+@route('/christmasDemo/')
+@route('/christmasDemo/<name>')
+def christmas(name=''):
+  name = name.replace('_', ' ')
+  message = cardMessageDemo(name)
+  if name.upper() in demo:
+    colour = name
+    name = 'Demo'
+  else:
+    colour = None
+  return template('christmasCardDemo', name=name, colour=colour, message=message)
+
+
 @route('/shhhnoonecanknowiusethis')
 def shhh():
   return template('wrappingPaper')
@@ -254,12 +278,14 @@ if __name__ == '__main__':
   # run_decoupled(app, '0.0.0.0', 80)
   port = 80
   host = '0.0.0.0'
-  # try:
-  #   run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
-  # except:
-  #   print('\ncherryPy failed, defaulting to ref server:')
-  #   run(host='127.0.0.1', port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
-  run(host=host, port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  if dev:
+    run(host='127.0.0.1', port=8080, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+  else:
+    try:
+      run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
+    except:
+      print('\ncherryPy failed, defaulting to ref server:')
+      run(host=host, port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 
 # wordssssss

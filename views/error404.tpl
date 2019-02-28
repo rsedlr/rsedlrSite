@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    % import os ; mainCSS = os.path.getsize("templates/main.css")
-    <link rel="stylesheet" type="text/css" href="/static/main.css?filever={{mainCSS}}">
+    % import os ; mainCSS = os.path.getsize("templates/main/main.css")
+    <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
   </head>
   <body>
     <div id="main" class="boxCol" style="padding: 50px 80px;">
