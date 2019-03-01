@@ -106,3 +106,40 @@ def cardMessage(name):
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
   return message
+
+
+def cardMessageDemo(name):
+  nameUp = name.upper()
+  colours = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 'ORANGE', 'GREY']
+  prefix = ['MR', 'DR' 'MS', 'MRS', 'MISS']   
+  namePref = name.split(' ')[0]
+  if namePref.upper() not in prefix:      #only splits if no prefix is present at start of name
+    name = name.split(' ')[0]
+  messageTpl = '''
+      %s<br><br>
+      <br>     
+      Have a merry christmas,<br>
+      And a happy new year!<br>
+      %s
+      <br><br><br>
+      %s
+      '''
+  if nameUp in colours:
+    message = '''
+      <br>
+      This is a %s background demo
+      <br><br><br>     
+      Have a merry christmas,<br>
+      And a happy new year!<br>
+      <br><br>
+      ''' % (name)
+  elif nameUp == 'NAME DEMO':
+    message = '''
+      This is a custom message demo<br><br>
+      the text can be completely altered<br>
+      and a button can even be put in if you want to redirect them to an online gift for example<br>
+      <br><br>
+      '''
+  else:
+    message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
+  return message

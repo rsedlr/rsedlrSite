@@ -55,7 +55,7 @@ $(document).ready(function () {
     window.location.href = '/heatDemo';
   });
   $("#christmasCardBtn").click(function() {
-    window.location.href = '/christmas';
+    window.location.href = '/christmasDemo';
   }); 
   $("#pyGameBtn").click(function() {
     window.location.href = 'https://github.com/MegaHertz3/OOP_game';

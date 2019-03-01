@@ -19,6 +19,7 @@ body {
   transform-style: preserve-3d;
 }
 
+
 *, *:after, *:before {
   box-sizing: border-box;
 }
@@ -29,6 +30,11 @@ h2 {
   font-size: 4rem;
   color: #B60003; 
   text-align: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
 }
 
 .wrap {
