@@ -1,9 +1,7 @@
 RsEdler todo:
--add about section, something like 'im a __' and have fancy shit happen
+-add about section, something like 'im a __' and have fancy stuff happen
 
 -add popovers to heat demo
-
--make morse code effect for portfolio 'employ me'?
 
 -python frameworks
 -raspberry pi club
@@ -11,10 +9,5 @@ RsEdler todo:
 -participation in open source (hacktober fest)
 -THIS website
 
--working contact page
+-make contact page look better
 
--add modals for last 2 projects
-
--merge raspi n linux
-
--sort out how navbar appears soon but title text takes longer
