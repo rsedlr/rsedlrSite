@@ -26,9 +26,15 @@ try:
 except Exception as e:
   print(e)
 
-dev = True if sys.argv[1] == '-dev' else False
+try:
+  dev = True if sys.argv[1] == '-dev' else False
+except:
+  dev = False
+
+
 demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
+
 if not dev:
   logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s', datefmt='%I:%M:%S%p %d/%m/%Y')  # level=logging.DEBUG, '%(asctime)s - %(levelname)s - %(message)s' filename='site.log'
 
