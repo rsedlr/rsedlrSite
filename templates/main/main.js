@@ -32,10 +32,15 @@ $(document).ready(function () {
   $('.more-btn').click(function() {
     document.getElementById(this.value + "Modal").style.display = "block";
     imgModal.style.display = "block";
-    console.log(this.value+"Img");
+    // console.log(this.value+"Img");
     document.getElementById("modalImg").src = document.getElementById(this.value + "Img").src;
   });
-
+  $(".img-close").click(function() {
+    $(".modal-content").hide();
+    imgModal.scrollIntoView()
+    imgModal.style.display = "none";
+    document.body.classList.remove('noScroll');
+  });
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
       $("#hiddenTable").slideDown(1900, "easeInOutSine");
@@ -78,11 +83,6 @@ $(document).ready(function () {
   $(".modal-content").click(function() {
     event.stopPropagation();
   });
-  $(".img-close").click(function() {
-    imgModal.style.display = "none";
-    document.body.classList.remove('noScroll');
-    $(".modal-content").hide();
-  });
   $("#emailCopy").click(function() {
     // this.text.select();
     var $temp = $("<input>");
@@ -101,6 +101,8 @@ $(document).ready(function () {
   });
 
   function submitForm(){
+    $("#msgSubmit").text('sending...');
+    $("#msgSubmit").css('visibility', 'visible');
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
@@ -110,11 +112,11 @@ $(document).ready(function () {
       data: "name=" + name + "&email=" + email + "&message=" + message,
       success: function(data) {
         $("#msgSubmit").text('Thanks, message submitted');
-        $("#msgSubmit").show();
+        $("#msgSubmit").css('visibility', 'visible');
       },
       error: function(data) {
         $("#msgSubmit").text('Error, try again');
-        $("#msgSubmit").show();
+        $("#msgSubmit").css('visibility', 'visible');
       },
     });
   }

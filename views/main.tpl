@@ -109,18 +109,18 @@
             <textarea id="message" class="form-control" rows="5" placeholder="Enter message" required></textarea>
           </div>
           <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="400">
-            <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg pull-right">Submit</button>
-            <div id="msgSubmit" class="h5 text-center boxCol dis-none fit-content"></div>
+            <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px;">Submit</button>
+            <div id="msgSubmit" class="h5 text-center boxCol fit-content" style="visibility: hidden;">.</div>
           </div>
         </form>
-        <div data-aos="fade-up" data-aos-offset="0" data-aos-delay="550" class="boxCol fit-content" style="margin-top: 30px; padding-bottom: 15px">
+        <div data-aos="fade-up" data-aos-offset="0" data-aos-delay="550" class="boxCol fit-content" style="margin-top: 40px; padding-bottom: 15px">
           <div class="tooltip" style="text-align: center !important">
             <h3>Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: red;">rsedlr@protonmail.com</a></h3> 
             <span class="tooltiptext" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-offset="-10" data-aos-delay="700">
-          <h1 class="sectionHead" style="margin-top: 50px; color: white">GitHub</h1>
+          <h1 class="sectionHead" style="margin-top: 80px; color: white">GitHub</h1>
           <div style="margin-top: 30px;">
             <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
           </div>
