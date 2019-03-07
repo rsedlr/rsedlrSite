@@ -282,8 +282,8 @@ def run_decoupled(app, host='0.0.0.0', port=8080, **config):
 if __name__ == '__main__':
   # port = int(os.environ.get('PORT', 4000))
   # run_decoupled(app, '0.0.0.0', 80)
-  port = 80
-  host = '0.0.0.0'
+  port = 3000  # 80
+  host = '127.0.0.1'  # '0.0.0.0'
   if dev:
     run(host='127.0.0.1', port=8080, reloader=True, threaded=True, debug=False)  # 127.0.0.1
   else:
