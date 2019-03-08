@@ -263,7 +263,6 @@ def dadsGift():
 
 @route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])
 def gitPull():
-  error404(404)
   git.cmd.Git('/var/www/rsedlrSite').pull()
   # git.cmd.Git('/var/www/rsedlrSite').fetch()
   # os.system('sudo git reset --hard origin/master')
