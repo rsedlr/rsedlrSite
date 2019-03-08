@@ -265,19 +265,11 @@ def dadsGift():
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
-  # git.cmd.Git('/var/www/rsedlrSite').pull()
-  git.cmd.Git('/var/www/rsedlrSite').fetch()
-  os.system('sudo git reset --hard origin/master')
+  git.cmd.Git('/var/www/rsedlrSite').pull()
+  # git.cmd.Git('/var/www/rsedlrSite').fetch()
+  # os.system('sudo git reset --hard origin/master')
   print('\n************ Git pull done ************\n')
   # print('\n************ git update available ************\n')
-
-
-def run_decoupled(app, host='0.0.0.0', port=8080, **config):
-  server = CherryPyWSGIServer((host, port), app, **config)
-  try:
-    server.start()
-  except KeyboardInterrupt:
-    server.stop()
 
 
 if __name__ == '__main__':
@@ -298,5 +290,10 @@ if __name__ == '__main__':
 # wordssssss
 
 '''
-
+# def run_decoupled(app, host='0.0.0.0', port=8080, **config):
+#   server = CherryPyWSGIServer((host, port), app, **config)
+#   try:
+#     server.start()
+#   except KeyboardInterrupt:
+#     server.stop()
 '''
