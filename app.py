@@ -41,7 +41,7 @@ if not dev:
   def enable_cors():
     client_ip = request.environ.get('HTTP_X_FORWARDED_FOR') or request.environ.get('REMOTE_ADDR')
     stat = (" statCode(" + str(response.status_code) + ")") if str(response.status_code) != "200" else ""
-    logging.debug("IP(" + client_ip + ") path(" + request.path + ")" + stat)
+    logging.debug("IP(" + client_ip + ") method(" + request.method + ") path(" + request.path + ")" + stat)
 
 
 @error(404)
@@ -56,9 +56,10 @@ def error404(error):
 #   return template('error404')
 
 
-# @route('/static/<filepath:path>')
-# def server_static(filepath):
-#   return static_file(filepath, root='./templates')
+@route('/static/<filepath:path>')
+def server_static(filepath):
+  print('fetching ' + filepath)
+  return static_file(filepath, root='./templates')
 
 
 @route('/')
@@ -289,6 +290,11 @@ if __name__ == '__main__':
 # wordssssss
 
 '''
+user: request.environ.get('REMOTE_USER', '')
+url: request.url
+acc id: account_id
+
+
 # def run_decoupled(app, host='0.0.0.0', port=8080, **config):
 #   server = CherryPyWSGIServer((host, port), app, **config)
 #   try:
