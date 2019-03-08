@@ -42,6 +42,12 @@ if not dev:
     client_ip = request.environ.get('HTTP_X_FORWARDED_FOR') or request.environ.get('REMOTE_ADDR')
     stat = (" statCode(" + str(response.status_code) + ")") if str(response.status_code) != "200" else ""
     logging.debug("IP(" + client_ip + ") method(" + request.method + ") path(" + request.path + ")" + stat)
+  @hook('before_request')
+  def enable_cors():
+    client_ip = request.environ.get('HTTP_X_FORWARDED_FOR') or request.environ.get('REMOTE_ADDR')
+    stat = (" statCode(" + str(response.status_code) + ")") if str(response.status_code) != "200" else ""
+    logging.debug("IP(" + client_ip + ") method(" + request.method + ") path(" + request.path + ")" + stat)
+
 
 
 @error(404)
