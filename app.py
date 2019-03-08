@@ -58,7 +58,6 @@ def error404(error):
 
 @route('/staticIco/<filepath:path>')  # /static/
 def server_static(filepath):
-  print('fetching ' + filepath)
   return static_file(filepath, root='./templates')
 
 
