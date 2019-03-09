@@ -58,7 +58,7 @@
         url: "/recipe-submit/",
         data: "title=" + title + "&subtitle=" + subtitle + "&ingredients=" + ingredients + "&method=" + method,
         success: function(data) {
-          $("#msgSubmit").text('Thanks, message submitted');
+          $("#msgSubmit").text('Recipe submitted');
           $("#msgSubmit").css('visibility', 'visible');
         },
         error: function(data) {
