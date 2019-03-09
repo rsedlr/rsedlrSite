@@ -9,7 +9,7 @@
     % include('templates/links.html')
     <style>
       html, body {
-        background-color: rgb(47, 112, 112);
+        background-color: whitesmoke;
       }
     </style>
     <form class="form-signin" style="width: 20em; margin: 10% auto; align-items: center;" action="/recipe-maker/" method="post">
