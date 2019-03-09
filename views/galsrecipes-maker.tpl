@@ -55,7 +55,7 @@
       var method = $("#method").val();
       $.ajax({
         type: "POST",
-        url: "/contact",
+        url: "/recipe-submit/",
         data: "title=" + title + "&subtitle=" + subtitle + "&ingredients=" + ingredients + "&method=" + method,
         success: function(data) {
           $("#msgSubmit").text('Thanks, message submitted');
