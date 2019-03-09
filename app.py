@@ -266,28 +266,23 @@ def dadsGift():
 def recipeMaker():
   global key
   password = request.forms.get('password')
-  title = request.forms.get('title')
-  subtitle = request.forms.get('subtitle')
-  ingredients = request.forms.get('ingredients')
-  method = request.forms.get('method')
-  print(method)
-  if password == 'test' and title == None:
+  if password == 'test':
     response.set_cookie("userR", 'yes', secret=key)  # , username
     return template('galsrecipes-maker')
-  elif password == 'test':
-    response.set_cookie("userR", 'yes', secret=key)  # , username
-    return 'hello'
   elif password != None:
     return template('galsrecipes-login', error='Incorrect password')
   return template('galsrecipes-login', error=None)
 
-@route('/recipe-submit/', method="POST")
+@route('/recipe-submit/', method='POST')
 def recipeSubmit():
-  title = request.forms.get('title')
-  subtitle = request.forms.get('subtitle')
-  ingredients = request.forms.get('ingredients')
-  method = request.forms.get('method')
-  print(method)
+  try:
+    title = request.forms.get('title')
+    subtitle = request.forms.get('subtitle')
+    ingredients = request.forms.get('ingredients')
+    method = request.forms.get('method')
+    print(method)
+  except Exception as e:
+    print(e)
 
 
 @route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])
