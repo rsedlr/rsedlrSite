@@ -35,7 +35,7 @@
           <textarea id="method" class="form-control" rows="5" placeholder="e.g. 'put bread in toaster'" required></textarea>
         </div>
         <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="400">
-          <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px;">Submit</button>
+          <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px; background-color: red">Submit</button>
           <div id="msgSubmit" class="h5 text-center boxCol fit-content" style="visibility: hidden;">.</div>
         </div>
       </form>
