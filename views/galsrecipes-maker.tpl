@@ -53,6 +53,7 @@
       var subtitle = $("#subtitle").val();
       var ingredients = $("#ingredients").val();
       var method = $("#method").val();
+      console.log(method);
       $.ajax({
         type: "POST",
         url: "/recipe-submit/",
