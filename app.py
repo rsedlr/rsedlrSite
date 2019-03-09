@@ -281,6 +281,13 @@ def recipeMaker():
     return template('galsrecipes-login', error='Incorrect password')
   return template('galsrecipes-login', error=None)
 
+@route('/recipe-submit/', method="POST")
+def recipeSubmit():
+  title = request.forms.get('title')
+  subtitle = request.forms.get('subtitle')
+  ingredients = request.forms.get('ingredients')
+  method = request.forms.get('method')
+  print(method)
 
 
 @route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])

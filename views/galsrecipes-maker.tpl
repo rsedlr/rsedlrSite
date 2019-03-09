@@ -41,4 +41,31 @@
       </form>
     </div>
   </body>
+  <script>
+    $("#contactForm").submit(function(event){
+      event.preventDefault();
+      submitForm();
+    });
+    function submitForm(){
+      $("#msgSubmit").text('sending...');
+      $("#msgSubmit").css('visibility', 'visible');
+      var title = $("#title").val();
+      var subtitle = $("#subtitle").val();
+      var ingredients = $("#ingredients").val();
+      var method = $("#method").val();
+      $.ajax({
+        type: "POST",
+        url: "/contact",
+        data: "title=" + title + "&subtitle=" + subtitle + "&ingredients=" + ingredients + "&method=" + method,
+        success: function(data) {
+          $("#msgSubmit").text('Thanks, message submitted');
+          $("#msgSubmit").css('visibility', 'visible');
+        },
+        error: function(data) {
+          $("#msgSubmit").text('Error, try again');
+          $("#msgSubmit").css('visibility', 'visible');
+        },
+      });
+    }
+  </script>
 </html>
