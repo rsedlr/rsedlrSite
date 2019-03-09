@@ -266,9 +266,17 @@ def dadsGift():
 def recipeMaker():
   global key
   password = request.forms.get('password')
-  if password == 'test':
+  title = request.forms.get('title')
+  subtitle = request.forms.get('subtitle')
+  ingredients = request.forms.get('ingredients')
+  method = request.forms.get('method')
+  print(method)
+  if password == 'test' and title == None:
     response.set_cookie("userR", 'yes', secret=key)  # , username
     return template('galsrecipes-maker')
+  elif password == 'test:
+    response.set_cookie("userR", 'yes', secret=key)  # , username
+    return 'hello'
   elif password != None:
     return template('galsrecipes-login', error='Incorrect password')
   return template('galsrecipes-login', error=None)

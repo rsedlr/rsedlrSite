@@ -19,20 +19,20 @@
         <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="150" class="row">
           <div class="form-group col-sm-6">
             <label for="title" class="h2 white bold">Title</label>
-            <input type="text" class="form-control" id="title" placeholder="Enter title. e.g. 'toast'" required>
+            <input type="text" class="form-control" id="title" placeholder="e.g. 'toast'" required>
           </div>
           <div class="form-group col-sm-6">
             <label for="subtitle" class="h2 white bold">SubTitle</label>
-            <input type="text" class="form-control" id="subtitle" placeholder="Enter subtitle. e.g. 'cooked bread'" required>
+            <input type="text" class="form-control" id="subtitle" placeholder="e.g. 'cooked bread'" required>
           </div>
         </div>        
         <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="250" class="form-group">
           <label for="ingredients" class="h2 white bold">Ingredients</label>
-          <textarea id="ingredients" class="form-control" rows="5" placeholder="Enter Ingredients. e.g. 'bread, butter'" required></textarea>
+          <textarea id="ingredients" class="form-control" rows="5" placeholder="e.g. 'bread, butter'" required></textarea>
         </div>
         <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="250" class="form-group">
           <label for="method" class="h2 white bold">Method</label>
-          <textarea id="method" class="form-control" rows="5" placeholder="Enter Method. e.g. 'put bread in toaster'" required></textarea>
+          <textarea id="method" class="form-control" rows="5" placeholder="e.g. 'put bread in toaster'" required></textarea>
         </div>
         <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="400">
           <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px;">Submit</button>
