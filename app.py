@@ -275,13 +275,13 @@ def recipeMaker():
 
 @route('/recipe-submit/', method='POST')
 def recipeSubmit():
-  print('baljfds')
   try:
     title = request.forms.get('title') or 'empty'
     subtitle = request.forms.get('subtitle') or 'empty'
     ingredients = request.forms.get('ingredients') or 'empty'
     method = request.forms.get('method') or 'empty'
-    print(method)
+    f = open('../galsrecipes.com/recipes.txt', "r+")
+    print(f.readline())
   except Exception as e:
     print(e)
 

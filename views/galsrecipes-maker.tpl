@@ -15,7 +15,7 @@
   </head>
   <body>
     <div id="main" class="boxCol" style="padding: 50px 80px;">
-      <h1>Recipe Maker</h1>
+      <h1 style="font-weight: bolder; font-size: 50px; margin-bottom: 20px;">Recipe Maker</h1>
       <form role="form" id="contactForm">
         <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="150" class="row">
           <div class="form-group col-sm-6">
@@ -36,7 +36,7 @@
           <textarea id="method" class="form-control" rows="5" placeholder="e.g. 'put bread in toaster'" required></textarea>
         </div>
         <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="400">
-          <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px; background-color: red">Submit</button>
+          <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px; background-color: blach; color: whitesmoke">Submit</button>
           <div id="msgSubmit" class="h5 text-center boxCol fit-content" style="visibility: hidden;">.</div>
         </div>
       </form>
@@ -54,7 +54,6 @@
       var subtitle = $("#subtitle").val();
       var ingredients = $("#ingredients").val();
       var method = $("#method").val();
-      console.log(method);
       $.ajax({
         type: "POST",
         url: "/recipe-submit/",
