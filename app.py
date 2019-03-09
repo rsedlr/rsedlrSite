@@ -262,6 +262,7 @@ def dadsGift():
 
 
 @route('/recipe-maker')
+@route('/recipe-maker/')
 def recipeMaker():
   global key
   # username = request.get_cookie("account", secret=key)
