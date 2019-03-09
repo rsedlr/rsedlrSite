@@ -275,6 +275,7 @@ def recipeMaker():
 
 @route('/recipe-submit/', method='POST')
 def recipeSubmit():
+  print('baljfds')
   try:
     title = request.forms.get('title')
     subtitle = request.forms.get('subtitle')
