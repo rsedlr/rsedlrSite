@@ -270,7 +270,7 @@ def recipeMaker():
   #   return template('galsrecipes-maker')
   # else:
   #   return redirect('/') 
-  return template('HELLLOOOOOOOOOOOO')
+  return 'HELLLOOOOOOOOOOOO'
 
 
 @route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])
