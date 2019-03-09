@@ -277,10 +277,10 @@ def recipeMaker():
 def recipeSubmit():
   print('baljfds')
   try:
-    title = request.forms.get('title')
-    subtitle = request.forms.get('subtitle')
-    ingredients = request.forms.get('ingredients')
-    method = request.forms.get('method')
+    title = request.forms.get('title') or 'empty'
+    subtitle = request.forms.get('subtitle') or 'empty'
+    ingredients = request.forms.get('ingredients') or 'empty'
+    method = request.forms.get('method') or 'empty'
     print(method)
   except Exception as e:
     print(e)

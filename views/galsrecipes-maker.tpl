@@ -15,6 +15,7 @@
   </head>
   <body>
     <div id="main" class="boxCol" style="padding: 50px 80px;">
+      <h1>Recipe Maker</h1>
       <form role="form" id="contactForm">
         <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="150" class="row">
           <div class="form-group col-sm-6">
