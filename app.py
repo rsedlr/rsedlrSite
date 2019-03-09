@@ -274,7 +274,7 @@ def recipeMaker():
   if password == 'test' and title == None:
     response.set_cookie("userR", 'yes', secret=key)  # , username
     return template('galsrecipes-maker')
-  elif password == 'test:
+  elif password == 'test':
     response.set_cookie("userR", 'yes', secret=key)  # , username
     return 'hello'
   elif password != None:
