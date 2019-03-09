@@ -261,6 +261,17 @@ def dadsGift():
 ''' --------------- christmas card end --------------- '''
 
 
+@route('/recipe-maker')
+def recipeMaker():
+  global key
+  # username = request.get_cookie("account", secret=key)
+  # if username:
+  #   return template('galsrecipes-maker')
+  # else:
+  #   return redirect('/') 
+  return template('HELLLOOOOOOOOOOOO')
+
+
 @route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])
 def gitPull():
   git.cmd.Git('/var/www/rsedlrSite').pull()
