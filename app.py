@@ -261,16 +261,18 @@ def dadsGift():
 ''' --------------- christmas card end --------------- '''
 
 
-@route('/recipe-maker')
-@route('/recipe-maker/')
+@route('/recipe-maker', method=["POST","GET"])
+@route('/recipe-maker/', method=["POST","GET"])
 def recipeMaker():
   global key
-  # username = request.get_cookie("account", secret=key)
-  # if username:
-  #   return template('galsrecipes-maker')
-  # else:
-  #   return redirect('/') 
-  return 'HELLLOOOOOOOOOOOO'
+  password = request.forms.get('password')
+  if password == 'test':
+    response.set_cookie("userR", 'yes', secret=key)  # , username
+    return template('galsrecipes-maker')
+  elif password != None:
+    return template('galsrecipes-login', error='Incorrect password')
+  return template('galsrecipes-login', error=None)
+
 
 
 @route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])
