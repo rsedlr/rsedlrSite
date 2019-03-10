@@ -256,31 +256,6 @@ def dadsGift():
 ''' --------------- christmas card end --------------- '''
 
 
-@route('/recipe-maker', method=["POST","GET"])
-@route('/recipe-maker/', method=["POST","GET"])
-def recipeMaker():
-  global key
-  password = request.forms.get('password')
-  if password == 'test':
-    response.set_cookie("userR", 'yes', secret=key)  # , username
-    return template('galsrecipes-maker')
-  elif password != None:
-    return template('galsrecipes-login', error='Incorrect password')
-  return template('galsrecipes-login', error=None)
-
-@route('/recipe-submit/', method='POST')
-def recipeSubmit():
-  try:
-    title = request.forms.get('title') or 'empty'
-    subtitle = request.forms.get('subtitle') or 'empty'
-    ingredients = request.forms.get('ingredients') or 'empty'
-    method = request.forms.get('method') or 'empty'
-    f = open('../galsrecipes.com/recipes.txt', "r+")
-    print(f.readline())
-  except Exception as e:
-    print(e)
-
-
 @route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])
 def gitPull():
   git.cmd.Git('/var/www/rsedlrSite').pull()
