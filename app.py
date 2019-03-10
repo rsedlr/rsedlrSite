@@ -1,14 +1,8 @@
 # -*- coding: utf-8 -*-
-import os, subprocess, sys, smtplib  # , serial
+import os, subprocess, sys, smtplib, bottle, sqlite3, logging  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
 from christmasMessages import cardMessage, cardMessageDemo
-# import wsgiserver
-import bottle
-# from cherrypy import wsgiserver
-# from cherrypy.wsgiserver import CherryPyWSGIServer
-# from cherrypy.process.servers import ServerAdapter
-import logging
 
 try:
   import cherrypy
@@ -79,6 +73,7 @@ def test():
 # @route('/about')
 # def about():
 #   return template('about')
+
 
 @route('/contact', method='POST')
 def contact():
@@ -301,7 +296,7 @@ if __name__ == '__main__':
   port = 3000  # 80
   host = '127.0.0.1'  # '0.0.0.0'
   if dev:
-    run(host='127.0.0.1', port=8080, reloader=True, threaded=True, debug=False)  # 127.0.0.1
+    run(host='127.0.0.1', port=8080, reloader=True, threaded=True, debug=True)  # 127.0.0.1
   else:
     try:
       run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
