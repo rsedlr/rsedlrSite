@@ -25,6 +25,13 @@ try:
 except:
   dev = False
 
+try:
+  file = open('info.txt', 'r')
+  info = file.read()
+  file.close()
+except:
+  info = 'test'
+
 demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
 
@@ -50,6 +57,7 @@ def error404(error):
 #   return template('error404')
 
 
+@route('/static/<filepath:path>') 
 @route('/staticIco/<filepath:path>')  # /static/
 def server_static(filepath):
   return static_file(filepath, root='./templates')
@@ -91,7 +99,7 @@ def contact():
     msg.attach(MIMEText(body, 'plain'))
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(fromaddr, "Blackbeard3")
+    server.login(fromaddr, info)
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
@@ -256,7 +264,7 @@ def dadsGift():
 ''' --------------- christmas card end --------------- '''
 
 
-@route('/h162bs5dkjwels9f74nc7r64', method=['POST','GET'])
+@route('/h162bs5dkjwels9f74nc7r64', method='POST')
 def gitPull():
   git.cmd.Git('/var/www/rsedlrSite').pull()
   # git.cmd.Git('/var/www/rsedlrSite').fetch()
