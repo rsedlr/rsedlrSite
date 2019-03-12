@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>|
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>¯\_(ツ)_/¯</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
