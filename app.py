@@ -63,6 +63,11 @@ def server_static(filepath):
   return static_file(filepath, root='./templates')
 
 
+@route('/sitemap') 
+def serveSitemap():
+  return static_file('sitemap.xml', root='./templates')
+
+
 @route('/')
 def main():
   return template('main')
