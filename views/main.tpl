@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="keyword1, keyword2">
+    <meta name="description" content=" description.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <meta name="description" content=""> -->
     <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
