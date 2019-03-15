@@ -13,8 +13,10 @@
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
   </head>
   <body>
-    <div id="main" class="boxCol" style="padding: 50px 80px;">
-      <h1 style="font-size: 100px; font-weight: 800; color: black">Nothing here,<br>sorry <span style="line-height: 150px; display: contents;">¯\_(ツ)_/¯</span></h1>
+    <div>
+      <div id="main" class="boxCol" style="padding: 50px 80px;">
+        <h1 style="font-size: 100px; font-weight: 800; color: black">Nothing here,<br>sorry <span style="line-height: 150px; display: contents;">¯\_(ツ)_/¯</span></h1>
+      </div>
     </div>
   </body>
 </html>
