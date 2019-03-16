@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noindex">
 <head>
   <title>Heating</title>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>

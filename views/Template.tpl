@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<meta name="robots" content="noindex">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>boop</title>
 <head>

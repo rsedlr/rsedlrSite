@@ -4,6 +4,7 @@
   <head>
     <title>Evil-Corp</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <meta name="robots" content="noindex">
     % include('templates/links.html')
     % import os ; snowJS = os.path.getsize("templates/snow.js") ; controlJS = os.path.getsize("templates/control.js") ; controlCSS = os.path.getsize("templates/control.css")
     <link rel="stylesheet" type="text/css" href="/static/control.css?filever={{controlCSS}}">

@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="en">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<head>
+  <head>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     % include('templates/links.html')
   <link rel="stylesheet" type="text/css" href="/static/hStylesheet.css">
 	<title>Helen's list</title>
-	<script type="text/javascript">
-
-	</script>
 	<body>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
     % include('templates/h-header.html')

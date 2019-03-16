@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<meta name="robots" content="noindex">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
