@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta name="robots" content="noindex">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
     body {

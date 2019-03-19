@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <head>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>login</title>
   </head>   
   <body> 
