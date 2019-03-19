@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portfolio of a computer science student.">
+    <meta name="description" content="Portfolio of an computer science student.">
+    <meta name="keywords" content="Portfolio, Reiss Edler">
     <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
     <title>Reiss Edler - Personal Portfolio</title>
     <link rel="icon" href="/staticIco/pic/favicon.png" type="image/x-icon">
