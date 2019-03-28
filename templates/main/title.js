@@ -78,5 +78,5 @@ $(document).ready(function () {
 
   window.addEventListener('resize', hideTitle);
   hideTitle();
-  createText(1200);
+  createText(900);
 });
