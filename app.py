@@ -68,6 +68,11 @@ def serveSitemap():
   return static_file('sitemap.xml', root='./templates')
 
 
+@route('/computing-writeup')  # TEMP
+def computing():
+  return 'https://1drv.ms/f/s!Al19yIlgeZ-ThaYPL_m5cExbzMjmBg'
+
+
 @route('/')
 def main():
   return template('main')
