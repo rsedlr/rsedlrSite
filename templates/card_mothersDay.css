@@ -14,7 +14,10 @@ html, body {
 
 html {
   background-color: rgb(78, 0, 52);
-  background-image: url('/static/pic/flower3.jpg'), url('/static/pic/flower5.jpg'), url('/static/pic/flower1.jpg'), url('/static/pic/flower4.jpg');
+  background-image: url('/static/pic/flowers/flower3-min.jpg'), 
+                    url('/static/pic/flowers/flower5-min.jpg'), 
+                    url('/static/pic/flowers/flower1-min.jpg'), 
+                    url('/static/pic/flowers/flower4-min.jpg');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top left, top right, bottom left, bottom right;
   background-size: 50% 50%;
