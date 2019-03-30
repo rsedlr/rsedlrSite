@@ -11,9 +11,9 @@ html, body {
 html {
   background-color: rgb(12, 78, 14);
   background-image: url('/static/pic/wallpaper-clear-v2.png');
-  background-size: 610px 155px;
+  background-size: 40% auto;
   background-repeat: repeat;
-  background-position: 0 26px;
+  background-position: 0 20px;
 }
 
 body {
@@ -100,6 +100,7 @@ header.masthead .device-container {
   transform-style: preserve-3d;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
 }
+
 @media (max-width: 550px) {
   .wrap {
     height: 30rem;

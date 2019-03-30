@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+:root {
+  --main-col: rgb(158, 0, 66);  /* rgb(255, 0, 170) */
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+html {
+  background-color: rgb(78, 0, 52);
+  background-image: url('/static/pic/flower3.jpg'), url('/static/pic/flower5.jpg'), url('/static/pic/flower1.jpg'), url('/static/pic/flower4.jpg');
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, bottom left, bottom right;
+  background-size: 50% 50%;
+}
+
+body {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+h2 {
+  /* font-family: "Dancing Script", serif; */
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--main-col); 
+  text-align: center;
+}
+
+section {
+  min-height: 100vh;
+}
+
+header.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* padding-top: 150px; */
+  /* padding-bottom: 100px; */
+}
+header.masthead .header-content {
+  /* max-width: 500px; */
+  margin-bottom: 100px;
+  text-align: center;
+}
+header.masthead .device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width: 998px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead .device-container {
+    max-width: 325px;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrapperWrap {
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -16.5rem;
+  left: 50%;
+  margin-left: -14rem;
+}
+
+.wrap {
+  width: 28rem;
+  height: 33rem;
+  margin: auto;
+  position: relative;
+  transform: rotateX(15deg);
+  transform: translateZ(50px);
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 550px) {
+  .wrap {
+    height: 30rem;
+    width: 20rem;
+  }
+  #wrapperWrap {
+    margin-top: -15rem;
+    margin-left: -10rem;
+  }
+}
+@media (max-width: 400px) {
+  #cardFrontMessage {
+    font-size: 3rem !important;
+  }
+  #cardMainMessage {
+    font-size: 23px !important;
+  }
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+  border: 8px solid var(--main-col);
+  text-align: center;
+}
+.card--front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card--front.open {
+  transform: rotateY(-180deg);
+}
+.card--front.back {
+  z-index: 0;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+.card--inner {
+  overflow: hidden;
+  padding: 15px;
+}
+.card--inner h2 {
+  font-size: 32px;
+}
+.card--inner.open:before {
+  transform: translateX(-155%);
+  opacity: 0.1;
+}
+.card--inner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+

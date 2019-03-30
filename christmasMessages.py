@@ -143,3 +143,57 @@ def cardMessageDemo(name):
   else:
     message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
   return message
+
+def MothersMessage(name):
+  nameUp = name.upper()
+  prefix = ['MR', 'DR' 'MS', 'MRS', 'MISS']   
+  namePref = name.split(' ')[0]
+  if namePref.upper() not in prefix:      #only splits if no prefix is present at start of name
+    name = name.split(' ')[0]
+  messageTpl = '''
+      %s<br><br>
+      <br>     
+      Happy<br>
+      Mothers Day!<br>
+      %s
+      <br><br><br>
+      %s
+      '''
+  if nameUp == 'MUM':
+    message = '''
+      To Mum,<br>
+      <br>     
+      Have a great day,<br>
+      You deserve it!<br>
+      <br>
+      Hope you aint bored of the e-cards yet :)<br>
+      <br>
+      Love, as always,<br>
+      from Reiss xxx
+      ''' 
+  elif nameUp == 'NANNY M':
+    message = '''
+      To Nanny Maggie,<br><br>
+      <br>     
+      Hope you have<br>
+      a great day!<br>
+      <br>
+      Sorry if you dont like the colours :/<br>
+      <br>
+      Love from Reiss xxx
+      ''' 
+  elif nameUp == 'NANNY A':
+    message = '''
+      To Nanny Anne,<br><br>
+      <br>     
+      Hope you have<br>
+      a great day!<br>
+      <br>
+      I'll have to<br>
+      see you soon :)<br>
+      <br>
+      Lots of love from Reiss xxx
+      ''' 
+  else:
+    message = messageTpl % ((name + ',') if name != '' else '', '<br><br><br>', 'From Reiss')
+  return message

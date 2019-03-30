@@ -2,7 +2,7 @@
 import os, subprocess, sys, smtplib, bottle, sqlite3, logging  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
-from christmasMessages import cardMessage, cardMessageDemo
+from christmasMessages import cardMessage, cardMessageDemo, MothersMessage
 
 try:
   import cherrypy
@@ -208,7 +208,7 @@ def TextRepeater():
   return template('TextRepeater')
 
 ''' ------------- heat control demo stuff end ------------- '''
-''' --------------- christmas card start --------------- '''
+''' --------------- card start --------------- '''
 
 @route('/christmas')
 @route('/christmas/')
@@ -239,10 +239,18 @@ def christmas(name=''):
     colour = None
   return template('christmasCardDemo', name=name, colour=colour, message=message)
 
+@route('/MothersDay>')
+@route('/MothersDay/')
+@route('/MothersDay/<name>')
+def MumsDay(name=''):
+  name = name.replace('_', ' ')
+  message = MothersMessage(name)
+  return template('card_mothersDay', name=name, message=message)
 
-@route('/shhhnoonecanknowiusethis')
-def shhh():
-  return template('wrappingPaper')
+
+# @route('/shhhnoonecanknowiusethis')
+# def shhh():
+#   return template('wrappingPaper')
 
 
 # @route('/wallpaper')
@@ -271,7 +279,7 @@ def dadsGift():
   else:
     return redirect('dadsLogin')
 
-''' --------------- christmas card end --------------- '''
+''' --------------- card end --------------- '''
 
 
 @route('/h162bs5dkjwels9f74nc7r64', method='POST')
