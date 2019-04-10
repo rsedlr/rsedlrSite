@@ -59,6 +59,9 @@ $(document).ready(function () {
   $("#HeatDemoBtn").click(function() {
     window.location.href = '/heatDemo';
   });
+  $("#othBtn").click(function() {
+    window.location.href = '/ComputingProject/';
+  }); 
   $("#christmasCardBtn").click(function() {
     window.location.href = '/christmasDemo';
   }); 
