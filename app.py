@@ -113,7 +113,7 @@ def contact():
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
-  print('\n************ Email Sent! ************\n')
+    print('\n************ Email Sent! ************\n')
   except Exception as e:
     print(e)
 
