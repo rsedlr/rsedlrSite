@@ -116,6 +116,9 @@ def contact():
     print('\n************ Email Sent! ************\n')
   except Exception as e:
     print(e)
+  el = open('emilLog.txt', 'a')
+  el.writelines('Portfolio contact from %s,\n %s \n\n\n'%(name,message))
+  el.close()
 
 ''' ------------- heat control demo stuff ------------- '''
 
