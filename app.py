@@ -119,7 +119,6 @@ def contact():
   el = open('emailLog.txt', 'a')
   el.writelines('Portfolio contact from %s,\n %s \n\n\n'%(name,message))
   el.close()
-  print('saved to log')
 
 ''' ------------- heat control demo stuff ------------- '''
 
