@@ -1,188 +1,188 @@
 <div id="picModal" class="img-modal" style="height: 100%;">
-    <span class="img-close">&times;</span>
-    <img class="img-modal-content" id="modalImg">
-    <!-- <div id="caption"></div> -->
-    <div class="modal-content" id="heatModal">
-      <div class="modal-header">
-        <!-- <span class="close">&times;</span> -->
-        <h2>Remote Heating Control</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          Around the time i started this project, hive heating systems were first being advertised (for quite a price may i add) so i wondered if the same functionality could be achieved for a lot less. <br><br>
-          The site is hosted on one of my Raspberry Pi 3's located above my boiler. When a functional button is pressed a signal is sent asynchronously (meaning in the background, without a page refresh) to the server, which then does what is required to fulfil the task. Sometimes this is as simple as toggling a GPIO pin which is connected to a relay, thus turning whatever the relay is wired to on (like the main heating button). Other times it could be more complicated than this, such as sending a command to another raspberry Pi located in another room (or even another house) which then in turn carries out its own procedure to complete the task.<br><br>
-          In its current state, my home control system allows control of:<br>
-          -My heating (along with temperature control through an Arduino which controls a stepper motor connected to a heating knob)<br>
-          -My mother's heating (located elsewhere so my Pi has to send commands over an SSH connection)<br>
-          -The lights in my room (also connected to another Pi so commands have to be sent through SSH again)<br>
-          -A set of addressable LEDs around my monitors in my room (can be turned on, off and have the colour changed also. The colour is changed through sending commands across a USB serial connection to an arduino running the FastLED library)<br>
-          -My desktop PC can be turned on or off (through a relay connected the header of its motherboard which toggles for 1 second, recreating a button press)<br>
-          -Some spare PC fans i had after building my PC which are now suspended above my monitors to keep me cool in the summer
-        </p>
-      </div>
+  <span class="img-close">&times;</span>
+  <img class="img-modal-content" id="modalImg">
+  <!-- <div id="caption"></div> -->
+  <div class="modal-content" id="heatModal">
+    <div class="modal-header">
+      <!-- <span class="close">&times;</span> -->
+      <h2>Remote Heating Control</h2>
     </div>
-    <div class="modal-content" id="othModal">
-      <div class="modal-header">
-        <h2>Othello.js</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          Board games are great entertainment but the relatively recent rise of technology has made them obsolete for many applications; They're not portable enough to be played anywhere except at home and loosing pieces easily ruins the game. A digital version would suffer from none of these issues while still offering the same levels of entertainment. This is why I decided to make a web-based version of Othello (also known as Reversi). <br><br>
-          The main objective of Othello is to own as many pieces on the board as possible at the end of the game. This can be achieved by surrounding an opponent's piece (or pieces) with one of yours either side (this works vertically, horizontally and diagonally). <br><br>
-          My interpretation of Othello is produced in pure JavaScript. It works by creating the html board by iterating over its rows and columns. Then, it assesses the board and allows all squares that would be an acceptable move clickable and changes the squares colour appropriately to illustrate this to the user. 
-        </p>
-      </div>
-    </div>
-    <div class="modal-content" id="othModal">
-      <div class="modal-header">
-        <h2>Android and IOS Games</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          This was another early project of mine. I had previously only programmed some basic python scripts and a few for Arduino. Games were always something that interested me and at the time (age  roughly) gaming was a big hobby of mine. I knew 3D open world adventure games were a bit out of my league so I decided to attempt to make a basic phone game on the Unity engine (mainly because it used C# which is similar to Java, one of the most popular languages currently used).  <br><br>
-          Even though the games never made it to release, I learnt a lot through the development and may someday finish them, when I have more free time.
-        </p>
-      </div>
-    </div>
-    <div class="modal-content" id="pyGameModal">
-      <div class="modal-header">
-        <h2>Text Based Python Game</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          To grasp Object Oriented Programming concepts more thoroughly, we decided to make a short text based game in python; after all the best way to learn in programming is by doing.<br><br>
-          In all honesty, the hardest part about making the game was coming up with names for characters and what they should say, particularly when doing it on something with such a massive fanbase of devoted enthusiasts like the lord of the rings.<br><br>
-          As it was a text based game, we had to devise a less conventional movement and interaction system compared to modern 3D visual games that we see commonly today. <br><br>
-          Another problem we faced was difficulty, the player is not required to skillfully maneuver a car around a racetrack or shoot a baddie in the face from afar as its a text game; so how do we stop it from becoming boring due to a lack of challenge? <br><br>
-          Our solution was to not reveal excessive information, to keep the player thinking, and to make it perma-death with one wrong move instantly causing the end for your character and a fresh start required, so that there is still a buzz about getting through a section.
-        </p>
-      </div>
-    </div>
-    <div class="modal-content" id="christmasCardModal">
-      <div class="modal-header">
-        <h2>Virtual Christmas Cards</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          Christmas cards can be quite laborious and none of them ever seem particularly original. So, to solve such a monumental issue within society I decided to make a virtual christmas card hosted on my portfolio site. This card can be easily addressed with minimal effort and no code modifications.<br><br>
-          It takes the value after ‘/christmas/’ in the url and replaces any underscores with a space and uses that value as the card’s recipient name. It also runs the name through a prefix algorithm i created to not treat the prefix as a first name so that the card is addressed to “Mr name,” not just “Mr,”.<br><br>          The card itself is fairly simple, just a couple of rectangles that rotate on click with a shadow. Depending on the screen size, the card fills the screen differently so that it can be viewed on any form factor.
-        </p>
-      </div>
-    </div>
-    <div class="modal-content" id="instaBotModal">
-      <div class="modal-header">
-        <h2>Instagram Bot</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>content</p>
-        <br><br><br>
-      </div>
-    </div>
-    <div class="modal-content" id="thisSiteModal">
-      <div class="modal-header">
-        <h2>This website itself</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          After successfully implementing my home control website, I wanted to further my web development knowledge and as the best way to learn (when it comes to programming) is by doing, I decided to make this site. <br><br>
-          The site was built using JavaScript (and jQuery) to handle the client-side actions (such as the animated text that cascades down on page load) and (a lot of) CSS to style the page. <a href=”https://getbootstrap.com/">Bootstrap</a> was also used to cleanly transition the page onto different screen form factors. AOS (Animate On Scroll) is a JavaScript library I used for all the scroll animations. <br><br>
-          As you may have noticed, fairly bold colour scheme of red/orange and purple (my two favourite colours) is used but as I intended this site to appear professional, I made sure to refine the theme to still contain my ideal colours while not causing the user any visual discomfort. <br><br>
-          I contemplated using another backend framework to my home control site (which currently uses <a href=”https://bottlepy.org/docs/dev/">Bottle</a>, a python micro-framework), such as <a href= “https://www.djangoproject.com/">Django</a> or <a href= “https://nodejs.org/en/about/">Node.js</a>, so that I would get a broader understanding of how everything works. However, as one of the intended uses for this site was to host demos of my other work and that would only be feasible with Bottle. Besides, I would rather gain a deeper knowledge of one framework so that I know it inside out and can solve more advanced problems before learning others. <br><br>
-          It is hosted on my ubuntu server at home (so hopefully it doesn’t get extortionate levels of traffic else I might be getting phone calls from my dad complaining that he can't stream his shows) which runs <a href”https://www.nginx.com/">Nginx</a> (webserver software) to fetch the static files, such as images, much faster than the bottle program is able to. I also use Nginx to direct traffic to a few of my <a href=”https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/">RaspberryPi’s</a> which host other sites but due to the router being on a different TCP/IP layer to check domain names all port 80 traffic has to be sent to one machine which then directs unwanted traffic to its destination. <br><br>
-          To reduce bandwidth consumption and, more importantly, increase page load speed, gzip is used to compress the page data before it is decompressed on the client side by the browser. Additionally, the images are all compressed prior to sending to further reduce load times and reduce the server’s workload. Overall, this caused a dramatic improvement in page load times (from about 10 seconds to 3 in my testing) and helped to improve my page’s search engine status, allowing it to be indexed above the many ‘Reiss’ (the clothing brand) links that appear when my name is searched.
-        </p>
-      </div>
-    </div>
-    <div class="modal-content" id="rfidDoorModal"> 
-      <div class="modal-header">
-        <h2>RFID Door Lock</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>content</p>
-        <br><br><br>
-      </div>
-    </div>
-    <div class="modal-content" id="plantWatererModal">
-      <div class="modal-header">
-        <h2>Automated Plant Waterer</h2>
-      </div>
-      <div class="modal-body">
-        My orange plant tended to get left for long periods of time without water when I was away from home. To solve this, I hooked a water pump up to an Arduino running a simple code that powers the pump every 6 hours to supply my plant with sufficient water.  <br><br>
-        This was one of my first projects as a kid and it still (somehow) works today, although I might need to rebuild the frame with something more mature than LEGO. <br><br>
-        Eventually I want to implement a soil dampness sensor which would adapt how much water the plant receives to keep its soil at optimum levels but other projects have taken priority so far. 
-      </div>
-    </div>
-    <div class="modal-content" id="rcCarModal" >
-      <div class="modal-header">
-        <h2>Autonomous RC Car</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>content</p>
-        <br><br><br>
-      </div>
-    </div>
-    <div class="modal-content" id="raspiModal">
-      <div class="modal-header">
-        <h2>Raspberry Pi Obsession</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>content</p>
-        <br><br><br>
-      </div>
-    </div>
-    <div class="modal-content" id="networkModal">
-      <div class="modal-header">
-        <h2>Basic Networking</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>content</p>
-        <br><br><br>
-      </div>
-    </div>
-    <div class="modal-content" id="blModal">
-      <div class="modal-header">
-        <h2>Building Status Report System</h2>
-      </div>
-      <div class="modal-body">
-        For my year 10 work experience (age 14-15) I went to Sky Telecommunications to work in the DevOps team. They assigned me to work on something I thought would benefit the office. Lots of staff joked about how the building is always falling apart so I thought I should build a system that allows staff to go to a site on their device and report any faulty appliance or building component. <br><br>
-        The website was fairly basic but given this was the first website I had ever made and my short time frame of 2 weeks I decided to prioritise practicality over appearance.  <br><br>
-        To be continued... 
-      </div>
-    </div>
-    <div class="modal-content" id="linuxModal">
-      <div class="modal-header">
-        <h2>Linux Interest</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>content</p>
-        <br><br><br>
-      </div>
-    </div>
-    <div class="modal-content" id="subMentModal">
-      <div class="modal-header">
-        <h2>Subject mentour</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>content</p>
-        <br><br><br>
-      </div>
-    </div>
-    <div class="modal-content" id="enrichmentModal">
-      <div class="modal-header">
-        <h2>enrichments</h2>
-      </div>
-      <div class="modal-body">
-        <br><br><br>
-        <p>Helping run a raspberry pi club and taking part in a robotics club during my free time at Beths Grammar to</p>
-        <p>I am a subject mentour for Computer science at my school for the lower years. This mainly involves helping them with their GCSE coursework code or theory.</p>
-        <br><br><br>
-      </div>
+    <div class="modal-body">
+      <p>
+        Around the time i started this project, hive heating systems were first being advertised (for quite a price may i add) so i wondered if the same functionality could be achieved for a lot less. <br><br>
+        The site is hosted on one of my Raspberry Pi 3's located above my boiler. When a functional button is pressed a signal is sent asynchronously (meaning in the background, without a page refresh) to the server, which then does what is required to fulfil the task. Sometimes this is as simple as toggling a GPIO pin which is connected to a relay, thus turning whatever the relay is wired to on (like the main heating button). Other times it could be more complicated than this, such as sending a command to another raspberry Pi located in another room (or even another house) which then in turn carries out its own procedure to complete the task.<br><br>
+        In its current state, my home control system allows control of:<br>
+        -My heating (along with temperature control through an Arduino which controls a stepper motor connected to a heating knob)<br>
+        -My mother's heating (located elsewhere so my Pi has to send commands over an SSH connection)<br>
+        -The lights in my room (also connected to another Pi so commands have to be sent through SSH again)<br>
+        -A set of addressable LEDs around my monitors in my room (can be turned on, off and have the colour changed also. The colour is changed through sending commands across a USB serial connection to an arduino running the FastLED library)<br>
+        -My desktop PC can be turned on or off (through a relay connected the header of its motherboard which toggles for 1 second, recreating a button press)<br>
+        -Some spare PC fans i had after building my PC which are now suspended above my monitors to keep me cool in the summer
+      </p>
     </div>
   </div>
+  <div class="modal-content" id="othModal">
+    <div class="modal-header">
+      <h2>Othello.js</h2>
+    </div>
+    <div class="modal-body">
+      <p>
+        Board games are great entertainment but the relatively recent rise of technology has made them obsolete for many applications; They're not portable enough to be played anywhere except at home and loosing pieces easily ruins the game. A digital version would suffer from none of these issues while still offering the same levels of entertainment. This is why I decided to make a web-based version of Othello (also known as Reversi). <br><br>
+        The main objective of Othello is to own as many pieces on the board as possible at the end of the game. This can be achieved by surrounding an opponent's piece (or pieces) with one of yours either side (this works vertically, horizontally and diagonally). <br><br>
+        My interpretation of Othello is produced in pure JavaScript. It works by creating the html board by iterating over its rows and columns. Then, it assesses the board and allows all squares that would be an acceptable move clickable and changes the squares colour appropriately to illustrate this to the user. 
+      </p>
+    </div>
+  </div>
+  <div class="modal-content" id="othModal">
+    <div class="modal-header">
+      <h2>Android and IOS Games</h2>
+    </div>
+    <div class="modal-body">
+      <p>
+        This was another early project of mine. I had previously only programmed some basic python scripts and a few for Arduino. Games were always something that interested me and at the time (age  roughly) gaming was a big hobby of mine. I knew 3D open world adventure games were a bit out of my league so I decided to attempt to make a basic phone game on the Unity engine (mainly because it used C# which is similar to Java, one of the most popular languages currently used).  <br><br>
+        Even though the games never made it to release, I learnt a lot through the development and may someday finish them, when I have more free time.
+      </p>
+    </div>
+  </div>
+  <div class="modal-content" id="pyGameModal">
+    <div class="modal-header">
+      <h2>Text Based Python Game</h2>
+    </div>
+    <div class="modal-body">
+      <p>
+        To grasp Object Oriented Programming concepts more thoroughly, we decided to make a short text based game in python; after all the best way to learn in programming is by doing.<br><br>
+        In all honesty, the hardest part about making the game was coming up with names for characters and what they should say, particularly when doing it on something with such a massive fanbase of devoted enthusiasts like the lord of the rings.<br><br>
+        As it was a text based game, we had to devise a less conventional movement and interaction system compared to modern 3D visual games that we see commonly today. <br><br>
+        Another problem we faced was difficulty, the player is not required to skillfully maneuver a car around a racetrack or shoot a baddie in the face from afar as its a text game; so how do we stop it from becoming boring due to a lack of challenge? <br><br>
+        Our solution was to not reveal excessive information, to keep the player thinking, and to make it perma-death with one wrong move instantly causing the end for your character and a fresh start required, so that there is still a buzz about getting through a section.
+      </p>
+    </div>
+  </div>
+  <div class="modal-content" id="christmasCardModal">
+    <div class="modal-header">
+      <h2>Virtual Christmas Cards</h2>
+    </div>
+    <div class="modal-body">
+      <p>
+        Christmas cards can be quite laborious and none of them ever seem particularly original. So, to solve such a monumental issue within society I decided to make a virtual christmas card hosted on my portfolio site. This card can be easily addressed with minimal effort and no code modifications.<br><br>
+        It takes the value after ‘/christmas/’ in the url and replaces any underscores with a space and uses that value as the card’s recipient name. It also runs the name through a prefix algorithm i created to not treat the prefix as a first name so that the card is addressed to “Mr name,” not just “Mr,”.<br><br>          The card itself is fairly simple, just a couple of rectangles that rotate on click with a shadow. Depending on the screen size, the card fills the screen differently so that it can be viewed on any form factor.
+      </p>
+    </div>
+  </div>
+  <div class="modal-content" id="instaBotModal">
+    <div class="modal-header">
+      <h2>Instagram Bot</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>content</p>
+      <br><br><br>
+    </div>
+  </div>
+  <div class="modal-content" id="thisSiteModal">
+    <div class="modal-header">
+      <h2>This website itself</h2>
+    </div>
+    <div class="modal-body">
+      <p>
+        After successfully implementing my home control website, I wanted to further my web development knowledge and as the best way to learn (when it comes to programming) is by doing, I decided to make this site. <br><br>
+        The site was built using JavaScript (and jQuery) to handle the client-side actions (such as the animated text that cascades down on page load) and (a lot of) CSS to style the page. <a href=”https://getbootstrap.com/">Bootstrap</a> was also used to cleanly transition the page onto different screen form factors. AOS (Animate On Scroll) is a JavaScript library I used for all the scroll animations. <br><br>
+        As you may have noticed, fairly bold colour scheme of red/orange and purple (my two favourite colours) is used but as I intended this site to appear professional, I made sure to refine the theme to still contain my ideal colours while not causing the user any visual discomfort. <br><br>
+        I contemplated using another backend framework to my home control site (which currently uses <a href=”https://bottlepy.org/docs/dev/">Bottle</a>, a python micro-framework), such as <a href= “https://www.djangoproject.com/">Django</a> or <a href= “https://nodejs.org/en/about/">Node.js</a>, so that I would get a broader understanding of how everything works. However, as one of the intended uses for this site was to host demos of my other work and that would only be feasible with Bottle. Besides, I would rather gain a deeper knowledge of one framework so that I know it inside out and can solve more advanced problems before learning others. <br><br>
+        It is hosted on my ubuntu server at home (so hopefully it doesn’t get extortionate levels of traffic else I might be getting phone calls from my dad complaining that he can't stream his shows) which runs <a href”https://www.nginx.com/">Nginx</a> (webserver software) to fetch the static files, such as images, much faster than the bottle program is able to. I also use Nginx to direct traffic to a few of my <a href=”https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/">RaspberryPi’s</a> which host other sites but due to the router being on a different TCP/IP layer to check domain names all port 80 traffic has to be sent to one machine which then directs unwanted traffic to its destination. <br><br>
+        To reduce bandwidth consumption and, more importantly, increase page load speed, gzip is used to compress the page data before it is decompressed on the client side by the browser. Additionally, the images are all compressed prior to sending to further reduce load times and reduce the server’s workload. Overall, this caused a dramatic improvement in page load times (from about 10 seconds to 3 in my testing) and helped to improve my page’s search engine status, allowing it to be indexed above the many ‘Reiss’ (the clothing brand) links that appear when my name is searched.
+      </p>
+    </div>
+  </div>
+  <div class="modal-content" id="rfidDoorModal"> 
+    <div class="modal-header">
+      <h2>RFID Door Lock</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>content</p>
+      <br><br><br>
+    </div>
+  </div>
+  <div class="modal-content" id="plantWatererModal">
+    <div class="modal-header">
+      <h2>Automated Plant Waterer</h2>
+    </div>
+    <div class="modal-body">
+      My orange plant tended to get left for long periods of time without water when I was away from home. To solve this, I hooked a water pump up to an Arduino running a simple code that powers the pump every 6 hours to supply my plant with sufficient water.  <br><br>
+      This was one of my first projects as a kid and it still (somehow) works today, although I might need to rebuild the frame with something more mature than LEGO. <br><br>
+      Eventually I want to implement a soil dampness sensor which would adapt how much water the plant receives to keep its soil at optimum levels but other projects have taken priority so far. 
+    </div>
+  </div>
+  <div class="modal-content" id="rcCarModal" >
+    <div class="modal-header">
+      <h2>Autonomous RC Car</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>content</p>
+      <br><br><br>
+    </div>
+  </div>
+  <div class="modal-content" id="raspiModal">
+    <div class="modal-header">
+      <h2>Raspberry Pi Obsession</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>content</p>
+      <br><br><br>
+    </div>
+  </div>
+  <div class="modal-content" id="networkModal">
+    <div class="modal-header">
+      <h2>Basic Networking</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>content</p>
+      <br><br><br>
+    </div>
+  </div>
+  <div class="modal-content" id="blModal">
+    <div class="modal-header">
+      <h2>Building Status Report System</h2>
+    </div>
+    <div class="modal-body">
+      For my year 10 work experience (age 14-15) I went to Sky Telecommunications to work in the DevOps team. They assigned me to work on something I thought would benefit the office. Lots of staff joked about how the building is always falling apart so I thought I should build a system that allows staff to go to a site on their device and report any faulty appliance or building component. <br><br>
+      The website was fairly basic but given this was the first website I had ever made and my short time frame of 2 weeks I decided to prioritise practicality over appearance.  <br><br>
+      To be continued... 
+    </div>
+  </div>
+  <div class="modal-content" id="linuxModal">
+    <div class="modal-header">
+      <h2>Linux Interest</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>content</p>
+      <br><br><br>
+    </div>
+  </div>
+  <div class="modal-content" id="subMentModal">
+    <div class="modal-header">
+      <h2>Subject mentour</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>content</p>
+      <br><br><br>
+    </div>
+  </div>
+  <div class="modal-content" id="enrichmentModal">
+    <div class="modal-header">
+      <h2>enrichments</h2>
+    </div>
+    <div class="modal-body">
+      <br><br><br>
+      <p>Helping run a raspberry pi club and taking part in a robotics club during my free time at Beths Grammar to</p>
+      <p>I am a subject mentour for Computer science at my school for the lower years. This mainly involves helping them with their GCSE coursework code or theory.</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
