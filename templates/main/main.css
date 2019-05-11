@@ -32,7 +32,7 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
-.modal > a:hover {
+.modal ~ a:hover {
   color: var(--main-purple) !important;
 }
 
@@ -599,7 +599,7 @@ span.space {
   /* max-height: 600px; */
   border: 10px solid white;
   border-radius: 40px;
-  font-size: 25px;
+  font-size: 30px;
 }
 /* .modal-body > p {
   padding-bottom: 10px;
