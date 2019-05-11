@@ -24,12 +24,16 @@ body.noScroll {
 }
 
 a {
-  color: #000000;
+  color: var(--main-red);
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 a:hover, a:focus {
   color: #ffffff;
+}
+
+.modal > a:hover {
+  color: var(--main-purple)
 }
 
 /* .adapt-font[data-useragent*='Mac OS X'] {
@@ -595,6 +599,7 @@ span.space {
   /* max-height: 600px; */
   border: 10px solid white;
   border-radius: 40px;
+  font-size: 25px;
 }
 /* .modal-body > p {
   padding-bottom: 10px;
