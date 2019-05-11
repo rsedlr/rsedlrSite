@@ -85,7 +85,7 @@
     </div>
     <div class="modal-body">
       <p>
-        After successfully implementing my home control website, I wanted to further my web development knowledge and as the best way to learn (when it comes to programming) is by doing, I decided to make this site. <br><br>
+        After successfully implementing my home control website, I wanted to further my web development knowledge and as the best way to learn is by doing (when it comes to programming at least), I decided to make this site. <br><br>
         The site was built using JavaScript (and jQuery) to handle the client-side actions (such as the animated text that cascades down on page load) and (a lot of) CSS to style the page. <a href=”https://getbootstrap.com/">Bootstrap</a> was also used to cleanly transition the page onto different screen form factors. AOS (Animate On Scroll) is a JavaScript library I used for all the scroll animations. <br><br>
         As you may have noticed, fairly bold colour scheme of red/orange and purple (my two favourite colours) is used but as I intended this site to appear professional, I made sure to refine the theme to still contain my ideal colours while not causing the user any visual discomfort. <br><br>
         I contemplated using another backend framework to my home control site (which currently uses <a href=”https://bottlepy.org/docs/dev/">Bottle</a>, a python micro-framework), such as <a href= “https://www.djangoproject.com/">Django</a> or <a href= “https://nodejs.org/en/about/">Node.js</a>, so that I would get a broader understanding of how everything works. However, as one of the intended uses for this site was to host demos of my other work and that would only be feasible with Bottle. Besides, I would rather gain a deeper knowledge of one framework so that I know it inside out and can solve more advanced problems before learning others. <br><br>
@@ -109,10 +109,11 @@
       <h2>Automated Plant Waterer</h2>
     </div>
     <div class="modal-body">
-      My orange plant tended to get left for long periods of time without water when I was away from home. To solve this, I hooked a water pump up to an Arduino running a simple code that powers the pump every 6 hours to supply my plant with sufficient water.  <br><br>
-      This was one of my first projects as a kid and it still (somehow) works today, although I might need to rebuild the frame with something more mature than LEGO. <br><br>
-      Eventually I want to implement a soil dampness sensor which would adapt how much water the plant receives to keep its soil at optimum levels but other projects have taken priority so far. 
-    </div>
+        My orange plant tended to get left for long periods of time without water when I was away from home. To solve this, I hooked a water pump up to an Arduino running a simple code that powers the pump every 6 hours to supply my plant with sufficient water.  <br><br>
+        This was one of my first projects as a kid (around age 10) and it still (somehow) works today, although I might need to rebuild the frame with something more mature than LEGO. <br><br>
+        There was a light sensor attached to the Arduino which determined when the plant should be watered to ensure it doesn’t go off at night and wake me up. As the Arduino doesn’t have internet connection its perception of time was simply how long had passed since the program was ran; this was a problem as if it was unplugged or restarted for any reason the timing could be put out. However, the sensor struggled to distinguish between cloudy days and night as well as feeding random false readings to the Arduino which triggered the pump. Because of this it was removed but one day I might put a better quality sensor in its place instead. <br><br>
+        Eventually I want to implement a soil dampness sensor which would adapt how much water the plant receives to keep its soil at optimum levels but other projects have taken priority so far.    
+      </div>
   </div>
   <div class="modal-content" id="rcCarModal" >
     <div class="modal-header">
@@ -122,16 +123,6 @@
         The radio transmitter on an RC car of mine broke one day, so I decided to make the car autonomous. <br><br>
         The on-board Arduino (seen in the mid-section of the car) controls the rear wheel motors as well as the steering motor through the motor driver (on the rear of the car, because 10-year-old me thought it looked like a spoiler). All of the electronics were powered by the 9V battery which lasted a surprisingly long time. <br><br>
         The car navigates by driving straight foreword until it hits something, triggering one of the three switches at its front. When the Arduino receives input from the switches, it steers the car hard right and reverses for a short period, then continues driving forward until another collision occurs. 
-    </div>
-  </div>
-  <div class="modal-content" id="raspiModal">
-    <div class="modal-header">
-      <h2>Raspberry Pi Obsession</h2>
-    </div>
-    <div class="modal-body">
-      <br><br><br>
-      <p>content</p>
-      <br><br><br>
     </div>
   </div>
   <div class="modal-content" id="networkModal">
