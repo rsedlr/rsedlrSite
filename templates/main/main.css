@@ -32,7 +32,7 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
-.modal a:hover {
+.modal-body a:hover {
   color: var(--main-purple) !important;
 }
 
