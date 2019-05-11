@@ -286,7 +286,7 @@ def dadsGift():
 ''' --------------- card end --------------- '''
 
 
-@route('/h162bs5dkjwels9f74nc7r64', method='POST')
+@route('/h578smnch3mkx83mnd7y4bd8eh3oix8w3j', method='POST')
 def gitPull():
   git.cmd.Git('/var/www/rsedlrSite').pull()
   # git.cmd.Git('/var/www/rsedlrSite').fetch()
