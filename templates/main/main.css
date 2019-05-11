@@ -24,7 +24,7 @@ body.noScroll {
 }
 
 a {
-  color: var(--main-red);
+  color: #ff0000;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
@@ -33,7 +33,7 @@ a:hover, a:focus {
 }
 
 .modal > a:hover {
-  color: var(--main-purple)
+  color: var(--main-purple) !important;
 }
 
 /* .adapt-font[data-useragent*='Mac OS X'] {
