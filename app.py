@@ -21,9 +21,11 @@ except Exception as e:
   print(e)
 
 try:
-  dev = True if sys.argv[1] == '-dev' else False
+  dev = True if '-dev' in sys.argv else False
+  gitQuit = True if '-wle' in sys.argv else False
 except:
   dev = False
+  gitQuit = False
 
 try:
   file = open('info.txt', 'r')
@@ -293,6 +295,8 @@ def gitPull():
   # os.system('sudo git reset --hard origin/master')
   print('\n************ Git pull done ************\n')
   # print('\n************ git update available ************\n')
+  if gitQuit:
+    quit()
 
 
 if __name__ == '__main__':
