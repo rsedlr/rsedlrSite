@@ -599,11 +599,10 @@ span.space {
   /* max-height: 600px; */
   border: 10px solid white;
   border-radius: 40px;
-  font-size: 20 !important;
 }
 .modal-body > p {
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .modal-footer {
