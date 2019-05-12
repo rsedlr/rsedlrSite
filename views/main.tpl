@@ -133,7 +133,7 @@
     </section>
     <footer>
       <div class="container">
-        &copy; Reiss Edler 2018
+        &copy; Reiss Edler 2018-2019
       </div>
     </footer>
     <script src="/static/mainPage/jquery.min.js"></script>
