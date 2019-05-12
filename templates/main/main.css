@@ -592,6 +592,7 @@ span.space {
 }
 .modal-header > h2 {
   color: white;
+  font-weight: bold;
 }
 
 .modal-body {
