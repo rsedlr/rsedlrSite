@@ -295,8 +295,7 @@ def gitPull():
   # os.system('sudo git reset --hard origin/master')
   print('\n************ Git pull done ************\n')
   # print('\n************ git update available ************\n')
-  if gitQuit:
-    quit()
+  if gitQuit: quit()
 
 
 if __name__ == '__main__':
