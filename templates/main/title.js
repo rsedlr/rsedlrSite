@@ -11,9 +11,9 @@ $(document).ready(function () {
         return array.map((letter) => {
           let layer = '';
           for (let i = 1; i <= 2; i++) {
-            if(letter == ' '){
+            if (letter == ' ') {
               layer += '<span class="titleSpans space"></span>';
-            }else{
+            } else {
               layer += '<span class="titleSpans letter-'+i+'">'+letter+'</span>';
             }
           }
@@ -23,7 +23,7 @@ $(document).ready(function () {
       const createLetterContainers = (array) => {
         return array.map((item) => {
           let container = '';
-          container += '<div class="wrapper">'+item+'</div>';
+          container += '<div class="wrapper">' + item + '</div>';
           return container;
         });
       }
@@ -35,8 +35,8 @@ $(document).ready(function () {
       outputLayers.then(() => {
         return spans.map((span) => {
           setTimeout(() => {
-            span.parentElement.style.width = span.offsetWidth+'px';
-            span.parentElement.style.height = span.offsetHeight+'px';
+            span.parentElement.style.width = span.offsetWidth + 'px';
+            span.parentElement.style.height = span.offsetHeight + 'px';
           }, 250);
         });  
       }).then(() => {
@@ -78,5 +78,5 @@ $(document).ready(function () {
 
   window.addEventListener('resize', hideTitle);
   hideTitle();
-  createText(900);
+  createText(700);
 });
