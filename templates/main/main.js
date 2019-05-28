@@ -42,8 +42,8 @@ $(document).ready(function () {
     document.body.classList.remove('noScroll');
   });
   $("#moreBtn").click(function() {
+    var delay = 1900;
     if ($("#hiddenTable:first").is(":hidden")) {
-      var delay = 1900;
       $("#hiddenTable").slideDown(delay, "easeInOutSine");
       $(this).text('Show Less');
       AOS.refresh();
