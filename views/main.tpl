@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"></noscript>
     <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript> -->
+    <link rel="stylesheet" href="/static/aos/aos.css">
     % import os ; mainJS = os.path.getsize("templates/main/main.js") ; mainCSS = os.path.getsize("templates/main/main.css") ; titleJS = os.path.getsize("templates/main/title.js")
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>  
@@ -140,7 +140,7 @@
     <script src="/static/mainPage/bootstrap.bundle.min.js"></script>
     <script src="/static/mainPage/jquery.easing.min.js"></script>
     <script src="/static/mainPage/main.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="static/aos/aos.js"></script>
     <script>
       AOS.init({
         disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
