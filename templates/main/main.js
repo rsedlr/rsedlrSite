@@ -43,16 +43,17 @@ $(document).ready(function () {
   });
   $("#moreBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
-      $("#hiddenTable").slideDown(1900, "easeInOutSine");
+      var delay = 1900;
+      $("#hiddenTable").slideDown(delay, "easeInOutSine");
       $(this).text('Show Less');
       AOS.refresh();
-      setTimeout(function() { AOS.refresh(); }, 1900);
+      setTimeout(function() { AOS.refresh(); }, delay);
     } else {
-      document.getElementById("scrollMarker").scrollIntoView({behavior:'smooth'})
-      $("#hiddenTable").slideUp(1700, "easeInOutSine");
+      document.getElementById("scrollMarker").scrollIntoView({behavior:'smooth', inline: "nearest"})
+      $("#hiddenTable").slideUp(delay-200, "easeInOutSine");
       $(this).text('Show More');
       AOS.refresh();
-      setTimeout(function() { AOS.refresh(); }, 1700);
+      setTimeout(function() { AOS.refresh(); }, delay-200);
     }
   });
 
