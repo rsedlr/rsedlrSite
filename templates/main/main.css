@@ -29,10 +29,6 @@ a {
   transition: all .4s;
 }
 a:hover, a:focus {
-  color: #ffffff;
-}
-
-.modal-body a:hover {
   color: var(--main-purple) !important;
 }
 
@@ -592,6 +588,7 @@ span.space {
 }
 .modal-header > h2 {
   color: white;
+  font-weight: bold;
 }
 
 .modal-body {
@@ -599,11 +596,12 @@ span.space {
   /* max-height: 600px; */
   border: 10px solid white;
   border-radius: 40px;
-  font-size: 25px !important;
 }
-/* .modal-body > p {
-  padding-bottom: 10px;
-} */
+.modal-body > p {
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
 
 .modal-footer {
   background-color: #000;
