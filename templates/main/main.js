@@ -49,7 +49,7 @@ $(document).ready(function () {
       AOS.refresh();
       setTimeout(function() { AOS.refresh(); }, delay);
     } else {
-      document.getElementById("scrollMarker").scrollIntoView({behavior:'smooth', inline: "center"})
+      document.getElementById("scrollMarker").scrollIntoView(true)  // {behavior:'smooth'}
       $("#hiddenTable").slideUp(delay-200, "easeInOutSine");
       $(this).text('Show More');
       AOS.refresh();
