@@ -98,7 +98,7 @@
           <h1 class="sectionTitle" id="contactTitle">Contact</h1>
         </div>
         <form role="form" id="contactForm">
-          <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="150" class="row">
+          <div data-aos="fade-up" data-aos-offset="150" data-aos-delay="100" class="row">
             <div class="form-group col-sm-6">
               <label for="name" class="h2 white bold">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter name" required>
@@ -108,22 +108,22 @@
               <input type="email" class="form-control" id="email" placeholder="Enter email" required>
             </div>
           </div>        
-          <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="250" class="form-group">
+          <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="200" class="form-group">
             <label for="message" class="h2 white bold">Message</label>
             <textarea id="message" class="form-control" rows="5" placeholder="Enter message" required></textarea>
           </div>
-          <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="400">
+          <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="300">
             <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px;">Submit</button>
             <div id="msgSubmit" class="h5 text-center boxCol fit-content" style="visibility: hidden;">.</div>
           </div>
         </form>
-        <div data-aos="fade-up" data-aos-offset="0" data-aos-delay="550" class="boxCol fit-content" style="margin-top: 40px; padding-bottom: 15px">
+        <div data-aos="fade-up" data-aos-offset="0" data-aos-delay="400" class="boxCol fit-content" style="margin-top: 40px; padding-bottom: 15px">
           <div class="tooltip" style="text-align: center !important">
             <h3>Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: red;">rsedlr@protonmail.com</a></h3> 
             <span class="tooltiptext" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-offset="-10" data-aos-delay="700">
+        <div data-aos="fade-up" data-aos-offset="-10" data-aos-delay="500">
           <h1 class="sectionHead" style="margin-top: 80px; color: white">GitHub</h1>
           <div style="margin-top: 30px;">
             <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
