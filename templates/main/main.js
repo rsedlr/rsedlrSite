@@ -42,18 +42,19 @@ $(document).ready(function () {
     document.body.classList.remove('noScroll');
   });
   $("#moreBtn").click(function() {
-    var delay = 1900;
+    var $root = $('html, body');
     if ($("#hiddenTable:first").is(":hidden")) {
-      $("#hiddenTable").slideDown(delay, "easeInOutSine");
+      $("#hiddenTable").slideDown(1900, "easeInOutSine");
       $(this).text('Show Less');
       AOS.refresh();
-      setTimeout(function() { AOS.refresh(); }, delay);
+      setTimeout(function() { AOS.refresh(); }, 1900);
     } else {
-      document.getElementById("scrollMarker").scrollIntoView(true)  // {behavior:'smooth'}
-      $("#hiddenTable").slideUp(delay-200, "easeInOutSine");
+      // document.getElementById("scrollMarker").scrollIntoView(true)  // {behavior:'smooth'}
+      $root.animate({ scrollTop: $('#scrollMarker').offset().top }, 1500);
+      $("#hiddenTable").slideUp(1700, "easeInOutSine");
       $(this).text('Show More');
       AOS.refresh();
-      setTimeout(function() { AOS.refresh(); }, delay-200);
+      setTimeout(function() { AOS.refresh(); }, 1700);
     }
   });
 
