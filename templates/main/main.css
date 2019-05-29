@@ -741,12 +741,12 @@ span.space {
 /* tooltip end */
 
 /* fade start */
-.fade {
+/* .fade {
   transform: translateX(-300px);
   opacity: 0;
-}
+} */
 
-/* .fade {
+.fade {
   opacity: 0;
   -webkit-transform: translateX(-300px);
      -moz-transform: translateX(-300px);
@@ -766,5 +766,5 @@ span.space {
       -ms-transform: none;
        -o-transform: none;
           transform: none;
-} */
+}
 /* fade end */

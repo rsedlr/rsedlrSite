@@ -29,65 +29,37 @@ $(document).ready(function () {
   //   // document.getElementById("caption").innerHTML = this.alt;
   // });
 
-
-
   var controller = new ScrollMagic.Controller();
-
-  var revealElements = document.getElementsByClassName("fade");
-  for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-		var tween = new TimelineMax()
-			.from(revealElements[i], 1.5, {opacity: 0, transform: "translateX(-300px)", ease: Circ.easeInOut})
-			.to(revealElements[i], 1.5, {opacity: 1, transform: "none"});
-
-		new ScrollMagic.Scene({
-							triggerElement: revealElements[i],
-							duration: 350, // use full viewport
-              offset: 0, // move trigger to center of element
-              triggerHook: 0.95  // move the trigger hook to bottom
-						})
-						.setTween(tween)
-						// .addIndicators() // add indicators (requires plugin)
-						.addTo(controller);
-  }
 
   // var revealElements = document.getElementsByClassName("fade");
   // for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-  //   new ScrollMagic.Scene({
-  //     triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-  //     offset: 50,												 // start a little later
-  //     triggerHook: 0.9,
-  //   })
-  //   .setClassToggle(revealElements[i], "visible") // add class toggle
-  //   // .addIndicators() // add indicators (requires plugin)
-  //   .addTo(controller);
+	// 	var tween = new TimelineMax()
+	// 		.from(revealElements[i], 1, {opacity: 0, transform: "translateX(-300px)", ease: Sine.easeInOut})
+	// 		.to(revealElements[i], 3, {opacity: 1, transform: "none", ease: Sine.easeInOut});
+
+	// 	new ScrollMagic.Scene({
+	// 						triggerElement: revealElements[i],
+	// 						duration: 350, // use full viewport
+  //             offset: 0, // move trigger to center of element
+  //             triggerHook: 0.96  // move the trigger hook to bottom
+	// 					})
+	// 					.setTween(tween)
+	// 					// .addIndicators() // add indicators (requires plugin)
+	// 					.addTo(controller);
   // }
+
+  var revealElements = document.getElementsByClassName("fade");
+  for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+    new ScrollMagic.Scene({
+      triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+      offset: 0,	// start a little later
+      triggerHook: 0.85,
+    })
+    .setClassToggle(revealElements[i], "visible") // add class toggle
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+  }
   
-  // var containerScene = new ScrollMagic.Scene({
-  //     triggerElement: '#testTrigger',
-  //     duration: 500
-  // })
-  // .setPin('#testElem')
-  // .addIndicators()
-  // .addTo(controller);
-
-  // var blockTween = new TweenMax.to('#testElem', 1, {
-  //     color: 'red'
-  // });
-  // var containerScene = new ScrollMagic.Scene({
-  //     triggerElement: '#testTrigger'
-  // })
-  // .setTween(blockTween)
-  // .addIndicators()
-  // .addTo(controller);
-
-  // var scene = new ScrollMagic.Scene({triggerElement: "#testTrigger"})
-  // .setVelocity("#testElem", {opacity: 0}, {duration: 400})
-  // .addIndicators()
-  // .addTo(controller);
-
-
-
-
   $('.more-btn').click(function() {
     document.getElementById(this.value + "Modal").style.display = "block";
     imgModal.style.display = "block";
