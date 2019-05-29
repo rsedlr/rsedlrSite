@@ -41,7 +41,7 @@ $(document).ready(function () {
       triggerHook: 0.9,
     })
     .setClassToggle(revealElements[i], "visible") // add class toggle
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
   }
   
