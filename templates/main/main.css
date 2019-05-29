@@ -23,13 +23,14 @@ body.noScroll {
   overflow: hidden;
 }
 
-a {
+
+p > a {
   color: #ff0000;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-a:hover, a:focus {
-  color: var(--main-purple) !important;
+p > a:hover, p > a:focus {
+  color: #6f00ff !important;
 }
 
 /* .adapt-font[data-useragent*='Mac OS X'] {
@@ -361,7 +362,7 @@ footer p {
   #mainNav.navbar-shrink .navbar-brand {
     color: #ffffff;
   }
-  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+  #mainNav.navbar-shrink .navbar-brand:hover {
     color: #ff0000 !important;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
@@ -739,3 +740,27 @@ span.space {
 }
 
 /* tooltip end */
+
+/* fade start */
+.fade {
+  opacity: 0;
+  -webkit-transform: translateX(-200px);
+     -moz-transform: translateX(-200px);
+      -ms-transform: translateX(-200px);
+       -o-transform: translateX(-200px);
+          transform: translateX(-200px);
+  -webkit-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+     -moz-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+      -ms-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+       -o-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+          transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.fade.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+/* fade end */

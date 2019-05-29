@@ -31,7 +31,19 @@ $(document).ready(function () {
 
 
 
-  // var controller = new ScrollMagic.Controller();
+  var controller = new ScrollMagic.Controller();
+
+  var revealElements = document.getElementsByClassName("fade");
+  for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+    new ScrollMagic.Scene({
+      triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+      offset: 50,												 // start a little later
+      triggerHook: 0.9,
+    })
+    .setClassToggle(revealElements[i], "visible") // add class toggle
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+  }
   
   // var containerScene = new ScrollMagic.Scene({
   //     triggerElement: '#testTrigger',
@@ -41,7 +53,7 @@ $(document).ready(function () {
   // .addIndicators()
   // .addTo(controller);
 
-  // var blockTween = new TweenMax.to('#testElem', 1.5, {
+  // var blockTween = new TweenMax.to('#testElem', 1, {
   //     color: 'red'
   // });
   // var containerScene = new ScrollMagic.Scene({
