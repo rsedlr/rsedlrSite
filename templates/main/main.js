@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 
 
-  var controller = new ScrollMagic.Controller();
+  // var controller = new ScrollMagic.Controller();
   
   // var containerScene = new ScrollMagic.Scene({
   //     triggerElement: '#testTrigger',
@@ -51,10 +51,10 @@ $(document).ready(function () {
   // .addIndicators()
   // .addTo(controller);
 
-  var scene = new ScrollMagic.Scene({triggerElement: "#testTrigger"})
-  .setVelocity("#testElem", {opacity: 0}, {duration: 400})
-  .addIndicators()
-  .addTo(controller);
+  // var scene = new ScrollMagic.Scene({triggerElement: "#testTrigger"})
+  // .setVelocity("#testElem", {opacity: 0}, {duration: 400})
+  // .addIndicators()
+  // .addTo(controller);
 
 
 
