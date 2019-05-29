@@ -29,6 +29,36 @@ $(document).ready(function () {
   //   // document.getElementById("caption").innerHTML = this.alt;
   // });
 
+
+
+  var controller = new ScrollMagic.Controller();
+  
+  // var containerScene = new ScrollMagic.Scene({
+  //     triggerElement: '#testTrigger',
+  //     duration: 500
+  // })
+  // .setPin('#testElem')
+  // .addIndicators()
+  // .addTo(controller);
+
+  // var blockTween = new TweenMax.to('#testElem', 1.5, {
+  //     color: 'red'
+  // });
+  // var containerScene = new ScrollMagic.Scene({
+  //     triggerElement: '#testTrigger'
+  // })
+  // .setTween(blockTween)
+  // .addIndicators()
+  // .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: "#testTrigger"})
+  .setVelocity("#testElem", {opacity: 0}, {duration: 400})
+  .addIndicators()
+  .addTo(controller);
+
+
+
+
   $('.more-btn').click(function() {
     document.getElementById(this.value + "Modal").style.display = "block";
     imgModal.style.display = "block";
@@ -46,15 +76,15 @@ $(document).ready(function () {
     if ($("#hiddenTable:first").is(":hidden")) {
       $("#hiddenTable").slideDown(1900, "easeInOutSine");
       $(this).text('Show Less');
-      AOS.refresh();
-      setTimeout(function() { AOS.refresh(); }, 1900);
+      // AOS.refresh();
+      // setTimeout(function() { AOS.refresh(); }, 1900);
     } else {
       // document.getElementById("scrollMarker").scrollIntoView(true)  // {behavior:'smooth'}
       $root.animate({ scrollTop: $('#scrollMarker').offset().top }, 1500);
       $("#hiddenTable").slideUp(1700, "easeInOutSine");
       $(this).text('Show More');
-      AOS.refresh();
-      setTimeout(function() { AOS.refresh(); }, 1700);
+      // AOS.refresh();
+      // setTimeout(function() { AOS.refresh(); }, 1700);
     }
   });
 
