@@ -419,10 +419,6 @@ footer p {
   font-size: 100px;
   line-height: 1em;
 }
-#mainText:hover {
-  cursor: default;
-}
-
 #secText {
   /* margin-top: -15px;
   padding-left: 4px; */
@@ -436,7 +432,7 @@ footer p {
   position: relative;
   /* transform: translateY(-40%); */
 }
-#secText:hover {
+#mainText:hover, #secText:hover {
   cursor: default;
 }
   
