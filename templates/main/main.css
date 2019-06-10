@@ -744,11 +744,11 @@ span.space {
 /* fade start */
 .fade {
   opacity: 0;
-  -webkit-transform: translateX(-300px);
-     -moz-transform: translateX(-300px);
-      -ms-transform: translateX(-300px);
-       -o-transform: translateX(-300px);
-          transform: translateX(-300px);
+  -webkit-transform: translateX(-150px);
+     -moz-transform: translateX(-150px);
+      -ms-transform: translateX(-150px);
+       -o-transform: translateX(-150px);
+          transform: translateX(-150px);
   -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
      -moz-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
       -ms-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
