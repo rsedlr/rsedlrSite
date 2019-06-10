@@ -156,12 +156,6 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
-@media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 80px;
-  }
-}
-
 footer {
   padding: 25px 0;
   text-align: center;
@@ -385,6 +379,9 @@ footer p {
   }
   section.about h2 {
     font-size: 70px;
+  }
+  section.cta .cta-content h2 {
+    font-size: 80px;
   }
 }
 
