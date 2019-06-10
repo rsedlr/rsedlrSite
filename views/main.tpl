@@ -37,7 +37,7 @@
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-lg-9 col-md-12" style="margin: auto auto 0 0;">
-            <div class="" style="margin-bottom: 100px; margin-top: 0;" id="titleDiv">
+            <div class="hideSmall" style="margin-bottom: 100px; margin-top: 0;" id="titleDiv">
               <div class="header-content Mac-main" id="mainText">
                 <div class="wrapper" style="height: 100px; width: 640px; top: 0px;">
                   <span class="titleSpans letter-1">Reiss Edler</span>
@@ -51,7 +51,7 @@
                 </div>
               </div>
             </div>
-            <div class=" my-auto" style="text-align: center; display: none" id="backupTitleContainer">
+            <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
               <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
               <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
             </div>
