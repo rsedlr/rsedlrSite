@@ -24,7 +24,7 @@
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>  
-    <script type='text/javascript' src='/static/main/title.js?filever={{titleJS}}'></script>  
+    <!-- <script type='text/javascript' src='/static/main/title.js?filever={{titleJS}}'></script>   -->
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
     <!-- <link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}"></noscript> -->
   </head>
@@ -38,8 +38,18 @@
         <div class="row h-100">
           <div class="col-lg-9 col-md-12" style="margin: auto auto 0 0;">
             <div style="margin-bottom: 100px; margin-top: 0;" id="titleDiv">
-              <div class="header-content" id="mainText"><!-- text added through js --></div>
-              <div class="header-content" id="secText"><!-- text added through js --></div>
+              <div class="header-content Mac-main" id="mainText">
+                <div class="wrapper" style="height: 100px; width: 640px; top: 0px;">
+                  <span class="titleSpans letter-1">Reiss Edler</span>
+                  <span class="titleSpans letter-2">Reiss Edler</span>
+                </div>
+              </div>
+              <div class="header-content Mac-sec" id="secText">
+                <div class="wrapper" style="width: 640px; top: 0px;">
+                  <span class="titleSpans letter-1">personal portfolio</span>
+                  <span class="titleSpans letter-2">personal portfolio</span>
+                </div>
+              </div>
             </div>
             <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
               <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
