@@ -20,11 +20,10 @@
     <!-- <script src="static/scrollMagic/plugins/debug.addIndicators.min.js"></script> -->
     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script> -->
-    % import os ; mainJS = os.path.getsize("templates/main/main.js") ; mainCSS = os.path.getsize("templates/main/main.css") ; titleJS = os.path.getsize("templates/main/title.js")
+    % import os ; mainJS = os.path.getsize("templates/main/main.js") ; mainCSS = os.path.getsize("templates/main/main.css")
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>  
-    <!-- <script type='text/javascript' src='/static/main/title.js?filever={{titleJS}}'></script>   -->
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
     <!-- <link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}"></noscript> -->
   </head>
