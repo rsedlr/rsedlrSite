@@ -742,11 +742,6 @@ span.space {
 /* tooltip end */
 
 /* fade start */
-/* .fade {
-  transform: translateX(-300px);
-  opacity: 0;
-} */
-
 .fade {
   opacity: 0;
   -webkit-transform: translateX(-300px);
@@ -754,11 +749,11 @@ span.space {
       -ms-transform: translateX(-300px);
        -o-transform: translateX(-300px);
           transform: translateX(-300px);
-  -webkit-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
-     -moz-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
-      -ms-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
-       -o-transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
-          transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+     -moz-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      -ms-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+       -o-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+          transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .fade.visible {
   opacity: 1;
