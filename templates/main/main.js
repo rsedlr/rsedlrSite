@@ -73,7 +73,6 @@ $(document).ready(function () {
     document.body.classList.remove('noScroll');
   });
   $("#moreBtn").click(function() {
-    var $root = $('html, body');
     if ($("#hiddenTable:first").is(":hidden")) {
       $("#hiddenTable").slideDown(1900, "easeInOutSine");
       $(this).text('Show Less');
@@ -81,7 +80,7 @@ $(document).ready(function () {
       // setTimeout(function() { AOS.refresh(); }, 1900);
     } else {
       // document.getElementById("scrollMarker").scrollIntoView(true)  // {behavior:'smooth'}
-      $root.animate({ scrollTop: $('#scrollMarker').offset().top }, 1500);
+      $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top }, 1500);
       $("#hiddenTable").slideUp(1700, "easeInOutSine");
       $(this).text('Show More');
       // AOS.refresh();
