@@ -156,3 +156,5 @@
     <script src="/static/mainPage/main.min.js"></script>
   </body>
 </html>
+
+<!-- scripts should all be moved from header to footer -->
