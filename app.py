@@ -72,7 +72,7 @@ def serveSitemap():
 
 @route('/computing-writeup')  # TEMP
 def computing():
-  return 'https://1drv.ms/f/s!Al19yIlgeZ-ThaYPL_m5cExbzMjmBg'
+  return '<a>https://1drv.ms/f/s!Al19yIlgeZ-ThaYPL_m5cExbzMjmBg</a>'
 
 
 @route('/')
@@ -98,9 +98,9 @@ def test():
 @route('/contact', method='POST')
 def contact():
   try:
-    name = request.forms.get('name') or 'empty'
-    email = request.forms.get('email') or 'empty'
-    message = request.forms.get('message') or 'empty'
+    name = request.forms.get('name') or '[empty]'
+    email = request.forms.get('email') or '[empty]'
+    message = request.forms.get('message') or '[empty]'
     msg = MIMEMultipart()
     fromaddr = "rsedlr98766@gmail.com"
     toaddr = "rsedlr@protonmail.com"
