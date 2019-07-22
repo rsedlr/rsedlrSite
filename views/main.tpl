@@ -128,7 +128,7 @@
           </div>
           <div class="fade">
             <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px;">Submit</button>
-            <div id="msgSubmit" class="h5 text-center boxCol fit-content" style="visibility: hidden;">.</div>
+            <div id="msgSubmit" class="h5 text-center boxCol fit-content"></div>
           </div>
         </form>
         <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px">

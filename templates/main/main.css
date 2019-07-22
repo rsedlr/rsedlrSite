@@ -197,6 +197,11 @@ footer p {
   color: white
 }
 
+#msgSubmit {
+  visibility: hidden;
+  transition: 0.3s;
+}
+
 .bolder {
   font-weight: 700 !important;
 }
