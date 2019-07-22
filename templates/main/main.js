@@ -1,9 +1,10 @@
 
 $(document).ready(function () {
-  var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+  var isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
   var imgModal = document.getElementById('picModal');
+  var contactClicked = false;
 
   if (isMac) {
     mainText.className += ' Mac-main';
@@ -49,7 +50,7 @@ $(document).ready(function () {
   // }
 
   var revealElements = document.getElementsByClassName("fade");
-  for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+  for (var i=0; i < revealElements.length; i++) { // create a scene for each element
     new ScrollMagic.Scene({
       triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
       offset: 0,	// start a little later
@@ -130,30 +131,36 @@ $(document).ready(function () {
     // this.tooltip(title="copied: " + this.text)
   });
 
-  $("#contactForm").submit(function(event){
+  $("#contactForm").submit(function(event) {
     event.preventDefault();
     submitForm();
   });
 
   function submitForm(){
-    $("#msgSubmit").text('sending...');
-    $("#msgSubmit").css('visibility', 'visible');
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var message = $("#message").val();
-    $.ajax({
-      type: "POST",
-      url: "/contact",
-      data: "name=" + name + "&email=" + email + "&message=" + message,
-      success: function(data) {
-        $("#msgSubmit").text('Thanks, message submitted');
-        $("#msgSubmit").css('visibility', 'visible');
-      },
-      error: function(data) {
-        $("#msgSubmit").text('Error, try again');
-        $("#msgSubmit").css('visibility', 'visible');
-      },
-    });
+    var submitMsg = $("#msgSubmit");
+    if (contactClicked) {
+      submitMsg.text('Thanks, message submitted - message already sent');
+    } else {
+      submitMsg.text('sending...');
+      submitMsg.css('visibility', 'visible');
+      contactClicked = true;
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+      $.ajax({
+        type: "POST",
+        url: "/contact",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
+        success: function(data) {
+          submitMsg.text('Thanks, message submitted');
+          submitMsg.css('visibility', 'visible');
+        },
+        error: function(data) {
+          submitMsg.text('Error, try again');
+          submitMsg.css('visibility', 'visible');
+        },
+      });
+    }
   }
 
   // window.onclick = function(event) {
