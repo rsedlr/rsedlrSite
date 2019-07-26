@@ -7,10 +7,10 @@
 }
 
 ::selection {
-  background: #f00; /* highlight colour */
+  background: var(--main-red); /* highlight colour */
 }
 ::-moz-selection {
-  background: #f00; /* highlight colour */
+  background: var(--main-red); /* highlight colour */
 }
 
 html {
