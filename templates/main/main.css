@@ -7,7 +7,7 @@
 }
 
 ::selection {
-  background: var(--main-red); /* highlight colour */
+  background: rgb(180, 44, 130); /* highlight colour */
 }
 ::-moz-selection {
   background: var(--main-red); /* highlight colour */
