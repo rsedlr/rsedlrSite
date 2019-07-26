@@ -6,6 +6,13 @@
   --backup-gradient: linear-gradient(to left, var(--main-purple), var(--main-red)); /* df1e2b ; 6f00ff, 7b4397 */
 }
 
+::selection {
+  background: #f00; /* highlight colour */
+}
+::-moz-selection {
+  background: #f00; /* highlight colour */
+}
+
 html {
   background-color: var(--main-grey);
 }
