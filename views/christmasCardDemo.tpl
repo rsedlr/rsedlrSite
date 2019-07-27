@@ -12,40 +12,31 @@
   <ul class="lightrope" style="top: 0; left: 0;">
     <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
   </ul>
-  <header class="masterhead">
-    <div class="container">
-      <div id="wrapperWrap">
-        <div class ="wrap" id="wrap">
-          <div class="card card--inner" style="align-content: center" onclick="openCard();">
-            <h2 id="cardMainMessage" style="margin: 15px 0; padding: 0 10px">{{!message}}</h2>
-          </div>
-          <div class="card card--front back" onclick="openCard();">
-            % if name.upper() == 'NAME DEMO':
-              <button type="button" id="cardBtn" style="margin: 10px auto; transform: rotateY(180deg); height: 60px; width: 200px; font-size: 30px; font-weight: bold">click me</button>
-            % end
-          </div>
-          <div class="card card--front" onclick="openCard();">
-            <h2 id="cardFrontMessage" style="width: 100%">Merry<br>Christmas<br><span id="name">{{name}}</span><br><span style="font-size: 1rem">(click me)</span></h2>
-          </div>
+  <div class="container">
+    <div id="wrapperWrap">
+      <div class ="wrap" id="wrap">
+        <div class="card card--inner" style="align-content: center" onclick="openCard();">
+          <h2 id="cardMainMessage" style="margin: 15px 0; padding: 0 10px">{{!message}}</h2>
         </div>
-        <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
-        <p style="display: none" id="hiddenVar">{{colour}}</p>
+        <div class="card card--front back" onclick="openCard();">
+          % if name.upper() == 'NAME DEMO':
+            <button type="button" id="cardBtn" style="margin: 10px auto; transform: rotateY(180deg); height: 60px; width: 200px; font-size: 30px; font-weight: bold">click me</button>
+          % end
+        </div>
+        <div class="card card--front" onclick="openCard();">
+          <h2 id="cardFrontMessage" style="width: 100%">Merry<br>Christmas<br><span id="name">{{name}}</span><br><span style="font-size: 1rem">(click me)</span></h2>
+        </div>
       </div>
+      <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
+      <p style="display: none" id="hiddenVar">{{colour}}</p>
     </div>
-  </header>
+  </div>
   <nav class="navbar navbar-light fixed-bottom">
     <div class="container nav-cont">
       <a class="navbar-brand" href="/">Back to portfolio</a>
       </div>
     </div>
   </nav>
-  <!-- <section>
-    <div class="container">
-      <div style="margin: auto; color: black; height: 200px; width: 100px; background-color: blue; text-align: center;">
-        hello
-      </div>
-    </div>
-  </section> -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
