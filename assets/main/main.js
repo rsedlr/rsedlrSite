@@ -99,7 +99,7 @@ $(document).ready(function () {
     window.location.href = '/christmasDemo';
   }); 
   $("#pyGameBtn").click(function() {
-    window.location.href = 'https://github.com/MegaHertz3/OOP_game';
+    window.location.href = 'https://github.com/rsedlr/OOP_game';
   });
   $("#thisSiteBtn").click(function() {
     $('#thisSiteTooltip').show()

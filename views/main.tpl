@@ -22,15 +22,15 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
-    % import os ; mainJS = os.path.getsize("templates/main/main.js") ; mainCSS = os.path.getsize("templates/main/main.css")
+    % import os ; mainJS = os.path.getsize("assets/main/main.js") ; mainCSS = os.path.getsize("assets/main/main.css")
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>  
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
     <!-- <link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}"></noscript> -->
   </head>
   <body id="page-top">
 
-    % include('templates/main/nav.html')
-    % include('templates/main/modal.html')
+    % include('assets/main/nav.html')
+    % include('assets/main/modal.html')
 
     <header class="masthead">
       <div class="container h-100">
@@ -99,7 +99,7 @@
           </div>
         </div>
 
-        % include('templates/main/projects.html')
+        % include('assets/main/projects.html')
 
         <div class="fade">
           <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 25px">Show More</button>
@@ -140,7 +140,7 @@
         <div class="fade">
           <h1 class="sectionHead" style="margin-top: 80px; color: white">GitHub</h1>
           <div style="margin-top: 30px;">
-            <a href="https://github.com/MegaHertz3"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
+            <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
           </div>
         </div>
       </div>

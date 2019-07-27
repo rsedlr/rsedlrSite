@@ -34,11 +34,14 @@ try:
 except:
   info = 'test'
 
-demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
+demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 
+        'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
 
 if not dev:
-  logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s', datefmt='%I:%M:%S%p %d/%m/%Y')  # level=logging.DEBUG, '%(asctime)s - %(levelname)s - %(message)s' filename='site.log'
+  logging.basicConfig(level=logging.DEBUG, 
+                      format='%(asctime)s - %(message)s', 
+                      datefmt='%I:%M:%S%p %d/%m/%Y')
 
   @hook('after_request')
   def enable_cors():
@@ -50,24 +53,17 @@ if not dev:
 @error(404)
 def error404(error):
   return template('error404')
-#   response.status = 303
-#   response.set_header('Location', '/404')
-
-
-# @route('/404')
-# def show404():
-#   return template('error404')
 
 
 @route('/static/<filepath:path>') 
 @route('/staticIco/<filepath:path>')  # /static/
 def server_static(filepath):
-  return static_file(filepath, root='./templates')
+  return static_file(filepath, root='./assets')
 
 
 @route('/sitemap') 
 def serveSitemap():
-  return static_file('sitemap.xml', root='./templates')
+  return static_file('sitemap.xml', root='./assets')
 
 
 @route('/computing-writeup')  # TEMP
@@ -80,19 +76,9 @@ def main():
   return template('main')
 
 
-# @route('/index')
-# def index():
-#   return template('oldMain')
-
-
-@route('/test')
-def test():
-  return template('test')
-
-
-# @route('/about')
-# def about():
-#   return template('about')
+# @route('/test')
+# def test():
+#   return template('test')
 
 
 @route('/contact', method='POST')
@@ -124,7 +110,8 @@ def contact():
 
 ''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'lights_B': False, 'lights_T': False, 'fans': False, 'pc': False, 'led_col': 'rb'}
+valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'pc': False, 
+              'lights_B': False, 'lights_T': False, 'fans': False, 'led_col': 'rb'}
 onOff = {False: 'OFF', True: 'ON'}
 
 
@@ -190,7 +177,9 @@ def submit(status, temp):
 @route('/heatDemo/control')
 def control():
   global valuesDict
-  return template('control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'], lights_T=onOff[valuesDict['lights_T']], lights_B=onOff[valuesDict['lights_B']], fans=onOff[valuesDict['fans']], pc=onOff[valuesDict['pc']])
+  return template('control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'],
+                             lights_T=onOff[valuesDict['lights_T']], lights_B=onOff[valuesDict['lights_B']], 
+                             fans=onOff[valuesDict['fans']], pc=onOff[valuesDict['pc']])
 
 
 @route('/heatDemo/h/control')
@@ -299,9 +288,8 @@ def gitPull():
 
 
 if __name__ == '__main__':
-  # port = int(os.environ.get('PORT', 4000))
+  port = int(os.environ.get('PORT', 3000))
   # run_decoupled(app, '0.0.0.0', 80)
-  port = 3000  # 80
   host = '127.0.0.1'  # '0.0.0.0'
   if dev:
     print('********* running in development mode *********')
@@ -314,7 +302,6 @@ if __name__ == '__main__':
       run(host=host, port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 
-# wordssssssssssssssssss
 
 '''
 user: request.environ.get('REMOTE_USER', '')
