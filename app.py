@@ -58,7 +58,6 @@ def error404(error):
 @route('/static/<filepath:path>') 
 @route('/staticIco/<filepath:path>')  # /static/
 def server_static(filepath):
-  print('safdsafd')
   return static_file(filepath, root='./assets')
 
 
