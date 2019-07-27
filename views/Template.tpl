@@ -5,12 +5,12 @@
 <title>boop</title>
 <head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+    % include('assets/links.html')
     <!-- js link goes here -->
 	<title>TEMPLATE</title>
 	<body>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-     % include('templates/Header.html')
+     % include('assets/Header.html')
 		<div id="main">
 
 		</div>
@@ -19,6 +19,6 @@
 			</div>
     </footer>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/bottom.html')
+    % include('assets/bottom.html')
 	</body>
 </html>

@@ -4,11 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+    % include('assets/links.html')
   <title>login</title>
 	<body>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-     % include('templates/Header.html')
+     % include('assets/Header.html')
     <form class="form-signin" style="width: 20em; margin: 10% auto 50px; align-items: center;" action="/heatDemo/login" method="post">
       <h1 class="h3 mb-3 font-weight-normal red" style="text-align: center;">Please sign in</h1>
       <span class="bmd-form-group">
@@ -25,6 +25,6 @@
       <h1 style="color: red; text-align: center">{{error}}</h1>
     %end
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/bottom.html')
+    % include('assets/bottom.html')
 	</body>
 </html>

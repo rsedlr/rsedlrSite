@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+    % include('assets/links.html')
 	<title>YT download</title>
 	<script type="text/javascript">
 		// $( document ).ready(function() {
@@ -25,7 +25,7 @@
 	</script>
 	<body>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-			% include('templates/Header.html')
+			% include('assets/Header.html')
 		<div class="col-md-4">
 		  <form action="download-yt.php" method="post">
 		    <h1 for="fname" style="color: red;"><b>Youtube link:</b></h1>
@@ -44,7 +44,7 @@
 		<!-- <div id="more-info" class="jumbotron" style="color: red; padding: 20px; display: none; font-size: 23px;">
     </div>  -->
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-      % include('templates/bottom.html')
+      % include('assets/bottom.html')
 	</body>
 </html>
 

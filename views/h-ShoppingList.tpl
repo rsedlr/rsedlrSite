@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+    % include('assets/links.html')
   <link rel="stylesheet" type="text/css" href="/static/hStylesheet.css">
 	<title>Helen's list</title>
 	<body>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/h-header.html')
+    % include('assets/h-header.html')
     <div id="main">
       <div style="padding: 2% 3%;">
         <table class="table table-dark table-hover table-striped">
@@ -57,6 +57,6 @@
 			</div>
     </footer>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/bottom.html')
+    % include('assets/bottom.html')
 	</body>
 </html>

@@ -13,7 +13,7 @@
     <link href="/static/christmasWallpaper.css" rel="stylesheet">
   </head>
   <body>
-    % include('templates/christmasWallpaper.html')
+    % include('assets/christmasWallpaper.html')
   </body>
   <script>  
   //stuff

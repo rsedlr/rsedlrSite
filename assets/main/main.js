@@ -95,6 +95,9 @@ $(document).ready(function () {
   $("#othBtn").click(function() {
     window.location.href = '/ComputingProject/';
   }); 
+  $("#wikiBtn").click(function() {
+    window.location.href = '/wikiRace';
+  }); 
   $("#christmasCardBtn").click(function() {
     window.location.href = '/christmasDemo';
   }); 

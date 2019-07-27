@@ -5,14 +5,14 @@
     <title>Evil-Corp</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <meta name="robots" content="noindex">
-    % include('templates/links.html')
-    % import os ; snowJS = os.path.getsize("templates/snow.js") ; controlJS = os.path.getsize("templates/control.js") ; controlCSS = os.path.getsize("templates/control.css")
+    % include('assets/links.html')
+    % import os ; snowJS = os.path.getsize("assets/snow.js") ; controlJS = os.path.getsize("assets/control.js") ; controlCSS = os.path.getsize("assets/control.css")
     <link rel="stylesheet" type="text/css" href="/static/control.css?filever={{controlCSS}}">
     <script type='text/javascript' src='/static/snow.js?filever={{snowJS}}'></script>  
     <script type='text/javascript' src="/static/control.js?filever={{controlJS}}"></script>  
   </head>
   <body>
-    % include('templates/Header.html')
+    % include('assets/Header.html')
     <canvas id="canvas" style="width: 100%; height: 100%; display: none;"></canvas>
     <div id="Main" class="row">
       <div class="col-xxl-6 col-xl-12 mainWidthMax boxCol" style="margin: 15px auto 35px;">
@@ -201,7 +201,7 @@
       </div>
     </div>
   </div>
-  % include('templates/bottom.html')
+  % include('assets/bottom.html')
   </body>
 </html>
 

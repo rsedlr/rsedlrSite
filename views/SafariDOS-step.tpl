@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+    % include('assets/links.html')
 	<title>boop</title>
 	<body>
 		<div id="main" style="padding: 50px">
@@ -13,6 +13,6 @@
         <h1 style="color:red;">By Reiss :)</h1>
 		</div>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/bottom.html')
+    % include('assets/bottom.html')
 	</body>
 </html>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+    % include('assets/links.html')
 	<title>What's my IP</title>
 	<script type="text/javascript">
 		$( document ).ready(function() {
@@ -25,7 +25,7 @@
 	</script>
 	<body>
 		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-			% include('templates/Header.html')
+			% include('assets/Header.html')
 		<div id="red" class="jumbotron" style="color: red; padding: 20px; padding-left: 7%;">
 			<p style="font-size:28px;">Your IP isnt:</p>
 			<h1 style="color: blue;">{{ip}}</h1>
@@ -50,6 +50,6 @@
 			</div>
     </footer>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-      % include('templates/bottom.html')
+      % include('assets/bottom.html')
 	</body>
 </html>

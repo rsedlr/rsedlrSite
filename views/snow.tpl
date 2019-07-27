@@ -5,7 +5,7 @@
 <head>
   <title>Evil-Corp</title>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/links.html')
+    % include('assets/links.html')
   <link rel="stylesheet" type="text/css" href="/static/control.css">
   <script src="static/snow.js"></script>
   <script src="static/control.js"></script>  <!-- must be after snow.js -->
@@ -71,6 +71,6 @@
     
   <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('templates/bottom.html')
+    % include('assets/bottom.html')
 </body>
 </html>

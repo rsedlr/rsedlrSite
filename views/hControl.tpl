@@ -6,12 +6,12 @@
   <title>Heating</title>
   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  % include('templates/links.html')
+  % include('assets/links.html')
   <link rel="stylesheet" type="text/css" href="/static/hStylesheet.css">
   <script src="/static/hControl.js"></script>
 </head>
 <body class="body-color-1">
-  % include('templates/h-header.html')
+  % include('assets/h-header.html')
   <div id="Main" class="row">
     <div class="col-xl-6 col-lg-12 mainWidthMax" style="margin: 15px auto 35px;">
       <h1 style="color:red; text-align: center;"><b>H's heating control</b></h1>
@@ -49,6 +49,6 @@
       </div>
     </div>
   </div>
-  % include('templates/bottom.html')
+  % include('assets/bottom.html')
 </body>
 </html>
