@@ -33,13 +33,19 @@
       </div>
     </div>
   </header>
-  <section>
+  <nav class="navbar navbar-light fixed-bottom">
+    <div class="container nav-cont">
+      <a class="navbar-brand" href="/">Back to portfolio</a>
+      </div>
+    </div>
+  </nav>
+  <!-- <section>
     <div class="container">
       <div style="margin: auto; color: black; height: 200px; width: 100px; background-color: blue; text-align: center;">
         hello
       </div>
     </div>
-  </section>
+  </section> -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {

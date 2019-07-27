@@ -59,6 +59,21 @@ header.masthead .device-container {
   margin-left: auto;
 }
 
+nav {
+  background-color: rgba(41, 41, 41, 0.93);  /* appears same as --grey with background */
+  max-width: 220px;
+}
+.navbar-brand {
+  color: var(--blue) !important;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
+  text-decoration: none;
+}
+.navbar-brand:hover {
+  text-decoration: underline;
+}
+
 
 @media (min-width: 998px) {
   header.masthead {
