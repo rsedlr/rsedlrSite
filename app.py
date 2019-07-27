@@ -58,15 +58,15 @@ def error404(error):
 @route('/static/<filepath:path>') 
 @route('/staticIco/<filepath:path>')  # /static/
 def server_static(filepath):
-  return static_file(filepath, root='./assets')
+  return static_file(filepath, root='./assets/')
 
 
 @route('/sitemap') 
 def serveSitemap():
-  return static_file('sitemap.xml', root='./assets')
+  return static_file('sitemap.xml', root='./assets/')
 
 
-@route('/computing-writeup')  # TEMP
+@route('/computingWriteup')  # TEMP
 def computing():
   return '<a>https://1drv.ms/f/s!Al19yIlgeZ-ThaYPL_m5cExbzMjmBg</a>'
 
