@@ -93,7 +93,7 @@ $(document).ready(function () {
     window.location.href = '/heatDemo';
   });
   $("#othBtn").click(function() {
-    window.location.href = '/ComputingProject/';
+    window.location.href = '/Othello';
   }); 
   $("#wikiBtn").click(function() {
     window.location.href = '/wikiRace';
