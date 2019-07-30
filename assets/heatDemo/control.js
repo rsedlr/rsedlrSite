@@ -6,11 +6,24 @@ $(document).ready(function () {
   // var OnOff = document.getElementById("OnOffBtn");
   // var StatOutput = document.getElementById('StatusVal');
   var canvas = document.getElementById('canvas');
-  var LED_circle = document.getElementById('LED_circle');
+  var ValCircle = document.getElementById('ValCircle');
   var r = 255, b = 255;
   output.innerHTML = s.value + '%';
   var heat = $("#StatusVal").text();
-  var valueDict = {'heat': $("#StatusVal"), 'pc': $("#PC_status"), 'lights_T': $("#T-lights_status"), 'lights_B': $("#B-lights_status"), 'fans': $("#fans_status"), 'curPercent': $("#curOutput")}
+  var valueDict = {'heat': $("#StatusVal"), 
+                   'pc': $("#PC_status"), 
+                   'lights_T': $("#T-lights_status"), 
+                   'led_D': $("#D-led_status"), 
+                   'led_C': $("#C-led_status"), 
+                   'fans_D': $("#fans_D_status"), 
+                   'fans_T': $("#fans_T_status"), 
+                   'curPercent': $("#curOutput")}
+  var colours = {'red': 'rgb(255, 0, 0)', 
+                 'green': 'rgb(0, 255, 0)', 
+                 'blue': 'rgb(0, 0, 255', 
+                 'orange': 'rgb(255, 72, 0)', 
+                 'purple': 'rgb(140, 0, 255)', 
+                 'rainbow': 'rgb(255, 0, 255)'};
   getVals();
   window.setInterval(getVals, 30000);
   if (getCookie('christmas') == 'True') {
@@ -23,26 +36,25 @@ $(document).ready(function () {
   function getVals() {
     postVal('pc');
     postVal('lights_T');
-    postVal('lights_B');
-    postVal('fans');
+    postVal('led_D');
+    postVal('led_C');
+    postVal('fans_D');
+    postVal('fans_T');
     curCircle(parseInt($("#curOutput").text().slice(0,-1))) //get current stat from initial bottle page load and remove % sign then turn into int
   }
+
   // function testPostVal() {
   //   console.log(arguments);
   //   var value = arguments.join('-');
   //   var xhttp = new XMLHttpRequest();
   //   xhttp.onreadystatechange = function() {
   //     if (this.readyState == 4 && this.status == 200) {
-  //       console.log(value);
   //       value.split('-');
-  //       console.log(value);
   //       if ('heat' in value) {
-  //         console.log('heat is in value');
   //         responseVal = this.responseText.split('-');
   //         valueDict['heat'].text(responseVal[0]);
   //         valueDict['curPercent'].text(responseVal[1] + "%");
   //       } else {
-  //         console.log('heat is NOT in value');
   //         for (var val; val < value.length; val++) {
   //           valueDict[value].text(this.responseText);
   //         }
@@ -54,6 +66,7 @@ $(document).ready(function () {
   //   xhttp.open("POST", `/values/${value}`, true);
   //   xhttp.send();
   // }
+
   function postVal(value) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -71,32 +84,40 @@ $(document).ready(function () {
     xhttp.open("POST", `/values/${value}`, true);
     xhttp.send();
   }
+  
   function updateAllCircles() {
     var heat = $("#StatusVal").text();
     var pc = $("#PC_status").text();
+    var led_C = $("#C-led_status").text();
+    var led_D = $("#D-led_status").text();
     var lights_T = $("#T-lights_status").text();
-    var lights_B = $("#B-lights_status").text();
-    var fans = $("#fans_status").text();
+    var fans_D = $("#fans_D_status").text();
+    var fans_T = $("#fans_T_status").text();
     document.getElementById('StatCircle').style.backgroundColor = (heat == 'ON') ? 'rgb(0, 255, 0)' : (heat == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
-    document.getElementById('PC_circle').style.backgroundColor = (pc == 'ON') ? 'rgb(0, 255, 0)' : (pc == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
-    document.getElementById('T-lights_circle').style.backgroundColor = (lights_T == 'ON') ? 'rgb(0, 255, 0)' : (lights_T == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
-    document.getElementById('B-lights_circle').style.backgroundColor = (lights_B == 'ON') ? 'rgb(0, 255, 0)' : (lights_B == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
-    document.getElementById('fans_circle').style.backgroundColor = (fans == 'ON') ? 'rgb(0, 255, 0)' : (fans == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
+    document.getElementById('PC_button').style.backgroundColor = (pc == 'ON') ? 'rgb(0, 255, 0)' : (pc == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
+    document.getElementById('C-led_button').style.backgroundColor = (led_C == 'ON') ? 'rgb(0, 255, 0)' : (led_C == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
+    document.getElementById('D-led_button').style.backgroundColor = (led_D == 'ON') ? 'rgb(0, 255, 0)' : (led_D == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
+    document.getElementById('T-lights_button').style.backgroundColor = (lights_T == 'ON') ? 'rgb(0, 255, 0)' : (lights_T == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
+    document.getElementById('fans_D_button').style.backgroundColor = (fans_D == 'ON') ? 'rgb(0, 255, 0)' : (fans_D == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
+    document.getElementById('fans_T_button').style.backgroundColor = (fans_T == 'ON') ? 'rgb(0, 255, 0)' : (fans_T == 'OFF') ? 'rgb(255, 0, 0)' : 'rgb(255, 255, 0)';
     curCircle(parseInt($("#curOutput").text().slice(0,-1)));
   }
+
   function submitHeat(per) {
     fetch(new Request('/submit/' + heat + '/' + per), {method: 'PUT'});
-    console.log('/submit/' + heat + '/' + per);
     postVal("heat");
   }
+
   function submitURL(url) {
     fetch(new Request(url), {method: 'PUT'});
   }
+
   // function changeVal(val) {
   //   s.value = val;
   //   output.innerHTML = val + '%';
   //   UpdateCircle();
   // }
+
   function hide(id) {
     var e = document.getElementById(id);
     if (e.style.display == 'block') {
@@ -105,6 +126,15 @@ $(document).ready(function () {
       e.style.display = 'block';  // or visibility: 'visible'
     }
   }
+  
+  function slide(id, duration=2000) {
+    if ($(id).is(":hidden")) {
+      $(id).slideDown(duration);
+    } else {
+      $(id).slideUp(duration);
+    }
+  }
+
   function curCircle(curPercantage) {
     if (curPercantage > 50) {
       r = 255;
@@ -113,8 +143,9 @@ $(document).ready(function () {
       r = Math.round(255 * curPercantage / 50);
       b = 255;
     }
-    document.getElementById('ValCircle').style.backgroundColor = 'rgb(' + r + ',0,' + b + ')';
+    ValCircle.style.backgroundColor = 'rgb(' + r + ', 0, ' + b + ')';
   }
+
   function UpdateCircle() {
     var s = document.getElementById('myRange');
     output.innerHTML = s.value + '%';
@@ -125,8 +156,9 @@ $(document).ready(function () {
       r = Math.round(255 * s.value / 50);
       b = 255;
     }
-    document.getElementById('moreCircle').style.backgroundColor = 'rgb(' + r + ',0,' + b + ')';
+    document.getElementById('moreCircle').style.backgroundColor = 'rgb(' + r + ', 0, ' + b + ')';
   }
+
   function setCookie(name,value,days) {
     var expires = "";
     if (days) {
@@ -136,6 +168,7 @@ $(document).ready(function () {
     }
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
   }
+  
   function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -146,9 +179,11 @@ $(document).ready(function () {
     }
     return null;
   }
+
   function eraseCookie(name) {   
-    document.cookie = name+'=; Max-Age=-99999999;';  
+    document.cookie = name + '=; Max-Age=-99999999;';  
   }
+
   $('#MoreOptions').click(function () {
     hide('MoreOptionsContainer');
     if ($('#MoreOptions').text() == 'More') {
@@ -187,7 +222,7 @@ $(document).ready(function () {
       $(this).text('Christmas off');
       setCookie('christmas', 'True');
     } 
-  });
+  });  
   $('#btn-sound').click(function () {
     alert('sound has not been added yet :/');
   }); 
@@ -198,37 +233,69 @@ $(document).ready(function () {
     submitURL('/relayControl/pc');
     postVal("pc");
   });
-  $('#T-lightsButton').click(function () {
+  $('#T-lights_button').click(function () {
     submitURL('/relayControl/lights_T');
     postVal("lights_T");
   });
-  $('#B-lightsButton').click(function () {
-    submitURL('/relayControl/lights_B');
-    postVal("lights_B");
+  $('#D-led_button').click(function () {
+    submitURL('/relayControl/led_D');
+    postVal("led_D");
   });
-  $('#fansButton').click(function () {
-    submitURL('/relayControl/fans');
-    postVal("fans");
+  $('#C-led_button').click(function () {
+    submitURL('/relayControl/led_C');
+    postVal("led_C");
   });
-  $('.led-btn').click(function () {
-    // postVal()
-  }); 
-  $('#LED_btn_rd').click(function () {
-    submitURL('/relayControl/led_rd');
-    LED_circle.style.backgroundColor = '#f00'
+  $('#fans_D_button').click(function () {
+    submitURL('/relayControl/fans_D');
+    postVal("fans_D");
   });
-  $('#LED_btn_gr').click(function () {
-    submitURL('/relayControl/led_gr');
-    LED_circle.style.backgroundColor = '#0f0'
+  $('#fans_T_button').click(function () {
+    submitURL('/relayControl/fans_T');
+    postVal("fans_T");
   });
-  $('#LED_btn_bl').click(function () {
-    submitURL('/relayControl/led_bl');
-    LED_circle.style.backgroundColor = '#00f'
+  $('#D-led_colour').click(function () {
+    $('#D_led_buttonContainer').slideToggle();
   });
-  $('#LED_btn_rb').click(function () {
-    submitURL('/relayControl/led_rb');
-    LED_circle.style.backgroundColor = '#f0f'
+  $('#C-led_colour').click(function () {
+    $('#C_led_buttonContainer').slideToggle();
   });
+
+  ['D-led_colour', 'C-led_colour'].forEach(circle => {  // loops over led colour controls
+    // $('#D_led_buttonContainer','#C_led_buttonContainer').slideToggle();
+    ['red', 'green', 'blue', 'orange', 'purple', 'rainbow'].forEach(colour => {  // loops over colour buttons
+      $(`#led_btn_${circle[0]}_${colour}`).click(function () {
+        submitURL(`/relayControl/led_${circle[0]}_${colour}`);
+        document.getElementById(circle).style.backgroundColor = colours[colour];
+      });
+    });
+  });
+
+  // $('#led_btn_red').click(function () {
+  //   submitURL('/relayControl/led_rd');
+  //   D_led_Circle.style.backgroundColor = 'rgb(255, 0, 0)'
+  // });
+  // $('#led_btn_green').click(function () {
+  //   submitURL('/relayControl/led_gr');
+  //   D_led_Circle.style.backgroundColor = 'rgb(0, 255, 0)'
+  // });
+  // $('#led_btn_blue').click(function () {
+  //   submitURL('/relayControl/led_bl');
+  //   D_led_Circle.style.backgroundColor = 'rgb(0, 0, 255)'
+  // });
+  // $('#led_btn_orange').click(function () {
+  //   submitURL('/relayControl/led_or');
+  //   D_led_Circle.style.backgroundColor = 'rgb(255, 72, 0)'
+  // });
+  // $('#led_btn_purple').click(function () {
+  //   submitURL('/relayControl/led_pr');
+  //   D_led_Circle.style.backgroundColor = 'rgb(140, 0, 255)'
+  // });    
+  // $('#led_btn_rainbow').click(function () {
+  //   submitURL('/relayControl/led_rb');
+  //   D_led_Circle.style.backgroundColor = 'rgb(255, 0, 255)'
+  // });
+
+
   s.addEventListener("input", function () {
     UpdateCircle();
   });

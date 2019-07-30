@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #66B783;
+  --background-color: #7f9d9d;
+}
+
+body {
+  align-items: center;
+  background-color: var(--background-color)
+}
+
+.navbar, .nav-color {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.navActive {
+  color: black !important;
+}

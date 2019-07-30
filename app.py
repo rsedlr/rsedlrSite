@@ -108,11 +108,12 @@ def contact():
   el.writelines('Portfolio contact from %s,\n %s \n\n\n'%(name,message))
   el.close()
 
-''' ------------- heat control demo stuff ------------- '''
 
-valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'pc': False, 
-              'lights_B': False, 'lights_T': False, 'fans': False, 'led_col': 'rb'}
+''' ------------- heat control demo stuff ------------- '''
 onOff = {False: 'OFF', True: 'ON'}
+valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'pc': False, 
+              'lights_T': False, 'led_C': False, 'led_D': False, 'fans_D': False,
+              'fans_T': False, 'led_C_col': 'rb', 'led_D_col': 'rb'}
 
 
 @route('/heatDemo')
@@ -158,7 +159,6 @@ def relayControl(relay):
   except:
     print(sys.exc_info()[0])
 
-
 @route('/submit/<status>/<temp>', method='PUT')
 def submit(status, temp):
   global valuesDict
@@ -167,35 +167,30 @@ def submit(status, temp):
   # os.system('sudo printf "%s, %s" >> ../val.txt' %(status,temp))
   # serial.Serial('/dev/ttyACM0', 9600).write('%s' %(temp))
 
-# @route('/heatDemo/backToLogin')
-# def backToLogin():
-#   if request.get_cookie("account", secret=key):
-#     response.set_cookie("account", '', expires=0)
-#   redirect('/heatDemo/login')
-
 
 @route('/heatDemo/control')
 def control():
   global valuesDict
-  return template('control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'],
-                             lights_T=onOff[valuesDict['lights_T']], lights_B=onOff[valuesDict['lights_B']], 
-                             fans=onOff[valuesDict['fans']], pc=onOff[valuesDict['pc']])
+  return template('heatDemo/control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'],
+                             lights_T=onOff[valuesDict['lights_T']], led_D=onOff[valuesDict['led_D']], 
+                             led_C=onOff[valuesDict['led_C']], fans_D=onOff[valuesDict['fans_D']],
+                             fans_T=onOff[valuesDict['fans_T']], pc=onOff[valuesDict['pc']])
 
 
 @route('/heatDemo/h/control')
 def h_heatdemo():
   global valuesDict
-  return template('hControl', heat=onOff[valuesDict['h_heat']])
+  return template('heatDemo/hControl', heat=onOff[valuesDict['h_heat']])
 
 
 @route('/heatDemo/shopping')
 def ShoppingList():
-  return template('ShoppingList')
+  return template('heatDemo/ShoppingList')
 
 
 @route('/heatDemo/snow')
 def snow():
-  return template('snow')
+  return template('heatDemo/snow')
 
 
 @route('/heatDemo/textrepeater')
@@ -218,7 +213,7 @@ def christmas(name=''):
     return template('christmasCard-M', name=name, message=message)
   if name != '':
     name += ', ' 
-  return template('notChristmas', name=name)
+  return template('heatDemo/notChristmas', name=name)
 
 
 @route('/christmasDemo')
@@ -232,7 +227,7 @@ def christmas(name=''):
     name = 'Demo'
   else:
     colour = None
-  return template('christmasCardDemo', name=name, colour=colour, message=message)
+  return template('cards/christmasCardDemo', name=name, colour=colour, message=message)
 
 @route('/MothersDay>')
 @route('/MothersDay/')
@@ -240,7 +235,7 @@ def christmas(name=''):
 def MumsDay(name=''):
   name = name.replace('_', ' ')
   message = MothersMessage(name)
-  return template('card_mothersDay', name=name, message=message)
+  return template('cards/card_mothersDay', name=name, message=message)
 
 
 # @route('/shhhnoonecanknowiusethis')
@@ -252,27 +247,6 @@ def MumsDay(name=''):
 # def wallpaper():
 #   return template('wrappingPaper')
 
-
-@route('/dadsLogin', method=["POST","GET"])
-def dadsLogin():
-  global key
-  password = request.forms.get('password')
-  if password == 'BestDadEver46':
-    response.set_cookie("user", 'yes', secret=key)  # , username
-    return redirect('/dadsGift')
-  elif password != None:
-    return template('dadLogin', error='Incorrect password')
-  return template('dadLogin', error=None)
-
-
-@route('/dadsGift')
-def dadsGift():
-  global key
-  username = request.get_cookie("user", secret=key)
-  if username:
-    return template('dadsGift')
-  else:
-    return redirect('dadsLogin')
 
 ''' --------------- card end --------------- '''
 

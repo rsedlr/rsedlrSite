@@ -1,4 +1,3 @@
-
 body {
   background:  #292929;
   /* background-image: url('/static/snowHouse.jpg')  no-repeat left top #082f3d; */
@@ -11,6 +10,7 @@ body {
 
 .navbar {
   background-color: #1e1e1e !important;
+  /* height: 70px; */
 }
 
 .navbar-brand {
@@ -47,7 +47,17 @@ body {
   border-radius: 15px !important;
   -moz-border-radius: 15px !important;
   -webkit-border-radius: 15px !important;
+}
 
+.smallBtn {
+  padding: 10px 0px !important; 
+  font-size: 27px !important;
+  width: 125px;
+  margin: 5px auto;
+  border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  -webkit-border-radius: 15px !important;
+  display: inherit;
 }
 
 .otherbtn {
@@ -59,8 +69,8 @@ body {
   -webkit-border-radius: 10px !important;
 }
 
-#Main{
-  margin: 30px calc(15% - 40px);
+#Main {
+  margin-top: 30px;
 }
 
 #MoreOptionsContainer {
@@ -204,8 +214,10 @@ body {
   background-image: linear-gradient(0deg,#FF0000 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0) !important;
 }
 
-.mainWidthMax {
+.heat-col {
   max-width: 575px;
+  margin: auto;
+  padding: 0 25px;
 }
 
 .jumbotron {
@@ -264,13 +276,14 @@ input[type=text], select {
 .boxCol {
   background-color: #383f47;
   padding: 20px 30px;
+  margin: 15px auto 35px;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
 }
 
 #relayBox {
-  height: 603px; /* temporary, gotta sort out */
+  min-height: 603px; /* temporary, gotta sort out */
 }
 
 .boxColumn {

@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+  <a class="navbar-brand" href="/" style="font-size: 30px;">
+    <img src="/static/heatDemo/heatCropped.png" width="45" height="45" alt="" style="padding: 0; margin-bottom: 5px; margin-right: 5px;">
+    <b>Heat pi</b>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto flex-md-column flex-lg-row">
+      <li class="nav-item">
+        <a class="nav-link" href="control">Control</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navWhite" href="shopping">Shopping List</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link navWhite" href="whatsmyip">Whats my IP</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link navWhite" href="textrepeater" style="font-size: 20px;">Text Repeater</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link navWhite" href="ytdl" style="font-size: 20px;">YT download</a>
+      </li> -->
+      <li class="nav-item dropdown">
+        <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">other</a>
+        <div class="dropdown-menu drop-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/h/control">h-control</a>
+          <a class="dropdown-item" href="whatsmyip">Whats my IP</a>
+          <a class="dropdown-item" href="textrepeater">Text Repeater</a>
+          <a class="dropdown-item" href="ytdl">YT download</a>
+          <a class="dropdown-item" href="snow">SNOW</a>
+          <!-- <div class="dropdown-divider"></div> -->
+        </div>
+      </li>
+      <button class="btn btn-lg otherbtn my-primary-w remMarginSm" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation" style="margin: auto 5px auto 20px; max-width: 200px;">options</button>
+    </ul>
+  </div>
+</nav>
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="p-4" style="background-color: #1e1e1e">
+      <div class="row">  
+        <!-- <div class="col-3">
+          <h3 style="color: #ffffff; display: inline-block; margin-right: 10px;"><b>Christmas mode</b></h3>
+          <label class="label" style="display: inline-block">
+            <div class="toggle">
+              <input class="toggle-state" type="checkbox" name="xmasCheck" value="check" checked />
+              <div class="toggle-inner">
+                  <div class="indicator"></div>
+              </div>
+              <div class="active-bg"></div>
+            </div>
+            <div class="label-text">leave me alone</div>
+          </label>
+        </div> -->
+        <button class="btn btn-lg otherbtn my-primary-w" type="button" style="margin: auto 5px auto 20px; max-width: 200px;" id="btn-christmas">Christmas off</button>
+        <button class="btn btn-lg otherbtn my-primary-w" type="button" style="margin: auto 5px auto 20px; max-width: 200px;" id="btn-sound">Sound on</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+    var _urlpath = $(location).attr('pathname').split('/').pop(); // Gets url path, splits it by the slashes
+    $('nav li').each(function(){ 
+      var _this = $(this);
+      var _str = _this.find('a').attr('href'); // then compares that with the href of the nav buttons
+      if (_str == "/") _str = "";
+      // _str !== _urlpath ? _this.removeClass('navActive') : _this.addClass('navActive');
+      if (_str !== _urlpath) { // if they dont match it makes it look normal
+        _this.children().removeClass('navActive')
+        _this.children().addClass('navWhite')
+      } else { // if they do match it makes the button appear active
+        _this.children().removeClass('navWhite')
+        _this.children().addClass('navActive')
+      }
+    });
+</script>
+
