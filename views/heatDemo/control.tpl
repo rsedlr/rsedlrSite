@@ -159,18 +159,40 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row boxRow" style="height: auto;">
+            </div>    
+            <div id="relayRow3" class="row">
               <div class="col-sm-6 col-xs-12">
                 <div class="centreBtnDiv">
-                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="margin: 5px auto; background: rgb(255, 0, 0); width: 180px" id="D-led_button">Top fan</button>
-                  <span id="D-led_status" class="disNone">{{led_D}}</span>
+                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="width: 200px;   background: rgb(255, 0, 0);" id="demo1">demo 1</button>
                 </div>
               </div>
               <div class="col-sm-6 col-xs-12">
                 <div class="centreBtnDiv">
-                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="margin: 5px auto; background: rgb(255, 0, 0); width: 180px" id="D-led_colour">Timer</button>
+                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="width: 200px;   background: rgb(0, 255, 0);" id="demo2">demo 2</button>
+                </div>
+              </div>
+            </div>
+            <div id="relayRow4" class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="centreBtnDiv">
+                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="width: 200px;   background: rgb(0, 255, 0);" id="demo3">demo 3</button>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="centreBtnDiv">
+                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="width: 200px;   background: rgb(255, 0, 0);" id="demo4">demo 4</button>
+                </div>
+              </div>
+            </div>
+            <div id="relayRow5" class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="centreBtnDiv">
+                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="width: 200px;   background: rgb(255, 0, 0);" id="demo5">demo 5</button>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="centreBtnDiv">
+                  <button type="button" class="btn btn-lg mainbtn my-primary-wl" style="width: 200px;   background: rgb(0, 255, 0);" id="demo6">demo 6</button>
                 </div>
               </div>
             </div>

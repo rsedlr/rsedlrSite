@@ -8,7 +8,7 @@
   <body> 
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    % include('assets/links.html')
+    % include('assets/cards/links.html')
     <style>
       html, body {
         background-color: rgb(12, 78, 14);

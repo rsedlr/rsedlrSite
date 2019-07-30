@@ -10,10 +10,10 @@
     <title>test</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <!-- <link href="/static/notChristmas.css" rel="stylesheet"> -->
-    <link href="/static/christmasWallpaper.css" rel="stylesheet">
+    <link href="/static/cards//christmasWallpaper.css" rel="stylesheet">
   </head>
   <body>
-    % include('assets/christmasWallpaper.html')
+    % include('assets/cards/christmasWallpaper.html')
   </body>
   <script>  
   //stuff

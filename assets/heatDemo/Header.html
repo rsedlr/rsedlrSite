@@ -1,83 +1,108 @@
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="p-4" style="background-color: #1e1e1e">
+      <h3 style="color: #ffffff"><b>Home automation demo</b></h3>
+      <span style="color: #bbbbbb" >
+        -This is an example of the website i developed to control devices in the home <br>
+        -The backend simulates the real thing, without actually doing anything <br>
+        <!-- -<i>Hover over items to see what they do.</i> <br> -->
+        -All the actions are carried out through asyncronous AJAX requests triggering the desired action in the python backend <br>
+      </span>
+      <span id="controlFill" style="color: #bbbbbb" class="disNone bold">
+        <br><br>
+        This is the control page, here you can contorl the virtual home.<br>
+        The left column is for controlling heating status and percentage.<br>
+        Each button corresponds to a particular temperature percentage for quick use while the 'MORE' button allows you to get a more specific value.<br>
+        The right column is devoted to controlling relays which are connected to various devices such as a PC and LED lights <br>
+        then it sends the new status of the device in return and the site updates the status of the cirles to represent the change
+      </span>
+      <!-- <span id="shoppingFill" style="color: #bbbbbb" class="disNone bold">
+        <br><br>
+        This page contains a shopping list which can be easily edited, allowing the list to be accessed anywhere with internet access <br>
+        The list is stored on a mySQL server on the webserver machine. <br>
+        To edit, just click the pencil symbol over the box you wish to chane or hit the plus symbol for a new entry.
+      </span> -->
+      <!-- <span id="repeatFill" style="color: #bbbbbb" class="disNone bold">
+        <br><br>
+        This is the text manipulation page, enter some text and click 'GO' to watch in amazement as pointless effects are generated with the phrase given <br>
+        There isnt really a purpose to this page, but it shows understanding of string manipulation i suppsoe? 
+      </span> -->
+    </div>
+  </div>
+</div>
+
 <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
   <a class="navbar-brand" href="/" style="font-size: 30px;">
     <img src="/static/heatDemo/heatCropped.png" width="45" height="45" alt="" style="padding: 0; margin-bottom: 5px; margin-right: 5px;">
-    <b>Heat pi</b>
+    <b>Heat Demo</b>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle about">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto flex-md-column flex-lg-row">
       <li class="nav-item">
-        <a class="nav-link" href="control">Control</a>
+        <a class="nav-link navWhite" href="/" style="font-size: 20px;">back to main site</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link navWhite" href="/heatDemo/control" style="font-size: 20px;">Control</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link navWhite" href="shopping">Shopping List</a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link navWhite" href="whatsmyip">Whats my IP</a>
+        <a class="nav-link navWhite" href="/heatDemo/shopping" style="font-size: 20px;">Shopping List</a>
       </li> -->
-      <!-- <li class="nav-item">
-        <a class="nav-link navWhite" href="textrepeater" style="font-size: 20px;">Text Repeater</a>
-      </li> -->
-      <!-- <li class="nav-item">
-        <a class="nav-link navWhite" href="ytdl" style="font-size: 20px;">YT download</a>
-      </li> -->
-      <li class="nav-item dropdown">
-        <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">other</a>
-        <div class="dropdown-menu drop-dark" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/h/control">h-control</a>
-          <a class="dropdown-item" href="whatsmyip">Whats my IP</a>
-          <a class="dropdown-item" href="textrepeater">Text Repeater</a>
-          <a class="dropdown-item" href="ytdl">YT download</a>
-          <a class="dropdown-item" href="snow">SNOW</a>
-          <!-- <div class="dropdown-divider"></div> -->
-        </div>
-      </li>
-      <button class="btn btn-lg otherbtn my-primary-w remMarginSm" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation" style="margin: auto 5px auto 20px; max-width: 200px;">options</button>
+      <button class="btn btn-lg otherbtn my-primary-w remMarginSm" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2" aria-expanded="true" aria-label="Toggle navigation" style="margin: auto 5px auto 20px; max-width: 200px;">options</button>
+      <button class="btn btn-lg otherbtn my-primary-w remMarginSm" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation" style="margin: auto 5px auto 20px; max-width: 200px;">about</button>
     </ul>
   </div>
 </nav>
 
 <div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
+  <div class="collapse" id="navbarToggleExternalContent2">
     <div class="p-4" style="background-color: #1e1e1e">
       <div class="row">  
-        <!-- <div class="col-3">
-          <h3 style="color: #ffffff; display: inline-block; margin-right: 10px;"><b>Christmas mode</b></h3>
-          <label class="label" style="display: inline-block">
-            <div class="toggle">
-              <input class="toggle-state" type="checkbox" name="xmasCheck" value="check" checked />
-              <div class="toggle-inner">
-                  <div class="indicator"></div>
-              </div>
-              <div class="active-bg"></div>
-            </div>
-            <div class="label-text">leave me alone</div>
-          </label>
-        </div> -->
-        <button class="btn btn-lg otherbtn my-primary-w" type="button" style="margin: auto 5px auto 20px; max-width: 200px;" id="btn-christmas">Christmas off</button>
-        <button class="btn btn-lg otherbtn my-primary-w" type="button" style="margin: auto 5px auto 20px; max-width: 200px;" id="btn-sound">Sound on</button>
+        <button class="btn btn-lg otherbtn my-primary-w" type="button" style="margin: auto 5px auto 20px; max-width: 200px;" id="btn-christmas">Christmas mode off</button>
       </div>
     </div>
   </div>
 </div>
 
-<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+
 <script>
-    var _urlpath = $(location).attr('pathname').split('/').pop(); // Gets url path, splits it by the slashes
-    $('nav li').each(function(){ 
-      var _this = $(this);
-      var _str = _this.find('a').attr('href'); // then compares that with the href of the nav buttons
-      if (_str == "/") _str = "";
-      // _str !== _urlpath ? _this.removeClass('navActive') : _this.addClass('navActive');
-      if (_str !== _urlpath) { // if they dont match it makes it look normal
-        _this.children().removeClass('navActive')
-        _this.children().addClass('navWhite')
-      } else { // if they do match it makes the button appear active
-        _this.children().removeClass('navWhite')
-        _this.children().addClass('navActive')
-      }
-    });
+  var _urlpath = $(location).attr('pathname').split('/').pop(); // Gets url path, splits it by the slashes
+  console.log(_urlpath);
+  controlFill = document.getElementById('controlFill');
+  shoppingFill = document.getElementById('shoppingFill');
+  repeatFill = document.getElementById('repeatFill');
+  if (_urlpath == 'control') {
+    controlFill.style.display = 'inline';
+    shoppingFill.style.display = 'none';
+    repeatFill.style.display = 'none';
+  } else if (_urlpath == 'shopping') {
+    controlFill.style.display = 'none';
+    shoppingFill.style.display = 'inline';
+    repeatFill.style.display = 'none';
+  } else if (_urlpath == 'textrepeater') {
+    controlFill.style.display = 'none';
+    shoppingFill.style.display = 'none';
+    repeatFill.style.display = 'inline';
+  } else {
+    controlFill.style.display = 'none';
+    shoppingFill.style.display = 'none';
+    repeatFill.style.display = 'none';
+  }
+  $('nav li').each(function(){
+    var _this = $(this);
+    var _str = _this.find('a').attr('href').split('/').pop(); // then compares that with the href of the nav buttons
+    if (_str == "/") _str = "";
+    // _str !== _urlpath ? _this.removeClass('navActive') : _this.addClass('navActive');
+    if (_str !== _urlpath) { // if they dont match it makes it look normal
+      _this.children().removeClass('navActive')
+      _this.children().addClass('navWhite')
+    } else { // if they do match it makes the button appear active
+      _this.children().removeClass('navWhite')
+      _this.children().addClass('navActive')
+    }
+  });
 </script>
 

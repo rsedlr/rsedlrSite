@@ -9,7 +9,7 @@
     <meta name="author" content=""> -->
     <title>You've got mail</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <link href="/static/notChristmas.css" rel="stylesheet">
+    <link href="/static/cards//notChristmas.css" rel="stylesheet">
   </head>
   <body>
     <div class="container" style="position: relative; margin: 0px auto auto">

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="">
   <title>Happy Mothers Day</title>
-  <link rel="stylesheet" type="text/css" href="/static/card_mothersDay.css">
+  <link rel="stylesheet" type="text/css" href="/static/cards/card_mothersDay.css">
 </head>
 <body>
   <header class="masterhead">

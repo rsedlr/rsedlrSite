@@ -7,7 +7,7 @@
   <title>Merry Christmas</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
-  <link rel="stylesheet" type="text/css" href="/static/christmasCard.css">
+  <link rel="stylesheet" type="text/css" href="/static/cards/christmasCard.css">
 </head>
 <body>
   <ul class="lightrope" style="top: 0; left: 0;">
