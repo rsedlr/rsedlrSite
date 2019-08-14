@@ -45,7 +45,7 @@ $(document).ready(function () {
   $('.more-btn').click(function() {
     // document.getElementById(this.value + "Modal").style.display = "block";
     imgModal.style.display = "block";
-    document.getElementById("modalImg").src = document.getElementById(this.value + "Img").src;
+    document.getElementsByClassName("d-block")[0].src = document.getElementById(this.value + "Img").src;
     document.getElementById("caption").innerHTML = this.parentElement.getElementsByClassName('header-title')[0].innerHTML;
   });
   $(".img-close").click(function() {
