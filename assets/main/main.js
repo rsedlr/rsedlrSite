@@ -11,25 +11,6 @@ $(document).ready(function () {
     secText.className += ' Mac-sec';  
   }
 
-  // phoneAnims();
-  // function phoneAnims() {
-  //   $('#test').data('aos', "fade-up"); 
-  //   console.log('done test');
-  //   if ($(document).width() < 900) {
-  //     $('[data-aos]').data('aos', "fade-up"); 
-  //     console.log('changing aos shit');
-  //   }
-  // }
-  // window.addEventListener("resize",function(){
-  //   phoneAnims();
-  // })
-
-  // $('.main-pic').click(function() {
-  //   imgModal.style.display = "block";
-  //   document.getElementById("modalImg").src = this.src;
-  //   // document.getElementById("caption").innerHTML = this.alt;
-  // });
-
   var controller = new ScrollMagic.Controller();
 
   // var revealElements = document.getElementsByClassName("fade");
@@ -62,10 +43,10 @@ $(document).ready(function () {
   }
   
   $('.more-btn').click(function() {
-    document.getElementById(this.value + "Modal").style.display = "block";
+    // document.getElementById(this.value + "Modal").style.display = "block";
     imgModal.style.display = "block";
-    // console.log(this.value+"Img");
     document.getElementById("modalImg").src = document.getElementById(this.value + "Img").src;
+    document.getElementById("caption").innerHTML = this.parentElement.getElementsByClassName('header-title')[0].innerHTML;
   });
   $(".img-close").click(function() {
     $(".modal-content").hide();

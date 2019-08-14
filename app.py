@@ -17,7 +17,7 @@ except Exception as e:
 try:
   from email.MIMEMultipart import MIMEMultipart
   from email.MIMEText import MIMEText 
-except Exception as e:
+except Exception as e: 
   print(e)
 
 try:
