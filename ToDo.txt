@@ -11,3 +11,4 @@ RsEdler todo:
 
 -make contact page look better
 
+-main page rsedlr text slide in from 4 angles, one per word. slide out on hover
