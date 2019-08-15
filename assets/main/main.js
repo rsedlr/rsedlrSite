@@ -7,7 +7,7 @@ $(document).ready(function () {
   var modalIndicators = document.getElementById('modalIndicators');
   var modalInner = document.getElementById('modalInner');
   var contactClicked = false;
-
+  
   var imgCount = {'heatDemo': 1, 'othello': 1,'wikiRace': 1, 'christmasCard': 1, 
                   'thisSite': 1, 'unity': 1, 'rcCar': 1, 'bl': 1, 
                   'plantWaterer': 1, 'pyGame': 1, 'tempImg': 1}
@@ -18,23 +18,6 @@ $(document).ready(function () {
   }
 
   var controller = new ScrollMagic.Controller();
-
-  // var revealElements = document.getElementsByClassName("fade");
-  // for (var i=0; i<revealElements.length; i++) { // create a scene for each element
-	// 	var tween = new TimelineMax()
-	// 		.from(revealElements[i], 1, {opacity: 0, transform: "translateX(-300px)", ease: Sine.easeInOut})
-	// 		.to(revealElements[i], 3, {opacity: 1, transform: "none", ease: Sine.easeInOut});            
-
-	// 	new ScrollMagic.Scene({
-	// 						triggerElement: revealElements[i],
-	// 						duration: 350, // use full viewport
-  //             offset: 0, // move trigger to center of element
-  //             triggerHook: 0.96  // move the trigger hook to bottom
-	// 					})
-	// 					.setTween(tween)
-	// 					// .addIndicators() // add indicators (requires plugin)
-	// 					.addTo(controller);
-  // }
 
   var revealElements = document.getElementsByClassName("fade");
   for (var i=0; i < revealElements.length; i++) { // create a scene for each element
@@ -171,20 +154,6 @@ $(document).ready(function () {
           submitMsg.css('visibility', 'visible');
         },
       });            
-    }
-  }
-
-  // window.onclick = function(event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //   }
-  // }
-
-  function slide(id, duration=2000) {
-    if ($(id).is(":hidden")) {
-      $(id).slideDown(duration);
-    } else {
-      $(id).slideUp(duration);
     }
   }
 });            

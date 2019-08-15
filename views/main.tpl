@@ -16,7 +16,8 @@
     <!-- <script src="static/scrollMagic/plugins/debug.addIndicators.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     % import os ; mainJS = os.path.getsize("assets/main/main.js") ; mainCSS = os.path.getsize("assets/main/main.css")
-    <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>  
+    <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>
+    <script type='text/javascript' src='/static/main/text.js?v=1.0'></script>  
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
   </head>
   <body id="page-top">
@@ -31,14 +32,12 @@
             <div class="hideSmall" style="margin-bottom: 100px; margin-top: 0;" id="titleDiv">
               <div class="header-content Mac-main" id="mainText">
                 <div class="wrapper" style="height: 100px; width: 640px; top: 0px;">
-                  <span class="titleSpans letter-1">Reiss Edler</span>
-                  <span class="titleSpans letter-2">Reiss Edler</span>
+                  <span id="main1" class="textAnim animForward">Reiss</span> <span id="main2" class="textAnim animForward">Edler</span>
                 </div>
               </div>
               <div class="header-content Mac-sec" id="secText">
                 <div class="wrapper" style="width: 640px; top: 0px;">
-                  <span class="titleSpans letter-1">personal portfolio</span>
-                  <span class="titleSpans letter-2">personal portfolio</span>
+                  <span id="main4" class="textAnim animForward">personal</span> <span id="main3" class="textAnim animForward">portfolio</span>
                 </div>
               </div>
             </div>
@@ -46,7 +45,6 @@
               <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
               <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
             </div>
-            <!-- <p style="color: white; margin-top: 100px;">(currently in development)</p> -->
           </div>
           <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
             <div class="round rot90" style="margin: auto auto 0px">
@@ -65,7 +63,11 @@
       <div class="container" style="margin-top: 50px">
         <div class="row">
           <div class="col-md-10 mx-auto" style="text-align: left !important;">
-            <div id="testTrigger" class="fade">
+            <div class="col-md-10 mx-auto fade">
+                <h1 class="sectionTitle">About</h1>
+            </div>
+            <!-- BIG FUCKOFF QUOTE -->
+            <div class="fade">
               <h1 class="mainHead" id="testElem">Hi,</h1>
               <!-- <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div> -->
             </div>
@@ -74,8 +76,7 @@
             </div>
             <div style="margin: 6rem auto auto;" class="fade"> 
               <h2 class="secHead" style="font-size: 2.6rem;">
-                Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar school.
-                As well as Further Maths AS-level myself.
+                Currently studying A-levels at Beths Grammar school.
               </h2>
             </div>
           </div>
@@ -106,16 +107,16 @@
           <div class="row fade">
             <div class="form-group col-sm-6">
               <label for="name" class="h2 white bold">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+              <input type="text" class="form-control" id="name" placeholder="" required>
             </div>
             <div class="form-group col-sm-6">
               <label for="email" class="h2 white bold">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+              <input type="email" class="form-control" id="email" placeholder="" required>
             </div>
           </div>        
           <div class="form-group fade">
             <label for="message" class="h2 white bold">Message</label>
-            <textarea id="message" class="form-control" rows="5" placeholder="Enter message" required></textarea>
+            <textarea id="message" class="form-control" rows="5" placeholder="" required></textarea>
           </div>
           <div class="fade">
             <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px;">Submit</button>
