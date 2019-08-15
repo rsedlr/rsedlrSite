@@ -82,7 +82,10 @@
               <h2 class="secHead">I'm a computer science student,<br>based in London.</h2>
             </div>
             <div style="margin: 6rem auto auto;" class="fade"> 
-              <h2 class="secHead" style="font-size: 2.6rem;">Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar.</h2>
+              <h2 class="secHead" style="font-size: 2.6rem;">
+                Currently studying Computer Science, Maths and Physics A-levels at Beths Grammar school.
+                As well as Further Maths AS-level myself.
+              </h2>
             </div>
             <!-- <br><br><br>
             <p>and some witty comments i suppose</p>
@@ -102,7 +105,7 @@
         % include('assets/main/projects.html')
 
         <div class="fade">
-          <button class="btn proj-btn main-btn" id="moreBtn" type="button" style="margin-top: 25px">Show More</button>
+          <button class="btn proj-btn main-btn" id="moreProjBtn" type="button" style="margin-top: 25px">Show More</button>
         </div>
       </div>
     </section>
