@@ -7,6 +7,8 @@ $(document).ready(function () {
   var modalIndicators = document.getElementById('modalIndicators');
   var modalInner = document.getElementById('modalInner');
   var contactClicked = false;
+  var firstTexts = '', secondTexts = '';
+  var anim;
   
   var imgCount = {'heatDemo': 1, 'othello': 1,'wikiRace': 1, 'christmasCard': 1, 
                   'thisSite': 1, 'unity': 1, 'rcCar': 1, 'bl': 1, 
@@ -30,7 +32,22 @@ $(document).ready(function () {
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
   }
-  
+
+  $('.hover').mouseenter(function() {
+    clearTimeout(anim);
+    $('#main1, #main4').addClass("active");
+    anim = setTimeout(function() { 
+      $('#main2, #main3').addClass("active");
+    }, 150);
+  }).mouseleave(function() {
+    clearTimeout(anim);
+    $('#main2, #main3').removeClass("active");
+    anim = setTimeout(function() { 
+      $('#main1, #main4').removeClass("active");
+    }, 150);
+  });
+
+
   $('.more-btn').click(function() {
     // document.getElementById(this.value + "Modal").style.display = "block";  // old way
     // $('modalSlides').carousel(0);

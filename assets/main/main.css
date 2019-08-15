@@ -57,19 +57,19 @@ hr {
 hr.light {
   border-color: white;
 }
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: Arial,Helvetica,sans-serif; 
   font-weight: 200;
   /* letter-spacing: 1px; */
   display: inline-block;
-  color: var(--text-grey);
+  color: var(--main-grey);
 }
 
 p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: var(--text-grey);
+  color: var(--main-grey);
 }
 
 section {
@@ -93,28 +93,17 @@ section h2 {
   position: relative;
 }
 #main1.animForward {
-  animation: 1.8s slide-down ease-in-out;
+#main1 {
+  animation: 1s slide-down ease-in-out;
 }
-#main2.animForward {
-  animation: 1.8s slide-left ease-in-out;
+#main2 {
+  animation: 1s slide-left ease-in-out;
 }
-#main3.animForward {
-  animation: 1.8s slide-up ease-in-out;
+#main3 {
+  animation: 1s slide-up ease-in-out;
 } 
-#main4.animForward {
-  animation: 1.8s slide-right ease-in-out;
-}
-#main1.animBack {
-  animation: 1.8s slide-down ease-in-out reverse;
-}
-#main2.animBack {
-  animation: 1.8s slide-left ease-in-out reverse;
-}
-#main3.animBack {
-  animation: 1.8s slide-up ease-in-out reverse;
-} 
-#main4.animBack {
-  animation: 1.8s slide-right ease-in-out reverse;
+#main4 {
+  animation: 1s slide-right ease-in-out;
 }
 
 @keyframes slide-down {
@@ -133,6 +122,34 @@ section h2 {
   from { left: -80vw; }
   to { left: 0; }
 } 
+
+/* .hover {
+  transition: 0.1s;
+}
+.hover:hover {
+  color: var(--main-grey);
+} */
+
+
+.hover span {
+  color: white;
+  text-decoration: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+                    to right,
+                    var(--main-grey),
+                    var(--main-grey) 50%,
+                    white 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 0.15s linear;
+}
+/* .hover span:hover,  */
+.hover span.active {
+  background-position: 0%;
+}
 
 
 #mainNav {
@@ -303,7 +320,7 @@ footer p {
 }
 
 .proj-btn {
-  background-color: black;
+  background-color: var(--main-grey);
   color: white; 
   font-size: 20px; 
   font-weight: bold;
@@ -311,7 +328,7 @@ footer p {
 }
 .proj-btn:hover {
   background-color: white; 
-  color: black; 
+  color: var(--main-grey); 
 }
 
 .btn-xl {
@@ -412,7 +429,7 @@ footer p {
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
-    color: black;
+    color: var(--main-grey);
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.5);
@@ -477,7 +494,7 @@ footer p {
 
 /* hover main text */
 #mainText {
-  font-family: Arial var(--text-grey), Helvetica,sans-serif !important; 
+  font-family: Arial var(--main-grey), Helvetica,sans-serif !important; 
   font-size: 100px;
   line-height: 1em;
 }
@@ -493,23 +510,6 @@ footer p {
   text-align: justify;
   position: relative;
   /* transform: translateY(-40%); */
-}
-#mainText:hover, #secText:hover {
-  cursor: default;
-}
-  
-.wrapper {
-  display: inline-block;
-  top: -900px;
-  position: relative;
-  height: 150px;
-  width: 90px;
-  transition: ease 0.3s all;
-}
-.wrapper:after {
-  content:'';
-  top:-10px; bottom:-10px; 
-  left:-10px; right:-10px; 
 }
   
 span.arrow, span.titleSpans {
@@ -783,7 +783,7 @@ span.space {
 .tooltip {
   position: relative;
   display: inline-block;
-  /* border-bottom: 1px dotted black; */
+  /* border-bottom: 1px dotted var(--main-grey); */
   opacity: 1;
 }
 
@@ -791,7 +791,7 @@ span.space {
   display: none;
   font-size: 16px;
   width: 140px;
-  background-color: black;
+  background-color: var(--main-grey);
   color: #fff;
   text-align: center;
   border-radius: 6px;

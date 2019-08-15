@@ -17,7 +17,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     % import os ; mainJS = os.path.getsize("assets/main/main.js") ; mainCSS = os.path.getsize("assets/main/main.css")
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>
-    <script type='text/javascript' src='/static/main/text.js?v=1.0'></script>  
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
   </head>
   <body id="page-top">
@@ -28,17 +27,17 @@
     <header class="masthead">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="col-lg-9 col-md-12" style="margin: auto auto 0 0;">
-            <div class="hideSmall" style="margin-bottom: 100px; margin-top: 0;" id="titleDiv">
+          <div class="col-lg-9 col-md-12" style="margin: auto auto 0 0; padding-right: 60px;">
+            <div class="hideSmall hover" style="margin-bottom: 150px; margin-top: 0;" id="titleDiv">
               <div class="header-content Mac-main" id="mainText">
-                <div class="wrapper" style="height: 100px; width: 640px; top: 0px;">
-                  <span id="main1" class="textAnim animForward">Reiss</span> <span id="main2" class="textAnim animForward">Edler</span>
-                </div>
+                <!-- <div class="wrapper" style="height: 100px; width: 640px; top: 0px;"> -->
+                  <span id="main1">Reiss</span> <span id="main2">Edler</span>
+                <!-- </div> -->
               </div>
               <div class="header-content Mac-sec" id="secText">
-                <div class="wrapper" style="width: 640px; top: 0px;">
-                  <span id="main4" class="textAnim animForward">personal</span> <span id="main3" class="textAnim animForward">portfolio</span>
-                </div>
+                <!-- <div class="wrapper" style="width: 640px; top: 0px;"> -->
+                  <span id="main4">personal</span> <span id="main3">portfolio</span>
+                <!-- </div> -->
               </div>
             </div>
             <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
@@ -63,9 +62,9 @@
       <div class="container" style="margin-top: 50px">
         <div class="row">
           <div class="col-md-10 mx-auto" style="text-align: left !important;">
-            <div class="col-md-10 mx-auto fade">
+            <!-- <div class="col-md-10 mx-auto fade">
                 <h1 class="sectionTitle">About</h1>
-            </div>
+            </div> -->
             <!-- BIG FUCKOFF QUOTE -->
             <div class="fade">
               <h1 class="mainHead" id="testElem">Hi,</h1>
