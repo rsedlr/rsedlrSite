@@ -10,22 +10,14 @@
     <link rel="icon" href="/static/pic/favicon.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></noscript> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"></noscript>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="nxone" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript> -->
     <script src="static/scrollMagic/ScrollMagic.min.js"></script>
-    <!-- <script src="static/scrollMagic/plugins/animation.velocity.min.js"></script>  -->
     <!-- <script src="static/scrollMagic/plugins/debug.addIndicators.min.js"></script> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
     % import os ; mainJS = os.path.getsize("assets/main/main.js") ; mainCSS = os.path.getsize("assets/main/main.css")
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>  
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
-    <!-- <link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/static/main/main.css?filever={{mainCSS}}"></noscript> -->
   </head>
   <body id="page-top">
 
@@ -77,7 +69,6 @@
               <h1 class="mainHead" id="testElem">Hi,</h1>
               <!-- <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div> -->
             </div>
-            <!-- <h5 style="display: block; margin: 5px 6px;">(blanks yet to be decided)</h5> -->
             <div style="margin: 5rem auto auto;" class="fade"> 
               <h2 class="secHead">I'm a computer science student,<br>based in London.</h2>
             </div>
@@ -87,9 +78,6 @@
                 As well as Further Maths AS-level myself.
               </h2>
             </div>
-            <!-- <br><br><br>
-            <p>and some witty comments i suppose</p>
-            <br><br><br> -->
           </div>
         </div>
       </div>
