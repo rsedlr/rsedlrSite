@@ -7,12 +7,14 @@ $(function() {
     }, 1);
   })
   $text.on("animationend", function() {
-    $text.removeClass('animBack');
-    $text.addClass("invis");
-    window.setTimeout(function() {
-      $text.removeClass("invis");
-      $text.addClass('animForward');
-    }, 1);
+    if ($text.hasClass('animBack')) {
+      $text.removeClass('animBack');
+      $text.addClass("invis");
+      window.setTimeout(function() {
+        $text.removeClass("invis");
+        $text.addClass('animForward');
+      }, 1);
+    }
   });
 });
 
