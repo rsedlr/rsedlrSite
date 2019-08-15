@@ -7,7 +7,6 @@ $(document).ready(function () {
   var modalIndicators = document.getElementById('modalIndicators');
   var modalInner = document.getElementById('modalInner');
   var contactClicked = false;
-  var firstTexts = '', secondTexts = '';
   var anim;
   
   var imgCount = {'heatDemo': 1, 'othello': 1,'wikiRace': 1, 'christmasCard': 1, 

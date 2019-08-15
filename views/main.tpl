@@ -27,24 +27,20 @@
     <header class="masthead">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="col-lg-9 col-md-12" style="margin: auto auto 0 0; padding-right: 60px;">
-            <div class="hideSmall hover" style="margin-bottom: 150px; margin-top: 0;" id="titleDiv">
+          <!-- <div class="col-lg-9 col-md-12" style="margin: auto auto 0 0; padding-right: 60px;"> -->
+            <div class="hideSmall hover" style="margin: auto auto 150px 0;" id="titleDiv">
               <div class="header-content Mac-main" id="mainText">
-                <!-- <div class="wrapper" style="height: 100px; width: 640px; top: 0px;"> -->
-                  <span id="main1">Reiss</span> <span id="main2">Edler</span>
-                <!-- </div> -->
+                <span id="main1">Reiss</span> <span id="main2">Edler</span>
               </div>
               <div class="header-content Mac-sec" id="secText">
-                <!-- <div class="wrapper" style="width: 640px; top: 0px;"> -->
-                  <span id="main4">personal</span> <span id="main3">portfolio</span>
-                <!-- </div> -->
+                <span id="main4">personal</span> <span id="main3">portfolio</span>
               </div>
             </div>
             <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
               <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
               <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
             </div>
-          </div>
+          <!-- </div> -->
           <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
             <div class="round rot90" style="margin: auto auto 0px">
               <a href="#about" class="js-scroll-trigger">
