@@ -50,9 +50,8 @@ $(document).ready(function () {
   
   $('.more-btn').click(function() {
     // document.getElementById(this.value + "Modal").style.display = "block";  // old way
-    $('modalSlides').carousel(0);
+    // $('modalSlides').carousel(0);
     var count = imgCount[this.value];
-    console.log(`count: ${count}  this: ${this.value}`);
     for (var i=0; i < count; i++) {
       $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo('#modalIndicators')
       $('<div class="carousel-item"><img class="d-block w-100" src="static/pic/' + this.value + '-c-' + (i+1) + '.png"></div>').appendTo('#modalInner');

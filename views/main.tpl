@@ -7,7 +7,7 @@
     <meta name="keywords" content="Portfolio, Reiss Edler">
     <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
     <title>Reiss Edler - Personal Portfolio</title>
-    <link rel="icon" href="/staticIco/pic/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/static/pic/favicon.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></noscript> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
