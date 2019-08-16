@@ -259,7 +259,7 @@ footer p {
 }
 
 .mainSection {
-  min-height: calc(100vh - 50px);  /* 59px */
+  /* min-height: calc(100vh - 50px); */
   width: 100%;
 }
 
