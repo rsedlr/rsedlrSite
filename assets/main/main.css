@@ -3,8 +3,10 @@
   --main-purple: #7e3ad8;
   --main-grey: #222222;
   --text-grey: #111111;
-  --main-gradient: -webkit-gradient(linear, right top, left top, from(var(--main-purple)), to(#e40d1b));
-  --backup-gradient: linear-gradient(to left, var(--main-purple), var(--main-red)); /* df1e2b ; 6f00ff, 7b4397 */
+  --main-gradient: -webkit-gradient(linear, right top, left top, 
+                                    from(var(--main-purple)), to(#e40d1b));
+  --backup-gradient: linear-gradient(to left, var(--main-purple), 
+                                      var(--main-red)); /* df1e2b ; 6f00ff, 7b4397 */
 }
 
 ::selection {
@@ -143,7 +145,7 @@ section h2 {
                     white 50%);
   background-size: 200% 100%;
   background-position: 100%;
-  transition: all 0.15s linear;
+  transition: all 0.2s linear;
 }
 /* .hover span:hover,  */
 .hover span.active {
@@ -609,7 +611,7 @@ span.space {
 /* arrow bottom end */
 
 /* modal start */
-.modal {
+/* .modal {
   display: none; 
   position: fixed; 
   z-index: 4; 
@@ -641,7 +643,6 @@ span.space {
 }
 
 .modal-header {
-  /* padding: 2px 16px; */
   background-color: #000000;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -653,7 +654,6 @@ span.space {
 
 .modal-body {
   overflow-y: auto;
-  /* max-height: 600px; */
   border: 10px solid white;
   border-radius: 40px;
 }
@@ -667,7 +667,7 @@ span.space {
   background-color: #000;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-}
+} */
 
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
@@ -698,7 +698,7 @@ span.space {
 
 #caption {
   margin: auto;
-  display: block;
+  /* display: block; */
   width: 80%;
   max-width: 700px;
   text-align: center;
@@ -710,9 +710,10 @@ span.space {
 
 .img-modal {
   display: none;
+  /* visibility: hidden; */
   position: fixed;
   z-index: 2000;
-  padding-top: 50px;
+  padding-top: 70px;
   left: 0;
   top: 0;
   width: 100%;
@@ -724,7 +725,7 @@ span.space {
 
 .img-modal-content {
   margin: auto;
-  display: block;
+  /* display: block; */
   width: 65%;
   /* max-width: 1100px; */
 }
@@ -754,6 +755,7 @@ span.space {
 .main-pic {
   transition: 0.2s ease;
   border: 3px solid #000;
+  cursor: pointer;
   /* box-shadow: 0 0 40px; */
 }
 .main-pic:hover {

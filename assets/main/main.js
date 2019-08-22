@@ -3,7 +3,7 @@ $(document).ready(function () {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
   var mainText = document.getElementById('mainText');
   var secText = document.getElementById('secText');
-  var imgModal = document.getElementById('picModal');
+  var picModal = document.getElementById('picModal');
   var modalIndicators = document.getElementById('modalIndicators');
   var modalInner = document.getElementById('modalInner');
   var contactClicked = false;
@@ -37,34 +37,38 @@ $(document).ready(function () {
     $('#main1, #main4').addClass("active");
     anim = setTimeout(function() { 
       $('#main2, #main3').addClass("active");
-    }, 150);
+    }, 200);
   }).mouseleave(function() {
     clearTimeout(anim);
     $('#main2, #main3').removeClass("active");
     anim = setTimeout(function() { 
       $('#main1, #main4').removeClass("active");
-    }, 150);
+    }, 200);
   });
 
 
-  $('.more-btn').click(function() {
-    // document.getElementById(this.value + "Modal").style.display = "block";  // old way
-    // $('modalSlides').carousel(0);
-    var count = imgCount[this.value];
-    for (var i=0; i < count; i++) {
+  $('.main-pic').click(function (e) {
+    e.preventDefault();
+    var value = this.id.slice(0, -3);
+    var count = imgCount[value];
+    for (var i = 0; i < count; i++) {
       $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo('#modalIndicators')
-      $('<div class="carousel-item"><img class="d-block w-100" src="static/pic/' + this.value + '-c-' + (i+1) + '.png"></div>').appendTo('#modalInner');
+      $('<div class="carousel-item"><img class="d-block w-100" src="static/pic/'
+        + value + '-c-' + (i + 1) + '.png"></div>').appendTo('#modalInner');
     }
     $('#modalIndicators > li').first().addClass('active');
     $('.carousel-item').first().addClass('active');
     // $('#modalSlides').carousel();  
-    document.getElementById("caption").innerHTML = this.parentElement.getElementsByClassName('header-title')[0].innerHTML;
-    imgModal.style.display = "block";
+    document.getElementById("caption").innerHTML = this.alt;
+    picModal.style.display = "block";
+    // document.body.classList.add('noScroll');
+    // picModal.style.visibility = "visible";
   });               
 
   $(".img-close").click(function() {
-    imgModal.scrollIntoView()
-    imgModal.style.display = "none";
+    picModal.scrollIntoView()
+    picModal.style.display = "none";
+    // picModal.style.visibility = "hidden";
     document.body.classList.remove('noScroll');
     while (modalIndicators.firstChild) modalIndicators.removeChild(modalIndicators.firstChild);
     while (modalInner.firstChild) modalInner.removeChild(modalInner.firstChild);
@@ -84,17 +88,21 @@ $(document).ready(function () {
       // AOS.refresh();
       // setTimeout(function() { AOS.refresh(); }, 1700);
     }
-  });            
+  });    
+  
+  $('.github').click(function (e) {
+    window.location.href = `https://github.com/rsedlr/${this.value}`;
+  });   
 
-  $("#HeatDemoBtn").click(function() {
+  $("#HeatDemoBtn").click(function () {
     window.location.href = '/heatDemo';
   });   
 
-  $("#othBtn").click(function() {
+  $("#othelloBtn").click(function () {
     window.location.href = '/Othello';
   });   
 
-  $("#wikiBtn").click(function() {
+  $("#wikiRaceBtn").click(function () {
     window.location.href = '/wikiRace';
   });    
 
@@ -103,7 +111,7 @@ $(document).ready(function () {
   });     
 
   $("#pyGameBtn").click(function() {
-    window.location.href = 'https://github.com/rsedlr/OOP_game';
+    window.location.href = 'https://trinket.io/python/9c0a857289';
   });     
 
   $("#thisSiteBtn").click(function() {

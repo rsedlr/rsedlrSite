@@ -125,7 +125,7 @@
           </div>
         </div>
         <div class="fade">
-          <h1 class="sectionHead" style="margin-top: 80px; color: white">GitHub</h1>
+          <h1 class="sectionHead" style="margin-top: 80px; color: white">Socials</h1>
           <div style="margin-top: 30px;">
             <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
           </div>
