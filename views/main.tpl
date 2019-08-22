@@ -55,25 +55,16 @@
       </div>
     </header>
     <section class="bg-primary text-center mainSection" id="about">
-      <div class="container" style="margin-top: 50px">
+      <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto" style="text-align: left !important;">
-            <!-- <div class="col-md-10 mx-auto fade">
+            <div class="mx-auto fade">
                 <h1 class="sectionTitle">About</h1>
-            </div> -->
-            <!-- BIG FUCKOFF QUOTE -->
+            </div>
             <div class="fade">
-              <h1 class="mainHead" id="testElem">Hi,</h1>
-              <!-- <div style="height: 100px; width: 300px; display: inline-block; border-bottom: 4px solid transparent;"></div> -->
+              <h1 class="secHead"><span style="font-size: 70px">Hi,</span> I'm a computer science student, based in London. Currently studying A-levels at Beths Grammar school.</h1>
             </div>
-            <div style="margin: 5rem auto auto;" class="fade"> 
-              <h2 class="secHead">I'm a computer science student,<br>based in London.</h2>
-            </div>
-            <div style="margin: 6rem auto 6rem;" class="fade"> 
-              <h2 class="secHead" style="font-size: 2.6rem;">
-                Currently studying A-levels at Beths Grammar school.
-              </h2>
-            </div>
+              <!-- BIG FUCKOFF QUOTE -->
           </div>
         </div>
       </div>

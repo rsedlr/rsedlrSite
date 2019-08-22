@@ -232,7 +232,7 @@ header.masthead .device-container .screen img {
 footer {
   padding: 25px 0;
   text-align: center;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   background-color: var(--main-grey);
 }
 footer p {
