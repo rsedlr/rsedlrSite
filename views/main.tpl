@@ -27,20 +27,18 @@
     <header class="masthead">
       <div class="container h-100">
         <div class="row h-100">
-          <!-- <div class="col-lg-9 col-md-12" style="margin: auto auto 0 0; padding-right: 60px;"> -->
-            <div class="hideSmall hover" style="margin: auto auto 150px 0;" id="titleDiv">
-              <div class="header-content Mac-main" id="mainText">
-                <span id="main1">Reiss</span> <span id="main2">Edler</span>
-              </div>
-              <div class="header-content Mac-sec" id="secText">
-                <span id="main4">personal</span> <span id="main3">portfolio</span>
-              </div>
+          <div class="hideSmall hover" style="margin: auto auto 150px 0;" id="titleDiv">
+            <div class="header-content Mac-main" id="mainText">
+              <span id="main1">Reiss</span> <span id="main2">Edler</span>
             </div>
-            <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
-              <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
-              <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
+            <div class="header-content Mac-sec" id="secText">
+              <span id="main4">personal</span> <span id="main3">portfolio</span>
             </div>
-          <!-- </div> -->
+          </div>
+          <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
+            <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
+            <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
+          </div>
           <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
             <div class="round rot90" style="margin: auto auto 0px">
               <a href="#about" class="js-scroll-trigger">
@@ -68,12 +66,12 @@
                 <span style="font-size: 70px">Hi,</span> I'm a computer science student, based in London. Currently studying A-levels at Beths Grammar school.
               </h1>
             </div>
-            <div class="fade">
+            <!-- <div class="fade">
               <h1 class="mainQuote">
                 "He showed great technical abilities, aptitude and intelligence and was not afraid to ask questions to 
                 further his understanding of the development processes we employed." - simon brown (work experience team manager)
               </h1>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -111,7 +109,7 @@
           </div>        
           <div class="form-group fade">
             <label for="message" class="h1 bold">Message</label>
-            <textarea id="message" class="form-control" rows="5" placeholder="" required></textarea>
+            <textarea id="message" class="form-control" rows="6" placeholder="" required></textarea>
           </div>
           <div class="fade">
             <button type="submit" id="form-submit" class="btn proj-btn main-btn btn-lg" style="margin: 10px;">Submit</button>
@@ -127,7 +125,9 @@
         <div class="fade">
           <!-- <h1 class="sectionHead" style="margin-top: 80px;">Socials</h1> -->
           <div style="margin-top: 70px;">
-            <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
+            <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-120px-plus.png" width="90" height="90"></imgborder></a>
+            <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
+            <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/insta.png" width="85" height="85"></imgborder></a>
           </div>
         </div>
       </div>

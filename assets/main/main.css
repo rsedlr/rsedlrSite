@@ -90,6 +90,7 @@ section h2 {
 .secHead {
   font-weight: 700;
   font-size: 35px;
+  margin-top: 20px;
 }
 
 .mainQuote {
@@ -377,6 +378,7 @@ footer p {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   background-clip: border-box;
+  resize: none;
 }
 
 .boxCol {
