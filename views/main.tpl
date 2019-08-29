@@ -57,14 +57,23 @@
     <section class="bg-primary text-center mainSection" id="about">
       <div class="container">
         <div class="row">
+          <div class="col-md-10 mx-auto fade">
+            <h1 class="sectionTitle">About</h1>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-md-10 mx-auto" style="text-align: left !important;">
-            <div class="mx-auto fade">
-                <h1 class="sectionTitle">About</h1>
+            <div class="fade">
+              <h1 class="secHead">
+                <span style="font-size: 70px">Hi,</span> I'm a computer science student, based in London. Currently studying A-levels at Beths Grammar school.
+              </h1>
             </div>
             <div class="fade">
-              <h1 class="secHead"><span style="font-size: 70px">Hi,</span> I'm a computer science student, based in London. Currently studying A-levels at Beths Grammar school.</h1>
+              <h1 class="mainQuote">
+                "He showed great technical abilities, aptitude and intelligence and was not afraid to ask questions to 
+                further his understanding of the development processes we employed." - simon brown (work experience team manager)
+              </h1>
             </div>
-              <!-- BIG FUCKOFF QUOTE -->
           </div>
         </div>
       </div>
@@ -92,16 +101,16 @@
         <form role="form" id="contactForm">
           <div class="row fade">
             <div class="form-group col-sm-6">
-              <label for="name" class="h2 white bold">Name</label>
+              <label for="name" class="h1 bold">Name</label>
               <input type="text" class="form-control" id="name" placeholder="" required>
             </div>
             <div class="form-group col-sm-6">
-              <label for="email" class="h2 white bold">Email</label>
+              <label for="email" class="h1 bold">Email</label>
               <input type="email" class="form-control" id="email" placeholder="" required>
             </div>
           </div>        
           <div class="form-group fade">
-            <label for="message" class="h2 white bold">Message</label>
+            <label for="message" class="h1 bold">Message</label>
             <textarea id="message" class="form-control" rows="5" placeholder="" required></textarea>
           </div>
           <div class="fade">
@@ -110,18 +119,21 @@
           </div>
         </form>
         <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px">
-          <div class="tooltip" style="text-align: center !important">
-            <h3>Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: red;">rsedlr@protonmail.com</a></h3> 
-            <span class="tooltiptext" id="emailTooltip">Email Copied!</span>
+          <div class="tooltip" style="text-align: center !important;">
+            <h3 style="color: white">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: red;">rsedlr@protonmail.com</a></h3> 
+            <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
         <div class="fade">
-          <h1 class="sectionHead" style="margin-top: 80px; color: white">Socials</h1>
-          <div style="margin-top: 30px;">
+          <!-- <h1 class="sectionHead" style="margin-top: 80px;">Socials</h1> -->
+          <div style="margin-top: 70px;">
             <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/github/GitHub-Mark-Light-120px-plus.png" width="100" height="100"></imgborder></a>
           </div>
         </div>
       </div>
+      <!-- <div class="fade">
+        <button class="btn proj-btn main-btn btn-lg" style="margin-top: 50px; margin-bottom: 0">Back to top</button>
+      </div> -->
     </section>
     <footer>
       <div class="container">

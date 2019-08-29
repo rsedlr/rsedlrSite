@@ -89,6 +89,12 @@ section h2 {
 
 .secHead {
   font-weight: 700;
+  font-size: 35px;
+}
+
+.mainQuote {
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 #main1, #main2, #main3, #main4 {
@@ -267,7 +273,8 @@ footer p {
 
 #contactTitle {
   margin-bottom: 50px; 
-  color: white
+  /* color: white; */
+  color: var(--main-grey)
 }
 
 #msgSubmit {
@@ -363,8 +370,9 @@ footer p {
 }
 
 .form-control {
-  background-color: white !important;
-  border: 1px solid white;
+  background-color: var(--main-grey) !important;
+  border: 1px solid var(--main-grey);
+  color: white !important;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -373,7 +381,9 @@ footer p {
 
 .boxCol {
   margin: 20px auto;
-  background-color: #fff;
+  /* background-color: #fff; */
+  color: white !important;
+  background-color: var(--main-grey);
   padding: 20px 30px;
   border-radius: 20px;
   -moz-border-radius: 20px;
@@ -802,6 +812,11 @@ span.space {
   top: 100%;
   left: 50%;
   margin-left: -60px;
+}
+
+.tooltiptext.white {
+  background-color: white;
+  color: var(--main-grey);
 }
 
 /* tooltip end */
