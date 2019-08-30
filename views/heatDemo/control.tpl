@@ -2,7 +2,7 @@
 <html lang="en">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <head>
-    <title>Evil-Corp</title>
+    <title>Heatpi</title>
     % include('assets/heatDemo/links.html')
     % import os ; snowJS = os.path.getsize("assets/heatDemo/snow.js") ; controlJS = os.path.getsize("assets/heatDemo/control.js") ; controlCSS = os.path.getsize("assets/heatDemo/control.css")
     <link rel="stylesheet" type="text/css" href="/static/heatDemo/control.css?filever={{controlCSS}}">
