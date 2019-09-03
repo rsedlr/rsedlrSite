@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="">
-    <title>Happy Mothers Day</title>
+    <title>Happy Birthday {{name}}!</title>
     <link rel="stylesheet" type="text/css" href="/static/cards/card_birthday.css">
   </head>
   <body>
@@ -18,11 +18,18 @@
             </div>
             <div class="card card--front back" onclick="openCard();">
               % if name.upper() == 'MUM':
-                <button type="button" id="mumBtn" style="margin: 10px auto; transform: rotateY(180deg); height: 60px; width: 200px; font-size: 30px; font-weight: bold">Click me :)</button>
+                <div style="margin-top: 80px; padding: 25px">
+                  <h3 id="mumText">
+                    These are all the photos I could find of the boy. <br>
+                    They're backed up all over the world with no chance of ever going missing. <br>
+
+                  </h3>
+                  <button type="button" id="mumBtn">Click me</button>
+                </div>
               % end  
             </div>
             <div class="card card--front" onclick="openCard();">
-              <h2 id="cardFrontMessage" style="width: 100%; transition: none">
+              <h2 id="cardFrontMessage" style="width: 100%; transition: none; font-size: 4rem;">
                 Happy<br>Birthday<br>
                 <span id="name">{{name}}</span><br>
                 <span style="font-size: 1rem">(click me)</span>
@@ -52,6 +59,10 @@
         }
       }
 
+      $('#mumBtn').click(function () {
+        window.location.href = 'https://drive.google.com/open?id=1OqFgN0nXuRVFSD8VGVu42K_JINAdNWpo';
+      });
+
       var nameSpan = document.getElementById('name');
       var name = nameSpan.innerText.toUpperCase();
       // if (name == 'GRANDAD') {
@@ -75,5 +86,3 @@
     </script>
   </body>
 </html>
-
-<!-- https://drive.google.com/open?id=11i3_I7iZo70Iz_E87ABP4EWBu2pT_EiZ -->
