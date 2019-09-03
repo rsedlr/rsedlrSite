@@ -104,8 +104,6 @@ nav {
     margin-top: -15rem;
     margin-left: -10rem;
   }
-}
-@media (max-width: 400px) {
   #cardFrontMessage {
     font-size: 3rem !important;
   }

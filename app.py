@@ -2,7 +2,7 @@
 import os, subprocess, sys, smtplib, bottle, sqlite3, logging  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
-from cardMessages import cardMessage, MothersMessage
+from cardMessages import christmasMessage, MothersMessage, birthdayMessage
 
 try:
   import cherrypy
@@ -205,23 +205,22 @@ def TextRepeater():
 @route('/christmas/<name>')
 def christmas(name=''):
   name = name.replace('_', ' ')
-  message = cardMessage(name)
+  message = christmasMessage(name)
   nowTime = datetime.now()
   christmasTime = datetime(2018, 12, 25, 0)
   timeDiff = christmasTime - nowTime
   if timeDiff.total_seconds() <= 0:
-    return template('christmasCard-M', name=name, message=message)
+    return template('cards/christmasCard-M', name=name, message=message)
   if name != '':
     name += ', ' 
-  return template('heatDemo/notChristmas', name=name)
+  return template('cards/notChristmas', name=name)
 
 
 @route('/christmasDemo')
-@route('/christmasDemo/')
 @route('/christmasDemo/<name>')
 def christmas(name=''):
   name = name.replace('_', ' ')
-  message = cardMessageDemo(name)
+  message = christmasMessageDemo(name)
   if name.upper() in demo:
     colour = name
     name = 'Demo'
@@ -230,12 +229,20 @@ def christmas(name=''):
   return template('cards/christmasCardDemo', name=name, colour=colour, message=message)
 
 # @route('/MothersDay>')
-@route('/MothersDay/')
+@route('/MothersDay')
 @route('/MothersDay/<name>')
 def MumsDay(name=''):
   name = name.replace('_', ' ')
   message = MothersMessage(name)
   return template('cards/card_mothersDay', name=name, message=message)
+
+
+@route('/birthday')
+@route('/birthday/<name>')
+def MumsDay(name=''):
+  name = name.replace('_', ' ')
+  message = birthdayMessage(name)
+  return template('cards/card_birthday', name=name, message=message)
 
 
 # @route('/shhhnoonecanknowiusethis')
@@ -248,7 +255,7 @@ def MumsDay(name=''):
 #   return template('wrappingPaper')
 
 
-def cardMessageDemo(name):
+def christmasMessageDemo(name):
   nameUp = name.upper()
   colours = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 'ORANGE', 'GREY']
   prefix = ['MR', 'DR' 'MS', 'MRS', 'MISS']   

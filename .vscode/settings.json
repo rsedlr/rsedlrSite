@@ -2,5 +2,6 @@
   "python.linting.pylintEnabled": false,
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#7100bd" // change this color!
-  }
+  },
+  "python.formatting.provider": "black"
 }
