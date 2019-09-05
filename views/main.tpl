@@ -130,23 +130,29 @@
             <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
-        <div class="fade">
-          <!-- <h1 class="sectionHead" style="margin-top: 80px;">Socials</h1> -->
+        <!-- <div class="fade">
           <div style="margin-top: 70px;">
             <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-120px-plus.png" width="90" height="90"></imgborder></a>
             <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
             <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/insta.png" width="85" height="85"></imgborder></a>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- <div class="fade">
         <button class="btn proj-btn main-btn btn-lg" style="margin-top: 50px; margin-bottom: 0">Back to top</button>
       </div> -->
     </section>
     <footer>
-      <div class="container">
+      <!-- <div class="container">
         Reiss Edler
-      </div>
+      </div> -->
+      <div> <!-- class="fade" -->
+          <div>
+            <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="90" height="90"></imgborder></a>
+            <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
+            <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png" width="85" height="85"></imgborder></a>
+          </div>
+        </div>
     </footer>
     <script src="/static/mainPage/jquery.min.js"></script>
     <script src="/static/mainPage/bootstrap.bundle.min.js"></script>
