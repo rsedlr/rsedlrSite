@@ -80,7 +80,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto fade">
-            <h1 class="sectionTitle">Experience</h1>
+            <h1 class="sectionTitle">Projects</h1>
           </div>
         </div>
 
