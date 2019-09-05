@@ -35,9 +35,9 @@
               <span id="main4">personal</span> <span id="main3">portfolio</span>
             </div>
           </div>
-          <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
-            <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
-            <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
+          <div class="showSmall" style="text-align: center; margin-top: 30%" id="backupTitleContainer">
+            <h1 style="font-size: 6rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
+            <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
           <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
             <div class="round rot90" style="margin: auto auto 0px">
