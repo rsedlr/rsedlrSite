@@ -63,15 +63,23 @@
           <div class="col-md-10 mx-auto" style="text-align: left !important;">
             <div class="fade">
               <h1 class="secHead">
-                <span style="font-size: 70px">Hi,</span> I'm a computer science student, based in London. Currently studying A-levels at Beths Grammar school.
-              </h1>
+                I'm a Computer Science student, based in London. Currently studying A-levels at Beths Grammar school.
+              </h1> <!-- <span style="font-size: 70px">Hi,</span> -->
             </div>
-            <!-- <div class="fade">
-              <h1 class="mainQuote">
+            <div class="fade">
+              <!-- <h1 class="mainQuote">
                 "He showed great technical abilities, aptitude and intelligence and was not afraid to ask questions to 
                 further his understanding of the development processes we employed." - simon brown (work experience team manager)
+              </h1> -->
+              <h1 class="mainQuote">
+                "He showed great technical abilities, aptitude and intelligence ...
+                <span class="spacer"></span>
+                ... was a punctual, responsible and personable young man. Capable of thinking on his feet and handling a
+                variety of situations."
+                <span class="spacer"></span>
+                - Simon Brown (NOWTV work experience manager)
               </h1>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -137,7 +145,7 @@
     </section>
     <footer>
       <div class="container">
-        &copy; Reiss Edler 2018-2019
+        Reiss Edler
       </div>
     </footer>
     <script src="/static/mainPage/jquery.min.js"></script>
