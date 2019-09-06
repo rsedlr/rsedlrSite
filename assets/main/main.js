@@ -99,7 +99,7 @@ $(document).ready(function () {
   });   
 
   $("#othelloBtn").click(function () {
-    window.location.href = '/Othello';
+    window.location.href = '/othello';
   });   
 
   $("#wikiRaceBtn").click(function () {
