@@ -35,9 +35,9 @@
               <span id="main4">personal</span> <span id="main3">portfolio</span>
             </div>
           </div>
-          <div class="showSmall my-auto" style="text-align: center;" id="backupTitleContainer">
-            <h1 style="font-size: 6.1rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
-            <h2 style="font-size: 4.85rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
+          <div class="showSmall" style="text-align: center; margin-top: 30%" id="backupTitleContainer">
+            <h1 style="font-size: 6rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
+            <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
           <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
             <div class="round rot90" style="margin: auto auto 0px">
@@ -63,15 +63,23 @@
           <div class="col-md-10 mx-auto" style="text-align: left !important;">
             <div class="fade">
               <h1 class="secHead">
-                <span style="font-size: 70px">Hi,</span> I'm a computer science student, based in London. Currently studying A-levels at Beths Grammar school.
-              </h1>
+                I'm a Computer Science student, based in London. Currently studying A-levels at Beths Grammar school.
+              </h1> <!-- <span style="font-size: 70px">Hi,</span> -->
             </div>
-            <!-- <div class="fade">
-              <h1 class="mainQuote">
+            <div class="fade">
+              <!-- <h1 class="mainQuote">
                 "He showed great technical abilities, aptitude and intelligence and was not afraid to ask questions to 
                 further his understanding of the development processes we employed." - simon brown (work experience team manager)
+              </h1> -->
+              <h1 class="mainQuote">
+                "He showed great technical abilities, aptitude and intelligence ...
+                <span class="spacer"></span>
+                ... was a punctual, responsible and personable young man. Capable of thinking on his feet and handling a
+                variety of situations."
+                <span class="spacer"></span>
+                - Simon Brown (NOWTV work experience manager)
               </h1>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +88,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto fade">
-            <h1 class="sectionTitle">Experience</h1>
+            <h1 class="sectionTitle">Projects</h1>
           </div>
         </div>
 
@@ -122,23 +130,29 @@
             <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
-        <div class="fade">
-          <!-- <h1 class="sectionHead" style="margin-top: 80px;">Socials</h1> -->
+        <!-- <div class="fade">
           <div style="margin-top: 70px;">
             <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-120px-plus.png" width="90" height="90"></imgborder></a>
             <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
             <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/insta.png" width="85" height="85"></imgborder></a>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- <div class="fade">
         <button class="btn proj-btn main-btn btn-lg" style="margin-top: 50px; margin-bottom: 0">Back to top</button>
       </div> -->
     </section>
     <footer>
-      <div class="container">
-        &copy; Reiss Edler 2018-2019
-      </div>
+      <!-- <div class="container">
+        Reiss Edler
+      </div> -->
+      <div> <!-- class="fade" -->
+          <div>
+            <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="90" height="90"></imgborder></a>
+            <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
+            <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png" width="85" height="85"></imgborder></a>
+          </div>
+        </div>
     </footer>
     <script src="/static/mainPage/jquery.min.js"></script>
     <script src="/static/mainPage/bootstrap.bundle.min.js"></script>

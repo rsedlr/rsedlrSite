@@ -94,8 +94,14 @@ section h2 {
 }
 
 .mainQuote {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 30px;
+  font-weight: 500;
+}
+
+.spacer {
+  display: block; 
+  height: 15px;
 }
 
 #main1, #main2, #main3, #main4 {
@@ -398,7 +404,7 @@ footer p {
   width: fit-content;
 }
 
-@media (min-width: 998px) {
+@media (min-width: 992px) {
   header.masthead {
     height: 100vh;
     min-height: 775px;
@@ -418,14 +424,6 @@ footer p {
   .showSmall {
     display: none;
   }
-}
-@media (max-width: 998px) {
-  .hideSmall {
-    display: none;
-  }
-}
-
-@media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -466,19 +464,21 @@ footer p {
     margin-bottom: 0;
   }
 }
+@media (max-width: 992px) {
+  .hideSmall {
+    display: none;
+  }
+}
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   section.about .badges .badge-link {
     display: inline-block;
     margin-bottom: 0;
   }
-  section.about h2 {
-    font-size: 70px;
-  }
   section.cta .cta-content h2 {
     font-size: 80px;
   }
-}
+} */
 
 @media only screen and (max-width: 700px){
   .img-modal-content {
@@ -486,7 +486,7 @@ footer p {
     width: 100% !important; /* make modal content fit better on small screen */
   } 
   .sectionTitle {
-    font-size: 4rem !important;
+    font-size: 4.7rem !important;
   }
 }
 
