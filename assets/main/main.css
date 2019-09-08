@@ -104,6 +104,11 @@ section h2 {
   height: 15px;
 }
 
+.container {
+  width: 50%;
+  margin: auto;
+}
+
 #main1, #main2, #main3, #main4 {
   position: relative;
 }

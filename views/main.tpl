@@ -143,9 +143,6 @@
       </div> -->
     </section>
     <footer>
-      <!-- <div class="container">
-        Reiss Edler
-      </div> -->
       <div> <!-- class="fade" -->
           <div>
             <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="90" height="90"></imgborder></a>
