@@ -198,7 +198,7 @@ section h2 {
 }
 
 #mainNav {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(34, 34, 34, 0.99);  /* var(--main-grey) */
   border-width: 0;
   -webkit-transition: all .35s;
   transition: all .35s;
