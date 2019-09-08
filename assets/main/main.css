@@ -1,5 +1,5 @@
 :root {
-  --main-red: #df1e2b;
+  --main-red: #e40d1b; /* df1e2b */
   --main-purple: #7e3ad8;
   --main-grey: #222222;
   --text-grey: #111111;
@@ -29,6 +29,8 @@ html, body {
 body {
   font-family: Arial,Helvetica,sans-serif; 
   font-weight: 600;
+  background-color: #00000000;
+  padding: 0 5%;
 }
 body.noScroll {
   overflow: hidden;
@@ -42,13 +44,6 @@ p > a {
 p > a:hover, p > a:focus {
   color: #6f00ff !important;
 }
-
-/* .adapt-font[data-useragent*='Mac OS X'] {
-	font-family: Arial,Helvetica,sans-serif; 
-}
-.adapt-font[data-useragent*='Mac OS X'] {
-
-} */
 
 hr {
   max-width: 100px;
@@ -74,11 +69,49 @@ p {
   color: var(--main-grey);
 }
 
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--main-grey);
+}
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 120%;
+  height: 100vh;
+  top: 0;
+  left: -10%;
+  z-index: -1;
+  color: white;
+  background: #111;
+  text-align: center;
+  /* background:  var(--backup-gradient);
+  background:  var(--main-gradient); */
+}
+
+header > span {
+  /* font-size: 2vw; */
+  font-size: 30px;
+}
+
 section {
-  padding: 80px 0;
+  padding: 40px 50px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
 }
 section h2 {
   font-size: 3rem;
+}
+
+#sectionContainer {
+  padding: 0 20px;
+  min-height: 100vh;
 }
 
 .mainHead {
@@ -89,7 +122,7 @@ section h2 {
 
 .secHead {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 20px;
 }
 
@@ -105,8 +138,7 @@ section h2 {
 }
 
 .container {
-  width: 50%;
-  margin: auto;
+  max-width: 1000px;
 }
 
 #main1, #main2, #main3, #main4 {
@@ -173,6 +205,7 @@ section h2 {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.5);
+  border-width: 0;
   background-color: rgba(34, 34, 34, 0.93);
   -webkit-transition: all .35s;
   transition: all .35s;
@@ -180,7 +213,9 @@ section h2 {
   font-weight: 200;
   letter-spacing: 1px;
   will-change: transform;
-  max-width: 100vw;
+  max-width: 1000px;
+  margin: 5px auto;
+  border-radius: 20px;
 }
 #mainNav .navbar-brand {
   color: #ffffff;
@@ -219,69 +254,27 @@ section h2 {
   color: #000000;
 }
 
-header.masthead {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  /* padding-top: 150px; */
-  /* padding-bottom: 100px; */
-  color: white;
-  background:  var(--main-purple);
-  background:  var(--main-gradient);
-  background:  var(--backup-gradient);
-}
-header.masthead .header-content {
-  /* max-width: 500px; */
-  margin-bottom: 100px;
-  text-align: center;
-}
-header.masthead .header-content h1 {
-  font-size: 30px;
-}
-header.masthead .device-container {
-  max-width: 325px;
-  margin-right: auto;
-  margin-left: auto;
-}
-header.masthead .device-container .screen img {
-  border-radius: 3px;
-}
-
-footer {
-  padding: 25px 0;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: var(--main-grey);
-}
-footer p {
-  font-size: 12px;
-  margin: 0;
-}
-
 .bg-primary {
-  background: #fff !important;
-  /* background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
-  background: linear-gradient(#000000, #000000); */
+  /* background: #fff; */
+  background: rgb(141, 141, 141) !important;
 }
 .bg-secondary {
-  background: var(--main-red) !important;
-  /* background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#0000ff));
-  background: linear-gradient(#ff0000, #0000ff); */
+  /* background: var(--main-red) !important; */
+  background: rgb(141, 141, 141) !important;
 }
 .bg-third {
-  background: var(--main-purple) !important;
-  /* background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
-  background: linear-gradient(#ffffff, #00ff00); */
+  background: rgb(141, 141, 141) !important;
+  /* background: var(--main-purple) !important; */
+}
+.bg-footer {
+  background: var(--main-grey) !important;
 }
 
 .testPadding {
   padding: 600px 0px;
 }
 
-.mainSection {
-  /* min-height: calc(100vh - 50px); */
-  width: 100%;
-}
+
 
 #contactTitle {
   margin-bottom: 50px; 
@@ -429,10 +422,6 @@ footer p {
   .showSmall {
     display: none;
   }
-  #mainNav {
-    border-color: transparent;
-    background-color: transparent;
-  }
   #mainNav .navbar-brand {
     color: fade(white, 70%);
   }
@@ -447,10 +436,10 @@ footer p {
   #mainNav .navbar-nav > li > a:focus:hover {
     color: var(--main-grey);
   }
-  #mainNav.navbar-shrink {
-    border-color: rgba(34, 34, 34, 0.5);
+  /* #mainNav.navbar-shrink {
+    border-color: rgba(34, 34, 34, 0.93);
     background-color: rgba(34, 34, 34, 0.93);
-    }
+  } */
   #mainNav.navbar-shrink .navbar-brand {
     color: #ffffff;
   }

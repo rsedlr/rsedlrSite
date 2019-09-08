@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     % import os ; mainJS = os.path.getsize("assets/main/main.js") ; mainCSS = os.path.getsize("assets/main/main.css")
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>
+    <script type='text/javascript' src='/static/main/background.js'></script>
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
   </head>
   <body id="page-top">
@@ -24,7 +25,8 @@
     % include('assets/main/nav.html')
     % include('assets/main/modal.html')
 
-    <header class="masthead">
+    <header></header>
+    <section style="height: 100%;">
       <div class="container h-100">
         <div class="row h-100">
           <div class="hideSmall hover" style="margin: auto auto 150px 0;" id="titleDiv">
@@ -51,40 +53,29 @@
           </div>
         </div>
       </div>
-    </header>
-    <section class="bg-primary text-center mainSection" id="about">
+    </section>
+    <section class="bg-primary text-center" id="about">
       <div class="container">
-        <div class="row">
-          <div class="col-md-10 mx-auto fade">
-            <h1 class="sectionTitle">About</h1>
+        <h1 class="sectionTitle">About</h1>
+          <div class="fade">
+            <h1 class="secHead">
+              I'm a Computer Science student, based in London. Currently studying A-levels at Beths Grammar school.
+            </h1>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10 mx-auto" style="text-align: left !important;">
-            <div class="fade">
-              <h1 class="secHead">
-                I'm a Computer Science student, based in London. Currently studying A-levels at Beths Grammar school.
-              </h1> <!-- <span style="font-size: 70px">Hi,</span> -->
-            </div>
-            <div class="fade">
-              <!-- <h1 class="mainQuote">
-                "He showed great technical abilities, aptitude and intelligence and was not afraid to ask questions to 
-                further his understanding of the development processes we employed." - simon brown (work experience team manager)
-              </h1> -->
-              <h1 class="mainQuote">
-                "He showed great technical abilities, aptitude and intelligence ...
-                <span class="spacer"></span>
-                ... was a punctual, responsible and personable young man. Capable of thinking on his feet and handling a
-                variety of situations."
-                <span class="spacer"></span>
-                - Simon Brown (NOWTV work experience manager)
-              </h1>
-            </div>
+          <div class="fade">
+            <h1 class="mainQuote">
+              "He showed great technical abilities, aptitude and intelligence ...
+              <span class="spacer"></span>
+              ... was a punctual, responsible and personable young man. Capable of thinking on his feet and handling a
+              variety of situations."
+              <span class="spacer"></span>
+              - Simon Brown (NOWTV work experience manager)
+            </h1>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-secondary text-center mainSection" id="experience">
+    <section class="bg-secondary text-center" id="experience">
       <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto fade">
@@ -99,8 +90,8 @@
         </div>
       </div>
     </section>
-    <section class="bg-third text-center mainSection" id="contact">
-      <div class="container" style="max-width: 700px;">
+    <section class="bg-third text-center" id="contact">
+      <div class="container" style="max-width: 800px;">
         <div class="col-md-10 mx-auto fade">
           <h1 class="sectionTitle" id="contactTitle">Contact</h1>
         </div>
@@ -130,27 +121,18 @@
             <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
-        <!-- <div class="fade">
-          <div style="margin-top: 70px;">
-            <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-120px-plus.png" width="90" height="90"></imgborder></a>
-            <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
-            <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/insta.png" width="85" height="85"></imgborder></a>
-          </div>
-        </div> -->
       </div>
       <!-- <div class="fade">
         <button class="btn proj-btn main-btn btn-lg" style="margin-top: 50px; margin-bottom: 0">Back to top</button>
       </div> -->
     </section>
-    <footer>
-      <div> <!-- class="fade" -->
-          <div>
-            <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="90" height="90"></imgborder></a>
-            <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
-            <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png" width="85" height="85"></imgborder></a>
-          </div>
-        </div>
-    </footer>
+    <section class="bg-footer" id="socials">
+      <div class="fade" style="text-align: center">
+        <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="90" height="90"></imgborder></a>
+        <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
+        <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png" width="85" height="85"></imgborder></a>
+      </div>
+    </section>
     <script src="/static/mainPage/jquery.min.js"></script>
     <script src="/static/mainPage/bootstrap.bundle.min.js"></script>
     <script src="/static/mainPage/jquery.easing.min.js"></script>
