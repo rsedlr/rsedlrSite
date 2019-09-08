@@ -133,7 +133,7 @@
         <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png" width="85" height="85"></imgborder></a>
       </div>
     </section>
-    <script src="/static/mainPage/jquery.min.js"></script>
+    <!-- <script src="/static/mainPage/jquery.min.js"></script> -->
     <script src="/static/mainPage/bootstrap.bundle.min.js"></script>
     <script src="/static/mainPage/jquery.easing.min.js"></script>
     <script src="/static/mainPage/main.min.js"></script>

@@ -1,5 +1,11 @@
 
-var snippets = ['&ltcode&gt', 'function (code) { code; code }']
+
+var snippets = ['&ltcode&gt', 'function code(code) { ', ' }', 'code += 1', 'code = code * 2', 'code()'];
+// OR
+var open = ['&ltcode&gt', 'function code(code) { '];
+var content = ['code += 1', 'code = code * 2', 'code()'];
+var close = ['&lt/code&gt', ' }', '});', ';']
+
 
 $(document).ready(function () {
   var temp = "";
