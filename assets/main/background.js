@@ -16,7 +16,7 @@ $(document).ready(function () {
   setTimeout(function () { 
     var header = document.getElementsByTagName('header')[0];
     header.innerHTML = temp;
-   }, 900);
+   }, 0);  // 900
 
 });
 
@@ -27,4 +27,5 @@ $(document).ready(function () {
 //    -generate the code nicer
 //    -have some sort of colour theme rather than purely random (some are too similar to background)
 //    -make title text stand out better
+//    -text should fill screen in a nicer way
 // 

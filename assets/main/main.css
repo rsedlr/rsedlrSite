@@ -2,6 +2,7 @@
   --main-red: #e40d1b; /* e40d1b */
   --main-purple: #6a0fe0; /* 7e3ad8 */
   --main-blue: #007bff; /* 007bff */
+  --main-green: #00a700; /* 00ff00 */
   --main-grey: #222222; /* 222222 */
   --text-grey: #111111; /* 111111 */
   --main-gradient: -webkit-gradient(linear, right top, left top, 
@@ -265,7 +266,7 @@ section h2 {
 
 
 .bg-primary {
-  background: var(--main-blue) !important;
+  background: var(--main-green) !important;
   /* background: rgb(141, 141, 141) !important; */
 }
 .bg-secondary {
