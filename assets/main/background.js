@@ -19,3 +19,12 @@ $(document).ready(function () {
    }, 900);
 
 });
+
+
+// 
+//  TODO:
+//    -calc num characters need to fill screen and only gen code till thats met
+//    -generate the code nicer
+//    -have some sort of colour theme rather than purely random (some are too similar to background)
+//    -make title text stand out better
+// 
