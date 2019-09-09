@@ -22,14 +22,13 @@
   </head>
   <body id="page-top">
 
-    % include('assets/main/nav.html')
     % include('assets/main/modal.html')
 
-    <header></header>
-    <section style="height: 100%;">
+    <header id="wallpaper"></header>
+    <section style="height: calc(100vh - 110px);">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="hideSmall hover" style="margin: auto auto 150px 0;" id="titleDiv">
+          <div class="hideSmall hover" style="margin: auto auto 0 0;" id="titleDiv">
             <div class="header-content Mac-main" id="mainText">
               <span id="main1">Reiss</span> <span id="main2">Edler</span>
             </div>
@@ -56,6 +55,8 @@
         </div>
       </div>
     </section>
+                    % include('assets/main/nav.html')
+
     <section class="bg-primary text-center" id="about">
       <div class="container">
         <h1 class="sectionTitle">About</h1>

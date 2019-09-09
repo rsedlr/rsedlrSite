@@ -24,7 +24,7 @@ $(document).ready(function () {
   for (var i=0; i < revealElements.length; i++) { // create a scene for each element
     new ScrollMagic.Scene({
       triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-      offset: 0,	// start a little later
+      offset: -100,	// start a little later
       triggerHook: 0.85,
     })
     .setClassToggle(revealElements[i], "visible") // add class toggle
@@ -62,13 +62,11 @@ $(document).ready(function () {
     document.getElementById("caption").innerHTML = this.alt;
     picModal.style.display = "block";
     // document.body.classList.add('noScroll');
-    // picModal.style.visibility = "visible";
   });               
 
   $(".img-close").click(function() {
-    picModal.scrollIntoView()
+    // picModal.scrollIntoView()
     picModal.style.display = "none";
-    // picModal.style.visibility = "hidden";
     document.body.classList.remove('noScroll');
     while (modalIndicators.firstChild) modalIndicators.removeChild(modalIndicators.firstChild);
     while (modalInner.firstChild) modalInner.removeChild(modalInner.firstChild);
