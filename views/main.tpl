@@ -55,8 +55,28 @@
         </div>
       </div>
     </section>
-                    % include('assets/main/nav.html')
-
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container nav-cont">
+        <a class="navbar-brand js-scroll-trigger bolder" href="#page-top" style="font-size: 22px">Home</a>
+        <p style="color: white; margin: auto">(in development)</p>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">Menu</button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger bolder mainNav" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger bolder mainNav" href="#experience">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger bolder mainNav" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <section class="bg-primary text-center" id="about">
       <div class="container">
         <h1 class="sectionTitle">About</h1>
