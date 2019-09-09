@@ -15,9 +15,9 @@
     <script src="static/scrollMagic/ScrollMagic.min.js"></script>
     <!-- <script src="static/scrollMagic/plugins/debug.addIndicators.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    % import os ; mainJS = os.path.getsize("assets/main/main.js") ; mainCSS = os.path.getsize("assets/main/main.css")
+    % import os ; mainJS = os.path.getsize("assets/main/main.js") ; backgroundJS = os.path.getsize("assets/main/background.js") ; mainCSS = os.path.getsize("assets/main/main.css")
     <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>
-    <script type='text/javascript' src='/static/main/background.js'></script>
+    <script type='text/javascript' src='/static/main/background.js?filever={{backgroundJS}}'></script>
     <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
   </head>
   <body id="page-top">
@@ -36,6 +36,8 @@
             <div class="header-content Mac-sec" id="secText">
               <span id="main4">personal</span> <span id="main3">portfolio</span>
             </div>
+            <br>
+            <button class="btn proj-btn main-btn" onclick="codeBackground()">Generate new code</button>
           </div>
           <div class="showSmall" style="text-align: center; margin-top: 30%" id="backupTitleContainer">
             <h1 style="font-size: 6rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>

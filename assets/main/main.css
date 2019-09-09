@@ -3,6 +3,7 @@
   --main-purple: #6a0fe0; /* 7e3ad8 */
   --main-blue: #007bff; /* 007bff */
   --main-green: #00a700; /* 00ff00 */
+  --main-pink: #ff00ff; /* ff00ff */
   --main-grey: #222222; /* 222222 */
   --text-grey: #111111; /* 111111 */
   --main-gradient: -webkit-gradient(linear, right top, left top, 
@@ -185,8 +186,8 @@ section h2 {
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
                     to right,
-                    var(--main-grey),
-                    var(--main-grey) 50%,
+                    red,
+                    red 50%,
                     white 50%);
   background-size: 200% 100%;
   background-position: 100%;
@@ -266,7 +267,7 @@ section h2 {
 
 
 .bg-primary {
-  background: var(--main-green) !important;
+  background: white !important;
   /* background: rgb(141, 141, 141) !important; */
 }
 .bg-secondary {
@@ -777,3 +778,36 @@ span.space {
           transform: none;
 }
 /* fade end */
+/* code background start */
+.code.fun {
+  color: #4c08ec; /* 4c08ec */
+}
+.code.var {
+  color: #df1e1e;  /* FF5722 */
+}
+.code.brak {
+  color: #26a69a;
+}
+.code.curly {
+  color: #26d62f;
+}
+.code.param {
+  color: #8087a7;
+}
+.code.semi {
+  color: #ff22e2;
+}
+.code.num {
+  color: #c72c21;
+}
+.code.angle {
+  color: #d82dd8;
+}
+.code.string {
+  color: #00ff00;
+}
+/* code background end */
+
+
+
+
