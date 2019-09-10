@@ -257,7 +257,7 @@ section h2 {
   color: #000;
 }
 #navAbout:hover, #navAbout.active {
-  color: #979797 !important;
+  color: #707070 !important;
 }
 #navProjects:hover, #navProjects.active {
   color: var(--other-orange) !important;
@@ -272,7 +272,7 @@ section h2 {
 
 
 .bg-primary {
-  background: white !important;
+  background: var(--main-grey) !important;
   /* background: rgb(141, 141, 141) !important; */
 }
 .bg-secondary {
@@ -285,6 +285,10 @@ section h2 {
 }
 .bg-footer {
   background: var(--main-grey) !important;
+}
+
+#about h1 {
+  color: white !important;
 }
 
 #socials {

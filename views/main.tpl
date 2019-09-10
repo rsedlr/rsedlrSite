@@ -42,7 +42,7 @@
           </div>
           <div style="margin: -80px auto auto; display: block; text-align: center">
             <a class="btn title-btn js-scroll-trigger box-shadow dis-block" id="scrollDown" href="#about">See my work</a>
-            <button class="btn title-btn box-shadow dis-block" id="codeBtn" type="button" onclick="codeBackground()">Generate new code</button>
+            <button class="btn title-btn box-shadow dis-block" id="codeBtn" type="button" onclick="codeBackground()">Generate new background</button>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@
         </form>
         <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px">
           <div class="tooltip" style="text-align: center !important;">
-            <h3 style="color: white">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: red;">rsedlr@protonmail.com</a></h3> 
+            <h3 style="color: white">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);" style="color: var(--other-orange);">rsedlr@protonmail.com</a></h3> 
             <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
           </div>
         </div>
