@@ -41,29 +41,29 @@
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
           <div style="margin: -80px auto auto; display: block; text-align: center">
-            <a class="btn proj-btn title-btn js-scroll-trigger box-shadow dis-block" id="scrollDown" href="#about">See my work</a>
-            <button class="btn proj-btn title-btn box-shadow dis-block" id="codeBtn" type="button" onclick="codeBackground()">Generate new code</button>
+            <a class="btn title-btn js-scroll-trigger box-shadow dis-block" id="scrollDown" href="#about">See my work</a>
+            <button class="btn title-btn box-shadow dis-block" id="codeBtn" type="button" onclick="codeBackground()">Generate new code</button>
           </div>
         </div>
       </div>
     </section>
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div class="container nav-cont">
-        <a class="navbar-brand js-scroll-trigger bolder" href="#page-top" style="font-size: 22px">Home</a>
-        <p style="color: white; margin: auto">(in development)</p>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 22px">Home</a>
+        <p style="color: black; margin: auto">(in development)</p>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
           aria-label="Toggle navigation">Menu</button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger bolder mainNav" href="#about">about</a>
+              <a class="nav-link js-scroll-trigger mainNav" href="#about" id="navAbout">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger bolder mainNav" href="#experience">projects</a>
+              <a class="nav-link js-scroll-trigger mainNav" href="#experience" id="navProjects">projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger bolder mainNav" href="#contact">contact</a>
+              <a class="nav-link js-scroll-trigger mainNav" href="#contact" id="navContact">contact</a>
             </li>
           </ul>
         </div>
