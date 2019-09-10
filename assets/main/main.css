@@ -1,6 +1,6 @@
 :root {
-  --main-red: #e40d1b; /* e40d1b */
-  --main-purple: #6a0fe0; /* 7e3ad8 */
+  --main-red: #db0e0e; /* e40d1b */
+  --main-purple: #7700ff; /* 6a0fe0 */
   --main-blue: #007bff; /* 007bff */
   --main-green: #00a700; /* 00ff00 */
   --main-pink: #ff00ff; /* ff00ff */
@@ -275,7 +275,7 @@ section h2 {
 #mainNav .navbar-nav > li > a:focus:hover {
   color: var(--main-grey);
 } */
-/* #mainNav.navbar-shrink {
+/* {
   border-color: rgba(34, 34, 34, 0.93);
   background-color: rgba(34, 34, 34, 0.93);
 } */
@@ -458,18 +458,18 @@ section h2 {
   section.experience .device-container {
     margin-bottom: 0;
   }
-  #mainNav.navbar-shrink .navbar-brand {
+  .navbar-brand {
     color: #ffffff;
   }
-  #mainNav.navbar-shrink .navbar-brand:hover {
+  .navbar-brand:hover {
     color: #ff0000 !important;
   }
-  #mainNav.navbar-shrink .navbar-nav > li > a,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+  .navbar-nav > li > a,
+  .navbar-nav > li > a:focus {
     color: #ffffff;
   }
-  #mainNav.navbar-shrink .navbar-nav > li > a:hover,
-  #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus:hover {
     color: #ff0000 !important;
   }
 }
