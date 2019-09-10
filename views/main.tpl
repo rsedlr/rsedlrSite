@@ -25,7 +25,7 @@
     % include('assets/main/modal.html')
 
     <header id="wallpaper"></header>
-    <section style="height: calc(100vh - 110px);">
+    <section style="height: calc(100vh - 115px);" id="titleSection">
       <div class="container h-100">
         <div class="row h-100">
           <div class="hideSmall hover" style="margin: auto auto 0 0;" id="titleDiv">
@@ -35,8 +35,6 @@
             <div class="header-content Mac-sec" id="secText">
               <span id="main4">personal</span> <span id="main3">portfolio</span>
             </div>
-            <br>
-            <button class="btn proj-btn main-btn" onclick="codeBackground()">Generate new code</button>
           </div>
           <div class="showSmall" style="text-align: center; margin-top: 30%" id="backupTitleContainer">
             <h1 style="font-size: 6rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>

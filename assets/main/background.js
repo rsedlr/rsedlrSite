@@ -1,7 +1,7 @@
 
 var i = 0;
 var open = [' <span class="code fun">function</span> <span class="code var">name</span><span class="code brak">(</span><span class="code param">param</span><span class="code brak">)</span> <span class="code curly">{</span> ',
-            ' <span class="code fun">for</span><span class="code brak">(</span><span class="code var">i</span> <span class="code fun">=</span> <span class="code num">0</span><span class="code semi">;</span> <span class="code var">i</span> <span class="code fun"><</span> <span class="code var">limit</span>; <span class="code var">i</span><span class="code fun">++</span><span class="code brak">)</span> <span class="code curly">{</span> ',
+            ' <span class="code fun">for</span><span class="code brak">(</span><span class="code var">i</span> <span class="code fun">=</span> <span class="code num">0</span><span class="code semi">;</span> <span class="code var">i</span> <span class="code fun"><</span> <span class="code var">limit</span><span class="code semi">;</span> <span class="code var">i</span><span class="code fun">++</span><span class="code brak">)</span> <span class="code curly">{</span> ',
             ' <span class="code fun">while</span><span class="code brak">(</span><span class="code param">condtition</span><span class="code brak">)</span> <span class="code curly">{</span> '] 
             // ' <span class="code angle">&lt</span><span class="code var">div</span><span class="code angle">&gt</span> '];
             
@@ -22,11 +22,10 @@ function codeBackground() {
   while (header.firstChild) header.removeChild(header.firstChild); // wipes background
 
   for (var i = 0; i < 130; i++) {
-    // code += `<span style="color: ${'#' + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6)}">${snippets[Math.floor(Math.random()*snippets.length)]} </span>`;
     rand = Math.floor(Math.random() * open.length);
     rand2 = Math.floor(Math.random() * content.length);
     // rand = 0;
-    code += `<span>${open[rand]}${content[rand2]}${close[rand]}</span`;
+    code += `${open[rand]}${content[rand2]}${close[rand]}`;
   }
 
   header.innerHTML = code;
