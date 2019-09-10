@@ -69,7 +69,7 @@
         </div>
       </div>
     </nav>
-    <section class="bg-primary text-center" id="about">
+    <section class="bg-primary text-center" id="about"> <!-- change to grey background -->
       <div class="container">
         <h1 class="sectionTitle">About</h1>
           <div class="fade">
