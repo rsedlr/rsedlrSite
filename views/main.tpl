@@ -28,7 +28,7 @@
     <section style="height: calc(100vh - 115px);" id="titleSection">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="hideSmall hover" style="margin: auto auto 0 0;" id="titleDiv">
+          <div class="hideSmall hover" style="margin: 25% auto auto;" id="titleDiv">
             <div class="header-content Mac-main" id="mainText">
               <span id="main1">Reiss</span> <span id="main2">Edler</span>
             </div>
@@ -40,15 +40,9 @@
             <h1 style="font-size: 6rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400; padding-left: 8px; color: white">personal portfolio</h2>
           </div>
-          <div class="col-lg-12" style="margin-top: auto; margin-bottom: 20px;">
-            <div class="round rot90" style="margin: auto auto 0px">
-              <a href="#about" class="js-scroll-trigger">
-                <div id="cta" style="width: 50px; height: 50px;">
-                  <span class="arrow primera next"></span>
-                  <span class="arrow segunda next"></span>
-                </div>
-              </a>
-            </div>
+          <div style="margin: -80px auto auto; display: block; text-align: center">
+            <a class="btn proj-btn title-btn js-scroll-trigger box-shadow dis-block" id="scrollDown" href="#about">See my work</a>
+            <button class="btn proj-btn title-btn box-shadow dis-block" id="codeBtn" type="button" onclick="codeBackground()">Generate new code</button>
           </div>
         </div>
       </div>
@@ -148,7 +142,7 @@
       </div> -->
     </section>
     <section class="bg-footer" id="socials">
-      <div class="fade" style="text-align: center">
+      <div class="fade" style="text-align: center;"> <!-- min-width: 314px; -->
         <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="90" height="90"></imgborder></a>
         <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="130" height="130"></imgborder></a>     
         <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png" width="85" height="85"></imgborder></a>

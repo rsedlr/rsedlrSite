@@ -4,7 +4,7 @@
     if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
       var a = e(this.hash);
       if ((a = a.length ? a : e("[name=" + this.hash.slice(1) + "]")).length) return e("html, body").animate({
-        scrollTop: a.offset().top - 76
+        scrollTop: a.offset().top - 105
       }, 1e3, "easeInOutExpo"), !1
     }
   }), e(".js-scroll-trigger").click(function () {

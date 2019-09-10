@@ -1,5 +1,6 @@
 :root {
   --main-red: #db0e0e; /* e40d1b */
+  --main-orange: #ff2600;
   --main-purple: #7700ff; /* 6a0fe0 */
   --main-blue: #007bff; /* 007bff */
   --main-green: #00a700; /* 00ff00 */
@@ -93,6 +94,7 @@ header {
   color: white;
   background: rgb(24, 24, 24);
   text-align: center;
+  overflow: hidden;
   /* background:  var(--backup-gradient);
   background:  var(--main-gradient); */
 }
@@ -111,7 +113,7 @@ section {
 }
 
 section:not(#titleSection), 
-nav, #titleDiv {
+nav, #titleDiv, .box-shadow {
   box-shadow: 0 0 30px 5px black;
 }
 
@@ -198,8 +200,8 @@ section h2 {
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
                     to right,
-                    red,
-                    red 50%,
+                    var(--main-orange),
+                    var(--main-orange) 50%,
                     white 50%);
   background-size: 200% 100%;
   background-position: 100%;
@@ -288,7 +290,7 @@ section h2 {
   /* background: rgb(141, 141, 141) !important; */
 }
 .bg-secondary {
-  background: var(--main-red) !important;
+  background: var(--main-orange) !important;
   /* background: rgb(141, 141, 141) !important; */
 }
 .bg-third {
@@ -297,17 +299,19 @@ section h2 {
 }
 .bg-footer {
   background: var(--main-grey) !important;
+}
+
+#socials {
   display: inline-block;
   margin-left: 50%;
   transform: translateX(-50%);
   padding: 30px 50px;
+  min-width: 314px;
 }
 
 .testPadding {
   padding: 600px 0px;
 }
-
-
 
 #contactTitle {
   margin-bottom: 50px; 
@@ -335,6 +339,10 @@ section h2 {
 .main-btn {
   margin-right: 10px; 
   margin-bottom: 10px;
+}
+
+.title-btn {
+  margin-bottom: 20px;
 }
 
 .text-primary {
@@ -393,6 +401,10 @@ section h2 {
 
 .dis-none {
   display: none;
+}
+
+.dis-block {
+  display: block;
 }
 
 .invis {
@@ -804,7 +816,7 @@ span.space {
   color: #4c08ec; /* 4c08ec */
 }
 .code.var {
-  color: #db0e0e;  /* FF5722 */
+  color: #db0e0e;  /* db0e0e */
 }
 .code.brak {
   color: #21c9b8;
@@ -819,7 +831,7 @@ span.space {
   color: #ff22e2;
 }
 .code.num {
-  color: #ff4c15;
+  color: #20ada2;
 }
 .code.angle {
   color: #d82dd8;
