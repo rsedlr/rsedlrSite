@@ -84,7 +84,7 @@ footer p {
 header {
   position: fixed;
   width: 120%;
-  height: 100vh;
+  /* height: 100vh; */
   top: 0;
   left: -10%;
   z-index: -1;
@@ -171,7 +171,7 @@ section h2 {
 }
 
 #smallTitleDiv {
-  display: grid;
+  text-align: center;
 }
 
 /* @keyframes slide-left {
