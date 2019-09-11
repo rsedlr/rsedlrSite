@@ -31,15 +31,15 @@
   % include('assets/main/modal.html')
 
   <header id="wallpaper"></header>
-  <section style="height: calc(100vh - 115px);" id="titleSection">
+  <section id="titleSection">
     <div class="container h-100">
       <div class="row h-100">
         <div style="margin: 35% auto auto;">
-          <div class="hideSmall hover" id="titleDiv">
+          <!-- <div class="hideSmall hover" id="titleDiv">
             <div class="header-content Mac-main" id="mainText">Reiss Edler</div>
             <div class="header-content Mac-sec" id="secText">personal portfolio</div>
-          </div>
-          <div class="showSmall" id="smallTitleDiv">
+          </div> showSmall -->
+          <div class="" id="smallTitleDiv">
             <h1 style="font-size: 6rem; font-weight: 800;">Reiss Edler</h1>
             <h2 style="font-size: 4rem; font-weight: 400;">personal portfolio</h2>
           </div>

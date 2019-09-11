@@ -114,6 +114,11 @@ nav, #titleDiv, .box-shadow {
   box-shadow: 0 0 30px 5px black;
 }
 
+#titleSection {
+  height: 90vh;
+  height: calc(100vh - 115px);
+}
+
 section h2 {
   font-size: 3rem;
 }
@@ -147,6 +152,11 @@ section h2 {
   border-radius: 20px;
   padding: 30px 40px;
   margin: 40px auto;
+  /* position: relative;
+  animation: 0.6s slide-left ease-in-out; */
+}
+
+#titleDiv {
   background-image: linear-gradient(
                     to right,
                     var(--main-orange),
@@ -155,11 +165,13 @@ section h2 {
   background-size: 201% 100%;
   background-position: 100%;
   transition: all 0.5s ease-in-out;
-  /* position: relative;
-  animation: 0.6s slide-left ease-in-out; */
 }
 #titleDiv:hover {
   background-position: 0%;
+}
+
+#smallTitleDiv {
+  display: grid;
 }
 
 /* @keyframes slide-left {
