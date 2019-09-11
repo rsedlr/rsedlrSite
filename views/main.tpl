@@ -29,12 +29,8 @@
       <div class="container h-100">
         <div class="row h-100">
           <div class="hideSmall hover" style="margin: 25% auto auto;" id="titleDiv">
-            <div class="header-content Mac-main" id="mainText">
-              <span id="main1">Reiss</span> <span id="main2">Edler</span>
-            </div>
-            <div class="header-content Mac-sec" id="secText">
-              <span id="main4">personal</span> <span id="main3">portfolio</span>
-            </div>
+            <div class="header-content Mac-main" id="mainText">Reiss Edler</div>
+            <div class="header-content Mac-sec" id="secText">personal portfolio</div>
           </div>
           <div class="showSmall" style="text-align: center; margin-top: 30%" id="backupTitleContainer">
             <h1 style="font-size: 6rem; font-weight: 800; padding-left: 5px; color: white">Reiss Edler</h1>
@@ -49,7 +45,7 @@
     </section>
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div class="container nav-cont">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 22px">Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 22px">HOME</a>
         <p style="color: black; margin: auto">(in development)</p>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -151,7 +147,7 @@
     <!-- <script src="/static/mainPage/jquery.min.js"></script> -->
     <script src="/static/mainPage/bootstrap.bundle.min.js"></script>
     <script src="/static/mainPage/jquery.easing.min.js"></script>
-    <script src="/static/mainPage/scroll.js"></script>
+    <script src="/static/main/scroll.js"></script>
   </body>
 </html>
 

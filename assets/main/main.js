@@ -32,19 +32,19 @@ $(document).ready(function () {
     .addTo(controller);
   }
 
-  $('.hover').mouseenter(function() {
-    clearTimeout(anim);
-    $('#main1, #main4').addClass("active");
-    anim = setTimeout(function() { 
-      $('#main2, #main3').addClass("active");
-    }, 200);
-  }).mouseleave(function() {
-    clearTimeout(anim);
-    $('#main2, #main3').removeClass("active");
-    anim = setTimeout(function() { 
-      $('#main1, #main4').removeClass("active");
-    }, 200);
-  });
+  // $('.hover').mouseenter(function() {
+  //   clearTimeout(anim);
+  //   $('#main1, #main4').addClass("active");
+  //   anim = setTimeout(function() { 
+  //     $('#main2, #main3').addClass("active");
+  //   }, 200);
+  // }).mouseleave(function() {
+  //   clearTimeout(anim);
+  //   $('#main2, #main3').removeClass("active");
+  //   anim = setTimeout(function() { 
+  //     $('#main1, #main4').removeClass("active");
+  //   }, 200);
+  // });
 
 
   $('.main-pic').click(function (e) {

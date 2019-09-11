@@ -11,7 +11,7 @@
     e(".navbar-collapse").collapse("hide")
   }), e("body").scrollspy({
     target: "#mainNav",
-    offset: 54
+    offset: 107
   });
   // var a = function () {
   //   100 < e("#mainNav").offset().top ? e("#mainNav").addClass("navbar-shrink") : e("#mainNav").removeClass("navbar-shrink")
