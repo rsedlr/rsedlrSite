@@ -141,10 +141,12 @@ section h2 {
   font-weight: 500;
 }
 
-#titleDiv {
+#titleDiv, #smallTitleDiv {
+  color: var(--main-grey);
   background-color: white;
   border-radius: 20px;
   padding: 30px 40px;
+  margin: 40px auto;
   background-image: linear-gradient(
                     to right,
                     var(--main-orange),
