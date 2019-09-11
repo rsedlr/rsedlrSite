@@ -482,10 +482,10 @@ section h2 {
   .pad-col {
     padding: 1rem !important;
   }
-  /* #mainNav {
+  #mainNav {
     position: fixed;
     top: 7px;
-  } */
+  }
 
   #contactTitle {
     margin-bottom: 20px;
