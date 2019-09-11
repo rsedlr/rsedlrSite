@@ -9,9 +9,6 @@
   <link rel="stylesheet" type="text/css" href="/static/cards/christmasCard.css">
 </head>
 <body>
-  <ul class="lightrope" style="top: 0; left: 0;">
-    <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-  </ul>
   <header class="masterhead">
     <div class="container">
       <div id="wrapperWrap">

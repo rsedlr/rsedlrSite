@@ -201,7 +201,6 @@ def TextRepeater():
 ''' --------------- card start --------------- '''
 
 @route('/christmas')
-@route('/christmas/')
 @route('/christmas/<name>')
 def christmas(name=''):
   name = name.replace('_', ' ')
@@ -268,7 +267,7 @@ def christmasMessageDemo(name):
       Have a merry christmas,<br>
       And a happy new year!<br>
       %s
-      <br><br><br>
+      <br><br>
       %s
       '''
   if nameUp in colours:

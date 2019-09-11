@@ -13,9 +13,9 @@ var content = ['<span class="code var">int</span> <span class="code fun">+=</spa
                '<span class="code var">str</span> <span class="code fun">=</span> <span class="code string">\'string\'</span><span class="code semi">.</span><span class="code fun">slice</span><span class="code brak">(</span><span class="code num">0</span><span class="code semi">,</span><span class="code num">3</span><span class="code brak">)</span><span class="code semi">;</span> '];
                
 var close = [' <span class="code curly"> } </span> ',
-  ' <span class="code curly"> } </span> ',
-  ' <span class="code curly"> } </span> ',
-  ' <span class="code curly"> } </span> <span class="code fun">while</span><span class="code brak">(</span><span class="code param">condtition</span><span class="code brak">)</span>'];
+             ' <span class="code curly"> } </span> ',
+             ' <span class="code curly"> } </span> ',
+             ' <span class="code curly"> } </span> <span class="code fun">while</span><span class="code brak">(</span><span class="code param">condtition</span><span class="code brak">)</span>'];
             //  '<span class="code semi">;</span>', '});',
             //  ' <span class="code angle">&lt</span><span class="code var">/div</span><span class="code angle">&gt</span> ']
 
@@ -24,9 +24,9 @@ function codeBackground() {
   var header = document.getElementById('wallpaper');
   while (header.firstChild) header.removeChild(header.firstChild); // wipes background
 
-  for (var i = 0; i < 130; i++) {
+  for (var i = 0; i < 135; i++) {
     openRand = Math.floor(Math.random() * open.length);
-    contentCount = Math.floor(Math.random() * 4);
+    contentCount = Math.floor(Math.random() * 3) + 1;
     code += open[openRand];
     for (var n = 0; n < contentCount; n++) {
       contentRand = Math.floor(Math.random() * content.length);
@@ -36,7 +36,6 @@ function codeBackground() {
   }
 
   header.innerHTML = code;
-
   // typeWriter();
 }
 
