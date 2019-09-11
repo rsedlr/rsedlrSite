@@ -35,13 +35,13 @@
     <div class="container h-100">
       <div class="row h-100">
         <div style="margin: 35% auto auto;">
-          <!-- <div class="hideSmall hover" id="titleDiv">
+          <div class="hideSmall hover" id="titleDiv">
             <div class="header-content Mac-main" id="mainText">Reiss Edler</div>
             <div class="header-content Mac-sec" id="secText">personal portfolio</div>
-          </div> showSmall -->
-          <div class="" id="smallTitleDiv">
-            <h1 style="font-size: 6rem; font-weight: 800;">Reiss Edler</h1>
-            <h2 style="font-size: 4rem; font-weight: 400;">personal portfolio</h2>
+          </div>
+          <div class="showSmall" id="smallTitleDiv">
+            <h1 style="font-size: 4rem; font-weight: 800;">Reiss Edler</h1>
+            <h2 style="font-size: 3rem; font-weight: 400;">personal portfolio</h2>
           </div>
           <div style="margin: auto; text-align: center">
             <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">Generate new background</button>
