@@ -794,31 +794,31 @@ span.space {
 /* fade end */
 /* code background start */
 .code.fun {
-  color: #4c08ec; /* 4c08ec */
+  color: #450dc9; /* 4c08ec */
 }
 .code.var {
-  color: #db0e0e;  /* db0e0e */
+  color: #c21919;  /* db0e0e */
 }
 .code.brak {
-  color: #21c9b8;
+  color: #19978b;
 }
 .code.curly {
-  color: #26d62f;
+  color: #20aa27;
 }
 .code.param {
-  color: #8087a7;
+  color: #686d85;
 }
 .code.semi {
-  color: #ff22e2;
+  color: #bd19a7;
 }
 .code.num {
   color: #20ada2;
 }
 .code.angle {
-  color: #d82dd8;
+  color: #bd25bd;
 }
 .code.string {
-  color: #1dc525;
+  color: #15921b;
 }
 /* code background end */
 

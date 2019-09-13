@@ -34,7 +34,7 @@
   <section id="titleSection">
     <div class="container h-100">
       <div class="row h-100">
-        <div style="margin: 35% auto auto;">
+        <div style="margin: 25% auto auto;">
           <div class="hideSmall hover" id="titleDiv">
             <div class="header-content Mac-main" id="mainText">Reiss Edler</div>
             <div class="header-content Mac-sec" id="secText">personal portfolio</div>
