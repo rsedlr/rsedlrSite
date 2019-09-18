@@ -24,7 +24,7 @@ function codeBackground() {
   var header = document.getElementById('wallpaper');
   while (header.firstChild) header.removeChild(header.firstChild); // wipes background
 
-  for (var i = 0; i < 135; i++) {
+  for (var i = 0; i < 165; i++) {
     openRand = Math.floor(Math.random() * open.length);
     contentCount = Math.floor(Math.random() * 3) + 1;
     code += open[openRand];
