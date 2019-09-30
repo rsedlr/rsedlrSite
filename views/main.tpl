@@ -52,7 +52,7 @@
   <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container nav-cont">
       <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 22px">HOME</a>
-      <p style="color: black; margin: auto">(in development)</p>
+      <!-- <p style="color: black; margin: auto">(in development)</p> -->
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">Menu</button>
@@ -135,7 +135,7 @@
       </form>
       <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px" >
         <div class="tooltip" style="text-align: center !important;">
-          <h3 style="color: white" id="emailTxt">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);"
+          <h3 style="color: white; font-weight: bold" id="emailTxt">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);"
               style="color: var(--other-orange);">rsedlr@protonmail.com</a></h3>
           <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
         </div>
