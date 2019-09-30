@@ -488,7 +488,7 @@ section h2 {
   }
   #mainNav {
     position: fixed;
-    width: calc(90% - 24px);  /* should be -32px but screen is still shrinking */
+    width: 90%;  /* should be -32px but screen is still shrinking */
   }
   #contactTitle {
     margin-bottom: 20px;
