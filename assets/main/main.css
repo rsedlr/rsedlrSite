@@ -19,7 +19,7 @@
 
 html {
   background-color: var(--main-grey);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /* html, body {
