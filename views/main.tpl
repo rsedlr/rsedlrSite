@@ -44,7 +44,7 @@
             <h2 style="font-size: 3rem; font-weight: 400;">personal portfolio</h2>
           </div>
           <div style="margin: auto; text-align: center">
-            <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">Generate new background</button>
+            <!-- <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">Generate new background</button> -->
             <span class="spacer" style="height: 11px;"></span>
             <a class="btn title-btn js-scroll-trigger box-shadow" id="scrollDown" href="#about">See my work</a>
           </div>
