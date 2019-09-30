@@ -22,9 +22,16 @@ var close = [' <span class="code curly"> } </span> ',
 function codeBackground() {
   var code = "";
   var header = document.getElementById('wallpaper');
+
+  var width = document.documentElement.clientWidth;
+  var height = document.documentElement.clientHeight;
+  var size = Math.sqrt(width * height) / 10;
+
+  console.log(`width: ${width}, height: ${height}, size: ${size}`);
+
   while (header.firstChild) header.removeChild(header.firstChild); // wipes background
 
-  for (var i = 0; i < 165; i++) {
+  for (var i = 0; i < size; i++) {
     openRand = Math.floor(Math.random() * open.length);
     contentCount = Math.floor(Math.random() * 3) + 1;
     code += open[openRand];
