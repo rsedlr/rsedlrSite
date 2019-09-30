@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,10 +11,8 @@
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></noscript> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
-    media="none" onload="if(media!='all')media='all'"><noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
-  </noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" media="none" onload="if(media!='all')media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"></noscript>
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="nxone" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript> -->
   <script src="static/scrollMagic/ScrollMagic.min.js"></script>
   <!-- <script src="static/scrollMagic/plugins/debug.addIndicators.min.js"></script> -->
@@ -44,7 +41,7 @@
             <h2 style="font-size: 3rem; font-weight: 400;">personal portfolio</h2>
           </div>
           <div style="margin: auto; text-align: center">
-            <!-- <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">Generate new background</button> -->
+            <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">New Background</button>
             <span class="spacer" style="height: 11px;"></span>
             <a class="btn title-btn js-scroll-trigger box-shadow" id="scrollDown" href="#about">See my work</a>
           </div>
@@ -136,17 +133,14 @@
           <div id="msgSubmit" class="h5 text-center boxCol fit-content"></div>
         </div>
       </form>
-      <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px">
+      <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px" >
         <div class="tooltip" style="text-align: center !important;">
-          <h3 style="color: white">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);"
+          <h3 style="color: white" id="emailTxt">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);"
               style="color: var(--other-orange);">rsedlr@protonmail.com</a></h3>
           <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
         </div>
       </div>
     </div>
-    <!-- <div class="fade">
-        <button class="btn proj-btn main-btn btn-lg" style="margin-top: 50px; margin-bottom: 0">Back to top</button>
-      </div> -->
   </section>
   <section class="bg-footer" id="socials">
     <div class="fade" style="text-align: center;">
