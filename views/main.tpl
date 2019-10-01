@@ -22,7 +22,6 @@
   <script type='text/javascript' src='/static/main/background.js?filever={{backgroundJS}}'></script>
   <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
 </head>
-
 <body id="page-top">
 
   % include('assets/main/modal.html')
@@ -31,7 +30,7 @@
   <section id="titleSection">
     <div class="container h-100">
       <div class="row h-100">
-        <div style="margin: 25% auto auto;">
+        <div id="titleContainer">
           <div class="hideSmall hover" id="titleDiv">
             <div class="header-content Mac-main" id="mainText">Reiss Edler</div>
             <div class="header-content Mac-sec" id="secText">personal portfolio</div>

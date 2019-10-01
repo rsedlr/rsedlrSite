@@ -111,7 +111,7 @@ section {
   padding: 40px 50px;
   border-radius: 20px;
   max-width: 1000px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto;
 }
 
 section:not(#titleSection), 
@@ -121,7 +121,7 @@ nav, #titleDiv, .box-shadow {
 
 #titleSection {
   height: 100vh;
-  height: calc(100vh - 115px);
+  height: calc(100vh - 75px);
 }
 
 section h2 {
@@ -149,6 +149,10 @@ section h2 {
   margin-top: 25px;
   font-size: 30px;
   font-weight: 500;
+}
+
+#titleContainer {
+  margin: auto;
 }
 
 #titleDiv, #smallTitleDiv {
@@ -407,9 +411,9 @@ section h2 {
 .form-control {
   background-color: var(--main-grey) !important;
   border: 1px solid var(--main-grey);
-  color: white !important;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
+  color: white !imstyle="margin: 25% auto auto;"ortant;
+  border-radius: 2style="margin: 25% auto auto;"px;
+  -moz-border-radistyle="margin: 25% auto auto;"s: 20px;
   -webkit-border-radius: 20px;
   background-clip: border-box;
   resize: none;
@@ -490,6 +494,10 @@ section h2 {
   }
   #contactTitle {
     margin-bottom: 20px;
+  }
+  #titleContainer {
+    margin: 50% auto 20%;
+    /* transform: translateY(-50%); */
   }
   #emailTxt {
     font-size: 22px !important;
