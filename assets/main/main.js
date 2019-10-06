@@ -74,43 +74,19 @@ $(document).ready(function () {
 
   $("#moreProjBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
-      $("#hiddenTable").slideDown(1900, "easeInOutSine");
+      $("#hiddenTable").slideDown(1400, "easeInOutSine");
       $(this).text('Show Less');
       // AOS.refresh();
       // setTimeout(function() { AOS.refresh(); }, 1900);
     } else {
       // document.getElementById("scrollMarker").scrollIntoView(true)  // {behavior:'smooth'}
-      $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top }, 1500);
-      $("#hiddenTable").slideUp(1700, "easeInOutSine");
+      $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top }, 1300);
+      $("#hiddenTable").slideUp(1900, "easeInOutSine");
       $(this).text('Show More');
       // AOS.refresh();
       // setTimeout(function() { AOS.refresh(); }, 1700);
     }
   });    
-  
-  $('.github').click(function (e) {
-    window.location.href = `https://github.com/rsedlr/${this.value}`;
-  });   
-
-  $("#HeatDemoBtn").click(function () {
-    window.location.href = '/heatDemo';
-  });   
-
-  $("#othelloBtn").click(function () {
-    window.location.href = '/othello';
-  });   
-
-  $("#wikiRaceBtn").click(function () {
-    window.location.href = '/wikiRace';
-  });    
-
-  $("#christmasCardBtn").click(function() {
-    window.location.href = '/christmasDemo';
-  });     
-
-  $("#pyGameBtn").click(function() {
-    window.location.href = 'https://trinket.io/python/9c0a857289';
-  });     
 
   $("#thisSiteBtn").click(function() {
     $('#thisSiteTooltip').show()
