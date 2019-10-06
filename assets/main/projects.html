@@ -15,6 +15,7 @@
     </div>
   </div>
 </div>
+<div id="scrollMarker" style="visibility: hidden;"></div> <!-------------- Scroll marker -------------->
 <div class="container">  <!-- start -->
   <div class="row align-items-center fade">
     <div class="col-lg-6">
@@ -30,7 +31,6 @@
         <a class="btn proj-btn main-btn" href="https://github.com/rsedlr/Othello.js">GitHub</a>
       </div>
     </div>
-    <div id="scrollMarker" style="visibility: hidden;"></div> <!-------------- Scroll marker -------------->
   </div>
 </div>
 <div class="container">  <!-- start -->
@@ -54,15 +54,19 @@
   <div class="container">  <!-- start -->
     <div class="row align-items-center fade">
       <div class="col-lg-6">
-        <div data-aos="fade-up-right" class="pad-col" id="christmasCardAnchor">
-          <img class="img-fluid round-corners main-pic" src="static/pic/christmasCard-c-1.png" alt="Virtual christmas cards" id="christmasCardImg">
+        <div data-aos="fade-up-left" class="pad-col" id="thisSiteAnchor">
+          <img class="img-fluid round-corners main-pic" src="static/pic/thisSite-c-1.png" alt="My portfolio site" id="thisSiteImg">
         </div>
       </div>
       <div class="col-lg-6">
-        <div data-aos="fade-up-left" data-aos-anchor="#christmasCardAnchor" class="pad-col">
-          <h2 class="display-4 header-title">Virtual christmas Cards</h2>
-          <p>Rather than write lots of cards by hand, simply add the recipients name to the end of the URL and click send. A personal message can be added along with custom themes.</p>
-          <a class="btn proj-btn main-btn" href="/christmasDemo">Demo</a>
+        <div data-aos="fade-up-right" data-aos-anchor="#thisSiteAnchor" class="pad-col">
+          <h2 class="display-4 header-title">This Website</h2>
+          <p>Bootstrap and JS frontend, Python backend. It's hosted on my Ubuntu server using Nginx to serve static files.</p>
+          <div class="tooltip" style="text-align: center !important; z-index: 0;">
+            <button class="btn proj-btn main-btn" id="thisSiteBtn" type="button">Demo</button>
+            <span class="tooltiptext" id="thisSiteTooltip" style="margin-left: -85px; width: 165px;">You're looking at it :)</span>
+          </div>
+          <a class="btn proj-btn main-btn" href="https://github.com/rsedlr/rsedlrSite">GitHub</a>
         </div>
       </div>
     </div>
@@ -70,19 +74,15 @@
   <div class="container">  <!-- start -->
     <div class="row align-items-center fade">
       <div class="col-lg-6 order-lg-2">
-        <div data-aos="fade-up-left" class="pad-col" id="thisSiteAnchor">
-          <img class="img-fluid round-corners main-pic" src="static/pic/thisSite-c-1.png" alt="My portfolio site" id="thisSiteImg">
+        <div data-aos="fade-up-right" class="pad-col" id="christmasCardAnchor">
+          <img class="img-fluid round-corners main-pic" src="static/pic/christmasCard-c-1.png" alt="Virtual christmas cards" id="christmasCardImg">
         </div>
       </div>
       <div class="col-lg-6 order-lg-1">
-        <div data-aos="fade-up-right" data-aos-anchor="#thisSiteAnchor" class="pad-col">
-          <h2 class="display-4 header-title">This Website</h2>
-          <p>Bootstrap and JS frontend, Python backend. It's hosted on my ubuntu server using Nginx to serve static files.</p>
-          <div class="tooltip" style="text-align: center !important; z-index: 0;">
-            <button class="btn proj-btn main-btn" id="thisSiteBtn" type="button">Demo</button>
-            <span class="tooltiptext" id="thisSiteTooltip" style="margin-left: -85px; width: 165px;">You're looking at it :)</span>
-          </div>
-          <a class="btn proj-btn main-btn" href="https://github.com/rsedlr/rsedlrSite">GitHub</a>
+        <div data-aos="fade-up-left" data-aos-anchor="#christmasCardAnchor" class="pad-col">
+          <h2 class="display-4 header-title">Virtual Christmas Cards</h2>
+          <p>Simply add the recipients name to the end of the URL and click send. A personal message can be added along with custom themes.</p>
+          <a class="btn proj-btn main-btn" href="/christmasDemo">Demo</a>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@
       <div class="col-lg-6">
         <div data-aos="fade-up-right" data-aos-anchor="#rcCarAnchor" class="pad-col">
           <h2 class="display-4 header-title">Autonomous RC Car</h2>
-          <p>I heard google was making one so I thought I should have a go too. It's not particularly smart, but I was only 10 at the time so neither was I.</p>
+          <p>I heard Google was making one so I thought I should have a go too. It's not particularly smart, but I was only 10 at the time so neither was I.</p>
         </div>
       </div>
     </div>

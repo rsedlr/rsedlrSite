@@ -76,14 +76,13 @@ $(document).ready(function () {
 
   $("#moreProjBtn").click(function() {
     if ($("#hiddenTable:first").is(":hidden")) {
-      $("#hiddenTable").slideDown(1400, "easeInOutSine");
+      $("#hiddenTable").slideDown(1000, "easeInSine");
       $(this).text('Show Less');
       // AOS.refresh();
       // setTimeout(function() { AOS.refresh(); }, 1900);
     } else {
-      // document.getElementById("scrollMarker").scrollIntoView(true)  // {behavior:'smooth'}
-      $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top }, 1300);
-      $("#hiddenTable").slideUp(1900, "easeInOutSine");
+      $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top }, 1400);
+      $("#hiddenTable").slideUp(2000, "easeInOutSine");
       $(this).text('Show More');
       // AOS.refresh();
       // setTimeout(function() { AOS.refresh(); }, 1700);
