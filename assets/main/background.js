@@ -22,17 +22,18 @@ var i = 0;
 var open = [' function name(param) { ',
             ' for(i = 0; i < limit; i++) { ',
             ' while(condtition) { ',
-            ' case (param) { ',
+            ' case(param) { ',
             ' array.foreach(function(param) { ',
             ' do { '] 
             // ' &ltdiv&gt '];
             
-var content = ['int += 1; ',
-               'foo = bar * 2; ',
+var content = ['int += ',
+               'foo = bar * ',
                'code(); ',
-               'float = 2.0; ',
+               'float = ',
                'square = num ** 2; ',
                `arr = new array[`,
+               'remainder = ',
                'str = \'string\'.slice(0,3); '];
                
 var close = [' } ',
@@ -55,19 +56,24 @@ function codeBackground() {
   var width = document.documentElement.clientWidth;
   var height = document.documentElement.clientHeight;
   var size = Math.sqrt(width * height) / 10;
-
   // console.log(`width: ${width}, height: ${height}, size: ${size}`);
 
   while (header.firstChild) header.removeChild(header.firstChild); // wipes background
 
   for (var i = 0; i < size; i++) {
     openRand = Math.floor(Math.random() * open.length);
-    contentCount = Math.floor(Math.random() * 3) + 1;
+    contentCount = Math.floor(Math.random() * 4) + 1;
     code += open[openRand];
     for (var n = 0; n < contentCount; n++) {
       contentRand = Math.floor(Math.random() * content.length);
       if (contentRand == 5) { 
         code += content[contentRand] + randomMax(9) + '] ';
+      } else if (contentRand == 3) {
+        code += content[contentRand] + randomMax(9) + '.' + randomMax(9) + '; ';
+      } else if (contentRand == 6) {
+        code += content[contentRand] + randomMax(9) + ' % ' + randomMax(9) + '; ';
+      } else if (contentRand == 0 || contentRand == 1) {
+        code += content[contentRand] + randomMax(9) + '; ';
       } else {
         code += content[contentRand];
       }
@@ -80,17 +86,6 @@ function codeBackground() {
   // typeWriter();
 }
 
-// var code = "";
-// var i = 0;
-
-// function typeWriter() {
-//   if (i < code.length) {
-//     document.getElementById("wallpaper").innerHTML += code.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, 1);
-//   }
-// }
-
 function highlightBackground() {
   var codeElements = document.getElementById("wallpaper")
 
@@ -98,7 +93,7 @@ function highlightBackground() {
       strReg2 = /'(.*?)'/g,
       specialReg = /\b(new|var|if|do|function|while|switch|for|foreach|break|slice)(?=[^\w])/g,
       paramReg = /\b(param|condtition)(?=[^\w])/g,
-      varReg = /\b(limit|square|num|name|i|foo|bar|array|arr)(?=[^\w])/g,
+      varReg = /\b(limit|square|num|name|i|foo|bar|array|arr|remainder)(?=[^\w])/g,
       bracketReg = /(\(|\)|{|})/g,
       functionReg = /\b(code)(?=[^\w])/g,
       intReg = /\b(0|1|2|3|4|5|6|7|8|9)(?=[^\w])/g,
@@ -115,24 +110,31 @@ function highlightBackground() {
     parsed = parsed.replace(paramReg,'<span class="param">$1</span>');
     // parsed = parsed.replace(operatorReg,'<span class="operator">$1</span>');
     // parsed = parsed.replace(angleReg,'<span class="angle">$1</span>');    
-    parsed = parsed.replace(intReg,'<span class="num">$1</span>');
     parsed = parsed.replace(functionReg,'<span class="fun">$1</span>');
     parsed = parsed.replace(declarationReg,'<span class="dec">$1</span>');
+    parsed = parsed.replace(intReg,'<span class="num">$1</span>');
 
   codeElements.innerHTML = parsed;
 }
 
+// var code = "";
+// var i = 0;
+
+// function typeWriter() {
+//   if (i < code.length) {
+//     document.getElementById("wallpaper").innerHTML += code.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, 1);
+//   }
+// }
 
 $(document).ready(function () {
   codeBackground();
 });
 
 
-// 
 //  TODO:
 //    -calc num characters need to fill screen and only gen code till thats met
 //    -generate the code nicer
-//    -have some sort of colour theme rather than purely random (some are too similar to background)
-//    -make title text stand out better
-//    -text should fill screen in a nicer way
+//    -no text cut off at right cos of new line
 // 
