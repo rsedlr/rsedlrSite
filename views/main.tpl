@@ -4,7 +4,7 @@
   <!-- add 'async' to js links -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Portfolio of an computer science student.">
+  <meta name="description" content="Portfolio of an A-level student.">
   <meta name="keywords" content="Portfolio, Reiss Edler">
   <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
   <title>Reiss Edler - Personal Portfolio</title>
