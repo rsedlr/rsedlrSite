@@ -109,6 +109,11 @@ def contact():
   el.close()
 
 
+@route('/dadsGift')
+def dadsGift():
+  return template('dadBirthday')
+
+
 ''' ------------- heat control demo stuff ------------- '''
 onOff = {False: 'OFF', True: 'ON'}
 valuesDict = {'curPercent': 50, 'heat': False, 'h_heat': False, 'pc': False, 

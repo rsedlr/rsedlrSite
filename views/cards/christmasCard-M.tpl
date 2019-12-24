@@ -79,7 +79,7 @@
         document.documentElement.style.backgroundColor = colour;
       }
       $('#dadGiftBtn').click(function () {
-        window.location.href = 'https://www.holidaylettings.co.uk/rentals/machynlleth/10887480?rSid=mir';
+        window.location.href = 'dadsGift';
       });
     });
 
