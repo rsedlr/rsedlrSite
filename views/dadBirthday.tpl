@@ -7,7 +7,7 @@
     <title>Merry Christmas Dad!</title>
     <style>
       body {
-        padding: 15px 10%;
+        padding: 15px 15%;
         align-content: center;
       }
       h1 {
