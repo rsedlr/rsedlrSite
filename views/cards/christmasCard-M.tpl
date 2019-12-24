@@ -79,7 +79,7 @@
         document.documentElement.style.backgroundColor = colour;
       }
       $('#dadGiftBtn').click(function () {
-        window.location.href = 'dadsGift';
+        window.location.href = '/dadsGift';
       });
     });
 
