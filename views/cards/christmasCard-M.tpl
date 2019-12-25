@@ -25,7 +25,6 @@
             <h2 id="cardFrontMessage" style="width: 100%">Merry<br>Christmas<br><span id="name">{{name}}</span><br><span style="font-size: 1rem">(click me)</span></h2>
           </div>
         </div>
-        <button type="button" onclick="openCard();" id="button" style="margin: 10px auto; display: none">Open Card</button>
       </div>
     </div>
   </header>
@@ -84,17 +83,11 @@
     });
 
   function openCard() {
-    var button = document.getElementById('button');
-    
-    if (button.innerHTML == 'Open Card') {
-      button.innerHTML = 'Close Card';
-    } else {
-      button.innerHTML = 'Open Card';
-    }
-    
     var cards = document.querySelectorAll('.card');
+    var wrap = document.getElementById("wrap");
     for (var i = 0; i < cards.length; i++) {
       cards[i].classList.toggle('open');
+      wrap.classList.toggle('open');
     }
   }
   </script>
