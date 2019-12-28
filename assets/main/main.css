@@ -433,7 +433,7 @@ section h2 {
   width: fit-content;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 950px) {
   header.masthead {
     height: 100vh;
     min-height: 775px;
@@ -458,21 +458,17 @@ section h2 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 950px) {
   .hideSmall {
     display: none;
   }
 }
-
 
 @media only screen and (max-width: 700px){
   .img-modal-content {
     padding-top: 50px;
     width: 100% !important; /* make modal content fit better on small screen */
   } 
-  .sectionTitle {
-    font-size: 4.7rem !important;
-  }
   #titleSection {
     height: 110%;
   }
@@ -480,7 +476,7 @@ section h2 {
     padding: 30px 20px;
   }
   .sectionTitle {
-    font-size: 4rem !important;
+    font-size: 3.3rem !important;
   }
   .pad-col {
     padding: 1rem !important;
@@ -493,11 +489,20 @@ section h2 {
     margin-bottom: 20px;
   }
   #titleContainer {
-    margin: 50% auto 20%;
+    margin: 30% auto 20%;
     /* transform: translateY(-50%); */
   }
-  #emailTxt {
-    font-size: 22px !important;
+  .secHead, .mainQuote, #emailTxt {
+    font-size: 20px !important;
+  }
+  .header-title, #caption {
+    font-size: 25px !important;
+  }
+  p, .title-btn, .proj-btn {
+    font-size: 15px;
+  }
+  h1, .h1 {
+    font-size: 2rem;
   }
 }
 
