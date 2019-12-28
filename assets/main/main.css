@@ -179,7 +179,7 @@ section h2 {
 #smallTitleDiv {
   text-align: center;
   margin: 0 auto 40px;
-  width: min-content;
+  /* width: min-content; */
 }
 
 #codeBtn {
@@ -259,6 +259,11 @@ section h2 {
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
   color: #000;
+}
+
+.navbar-toggler {
+  border-radius: 10px !important;
+  border: 2px solid black !important;
 }
 
 
@@ -408,9 +413,9 @@ section h2 {
 .form-control {
   background-color: var(--main-grey) !important;
   border: 1px solid var(--main-grey);
-  color: white !imstyle="margin: 25% auto auto;"ortant;
-  border-radius: 2style="margin: 25% auto auto;"px;
-  -moz-border-radistyle="margin: 25% auto auto;"s: 20px;
+  color: white !important;
+  border-radius: 2px;
+  -moz-border-radis: 20px;
   -webkit-border-radius: 20px;
   background-clip: border-box;
   resize: none;
@@ -472,6 +477,16 @@ section h2 {
   #titleSection {
     height: 110%;
   }
+  #smallTitleDiv {
+    width: min-content;
+    padding: 13px 25px;
+  }
+  #smallTitleDiv h1 {
+    font-size: 60px !important;
+  }
+  #smallTitleDiv h2 {
+    font-size: 40px !important;
+  }
   section {
     padding: 30px 20px;
   }
@@ -526,14 +541,14 @@ section h2 {
 
 /* hover main text */
 #mainText {
-  font-family: Arial var(--main-grey), Helvetica,sans-serif !important; 
+  font-family: Arial var(--main-grey), Helvetica, sans-serif !important; 
   font-size: 100px;
   line-height: 1em;
 }
 #secText {
   /* margin-top: -15px;
   padding-left: 4px; */
-	font-family: Arial,Helvetica,sans-serif; 
+	font-family: Arial, Helvetica, sans-serif; 
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 69px;

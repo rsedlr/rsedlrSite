@@ -37,8 +37,8 @@
             <div class="header-content Mac-sec" id="secText">personal portfolio</div>
           </div>
           <div class="showSmall" id="smallTitleDiv">
-            <h1 style="font-size: 4rem; font-weight: 800;">Reiss Edler</h1>
-            <h2 style="font-size: 3rem; font-weight: 400;">personal portfolio</h2>
+            <h1 style="font-size: 70px; font-weight: 800;">Reiss Edler</h1>
+            <h2 style="font-size: 50px; font-weight: 400;">personal portfolio</h2>
           </div>
           <div style="margin: auto; text-align: center">
             <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">New Background</button>
