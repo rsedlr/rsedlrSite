@@ -292,7 +292,7 @@ section h2 {
   margin-left: 50%;
   transform: translateX(-50%);
   padding: 30px 50px;
-  /* min-width: 314px; */
+  min-width: 414px;
 }
 
 .testPadding {
@@ -518,6 +518,25 @@ section h2 {
   }
   h1, .h1 {
     font-size: 2rem;
+  }
+  .boxCol {
+    margin: 15px auto 10px;
+  }
+  #socials {
+    padding: 10px 20px;
+    min-width: 226px;
+  }
+  #socials a:nth-child(1) img {
+    width: 50px;
+    height: 50px;
+  }
+  #socials a:nth-child(2) img {
+    width: 80px;
+    height: 80px;
+  }
+  #socials a:nth-child(3) img {
+    width: 47px;
+    height: 47px;
   }
 }
 
