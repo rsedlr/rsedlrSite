@@ -291,8 +291,8 @@ section h2 {
   display: inline-block;
   margin-left: 50%;
   transform: translateX(-50%);
-  padding: 30px 50px;
-  min-width: 414px;
+  padding: 10px 30px;
+  min-width: 277px;
 }
 
 .testPadding {
@@ -524,19 +524,19 @@ section h2 {
   }
   #socials {
     padding: 10px 20px;
-    min-width: 226px;
+    min-width: 206px;
   }
   #socials a:nth-child(1) img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   #socials a:nth-child(2) img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
   #socials a:nth-child(3) img {
-    width: 47px;
-    height: 47px;
+    width: 42px;
+    height: 42px;
   }
 }
 
