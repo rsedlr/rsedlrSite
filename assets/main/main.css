@@ -18,7 +18,7 @@
 }
 
 html {
-  background-color: var(--main-grey);
+  background-color: #181818;
   overflow-x: hidden;
 }
 
@@ -123,6 +123,11 @@ nav, #titleDiv, .box-shadow {
 
 section h2 {
   font-size: 3rem;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #sectionContainer {
