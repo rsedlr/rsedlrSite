@@ -135,7 +135,7 @@ $(document).ready(function () {
       submitMsg.text('Thanks, message submitted - If you would like to submit another message, please refresh the page');
     } else {
       submitMsg.text('sending...');
-      submitMsg.css('display', 'block');
+      submitMsg.css('visibility', 'visible');
       contactClicked = true;
       var name = $("#name").val();
       var email = $("#email").val();
@@ -146,11 +146,11 @@ $(document).ready(function () {
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success: function(data) {
           submitMsg.text('Thanks, message submitted');
-          submitMsg.css('display', 'block');
+          submitMsg.css('visibility', 'visible');
         },
         error: function(data) {
           submitMsg.text('Error, try again');
-          submitMsg.css('display', 'block');
+          submitMsg.css('visibility', 'visible');
         },
       });            
     }
