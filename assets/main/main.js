@@ -49,21 +49,19 @@ $(document).ready(function () {
 
   $('.main-pic').click(function (e) {
     e.preventDefault();
-    if (this.id != 'plantWatererImg') {
-      var value = this.id.slice(0, -3);
-      var count = imgCount[value];
-      for (var i = 0; i < count; i++) {
-        $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo('#modalIndicators')
-        $('<div class="carousel-item"><img class="d-block w-100" src="static/pic/'
-          + value + '-c-' + (i + 1) + '.png"></div>').appendTo('#modalInner');
-      }
-      $('#modalIndicators > li').first().addClass('active');
-      $('.carousel-item').first().addClass('active');
-      // $('#modalSlides').carousel();  
-      document.getElementById("caption").innerHTML = this.alt;
-      picModal.style.display = "block";
-      // document.body.classList.add('noScroll');
+    var value = this.id.slice(0, -3);
+    var count = imgCount[value];
+    for (var i = 0; i < count; i++) {
+      $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo('#modalIndicators')
+      $('<div class="carousel-item"><img class="d-block w-100" src="static/pic/'
+        + value + '-c-' + (i + 1) + '.png"></div>').appendTo('#modalInner');
     }
+    $('#modalIndicators > li').first().addClass('active');
+    $('.carousel-item').first().addClass('active');
+    // $('#modalSlides').carousel();  
+    document.getElementById("caption").innerHTML = this.alt;
+    picModal.style.display = "block";
+    // document.body.classList.add('noScroll');
   });               
 
   $(".img-close").click(function() {
