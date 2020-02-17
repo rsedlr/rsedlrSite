@@ -11,7 +11,7 @@ $(document).ready(function () {
   
   var imgCount = {'heatDemo': 1, 'othello': 2,'wikiRace': 1, 'christmasCard': 2, 
                   'thisSite': 1, 'unity': 1, 'rcCar': 1, 'bl': 1, 
-                  'plantWaterer': 1, 'pyGame': 1, 'tempImg': 1}
+                  'plantWaterer': 2, 'pyGame': 1, 'tempImg': 1}
 
   if (isMac) {
     mainText.className += ' Mac-main';
