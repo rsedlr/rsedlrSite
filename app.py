@@ -29,8 +29,8 @@ except:
 
 try:
   file = open('info.txt', 'r')
-  telegram_token = file.readline()
-  telegram_chat = file.readline()
+  telegram_token = file.readline()[::1]
+  telegram_chat = file.readline()[::1]
   file.close()
   telegramWorking = True
   print('Telegram working')
