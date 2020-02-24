@@ -34,6 +34,7 @@ try:
   file.close()
   telegramWorking = True
   print('Telegram working')
+  print('Token:%s\nID:%s' %(telegram_token, telegram_chat))
 except:
   telegram_token, telegram_chat = '', ''
   telegramWorking = False
