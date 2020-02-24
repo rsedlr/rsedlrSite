@@ -91,30 +91,17 @@ def contact():
     name = request.forms.get('name') or '[empty]'
     email = request.forms.get('email') or '[empty]'
     message = request.forms.get('message') or '[empty]'
-    # msg = MIMEMultipart()
-    # fromaddr = "rsedlr98766@gmail.com"
-    # toaddr = "rsedlr@protonmail.com"
-    # msg['From'] = fromaddr
-    # msg['To'] = toaddr
-    # msg['Subject'] = "Portfolio contact from %s" % name
-    # body = message + ('\nFrom: %s (%s)' %(email, name))
-    # msg.attach(MIMEText(body, 'plain'))
-    # server = smtplib.SMTP('smtp.gmail.com', 587)
-    # server.starttls()
-    # server.login(fromaddr, info)
-    # text = msg.as_string()
-    # server.sendmail(fromaddr, toaddr, text)
-    # server.quit()
-    msgContents = "Portfolio contact from: %s,\n %s \nfrom %s" %(name, message, email)
-    if telegramWorking:
-      requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + msgContents)
-      print('\n************ Telegram Sent! ************\n')
-    else:
-      print('\n************ ERROR getting Telegram bot credentials! ************\n')
   except Exception as e:
     print(e)
+
+  msgContents = "Portfolio contact from: %s,\n %s \nfrom %s" %(name, message, email)
+  if telegramWorking:
+    requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + msgContents)
+    print('\n************ Telegram Sent! ************\n')
+  else:
+    print('\n************ ERROR getting Telegram bot credentials! ************\n')
   el = open('emailLog.txt', 'a')
-  el.writelines('Portfolio contact from %s,\n %s \n %s \n\n\n'%(name, message, email))
+  el.writelines(msgContents)
   el.close()
 
 
@@ -345,4 +332,21 @@ acc id: account_id
 #     server.start()
 #   except KeyboardInterrupt:
 #     server.stop()
+
+
+    # msg = MIMEMultipart()
+    # fromaddr = "rsedlr98766@gmail.com"
+    # toaddr = "rsedlr@protonmail.com"
+    # msg['From'] = fromaddr
+    # msg['To'] = toaddr
+    # msg['Subject'] = "Portfolio contact from %s" % name
+    # body = message + ('\nFrom: %s (%s)' %(email, name))
+    # msg.attach(MIMEText(body, 'plain'))
+    # server = smtplib.SMTP('smtp.gmail.com', 587)
+    # server.starttls()
+    # server.login(fromaddr, info)
+    # text = msg.as_string()
+    # server.sendmail(fromaddr, toaddr, text)
+    # server.quit()
+
 '''
