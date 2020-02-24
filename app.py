@@ -31,11 +31,13 @@ try:
   file = open('info.txt', 'r')
   telegram_token = file.readline()
   telegram_chat = file.readline()
-  telegramWorking = True
   file.close()
+  telegramWorking = True
+  print('Telegram working')
 except:
   telegram_token, telegram_chat = '', ''
   telegramWorking = False
+  print('Telegram NOT working')
 
 demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 
         'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
