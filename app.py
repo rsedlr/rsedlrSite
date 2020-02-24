@@ -94,7 +94,7 @@ def contact():
   except Exception as e:
     print(e)
 
-  msgContents = "Portfolio contact from: %s,\n %s \nfrom %s" %(name, message, email)
+  msgContents = "Portfolio contact from: %s,\n%s\nfrom %s" %(name, message, email)
   if telegramWorking:
     requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + msgContents)
     print('\n************ Telegram Sent! ************\n')
