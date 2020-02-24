@@ -106,7 +106,7 @@ def contact():
     # server.sendmail(fromaddr, toaddr, text)
     # server.quit()
     msgContents = "Portfolio contact from: %s, %s from %s" %(name, message, email)
-    requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + contents)
+    requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + msgContents)
     print('\n************ Telegram Sent! ************\n')
   except Exception as e:
     print(e)
