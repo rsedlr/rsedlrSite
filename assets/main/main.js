@@ -130,7 +130,7 @@ $(document).ready(function () {
   function submitForm() {
     var submitMsg = $("#msgSubmit");
     if (contactClicked) {
-      submitMsg.text('Thanks, message submitted - If you would like to submit another message, please refresh the page');
+      submitMsg.text('If you would like to submit another message, please refresh the page');
     } else {
       submitMsg.text('sending...');
       submitMsg.css('visibility', 'visible');
