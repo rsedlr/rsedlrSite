@@ -29,17 +29,17 @@ except:
 
 try:
   file = open('info.txt', 'r')
-  info = file.read()
+  telegram_token = file.readline()
+  telegram_chat = file.readline()
+  telegramWorking = True
   file.close()
 except:
-  info = 'test'
+  telegram_token, telegram_chat = '', ''
+  telegramWorking = False
 
 demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 
         'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
-
-telegram_token = '971400741:AAEnThLgbAnEvPDG8i93_rkLVJPC8uLwTQ0'
-telegram_chat = '-321101102'
 
 
 if not dev:
@@ -106,8 +106,11 @@ def contact():
     # server.sendmail(fromaddr, toaddr, text)
     # server.quit()
     msgContents = "Portfolio contact from: %s,\n %s \nfrom %s" %(name, message, email)
-    requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + msgContents)
-    print('\n************ Telegram Sent! ************\n')
+    if telegramWorking:
+      requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + msgContents)
+      print('\n************ Telegram Sent! ************\n')
+    else:
+      print('\n************ ERROR getting Telegram bot credentials! ************\n')
   except Exception as e:
     print(e)
   el = open('emailLog.txt', 'a')
