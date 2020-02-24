@@ -38,8 +38,8 @@ demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK',
         'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
 
-telegram_token = '705462061:AAEmunrwT7-7qYBQPhUDsQxQjpq5DktYhOE'
-telegram_chat = '-1001381131713'
+telegram_token = '971400741:AAEnThLgbAnEvPDG8i93_rkLVJPC8uLwTQ0'
+telegram_chat = '-321101102'
 
 
 if not dev:
