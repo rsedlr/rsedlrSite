@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, subprocess, sys, smtplib, bottle, sqlite3, logging  # , serial
+import os, subprocess, sys, smtplib, bottle, sqlite3, logging, requests  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
 from cardMessages import christmasMessage, MothersMessage, birthdayMessage
@@ -37,6 +37,10 @@ except:
 demo = ['BLUE', 'RED', 'PINK', 'PURPLE', 'BLACK', 
         'ORANGE', 'GREY', 'CUSTOM BACKGROUND', 'NAME DEMO']
 key = 'beepbopboop'  #not normally kept in cleartext but fine for demo
+
+telegram_token = '705462061:AAEmunrwT7-7qYBQPhUDsQxQjpq5DktYhOE'
+telegram_chat = '-1001381131713'
+
 
 if not dev:
   logging.basicConfig(level=logging.DEBUG, 
@@ -84,28 +88,30 @@ def main():
 @route('/contact', method='POST')
 def contact():
   try:
-    name = request.forms.get('name') or '[empty]'
-    email = request.forms.get('email') or '[empty]'
-    message = request.forms.get('message') or '[empty]'
-    msg = MIMEMultipart()
-    fromaddr = "rsedlr98766@gmail.com"
-    toaddr = "rsedlr@protonmail.com"
-    msg['From'] = fromaddr
-    msg['To'] = toaddr
-    msg['Subject'] = "Portfolio contact from %s" % name
-    body = message + ('\nFrom: %s (%s)' %(email, name))
-    msg.attach(MIMEText(body, 'plain'))
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(fromaddr, info)
-    text = msg.as_string()
-    server.sendmail(fromaddr, toaddr, text)
-    server.quit()
-    print('\n************ Email Sent! ************\n')
+    # name = request.forms.get('name') or '[empty]'
+    # email = request.forms.get('email') or '[empty]'
+    # message = request.forms.get('message') or '[empty]'
+    # msg = MIMEMultipart()
+    # fromaddr = "rsedlr98766@gmail.com"
+    # toaddr = "rsedlr@protonmail.com"
+    # msg['From'] = fromaddr
+    # msg['To'] = toaddr
+    # msg['Subject'] = "Portfolio contact from %s" % name
+    # body = message + ('\nFrom: %s (%s)' %(email, name))
+    # msg.attach(MIMEText(body, 'plain'))
+    # server = smtplib.SMTP('smtp.gmail.com', 587)
+    # server.starttls()
+    # server.login(fromaddr, info)
+    # text = msg.as_string()
+    # server.sendmail(fromaddr, toaddr, text)
+    # server.quit()
+    msgContents = "Portfolio contact from: %s, %s from %s" %(name, message, email)
+    requests.get("https://api.telegram.org/bot" + telegram_token + "/sendMessage?chat_id=" + telegram_chat + "&text=" + contents))
+    print('\n************ Telegram Sent! ************\n')
   except Exception as e:
     print(e)
   el = open('emailLog.txt', 'a')
-  el.writelines('Portfolio contact from %s,\n %s \n\n\n'%(name,message))
+  el.writelines('Portfolio contact from %s,\n %s \n %s \n\n\n'%(name,message, email))
   el.close()
 
 
