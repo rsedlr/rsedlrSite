@@ -88,9 +88,9 @@ def main():
 @route('/contact', method='POST')
 def contact():
   try:
-    # name = request.forms.get('name') or '[empty]'
-    # email = request.forms.get('email') or '[empty]'
-    # message = request.forms.get('message') or '[empty]'
+    name = request.forms.get('name') or '[empty]'
+    email = request.forms.get('email') or '[empty]'
+    message = request.forms.get('message') or '[empty]'
     # msg = MIMEMultipart()
     # fromaddr = "rsedlr98766@gmail.com"
     # toaddr = "rsedlr@protonmail.com"
@@ -111,7 +111,7 @@ def contact():
   except Exception as e:
     print(e)
   el = open('emailLog.txt', 'a')
-  el.writelines('Portfolio contact from %s,\n %s \n %s \n\n\n'%(name,message, email))
+  el.writelines('Portfolio contact from %s,\n %s \n %s \n\n\n'%(name, message, email))
   el.close()
 
 
