@@ -2,6 +2,7 @@
 
 :root {
   --main-col: rgb(158, 0, 66);  /* rgb(255, 0, 170) */
+  --other: #d400ff;
 }
 
 html, body {
@@ -14,13 +15,14 @@ html, body {
 
 html {
   background-color: rgb(78, 0, 52);
-  background-image: url('/static/pic/flowers/flower3-min.jpg'), 
+  background-image: url('https://free4kwallpapers.com/uploads/originals/2019/10/21/orange-flowers-wallpaper.jpg');
+  /* background-image: url('/static/pic/flowers/flower3-min.jpg'), 
                     url('/static/pic/flowers/flower5-min.jpg'), 
                     url('/static/pic/flowers/flower1-min.jpg'), 
-                    url('/static/pic/flowers/flower4-min.jpg');
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+                    url('/static/pic/flowers/flower4-min.jpg'); */
+  /* background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top left, top right, bottom left, bottom right;
-  background-size: 50% 50%;
+  background-size: 50% 50%; */
 }
 
 body {
@@ -102,10 +104,18 @@ header.masthead .device-container {
   height: 33rem;
   margin: auto;
   position: relative;
-  transform: rotateX(15deg);
-  transform: translateZ(50px);
+  /* transform: rotateX(15deg); */
+  /* transform: translateZ(50px); */
   transform-style: preserve-3d;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+  transition-duration: 1s;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+#wrap.open {
+  transform: translateX(14rem);
+  box-shadow: 20px 0 20px -10px rgba(0, 0, 0, 0.5), 
+              0 20px 20px -10px rgba(0, 0, 0, 0.5), 
+              0 -20px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 550px) {
@@ -131,7 +141,7 @@ header.masthead .device-container {
   background-color: #fff;
   border-radius: 2px;
   position: relative;
-  border: 8px solid var(--main-col);
+  border: 11px solid var(--main-col);
   text-align: center;
 }
 .card--front {

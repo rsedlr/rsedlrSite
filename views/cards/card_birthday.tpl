@@ -47,15 +47,11 @@
       crossorigin="anonymous"></script>
     <script>
       function openCard() {
-        var button = document.getElementById('button');
-        if (button.innerHTML == 'Open Card') {
-          button.innerHTML = 'Close Card';
-        } else {
-          button.innerHTML = 'Open Card';
-        }
         var cards = document.querySelectorAll('.card');
+        var wrap = document.getElementById("wrap");
         for (var i = 0; i < cards.length; i++) {
           cards[i].classList.toggle('open');
+          wrap.classList.toggle('open');
         }
       }
 

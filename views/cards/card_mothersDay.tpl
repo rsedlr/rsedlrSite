@@ -29,15 +29,11 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>
     function openCard() {
-      var button = document.getElementById('button');
-      if (button.innerHTML == 'Open Card') {
-        button.innerHTML = 'Close Card';
-      } else {
-        button.innerHTML = 'Open Card';
-      }
       var cards = document.querySelectorAll('.card');
+      var wrap = document.getElementById("wrap");
       for (var i = 0; i < cards.length; i++) {
         cards[i].classList.toggle('open');
+        wrap.classList.toggle('open');
       }
     }
 
@@ -51,13 +47,13 @@
       // } else {
       switch (name) {
         case 'NANNY M':
-          $(document.body).css("--main-col", 'rgb(132, 0, 255)');
+          $(document.body).css("--main-col", '#63a4aa'); // rgb(132, 0, 255)
           break;
         case 'NANNY A':
-          $(document.body).css("--main-col", 'rgb(255, 0, 170)');
+          $(document.body).css("--main-col", '#c300ff');
           break;
         case 'MUM':
-          $(document.body).css("--main-col", '#63a4aa');
+          $(document.body).css("--main-col", '#25be3f');
           break;
         // default:
         //   var colour = 'rgb(158, 0, 66)';

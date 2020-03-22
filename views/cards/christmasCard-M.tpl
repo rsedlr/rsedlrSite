@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
   <title>Merry Christmas</title>
-  <link rel="stylesheet" type="text/css" href="/static/cards/christmasCard.css">
+  <link rel="stylesheet" type="text/css" href="/static/cards/ChristmasCard.css">
 </head>
 <body>
   <header class="masterhead">
