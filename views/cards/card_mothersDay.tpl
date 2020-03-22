@@ -17,6 +17,9 @@
             <h2 id="cardMainMessage" style="margin: 15px 0; padding: 0 10px">{{!message}}</h2>
           </div>
           <div class="card card--front back" onclick="openCard();">
+            % if name.upper() == 'NANNY M':
+              <button type="button" id="nanGiftBtn" style="margin: 10px auto; transform: rotateY(180deg); height: 60px; width: 200px; font-size: 30px; font-weight: bold">Click me :)</button>
+            % end
           </div>
           <div class="card card--front" onclick="openCard();">
             <h2 id="cardFrontMessage" style="width: 100%">Happy<br>Mothers<br>Day<br><span id="name">{{name}}</span><br><span style="font-size: 1rem">(click me)</span></h2>
@@ -58,6 +61,10 @@
         // default:
         //   var colour = 'rgb(158, 0, 66)';
       }
+      $('#nanGiftBtn').click(function () {
+        console.log('uasdefafds');
+        window.location.href = '/static/cards/wwf-certificate.pdf';
+      });
     });
   </script>
 </body>
