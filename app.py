@@ -2,7 +2,11 @@
 import os, subprocess, sys, smtplib, bottle, sqlite3, logging, requests  # , serial
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
-from cardMessages import christmasMessage, MothersMessage, birthdayMessage
+
+try: 
+  from cardMessages import christmasMessage, MothersMessage, birthdayMessage
+except Exception as e:
+  print(e)
 
 try:
   import cherrypy
