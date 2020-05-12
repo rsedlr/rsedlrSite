@@ -42,7 +42,7 @@
             <h2 style="font-size: 50px; font-weight: 400;">personal portfolio</h2>
           </div>
           <div style="margin: auto; text-align: center">
-            <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">New Background</button>
+            <!-- <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">New Background</button> -->
             <span class="spacer" style="height: 20px;"></span>
             <a class="btn title-btn js-scroll-trigger box-shadow" id="scrollDown" href="#about"><i class="main-arrow down"></i></a>
           </div>
