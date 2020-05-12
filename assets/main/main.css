@@ -952,7 +952,7 @@ span.space {
   transition: 0.2s ease;
 }
 
-.btn .main-arrow::before {
+.main-arrow::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -961,7 +961,7 @@ span.space {
   transition: 0.2s ease;
   display: block;
 }
-.btn .main-arrow::after {
+.main-arrow::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -985,5 +985,9 @@ span.space {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+/* .btn:hover .down {
+  transform: rotate(45deg) scale(0.8);
+} */
 
 /* arrow end */
