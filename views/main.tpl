@@ -20,9 +20,9 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   % import os ; mainJS = os.path.getsize("assets/main/main.js") ; backgroundJS = os.path.getsize("assets/main/background.js") ; mainCSS = os.path.getsize("assets/main/main.css")
-  <script type='text/javascript' src='/static/main/main.js?filever={{mainJS}}'></script>
-  <script type='text/javascript' src='/static/main/background.js?filever={{backgroundJS}}'></script>
-  <link rel="stylesheet" type="text/css" href="/static/main/main.css?filever={{mainCSS}}">
+  <script type='text/javascript' src='/static/main/main.min.js?filever={{mainJS}}'></script>
+  <script type='text/javascript' src='/static/main/background.min.js?filever={{backgroundJS}}'></script>
+  <link rel="stylesheet" type="text/css" href="/static/main/main.min.css?filever={{mainCSS}}">
 </head>
 <body id="page-top">
 
@@ -154,7 +154,7 @@
   <!-- <script src="/static/mainPage/jquery.min.js"></script> -->
   <!-- <script src="/static/mainPage/bootstrap.bundle.min.js"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>  <script src="/static/mainPage/jquery.easing.min.js"></script>
-  <script src="/static/main/scroll.js"></script>
+  <script src="/static/main/scroll.min.js"></script>
 </body>
 </html>
 

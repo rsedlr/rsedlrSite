@@ -84,7 +84,7 @@ def computing():
 
 @route('/')
 def main():
-  return template('main')
+  return template('main.min')
 
 
 # @route('/test')
