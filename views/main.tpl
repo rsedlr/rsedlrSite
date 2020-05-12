@@ -43,8 +43,10 @@
           </div>
           <div style="margin: auto; text-align: center">
             <!-- <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">New Background</button> -->
-            <span class="spacer" style="height: 20px;"></span>
-            <a class="btn title-btn js-scroll-trigger box-shadow" id="scrollDown" href="#about"><i class="main-arrow down"></i></a>
+            <span class="spacer" style="height: 30px;"></span>
+            <a class="btn title-btn js-scroll-trigger box-shadow" style="height: 70px;" id="scrollDown" href="#about">
+              <div class="main-arrow down"></div>
+            </a>
           </div>
         </div>
       </div>
