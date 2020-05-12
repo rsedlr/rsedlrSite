@@ -14,6 +14,11 @@ except Exception as e:
   print(e)
 
 try:
+  from cheroot.wsgi import Server as WSGIServer
+except ImportError:
+  from cherrypy.wsgiserver import CherryPyWSGIServer as WSGIServer
+
+try:
   import git
 except Exception as e:
   print(e)
