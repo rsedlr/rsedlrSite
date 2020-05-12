@@ -317,7 +317,7 @@ if __name__ == '__main__':
   host = '127.0.0.1'  # 127.0.0.1 '0.0.0.0'
   if dev:
     print('********* running in development mode *********')
-    run(host='80', port=8080, reloader=True, threaded=True, debug=True)  # 127.0.0.1
+    run(host='127.0.0.1', port=3000, reloader=True, threaded=True, debug=True)  # 127.0.0.1 :8080
   else:
     try:
       run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
