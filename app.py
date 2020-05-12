@@ -314,10 +314,10 @@ def gitPull():
 if __name__ == '__main__':
   port = int(os.environ.get('PORT', 3000))
   # run_decoupled(app, '0.0.0.0', 80)
-  host = '127.0.0.1'  # '0.0.0.0'
+  host = '127.0.0.1'  # 127.0.0.1 '0.0.0.0'
   if dev:
     print('********* running in development mode *********')
-    run(host='127.0.0.1', port=8080, reloader=True, threaded=True, debug=True)  # 127.0.0.1
+    run(host='0.0.0.0', port=8080, reloader=True, threaded=True, debug=True)  # 127.0.0.1
   else:
     try:
       run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
