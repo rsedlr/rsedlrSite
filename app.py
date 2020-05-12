@@ -18,11 +18,11 @@ try:
 except Exception as e:
   print(e)
 
-try:
-  from email.MIMEMultipart import MIMEMultipart
-  from email.MIMEText import MIMEText 
-except Exception as e: 
-  print(e)
+# try:
+#   from email.MIMEMultipart import MIMEMultipart
+#   from email.MIMEText import MIMEText 
+# except Exception as e: 
+#   print(e)
 
 try:
   dev = True if '-dev' in sys.argv else False
