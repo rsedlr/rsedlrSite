@@ -91,16 +91,16 @@ $(document).ready(function () {
 
   $('#moreProjBtn').click(function () {
     if ($('#hiddenTable:first').is(':hidden')) {
-      $('#hiddenTable').slideDown(1000, 'easeInSine')
+      $('#hiddenTable').slideDown(800, 'easeInSine') // 1000
       $(this).text('Show Less')
       // AOS.refresh();
       // setTimeout(function() { AOS.refresh(); }, 1900);
     } else {
       $('html, body').animate(
         { scrollTop: $('#scrollMarker').offset().top },
-        1400
-      )
-      $('#hiddenTable').slideUp(2000, 'easeInOutSine')
+        1100
+      ) // 1400
+      $('#hiddenTable').slideUp(1500, 'easeInOutSine') // 2000
       $(this).text('Show More')
       // AOS.refresh();
       // setTimeout(function() { AOS.refresh(); }, 1700);

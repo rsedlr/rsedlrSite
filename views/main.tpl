@@ -19,10 +19,10 @@
   <!-- <script src="static/scrollMagic/plugins/debug.addIndicators.min.js"></script> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  % import os ; mainJS = os.path.getsize("assets/main/main.js") ; backgroundJS = os.path.getsize("assets/main/background.js") ; mainCSS = os.path.getsize("assets/main/main.css")
-  <script type='text/javascript' src='/static/main/main.min.js?filever={{mainJS}}'></script>
-  <script type='text/javascript' src='/static/main/background.min.js?filever={{backgroundJS}}'></script>
-  <link rel="stylesheet" type="text/css" href="/static/main/main.min.css?filever={{mainCSS}}">
+  <!-- % import os ; mainJS = os.path.getsize("assets/main/main.js") ; backgroundJS = os.path.getsize("assets/main/background.js") ; mainCSS = os.path.getsize("assets/main/main.css") -->
+  <script type='text/javascript' src='/static/main/main.min.js'></script> <!-- ?filever={{mainJS}} -->
+  <script type='text/javascript' src='/static/main/background.min.js'></script> <!-- ?filever={{backgroundJS}} -->
+  <link rel="stylesheet" type="text/css" href="/static/main/main.min.css"> <!-- ?filever={{mainCSS}}} -->
 </head>
 <body id="page-top">
 
