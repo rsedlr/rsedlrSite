@@ -332,15 +332,6 @@ user: request.environ.get('REMOTE_USER', '')
 url: request.url
 acc id: account_id
 
-
-# def run_decoupled(app, host='0.0.0.0', port=8080, **config):
-#   server = CherryPyWSGIServer((host, port), app, **config)
-#   try:
-#     server.start()
-#   except KeyboardInterrupt:
-#     server.stop()
-
-
     # msg = MIMEMultipart()
     # fromaddr = "rsedlr98766@gmail.com"
     # toaddr = "rsedlr@protonmail.com"
