@@ -18,12 +18,6 @@ try:
 except Exception as e:
   print(e)
 
-# try:
-#   from email.MIMEMultipart import MIMEMultipart
-#   from email.MIMEText import MIMEText 
-# except Exception as e: 
-#   print(e)
-
 try:
   dev = True if '-dev' in sys.argv else False
   gitQuit = True if '-wle' in sys.argv else False
@@ -331,6 +325,13 @@ if __name__ == '__main__':
 user: request.environ.get('REMOTE_USER', '')
 url: request.url
 acc id: account_id
+
+
+# try:
+#   from email.MIMEMultipart import MIMEMultipart
+#   from email.MIMEText import MIMEText 
+# except Exception as e: 
+#   print(e)
 
     # msg = MIMEMultipart()
     # fromaddr = "rsedlr98766@gmail.com"
