@@ -22,7 +22,7 @@
   <!-- % import os ; mainJS = os.path.getsize("assets/main/main.js") ; backgroundJS = os.path.getsize("assets/main/background.js") ; mainCSS = os.path.getsize("assets/main/main.css") -->
   <script type='text/javascript' src='/static/main/main.min.js'></script> <!-- ?filever={{mainJS}} -->
   <script type='text/javascript' src='/static/main/background.min.js'></script> <!-- ?filever={{backgroundJS}} -->
-  <link rel="stylesheet" type="text/css" href="/static/main/main.css"> <!-- ?filever={{mainCSS}}} -->
+  <link rel="stylesheet" type="text/css" href="/static/main/main.min.css"> <!-- ?filever={{mainCSS}}} -->
 </head>
 <body id="page-top">
 
