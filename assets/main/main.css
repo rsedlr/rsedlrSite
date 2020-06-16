@@ -827,7 +827,7 @@ span.space {
   /* box-shadow: 0 0 40px; */
 }
 .main-pic:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
   /* border-color: #fff; */
 }
 
