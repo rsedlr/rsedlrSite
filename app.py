@@ -57,6 +57,7 @@ if not dev:
 
 @error(404)
 def error404(error):
+  logging.debug(" -- eror 404 -- ")
   return template('error404')
 
 
@@ -174,9 +175,9 @@ def submit(status, temp):
 def control():
   global valuesDict
   return template('heatDemo/control', heat=onOff[valuesDict['heat']], curPercent=valuesDict['curPercent'],
-                             lights_T=onOff[valuesDict['lights_T']], led_D=onOff[valuesDict['led_D']], 
-                             led_C=onOff[valuesDict['led_C']], fans_D=onOff[valuesDict['fans_D']],
-                             fans_T=onOff[valuesDict['fans_T']], pc=onOff[valuesDict['pc']])
+                                      lights_T=onOff[valuesDict['lights_T']], led_D=onOff[valuesDict['led_D']], 
+                                      led_C=onOff[valuesDict['led_C']], fans_D=onOff[valuesDict['fans_D']],
+                                      fans_T=onOff[valuesDict['fans_T']], pc=onOff[valuesDict['pc']])
 
 
 @route('/heatDemo/h/control')
