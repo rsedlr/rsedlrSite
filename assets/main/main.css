@@ -958,7 +958,7 @@ span.space {
   height: 100%;
   border: solid var(--main-grey);
   border-width: 0 0 5px 0;
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
   display: block;
 }
 .main-arrow::after {
@@ -970,7 +970,7 @@ span.space {
   top: -100%;
   border: solid var(--main-grey);
   border-width: 0 5px 0 0;
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
 }
 
 .btn:hover .main-arrow::after {
