@@ -78,7 +78,7 @@
       <h1 class="sectionTitle">About</h1>
       <div class="fade">
         <h1 class="secHead">
-          I'm an A-level student, based in London. Currently studying Computer Science, Maths and Physics at Beths Grammar school.
+          I'm an A-level student, based in London. Awarded 3 A*s in Computer Science, Maths and Physics at Beths Grammar school.
         </h1>
       </div>
       <div class="fade">
