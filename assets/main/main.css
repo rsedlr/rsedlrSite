@@ -975,15 +975,20 @@ span.space {
 
 .btn:hover .main-arrow::after {
   transform: rotate(-45deg) translate(-14px, 5px) scaleY(1.3);
+  -webkit-transform: rotate(-45deg) translate(-14px, 5px) scaleY(1.3);
+  -moz-transform: rotate(-45deg) translate(-14px, 5px) scaleY(1.3);
 }
 
 .btn:hover .main-arrow::before {
   transform: rotate(45deg) translate(5px, -14px) scaleX(1.3);
+  -webkit-transform: rotate(45deg) translate(5px, -14px) scaleX(1.3);
+  -moz-transform: rotate(45deg) translate(5px, -14px) scaleX(1.3);
 }
 
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
 }
 
 /* .btn:hover .down {
