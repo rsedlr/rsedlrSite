@@ -159,4 +159,3 @@
 </html>
 
 <!-- scripts should all be moved from header to footer -->
-<!-- email and project descriptions needs to go smaller -->
