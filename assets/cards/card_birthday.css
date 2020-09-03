@@ -1,23 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 :root {
-  --main-col: rgb(158, 0, 66);  /* rgb(255, 0, 170) */
+  --main-col: rgb(158, 0, 66); /* rgb(255, 0, 170) */
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
   width: 100%;
   padding: 0;
   position: relative;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
-  background-color: rgb(78, 0, 52);
-  background-image: url('/static/pic/jackson/1.jpg'), 
-                    url('/static/pic/jackson/2.jpg'), 
-                    url('/static/pic/jackson/3.jpg'), 
-                    url('/static/pic/jackson/4.jpg');
+  background-color: grey;
+}
+
+html.mum {
+  background-image: url('/static/pic/brighton/1.jpg'),
+    url('/static/pic/brighton/2.jpg'), url('/static/pic/brighton/3.jpg'),
+    url('/static/pic/brighton/4.webp');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top left, top right, bottom left, bottom right;
   background-size: 50% 50%;
@@ -32,7 +36,9 @@ body {
   transform-style: preserve-3d;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -40,13 +46,13 @@ h2 {
   /* font-family: "Dancing Script", serif; */
   font-weight: bold;
   font-size: 32px;
-  color: var(--main-col); 
+  color: var(--main-col);
   text-align: center;
 }
 
 h3 {
   color: var(--main-col);
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 25px;
 }
 
@@ -89,19 +95,22 @@ header.masthead .device-container {
 }
 
 #mumBtn {
-  margin: 10px auto; 
-  transform: rotateY(180deg); 
-  height: 60px; 
-  width: 200px; 
-  font-size: 30px; 
+  margin: 50px auto 0;
+  padding: 15px;
+  /* height: 50%; */
+  width: 50%;
+  font-size: 30px;
   font-weight: bold;
-  border: 4px solid var(--main-col);
+  border: 4px dashed var(--main-col);
   color: var(--main-col);
-  background-color: rgb(49, 49, 49);
+  position: absolute;
+  left: 50%;
+  transform: rotateY(180deg) translateX(50%);
+  text-align: center;
 }
 
-#mumText {
-  transform: rotateY(180deg); 
+.flipY {
+  transform: rotateY(180deg);
 }
 /* 
 .container {
@@ -132,9 +141,8 @@ header.masthead .device-container {
 
 #wrap.open {
   transform: translateX(14rem);
-  box-shadow: 20px 0 20px -10px rgba(0, 0, 0, 0.5), 
-              0 20px 20px -10px rgba(0, 0, 0, 0.5), 
-              0 -20px 20px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 20px 0 20px -10px rgba(0, 0, 0, 0.5),
+    0 20px 20px -10px rgba(0, 0, 0, 0.5), 0 -20px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 550px) {
@@ -151,6 +159,13 @@ header.masthead .device-container {
   }
   #cardMainMessage {
     font-size: 23px !important;
+  }
+  html.mum {
+    background-image: url('/static/pic/brighton/1.jpg'),
+      url('/static/pic/brighton/2.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: 100% 50%;
   }
 }
 
@@ -191,7 +206,7 @@ header.masthead .device-container {
   opacity: 0.1;
 }
 .card--inner:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -202,4 +217,3 @@ header.masthead .device-container {
   opacity: 1;
   transition: all 1s ease-in-out;
 }
-
