@@ -32,9 +32,7 @@
             <div class="card card--front back" onclick="openCard();">
               % if name.upper() == 'MUM':
               <div style="padding: 25px; height: 100%; position: relative">
-                <div id="mumBtn">
-                  This is a voucher for picture frames, chosen by you
-                </div>
+                <div id="mumBtn">This is a voucher for picture frames</div>
               </div>
               % end
             </div>
