@@ -239,9 +239,12 @@ def MumsDay(name=''):
   return template('cards/card_mothersDay', name=name, message=message)
 
 
-@route('/birthday')
+# @route('/birthday')
+# def birthdayGenerator():
+#   return 'not working yet'
+
 @route('/birthday/<name>')
-def MumsDay(name=''):
+def birthday(name=''):
   name = name.replace('_', ' ')
   message = birthdayMessage(name)
   return template('cards/card_birthday', name=name, message=message)

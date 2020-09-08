@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 :root {
-  --main-col: rgb(158, 0, 66); /* rgb(255, 0, 170) */
+  --main: #9e0042; /* rgb(255, 0, 170) */
+  --trim: #9e0042;
+  --background: grey;
 }
 
 html,
@@ -15,7 +17,7 @@ body {
 }
 
 html {
-  background-color: grey;
+  background-color: var(--background);
 }
 
 html.mum {
@@ -46,12 +48,12 @@ h2 {
   /* font-family: "Dancing Script", serif; */
   font-weight: bold;
   font-size: 32px;
-  color: var(--main-col);
+  color: var(--main);
   text-align: center;
 }
 
 h3 {
-  color: var(--main-col);
+  color: var(--main);
   font-weight: bold;
   font-size: 25px;
 }
@@ -101,8 +103,8 @@ header.masthead .device-container {
   width: 50%;
   font-size: 30px;
   font-weight: bold;
-  border: 4px dashed var(--main-col);
-  color: var(--main-col);
+  border: 4px dashed var(--trim);
+  color: var(--main);
   position: absolute;
   left: 50%;
   transform: rotateY(180deg) translateX(50%);
@@ -125,6 +127,7 @@ header.masthead .device-container {
   margin-top: -16.5rem;
   left: 50%;
   margin-left: -14rem;
+  /* box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); */
 }
 
 .wrap {
@@ -141,8 +144,9 @@ header.masthead .device-container {
 
 #wrap.open {
   transform: translateX(14rem);
-  box-shadow: 20px 0 20px -10px rgba(0, 0, 0, 0.5),
-    0 20px 20px -10px rgba(0, 0, 0, 0.5), 0 -20px 20px -10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 20px 0 20px -10px rgba(0, 0, 0, 0.5),
+    0 20px 20px -10px rgba(0, 0, 0, 0.5), 0 -20px 20px -10px rgba(0, 0, 0, 0.5); */
+  box-shadow: none;
 }
 
 @media (max-width: 550px) {
@@ -175,7 +179,7 @@ header.masthead .device-container {
   background-color: #fff;
   border-radius: 2px;
   position: relative;
-  border: 8px solid var(--main-col);
+  border: 8px solid var(--trim);
   text-align: center;
 }
 .card--front {
@@ -190,16 +194,24 @@ header.masthead .device-container {
   -webkit-backface-visibility: hidden;
 }
 .card--front.open {
-  transform: rotateY(-180deg);
+  transform: rotateY(-179deg);
+  z-index: 1;
 }
 .card--front.back {
   z-index: 0;
   backface-visibility: visible;
   -webkit-backface-visibility: visible;
 }
+.card--front.back.open {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 .card--inner {
   overflow: hidden;
   padding: 15px;
+}
+.card--inner.open {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
 .card--inner.open:before {
   transform: translateX(-155%);
