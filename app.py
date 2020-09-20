@@ -3,6 +3,8 @@ import os, subprocess, sys, smtplib, bottle, sqlite3, logging, requests  # , ser
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle
 from datetime import datetime
 
+import bjoern
+
 try: 
   from cardMessages import christmasMessage, MothersMessage, birthdayMessage
 except Exception as e:
@@ -24,6 +26,14 @@ try:
 except:
   dev = False
   gitQuit = False
+
+
+try:
+    from cheroot.wsgi import Server as WSGIServer
+except ImportError:
+    from cherrypy.wsgiserver import CherryPyWSGIServer as WSGIServer
+
+
 
 try:
   file = open('info.txt', 'r')
@@ -318,9 +328,11 @@ if __name__ == '__main__':
     run(host='127.0.0.1', port=3000, reloader=True, threaded=True, debug=True)  # 127.0.0.1 :8080
   else:
     try:
-      run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
+      application = bottle.default_app()
+      bjoern.run(application, host, port)
+      # run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
     except Exception as e:
-      print(e + '\ncherryPy failed, defaulting to ref server:')
+      print(e + '\ndeployment server failed, defaulting to development server:')
       run(host=host, port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 
