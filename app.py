@@ -311,8 +311,8 @@ def gitPull():
 
 if __name__ == '__main__':
   port = int(os.environ.get('PORT', 3000))
-  # run_decoupled(app, '0.0.0.0', 80)
   host = '127.0.0.1'  # 127.0.0.1 '0.0.0.0'
+  # run_decoupled(app, '0.0.0.0', 80)
   if dev:
     print('********* running in development mode *********')
     run(host='127.0.0.1', port=3000, reloader=True, threaded=True, debug=True)  # 127.0.0.1 :8080
