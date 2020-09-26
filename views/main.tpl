@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- add 'async' to js links -->
   <meta charset="utf-8">
@@ -11,19 +12,26 @@
   <link rel="icon" href="/static/pic/favicon.png" type="image/x-icon">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></noscript> -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" media="none" onload="if(media!='all')media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"></noscript>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+    media="none" onload="if(media!='all')media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+  </noscript>
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="nxone" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript> -->
   <script src="static/scrollMagic/ScrollMagic.min.js"></script>
   <!-- <script src="static/scrollMagic/plugins/debug.addIndicators.min.js"></script> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <!-- % import os ; mainJS = os.path.getsize("assets/main/main.js") ; backgroundJS = os.path.getsize("assets/main/background.js") ; mainCSS = os.path.getsize("assets/main/main.css") -->
   <script type='text/javascript' src='/static/main/main.min.js?v=1.00'></script> <!-- ?filever={{mainJS}} -->
-  <script type='text/javascript' src='/static/main/background.min.js?v=1.00'></script> <!-- ?filever={{backgroundJS}} -->
+  <script type='text/javascript' src='/static/main/background.min.js?v=1.00'></script>
+  <!-- ?filever={{backgroundJS}} -->
   <link rel="stylesheet" type="text/css" href="/static/main/main.min.css?v=1.02"> <!-- ?filever={{mainCSS}}} -->
 </head>
+
 <body id="page-top">
 
   % include('assets/main/modal.html')
@@ -78,7 +86,8 @@
       <h1 class="sectionTitle">About</h1>
       <div class="fade">
         <h1 class="secHead">
-          I'm an A-level student, based in London. Awarded 3 A*s in Computer Science, Maths and Physics at Beths Grammar school.
+          I'm a student, studing at the University of Warwick. Awarded 3 A*s in Computer Science, Maths and Physics at
+          Beths Grammar school.
         </h1>
       </div>
       <div class="fade">
@@ -135,10 +144,11 @@
           <div id="msgSubmit" class="h5 text-center boxCol fit-content"></div>
         </div>
       </form>
-      <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px" >
+      <div class="boxCol fit-content fade" style="margin-top: 40px; padding-bottom: 15px">
         <div class="tooltip" style="text-align: center !important;">
-          <h3 style="color: white; font-weight: bold" id="emailTxt">Or send me an email directly at:<br><a id="emailCopy" href="javascript:void(null);"
-              style="color: var(--other-orange);">rsedlr@protonmail.com</a></h3>
+          <h3 style="color: white; font-weight: bold" id="emailTxt">Or send me an email directly at:<br><a
+              id="emailCopy" href="javascript:void(null);" style="color: var(--other-orange);">rsedlr@protonmail.com</a>
+          </h3>
           <span class="tooltiptext white" id="emailTooltip">Email Copied!</span>
         </div>
       </div>
@@ -146,16 +156,23 @@
   </section>
   <section class="bg-footer" id="socials">
     <div class="fade" style="text-align: center;">
-      <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="60" height="60"></imgborder></a>
-      <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow" src="static/pic/socials/so-icon.png" width="90" height="90"></imgborder></a>
-      <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png" width="58" height="58"></imgborder></a>
+      <a href="https://github.com/rsedlr"><img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png"
+          width="60" height="60"></imgborder></a>
+      <a href="https://stackoverflow.com/users/8750548/rsedlr"><img alt="stack overflow"
+          src="static/pic/socials/so-icon.png" width="90" height="90"></imgborder></a>
+      <a href="https://www.instagram.com/rsedlr/"><img alt="Instagram" src="static/pic/socials/instaWhite.png"
+          width="58" height="58"></imgborder></a>
     </div>
   </section>
   <!-- <script src="/static/mainPage/jquery.min.js"></script> -->
   <!-- <script src="/static/mainPage/bootstrap.bundle.min.js"></script> -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>  <script src="/static/mainPage/jquery.easing.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+    crossorigin="anonymous"></script>
+  <script src="/static/mainPage/jquery.easing.min.js"></script>
   <script src="/static/main/scroll.min.js"></script>
 </body>
+
 </html>
 
 <!-- scripts should all be moved from header to footer -->
