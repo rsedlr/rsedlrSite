@@ -321,7 +321,7 @@ if __name__ == '__main__':
     try:
       application = bottle.default_app()
       bjoern.run(application, host, port)
-      print('started webserver')
+      print('************ started webserver ************')
       # run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
     except Exception as e:
       print(e + '\ndeployment server failed, defaulting to development server:')
