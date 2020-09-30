@@ -4,6 +4,7 @@
 <head>
   <!-- add 'async' to js links -->
   <meta charset="utf-8">
+  <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Portfolio of a Computer Science student.">
   <meta name="keywords" content="Portfolio, Reiss Edler">
