@@ -317,6 +317,13 @@ section h2 {
 .socialButton {
   margin: 10px;
 }
+.socialButton > path {
+  fill: white;
+  transition: 0.3s;
+}
+.socialButton:hover > path {
+  fill: var(--main-orange) !important;
+}
 
 .testPadding {
   padding: 600px 0px;
