@@ -319,7 +319,7 @@ section h2 {
 }
 .socialButton > path {
   fill: white;
-  transition: 0.3s;
+  transition: 0.2s ease;
 }
 .socialButton:hover > path {
   fill: var(--main-orange) !important;
