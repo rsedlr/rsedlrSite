@@ -41,7 +41,7 @@ var close = [' } ',
   ' } ',
   ' } ',
   ' }); ',
-  ' } while(condtition); '];
+  ' } while(condition); '];
 //  ';', '});',
 //  ' <span class="code angle">&lt<span class="code var">/div<span class="code angle">&gt ']
 

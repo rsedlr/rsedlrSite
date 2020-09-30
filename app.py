@@ -80,7 +80,7 @@ def computing():
 
 @route('/')
 def main():
-  return template('main.min')
+  return template('main.min') 
 
 
 # @route('/test')

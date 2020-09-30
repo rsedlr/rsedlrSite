@@ -308,9 +308,14 @@ section h2 {
 #socials {
   display: inline-block;
   margin-left: 50%;
+  margin-bottom: 75px;
+  padding: 10px;
   transform: translateX(-50%);
-  padding: 10px 30px;
   min-width: 277px;
+}
+
+.socialButton {
+  margin: 10px;
 }
 
 .testPadding {
