@@ -86,8 +86,8 @@
       <h1 class="sectionTitle">About</h1>
       <div class="fade">
         <h1 class="secHead">
-          I'm a student, studing at the University of Warwick. Awarded 3 A*s in Computer Science, Maths and Physics at
-          Beths Grammar school.
+          I'm a student, studing at the University of Warwick. Awarded 3 A*s in A-level Computer Science, Maths and
+          Physics at Beths Grammar school.
         </h1>
       </div>
       <div class="fade">
