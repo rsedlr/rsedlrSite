@@ -300,14 +300,14 @@ def christmasMessageDemo(name):
 ''' --------------- card end --------------- '''
 
 
-@route('/h578smnch3mkx83mnd7y4bd8eh3oix8w3j', method='GET')  # POST
-def gitPull():
-  git.cmd.Git('/var/www/rsedlrSite').pull()
-  # git.cmd.Git('/var/www/rsedlrSite').fetch()
-  # os.system('sudo git reset --hard origin/master')
-  print('\n************ Git pull done ************\n')
-  # print('\n************ git update available ************\n')
-  if gitQuit: quit()
+# @route('/h578smnch3mkx83mnd7y4bd8eh3oix8w3j', method='GET')  # POST
+# def gitPull():
+#   git.cmd.Git('/var/www/rsedlrSite').pull()
+#   # git.cmd.Git('/var/www/rsedlrSite').fetch()
+#   # os.system('sudo git reset --hard origin/master')
+#   print('\n************ Git pull done ************\n')
+#   # print('\n************ git update available ************\n')
+#   if gitQuit: quit()
 
 
 if __name__ == '__main__':
