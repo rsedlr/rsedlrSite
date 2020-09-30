@@ -325,7 +325,7 @@ if __name__ == '__main__':
       print('************ started webserver ************')
       # run(host=host, port=port, server='cherrypy', reloader=True)  # 127.0.0.1
     except Exception as e:
-      print(e + '\ndeployment server failed, defaulting to development server:')
+      print(f'\n{e}\ndeployment server failed, defaulting to development server...')
       run(host=host, port=port, reloader=True, threaded=True, debug=False)  # 127.0.0.1
 
 
