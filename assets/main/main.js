@@ -66,10 +66,10 @@ $(document).ready(function () {
       ).appendTo('#modalIndicators')
       $(
         '<div class="carousel-item"><img class="d-block w-100" src="static/pic/' +
-          value +
-          '-c-' +
-          (i + 1) +
-          '.png"></div>'
+        value +
+        '-c-' +
+        (i + 1) +
+        '.png"></div>'
       ).appendTo('#modalInner')
     }
     $('#modalIndicators > li').first().addClass('active')
@@ -90,20 +90,19 @@ $(document).ready(function () {
   })
 
   $('#moreProjBtn').click(function () {
-    if ($('#hiddenTable:first').is(':hidden')) {
+    if ($('#hiddenTable').is(':hidden')) {  // #hiddenTable:first
       $('#hiddenTable').slideDown(800, 'easeInSine') // 1000
       $(this).text('Show Less')
-      // AOS.refresh();
-      // setTimeout(function() { AOS.refresh(); }, 1900);
     } else {
-      $('html, body').animate(
-        { scrollTop: $('#scrollMarker').offset().top },
-        1100
-      ) // 1400
-      $('#hiddenTable').slideUp(1500, 'easeInOutSine') // 2000
+      // $('html, body').animate(
+      //   { scrollTop: $('#scrollMarker').offset().top },
+      //   1100
+      // ) // 1400
+      $('#scrollMarker')[0].scrollIntoView({
+        behavior: 'smooth'
+      })
+      $('#hiddenTable').slideUp(1100, 'easeInOutSine') // 1500
       $(this).text('Show More')
-      // AOS.refresh();
-      // setTimeout(function() { AOS.refresh(); }, 1700);
     }
   })
 
