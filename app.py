@@ -58,6 +58,7 @@ if not dev:
 
 @error(404)
 def error404(error):
+  response.status_code = 404
   # logging.debug(" -- eror 404 -- ")
   return template('error404')
 
