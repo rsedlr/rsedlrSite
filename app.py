@@ -59,7 +59,7 @@ if not dev:
 @error(404)
 def error404(error):
   # logging.debug(" -- eror 404 -- ")
-  abort(404, template('error404'))
+  abort(404, "error")
   # return template('error404')
 
 
