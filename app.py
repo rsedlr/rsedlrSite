@@ -53,12 +53,12 @@ if not dev:
   def enable_cors():
     client_ip = request.environ.get('HTTP_X_FORWARDED_FOR') or request.environ.get('REMOTE_ADDR')
     # stat = (" statCode(" + str(response.status_code) + ")") if str(response.status_code) != "200" else ""
-    logging.debug("IP(" + client_ip + ") method(" + request.method + ") path(" + request.path + ")")
+    logging.debug("IP(" + client_ip + ") method(" + request.method + ") path(" + request.path + ") status(" + request.status ")")
 
 
 @error(404)
 def error404(error):
-  logging.debug(" -- eror 404 -- ")
+  # logging.debug(" -- eror 404 -- ")
   return template('error404')
 
 
