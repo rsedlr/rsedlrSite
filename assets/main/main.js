@@ -96,12 +96,16 @@ $(document).ready(function () {
       $(this).text('Show Less')
     } else {
       $('html, body').animate(
+        // isnt smooth on safari
         { scrollTop: $('#scrollMarker').offset().top },
-        1100
+        1000
       ) // 1400
-      // $('#scrollMarker')[0].scrollIntoView({
-      //   behavior: 'smooth',
-      // })
+      // alternative method:
+      // var offset = $('#scrollMarker').offset()
+      // $('html, body').animate(
+      //   { scrollTop: offset.top, scrollLeft: offset.left },
+      //   1000
+      // )
       $('#hiddenTable').slideUp(1100, 'easeInOutSine') // 1500
       $(this).text('Show More')
     }
