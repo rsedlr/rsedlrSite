@@ -35,7 +35,7 @@
 
 <body id="page-top">
 
-  % include('assets/main/modal.html')
+  % include('assets/main/modal.min.html')
 
   <header id="wallpaper"></header>
   <section id="titleSection">
@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      % include('assets/main/projects.html')
+      % include('assets/main/projects.min.html')
 
       <div class="fade">
         <button class="btn proj-btn main-btn" id="moreProjBtn" type="button" style="margin-top: 25px">Show More</button>

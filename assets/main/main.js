@@ -96,10 +96,9 @@ $(document).ready(function () {
       $(this).text('Show Less')
     } else {
       $('html, body').animate(
-        // isnt smooth on safari
         { scrollTop: $('#scrollMarker').offset().top },
-        1000
-      ) // 1400
+        900
+      ) // 1100
       // alternative method:
       // var offset = $('#scrollMarker').offset()
       // $('html, body').animate(
