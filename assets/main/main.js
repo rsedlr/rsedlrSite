@@ -96,7 +96,7 @@ $(document).ready(function () {
       $(this).text('Show Less')
     } else {
       $('html, body').animate(
-        { scrollTop: $('#scrollMarker').offset().top + 100 },
+        { scrollTop: $('#scrollMarker').offset().top + 150 },
         900
       ) // 1100
       // alternative method:
