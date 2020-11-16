@@ -95,13 +95,13 @@ $(document).ready(function () {
       $('#hiddenTable').slideDown(800, 'easeInSine') // 1000
       $(this).text('Show Less')
     } else {
-      // $('html, body').animate(
-      //   { scrollTop: $('#scrollMarker').offset().top },
-      //   1100
-      // ) // 1400
-      $('#scrollMarker')[0].scrollIntoView({
-        behavior: 'smooth',
-      })
+      $('html, body').animate(
+        { scrollTop: $('#scrollMarker').offset().top },
+        1100
+      ) // 1400
+      // $('#scrollMarker')[0].scrollIntoView({
+      //   behavior: 'smooth',
+      // })
       $('#hiddenTable').slideUp(1100, 'easeInOutSine') // 1500
       $(this).text('Show More')
     }
