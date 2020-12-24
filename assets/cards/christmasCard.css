@@ -121,14 +121,14 @@ nav {
     0 -20px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .wrap {
-    height: 30rem;
-    width: 26rem;
+    height: 29rem;
+    width: 23rem;
   }
   #wrapperWrap {
-    margin-top: -15rem;
-    margin-left: -13rem;
+    margin-top: -14.5rem;
+    margin-left: -11.5rem;
   }
   #cardFrontMessage {
     font-size: 3rem !important;
@@ -136,9 +136,12 @@ nav {
   #cardMainMessage {
     font-size: 25px !important;
   }
+  #wrap.open {
+    transform: translateX(11.5rem);
+  }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 825px) {
   .wrap {
     height: 28rem;
     width: 19rem;
