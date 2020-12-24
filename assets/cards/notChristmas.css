@@ -19,10 +19,6 @@ canvas {
   left: 0;
 }
 
-.lightrope {
-  margin: -23px 0 0 -10px !important;
-}
-
 .container {
   padding: 10% calc(30% - 80px) 5px;
   /* padding-right: 15px;

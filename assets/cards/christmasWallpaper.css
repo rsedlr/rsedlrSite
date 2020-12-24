@@ -159,6 +159,10 @@
   image-rendering: optimizeSpeed;
 } */
 
+body {
+  margin: 0;
+}
+
 #wrappingPaper {
   position: absolute;
   height: 100%;
@@ -167,6 +171,7 @@
   z-index: -999999;
 }
 #wrappingPaper > div {
+  margin-left: -25px;
   width: calc(100% + 150px);
 }
 
