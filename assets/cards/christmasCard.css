@@ -143,12 +143,12 @@ nav {
 
 @media (max-width: 825px) {
   .wrap {
-    height: 28rem;
-    width: 19rem;
+    height: 27rem;
+    width: 18rem;
   }
   #wrapperWrap {
-    margin-top: -14rem;
-    margin-left: -9.5rem;
+    margin-top: -13.5rem;
+    margin-left: -9rem;
   }
   #cardFrontMessage {
     font-size: 2.5rem !important;
