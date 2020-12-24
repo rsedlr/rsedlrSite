@@ -7,7 +7,7 @@ body {
   width: 100%;
   padding: 0;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -38,9 +38,11 @@ canvas {
 #wrappingPaper {
   position: absolute;
   height: 100%;
-  width: 115%;
   overflow: hidden;
   z-index: -999999;
+}
+#wrappingPaper > div {
+  width: calc(100% + 150px);
 }
 
 *,
