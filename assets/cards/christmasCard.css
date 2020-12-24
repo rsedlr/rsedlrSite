@@ -35,16 +35,6 @@ canvas {
   left: 0;
 }
 
-#wrappingPaper {
-  position: absolute;
-  height: 100%;
-  overflow: hidden;
-  z-index: -999999;
-}
-#wrappingPaper > div {
-  width: calc(100% + 150px);
-}
-
 *,
 *:after,
 *:before {

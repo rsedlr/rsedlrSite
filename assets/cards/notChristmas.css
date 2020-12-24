@@ -1,5 +1,5 @@
 html {
-  background-color: #b1def4;
+  background-color: #0079b6; /* 1784bb 3890bd b1def4 */
   /* background-image: url('/static/pic/wallpaper-clear-v2.png'); */
   /* background-size: 610px 155px; */
   /* background-repeat: repeat; */
@@ -19,13 +19,6 @@ canvas {
   left: 0;
 }
 
-#wrappingPaper {
-  position: absolute;
-  height: 100%;
-  overflow: hidden;
-  /* z-index: -9999999999; */
-}
-
 .container {
   padding: calc(10% - 50px) calc(30% - 80px) 5px;
   /* padding-right: 15px;
@@ -38,8 +31,8 @@ canvas {
   padding: 20px 25px;
   margin: 20px auto;
   max-width: 700px;
-  background-color: rgba(26, 26, 26, 0.5); /* rgba(26, 26, 26, 0.85); */
-  backdrop-filter: blur(8px);
+  background-color: rgba(26, 26, 26, 0.7); /* rgba(26, 26, 26, 0.85); */
+  backdrop-filter: blur(12px);
   color: white;
   /* border: 5px;
   border-color: rgba(26, 26, 26, 0.85); */
@@ -76,7 +69,7 @@ canvas {
   margin: 10px;
   width: 80px;
   height: 80px;
-  color: black;
+  color: rgb(26, 26, 26);
   background: rgba(255, 255, 255, 1);
 }
 .inner .smalltext {

@@ -212,7 +212,7 @@ def TextRepeater():
 def christmas(name=''):
   name = name.replace('_', ' ')
   message = christmasMessage(name)
-  christmasTime = datetime(2010, 12, 25, 0)
+  christmasTime = datetime(2020, 12, 25, 0)
   timeDiff = christmasTime - datetime.now()
   if timeDiff.total_seconds() <= 0:
     return template('cards/christmasCard-M', name=name, message=message)
