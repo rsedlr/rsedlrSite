@@ -1,34 +1,51 @@
-
-html { 
-  height: 100%;
-  background-color: #B1DEF4;
-  background-image: url('/static/pic/wallpaper-clear-v2.png');
-  background-size: 610px 155px;
-  background-repeat: repeat;
- }
+html {
+  background-color: #b1def4;
+  /* background-image: url('/static/pic/wallpaper-clear-v2.png'); */
+  /* background-size: 610px 155px; */
+  /* background-repeat: repeat; */
+  /* overflow: hidden; */
+}
 
 body {
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   align-items: center;
   height: 100%;
 }
 
+/* body{margin:0;height:100%;} */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#wrappingPaper {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  /* z-index: -9999999999; */
+}
+
 .container {
-  padding: calc(10% - 50px) calc(30% - 80px);
-  /* padding: 20%; */
+  padding: calc(10% - 50px) calc(30% - 80px) 5px;
+  /* padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; */
 }
 
 .big-box {
-  padding: 15px 20px;
+  padding: 20px 25px;
   margin: 20px auto;
   max-width: 700px;
-  background-color: rgba(26, 26, 26, 0.85);
+  background-color: rgba(26, 26, 26, 0.5); /* rgba(26, 26, 26, 0.85); */
+  backdrop-filter: blur(8px);
   color: white;
-  border: 5px;
-  border-color: rgba(26, 26, 26, 0.85);
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  /* border: 5px;
+  border-color: rgba(26, 26, 26, 0.85); */
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
   font-size: 1rem;
   text-align: center;
 }
@@ -36,7 +53,6 @@ body {
   margin: 20px auto;
   text-align: center;
 }
-
 
 @media (max-width: 550px) {
   #mainText {
@@ -47,15 +63,15 @@ body {
 #clockdiv {
   width: 1000px;
   width: 100%;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   font-size: 50px;
 }
 .inner {
-  display:inline-block;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
   padding: 20px;
   margin: 10px;
   width: 80px;
@@ -66,4 +82,3 @@ body {
 .inner .smalltext {
   font-size: 20px;
 }
-

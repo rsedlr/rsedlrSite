@@ -3,6 +3,8 @@ import os, subprocess, sys, smtplib, bottle, sqlite3, logging, requests  # , ser
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle, abort
 from datetime import datetime
 
+sys.path.append('../webCards/')
+
 try: 
   from cardMessages import christmasMessage, MothersMessage, birthdayMessage
 except Exception as e:
@@ -205,14 +207,13 @@ def TextRepeater():
 ''' ------------- heat control demo stuff end ------------- '''
 ''' --------------- card start --------------- '''
 
-@route('/christmas')
-@route('/christmas/<name>')
+@route('/xmas')
+@route('/xmas/<name>')
 def christmas(name=''):
   name = name.replace('_', ' ')
   message = christmasMessage(name)
-  nowTime = datetime.now()
-  christmasTime = datetime(2018, 12, 25, 0)
-  timeDiff = christmasTime - nowTime
+  christmasTime = datetime(2010, 12, 25, 0)
+  timeDiff = christmasTime - datetime.now()
   if timeDiff.total_seconds() <= 0:
     return template('cards/christmasCard-M', name=name, message=message)
   if name != '':

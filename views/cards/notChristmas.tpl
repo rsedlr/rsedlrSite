@@ -3,23 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
-    <!-- <meta name="description" content="">
-    <meta name="author" content=""> -->
+    <meta name="description" content="CHRISTMASSSSSSSSSSS!!!!!!!!!!!!!!!!!">
+    <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
     <title>You've got mail</title>
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <link href="/static/cards//notChristmas.css" rel="stylesheet">
+    <link href="/static/cards/christmasWallpaper.css" rel="stylesheet">
+    <link href="/static/cards/notChristmas.css" rel="stylesheet">
   </head>
   <body>
+    % include('assets/main/wrappingPaper.html')
+    <canvas id="canvas"></canvas>
+
     <div class="container" style="position: relative; margin: 0px auto auto">
       <div class="big-box">
-        <h1 style="font-size: 5rem; margin: 5px" id="mainText">{{name}} you've got mail</h1>
+        <h1 style="font-size: 5rem; margin: 5px; padding-bottom: 5px;" id="mainText">
+          {{name}} <br> 
+          you've got mail
+        </h1>
       </div>
+
       <div class="big-box">
-        <h1 style="margin: 5px">but you cant open it till christmas:</h2>
-      </div>
-      <div class="big-box">
+        <h1 style="margin: 5px; margin-bottom: 10px;">You can open your Christmas card in:</h2>
+
         <div id="clockdiv">
           <div class="inner">
             <span class="day"></span>
@@ -41,11 +47,16 @@
       </div>
     </div>
   </body>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script type='text/javascript' src='/static/main/snow.js'></script>  
   <script>  
     function christmasCountdown() {
       const nowTime = new Date();
-      const christmasTime = new Date("2018-12-25");
+      const christmasTime = new Date("2020-12-25");
       var remTime = christmasTime.getTime() - nowTime.getTime();
+      if (remTime <= 0) {
+        window.location.reload();
+      }
 
       var sec = Math.floor(remTime / 1000);
       var min = Math.floor(sec / 60);

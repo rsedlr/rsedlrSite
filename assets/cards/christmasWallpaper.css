@@ -1,8 +1,7 @@
-
-html {
+/* html {
   background-color: #000;
-  image-rendering: optimizeSpeed;  
-}
+  image-rendering: optimizeSpeed;
+} */
 
 /* christmas tree */
 .christmastree,
@@ -116,7 +115,7 @@ html {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 46.188px; 
+  top: 46.188px;
   margin-top: -25.816px;
 }
 
@@ -170,7 +169,9 @@ html {
   margin-top: -15px;
 }
 
-.a, .b, .c {
+.a,
+.b,
+.c {
   width: 112px;
   height: 6px;
   background-color: #ffffff;
@@ -189,7 +190,10 @@ html {
   transform: rotate(-60deg);
 }
 
-.lu, .ru, .lo, .ro {
+.lu,
+.ru,
+.lo,
+.ro {
   height: 6px;
   width: 22px;
   background-color: #ffffff;

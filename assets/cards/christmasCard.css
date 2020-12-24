@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
   width: 100%;
@@ -10,9 +11,10 @@ html, body {
 
 html {
   background-color: rgb(12, 78, 14);
-  background-image: url('/static/pic/wallpaper-clear-v2.png');
-  background-size: 40% auto;
-  background-repeat: repeat;
+  /* background-image: url('/static/pic/wallpaper-clear-v2.png'); */
+  /* background-size: 40% auto; */
+  /* background-size: 610px 155px;
+  background-repeat: repeat; */
   /* background-position: 0 20px; */
 }
 
@@ -26,7 +28,22 @@ body {
   transform-style: preserve-3d;
 }
 
-*, *:after, *:before {
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#wrappingPaper {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  z-index: -999999;
+}
+
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -34,7 +51,7 @@ h2 {
   /* font-family: "Dancing Script", serif; */
   font-weight: bold;
   font-size: 4rem;
-  color: #B60003; 
+  color: #b60003;
   text-align: center;
 }
 
@@ -43,7 +60,7 @@ section {
 }
 
 nav {
-  background-color: rgba(41, 41, 41, 0.93);  /* appears same as --grey with background */
+  background-color: rgba(41, 41, 41, 0.93); /* appears same as --grey with background */
   max-width: 220px;
 }
 .navbar-brand {
@@ -56,7 +73,6 @@ nav {
 .navbar-brand:hover {
   text-decoration: underline;
 }
-
 
 @media (min-width: 998px) {
   header.masthead {
@@ -73,7 +89,6 @@ nav {
     max-width: 325px;
   }
 }
-
 
 #wrapperWrap {
   position: absolute;
@@ -97,10 +112,9 @@ nav {
 }
 
 #wrap.open {
-  transform: translateX(14rem);
-  box-shadow: 20px 0 20px -10px rgba(0, 0, 0, 0.5), 
-              0 20px 20px -10px rgba(0, 0, 0, 0.5), 
-              0 -20px 20px -10px rgba(0, 0, 0, 0.5);
+  transform: translateX(14rem); /* 14rem */
+  box-shadow: 20px 0 20px -10px rgba(0, 0, 0, 0.5), 0 20px 20px -10px rgba(0, 0, 0, 0.5),
+    0 -20px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 550px) {
@@ -126,7 +140,7 @@ nav {
   background-color: #fff;
   border-radius: 2px;
   position: relative;
-  border: 8px solid #B60003;
+  border: 8px solid #b60003;
   text-align: center;
 }
 .card--front {
@@ -143,7 +157,7 @@ nav {
   -webkit-backface-visibility: hidden;
 }
 .card--front.open {
-  transform: rotateY(-180deg);
+  transform: rotateY(-179deg);
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
 .card--front.back {
@@ -159,11 +173,11 @@ nav {
   font-size: 32px;
 }
 .card--inner.open:before {
-  transform: translateX(-155%);
+  transform: translateX(-115%); /* -155 */
   opacity: 0.1;
 }
 .card--inner:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -177,7 +191,7 @@ nav {
 
 button {
   -webkit-appearance: none;
-  background: #E53935;
+  background: #e53935;
   border: 5px solid #9f1815;
   border-width: 0 0 5px;
   padding: 10px 20px;
@@ -196,4 +210,3 @@ button:active {
 button:focus {
   outline: none;
 }
-
