@@ -121,20 +121,40 @@ nav {
     0 -20px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 900px) {
   .wrap {
     height: 30rem;
-    width: 20rem;
+    width: 26rem;
   }
   #wrapperWrap {
     margin-top: -15rem;
-    margin-left: -10rem;
+    margin-left: -13rem;
   }
   #cardFrontMessage {
     font-size: 3rem !important;
   }
   #cardMainMessage {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrap {
+    height: 28rem;
+    width: 19rem;
+  }
+  #wrapperWrap {
+    margin-top: -14rem;
+    margin-left: -9.5rem;
+  }
+  #cardFrontMessage {
+    font-size: 2.5rem !important;
+  }
+  #cardMainMessage {
     font-size: 23px !important;
+  }
+  #wrap.open {
+    transform: none;
   }
 }
 
