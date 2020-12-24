@@ -12,8 +12,12 @@
       href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png"
     />
     <title>Merry Christmas</title>
-    <link href="/static/cards/christmasWallpaper.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="/static/cards/christmasCard.css" />
+    <link href="/static/cards/christmasWallpaper.css?v=1.00" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/cards/christmasCard.css?v=1.00"
+    />
   </head>
   <body>
     % include('assets/main/wrappingPaper.html')

@@ -8,8 +8,8 @@
     <meta name="description" content="CHRISTMASSSSSSSSSSS!!!!!!!!!!!!!!!!!">
     <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
     <title>You've got mail</title>
-    <link href="/static/cards/christmasWallpaper.css" rel="stylesheet">
-    <link href="/static/cards/notChristmas.css" rel="stylesheet">
+    <link href="/static/cards/christmasWallpaper.css?v=1.00" rel="stylesheet">
+    <link href="/static/cards/notChristmas.css?v=1.00" rel="stylesheet">
   </head>
   <body>
     % include('assets/main/wrappingPaper.html')
