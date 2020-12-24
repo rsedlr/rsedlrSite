@@ -5,7 +5,7 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Snow_flake.svg/2000px-Snow_flake.svg.png">
-    <meta name="description" content="CHRISTMASSSSSSSSSSS!!!!!!!!!!!!!!!!!">
+    <meta name="description" content="Christmas card">
     <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
     <title>You've got mail</title>
     <link href="/static/cards/christmasWallpaper.css?v=1.10" rel="stylesheet">
