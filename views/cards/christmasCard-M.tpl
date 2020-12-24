@@ -93,30 +93,35 @@
       $(document).ready(function () {
         var nameSpan = document.getElementById('name')
         var name = nameSpan.innerText.toUpperCase()
-        if (name == 'GRANDAD') {
+        if (name == 'GRANDAD D') {
           document.documentElement.style.backgroundImage = `url('/static/pic/norton.png')`
-          document.documentElement.style.backgroundSize = '120px 60px'
+          document.documentElement.style.backgroundSize = '300px 180px'
           document.documentElement.style.backgroundPosition = '0 10px'
+          document.getElementById('wrappingPaper').style.display = 'none'
         } else if (name == 'PIXIE') {
           document.documentElement.style.backgroundImage = `url('/static/pic/bone.png')`
           document.documentElement.style.backgroundSize = '348px 207px'
           document.documentElement.style.backgroundPosition = '0 3px'
+          document.getElementById('wrappingPaper').style.display = 'none'
         } else {
           switch (name) {
             case 'EVEY':
-              var colour = 'rgb(255, 0, 255)'
+              var colour = 'rgb(241, 202, 198)'
               break
             case 'DAD':
               var colour = 'rgb(0, 0, 0)'
               break
+            case 'MUM':
+              var colour = '#1fa135'
+              break
             case 'EVIE':
-              var colour = 'rgb(0, 0, 255)'
+              var colour = 'rgb(255, 214, 198)'
               break
             case 'JOEY':
               var colour = 'rgb(85, 0, 182)'
               break
-            default:
-              var colour = 'rgb(12, 78, 14)'
+            // default:
+            //   var colour = 'rgb(12, 78, 14)'
           }
           document.documentElement.style.backgroundColor = colour
         }
