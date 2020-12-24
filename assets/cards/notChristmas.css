@@ -24,7 +24,7 @@ canvas {
 }
 
 .container {
-  padding: calc(10% - 50px) calc(30% - 80px) 5px;
+  padding: 10% calc(30% - 80px) 5px;
   /* padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
