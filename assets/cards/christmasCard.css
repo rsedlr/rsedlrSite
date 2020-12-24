@@ -7,6 +7,7 @@ body {
   width: 100%;
   padding: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 html {
@@ -37,6 +38,7 @@ canvas {
 #wrappingPaper {
   position: absolute;
   height: 100%;
+  width: 115%;
   overflow: hidden;
   z-index: -999999;
 }
@@ -138,7 +140,6 @@ nav {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  border-radius: 2px;
   position: relative;
   border: 8px solid #b60003;
   text-align: center;
