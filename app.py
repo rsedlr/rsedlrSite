@@ -3,7 +3,7 @@ import os, subprocess, sys, smtplib, bottle, sqlite3, logging, requests  # , ser
 from bottle import route, run, template, static_file, redirect, request, response, put, post, get, error, hook, Bottle, abort
 from datetime import datetime
 
-sys.path.append('../webCards/')
+# sys.path.append('../webCards/')
 
 try: 
   from cardMessages import christmasMessage, MothersMessage, birthdayMessage
