@@ -37,7 +37,8 @@
               </h2>
             </div>
             <div class="card card--front back" onclick="openCard();">
-              <!-- % if name.upper() == 'DAD':
+              <!-- 
+                % if name.upper() == 'DAD':
               <button
                 type="button"
                 id="dadGiftBtn"
@@ -52,7 +53,8 @@
               >
                 Click me :)
               </button>
-              % end -->
+              % end
+             -->
             </div>
             <div class="card card--front" onclick="openCard();">
               <h2 id="cardFrontMessage" style="width: 100%">
