@@ -38,7 +38,7 @@
             </div>
             <div class="card card--front back" onclick="openCard();">
               <!-- 
-                % if name.upper() == 'DAD':
+                % if name.upper() == 'MUM':
               <button
                 type="button"
                 id="dadGiftBtn"
@@ -53,9 +53,8 @@
               >
                 Click me :)
               </button>
-              % end
-             -->
-            </div>
+              % end 
+            --></div>
             <div class="card card--front" onclick="openCard();">
               <h2 id="cardFrontMessage" style="width: 100%">
                 Merry<br />Christmas<br /><span id="name">{{ name }}</span
