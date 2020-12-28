@@ -92,7 +92,11 @@ $(document).ready(function () {
       $('#hiddenTable').slideDown(800, 'easeInSine') // 1000
       $(this).text('Show Less')
     } else {
-      $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top + 150 }, 900) // 1100
+      // $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top + 150 }, 900) // 1100
+      $('html, body').animate(
+        { scrollTop: $('#scrollMarker').offset().top - ($(window).height() * 2) / 3 },
+        900
+      ) // 1100
       // alternative method:
       // var offset = $('#scrollMarker').offset()
       // $('html, body').animate(
