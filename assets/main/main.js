@@ -13,13 +13,10 @@ $(document).ready(function () {
     othello: 2,
     wikiRace: 1,
     christmasCard: 2,
+    carAI: 1,
     thisSite: 1,
-    unity: 1,
     rcCar: 1,
-    bl: 1,
     plantWaterer: 1,
-    pyGame: 1,
-    tempImg: 1,
   }
 
   if (isMac) {
@@ -61,9 +58,9 @@ $(document).ready(function () {
     var value = this.id.slice(0, -3)
     var count = imgCount[value]
     for (var i = 0; i < count; i++) {
-      $(
-        '<li data-target="#modalSlides" data-slide-to="' + i + '"></li>'
-      ).appendTo('#modalIndicators')
+      $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo(
+        '#modalIndicators'
+      )
       $(
         '<div class="carousel-item"><img class="d-block w-100" src="static/pic/' +
           value +
@@ -77,7 +74,7 @@ $(document).ready(function () {
     // $('#modalSlides').carousel();
     document.getElementById('caption').innerHTML = this.alt
     picModal.style.display = 'block'
-    // document.body.classList.add('noScroll');
+    document.body.classList.add('noScroll')
   })
 
   $('.img-close').click(function () {
@@ -95,10 +92,7 @@ $(document).ready(function () {
       $('#hiddenTable').slideDown(800, 'easeInSine') // 1000
       $(this).text('Show Less')
     } else {
-      $('html, body').animate(
-        { scrollTop: $('#scrollMarker').offset().top + 150 },
-        900
-      ) // 1100
+      $('html, body').animate({ scrollTop: $('#scrollMarker').offset().top + 150 }, 900) // 1100
       // alternative method:
       // var offset = $('#scrollMarker').offset()
       // $('html, body').animate(
