@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="w3.org/1999/xhtml">
   <head>
     <!-- add 'async' to js links -->
     <meta charset="utf-8" />
