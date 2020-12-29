@@ -14,7 +14,7 @@
     <meta property="og:title" content="Reiss Edler - Personal Portfolio" />
     <meta property="og:description" content="Portfolio of a Computer Science student." />
     <meta
-      property="og:image:secure"
+      property="og:image:secure_url"
       content="https://rsedlr.xyz/static/pic/thisSite-c-1.png"
     />
     <meta property="og:image" content="http://rsedlr.xyz/static/pic/thisSite-c-1.png" />
