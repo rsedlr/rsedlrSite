@@ -8,9 +8,9 @@
   <meta name="description" content="Portfolio of a Computer Science student.">
   <meta name="keywords" content="Portfolio, Reiss Edler">
   <meta name="author" content="Reiss Edler - rsedlr@protonmail.com">
-  <!-- <meta property="og:title" content="How to Become an SEO Expert (8 Steps)" /> -->
-  <!-- <meta property="og:description" content="Get from SEO newbie to SEO pro in 8 simple steps." /> -->
-  <meta property="og:image" content="/static/pic/thisSite-c-1.png" />
+  <meta property="og:title" content="Reiss Edler - Personal Portfolio" />
+  <meta property="og:description" content="Portfolio of a Computer Science student." />
+  <meta property="og:image" content="https://rsedlr.xyz/static/pic/thisSite-c-1.png" />
   <title>Reiss Edler - Personal Portfolio</title>
   <link rel="icon" href="/static/pic/favicon.png" type="image/x-icon">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></noscript> -->
