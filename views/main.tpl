@@ -17,7 +17,7 @@
       property="og:image:secure"
       content="https://rsedlr.xyz/static/pic/thisSite-c-1.png"
     />
-    <!-- <meta property="og:image" content="http://rsedlr.xyz/static/pic/thisSite-c-1.png" /> -->
+    <meta property="og:image" content="http://rsedlr.xyz/static/pic/thisSite-c-1.png" />
     <title>Reiss Edler - Personal Portfolio</title>
     <link rel="icon" href="/static/pic/favicon.png" type="image/x-icon" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></noscript> -->
