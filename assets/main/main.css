@@ -377,7 +377,7 @@ section h2 {
 }
 
 .btn {
-  border-radius: 300px;
+  border-radius: 20px;
   padding: 0.5rem 1rem;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
@@ -415,7 +415,7 @@ section h2 {
 }
 
 .round-corners {
-  border-radius: 30px !important;
+  border-radius: 20px !important;
 }
 
 .header-title {
@@ -447,8 +447,8 @@ section h2 {
   background-color: var(--main-grey) !important;
   border: 1px solid var(--main-grey);
   color: white !important;
-  border-radius: 2px;
-  -moz-border-radis: 20px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   background-clip: border-box;
   resize: none;
