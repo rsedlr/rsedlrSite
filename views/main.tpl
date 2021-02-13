@@ -149,7 +149,7 @@
             ... was a punctual, responsible and personable young man. Capable of thinking
             on his feet and handling a variety of situations."
             <span class="spacer"></span>
-            - Simon Brown (NOWTV work experience manager)
+            - Simon Brown (NowTV work experience manager)
           </h1>
         </div>
       </div>
