@@ -9,6 +9,7 @@ $(document).ready(function () {
    var anim;
 
    var imgCount = {
+      chorinator: 1,
       heatDemo: 1,
       othello: 2,
       wikiRace: 1,
@@ -57,17 +58,26 @@ $(document).ready(function () {
       e.preventDefault();
       var value = this.id.slice(0, -3);
       var count = imgCount[value];
-      for (var i = 0; i < count; i++) {
-         $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo(
-            '#modalIndicators'
-         );
+
+      if (value == "chorinator") {
          $(
-            '<div class="carousel-item"><img class="d-block w-100" src="static/pic/' +
-               value +
-               '-c-' +
-               (i + 1) +
-               '.png"></div>'
+            '<video class="img-fluid" autoplay loop muted><source src="/static/pic/Reiss-Edler-Web-Dev-Coursework2.mov" type="video/mp4" /></video>'
+            // '<video class="img-fluid" autoplay loop muted><source src="/static/pic/Reiss-Edler-Web-Dev-Coursework2.mov" type="video/mp4" /></video>'
+            // '<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>'
          ).appendTo('#modalInner');
+      } else {
+         for (var i = 0; i < count; i++) {
+            $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo(
+               '#modalIndicators'
+            );
+            $(
+               '<div class="carousel-item"><img class="d-block w-100" src="static/pic/' +
+                  value +
+                  '-c-' +
+                  (i + 1) +
+                  '.png"></div>'
+            ).appendTo('#modalInner');
+         }
       }
       $('#modalIndicators > li').first().addClass('active');
       $('.carousel-item').first().addClass('active');
