@@ -61,15 +61,18 @@ $(document).ready(function () {
 
       if (value == "chorinator") {
          $(
-            '<video class="img-fluid" autoplay loop muted><source src="/static/pic/Reiss-Edler-Web-Dev-Coursework2.mov" type="video/mp4" /></video>'
-            // '<video class="img-fluid" autoplay loop muted><source src="/static/pic/Reiss-Edler-Web-Dev-Coursework2.mov" type="video/mp4" /></video>'
+            '<video class="img-fluid" controls autoplay loop muted preload="auto" poster="/static/pic/chorinator-c-1.png"><source src="/static/pic/Reiss-Edler-Web-Dev-Coursework2.mov" type="video/mp4" /></video>'
             // '<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>'
          ).appendTo('#modalInner');
+         $("#modalSlides > a").hide()
+         document.querySelector('video').playbackRate = 1.5;
       } else {
          for (var i = 0; i < count; i++) {
-            $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo(
-               '#modalIndicators'
-            );
+            if (count > 1) {
+               $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo(
+                  '#modalIndicators'
+               );
+            }
             $(
                '<div class="carousel-item"><img class="d-block w-100" src="static/pic/' +
                   value +
@@ -77,6 +80,11 @@ $(document).ready(function () {
                   (i + 1) +
                   '.png"></div>'
             ).appendTo('#modalInner');
+         }
+         if (count > 1) {
+            $("#modalSlides > a").show()
+         } else {
+            $("#modalSlides > a").hide()
          }
       }
       $('#modalIndicators > li').first().addClass('active');
