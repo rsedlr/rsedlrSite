@@ -799,6 +799,10 @@ span.space {
    width: 65%;
    /* max-width: 1100px; */
 }
+.img-modal-content video,
+.img-modal-content img {
+   border-radius: 10px;
+}
 
 .img-modal-content,
 #caption,
