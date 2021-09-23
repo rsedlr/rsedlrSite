@@ -18,11 +18,14 @@
       />
       <meta
          property="og:image:secure_url"
-         content="https://rsedlr.xyz/static/pic/thisSite-c-1.png"
+         content="https://rsedlr.xyz/static/pic/thisSite-c-1.webp"
       />
-      <meta property="og:image" content="http://rsedlr.xyz/static/pic/thisSite-c-1.png" />
-      <title>Reiss Edler - Personal Portfolio</title>
-      <link rel="icon" href="/static/pic/favicon.png" type="image/x-icon" />
+      <meta
+         property="og:image"
+         content="http://rsedlr.xyz/static/pic/thisSite-c-1.webp"
+      />
+      <title>Reiss Edler - Software Developer</title>
+      <link rel="icon" href="/static/pic/favicon.webp" type="image/x-icon" />
       <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></noscript> -->
       <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
       <link
@@ -53,11 +56,11 @@
          crossorigin="anonymous"
       ></script>
       <!-- % import os ; mainJS = os.path.getsize("assets/main/main.js") ; backgroundJS = os.path.getsize("assets/main/background.js") ; mainCSS = os.path.getsize("assets/main/main.css") -->
-      <script type="text/javascript" src="/static/main/main.min.js?v=1.00"></script>
+      <script src="/static/main/main.min.js?v=1.01"></script>
       <!-- ?filever={{mainJS}} -->
-      <script type="text/javascript" src="/static/main/background.min.js?v=1.00"></script>
+      <script src="/static/main/background.min.js?v=1.01"></script>
       <!-- ?filever={{backgroundJS}} -->
-      <link rel="stylesheet" type="text/css" href="/static/main/main.min.css?v=1.02" />
+      <link rel="stylesheet" type="text/css" href="/static/main/main.min.css?v=1.03" />
       <!-- ?filever={{mainCSS}}} -->
    </head>
 
@@ -72,12 +75,12 @@
                   <div class="hideSmall hover" id="titleDiv">
                      <div class="header-content Mac-main" id="mainText">Reiss Edler</div>
                      <div class="header-content Mac-sec" id="secText">
-                        personal portfolio
+                        Software Developer
                      </div>
                   </div>
                   <div class="showSmall" id="smallTitleDiv">
                      <h1 style="font-size: 70px; font-weight: 800">Reiss Edler</h1>
-                     <h2 style="font-size: 50px; font-weight: 400">personal portfolio</h2>
+                     <h2 style="font-size: 45px; font-weight: 400">Software Developer</h2>
                   </div>
                   <div style="margin: auto; text-align: center">
                      <!-- <button class="btn title-btn box-shadow" id="codeBtn" type="button" onclick="codeBackground()">New Background</button> -->
@@ -270,7 +273,7 @@
                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"
                   />
                </svg>
-               <!-- <img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.png" width="60" height="60"></imgborder> -->
+               <!-- <img alt="GitHub" src="static/pic/socials/GitHub-Mark-Light-120px-plus.webp" width="60" height="60"></imgborder> -->
             </a>
             <a href="https://stackoverflow.com/users/8750548/rsedlr">
                <svg
@@ -284,7 +287,7 @@
                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8.512 8.272l5.532 3.243-.686 1.162-5.533-3.243.687-1.162zm-1.456 3.113l6.185 1.739-.332 1.23-6.204-1.667.351-1.302zm-.672 2.813l6.498.65-.117 1.28-6.504-.586.123-1.344zm-.193 2.469h6.667v1.333h-6.667v-1.333zm8.833 3.333h-11v-7h1v6h9v-6h1v7zm-.852-8.704l-3.56-5.219 1.115-.76 3.559 5.219-1.114.76zm1.356-.841l-1.08-6.224 1.328-.231 1.082 6.224-1.33.231z"
                   />
                </svg>
-               <!-- <img alt="stack overflow" src="static/pic/socials/so-icon.png" width="90" height="90"></imgborder> -->
+               <!-- <img alt="stack overflow" src="static/pic/socials/so-icon.webp" width="90" height="90"></imgborder> -->
             </a>
             <a href="https://www.linkedin.com/in/rsedlr/">
                <svg
@@ -311,7 +314,7 @@
                      d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"
                   />
                </svg>
-               <!-- <img alt="Instagram" src="static/pic/socials/instaWhite.png" width="58" height="58"></imgborder> -->
+               <!-- <img alt="Instagram" src="static/pic/socials/instaWhite.webp" width="58" height="58"></imgborder> -->
             </a>
          </div>
       </section>

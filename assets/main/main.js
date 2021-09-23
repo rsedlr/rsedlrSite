@@ -5,8 +5,6 @@ $(document).ready(function () {
    var picModal = document.getElementById('picModal');
    var modalIndicators = document.getElementById('modalIndicators');
    var modalInner = document.getElementById('modalInner');
-   var contactClicked = false;
-   var anim;
 
    var imgCount = {
       chorinator: 1,
@@ -56,49 +54,49 @@ $(document).ready(function () {
 
    $('.main-pic').click(function (e) {
       e.preventDefault();
-      var value = this.id.slice(0, -3);
+      var value = this.getElementsByTagName('img')[0].id.slice(0, -3);
       var count = imgCount[value];
 
-      if (value == "chorinator") {
+      if (value == 'chorinator') {
          $(
-            '<video class="img-fluid" controls autoplay loop muted preload="auto" poster="/static/pic/chorinator-c-1.png"><source src="/static/pic/Reiss-Edler-Web-Dev-Coursework2.mov" type="video/mp4" /></video>'
-            // '<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>'
+            '<video class="img-fluid" controls autoplay loop muted preload="auto" poster="/static/pic/chorinator-c-1.webp"><source src="/static/pic/Reiss-Edler-Web-Dev-Coursework2.mov" type="video/mp4" /></video>'
          ).appendTo('#modalInner');
-         $("#modalSlides > a").hide()
+         $('#modalSlides > a').hide();
          document.querySelector('video').playbackRate = 1.5;
       } else {
          for (var i = 0; i < count; i++) {
             if (count > 1) {
-               $('<li data-target="#modalSlides" data-slide-to="' + i + '"></li>').appendTo(
-                  '#modalIndicators'
-               );
+               $(
+                  '<li data-target="#modalSlides" data-slide-to="' + i + '"></li>'
+               ).appendTo('#modalIndicators');
             }
             $(
                '<div class="carousel-item"><img class="d-block w-100" src="static/pic/' +
                   value +
                   '-c-' +
                   (i + 1) +
-                  '.png"></div>'
+                  '.webp"></div>'
             ).appendTo('#modalInner');
          }
          if (count > 1) {
-            $("#modalSlides > a").show()
+            $('#modalSlides > a').show();
          } else {
-            $("#modalSlides > a").hide()
+            $('#modalSlides > a').hide();
          }
       }
       $('#modalIndicators > li').first().addClass('active');
       $('.carousel-item').first().addClass('active');
-      // $('#modalSlides').carousel();
-      document.getElementById('caption').innerHTML = this.alt;
+
+      document.getElementById('caption').innerHTML =
+         this.getElementsByTagName('img')[0].alt;
       picModal.style.display = 'block';
-      document.body.classList.add('noScroll');
+      document.documentElement.classList.add('noScroll');
+      // $('html').addClass('noScroll');
    });
 
    $('.img-close').click(function () {
-      // picModal.scrollIntoView()
       picModal.style.display = 'none';
-      document.body.classList.remove('noScroll');
+      document.documentElement.classList.remove('noScroll');
       while (modalIndicators.firstChild)
          modalIndicators.removeChild(modalIndicators.firstChild);
       while (modalInner.firstChild) modalInner.removeChild(modalInner.firstChild);
@@ -106,7 +104,6 @@ $(document).ready(function () {
 
    $('#moreProjBtn').click(function () {
       if ($('#hiddenTable').is(':hidden')) {
-         // #hiddenTable:first
          $('#hiddenTable').slideDown(800, 'easeInSine'); // 1000
          $(this).text('Show Less');
       } else {
@@ -133,18 +130,18 @@ $(document).ready(function () {
       }, 2000);
    });
 
-   $('.btn-no-scroll').click(function () {
-      document.body.classList.add('noScroll');
-   });
+   // $('.btn-no-scroll').click(function () {
+   //    document.body.classList.add('noScroll');
+   // });
 
    $('.close').click(function () {
       this.parentElement.parentElement.parentElement.style.display = 'none';
-      document.body.classList.remove('noScroll');
+      document.documentElement.classList.remove('noScroll');
    });
 
    $('.modal').click(function () {
       this.style.display = 'none';
-      document.body.classList.remove('noScroll');
+      document.documentElement.classList.remove('noScroll');
    });
 
    $('.modal-content').click(function () {
@@ -152,17 +149,16 @@ $(document).ready(function () {
    });
 
    $('#emailCopy').click(function () {
-      // this.text.select();
-      var $temp = $('<input>');
-      $('body').append($temp);
-      $temp.val(this.text).select();
-      document.execCommand('copy');
-      $temp.remove();
+      // var e = $('<input>');
+      // $('body').append(e);
+      // e.val('reissedler@gmail.com').select();
+      // document.execCommand('copy');
+      // e.remove();
+      navigator.clipboard.writeText('reissedler@gmail.com');
       $('#emailTooltip').show();
       setTimeout(function () {
          $('#emailTooltip').hide();
-      }, 2000);
-      // this.tooltip(title="copied: " + this.text)
+      }, 2e3);
    });
 
    //   $('#contactForm').submit(function (event) {
