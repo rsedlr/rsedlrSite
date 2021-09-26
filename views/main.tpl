@@ -8,9 +8,9 @@
          content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       <meta name="description" content="Portfolio of a Computer Science student." />
-      <meta name="keywords" content="Portfolio, Reiss Edler" />
-      <meta name="author" content="Reiss Edler - rsedlr@protonmail.com" />
-      <meta property="og:title" content="Reiss Edler - Personal Portfolio" />
+      <meta name="keywords" content="Portfolio, Reiss Edler, Software, Developer" />
+      <meta name="author" content="Reiss Edler - reissedler@gmail.com" />
+      <meta property="og:title" content="Reiss Edler - Software Developer" />
       <meta
          property="og:description"
          content="Portfolio of a Computer Science student."
@@ -145,16 +145,16 @@
             </div>
             <div class="fade">
                <h1 class="secHead">
-                  I'm a 2nd year Computer Science student, studying at the University of
-                  Warwick. Awarded 3 A*s in A-level Computer Science, Maths and Physics at
-                  Beths Grammar school.
+                  I'm a 2<sup>nd</sup> year Computer Science student, studying at the
+                  University of Warwick. Awarded 3 A*s in A-level Computer Science, Maths
+                  and Physics at Beths Grammar school.
                </h1>
             </div>
             <div class="fade">
                <h1 class="secHead">
-                  I have experience in Full Stack web development, ... and work with a
-                  range of languages and technologies including JavaScript, React.js,
-                  Python, Java, SQL...
+                  I have experience in Full Stack Web Development, App Development, AI,
+                  Data Structures and work with a range of languages and technologies
+                  including JavaScript, React.js, Python, Java and SQL.
                </h1>
             </div>
             <div class="fade">
@@ -172,7 +172,7 @@
                   id="cvBtn"
                   type="button"
                   onclick="window.location.href='static/Reiss-Edler-Resume.pdf'"
-                  style="margin-top: 25px"
+                  style="margin-top: 30px"
                >
                   See my CV
                </button>
