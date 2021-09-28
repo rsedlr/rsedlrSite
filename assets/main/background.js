@@ -1,6 +1,6 @@
 var i = 0;
 
-var open = [
+var openTxt = [
    ' function name(param) { ',
    ' for(i = 0; i < limit; i++) { ',
    ' while(condition) { ',
@@ -20,7 +20,7 @@ var content = [
    "str = 'string'.slice(0,3); ",
 ];
 
-var close = [' } ', ' } ', ' } ', ' } ', ' }); ', ' } while(condition); '];
+var closeTxt = [' } ', ' } ', ' } ', ' } ', ' }); ', ' } while(condition); '];
 
 function randomMax(max) {
    return Math.floor(Math.random() * max);
@@ -38,9 +38,9 @@ function codeBackground() {
    // while (header.firstChild) header.removeChild(header.firstChild); // wipes background
 
    for (var i = 0; i < size; i++) {
-      openRand = randomMax(open.length);
+      openTxtRand = randomMax(openTxt.length);
       contentCount = randomMax(4) + 1;
-      code += open[openRand];
+      code += openTxt[openTxtRand];
       for (var n = 0; n < contentCount; n++) {
          contentRand = randomMax(content.length);
          if (contentRand == 5) {
@@ -55,7 +55,7 @@ function codeBackground() {
             code += content[contentRand];
          }
       }
-      code += close[openRand];
+      code += closeTxt[openTxtRand];
    }
 
    header.innerHTML = code;

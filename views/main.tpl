@@ -171,7 +171,7 @@
                   class="btn proj-btn main-btn white-bg"
                   id="cvBtn"
                   type="button"
-                  onclick="window.location.href='static/Reiss-Edler-Resume.pdf'"
+                  onclick="window.open('static/Reiss-Edler-Resume.pdf', '_blank'); return false;"
                   style="margin-top: 30px"
                >
                   See my CV
