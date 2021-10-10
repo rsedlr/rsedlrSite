@@ -238,6 +238,7 @@ section h2 {
 #mainNav .navbar-brand {
    color: #000;
    letter-spacing: 1px;
+   padding-left: 0.5rem;
 }
 #mainNav,
 .navbar-brand:hover {
