@@ -39,9 +39,9 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="/static/main/main.min.js?v=1.01"></script>
-    <script src="/static/main/background.min.js?v=1.01"></script>
-    <link rel="stylesheet" type="text/css" href="/static/main/main.min.css?v=1.06" />
+    <script src="/static/main/main.min.js?v=1.02"></script>
+    <script src="/static/main/background.min.js?v=1.02"></script>
+    <link rel="stylesheet" type="text/css" href="/static/main/main.min.css?v=1.07" />
   </head>
   <body id="page-top">
     % include('assets/main/modal.min.html')
