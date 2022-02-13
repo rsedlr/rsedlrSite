@@ -157,18 +157,17 @@
         </div> -->
         <div class="fade">
           <h1 class="secHead">
-            I have experience in Full Stack Web Development, App Development, AI, Data
-            Structures and work with a range of languages and technologies including
-            JavaScript, React.js, Python, Java and SQL.
+            I have experience in Full Stack Web Development (with a focus on front end)
+            and work with a range of languages and technologies including JavaScript,
+            React.js, Python, Java and SQL.
           </h1>
         </div>
         <div class="fade">
           <h1 class="mainQuote">
-            "He showed great technical abilities, aptitude and intelligence ...
-            <br />
-            ... was a punctual, responsible and personable young man. Capable of thinking
-            on his feet and handling a variety of situations." <br />
-            - Simon Brown (NowTV work experience manager)
+            "He showed great technical abilities, aptitude and intelligence ... was a
+            punctual, responsible and personable young man. Capable of thinking on his
+            feet and handling a variety of situations." - Simon Brown (NowTV work
+            experience manager)
           </h1>
         </div>
         <div class="fade">
