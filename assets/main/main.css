@@ -19,6 +19,7 @@
 
 html {
   background-color: #181818;
+  font-size: 15px;
 }
 
 body {
@@ -67,7 +68,7 @@ h6 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
   color: var(--main-grey);
@@ -84,14 +85,14 @@ footer {
   background-color: var(--main-grey);
 }
 footer p {
-  font-size: 12px;
+  font-size: 0.75rem;
   margin: 0;
 }
 
 header {
   position: fixed;
   width: 120%;
-  width: calc(100% + 500px);
+  width: calc(100% + 400px);
   top: 0;
   left: -5%;
   z-index: -1;
@@ -101,7 +102,7 @@ header {
   line-height: 1;
   overflow-wrap: break-word;
   /* word-spacing: 1px; */
-  font-size: 28px !important;
+  font-size: 1.5rem !important;
   font-family: monospace;
   display: inline-block;
 }
@@ -116,7 +117,7 @@ section,
   padding: 40px 50px;
   border-radius: var(--main-radius);
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 auto 2.5rem;
 }
 #about-container {
   padding: 20px 25px;
@@ -159,7 +160,7 @@ section h2 {
 
 .mainHead {
   font-weight: 700;
-  font-size: 130px;
+  font-size: 8rem;
   margin: auto 35px 0 -5px;
 }
 
@@ -236,11 +237,11 @@ section h2 {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
   font-weight: bolder;
-  font-size: 21px !important;
+  font-size: 1.1rem !important;
   letter-spacing: 1px;
   will-change: transform;
   max-width: 1000px;
-  margin: 5px auto 40px;
+  margin: 5px auto 2.5rem;
   border-radius: var(--main-radius);
   /* position: -webkit-sticky; */
   position: sticky;
@@ -251,6 +252,7 @@ section h2 {
   color: #000;
   letter-spacing: 1px;
   padding-left: 0.5rem;
+  font-size: 1.15rem !important;
 }
 #mainNav,
 .navbar-brand:hover {
@@ -432,7 +434,7 @@ section h2 {
 .proj-btn {
   margin-right: 10px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: bold;
   transition: 0.2s ease;
 }
@@ -445,7 +447,7 @@ section h2 {
 .title-btn {
   background-color: white;
   color: var(--main-grey);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   transition: 0.2s ease;
   margin-bottom: 20px;
@@ -467,7 +469,7 @@ section h2 {
 }
 
 .btn-xl {
-  font-size: 11px;
+  font-size: 0.7rem;
   padding: 15px 45px;
 }
 
@@ -476,7 +478,7 @@ section h2 {
 }
 
 .header-title {
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 800;
 }
 
@@ -544,10 +546,10 @@ section h2 {
     text-align: left;
   }
   header.masthead .header-content h1 {
-    font-size: 50px;
+    font-size: 3rem;
   }
   header.masthead .device-container {
-    max-width: 325px;
+    max-width: 20rem;
   }
 
   section.experience .device-container {
@@ -577,6 +579,9 @@ section h2 {
 }
 
 @media only screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
   .img-modal-content {
     padding-top: 50px;
     width: 100% !important; /* make modal content fit better on small screen */
@@ -588,12 +593,12 @@ section h2 {
     width: min-content;
     padding: 1.3rem 2rem;
   }
-  #smallTitleDiv h1 {
-    font-size: 60px !important;
+  /* #smallTitleDiv h1 {
+    font-size: 3.75rem !important;
   }
   #smallTitleDiv h2 {
-    font-size: 40px !important;
-  }
+    font-size: 2.5rem !important;
+  } */
   section {
     padding: 30px 20px;
   }
@@ -614,24 +619,27 @@ section h2 {
     margin: 30% auto 20%;
     /* transform: translateY(-50%); */
   }
-  .secHead,
+  header {
+    font-size: 1.9rem !important;
+  }
+  /* .secHead,
   .mainQuote,
   #emailTxt {
-    font-size: 20px !important;
+    font-size: 1.25rem !important;
   }
   .header-title,
   #caption {
-    font-size: 25px !important;
-  }
-  p,
+    font-size: 1.5rem !important;
+  } */
+  /* p,
   .title-btn,
   .proj-btn {
-    font-size: 15px;
+    font-size: 1rem;
   }
   h1,
   .h1 {
     font-size: 2rem;
-  }
+  } */
   .boxCol {
     margin: 15px auto 10px;
   }
@@ -656,18 +664,18 @@ section h2 {
 }
 
 .sectionHead {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 /* hover main text */
 #mainText {
-  font-size: 109px;
+  font-size: 6.8rem;
   line-height: 1em;
 }
 #secText {
   font-weight: 400;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 1em;
   text-align: justify;
   position: relative;
@@ -807,7 +815,7 @@ span.space {
 .close {
   color: white;
   float: right;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   padding: 30px !important;
   padding-right: 38px !important;
@@ -831,7 +839,7 @@ span.space {
   color: rgb(255, 255, 255);
   padding: 10px 0;
   /* height: 150px; */
-  font-size: 35px;
+  font-size: 2rem;
 }
 
 .img-modal {
@@ -915,7 +923,7 @@ span.space {
   top: 15px;
   right: 40px;
   color: #fff;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -938,7 +946,7 @@ span.space {
 
 .tooltip > .tooltiptext {
   display: none;
-  font-size: 16px;
+  font-size: 1rem;
   width: 140px;
   background-color: var(--main-grey);
   color: #fff;

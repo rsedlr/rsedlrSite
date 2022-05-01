@@ -1,98 +1,98 @@
 var i = 0;
 
 var openTxt = [
-   ' function name(param) { ',
-   ' for(i = 0; i < limit; i++) { ',
-   ' while(condition) { ',
-   ' case(param) { ',
-   ' array.foreach(function(param) { ',
-   ' do { ',
+  ' function name(param) { ',
+  ' for(i = 0; i < limit; i++) { ',
+  ' while(condition) { ',
+  ' case(param) { ',
+  ' array.foreach(function(param) { ',
+  ' do { ',
 ];
 
 var content = [
-   'int += ',
-   'foo = bar * ',
-   'code(); ',
-   'float = ',
-   'square = num ** 2; ',
-   `arr = new array[`,
-   'remainder = ',
-   "str = 'string'.slice(0,3); ",
+  'int += ',
+  'foo = bar * ',
+  'code(); ',
+  'float = ',
+  'square = num ** 2; ',
+  `arr = new array[`,
+  'remainder = ',
+  "str = 'string'.slice(0,3); ",
 ];
 
 var closeTxt = [' } ', ' } ', ' } ', ' } ', ' }); ', ' } while(condition); '];
 
 function randomMax(max) {
-   return Math.floor(Math.random() * max);
-   // return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * max);
 }
 
 function codeBackground() {
-   var code = '';
-   var header = document.getElementById('wallpaper');
+  var code = '';
+  var header = document.getElementById('wallpaper');
 
-   var width = document.documentElement.clientWidth;
-   var height = document.documentElement.clientHeight;
-   var size = Math.sqrt(width * height) / 15; // 10
+  var width = document.documentElement.clientWidth;
+  var height = document.documentElement.clientHeight;
+  var size = (width * height) / 10000; // 10
+  //   var size = Math.sqrt(width * height) / 15; // 10
 
-   // while (header.firstChild) header.removeChild(header.firstChild); // wipes background
+  //   while (header.firstChild) header.removeChild(header.firstChild); // wipes background
 
-   for (var i = 0; i < size; i++) {
-      openTxtRand = randomMax(openTxt.length);
-      contentCount = randomMax(4) + 1;
-      code += openTxt[openTxtRand];
-      for (var n = 0; n < contentCount; n++) {
-         contentRand = randomMax(content.length);
-         if (contentRand == 5) {
-            code += content[contentRand] + randomMax(9) + '] ';
-         } else if (contentRand == 3) {
-            code += content[contentRand] + randomMax(9) + '.' + randomMax(9) + '; ';
-         } else if (contentRand == 6) {
-            code += content[contentRand] + randomMax(9) + ' % ' + randomMax(9) + '; ';
-         } else if (contentRand == 0 || contentRand == 1) {
-            code += content[contentRand] + randomMax(9) + '; ';
-         } else {
-            code += content[contentRand];
-         }
+  for (var i = 0; i < size; i++) {
+    openTxtRand = randomMax(openTxt.length);
+    contentCount = randomMax(4) + 1;
+    code += openTxt[openTxtRand];
+    for (var n = 0; n < contentCount; n++) {
+      contentRand = randomMax(content.length);
+      if (contentRand == 5) {
+        code += content[contentRand] + randomMax(9) + '] ';
+      } else if (contentRand == 3) {
+        code += content[contentRand] + randomMax(9) + '.' + randomMax(9) + '; ';
+      } else if (contentRand == 6) {
+        code += content[contentRand] + randomMax(9) + ' % ' + randomMax(9) + '; ';
+      } else if (contentRand == 0 || contentRand == 1) {
+        code += content[contentRand] + randomMax(9) + '; ';
+      } else {
+        code += content[contentRand];
       }
-      code += closeTxt[openTxtRand];
-   }
+    }
+    code += closeTxt[openTxtRand];
+  }
 
-   header.innerHTML = code;
-   highlightBackground();
-   // typeWriter();
+  header.innerHTML = code;
+  highlightBackground();
+  // typeWriter();
 }
 
 function highlightBackground() {
-   var codeElements = document.getElementById('wallpaper');
+  var codeElements = document.getElementById('wallpaper');
 
-   var strReg1 = /"(.*?)"/g,
-      strReg2 = /'(.*?)'/g,
-      specialReg =
-         /\b(new|var|if|do|function|while|switch|for|foreach|break|slice)(?=[^\w])/g,
-      paramReg = /\b(param|condition)(?=[^\w])/g,
-      varReg = /\b(limit|square|num|name|i|foo|bar|array|arr|remainder)(?=[^\w])/g,
-      bracketReg = /(\(|\)|{|})/g,
-      functionReg = /\b(code)(?=[^\w])/g,
-      intReg = /\b(0|1|2|3|4|5|6|7|8|9)(?=[^\w])/g,
-      // angleReg = /\b(\<|\>)(?=[^\w])/g,
-      // operatorReg = /\b(\+|\*)/g,
-      declarationReg = /\b(int|str|float)(?=[^\w])/g;
+  var strReg1 = /"(.*?)"/g,
+    strReg2 = /'(.*?)'/g,
+    specialReg =
+      /\b(new|var|if|do|function|while|switch|for|foreach|break|slice)(?=[^\w])/g,
+    paramReg = /\b(param|condition)(?=[^\w])/g,
+    varReg = /\b(limit|square|num|name|i|foo|bar|array|arr|remainder)(?=[^\w])/g,
+    bracketReg = /(\(|\)|{|})/g,
+    functionReg = /\b(code)(?=[^\w])/g,
+    intReg = /\b(0|1|2|3|4|5|6|7|8|9)(?=[^\w])/g,
+    // angleReg = /\b(\<|\>)(?=[^\w])/g,
+    // operatorReg = /\b(\+|\*)/g,
+    declarationReg = /\b(int|str|float)(?=[^\w])/g;
 
-   var string = codeElements.innerHTML,
-      parsed = string.replace(strReg1, '<span class="string">"$1"</span>');
-   parsed = parsed.replace(strReg2, '<span class="string">\'$1\'</span>');
-   parsed = parsed.replace(bracketReg, '<span class="bracket">$1</span>');
-   parsed = parsed.replace(specialReg, '<span class="special">$1</span>');
-   parsed = parsed.replace(varReg, '<span class="var">$1</span>');
-   parsed = parsed.replace(paramReg, '<span class="param">$1</span>');
-   // parsed = parsed.replace(operatorReg,'<span class="operator">$1</span>');
-   // parsed = parsed.replace(angleReg,'<span class="angle">$1</span>');
-   parsed = parsed.replace(functionReg, '<span class="fun">$1</span>');
-   parsed = parsed.replace(declarationReg, '<span class="dec">$1</span>');
-   parsed = parsed.replace(intReg, '<span class="num">$1</span>');
+  var string = codeElements.innerHTML,
+    parsed = string.replace(strReg1, '<span class="string">"$1"</span>');
+  parsed = parsed.replace(strReg2, '<span class="string">\'$1\'</span>');
+  parsed = parsed.replace(bracketReg, '<span class="bracket">$1</span>');
+  parsed = parsed.replace(specialReg, '<span class="special">$1</span>');
+  parsed = parsed.replace(varReg, '<span class="var">$1</span>');
+  parsed = parsed.replace(paramReg, '<span class="param">$1</span>');
+  // parsed = parsed.replace(operatorReg,'<span class="operator">$1</span>');
+  // parsed = parsed.replace(angleReg,'<span class="angle">$1</span>');
+  parsed = parsed.replace(functionReg, '<span class="fun">$1</span>');
+  parsed = parsed.replace(declarationReg, '<span class="dec">$1</span>');
+  parsed = parsed.replace(intReg, '<span class="num">$1</span>');
 
-   codeElements.innerHTML = parsed;
+  codeElements.innerHTML = parsed;
 }
 
 // var code = '';
@@ -107,7 +107,7 @@ function highlightBackground() {
 // }
 
 $(document).ready(function () {
-   codeBackground();
+  codeBackground();
 });
 
 //  TODO:

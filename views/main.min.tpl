@@ -87,9 +87,7 @@
     </section>
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div class="container nav-cont">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 21px"
-          >HOME</a
-        >
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">HOME</a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
